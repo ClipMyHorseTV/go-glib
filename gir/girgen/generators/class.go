@@ -202,7 +202,7 @@ func (g *ClassGenerator) generateRegisterObjectCast(w *file.Package) {
 	fmt.Fprintf(w.Go(), "}\n\n")
 }
 
-func NewClassGenerator(c *typesystem.Class) *ClassGenerator {
+func NewClassGenerator(cfg *Config, c *typesystem.Class) *ClassGenerator {
 	var marshaler Generator
 
 	if c.GLibGetType() != "" {
@@ -210,7 +210,7 @@ func NewClassGenerator(c *typesystem.Class) *ClassGenerator {
 	}
 
 	g := &ClassGenerator{
-		Doc:       NewGoDocGenerator(c),
+		Doc:       cfg.DocGenerator(c),
 		Class:     c,
 		Marshaler: marshaler,
 
@@ -218,27 +218,27 @@ func NewClassGenerator(c *typesystem.Class) *ClassGenerator {
 	}
 
 	if !c.Final {
-		g.Overrides = NewGoOverridesGenerator(c)
+		g.Overrides = NewGoOverridesGenerator(cfg, c)
 	}
 
 	for _, constructor := range c.Constructors {
-		g.SubGenerators = append(g.SubGenerators, NewCallableGenerator(constructor))
+		g.SubGenerators = append(g.SubGenerators, NewCallableGenerator(cfg, constructor))
 	}
 
 	for _, fn := range c.Functions {
-		g.SubGenerators = append(g.SubGenerators, NewCallableGenerator(fn))
+		g.SubGenerators = append(g.SubGenerators, NewCallableGenerator(cfg, fn))
 	}
 
 	for _, method := range c.Methods {
-		g.Methods = append(g.Methods, NewCallableGenerator(method))
+		g.Methods = append(g.Methods, NewCallableGenerator(cfg, method))
 	}
 
 	for _, sig := range c.Signals {
 		if sig.Action {
 			// action signals are only emitted:
-			g.Methods = append(g.Methods, NewSignalEmitGenerator(sig))
+			g.Methods = append(g.Methods, NewSignalEmitGenerator(cfg, sig))
 		} else {
-			g.Methods = append(g.Methods, NewSignalConnectGenerator(sig))
+			g.Methods = append(g.Methods, NewSignalConnectGenerator(cfg, sig))
 		}
 	}
 

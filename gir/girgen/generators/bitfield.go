@@ -90,12 +90,12 @@ func (g *BitfieldGenerator) Generate(w *file.Package) {
 	g.SubGenerators.Generate(w)
 }
 
-func NewBitfieldGenerator(bf *typesystem.Bitfield) *BitfieldGenerator {
+func NewBitfieldGenerator(cfg *Config, bf *typesystem.Bitfield) *BitfieldGenerator {
 	var members []BitfieldMember
 
 	for _, m := range bf.Members {
 		mm := BitfieldMember{
-			Doc:    NewGoDocGenerator(m),
+			Doc:    cfg.DocGenerator(m),
 			Member: m,
 		}
 		members = append(members, mm)
@@ -108,7 +108,7 @@ func NewBitfieldGenerator(bf *typesystem.Bitfield) *BitfieldGenerator {
 	}
 
 	gen := &BitfieldGenerator{
-		Doc:      NewGoDocGenerator(bf),
+		Doc:      cfg.DocGenerator(bf),
 		Bitfield: bf,
 
 		Members:        members,
@@ -117,7 +117,7 @@ func NewBitfieldGenerator(bf *typesystem.Bitfield) *BitfieldGenerator {
 	}
 
 	for _, f := range bf.Functions {
-		gen.SubGenerators = append(gen.SubGenerators, NewCallableGenerator(f))
+		gen.SubGenerators = append(gen.SubGenerators, NewCallableGenerator(cfg, f))
 	}
 
 	return gen

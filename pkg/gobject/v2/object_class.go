@@ -81,34 +81,30 @@ type ObjectOverrider[Instance Object] interface {
 // ObjectOverrides is the struct used to override the default implementation of virtual methods.
 // it is generic over the extending instance type.
 type ObjectOverrides[Instance Object] struct {
-	// A callback function used by the type system to initialize a new instance of a type.
-	// This function initializes all instance members and allocates any resources required by it.
-	// Initialization of a derived instance involves calling all its parent types instance initializers,
-	// so the class member of the instance is altered during its initialization to always point to the class that belongs to the type the current initializer was introduced for.
+	// InstanceInit callback function
 	//
-	// The extended members of instance are guaranteed to have been filled with zeros before this function is called.
+	// See also https://docs.gtk.org/gobject/callback.InstanceInitFunc.html
 	//
 	// Note: In GObject terms this is not a virtual function on GObject, but instead a function pointer in the GTypeInfo struct.
 	// in go-glib we put it here to be able to supply more type information to the user.
 	InstanceInit func(instance Instance)
 
-	// The constructed function is called by g_object_new() as the final step of the object creation process.
-	// At the point of the call, all construction properties have been set on the object. The purpose of this
-	// call is to allow for object initialisation steps that can only be performed after construction properties
-	// have been set.
+	// Constructed virtual method
 	//
-	// The bindings automatically call the parent class constructed method after this function returns.
+	// See also https://docs.gtk.org/gobject/vfunc.Object.constructed.html
 	Constructed func(Instance)
 
-	// The dispose function is supposed to drop all references to other objects, but keep the instance otherwise intact,
-	// so that client method invocations still work. It may be run multiple times (due to reference loops). Before returning,
-	// dispose should chain up to the dispose method of the parent class.
+	// Dispose virtual method
+	//
+	// See also https://docs.gtk.org/gobject/vfunc.Object.dispose.html
 	Dispose func(Instance)
 
 	GetProperty func(instance Instance, id uint, pspec *ParamSpec) any
 	SetProperty func(instance Instance, id uint, value any, pspec *ParamSpec)
 
-	// Instance finalization function, should finish the finalization of the instance begun in dispose.
+	// Finalize virtual method
+	//
+	// See also https://docs.gtk.org/gobject/vfunc.Object.finalize.html
 	//
 	// This is additionally wrapped by the bindings to clean up the instance data.
 	//

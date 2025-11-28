@@ -559,8 +559,6 @@ func (v *Value) GoValue() interface{} {
 		return InvalidValue
 	}
 
-	// No need to add finalizer because it is already done by AllocateValue and
-	// InitValue. (?)
 	g, err := f(unsafe.Pointer(v.native()))
 	runtime.KeepAlive(v)
 	if err != nil {

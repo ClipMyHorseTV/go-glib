@@ -22,8 +22,9 @@ type Record struct {
 	BaseConversions
 	Marshaler
 
-	GoUnsafeRefFunction string
-	CgoRefFunction      string
+	GoUnsafeRefFunction      string
+	CgoRefFunction           string
+	CgoRefNeedsUnsafePointer bool
 
 	// GoCopyMethod is the go method that copies the record. It takes the struct pointer as an argument and
 	// returns a new struct pointer. This is needed for transfer:none

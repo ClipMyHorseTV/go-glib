@@ -9,12 +9,19 @@ import (
 	"github.com/go-gst/go-glib/gir/girgen/typesystem"
 )
 
-type GoDocGenerator struct {
+type DocGenerator interface {
+	Generate(w file.CodeWriter)
+	WithPrependParagraphs(paragraphs ...string) DocGenerator
+}
+
+// InlineGoDocGenerator generates the Go documentation as inline comments. This may violate the
+// license of the original documentation, so be careful when using this.
+type InlineGoDocGenerator struct {
 	DocParagraphs []string
 	GIRDoc        typesystem.Doc
 }
 
-func (docg *GoDocGenerator) Generate(w file.CodeWriter) {
+func (docg *InlineGoDocGenerator) Generate(w file.CodeWriter) {
 	// scan the lines of the comment and prefix each line with "// "
 	for i, paragraph := range docg.DocParagraphs {
 		r := strings.NewReader(paragraph)
@@ -72,8 +79,11 @@ func (docg *GoDocGenerator) Generate(w file.CodeWriter) {
 	}
 }
 
-func NewGoDocGenerator(documented typesystem.Documented) *GoDocGenerator {
-	gen := &GoDocGenerator{
+// NewInlineGoDocGenerator creates a new InlineGoDocGenerator for the given documented element.
+// This generator will include the documentation directly in the generated Go code as comments.
+// This may violate the license of the original documentation, so be careful when using this.
+func NewInlineGoDocGenerator(_ *typesystem.Namespace, documented typesystem.Documented) DocGenerator {
+	gen := &InlineGoDocGenerator{
 		GIRDoc: documented.Documentation(),
 	}
 
@@ -97,8 +107,8 @@ func NewGoDocGenerator(documented typesystem.Documented) *GoDocGenerator {
 }
 
 // Copy creates a deep copy of the doc generator.
-func (docg *GoDocGenerator) Copy() *GoDocGenerator {
-	newDocg := &GoDocGenerator{
+func (docg *InlineGoDocGenerator) Copy() *InlineGoDocGenerator {
+	newDocg := &InlineGoDocGenerator{
 		DocParagraphs: make([]string, len(docg.DocParagraphs)),
 		GIRDoc:        docg.GIRDoc,
 	}
@@ -109,7 +119,7 @@ func (docg *GoDocGenerator) Copy() *GoDocGenerator {
 }
 
 // WithPrependParagraph prepends a paragraph to the doc generator without modifying the instance.
-func (docg *GoDocGenerator) WithPrependParagraphs(paragraphs ...string) *GoDocGenerator {
+func (docg *InlineGoDocGenerator) WithPrependParagraphs(paragraphs ...string) DocGenerator {
 	newDocg := docg.Copy()
 	newDocg.DocParagraphs = append(paragraphs, newDocg.DocParagraphs...)
 	return newDocg

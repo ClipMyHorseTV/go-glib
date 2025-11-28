@@ -8,6 +8,7 @@ type Constant struct {
 	Doc
 	Identifier
 
+	GirName string
 	GoValue string
 }
 
@@ -43,7 +44,8 @@ func DeclareConstant(e *env, v *gir.Constant) *Constant {
 	}
 
 	return &Constant{
-		Doc: NewDoc(&v.InfoAttrs, &v.InfoElements),
+		Doc:     NewDoc(&v.InfoAttrs, &v.InfoElements),
+		GirName: v.Name,
 		Identifier: &baseIdentifier{
 			// goIdentifier must be used directly, because e.g. gdk defines GDK_KEY_Armenian_at and GDK_KEY_Armenian_AT
 			// which break when we transform to PascalCase

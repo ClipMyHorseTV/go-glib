@@ -57,6 +57,10 @@ type Data struct {
 
 	// Postprocessors will run on the resolved typesystem before the files are written
 	Postprocessors []typesystem.PostProcessor
+
+	// Documentation provides a constructor for documentation generators. If this is nil it defaults to
+	// [generators.NewInlineGoDocGenerator].
+	Documentation func(*typesystem.Namespace, typesystem.Documented) generators.DocGenerator
 }
 
 // Run runs the application. The given [Data] are overlaid and the last one is used as the
@@ -72,6 +76,10 @@ func Run(datas ...Data) {
 
 	// generateData is the last data in the list, which is used to generate the code.
 	generateData := datas[len(datas)-1]
+
+	if generateData.Documentation == nil {
+		generateData.Documentation = generators.NewInlineGoDocGenerator
+	}
 
 	allRepos := make(gir.Repositories)
 
@@ -109,28 +117,35 @@ func Run(datas ...Data) {
 
 	gir.ApplyPreprocessors(allRepos, allPreprocessors)
 
-	println(allRepos.Repository("GLib-2.0.gir").Namespaces[0].Functions[183].Name)
-
 	ts := typesystem.FromRepositories(mergedTSConfig, allRepos)
 
 	ts.Postprocess(allPostProcessors)
 
-	var reposToGenerate []*typesystem.Repository
+	var namespacesToGenerate []generators.Generator
 
+	// the typesystem contains all repositories, but we only want to generate
+	// those that are in the generateData.GirFiles
 	for _, repo := range ts.Repositories {
 		for filename := range generateData.GirFiles {
 			if filename == repo.Filename {
-				reposToGenerate = append(reposToGenerate, repo)
+				for _, ns := range repo.Namespaces {
+					genconfig := &generators.Config{
+						DocGeneratorFactory: generateData.Documentation,
+						Namespace:           ns,
+					}
+
+					namespacesToGenerate = append(
+						namespacesToGenerate,
+						generators.NewNamespaceGenerator(genconfig),
+					)
+				}
+
 				break
 			}
 		}
 	}
 
-	gens := Generators{
-		Namespaces: generators.WithDynamicLinking(reposToGenerate),
-	}
-
-	for _, g := range gens.Namespaces {
+	for _, g := range namespacesToGenerate {
 		w := file.NewPackage(Output, importBaseURIs)
 
 		g.Generate(w)

@@ -19,9 +19,9 @@ func (g *ConstantGenerator) Generate(w *file.Package) {
 	fmt.Fprintf(w.Go(), "const %s = %s\n", g.GoIndentifier(), g.GoValue)
 }
 
-func NewConstantGenerator(constant *typesystem.Constant) *ConstantGenerator {
+func NewConstantGenerator(cfg *Config, constant *typesystem.Constant) *ConstantGenerator {
 	return &ConstantGenerator{
-		Doc:      NewGoDocGenerator(constant),
+		Doc:      cfg.DocGenerator(constant),
 		Constant: constant,
 	}
 }

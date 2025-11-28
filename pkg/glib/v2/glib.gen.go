@@ -24,455 +24,418 @@ import "C"
 
 
 // ANALYZER_ANALYZING wraps G_ANALYZER_ANALYZING
+// 
+// see also https://docs.gtk.org/glib/const.ANALYZER_ANALYZING.html
 const ANALYZER_ANALYZING = 1
 // ASCII_DTOSTR_BUF_SIZE wraps G_ASCII_DTOSTR_BUF_SIZE
+// 
+// see also https://docs.gtk.org/glib/const.ASCII_DTOSTR_BUF_SIZE.html
 //
-// A good size for a buffer to be passed into [func@GLib.ascii_dtostr].
-// It is guaranteed to be enough for all output of that function
-// on systems with 64bit IEEE-compatible doubles.
-// 
-// The typical usage would be something like:
-// ```C
-// char buf[G_ASCII_DTOSTR_BUF_SIZE];
-// 
-// fprintf (out, "value=%s\n", g_ascii_dtostr (buf, sizeof (buf), value));
-// ```
 const ASCII_DTOSTR_BUF_SIZE = 39
 // BIG_ENDIAN wraps G_BIG_ENDIAN
+// 
+// see also https://docs.gtk.org/glib/const.BIG_ENDIAN.html
 //
-// Specifies one of the possible types of byte order.
-// See %G_BYTE_ORDER.
 const BIG_ENDIAN = 4321
 // C_STD_VERSION wraps G_C_STD_VERSION
+// 
+// see also https://docs.gtk.org/glib/const.C_STD_VERSION.html
 //
-// The C standard version the code is compiling against, it's normally
-// defined with the same value of `__STDC_VERSION__` for C standard
-// compatible compilers, while it uses the lowest standard version
-// in pure MSVC, given that in such compiler the definition depends on
-// a compilation flag.
-// 
-// This is granted to be undefined when compiling with a C++ compiler.
-// 
-// See also: %G_C_STD_CHECK_VERSION and %G_CXX_STD_VERSION
 const C_STD_VERSION = 199000
 // DATALIST_FLAGS_MASK wraps G_DATALIST_FLAGS_MASK
+// 
+// see also https://docs.gtk.org/glib/const.DATALIST_FLAGS_MASK.html
 //
-// A bitmask that restricts the possible flags passed to
-// g_datalist_set_flags(). Passing a flags value where
-// flags &amp; ~G_DATALIST_FLAGS_MASK != 0 is an error.
 const DATALIST_FLAGS_MASK = 3
 // DATE_BAD_DAY wraps G_DATE_BAD_DAY
+// 
+// see also https://docs.gtk.org/glib/const.DATE_BAD_DAY.html
 //
-// Represents an invalid #GDateDay.
 const DATE_BAD_DAY = 0
 // DATE_BAD_JULIAN wraps G_DATE_BAD_JULIAN
+// 
+// see also https://docs.gtk.org/glib/const.DATE_BAD_JULIAN.html
 //
-// Represents an invalid Julian day number.
 const DATE_BAD_JULIAN = 0
 // DATE_BAD_YEAR wraps G_DATE_BAD_YEAR
+// 
+// see also https://docs.gtk.org/glib/const.DATE_BAD_YEAR.html
 //
-// Represents an invalid year.
 const DATE_BAD_YEAR = 0
 // DIR_SEPARATOR wraps G_DIR_SEPARATOR
-//
-// The directory separator character.
 // 
-// This is `'/'` on UNIX machines and `'\'` under Windows.
+// see also https://docs.gtk.org/glib/const.DIR_SEPARATOR.html
+//
 const DIR_SEPARATOR = 47
 // E wraps G_E
+// 
+// see also https://docs.gtk.org/glib/const.E.html
 //
-// The base of natural logarithms.
 const E = 2.718282
 // HAVE_GINT64 wraps G_HAVE_GINT64
+// 
+// see also https://docs.gtk.org/glib/const.HAVE_GINT64.html
 const HAVE_GINT64 = 1
 // HAVE_GNUC_VARARGS wraps G_HAVE_GNUC_VARARGS
+// 
+// see also https://docs.gtk.org/glib/const.HAVE_GNUC_VARARGS.html
 const HAVE_GNUC_VARARGS = 1
 // HAVE_GNUC_VISIBILITY wraps G_HAVE_GNUC_VISIBILITY
+// 
+// see also https://docs.gtk.org/glib/const.HAVE_GNUC_VISIBILITY.html
 //
-// Defined to 1 if gcc-style visibility handling is supported.
 const HAVE_GNUC_VISIBILITY = 1
 // HAVE_GROWING_STACK wraps G_HAVE_GROWING_STACK
+// 
+// see also https://docs.gtk.org/glib/const.HAVE_GROWING_STACK.html
 const HAVE_GROWING_STACK = 0
 // HAVE_ISO_VARARGS wraps G_HAVE_ISO_VARARGS
+// 
+// see also https://docs.gtk.org/glib/const.HAVE_ISO_VARARGS.html
 const HAVE_ISO_VARARGS = 1
 // HOOK_FLAG_USER_SHIFT wraps G_HOOK_FLAG_USER_SHIFT
+// 
+// see also https://docs.gtk.org/glib/const.HOOK_FLAG_USER_SHIFT.html
 //
-// The position of the first bit which is not reserved for internal
-// use be the #GHook implementation, i.e.
-// `1 &lt;&lt; G_HOOK_FLAG_USER_SHIFT` is the first
-// bit which can be used for application-defined flags.
 const HOOK_FLAG_USER_SHIFT = 4
 // IEEE754_DOUBLE_BIAS wraps G_IEEE754_DOUBLE_BIAS
+// 
+// see also https://docs.gtk.org/glib/const.IEEE754_DOUBLE_BIAS.html
 //
-// The bias by which exponents in double-precision floats are offset.
 const IEEE754_DOUBLE_BIAS = 1023
 // IEEE754_FLOAT_BIAS wraps G_IEEE754_FLOAT_BIAS
+// 
+// see also https://docs.gtk.org/glib/const.IEEE754_FLOAT_BIAS.html
 //
-// The bias by which exponents in single-precision floats are offset.
 const IEEE754_FLOAT_BIAS = 127
 // LITTLE_ENDIAN wraps G_LITTLE_ENDIAN
+// 
+// see also https://docs.gtk.org/glib/const.LITTLE_ENDIAN.html
 //
-// Specifies one of the possible types of byte order.
-// See %G_BYTE_ORDER.
 const LITTLE_ENDIAN = 1234
 // LN10 wraps G_LN10
+// 
+// see also https://docs.gtk.org/glib/const.LN10.html
 //
-// The natural logarithm of 10.
 const LN10 = 2.302585
 // LN2 wraps G_LN2
+// 
+// see also https://docs.gtk.org/glib/const.LN2.html
 //
-// The natural logarithm of 2.
 const LN2 = 0.693147
 // LOG_2_BASE_10 wraps G_LOG_2_BASE_10
+// 
+// see also https://docs.gtk.org/glib/const.LOG_2_BASE_10.html
 //
-// Multiplying the base 2 exponent by this number yields the base 10 exponent.
 const LOG_2_BASE_10 = 0.301030
 // LOG_DOMAIN wraps G_LOG_DOMAIN
+// 
+// see also https://docs.gtk.org/glib/const.LOG_DOMAIN.html
 //
-// Defines the log domain. See [Log Domains](#log-domains).
-// 
-// Libraries should define this so that any messages
-// which they log can be differentiated from messages from other
-// libraries and application code. But be careful not to define
-// it in any public header files.
-// 
-// Log domains must be unique, and it is recommended that they are the
-// application or library name, optionally followed by a hyphen and a sub-domain
-// name. For example, `bloatpad` or `bloatpad-io`.
-// 
-// If undefined, it defaults to the default %NULL (or `""`) log domain; this is
-// not advisable, as it cannot be filtered against using the `G_MESSAGES_DEBUG`
-// environment variable.
-// 
-// For example, GTK uses this in its `Makefile.am`:
-// |[
-// AM_CPPFLAGS = -DG_LOG_DOMAIN=\"Gtk\"
-// ]|
-// 
-// Applications can choose to leave it as the default %NULL (or `""`)
-// domain. However, defining the domain offers the same advantages as
-// above.
 const LOG_DOMAIN = 0
 // LOG_FATAL_MASK wraps G_LOG_FATAL_MASK
-//
-// GLib log levels that are considered fatal by default.
 // 
-// This is not used if structured logging is enabled; see
-// [Using Structured Logging](logging.html#using-structured-logging).
+// see also https://docs.gtk.org/glib/const.LOG_FATAL_MASK.html
+//
 const LOG_FATAL_MASK = 5
 // LOG_LEVEL_USER_SHIFT wraps G_LOG_LEVEL_USER_SHIFT
+// 
+// see also https://docs.gtk.org/glib/const.LOG_LEVEL_USER_SHIFT.html
 //
-// Log levels below `1&lt;&lt;G_LOG_LEVEL_USER_SHIFT` are used by GLib.
-// Higher bits can be used for user-defined log levels.
 const LOG_LEVEL_USER_SHIFT = 8
 // MAJOR_VERSION wraps GLIB_MAJOR_VERSION
-//
-// The major version number of the GLib library.
 // 
-// Like #glib_major_version, but from the headers used at
-// application compile time, rather than from the library
-// linked against at application run time.
+// see also https://docs.gtk.org/glib/const.MAJOR_VERSION.html
+//
 const MAJOR_VERSION = 2
 // MAXINT16 wraps G_MAXINT16
+// 
+// see also https://docs.gtk.org/glib/const.MAXINT16.html
 const MAXINT16 = 32767
 // MAXINT32 wraps G_MAXINT32
+// 
+// see also https://docs.gtk.org/glib/const.MAXINT32.html
 const MAXINT32 = 2147483647
 // MAXINT64 wraps G_MAXINT64
+// 
+// see also https://docs.gtk.org/glib/const.MAXINT64.html
 const MAXINT64 = 9223372036854775807
 // MAXINT8 wraps G_MAXINT8
+// 
+// see also https://docs.gtk.org/glib/const.MAXINT8.html
 const MAXINT8 = 127
 // MAXUINT16 wraps G_MAXUINT16
+// 
+// see also https://docs.gtk.org/glib/const.MAXUINT16.html
 const MAXUINT16 = 65535
 // MAXUINT32 wraps G_MAXUINT32
+// 
+// see also https://docs.gtk.org/glib/const.MAXUINT32.html
 const MAXUINT32 = 4294967295
 // MAXUINT64 wraps G_MAXUINT64
+// 
+// see also https://docs.gtk.org/glib/const.MAXUINT64.html
 const MAXUINT64 = 18446744073709551615
 // MAXUINT8 wraps G_MAXUINT8
+// 
+// see also https://docs.gtk.org/glib/const.MAXUINT8.html
 const MAXUINT8 = 255
 // MICRO_VERSION wraps GLIB_MICRO_VERSION
-//
-// The micro version number of the GLib library.
 // 
-// Like #gtk_micro_version, but from the headers used at
-// application compile time, rather than from the library
-// linked against at application run time.
+// see also https://docs.gtk.org/glib/const.MICRO_VERSION.html
+//
 const MICRO_VERSION = 1
 // MININT16 wraps G_MININT16
+// 
+// see also https://docs.gtk.org/glib/const.MININT16.html
 //
-// The minimum value which can be held in a #gint16.
 const MININT16 = -32768
 // MININT32 wraps G_MININT32
+// 
+// see also https://docs.gtk.org/glib/const.MININT32.html
 //
-// The minimum value which can be held in a #gint32.
 const MININT32 = -2147483648
 // MININT64 wraps G_MININT64
+// 
+// see also https://docs.gtk.org/glib/const.MININT64.html
 //
-// The minimum value which can be held in a #gint64.
 const MININT64 = -9223372036854775808
 // MININT8 wraps G_MININT8
+// 
+// see also https://docs.gtk.org/glib/const.MININT8.html
 //
-// The minimum value which can be held in a #gint8.
 const MININT8 = -128
 // MINOR_VERSION wraps GLIB_MINOR_VERSION
-//
-// The minor version number of the GLib library.
 // 
-// Like #gtk_minor_version, but from the headers used at
-// application compile time, rather than from the library
-// linked against at application run time.
+// see also https://docs.gtk.org/glib/const.MINOR_VERSION.html
+//
 const MINOR_VERSION = 85
 // PDP_ENDIAN wraps G_PDP_ENDIAN
+// 
+// see also https://docs.gtk.org/glib/const.PDP_ENDIAN.html
 //
-// Specifies one of the possible types of byte order
-// (currently unused). See %G_BYTE_ORDER.
 const PDP_ENDIAN = 3412
 // PI wraps G_PI
+// 
+// see also https://docs.gtk.org/glib/const.PI.html
 //
-// The value of pi (ratio of circle's circumference to its diameter).
 const PI = 3.141593
 // PI_2 wraps G_PI_2
+// 
+// see also https://docs.gtk.org/glib/const.PI_2.html
 //
-// Pi divided by 2.
 const PI_2 = 1.570796
 // PI_4 wraps G_PI_4
+// 
+// see also https://docs.gtk.org/glib/const.PI_4.html
 //
-// Pi divided by 4.
 const PI_4 = 0.785398
 // PRIORITY_DEFAULT wraps G_PRIORITY_DEFAULT
-//
-// Use this for default priority event sources.
 // 
-// In GLib this priority is used when adding timeout functions
-// with [func@GLib.timeout_add]. In GDK this priority is used for events
-// from the X server.
+// see also https://docs.gtk.org/glib/const.PRIORITY_DEFAULT.html
+//
 const PRIORITY_DEFAULT = 0
 // PRIORITY_DEFAULT_IDLE wraps G_PRIORITY_DEFAULT_IDLE
-//
-// Use this for default priority idle functions.
 // 
-// In GLib this priority is used when adding idle functions with
-// [func@GLib.idle_add].
+// see also https://docs.gtk.org/glib/const.PRIORITY_DEFAULT_IDLE.html
+//
 const PRIORITY_DEFAULT_IDLE = 200
 // PRIORITY_HIGH wraps G_PRIORITY_HIGH
-//
-// Use this for high priority event sources.
 // 
-// It is not used within GLib or GTK.
+// see also https://docs.gtk.org/glib/const.PRIORITY_HIGH.html
+//
 const PRIORITY_HIGH = -100
 // PRIORITY_HIGH_IDLE wraps G_PRIORITY_HIGH_IDLE
-//
-// Use this for high priority idle functions.
 // 
-// GTK uses %G_PRIORITY_HIGH_IDLE + 10 for resizing operations,
-// and %G_PRIORITY_HIGH_IDLE + 20 for redrawing operations. (This is
-// done to ensure that any pending resizes are processed before any
-// pending redraws, so that widgets are not redrawn twice unnecessarily.)
+// see also https://docs.gtk.org/glib/const.PRIORITY_HIGH_IDLE.html
+//
 const PRIORITY_HIGH_IDLE = 100
 // PRIORITY_LOW wraps G_PRIORITY_LOW
-//
-// Use this for very low priority background tasks.
 // 
-// It is not used within GLib or GTK.
+// see also https://docs.gtk.org/glib/const.PRIORITY_LOW.html
+//
 const PRIORITY_LOW = 300
 // REF_COUNT_INIT wraps G_REF_COUNT_INIT
+// 
+// see also https://docs.gtk.org/glib/const.REF_COUNT_INIT.html
 //
-// Evaluates to the initial reference count for `grefcount`.
-// 
-// This macro is useful for initializing `grefcount` fields inside
-// structures, for instance:
-// 
-// |[&lt;!-- language="C" --&gt;
-// typedef struct {
-//   grefcount ref_count;
-//   char *name;
-//   char *address;
-// } Person;
-// 
-// static const Person default_person = {
-//   .ref_count = G_REF_COUNT_INIT,
-//   .name = "Default name",
-//   .address = "Default address",
-// };
-// ]|
 const REF_COUNT_INIT = -1
 // SEARCHPATH_SEPARATOR wraps G_SEARCHPATH_SEPARATOR
+// 
+// see also https://docs.gtk.org/glib/const.SEARCHPATH_SEPARATOR.html
 //
-// The search path separator character.
-// This is ':' on UNIX machines and ';' under Windows.
 const SEARCHPATH_SEPARATOR = 58
 // SIZEOF_LONG wraps GLIB_SIZEOF_LONG
+// 
+// see also https://docs.gtk.org/glib/const.SIZEOF_LONG.html
 const SIZEOF_LONG = 8
 // SIZEOF_SIZE_T wraps GLIB_SIZEOF_SIZE_T
+// 
+// see also https://docs.gtk.org/glib/const.SIZEOF_SIZE_T.html
 const SIZEOF_SIZE_T = 8
 // SIZEOF_SSIZE_T wraps GLIB_SIZEOF_SSIZE_T
+// 
+// see also https://docs.gtk.org/glib/const.SIZEOF_SSIZE_T.html
 const SIZEOF_SSIZE_T = 8
 // SIZEOF_VOID_P wraps GLIB_SIZEOF_VOID_P
+// 
+// see also https://docs.gtk.org/glib/const.SIZEOF_VOID_P.html
 const SIZEOF_VOID_P = 8
 // SQRT2 wraps G_SQRT2
+// 
+// see also https://docs.gtk.org/glib/const.SQRT2.html
 //
-// The square root of two.
 const SQRT2 = 1.414214
 // SYSDEF_AF_INET wraps GLIB_SYSDEF_AF_INET
+// 
+// see also https://docs.gtk.org/glib/const.SYSDEF_AF_INET.html
 const SYSDEF_AF_INET = 2
 // SYSDEF_AF_INET6 wraps GLIB_SYSDEF_AF_INET6
+// 
+// see also https://docs.gtk.org/glib/const.SYSDEF_AF_INET6.html
 const SYSDEF_AF_INET6 = 10
 // SYSDEF_AF_UNIX wraps GLIB_SYSDEF_AF_UNIX
+// 
+// see also https://docs.gtk.org/glib/const.SYSDEF_AF_UNIX.html
 const SYSDEF_AF_UNIX = 1
 // SYSDEF_MSG_DONTROUTE wraps GLIB_SYSDEF_MSG_DONTROUTE
+// 
+// see also https://docs.gtk.org/glib/const.SYSDEF_MSG_DONTROUTE.html
 const SYSDEF_MSG_DONTROUTE = 4
 // SYSDEF_MSG_OOB wraps GLIB_SYSDEF_MSG_OOB
+// 
+// see also https://docs.gtk.org/glib/const.SYSDEF_MSG_OOB.html
 const SYSDEF_MSG_OOB = 1
 // SYSDEF_MSG_PEEK wraps GLIB_SYSDEF_MSG_PEEK
+// 
+// see also https://docs.gtk.org/glib/const.SYSDEF_MSG_PEEK.html
 const SYSDEF_MSG_PEEK = 2
 // TIME_SPAN_DAY wraps G_TIME_SPAN_DAY
+// 
+// see also https://docs.gtk.org/glib/const.TIME_SPAN_DAY.html
 //
-// Evaluates to a time span of one day.
 const TIME_SPAN_DAY = 86400000000
 // TIME_SPAN_HOUR wraps G_TIME_SPAN_HOUR
+// 
+// see also https://docs.gtk.org/glib/const.TIME_SPAN_HOUR.html
 //
-// Evaluates to a time span of one hour.
 const TIME_SPAN_HOUR = 3600000000
 // TIME_SPAN_MILLISECOND wraps G_TIME_SPAN_MILLISECOND
+// 
+// see also https://docs.gtk.org/glib/const.TIME_SPAN_MILLISECOND.html
 //
-// Evaluates to a time span of one millisecond.
 const TIME_SPAN_MILLISECOND = 1000
 // TIME_SPAN_MINUTE wraps G_TIME_SPAN_MINUTE
+// 
+// see also https://docs.gtk.org/glib/const.TIME_SPAN_MINUTE.html
 //
-// Evaluates to a time span of one minute.
 const TIME_SPAN_MINUTE = 60000000
 // TIME_SPAN_SECOND wraps G_TIME_SPAN_SECOND
+// 
+// see also https://docs.gtk.org/glib/const.TIME_SPAN_SECOND.html
 //
-// Evaluates to a time span of one second.
 const TIME_SPAN_SECOND = 1000000
 // UNICHAR_MAX_DECOMPOSITION_LENGTH wraps G_UNICHAR_MAX_DECOMPOSITION_LENGTH
-//
-// The maximum length (in codepoints) of a compatibility or canonical
-// decomposition of a single Unicode character.
 // 
-// This is as defined by Unicode 6.1.
+// see also https://docs.gtk.org/glib/const.UNICHAR_MAX_DECOMPOSITION_LENGTH.html
+//
 const UNICHAR_MAX_DECOMPOSITION_LENGTH = 18
 // USEC_PER_SEC wraps G_USEC_PER_SEC
+// 
+// see also https://docs.gtk.org/glib/const.USEC_PER_SEC.html
 //
-// Number of microseconds in one second (1 million).
-// This macro is provided for code readability.
 const USEC_PER_SEC = 1000000
 // VA_COPY_AS_ARRAY wraps G_VA_COPY_AS_ARRAY
+// 
+// see also https://docs.gtk.org/glib/const.VA_COPY_AS_ARRAY.html
 const VA_COPY_AS_ARRAY = 1
 // VERSION_MIN_REQUIRED wraps GLIB_VERSION_MIN_REQUIRED
+// 
+// see also https://docs.gtk.org/glib/const.VERSION_MIN_REQUIRED.html
 //
-// A macro that should be defined by the user prior to including
-// the glib.h header.
-// The definition should be one of the predefined GLib version
-// macros: %GLIB_VERSION_2_26, %GLIB_VERSION_2_28,...
-// 
-// This macro defines the earliest version of GLib that the package is
-// required to be able to compile against.
-// 
-// If the compiler is configured to warn about the use of deprecated
-// functions, then using functions that were deprecated in version
-// %GLIB_VERSION_MIN_REQUIRED or earlier will cause warnings (but
-// using functions deprecated in later releases will not).
 const VERSION_MIN_REQUIRED = 2
 // WIN32_MSG_HANDLE wraps G_WIN32_MSG_HANDLE
+// 
+// see also https://docs.gtk.org/glib/const.WIN32_MSG_HANDLE.html
 const WIN32_MSG_HANDLE = 19981206
 // macro__has_attribute___noreturn__ wraps g_macro__has_attribute___noreturn__
+// 
+// see also https://docs.gtk.org/glib/const.macro__has_attribute___noreturn__.html
 const macro__has_attribute___noreturn__ = 0
 // macro__has_attribute_ifunc wraps g_macro__has_attribute_ifunc
+// 
+// see also https://docs.gtk.org/glib/const.macro__has_attribute_ifunc.html
 const macro__has_attribute_ifunc = 0
 // macro__has_attribute_no_sanitize_address wraps g_macro__has_attribute_no_sanitize_address
+// 
+// see also https://docs.gtk.org/glib/const.macro__has_attribute_no_sanitize_address.html
 const macro__has_attribute_no_sanitize_address = 0
 // Pid wraps GPid
+// 
+// see also https://docs.gtk.org/glib/alias.Pid.html
 //
-// A type which is used to hold a process identification.
-// 
-// On UNIX, processes are identified by a process id (an integer),
-// while Windows uses process handles (which are pointers).
-// 
-// GPid is used in GLib only for descendant processes spawned with
-// the g_spawn functions.
 type Pid = int32
 // Quark wraps GQuark
+// 
+// see also https://docs.gtk.org/glib/alias.Quark.html
 //
-// A GQuark is a non-zero integer which uniquely identifies a
-// particular string.
-// 
-// A GQuark value of zero is associated to `NULL`.
-// 
-// Given either the string or the `GQuark` identifier it is possible to
-// retrieve the other.
-// 
-// Quarks are used for both
-// [datasets and keyed data lists](datalist-and-dataset.html).
-// 
-// To create a new quark from a string, use [func@GLib.quark_from_string]
-// or [func@GLib.quark_from_static_string].
-// 
-// To find the string corresponding to a given `GQuark`, use
-// [func@GLib.quark_to_string].
-// 
-// To find the `GQuark` corresponding to a given string, use
-// [func@GLib.quark_try_string].
-// 
-// Another use for the string pool maintained for the quark functions
-// is string interning, using [func@GLib.intern_string] or
-// [func@GLib.intern_static_string]. An interned string is a canonical
-// representation for a string. One important advantage of interned
-// strings is that they can be compared for equality by a simple
-// pointer comparison, rather than using `strcmp()`.
 type Quark = uint32
 // RefString wraps GRefString
-//
-// A typedef for a reference-counted string. A pointer to a #GRefString can be
-// treated like a standard `char*` array by all code, but can additionally have
-// `g_ref_string_*()` methods called on it. `g_ref_string_*()` methods cannot be
-// called on `char*` arrays not allocated using g_ref_string_new().
 // 
-// If using #GRefString with autocleanups, g_autoptr() must be used rather than
-// g_autofree(), so that the reference counting metadata is also freed.
+// see also https://docs.gtk.org/glib/alias.RefString.html
+//
 type RefString = byte
 // TimeSpan wraps GTimeSpan
+// 
+// see also https://docs.gtk.org/glib/alias.TimeSpan.html
 //
-// A value representing an interval of time, in microseconds.
 type TimeSpan = int64
 // BookmarkFileError wraps GBookmarkFileError
+// 
+// see also https://docs.gtk.org/glib/enum.BookmarkFileError.html
 //
-// Error codes returned by bookmark file parsing.
 type BookmarkFileError C.int
 
 const (
 	// BookmarkFileErrorInvalidURI wraps G_BOOKMARK_FILE_ERROR_INVALID_URI
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#invalid_uri
 	//
-	// URI was ill-formed
 	BookmarkFileErrorInvalidURI BookmarkFileError = 0
 	// BookmarkFileErrorInvalidValue wraps G_BOOKMARK_FILE_ERROR_INVALID_VALUE
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#invalid_value
 	//
-	// a requested field was not found
 	BookmarkFileErrorInvalidValue BookmarkFileError = 1
 	// BookmarkFileErrorAppNotRegistered wraps G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#app_not_registered
 	//
-	// a requested application did
-	//     not register a bookmark
 	BookmarkFileErrorAppNotRegistered BookmarkFileError = 2
 	// BookmarkFileErrorURINotFound wraps G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#uri_not_found
 	//
-	// a requested URI was not found
 	BookmarkFileErrorURINotFound BookmarkFileError = 3
 	// BookmarkFileErrorRead wraps G_BOOKMARK_FILE_ERROR_READ
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#read
 	//
-	// document was ill formed
 	BookmarkFileErrorRead BookmarkFileError = 4
 	// BookmarkFileErrorUnknownEncoding wraps G_BOOKMARK_FILE_ERROR_UNKNOWN_ENCODING
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#unknown_encoding
 	//
-	// the text being parsed was
-	//     in an unknown encoding
 	BookmarkFileErrorUnknownEncoding BookmarkFileError = 5
 	// BookmarkFileErrorWrite wraps G_BOOKMARK_FILE_ERROR_WRITE
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#write
 	//
-	// an error occurred while writing
 	BookmarkFileErrorWrite BookmarkFileError = 6
 	// BookmarkFileErrorFileNotFound wraps G_BOOKMARK_FILE_ERROR_FILE_NOT_FOUND
+	// 
+	// see also https://docs.gtk.org/glib/flags.BookmarkFileError.html#file_not_found
 	//
-	// requested file was not found
 	BookmarkFileErrorFileNotFound BookmarkFileError = 7
 )
 
@@ -492,34 +455,36 @@ func (e BookmarkFileError) String() string {
 }
 
 // ChecksumType wraps GChecksumType
-//
-// The hashing algorithm to be used by #GChecksum when performing the
-// digest of some data.
 // 
-// Note that the #GChecksumType enumeration may be extended at a later
-// date to include new hashing algorithm types.
+// see also https://docs.gtk.org/glib/enum.ChecksumType.html
+//
 type ChecksumType C.int
 
 const (
 	// ChecksumMD5 wraps G_CHECKSUM_MD5
+	// 
+	// see also https://docs.gtk.org/glib/flags.ChecksumType.html#md5
 	//
-	// Use the MD5 hashing algorithm
 	ChecksumMD5 ChecksumType = 0
 	// ChecksumSHA1 wraps G_CHECKSUM_SHA1
+	// 
+	// see also https://docs.gtk.org/glib/flags.ChecksumType.html#sha1
 	//
-	// Use the SHA-1 hashing algorithm
 	ChecksumSHA1 ChecksumType = 1
 	// ChecksumSHA256 wraps G_CHECKSUM_SHA256
+	// 
+	// see also https://docs.gtk.org/glib/flags.ChecksumType.html#sha256
 	//
-	// Use the SHA-256 hashing algorithm
 	ChecksumSHA256 ChecksumType = 2
 	// ChecksumSHA512 wraps G_CHECKSUM_SHA512
+	// 
+	// see also https://docs.gtk.org/glib/flags.ChecksumType.html#sha512
 	//
-	// Use the SHA-512 hashing algorithm (Since: 2.36)
 	ChecksumSHA512 ChecksumType = 3
 	// ChecksumSHA384 wraps G_CHECKSUM_SHA384
+	// 
+	// see also https://docs.gtk.org/glib/flags.ChecksumType.html#sha384
 	//
-	// Use the SHA-384 hashing algorithm (Since: 2.51)
 	ChecksumSHA384 ChecksumType = 4
 )
 
@@ -536,47 +501,51 @@ func (e ChecksumType) String() string {
 }
 
 // ConvertError wraps GConvertError
+// 
+// see also https://docs.gtk.org/glib/enum.ConvertError.html
 //
-// Error codes returned by character set conversion routines.
 type ConvertError C.int
 
 const (
 	// ConvertErrorNoConversion wraps G_CONVERT_ERROR_NO_CONVERSION
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#no_conversion
 	//
-	// Conversion between the requested character
-	//     sets is not supported.
 	ConvertErrorNoConversion ConvertError = 0
 	// ConvertErrorIllegalSequence wraps G_CONVERT_ERROR_ILLEGAL_SEQUENCE
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#illegal_sequence
 	//
-	// Invalid byte sequence in conversion input;
-	//    or the character sequence could not be represented in the target
-	//    character set.
 	ConvertErrorIllegalSequence ConvertError = 1
 	// ConvertErrorFailed wraps G_CONVERT_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#failed
 	//
-	// Conversion failed for some reason.
 	ConvertErrorFailed ConvertError = 2
 	// ConvertErrorPartialInput wraps G_CONVERT_ERROR_PARTIAL_INPUT
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#partial_input
 	//
-	// Partial character sequence at end of input.
 	ConvertErrorPartialInput ConvertError = 3
 	// ConvertErrorBadURI wraps G_CONVERT_ERROR_BAD_URI
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#bad_uri
 	//
-	// URI is invalid.
 	ConvertErrorBadURI ConvertError = 4
 	// ConvertErrorNotAbsolutePath wraps G_CONVERT_ERROR_NOT_ABSOLUTE_PATH
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#not_absolute_path
 	//
-	// Pathname is not an absolute path.
 	ConvertErrorNotAbsolutePath ConvertError = 5
 	// ConvertErrorNoMemory wraps G_CONVERT_ERROR_NO_MEMORY
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#no_memory
 	//
-	// No memory available. Since: 2.40
 	ConvertErrorNoMemory ConvertError = 6
 	// ConvertErrorEmbeddedNul wraps G_CONVERT_ERROR_EMBEDDED_NUL
+	// 
+	// see also https://docs.gtk.org/glib/flags.ConvertError.html#embedded_nul
 	//
-	// An embedded NUL character is present in
-	//     conversion output where a NUL-terminated string is expected.
-	//     Since: 2.56
 	ConvertErrorEmbeddedNul ConvertError = 7
 )
 
@@ -596,43 +565,51 @@ func (e ConvertError) String() string {
 }
 
 // ErrorType wraps GErrorType
+// 
+// see also https://docs.gtk.org/glib/enum.ErrorType.html
 //
-// The possible errors, used in the @v_error field
-// of #GTokenValue, when the token is a %G_TOKEN_ERROR.
 type ErrorType C.int
 
 const (
 	// ErrUnknown wraps G_ERR_UNKNOWN
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#unknown
 	//
-	// unknown error
 	ErrUnknown ErrorType = 0
 	// ErrUnexpEOF wraps G_ERR_UNEXP_EOF
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#unexp_eof
 	//
-	// unexpected end of file
 	ErrUnexpEOF ErrorType = 1
 	// ErrUnexpEOFInString wraps G_ERR_UNEXP_EOF_IN_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#unexp_eof_in_string
 	//
-	// unterminated string constant
 	ErrUnexpEOFInString ErrorType = 2
 	// ErrUnexpEOFInComment wraps G_ERR_UNEXP_EOF_IN_COMMENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#unexp_eof_in_comment
 	//
-	// unterminated comment
 	ErrUnexpEOFInComment ErrorType = 3
 	// ErrNonDigitInConst wraps G_ERR_NON_DIGIT_IN_CONST
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#non_digit_in_const
 	//
-	// non-digit character in a number
 	ErrNonDigitInConst ErrorType = 4
 	// ErrDigitRadix wraps G_ERR_DIGIT_RADIX
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#digit_radix
 	//
-	// digit beyond radix in a number
 	ErrDigitRadix ErrorType = 5
 	// ErrFloatRadix wraps G_ERR_FLOAT_RADIX
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#float_radix
 	//
-	// non-decimal floating point number
 	ErrFloatRadix ErrorType = 6
 	// ErrFloatMalformed wraps G_ERR_FLOAT_MALFORMED
+	// 
+	// see also https://docs.gtk.org/glib/flags.ErrorType.html#float_malformed
 	//
-	// malformed floating point number
 	ErrFloatMalformed ErrorType = 7
 )
 
@@ -652,163 +629,136 @@ func (e ErrorType) String() string {
 }
 
 // FileError wraps GFileError
-//
-// Values corresponding to @errno codes returned from file operations
-// on UNIX. Unlike @errno codes, GFileError values are available on
-// all systems, even Windows. The exact meaning of each code depends
-// on what sort of file operation you were performing; the UNIX
-// documentation gives more details. The following error code descriptions
-// come from the GNU C Library manual, and are under the copyright
-// of that manual.
 // 
-// It's not very portable to make detailed assumptions about exactly
-// which errors will be returned from a given operation. Some errors
-// don't occur on some systems, etc., sometimes there are subtle
-// differences in when a system will report a given error, etc.
+// see also https://docs.gtk.org/glib/enum.FileError.html
+//
 type FileError C.int
 
 const (
 	// FileErrorExist wraps G_FILE_ERROR_EXIST
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#exist
 	//
-	// Operation not permitted; only the owner of
-	//     the file (or other resource) or processes with special privileges
-	//     can perform the operation.
 	FileErrorExist FileError = 0
 	// FileErrorIsdir wraps G_FILE_ERROR_ISDIR
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#isdir
 	//
-	// File is a directory; you cannot open a directory
-	//     for writing, or create or remove hard links to it.
 	FileErrorIsdir FileError = 1
 	// FileErrorAcces wraps G_FILE_ERROR_ACCES
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#acces
 	//
-	// Permission denied; the file permissions do not
-	//     allow the attempted operation.
 	FileErrorAcces FileError = 2
 	// FileErrorNametoolong wraps G_FILE_ERROR_NAMETOOLONG
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#nametoolong
 	//
-	// Filename too long.
 	FileErrorNametoolong FileError = 3
 	// FileErrorNoent wraps G_FILE_ERROR_NOENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#noent
 	//
-	// No such file or directory. This is a "file
-	//     doesn't exist" error for ordinary files that are referenced in
-	//     contexts where they are expected to already exist.
 	FileErrorNoent FileError = 4
 	// FileErrorNotdir wraps G_FILE_ERROR_NOTDIR
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#notdir
 	//
-	// A file that isn't a directory was specified when
-	//     a directory is required.
 	FileErrorNotdir FileError = 5
 	// FileErrorNxio wraps G_FILE_ERROR_NXIO
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#nxio
 	//
-	// No such device or address. The system tried to
-	//     use the device represented by a file you specified, and it
-	//     couldn't find the device. This can mean that the device file was
-	//     installed incorrectly, or that the physical device is missing or
-	//     not correctly attached to the computer.
 	FileErrorNxio FileError = 6
 	// FileErrorNodev wraps G_FILE_ERROR_NODEV
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#nodev
 	//
-	// The underlying file system of the specified file
-	//     does not support memory mapping.
 	FileErrorNodev FileError = 7
 	// FileErrorRofs wraps G_FILE_ERROR_ROFS
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#rofs
 	//
-	// The directory containing the new link can't be
-	//     modified because it's on a read-only file system.
 	FileErrorRofs FileError = 8
 	// FileErrorTxtbsy wraps G_FILE_ERROR_TXTBSY
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#txtbsy
 	//
-	// Text file busy.
 	FileErrorTxtbsy FileError = 9
 	// FileErrorFault wraps G_FILE_ERROR_FAULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#fault
 	//
-	// You passed in a pointer to bad memory.
-	//     (GLib won't reliably return this, don't pass in pointers to bad
-	//     memory.)
 	FileErrorFault FileError = 10
 	// FileErrorLoop wraps G_FILE_ERROR_LOOP
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#loop
 	//
-	// Too many levels of symbolic links were encountered
-	//     in looking up a file name. This often indicates a cycle of symbolic
-	//     links.
 	FileErrorLoop FileError = 11
 	// FileErrorNospc wraps G_FILE_ERROR_NOSPC
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#nospc
 	//
-	// No space left on device; write operation on a
-	//     file failed because the disk is full.
 	FileErrorNospc FileError = 12
 	// FileErrorNomem wraps G_FILE_ERROR_NOMEM
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#nomem
 	//
-	// No memory available. The system cannot allocate
-	//     more virtual memory because its capacity is full.
 	FileErrorNomem FileError = 13
 	// FileErrorMfile wraps G_FILE_ERROR_MFILE
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#mfile
 	//
-	// The current process has too many files open and
-	//     can't open any more. Duplicate descriptors do count toward this
-	//     limit.
 	FileErrorMfile FileError = 14
 	// FileErrorNfile wraps G_FILE_ERROR_NFILE
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#nfile
 	//
-	// There are too many distinct file openings in the
-	//     entire system.
 	FileErrorNfile FileError = 15
 	// FileErrorBadf wraps G_FILE_ERROR_BADF
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#badf
 	//
-	// Bad file descriptor; for example, I/O on a
-	//     descriptor that has been closed or reading from a descriptor open
-	//     only for writing (or vice versa).
 	FileErrorBadf FileError = 16
 	// FileErrorInval wraps G_FILE_ERROR_INVAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#inval
 	//
-	// Invalid argument. This is used to indicate
-	//     various kinds of problems with passing the wrong argument to a
-	//     library function.
 	FileErrorInval FileError = 17
 	// FileErrorPipe wraps G_FILE_ERROR_PIPE
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#pipe
 	//
-	// Broken pipe; there is no process reading from the
-	//     other end of a pipe. Every library function that returns this
-	//     error code also generates a 'SIGPIPE' signal; this signal
-	//     terminates the program if not handled or blocked. Thus, your
-	//     program will never actually see this code unless it has handled
-	//     or blocked 'SIGPIPE'.
 	FileErrorPipe FileError = 18
 	// FileErrorAgain wraps G_FILE_ERROR_AGAIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#again
 	//
-	// Resource temporarily unavailable; the call might
-	//     work if you try again later.
 	FileErrorAgain FileError = 19
 	// FileErrorIntr wraps G_FILE_ERROR_INTR
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#intr
 	//
-	// Interrupted function call; an asynchronous signal
-	//     occurred and prevented completion of the call. When this
-	//     happens, you should try the call again.
 	FileErrorIntr FileError = 20
 	// FileErrorIO wraps G_FILE_ERROR_IO
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#io
 	//
-	// Input/output error; usually used for physical read
-	//    or write errors. i.e. the disk or other physical device hardware
-	//    is returning errors.
 	FileErrorIO FileError = 21
 	// FileErrorPerm wraps G_FILE_ERROR_PERM
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#perm
 	//
-	// Operation not permitted; only the owner of the
-	//    file (or other resource) or processes with special privileges can
-	//    perform the operation.
 	FileErrorPerm FileError = 22
 	// FileErrorNosys wraps G_FILE_ERROR_NOSYS
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#nosys
 	//
-	// Function not implemented; this indicates that
-	//    the system is missing some functionality.
 	FileErrorNosys FileError = 23
 	// FileErrorFailed wraps G_FILE_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileError.html#failed
 	//
-	// Does not correspond to a UNIX error code; this
-	//    is the standard "failed for unspecified reason" error code present
-	//    in all #GError error code enumerations. Returned if no specific
-	//    code applies.
 	FileErrorFailed FileError = 24
 )
 
@@ -845,46 +795,56 @@ func (e FileError) String() string {
 }
 
 // IOChannelError wraps GIOChannelError
+// 
+// see also https://docs.gtk.org/glib/enum.IOChannelError.html
 //
-// Error codes returned by #GIOChannel operations.
 type IOChannelError C.int
 
 const (
 	// IOChannelErrorFbig wraps G_IO_CHANNEL_ERROR_FBIG
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#fbig
 	//
-	// File too large.
 	IOChannelErrorFbig IOChannelError = 0
 	// IOChannelErrorInval wraps G_IO_CHANNEL_ERROR_INVAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#inval
 	//
-	// Invalid argument.
 	IOChannelErrorInval IOChannelError = 1
 	// IOChannelErrorIO wraps G_IO_CHANNEL_ERROR_IO
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#io
 	//
-	// IO error.
 	IOChannelErrorIO IOChannelError = 2
 	// IOChannelErrorIsdir wraps G_IO_CHANNEL_ERROR_ISDIR
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#isdir
 	//
-	// File is a directory.
 	IOChannelErrorIsdir IOChannelError = 3
 	// IOChannelErrorNospc wraps G_IO_CHANNEL_ERROR_NOSPC
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#nospc
 	//
-	// No space left on device.
 	IOChannelErrorNospc IOChannelError = 4
 	// IOChannelErrorNxio wraps G_IO_CHANNEL_ERROR_NXIO
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#nxio
 	//
-	// No such device or address.
 	IOChannelErrorNxio IOChannelError = 5
 	// IOChannelErrorOverflow wraps G_IO_CHANNEL_ERROR_OVERFLOW
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#overflow
 	//
-	// Value too large for defined datatype.
 	IOChannelErrorOverflow IOChannelError = 6
 	// IOChannelErrorPipe wraps G_IO_CHANNEL_ERROR_PIPE
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#pipe
 	//
-	// Broken pipe.
 	IOChannelErrorPipe IOChannelError = 7
 	// IOChannelErrorFailed wraps G_IO_CHANNEL_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOChannelError.html#failed
 	//
-	// Some other error.
 	IOChannelErrorFailed IOChannelError = 8
 )
 
@@ -905,27 +865,31 @@ func (e IOChannelError) String() string {
 }
 
 // IOError wraps GIOError
+// 
+// see also https://docs.gtk.org/glib/enum.IOError.html
 //
-// #GIOError is only used by the deprecated functions
-// g_io_channel_read(), g_io_channel_write(), and g_io_channel_seek().
 type IOError C.int
 
 const (
 	// IOErrorNone wraps G_IO_ERROR_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOError.html#none
 	//
-	// no error
 	IOErrorNone IOError = 0
 	// IOErrorAgain wraps G_IO_ERROR_AGAIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOError.html#again
 	//
-	// an EAGAIN error occurred
 	IOErrorAgain IOError = 1
 	// IOErrorInval wraps G_IO_ERROR_INVAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOError.html#inval
 	//
-	// an EINVAL error occurred
 	IOErrorInval IOError = 2
 	// IOErrorUnknown wraps G_IO_ERROR_UNKNOWN
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOError.html#unknown
 	//
-	// another error occurred
 	IOErrorUnknown IOError = 3
 )
 
@@ -941,26 +905,31 @@ func (e IOError) String() string {
 }
 
 // IOStatus wraps GIOStatus
+// 
+// see also https://docs.gtk.org/glib/enum.IOStatus.html
 //
-// Statuses returned by most of the #GIOFuncs functions.
 type IOStatus C.int
 
 const (
 	// IOStatusError wraps G_IO_STATUS_ERROR
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOStatus.html#error
 	//
-	// An error occurred.
 	IOStatusError IOStatus = 0
 	// IOStatusNormal wraps G_IO_STATUS_NORMAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOStatus.html#normal
 	//
-	// Success.
 	IOStatusNormal IOStatus = 1
 	// IOStatusEOF wraps G_IO_STATUS_EOF
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOStatus.html#eof
 	//
-	// End of file.
 	IOStatusEOF IOStatus = 2
 	// IOStatusAgain wraps G_IO_STATUS_AGAIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOStatus.html#again
 	//
-	// Resource temporarily unavailable.
 	IOStatusAgain IOStatus = 3
 )
 
@@ -976,35 +945,41 @@ func (e IOStatus) String() string {
 }
 
 // KeyFileError wraps GKeyFileError
+// 
+// see also https://docs.gtk.org/glib/enum.KeyFileError.html
 //
-// Error codes returned by key file parsing.
 type KeyFileError C.int
 
 const (
 	// KeyFileErrorUnknownEncoding wraps G_KEY_FILE_ERROR_UNKNOWN_ENCODING
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileError.html#unknown_encoding
 	//
-	// the text being parsed was in
-	//   an unknown encoding
 	KeyFileErrorUnknownEncoding KeyFileError = 0
 	// KeyFileErrorParse wraps G_KEY_FILE_ERROR_PARSE
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileError.html#parse
 	//
-	// document was ill-formed
 	KeyFileErrorParse KeyFileError = 1
 	// KeyFileErrorNotFound wraps G_KEY_FILE_ERROR_NOT_FOUND
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileError.html#not_found
 	//
-	// the file was not found
 	KeyFileErrorNotFound KeyFileError = 2
 	// KeyFileErrorKeyNotFound wraps G_KEY_FILE_ERROR_KEY_NOT_FOUND
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileError.html#key_not_found
 	//
-	// a requested key was not found
 	KeyFileErrorKeyNotFound KeyFileError = 3
 	// KeyFileErrorGroupNotFound wraps G_KEY_FILE_ERROR_GROUP_NOT_FOUND
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileError.html#group_not_found
 	//
-	// a requested group was not found
 	KeyFileErrorGroupNotFound KeyFileError = 4
 	// KeyFileErrorInvalidValue wraps G_KEY_FILE_ERROR_INVALID_VALUE
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileError.html#invalid_value
 	//
-	// a value could not be parsed
 	KeyFileErrorInvalidValue KeyFileError = 5
 )
 
@@ -1022,23 +997,21 @@ func (e KeyFileError) String() string {
 }
 
 // LogWriterOutput wraps GLogWriterOutput
-//
-// Return values from #GLogWriterFuncs to indicate whether the given log entry
-// was successfully handled by the writer, or whether there was an error in
-// handling it (and hence a fallback writer should be used).
 // 
-// If a #GLogWriterFunc ignores a log entry, it should return
-// %G_LOG_WRITER_HANDLED.
+// see also https://docs.gtk.org/glib/enum.LogWriterOutput.html
+//
 type LogWriterOutput C.int
 
 const (
 	// LogWriterHandled wraps G_LOG_WRITER_HANDLED
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogWriterOutput.html#handled
 	//
-	// Log writer has handled the log entry.
 	LogWriterHandled LogWriterOutput = 1
 	// LogWriterUnhandled wraps G_LOG_WRITER_UNHANDLED
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogWriterOutput.html#unhandled
 	//
-	// Log writer could not handle the log entry.
 	LogWriterUnhandled LogWriterOutput = 0
 )
 
@@ -1052,42 +1025,46 @@ func (e LogWriterOutput) String() string {
 }
 
 // MarkupError wraps GMarkupError
+// 
+// see also https://docs.gtk.org/glib/enum.MarkupError.html
 //
-// Error codes returned by markup parsing.
 type MarkupError C.int
 
 const (
 	// MarkupErrorBadUTF8 wraps G_MARKUP_ERROR_BAD_UTF8
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupError.html#bad_utf8
 	//
-	// text being parsed was not valid UTF-8
 	MarkupErrorBadUTF8 MarkupError = 0
 	// MarkupErrorEmpty wraps G_MARKUP_ERROR_EMPTY
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupError.html#empty
 	//
-	// document contained nothing, or only whitespace
 	MarkupErrorEmpty MarkupError = 1
 	// MarkupErrorParse wraps G_MARKUP_ERROR_PARSE
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupError.html#parse
 	//
-	// document was ill-formed
 	MarkupErrorParse MarkupError = 2
 	// MarkupErrorUnknownElement wraps G_MARKUP_ERROR_UNKNOWN_ELEMENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupError.html#unknown_element
 	//
-	// error should be set by #GMarkupParser
-	//     functions; element wasn't known
 	MarkupErrorUnknownElement MarkupError = 3
 	// MarkupErrorUnknownAttribute wraps G_MARKUP_ERROR_UNKNOWN_ATTRIBUTE
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupError.html#unknown_attribute
 	//
-	// error should be set by #GMarkupParser
-	//     functions; attribute wasn't known
 	MarkupErrorUnknownAttribute MarkupError = 4
 	// MarkupErrorInvalidContent wraps G_MARKUP_ERROR_INVALID_CONTENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupError.html#invalid_content
 	//
-	// error should be set by #GMarkupParser
-	//     functions; content was invalid
 	MarkupErrorInvalidContent MarkupError = 5
 	// MarkupErrorMissingAttribute wraps G_MARKUP_ERROR_MISSING_ATTRIBUTE
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupError.html#missing_attribute
 	//
-	// error should be set by #GMarkupParser
-	//     functions; a required attribute was missing
 	MarkupErrorMissingAttribute MarkupError = 6
 )
 
@@ -1106,53 +1083,51 @@ func (e MarkupError) String() string {
 }
 
 // NormalizeMode wraps GNormalizeMode
+// 
+// see also https://docs.gtk.org/glib/enum.NormalizeMode.html
 //
-// Defines how a Unicode string is transformed in a canonical
-// form, standardizing such issues as whether a character with
-// an accent is represented as a base character and combining
-// accent or as a single precomposed character. Unicode strings
-// should generally be normalized before comparing them.
 type NormalizeMode C.int
 
 const (
 	// NormalizeDefault wraps G_NORMALIZE_DEFAULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#default
 	//
-	// standardize differences that do not affect the
-	//     text content, such as the above-mentioned accent representation
 	NormalizeDefault NormalizeMode = 0
 	// NormalizeNFD wraps G_NORMALIZE_NFD
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#nfd
 	//
-	// another name for %G_NORMALIZE_DEFAULT
 	NormalizeNFD NormalizeMode = 0
 	// NormalizeDefaultCompose wraps G_NORMALIZE_DEFAULT_COMPOSE
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#default_compose
 	//
-	// like %G_NORMALIZE_DEFAULT, but with
-	//     composed forms rather than a maximally decomposed form
 	NormalizeDefaultCompose NormalizeMode = 1
 	// NormalizeNFC wraps G_NORMALIZE_NFC
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#nfc
 	//
-	// another name for %G_NORMALIZE_DEFAULT_COMPOSE
 	NormalizeNFC NormalizeMode = 1
 	// NormalizeAll wraps G_NORMALIZE_ALL
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#all
 	//
-	// beyond %G_NORMALIZE_DEFAULT also standardize the
-	//     "compatibility" characters in Unicode, such as SUPERSCRIPT THREE
-	//     to the standard forms (in this case DIGIT THREE). Formatting
-	//     information may be lost but for most text operations such
-	//     characters should be considered the same
 	NormalizeAll NormalizeMode = 2
 	// NormalizeNFKD wraps G_NORMALIZE_NFKD
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#nfkd
 	//
-	// another name for %G_NORMALIZE_ALL
 	NormalizeNFKD NormalizeMode = 2
 	// NormalizeAllCompose wraps G_NORMALIZE_ALL_COMPOSE
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#all_compose
 	//
-	// like %G_NORMALIZE_ALL, but with composed
-	//     forms rather than a maximally decomposed form
 	NormalizeAllCompose NormalizeMode = 3
 	// NormalizeNFKC wraps G_NORMALIZE_NFKC
+	// 
+	// see also https://docs.gtk.org/glib/flags.NormalizeMode.html#nfkc
 	//
-	// another name for %G_NORMALIZE_ALL_COMPOSE
 	NormalizeNFKC NormalizeMode = 3
 )
 
@@ -1168,18 +1143,21 @@ func (e NormalizeMode) String() string {
 }
 
 // NumberParserError wraps GNumberParserError
+// 
+// see also https://docs.gtk.org/glib/enum.NumberParserError.html
 //
-// Error codes returned by functions converting a string to a number.
 type NumberParserError C.int
 
 const (
 	// NumberParserErrorInvalid wraps G_NUMBER_PARSER_ERROR_INVALID
+	// 
+	// see also https://docs.gtk.org/glib/flags.NumberParserError.html#invalid
 	//
-	// string was not a valid number
 	NumberParserErrorInvalid NumberParserError = 0
 	// NumberParserErrorOutOfBounds wraps G_NUMBER_PARSER_ERROR_OUT_OF_BOUNDS
+	// 
+	// see also https://docs.gtk.org/glib/flags.NumberParserError.html#out_of_bounds
 	//
-	// string was a number, but out of bounds
 	NumberParserErrorOutOfBounds NumberParserError = 1
 )
 
@@ -1193,23 +1171,26 @@ func (e NumberParserError) String() string {
 }
 
 // OnceStatus wraps GOnceStatus
+// 
+// see also https://docs.gtk.org/glib/enum.OnceStatus.html
 //
-// The possible statuses of a one-time initialization function
-// controlled by a #GOnce struct.
 type OnceStatus C.int
 
 const (
 	// OnceStatusNotcalled wraps G_ONCE_STATUS_NOTCALLED
+	// 
+	// see also https://docs.gtk.org/glib/flags.OnceStatus.html#notcalled
 	//
-	// the function has not been called yet.
 	OnceStatusNotcalled OnceStatus = 0
 	// OnceStatusProgress wraps G_ONCE_STATUS_PROGRESS
+	// 
+	// see also https://docs.gtk.org/glib/flags.OnceStatus.html#progress
 	//
-	// the function call is currently in progress.
 	OnceStatusProgress OnceStatus = 1
 	// OnceStatusReady wraps G_ONCE_STATUS_READY
+	// 
+	// see also https://docs.gtk.org/glib/flags.OnceStatus.html#ready
 	//
-	// the function has been called.
 	OnceStatusReady OnceStatus = 2
 )
 
@@ -1224,58 +1205,56 @@ func (e OnceStatus) String() string {
 }
 
 // OptionArg wraps GOptionArg
+// 
+// see also https://docs.gtk.org/glib/enum.OptionArg.html
 //
-// The #GOptionArg enum values determine which type of extra argument the
-// options expect to find. If an option expects an extra argument, it can
-// be specified in several ways; with a short option: `-x arg`, with a long
-// option: `--name arg` or combined in a single argument: `--name=arg`.
 type OptionArg C.int
 
 const (
 	// OptionArgNone wraps G_OPTION_ARG_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#none
 	//
-	// No extra argument. This is useful for simple flags or booleans.
 	OptionArgNone OptionArg = 0
 	// OptionArgString wraps G_OPTION_ARG_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#string
 	//
-	// The option takes a UTF-8 string argument.
 	OptionArgString OptionArg = 1
 	// OptionArgInt wraps G_OPTION_ARG_INT
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#int
 	//
-	// The option takes an integer argument.
 	OptionArgInt OptionArg = 2
 	// OptionArgCallback wraps G_OPTION_ARG_CALLBACK
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#callback
 	//
-	// The option provides a callback (of type #GOptionArgFunc)
-	//   to parse the extra argument.
 	OptionArgCallback OptionArg = 3
 	// OptionArgFilename wraps G_OPTION_ARG_FILENAME
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#filename
 	//
-	// The option takes a filename as argument, which will
-	//      be in the GLib filename encoding rather than UTF-8.
 	OptionArgFilename OptionArg = 4
 	// OptionArgStringArray wraps G_OPTION_ARG_STRING_ARRAY
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#string_array
 	//
-	// The option takes a string argument, multiple
-	//   uses of the option are collected into an array of strings.
 	OptionArgStringArray OptionArg = 5
 	// OptionArgFilenameArray wraps G_OPTION_ARG_FILENAME_ARRAY
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#filename_array
 	//
-	// The option takes a filename as argument,
-	//   multiple uses of the option are collected into an array of strings.
 	OptionArgFilenameArray OptionArg = 6
 	// OptionArgDouble wraps G_OPTION_ARG_DOUBLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#double
 	//
-	// The option takes a double argument. The argument
-	//   can be formatted either for the user's locale or for the "C" locale.
-	//   Since 2.12
 	OptionArgDouble OptionArg = 7
 	// OptionArgInt64 wraps G_OPTION_ARG_INT64
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionArg.html#int64
 	//
-	// The option takes a 64-bit integer. Like
-	//   %G_OPTION_ARG_INT but for larger numbers. The number can be in
-	//   decimal base, or in hexadecimal (when prefixed with `0x`, for
-	//   example, `0xffffffff`). Since 2.12
 	OptionArgInt64 OptionArg = 8
 )
 
@@ -1296,24 +1275,26 @@ func (e OptionArg) String() string {
 }
 
 // OptionError wraps GOptionError
+// 
+// see also https://docs.gtk.org/glib/enum.OptionError.html
 //
-// Error codes returned by option parsing.
 type OptionError C.int
 
 const (
 	// OptionErrorUnknownOption wraps G_OPTION_ERROR_UNKNOWN_OPTION
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionError.html#unknown_option
 	//
-	// An option was not known to the parser.
-	//  This error will only be reported, if the parser hasn't been instructed
-	//  to ignore unknown options, see g_option_context_set_ignore_unknown_options().
 	OptionErrorUnknownOption OptionError = 0
 	// OptionErrorBadValue wraps G_OPTION_ERROR_BAD_VALUE
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionError.html#bad_value
 	//
-	// A value couldn't be parsed.
 	OptionErrorBadValue OptionError = 1
 	// OptionErrorFailed wraps G_OPTION_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionError.html#failed
 	//
-	// A #GOptionArgFunc callback failed.
 	OptionErrorFailed OptionError = 2
 )
 
@@ -1328,281 +1309,296 @@ func (e OptionError) String() string {
 }
 
 // RegexError wraps GRegexError
+// 
+// see also https://docs.gtk.org/glib/enum.RegexError.html
 //
-// Error codes returned by regular expressions functions.
 type RegexError C.int
 
 const (
 	// RegexErrorCompile wraps G_REGEX_ERROR_COMPILE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#compile
 	//
-	// Compilation of the regular expression failed.
 	RegexErrorCompile RegexError = 0
 	// RegexErrorOptimize wraps G_REGEX_ERROR_OPTIMIZE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#optimize
 	//
-	// Optimization of the regular expression failed.
 	RegexErrorOptimize RegexError = 1
 	// RegexErrorReplace wraps G_REGEX_ERROR_REPLACE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#replace
 	//
-	// Replacement failed due to an ill-formed replacement
-	//     string.
 	RegexErrorReplace RegexError = 2
 	// RegexErrorMatch wraps G_REGEX_ERROR_MATCH
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#match
 	//
-	// The match process failed.
 	RegexErrorMatch RegexError = 3
 	// RegexErrorInternal wraps G_REGEX_ERROR_INTERNAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#internal
 	//
-	// Internal error of the regular expression engine.
-	//     Since 2.16
 	RegexErrorInternal RegexError = 4
 	// RegexErrorStrayBackslash wraps G_REGEX_ERROR_STRAY_BACKSLASH
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#stray_backslash
 	//
-	// "\\" at end of pattern. Since 2.16
 	RegexErrorStrayBackslash RegexError = 101
 	// RegexErrorMissingControlChar wraps G_REGEX_ERROR_MISSING_CONTROL_CHAR
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#missing_control_char
 	//
-	// "\\c" at end of pattern. Since 2.16
 	RegexErrorMissingControlChar RegexError = 102
 	// RegexErrorUnrecognizedEscape wraps G_REGEX_ERROR_UNRECOGNIZED_ESCAPE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unrecognized_escape
 	//
-	// Unrecognized character follows "\\".
-	//     Since 2.16
 	RegexErrorUnrecognizedEscape RegexError = 103
 	// RegexErrorQuantifiersOutOfOrder wraps G_REGEX_ERROR_QUANTIFIERS_OUT_OF_ORDER
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#quantifiers_out_of_order
 	//
-	// Numbers out of order in "{}"
-	//     quantifier. Since 2.16
 	RegexErrorQuantifiersOutOfOrder RegexError = 104
 	// RegexErrorQuantifierTooBig wraps G_REGEX_ERROR_QUANTIFIER_TOO_BIG
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#quantifier_too_big
 	//
-	// Number too big in "{}" quantifier.
-	//     Since 2.16
 	RegexErrorQuantifierTooBig RegexError = 105
 	// RegexErrorUnterminatedCharacterClass wraps G_REGEX_ERROR_UNTERMINATED_CHARACTER_CLASS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unterminated_character_class
 	//
-	// Missing terminating "]" for
-	//     character class. Since 2.16
 	RegexErrorUnterminatedCharacterClass RegexError = 106
 	// RegexErrorInvalidEscapeInCharacterClass wraps G_REGEX_ERROR_INVALID_ESCAPE_IN_CHARACTER_CLASS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#invalid_escape_in_character_class
 	//
-	// Invalid escape sequence
-	//     in character class. Since 2.16
 	RegexErrorInvalidEscapeInCharacterClass RegexError = 107
 	// RegexErrorRangeOutOfOrder wraps G_REGEX_ERROR_RANGE_OUT_OF_ORDER
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#range_out_of_order
 	//
-	// Range out of order in character class.
-	//     Since 2.16
 	RegexErrorRangeOutOfOrder RegexError = 108
 	// RegexErrorNothingToRepeat wraps G_REGEX_ERROR_NOTHING_TO_REPEAT
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#nothing_to_repeat
 	//
-	// Nothing to repeat. Since 2.16
 	RegexErrorNothingToRepeat RegexError = 109
 	// RegexErrorUnrecognizedCharacter wraps G_REGEX_ERROR_UNRECOGNIZED_CHARACTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unrecognized_character
 	//
-	// Unrecognized character after "(?",
-	//     "(?&lt;" or "(?P". Since 2.16
 	RegexErrorUnrecognizedCharacter RegexError = 112
 	// RegexErrorPosixNamedClassOutsideClass wraps G_REGEX_ERROR_POSIX_NAMED_CLASS_OUTSIDE_CLASS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#posix_named_class_outside_class
 	//
-	// POSIX named classes are
-	//     supported only within a class. Since 2.16
 	RegexErrorPosixNamedClassOutsideClass RegexError = 113
 	// RegexErrorUnmatchedParenthesis wraps G_REGEX_ERROR_UNMATCHED_PARENTHESIS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unmatched_parenthesis
 	//
-	// Missing terminating ")" or ")"
-	//     without opening "(". Since 2.16
 	RegexErrorUnmatchedParenthesis RegexError = 114
 	// RegexErrorInexistentSubpatternReference wraps G_REGEX_ERROR_INEXISTENT_SUBPATTERN_REFERENCE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#inexistent_subpattern_reference
 	//
-	// Reference to non-existent
-	//     subpattern. Since 2.16
 	RegexErrorInexistentSubpatternReference RegexError = 115
 	// RegexErrorUnterminatedComment wraps G_REGEX_ERROR_UNTERMINATED_COMMENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unterminated_comment
 	//
-	// Missing terminating ")" after comment.
-	//     Since 2.16
 	RegexErrorUnterminatedComment RegexError = 118
 	// RegexErrorExpressionTooLarge wraps G_REGEX_ERROR_EXPRESSION_TOO_LARGE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#expression_too_large
 	//
-	// Regular expression too large.
-	//     Since 2.16
 	RegexErrorExpressionTooLarge RegexError = 120
 	// RegexErrorMemoryError wraps G_REGEX_ERROR_MEMORY_ERROR
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#memory_error
 	//
-	// Failed to get memory. Since 2.16
 	RegexErrorMemoryError RegexError = 121
 	// RegexErrorVariableLengthLookbehind wraps G_REGEX_ERROR_VARIABLE_LENGTH_LOOKBEHIND
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#variable_length_lookbehind
 	//
-	// Lookbehind assertion is not
-	//     fixed length. Since 2.16
 	RegexErrorVariableLengthLookbehind RegexError = 125
 	// RegexErrorMalformedCondition wraps G_REGEX_ERROR_MALFORMED_CONDITION
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#malformed_condition
 	//
-	// Malformed number or name after "(?(".
-	//     Since 2.16
 	RegexErrorMalformedCondition RegexError = 126
 	// RegexErrorTooManyConditionalBranches wraps G_REGEX_ERROR_TOO_MANY_CONDITIONAL_BRANCHES
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#too_many_conditional_branches
 	//
-	// Conditional group contains
-	//     more than two branches. Since 2.16
 	RegexErrorTooManyConditionalBranches RegexError = 127
 	// RegexErrorAssertionExpected wraps G_REGEX_ERROR_ASSERTION_EXPECTED
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#assertion_expected
 	//
-	// Assertion expected after "(?(".
-	//     Since 2.16
 	RegexErrorAssertionExpected RegexError = 128
 	// RegexErrorUnknownPosixClassName wraps G_REGEX_ERROR_UNKNOWN_POSIX_CLASS_NAME
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unknown_posix_class_name
 	//
-	// Unknown POSIX class name.
-	//     Since 2.16
 	RegexErrorUnknownPosixClassName RegexError = 130
 	// RegexErrorPosixCollatingElementsNotSupported wraps G_REGEX_ERROR_POSIX_COLLATING_ELEMENTS_NOT_SUPPORTED
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#posix_collating_elements_not_supported
 	//
-	// POSIX collating
-	//     elements are not supported. Since 2.16
 	RegexErrorPosixCollatingElementsNotSupported RegexError = 131
 	// RegexErrorHexCodeTooLarge wraps G_REGEX_ERROR_HEX_CODE_TOO_LARGE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#hex_code_too_large
 	//
-	// Character value in "\\x{...}" sequence
-	//     is too large. Since 2.16
 	RegexErrorHexCodeTooLarge RegexError = 134
 	// RegexErrorInvalidCondition wraps G_REGEX_ERROR_INVALID_CONDITION
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#invalid_condition
 	//
-	// Invalid condition "(?(0)". Since 2.16
 	RegexErrorInvalidCondition RegexError = 135
 	// RegexErrorSingleByteMatchInLookbehind wraps G_REGEX_ERROR_SINGLE_BYTE_MATCH_IN_LOOKBEHIND
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#single_byte_match_in_lookbehind
 	//
-	// \\C not allowed in
-	//     lookbehind assertion. Since 2.16
 	RegexErrorSingleByteMatchInLookbehind RegexError = 136
 	// RegexErrorInfiniteLoop wraps G_REGEX_ERROR_INFINITE_LOOP
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#infinite_loop
 	//
-	// Recursive call could loop indefinitely.
-	//     Since 2.16
 	RegexErrorInfiniteLoop RegexError = 140
 	// RegexErrorMissingSubpatternNameTerminator wraps G_REGEX_ERROR_MISSING_SUBPATTERN_NAME_TERMINATOR
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#missing_subpattern_name_terminator
 	//
-	// Missing terminator
-	//     in subpattern name. Since 2.16
 	RegexErrorMissingSubpatternNameTerminator RegexError = 142
 	// RegexErrorDuplicateSubpatternName wraps G_REGEX_ERROR_DUPLICATE_SUBPATTERN_NAME
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#duplicate_subpattern_name
 	//
-	// Two named subpatterns have
-	//     the same name. Since 2.16
 	RegexErrorDuplicateSubpatternName RegexError = 143
 	// RegexErrorMalformedProperty wraps G_REGEX_ERROR_MALFORMED_PROPERTY
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#malformed_property
 	//
-	// Malformed "\\P" or "\\p" sequence.
-	//     Since 2.16
 	RegexErrorMalformedProperty RegexError = 146
 	// RegexErrorUnknownProperty wraps G_REGEX_ERROR_UNKNOWN_PROPERTY
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unknown_property
 	//
-	// Unknown property name after "\\P" or
-	//     "\\p". Since 2.16
 	RegexErrorUnknownProperty RegexError = 147
 	// RegexErrorSubpatternNameTooLong wraps G_REGEX_ERROR_SUBPATTERN_NAME_TOO_LONG
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#subpattern_name_too_long
 	//
-	// Subpattern name is too long
-	//     (maximum 32 characters). Since 2.16
 	RegexErrorSubpatternNameTooLong RegexError = 148
 	// RegexErrorTooManySubpatterns wraps G_REGEX_ERROR_TOO_MANY_SUBPATTERNS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#too_many_subpatterns
 	//
-	// Too many named subpatterns (maximum
-	//     10,000). Since 2.16
 	RegexErrorTooManySubpatterns RegexError = 149
 	// RegexErrorInvalidOctalValue wraps G_REGEX_ERROR_INVALID_OCTAL_VALUE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#invalid_octal_value
 	//
-	// Octal value is greater than "\\377".
-	//     Since 2.16
 	RegexErrorInvalidOctalValue RegexError = 151
 	// RegexErrorTooManyBranchesInDefine wraps G_REGEX_ERROR_TOO_MANY_BRANCHES_IN_DEFINE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#too_many_branches_in_define
 	//
-	// "DEFINE" group contains more
-	//     than one branch. Since 2.16
 	RegexErrorTooManyBranchesInDefine RegexError = 154
 	// RegexErrorDefineRepetion wraps G_REGEX_ERROR_DEFINE_REPETION
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#define_repetion
 	//
-	// Repeating a "DEFINE" group is not allowed.
-	//     This error is never raised. Since: 2.16 Deprecated: 2.34
 	RegexErrorDefineRepetion RegexError = 155
 	// RegexErrorInconsistentNewlineOptions wraps G_REGEX_ERROR_INCONSISTENT_NEWLINE_OPTIONS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#inconsistent_newline_options
 	//
-	// Inconsistent newline options.
-	//     Since 2.16
 	RegexErrorInconsistentNewlineOptions RegexError = 156
 	// RegexErrorMissingBackReference wraps G_REGEX_ERROR_MISSING_BACK_REFERENCE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#missing_back_reference
 	//
-	// "\\g" is not followed by a braced,
-	//      angle-bracketed, or quoted name or number, or by a plain number. Since: 2.16
 	RegexErrorMissingBackReference RegexError = 157
 	// RegexErrorInvalidRelativeReference wraps G_REGEX_ERROR_INVALID_RELATIVE_REFERENCE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#invalid_relative_reference
 	//
-	// relative reference must not be zero. Since: 2.34
 	RegexErrorInvalidRelativeReference RegexError = 158
 	// RegexErrorBacktrackingControlVerbArgumentForbidden wraps G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_FORBIDDEN
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#backtracking_control_verb_argument_forbidden
 	//
-	// the backtracing
-	//     control verb used does not allow an argument. Since: 2.34
 	RegexErrorBacktrackingControlVerbArgumentForbidden RegexError = 159
 	// RegexErrorUnknownBacktrackingControlVerb wraps G_REGEX_ERROR_UNKNOWN_BACKTRACKING_CONTROL_VERB
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#unknown_backtracking_control_verb
 	//
-	// unknown backtracing
-	//     control verb. Since: 2.34
 	RegexErrorUnknownBacktrackingControlVerb RegexError = 160
 	// RegexErrorNumberTooBig wraps G_REGEX_ERROR_NUMBER_TOO_BIG
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#number_too_big
 	//
-	// number is too big in escape sequence. Since: 2.34
 	RegexErrorNumberTooBig RegexError = 161
 	// RegexErrorMissingSubpatternName wraps G_REGEX_ERROR_MISSING_SUBPATTERN_NAME
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#missing_subpattern_name
 	//
-	// Missing subpattern name. Since: 2.34
 	RegexErrorMissingSubpatternName RegexError = 162
 	// RegexErrorMissingDigit wraps G_REGEX_ERROR_MISSING_DIGIT
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#missing_digit
 	//
-	// Missing digit. Since 2.34
 	RegexErrorMissingDigit RegexError = 163
 	// RegexErrorInvalidDataCharacter wraps G_REGEX_ERROR_INVALID_DATA_CHARACTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#invalid_data_character
 	//
-	// In JavaScript compatibility mode,
-	//     "[" is an invalid data character. Since: 2.34
 	RegexErrorInvalidDataCharacter RegexError = 164
 	// RegexErrorExtraSubpatternName wraps G_REGEX_ERROR_EXTRA_SUBPATTERN_NAME
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#extra_subpattern_name
 	//
-	// different names for subpatterns of the
-	//     same number are not allowed. Since: 2.34
 	RegexErrorExtraSubpatternName RegexError = 165
 	// RegexErrorBacktrackingControlVerbArgumentRequired wraps G_REGEX_ERROR_BACKTRACKING_CONTROL_VERB_ARGUMENT_REQUIRED
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#backtracking_control_verb_argument_required
 	//
-	// the backtracing control
-	//     verb requires an argument. Since: 2.34
 	RegexErrorBacktrackingControlVerbArgumentRequired RegexError = 166
 	// RegexErrorInvalidControlChar wraps G_REGEX_ERROR_INVALID_CONTROL_CHAR
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#invalid_control_char
 	//
-	// "\\c" must be followed by an ASCII
-	//     character. Since: 2.34
 	RegexErrorInvalidControlChar RegexError = 168
 	// RegexErrorMissingName wraps G_REGEX_ERROR_MISSING_NAME
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#missing_name
 	//
-	// "\\k" is not followed by a braced, angle-bracketed, or
-	//     quoted name. Since: 2.34
 	RegexErrorMissingName RegexError = 169
 	// RegexErrorNotSupportedInClass wraps G_REGEX_ERROR_NOT_SUPPORTED_IN_CLASS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#not_supported_in_class
 	//
-	// "\\N" is not supported in a class. Since: 2.34
 	RegexErrorNotSupportedInClass RegexError = 171
 	// RegexErrorTooManyForwardReferences wraps G_REGEX_ERROR_TOO_MANY_FORWARD_REFERENCES
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#too_many_forward_references
 	//
-	// too many forward references. Since: 2.34
 	RegexErrorTooManyForwardReferences RegexError = 172
 	// RegexErrorNameTooLong wraps G_REGEX_ERROR_NAME_TOO_LONG
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#name_too_long
 	//
-	// the name is too long in "(*MARK)", "(*PRUNE)",
-	//     "(*SKIP)", or "(*THEN)". Since: 2.34
 	RegexErrorNameTooLong RegexError = 175
 	// RegexErrorCharacterValueTooLarge wraps G_REGEX_ERROR_CHARACTER_VALUE_TOO_LARGE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexError.html#character_value_too_large
 	//
-	// the character value in the \\u sequence is
-	//     too large. Since: 2.34
 	RegexErrorCharacterValueTooLarge RegexError = 176
 )
 
@@ -1671,23 +1667,26 @@ func (e RegexError) String() string {
 }
 
 // SeekType wraps GSeekType
+// 
+// see also https://docs.gtk.org/glib/enum.SeekType.html
 //
-// An enumeration specifying the base position for a
-// g_io_channel_seek_position() operation.
 type SeekType C.int
 
 const (
 	// SeekCur wraps G_SEEK_CUR
+	// 
+	// see also https://docs.gtk.org/glib/flags.SeekType.html#cur
 	//
-	// the current position in the file.
 	SeekCur SeekType = 0
 	// SeekSet wraps G_SEEK_SET
+	// 
+	// see also https://docs.gtk.org/glib/flags.SeekType.html#set
 	//
-	// the start of the file.
 	SeekSet SeekType = 1
 	// SeekEnd wraps G_SEEK_END
+	// 
+	// see also https://docs.gtk.org/glib/flags.SeekType.html#end
 	//
-	// the end of the file.
 	SeekEnd SeekType = 2
 )
 
@@ -1702,22 +1701,26 @@ func (e SeekType) String() string {
 }
 
 // ShellError wraps GShellError
+// 
+// see also https://docs.gtk.org/glib/enum.ShellError.html
 //
-// Error codes returned by shell functions.
 type ShellError C.int
 
 const (
 	// ShellErrorBadQuoting wraps G_SHELL_ERROR_BAD_QUOTING
+	// 
+	// see also https://docs.gtk.org/glib/flags.ShellError.html#bad_quoting
 	//
-	// Mismatched or otherwise mangled quoting.
 	ShellErrorBadQuoting ShellError = 0
 	// ShellErrorEmptyString wraps G_SHELL_ERROR_EMPTY_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.ShellError.html#empty_string
 	//
-	// String to be parsed was empty.
 	ShellErrorEmptyString ShellError = 1
 	// ShellErrorFailed wraps G_SHELL_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.ShellError.html#failed
 	//
-	// Some other error.
 	ShellErrorFailed ShellError = 2
 )
 
@@ -1732,20 +1735,34 @@ func (e ShellError) String() string {
 }
 
 // SliceConfig wraps GSliceConfig
+// 
+// see also https://docs.gtk.org/glib/enum.SliceConfig.html
 type SliceConfig C.int
 
 const (
 	// SliceConfigAlwaysMalloc wraps G_SLICE_CONFIG_ALWAYS_MALLOC
+	// 
+	// see also https://docs.gtk.org/glib/flags.SliceConfig.html#always_malloc
 	SliceConfigAlwaysMalloc SliceConfig = 1
 	// SliceConfigBypassMagazines wraps G_SLICE_CONFIG_BYPASS_MAGAZINES
+	// 
+	// see also https://docs.gtk.org/glib/flags.SliceConfig.html#bypass_magazines
 	SliceConfigBypassMagazines SliceConfig = 2
 	// SliceConfigWorkingSetMsecs wraps G_SLICE_CONFIG_WORKING_SET_MSECS
+	// 
+	// see also https://docs.gtk.org/glib/flags.SliceConfig.html#working_set_msecs
 	SliceConfigWorkingSetMsecs SliceConfig = 3
 	// SliceConfigColorIncrement wraps G_SLICE_CONFIG_COLOR_INCREMENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.SliceConfig.html#color_increment
 	SliceConfigColorIncrement SliceConfig = 4
 	// SliceConfigChunkSizes wraps G_SLICE_CONFIG_CHUNK_SIZES
+	// 
+	// see also https://docs.gtk.org/glib/flags.SliceConfig.html#chunk_sizes
 	SliceConfigChunkSizes SliceConfig = 5
 	// SliceConfigContentionCounter wraps G_SLICE_CONFIG_CONTENTION_COUNTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.SliceConfig.html#contention_counter
 	SliceConfigContentionCounter SliceConfig = 6
 )
 
@@ -1763,95 +1780,116 @@ func (e SliceConfig) String() string {
 }
 
 // SpawnError wraps GSpawnError
+// 
+// see also https://docs.gtk.org/glib/enum.SpawnError.html
 //
-// Error codes returned by spawning processes.
 type SpawnError C.int
 
 const (
 	// SpawnErrorFork wraps G_SPAWN_ERROR_FORK
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#fork
 	//
-	// Fork failed due to lack of memory.
 	SpawnErrorFork SpawnError = 0
 	// SpawnErrorRead wraps G_SPAWN_ERROR_READ
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#read
 	//
-	// Read or select on pipes failed.
 	SpawnErrorRead SpawnError = 1
 	// SpawnErrorChdir wraps G_SPAWN_ERROR_CHDIR
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#chdir
 	//
-	// Changing to working directory failed.
 	SpawnErrorChdir SpawnError = 2
 	// SpawnErrorAcces wraps G_SPAWN_ERROR_ACCES
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#acces
 	//
-	// execv() returned `EACCES`
 	SpawnErrorAcces SpawnError = 3
 	// SpawnErrorPerm wraps G_SPAWN_ERROR_PERM
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#perm
 	//
-	// execv() returned `EPERM`
 	SpawnErrorPerm SpawnError = 4
 	// SpawnErrorTooBig wraps G_SPAWN_ERROR_TOO_BIG
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#too_big
 	//
-	// execv() returned `E2BIG`
 	SpawnErrorTooBig SpawnError = 5
 	// SpawnError2big wraps G_SPAWN_ERROR_2BIG
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#2big
 	//
-	// deprecated alias for %G_SPAWN_ERROR_TOO_BIG (deprecated since GLib 2.32)
 	SpawnError2big SpawnError = 5
 	// SpawnErrorNoexec wraps G_SPAWN_ERROR_NOEXEC
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#noexec
 	//
-	// execv() returned `ENOEXEC`
 	SpawnErrorNoexec SpawnError = 6
 	// SpawnErrorNametoolong wraps G_SPAWN_ERROR_NAMETOOLONG
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#nametoolong
 	//
-	// execv() returned `ENAMETOOLONG`
 	SpawnErrorNametoolong SpawnError = 7
 	// SpawnErrorNoent wraps G_SPAWN_ERROR_NOENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#noent
 	//
-	// execv() returned `ENOENT`
 	SpawnErrorNoent SpawnError = 8
 	// SpawnErrorNomem wraps G_SPAWN_ERROR_NOMEM
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#nomem
 	//
-	// execv() returned `ENOMEM`
 	SpawnErrorNomem SpawnError = 9
 	// SpawnErrorNotdir wraps G_SPAWN_ERROR_NOTDIR
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#notdir
 	//
-	// execv() returned `ENOTDIR`
 	SpawnErrorNotdir SpawnError = 10
 	// SpawnErrorLoop wraps G_SPAWN_ERROR_LOOP
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#loop
 	//
-	// execv() returned `ELOOP`
 	SpawnErrorLoop SpawnError = 11
 	// SpawnErrorTxtbusy wraps G_SPAWN_ERROR_TXTBUSY
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#txtbusy
 	//
-	// execv() returned `ETXTBUSY`
 	SpawnErrorTxtbusy SpawnError = 12
 	// SpawnErrorIO wraps G_SPAWN_ERROR_IO
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#io
 	//
-	// execv() returned `EIO`
 	SpawnErrorIO SpawnError = 13
 	// SpawnErrorNfile wraps G_SPAWN_ERROR_NFILE
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#nfile
 	//
-	// execv() returned `ENFILE`
 	SpawnErrorNfile SpawnError = 14
 	// SpawnErrorMfile wraps G_SPAWN_ERROR_MFILE
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#mfile
 	//
-	// execv() returned `EMFILE`
 	SpawnErrorMfile SpawnError = 15
 	// SpawnErrorInval wraps G_SPAWN_ERROR_INVAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#inval
 	//
-	// execv() returned `EINVAL`
 	SpawnErrorInval SpawnError = 16
 	// SpawnErrorIsdir wraps G_SPAWN_ERROR_ISDIR
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#isdir
 	//
-	// execv() returned `EISDIR`
 	SpawnErrorIsdir SpawnError = 17
 	// SpawnErrorLibbad wraps G_SPAWN_ERROR_LIBBAD
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#libbad
 	//
-	// execv() returned `ELIBBAD`
 	SpawnErrorLibbad SpawnError = 18
 	// SpawnErrorFailed wraps G_SPAWN_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnError.html#failed
 	//
-	// Some other fatal failure,
-	//   `error-&gt;message` should explain.
 	SpawnErrorFailed SpawnError = 19
 )
 
@@ -1883,34 +1921,21 @@ func (e SpawnError) String() string {
 }
 
 // TestFileType wraps GTestFileType
+// 
+// see also https://docs.gtk.org/glib/enum.TestFileType.html
 //
-// The type of file to return the filename for, when used with
-// [func@GLib.test_build_filename].
-// 
-// These two options correspond rather directly to the 'dist' and
-// 'built' terminology that automake uses and are explicitly used to
-// distinguish between the 'srcdir' and 'builddir' being separate. All
-// files in your project should either be dist (in the `EXTRA_DIST` or
-// `dist_schema_DATA` sense, in which case they will always be in the
-// srcdir) or built (in the `BUILT_SOURCES` sense, in which case they
-// will always be in the builddir).
-// 
-// Note: As a general rule of automake, files that are generated only as
-// part of the build-from-git process (but then are distributed with the
-// tarball) always go in srcdir (even if doing a srcdir != builddir
-// build from git) and are considered as distributed files.
-// 
-// The same principles apply for other build systems, such as meson.
 type TestFileType C.int
 
 const (
 	// TestDist wraps G_TEST_DIST
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestFileType.html#dist
 	//
-	// a file that was included in the distribution tarball
 	TestDist TestFileType = 0
 	// TestBuilt wraps G_TEST_BUILT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestFileType.html#built
 	//
-	// a file that was built on the compiling machine
 	TestBuilt TestFileType = 1
 )
 
@@ -1924,32 +1949,58 @@ func (e TestFileType) String() string {
 }
 
 // TestLogType wraps GTestLogType
+// 
+// see also https://docs.gtk.org/glib/enum.TestLogType.html
 type TestLogType C.int
 
 const (
 	// TestLogNone wraps G_TEST_LOG_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#none
 	TestLogNone TestLogType = 0
 	// TestLogError wraps G_TEST_LOG_ERROR
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#error
 	TestLogError TestLogType = 1
 	// TestLogStartBinary wraps G_TEST_LOG_START_BINARY
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#start_binary
 	TestLogStartBinary TestLogType = 2
 	// TestLogListCase wraps G_TEST_LOG_LIST_CASE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#list_case
 	TestLogListCase TestLogType = 3
 	// TestLogSkipCase wraps G_TEST_LOG_SKIP_CASE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#skip_case
 	TestLogSkipCase TestLogType = 4
 	// TestLogStartCase wraps G_TEST_LOG_START_CASE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#start_case
 	TestLogStartCase TestLogType = 5
 	// TestLogStopCase wraps G_TEST_LOG_STOP_CASE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#stop_case
 	TestLogStopCase TestLogType = 6
 	// TestLogMinResult wraps G_TEST_LOG_MIN_RESULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#min_result
 	TestLogMinResult TestLogType = 7
 	// TestLogMaxResult wraps G_TEST_LOG_MAX_RESULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#max_result
 	TestLogMaxResult TestLogType = 8
 	// TestLogMessage wraps G_TEST_LOG_MESSAGE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#message
 	TestLogMessage TestLogType = 9
 	// TestLogStartSuite wraps G_TEST_LOG_START_SUITE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#start_suite
 	TestLogStartSuite TestLogType = 10
 	// TestLogStopSuite wraps G_TEST_LOG_STOP_SUITE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestLogType.html#stop_suite
 	TestLogStopSuite TestLogType = 11
 )
 
@@ -1973,16 +2024,26 @@ func (e TestLogType) String() string {
 }
 
 // TestResult wraps GTestResult
+// 
+// see also https://docs.gtk.org/glib/enum.TestResult.html
 type TestResult C.int
 
 const (
 	// TestRunSuccess wraps G_TEST_RUN_SUCCESS
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestResult.html#success
 	TestRunSuccess TestResult = 0
 	// TestRunSkipped wraps G_TEST_RUN_SKIPPED
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestResult.html#skipped
 	TestRunSkipped TestResult = 1
 	// TestRunFailure wraps G_TEST_RUN_FAILURE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestResult.html#failure
 	TestRunFailure TestResult = 2
 	// TestRunIncomplete wraps G_TEST_RUN_INCOMPLETE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestResult.html#incomplete
 	TestRunIncomplete TestResult = 3
 )
 
@@ -1998,15 +2059,16 @@ func (e TestResult) String() string {
 }
 
 // ThreadError wraps GThreadError
+// 
+// see also https://docs.gtk.org/glib/enum.ThreadError.html
 //
-// Possible errors of thread related functions.
 type ThreadError C.int
 
 const (
 	// ThreadErrorAgain wraps G_THREAD_ERROR_AGAIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.ThreadError.html#thread_error_again
 	//
-	// a thread couldn't be created due to resource
-	//                        shortage. Try again later.
 	ThreadErrorAgain ThreadError = 0
 )
 
@@ -2019,29 +2081,26 @@ func (e ThreadError) String() string {
 }
 
 // TimeType wraps GTimeType
+// 
+// see also https://docs.gtk.org/glib/enum.TimeType.html
 //
-// Disambiguates a given time in two ways.
-// 
-// First, specifies if the given time is in universal or local time.
-// 
-// Second, if the time is in local time, specifies if it is local
-// standard time or local daylight time.  This is important for the case
-// where the same local time occurs twice (during daylight savings time
-// transitions, for example).
 type TimeType C.int
 
 const (
 	// TimeTypeStandard wraps G_TIME_TYPE_STANDARD
+	// 
+	// see also https://docs.gtk.org/glib/flags.TimeType.html#standard
 	//
-	// the time is in local standard time
 	TimeTypeStandard TimeType = 0
 	// TimeTypeDaylight wraps G_TIME_TYPE_DAYLIGHT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TimeType.html#daylight
 	//
-	// the time is in local daylight time
 	TimeTypeDaylight TimeType = 1
 	// TimeTypeUniversal wraps G_TIME_TYPE_UNIVERSAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.TimeType.html#universal
 	//
-	// the time is in UTC
 	TimeTypeUniversal TimeType = 2
 )
 
@@ -2056,103 +2115,126 @@ func (e TimeType) String() string {
 }
 
 // TokenType wraps GTokenType
+// 
+// see also https://docs.gtk.org/glib/enum.TokenType.html
 //
-// The possible types of token returned from each
-// g_scanner_get_next_token() call.
 type TokenType C.int
 
 const (
 	// TokenEOF wraps G_TOKEN_EOF
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#eof
 	//
-	// the end of the file
 	TokenEOF TokenType = 0
 	// TokenLeftParen wraps G_TOKEN_LEFT_PAREN
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#left_paren
 	//
-	// a '(' character
 	TokenLeftParen TokenType = 40
 	// TokenRightParen wraps G_TOKEN_RIGHT_PAREN
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#right_paren
 	//
-	// a ')' character
 	TokenRightParen TokenType = 41
 	// TokenLeftCurly wraps G_TOKEN_LEFT_CURLY
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#left_curly
 	//
-	// a '{' character
 	TokenLeftCurly TokenType = 123
 	// TokenRightCurly wraps G_TOKEN_RIGHT_CURLY
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#right_curly
 	//
-	// a '}' character
 	TokenRightCurly TokenType = 125
 	// TokenLeftBrace wraps G_TOKEN_LEFT_BRACE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#left_brace
 	//
-	// a '[' character
 	TokenLeftBrace TokenType = 91
 	// TokenRightBrace wraps G_TOKEN_RIGHT_BRACE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#right_brace
 	//
-	// a ']' character
 	TokenRightBrace TokenType = 93
 	// TokenEqualSign wraps G_TOKEN_EQUAL_SIGN
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#equal_sign
 	//
-	// a '=' character
 	TokenEqualSign TokenType = 61
 	// TokenComma wraps G_TOKEN_COMMA
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#comma
 	//
-	// a ',' character
 	TokenComma TokenType = 44
 	// TokenNone wraps G_TOKEN_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#none
 	//
-	// not a token
 	TokenNone TokenType = 256
 	// TokenError wraps G_TOKEN_ERROR
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#error
 	//
-	// an error occurred
 	TokenError TokenType = 257
 	// TokenChar wraps G_TOKEN_CHAR
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#char
 	//
-	// a character
 	TokenChar TokenType = 258
 	// TokenBinary wraps G_TOKEN_BINARY
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#binary
 	//
-	// a binary integer
 	TokenBinary TokenType = 259
 	// TokenOctal wraps G_TOKEN_OCTAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#octal
 	//
-	// an octal integer
 	TokenOctal TokenType = 260
 	// TokenInt wraps G_TOKEN_INT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#int
 	//
-	// an integer
 	TokenInt TokenType = 261
 	// TokenHex wraps G_TOKEN_HEX
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#hex
 	//
-	// a hex integer
 	TokenHex TokenType = 262
 	// TokenFloat wraps G_TOKEN_FLOAT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#float
 	//
-	// a floating point number
 	TokenFloat TokenType = 263
 	// TokenString wraps G_TOKEN_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#string
 	//
-	// a string
 	TokenString TokenType = 264
 	// TokenSymbol wraps G_TOKEN_SYMBOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#symbol
 	//
-	// a symbol
 	TokenSymbol TokenType = 265
 	// TokenIdentifier wraps G_TOKEN_IDENTIFIER
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#identifier
 	//
-	// an identifier
 	TokenIdentifier TokenType = 266
 	// TokenIdentifierNull wraps G_TOKEN_IDENTIFIER_NULL
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#identifier_null
 	//
-	// a null identifier
 	TokenIdentifierNull TokenType = 267
 	// TokenCommentSingle wraps G_TOKEN_COMMENT_SINGLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#comment_single
 	//
-	// one line comment
 	TokenCommentSingle TokenType = 268
 	// TokenCommentMulti wraps G_TOKEN_COMMENT_MULTI
+	// 
+	// see also https://docs.gtk.org/glib/flags.TokenType.html#comment_multi
 	//
-	// multi line comment
 	TokenCommentMulti TokenType = 269
 )
 
@@ -2187,66 +2269,31 @@ func (e TokenType) String() string {
 }
 
 // TraverseType wraps GTraverseType
+// 
+// see also https://docs.gtk.org/glib/enum.TraverseType.html
 //
-// Specifies the type of traversal performed by g_tree_traverse(),
-// g_node_traverse() and g_node_find().
-// 
-// The different orders are illustrated here:
-// 
-// - In order: A, B, C, D, E, F, G, H, I
-//   &lt;picture&gt;
-//     &lt;source srcset="Sorted_binary_tree_inorder-dark.svg"
-//      media="(prefers-color-scheme: dark)"&gt;
-//     &lt;img src="Sorted_binary_tree_inorder.svg"
-//      alt="Sorted binary tree, in-order traversal"&gt;
-//   &lt;/picture&gt;
-// - Pre order: F, B, A, D, C, E, G, I, H
-//   &lt;picture&gt;
-//     &lt;source srcset="Sorted_binary_tree_preorder-dark.svg"
-//      media="(prefers-color-scheme: dark)"&gt;
-//     &lt;img src="Sorted_binary_tree_preorder.svg"
-//      alt="Sorted binary tree, pre-order traversal"&gt;
-//   &lt;/picture&gt;
-// - Post order: A, C, E, D, B, H, I, G, F
-//   &lt;picture&gt;
-//     &lt;source srcset="Sorted_binary_tree_postorder-dark.svg"
-//      media="(prefers-color-scheme: dark)"&gt;
-//     &lt;img src="Sorted_binary_tree_postorder.svg"
-//      alt="Sorted binary tree, post-order traversal"&gt;
-//   &lt;/picture&gt;
-// - Level order: F, B, G, A, D, I, C, E, H
-//   &lt;picture&gt;
-//     &lt;source srcset="Sorted_binary_tree_breadth-first_traversal-dark.svg"
-//      media="(prefers-color-scheme: dark)"&gt;
-//     &lt;img src="Sorted_binary_tree_breadth-first_traversal.svg"
-//      alt="Sorted binary tree, breadth-first level order traversal"&gt;
-//   &lt;/picture&gt;
 type TraverseType C.int
 
 const (
 	// InOrder wraps G_IN_ORDER
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseType.html#in_order
 	//
-	// visits a node's left child first, then the node itself,
-	//              then its right child. This is the one to use if you
-	//              want the output sorted according to the compare
-	//              function.
 	InOrder TraverseType = 0
 	// PreOrder wraps G_PRE_ORDER
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseType.html#pre_order
 	//
-	// visits a node, then its children.
 	PreOrder TraverseType = 1
 	// PostOrder wraps G_POST_ORDER
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseType.html#post_order
 	//
-	// visits the node's children, then the node itself.
 	PostOrder TraverseType = 2
 	// LevelOrder wraps G_LEVEL_ORDER
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseType.html#level_order
 	//
-	// is not implemented for
-	//              [balanced binary trees](data-structures.html#binary-trees).
-	//              For [n-ary trees](data-structures.html#n-ary-trees), it
-	//              visits the root node first, then its children, then
-	//              its grandchildren, and so on. Note that this is less
-	//              efficient than the other orders.
 	LevelOrder TraverseType = 3
 )
 
@@ -2262,211 +2309,256 @@ func (e TraverseType) String() string {
 }
 
 // UnicodeBreakType wraps GUnicodeBreakType
+// 
+// see also https://docs.gtk.org/glib/enum.UnicodeBreakType.html
 //
-// These are the possible line break classifications.
-// 
-// Since new Unicode versions may add new types here, applications should be ready
-// to handle unknown values. They may be regarded as %G_UNICODE_BREAK_UNKNOWN.
-// 
-// See [Unicode Line Breaking Algorithm](https://www.unicode.org/reports/tr14/).
 type UnicodeBreakType C.int
 
 const (
 	// UnicodeBreakMandatory wraps G_UNICODE_BREAK_MANDATORY
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#mandatory
 	//
-	// Mandatory Break (BK)
 	UnicodeBreakMandatory UnicodeBreakType = 0
 	// UnicodeBreakCarriageReturn wraps G_UNICODE_BREAK_CARRIAGE_RETURN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#carriage_return
 	//
-	// Carriage Return (CR)
 	UnicodeBreakCarriageReturn UnicodeBreakType = 1
 	// UnicodeBreakLineFeed wraps G_UNICODE_BREAK_LINE_FEED
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#line_feed
 	//
-	// Line Feed (LF)
 	UnicodeBreakLineFeed UnicodeBreakType = 2
 	// UnicodeBreakCombiningMark wraps G_UNICODE_BREAK_COMBINING_MARK
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#combining_mark
 	//
-	// Attached Characters and Combining Marks (CM)
 	UnicodeBreakCombiningMark UnicodeBreakType = 3
 	// UnicodeBreakSurrogate wraps G_UNICODE_BREAK_SURROGATE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#surrogate
 	//
-	// Surrogates (SG)
 	UnicodeBreakSurrogate UnicodeBreakType = 4
 	// UnicodeBreakZeroWidthSpace wraps G_UNICODE_BREAK_ZERO_WIDTH_SPACE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#zero_width_space
 	//
-	// Zero Width Space (ZW)
 	UnicodeBreakZeroWidthSpace UnicodeBreakType = 5
 	// UnicodeBreakInseparable wraps G_UNICODE_BREAK_INSEPARABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#inseparable
 	//
-	// Inseparable (IN)
 	UnicodeBreakInseparable UnicodeBreakType = 6
 	// UnicodeBreakNonBreakingGlue wraps G_UNICODE_BREAK_NON_BREAKING_GLUE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#non_breaking_glue
 	//
-	// Non-breaking ("Glue") (GL)
 	UnicodeBreakNonBreakingGlue UnicodeBreakType = 7
 	// UnicodeBreakContingent wraps G_UNICODE_BREAK_CONTINGENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#contingent
 	//
-	// Contingent Break Opportunity (CB)
 	UnicodeBreakContingent UnicodeBreakType = 8
 	// UnicodeBreakSpace wraps G_UNICODE_BREAK_SPACE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#space
 	//
-	// Space (SP)
 	UnicodeBreakSpace UnicodeBreakType = 9
 	// UnicodeBreakAfter wraps G_UNICODE_BREAK_AFTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#after
 	//
-	// Break Opportunity After (BA)
 	UnicodeBreakAfter UnicodeBreakType = 10
 	// UnicodeBreakBefore wraps G_UNICODE_BREAK_BEFORE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#before
 	//
-	// Break Opportunity Before (BB)
 	UnicodeBreakBefore UnicodeBreakType = 11
 	// UnicodeBreakBeforeAndAfter wraps G_UNICODE_BREAK_BEFORE_AND_AFTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#before_and_after
 	//
-	// Break Opportunity Before and After (B2)
 	UnicodeBreakBeforeAndAfter UnicodeBreakType = 12
 	// UnicodeBreakHyphen wraps G_UNICODE_BREAK_HYPHEN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#hyphen
 	//
-	// Hyphen (HY)
 	UnicodeBreakHyphen UnicodeBreakType = 13
 	// UnicodeBreakNonStarter wraps G_UNICODE_BREAK_NON_STARTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#non_starter
 	//
-	// Nonstarter (NS)
 	UnicodeBreakNonStarter UnicodeBreakType = 14
 	// UnicodeBreakOpenPunctuation wraps G_UNICODE_BREAK_OPEN_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#open_punctuation
 	//
-	// Opening Punctuation (OP)
 	UnicodeBreakOpenPunctuation UnicodeBreakType = 15
 	// UnicodeBreakClosePunctuation wraps G_UNICODE_BREAK_CLOSE_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#close_punctuation
 	//
-	// Closing Punctuation (CL)
 	UnicodeBreakClosePunctuation UnicodeBreakType = 16
 	// UnicodeBreakQuotation wraps G_UNICODE_BREAK_QUOTATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#quotation
 	//
-	// Ambiguous Quotation (QU)
 	UnicodeBreakQuotation UnicodeBreakType = 17
 	// UnicodeBreakExclamation wraps G_UNICODE_BREAK_EXCLAMATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#exclamation
 	//
-	// Exclamation/Interrogation (EX)
 	UnicodeBreakExclamation UnicodeBreakType = 18
 	// UnicodeBreakIdeographic wraps G_UNICODE_BREAK_IDEOGRAPHIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#ideographic
 	//
-	// Ideographic (ID)
 	UnicodeBreakIdeographic UnicodeBreakType = 19
 	// UnicodeBreakNumeric wraps G_UNICODE_BREAK_NUMERIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#numeric
 	//
-	// Numeric (NU)
 	UnicodeBreakNumeric UnicodeBreakType = 20
 	// UnicodeBreakInfixSeparator wraps G_UNICODE_BREAK_INFIX_SEPARATOR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#infix_separator
 	//
-	// Infix Separator (Numeric) (IS)
 	UnicodeBreakInfixSeparator UnicodeBreakType = 21
 	// UnicodeBreakSymbol wraps G_UNICODE_BREAK_SYMBOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#symbol
 	//
-	// Symbols Allowing Break After (SY)
 	UnicodeBreakSymbol UnicodeBreakType = 22
 	// UnicodeBreakAlphabetic wraps G_UNICODE_BREAK_ALPHABETIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#alphabetic
 	//
-	// Ordinary Alphabetic and Symbol Characters (AL)
 	UnicodeBreakAlphabetic UnicodeBreakType = 23
 	// UnicodeBreakPrefix wraps G_UNICODE_BREAK_PREFIX
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#prefix
 	//
-	// Prefix (Numeric) (PR)
 	UnicodeBreakPrefix UnicodeBreakType = 24
 	// UnicodeBreakPostfix wraps G_UNICODE_BREAK_POSTFIX
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#postfix
 	//
-	// Postfix (Numeric) (PO)
 	UnicodeBreakPostfix UnicodeBreakType = 25
 	// UnicodeBreakComplexContext wraps G_UNICODE_BREAK_COMPLEX_CONTEXT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#complex_context
 	//
-	// Complex Content Dependent (South East Asian) (SA)
 	UnicodeBreakComplexContext UnicodeBreakType = 26
 	// UnicodeBreakAmbiguous wraps G_UNICODE_BREAK_AMBIGUOUS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#ambiguous
 	//
-	// Ambiguous (Alphabetic or Ideographic) (AI)
 	UnicodeBreakAmbiguous UnicodeBreakType = 27
 	// UnicodeBreakUnknown wraps G_UNICODE_BREAK_UNKNOWN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#unknown
 	//
-	// Unknown (XX)
 	UnicodeBreakUnknown UnicodeBreakType = 28
 	// UnicodeBreakNextLine wraps G_UNICODE_BREAK_NEXT_LINE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#next_line
 	//
-	// Next Line (NL)
 	UnicodeBreakNextLine UnicodeBreakType = 29
 	// UnicodeBreakWordJoiner wraps G_UNICODE_BREAK_WORD_JOINER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#word_joiner
 	//
-	// Word Joiner (WJ)
 	UnicodeBreakWordJoiner UnicodeBreakType = 30
 	// UnicodeBreakHangulLJamo wraps G_UNICODE_BREAK_HANGUL_L_JAMO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#hangul_l_jamo
 	//
-	// Hangul L Jamo (JL)
 	UnicodeBreakHangulLJamo UnicodeBreakType = 31
 	// UnicodeBreakHangulVJamo wraps G_UNICODE_BREAK_HANGUL_V_JAMO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#hangul_v_jamo
 	//
-	// Hangul V Jamo (JV)
 	UnicodeBreakHangulVJamo UnicodeBreakType = 32
 	// UnicodeBreakHangulTJamo wraps G_UNICODE_BREAK_HANGUL_T_JAMO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#hangul_t_jamo
 	//
-	// Hangul T Jamo (JT)
 	UnicodeBreakHangulTJamo UnicodeBreakType = 33
 	// UnicodeBreakHangulLvSyllable wraps G_UNICODE_BREAK_HANGUL_LV_SYLLABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#hangul_lv_syllable
 	//
-	// Hangul LV Syllable (H2)
 	UnicodeBreakHangulLvSyllable UnicodeBreakType = 34
 	// UnicodeBreakHangulLvtSyllable wraps G_UNICODE_BREAK_HANGUL_LVT_SYLLABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#hangul_lvt_syllable
 	//
-	// Hangul LVT Syllable (H3)
 	UnicodeBreakHangulLvtSyllable UnicodeBreakType = 35
 	// UnicodeBreakCloseParanthesis wraps G_UNICODE_BREAK_CLOSE_PARANTHESIS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#close_paranthesis
 	//
-	// Closing Parenthesis (CP). Since 2.28. Deprecated: 2.70: Use %G_UNICODE_BREAK_CLOSE_PARENTHESIS instead.
 	UnicodeBreakCloseParanthesis UnicodeBreakType = 36
 	// UnicodeBreakCloseParenthesis wraps G_UNICODE_BREAK_CLOSE_PARENTHESIS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#close_parenthesis
 	//
-	// Closing Parenthesis (CP). Since 2.70
 	UnicodeBreakCloseParenthesis UnicodeBreakType = 36
 	// UnicodeBreakConditionalJapaneseStarter wraps G_UNICODE_BREAK_CONDITIONAL_JAPANESE_STARTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#conditional_japanese_starter
 	//
-	// Conditional Japanese Starter (CJ). Since: 2.32
 	UnicodeBreakConditionalJapaneseStarter UnicodeBreakType = 37
 	// UnicodeBreakHebrewLetter wraps G_UNICODE_BREAK_HEBREW_LETTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#hebrew_letter
 	//
-	// Hebrew Letter (HL). Since: 2.32
 	UnicodeBreakHebrewLetter UnicodeBreakType = 38
 	// UnicodeBreakRegionalIndicator wraps G_UNICODE_BREAK_REGIONAL_INDICATOR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#regional_indicator
 	//
-	// Regional Indicator (RI). Since: 2.36
 	UnicodeBreakRegionalIndicator UnicodeBreakType = 39
 	// UnicodeBreakEmojiBase wraps G_UNICODE_BREAK_EMOJI_BASE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#emoji_base
 	//
-	// Emoji Base (EB). Since: 2.50
 	UnicodeBreakEmojiBase UnicodeBreakType = 40
 	// UnicodeBreakEmojiModifier wraps G_UNICODE_BREAK_EMOJI_MODIFIER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#emoji_modifier
 	//
-	// Emoji Modifier (EM). Since: 2.50
 	UnicodeBreakEmojiModifier UnicodeBreakType = 41
 	// UnicodeBreakZeroWidthJoiner wraps G_UNICODE_BREAK_ZERO_WIDTH_JOINER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#zero_width_joiner
 	//
-	// Zero Width Joiner (ZWJ). Since: 2.50
 	UnicodeBreakZeroWidthJoiner UnicodeBreakType = 42
 	// UnicodeBreakAksara wraps G_UNICODE_BREAK_AKSARA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#aksara
 	//
-	// Aksara (AK). Since: 2.80
 	UnicodeBreakAksara UnicodeBreakType = 43
 	// UnicodeBreakAksaraPreBase wraps G_UNICODE_BREAK_AKSARA_PRE_BASE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#aksara_pre_base
 	//
-	// Aksara Pre-Base (AP). Since: 2.80
 	UnicodeBreakAksaraPreBase UnicodeBreakType = 44
 	// UnicodeBreakAksaraStart wraps G_UNICODE_BREAK_AKSARA_START
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#aksara_start
 	//
-	// Aksara Start (AS). Since: 2.80
 	UnicodeBreakAksaraStart UnicodeBreakType = 45
 	// UnicodeBreakViramaFinal wraps G_UNICODE_BREAK_VIRAMA_FINAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#virama_final
 	//
-	// Virama Final (VF). Since: 2.80
 	UnicodeBreakViramaFinal UnicodeBreakType = 46
 	// UnicodeBreakVirama wraps G_UNICODE_BREAK_VIRAMA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeBreakType.html#virama
 	//
-	// Virama (VI). Since: 2.80
 	UnicodeBreakVirama UnicodeBreakType = 47
 )
 
@@ -2526,710 +2618,876 @@ func (e UnicodeBreakType) String() string {
 }
 
 // UnicodeScript wraps GUnicodeScript
-//
-// The #GUnicodeScript enumeration identifies different writing
-// systems. The values correspond to the names as defined in the
-// Unicode standard. The enumeration has been added in GLib 2.14,
-// and is interchangeable with #PangoScript.
 // 
-// Note that new types may be added in the future. Applications
-// should be ready to handle unknown values.
-// See [Unicode Standard Annex #24: Script names](http://www.unicode.org/reports/tr24/).
+// see also https://docs.gtk.org/glib/enum.UnicodeScript.html
+//
 type UnicodeScript C.int
 
 const (
 	// UnicodeScriptInvalidCode wraps G_UNICODE_SCRIPT_INVALID_CODE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#invalid_code
 	//
-	// a value never returned from g_unichar_get_script()
 	UnicodeScriptInvalidCode UnicodeScript = -1
 	// UnicodeScriptCommon wraps G_UNICODE_SCRIPT_COMMON
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#common
 	//
-	// a character used by multiple different scripts
 	UnicodeScriptCommon UnicodeScript = 0
 	// UnicodeScriptInherited wraps G_UNICODE_SCRIPT_INHERITED
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#inherited
 	//
-	// a mark glyph that takes its script from the
-	//                               base glyph to which it is attached
 	UnicodeScriptInherited UnicodeScript = 1
 	// UnicodeScriptArabic wraps G_UNICODE_SCRIPT_ARABIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#arabic
 	//
-	// Arabic
 	UnicodeScriptArabic UnicodeScript = 2
 	// UnicodeScriptArmenian wraps G_UNICODE_SCRIPT_ARMENIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#armenian
 	//
-	// Armenian
 	UnicodeScriptArmenian UnicodeScript = 3
 	// UnicodeScriptBengali wraps G_UNICODE_SCRIPT_BENGALI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#bengali
 	//
-	// Bengali
 	UnicodeScriptBengali UnicodeScript = 4
 	// UnicodeScriptBopomofo wraps G_UNICODE_SCRIPT_BOPOMOFO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#bopomofo
 	//
-	// Bopomofo
 	UnicodeScriptBopomofo UnicodeScript = 5
 	// UnicodeScriptCherokee wraps G_UNICODE_SCRIPT_CHEROKEE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#cherokee
 	//
-	// Cherokee
 	UnicodeScriptCherokee UnicodeScript = 6
 	// UnicodeScriptCoptic wraps G_UNICODE_SCRIPT_COPTIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#coptic
 	//
-	// Coptic
 	UnicodeScriptCoptic UnicodeScript = 7
 	// UnicodeScriptCyrillic wraps G_UNICODE_SCRIPT_CYRILLIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#cyrillic
 	//
-	// Cyrillic
 	UnicodeScriptCyrillic UnicodeScript = 8
 	// UnicodeScriptDeseret wraps G_UNICODE_SCRIPT_DESERET
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#deseret
 	//
-	// Deseret
 	UnicodeScriptDeseret UnicodeScript = 9
 	// UnicodeScriptDevanagari wraps G_UNICODE_SCRIPT_DEVANAGARI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#devanagari
 	//
-	// Devanagari
 	UnicodeScriptDevanagari UnicodeScript = 10
 	// UnicodeScriptEthiopic wraps G_UNICODE_SCRIPT_ETHIOPIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#ethiopic
 	//
-	// Ethiopic
 	UnicodeScriptEthiopic UnicodeScript = 11
 	// UnicodeScriptGeorgian wraps G_UNICODE_SCRIPT_GEORGIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#georgian
 	//
-	// Georgian
 	UnicodeScriptGeorgian UnicodeScript = 12
 	// UnicodeScriptGothic wraps G_UNICODE_SCRIPT_GOTHIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#gothic
 	//
-	// Gothic
 	UnicodeScriptGothic UnicodeScript = 13
 	// UnicodeScriptGreek wraps G_UNICODE_SCRIPT_GREEK
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#greek
 	//
-	// Greek
 	UnicodeScriptGreek UnicodeScript = 14
 	// UnicodeScriptGujarati wraps G_UNICODE_SCRIPT_GUJARATI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#gujarati
 	//
-	// Gujarati
 	UnicodeScriptGujarati UnicodeScript = 15
 	// UnicodeScriptGurmukhi wraps G_UNICODE_SCRIPT_GURMUKHI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#gurmukhi
 	//
-	// Gurmukhi
 	UnicodeScriptGurmukhi UnicodeScript = 16
 	// UnicodeScriptHan wraps G_UNICODE_SCRIPT_HAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#han
 	//
-	// Han
 	UnicodeScriptHan UnicodeScript = 17
 	// UnicodeScriptHangul wraps G_UNICODE_SCRIPT_HANGUL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#hangul
 	//
-	// Hangul
 	UnicodeScriptHangul UnicodeScript = 18
 	// UnicodeScriptHebrew wraps G_UNICODE_SCRIPT_HEBREW
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#hebrew
 	//
-	// Hebrew
 	UnicodeScriptHebrew UnicodeScript = 19
 	// UnicodeScriptHiragana wraps G_UNICODE_SCRIPT_HIRAGANA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#hiragana
 	//
-	// Hiragana
 	UnicodeScriptHiragana UnicodeScript = 20
 	// UnicodeScriptKannada wraps G_UNICODE_SCRIPT_KANNADA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#kannada
 	//
-	// Kannada
 	UnicodeScriptKannada UnicodeScript = 21
 	// UnicodeScriptKatakana wraps G_UNICODE_SCRIPT_KATAKANA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#katakana
 	//
-	// Katakana
 	UnicodeScriptKatakana UnicodeScript = 22
 	// UnicodeScriptKhmer wraps G_UNICODE_SCRIPT_KHMER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#khmer
 	//
-	// Khmer
 	UnicodeScriptKhmer UnicodeScript = 23
 	// UnicodeScriptLao wraps G_UNICODE_SCRIPT_LAO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#lao
 	//
-	// Lao
 	UnicodeScriptLao UnicodeScript = 24
 	// UnicodeScriptLatin wraps G_UNICODE_SCRIPT_LATIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#latin
 	//
-	// Latin
 	UnicodeScriptLatin UnicodeScript = 25
 	// UnicodeScriptMalayalam wraps G_UNICODE_SCRIPT_MALAYALAM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#malayalam
 	//
-	// Malayalam
 	UnicodeScriptMalayalam UnicodeScript = 26
 	// UnicodeScriptMongolian wraps G_UNICODE_SCRIPT_MONGOLIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#mongolian
 	//
-	// Mongolian
 	UnicodeScriptMongolian UnicodeScript = 27
 	// UnicodeScriptMyanmar wraps G_UNICODE_SCRIPT_MYANMAR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#myanmar
 	//
-	// Myanmar
 	UnicodeScriptMyanmar UnicodeScript = 28
 	// UnicodeScriptOgham wraps G_UNICODE_SCRIPT_OGHAM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#ogham
 	//
-	// Ogham
 	UnicodeScriptOgham UnicodeScript = 29
 	// UnicodeScriptOldItalic wraps G_UNICODE_SCRIPT_OLD_ITALIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_italic
 	//
-	// Old Italic
 	UnicodeScriptOldItalic UnicodeScript = 30
 	// UnicodeScriptOriya wraps G_UNICODE_SCRIPT_ORIYA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#oriya
 	//
-	// Oriya
 	UnicodeScriptOriya UnicodeScript = 31
 	// UnicodeScriptRunic wraps G_UNICODE_SCRIPT_RUNIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#runic
 	//
-	// Runic
 	UnicodeScriptRunic UnicodeScript = 32
 	// UnicodeScriptSinhala wraps G_UNICODE_SCRIPT_SINHALA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#sinhala
 	//
-	// Sinhala
 	UnicodeScriptSinhala UnicodeScript = 33
 	// UnicodeScriptSyriac wraps G_UNICODE_SCRIPT_SYRIAC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#syriac
 	//
-	// Syriac
 	UnicodeScriptSyriac UnicodeScript = 34
 	// UnicodeScriptTamil wraps G_UNICODE_SCRIPT_TAMIL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tamil
 	//
-	// Tamil
 	UnicodeScriptTamil UnicodeScript = 35
 	// UnicodeScriptTelugu wraps G_UNICODE_SCRIPT_TELUGU
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#telugu
 	//
-	// Telugu
 	UnicodeScriptTelugu UnicodeScript = 36
 	// UnicodeScriptThaana wraps G_UNICODE_SCRIPT_THAANA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#thaana
 	//
-	// Thaana
 	UnicodeScriptThaana UnicodeScript = 37
 	// UnicodeScriptThai wraps G_UNICODE_SCRIPT_THAI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#thai
 	//
-	// Thai
 	UnicodeScriptThai UnicodeScript = 38
 	// UnicodeScriptTibetan wraps G_UNICODE_SCRIPT_TIBETAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tibetan
 	//
-	// Tibetan
 	UnicodeScriptTibetan UnicodeScript = 39
 	// UnicodeScriptCanadianAboriginal wraps G_UNICODE_SCRIPT_CANADIAN_ABORIGINAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#canadian_aboriginal
 	//
-	// Canadian Aboriginal
 	UnicodeScriptCanadianAboriginal UnicodeScript = 40
 	// UnicodeScriptYi wraps G_UNICODE_SCRIPT_YI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#yi
 	//
-	// Yi
 	UnicodeScriptYi UnicodeScript = 41
 	// UnicodeScriptTagalog wraps G_UNICODE_SCRIPT_TAGALOG
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tagalog
 	//
-	// Tagalog
 	UnicodeScriptTagalog UnicodeScript = 42
 	// UnicodeScriptHanunoo wraps G_UNICODE_SCRIPT_HANUNOO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#hanunoo
 	//
-	// Hanunoo
 	UnicodeScriptHanunoo UnicodeScript = 43
 	// UnicodeScriptBuhid wraps G_UNICODE_SCRIPT_BUHID
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#buhid
 	//
-	// Buhid
 	UnicodeScriptBuhid UnicodeScript = 44
 	// UnicodeScriptTagbanwa wraps G_UNICODE_SCRIPT_TAGBANWA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tagbanwa
 	//
-	// Tagbanwa
 	UnicodeScriptTagbanwa UnicodeScript = 45
 	// UnicodeScriptBraille wraps G_UNICODE_SCRIPT_BRAILLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#braille
 	//
-	// Braille
 	UnicodeScriptBraille UnicodeScript = 46
 	// UnicodeScriptCypriot wraps G_UNICODE_SCRIPT_CYPRIOT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#cypriot
 	//
-	// Cypriot
 	UnicodeScriptCypriot UnicodeScript = 47
 	// UnicodeScriptLimbu wraps G_UNICODE_SCRIPT_LIMBU
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#limbu
 	//
-	// Limbu
 	UnicodeScriptLimbu UnicodeScript = 48
 	// UnicodeScriptOsmanya wraps G_UNICODE_SCRIPT_OSMANYA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#osmanya
 	//
-	// Osmanya
 	UnicodeScriptOsmanya UnicodeScript = 49
 	// UnicodeScriptShavian wraps G_UNICODE_SCRIPT_SHAVIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#shavian
 	//
-	// Shavian
 	UnicodeScriptShavian UnicodeScript = 50
 	// UnicodeScriptLinearB wraps G_UNICODE_SCRIPT_LINEAR_B
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#linear_b
 	//
-	// Linear B
 	UnicodeScriptLinearB UnicodeScript = 51
 	// UnicodeScriptTaiLe wraps G_UNICODE_SCRIPT_TAI_LE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tai_le
 	//
-	// Tai Le
 	UnicodeScriptTaiLe UnicodeScript = 52
 	// UnicodeScriptUgaritic wraps G_UNICODE_SCRIPT_UGARITIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#ugaritic
 	//
-	// Ugaritic
 	UnicodeScriptUgaritic UnicodeScript = 53
 	// UnicodeScriptNewTaiLue wraps G_UNICODE_SCRIPT_NEW_TAI_LUE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#new_tai_lue
 	//
-	// New Tai Lue
 	UnicodeScriptNewTaiLue UnicodeScript = 54
 	// UnicodeScriptBuginese wraps G_UNICODE_SCRIPT_BUGINESE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#buginese
 	//
-	// Buginese
 	UnicodeScriptBuginese UnicodeScript = 55
 	// UnicodeScriptGlagolitic wraps G_UNICODE_SCRIPT_GLAGOLITIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#glagolitic
 	//
-	// Glagolitic
 	UnicodeScriptGlagolitic UnicodeScript = 56
 	// UnicodeScriptTifinagh wraps G_UNICODE_SCRIPT_TIFINAGH
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tifinagh
 	//
-	// Tifinagh
 	UnicodeScriptTifinagh UnicodeScript = 57
 	// UnicodeScriptSylotiNagri wraps G_UNICODE_SCRIPT_SYLOTI_NAGRI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#syloti_nagri
 	//
-	// Syloti Nagri
 	UnicodeScriptSylotiNagri UnicodeScript = 58
 	// UnicodeScriptOldPersian wraps G_UNICODE_SCRIPT_OLD_PERSIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_persian
 	//
-	// Old Persian
 	UnicodeScriptOldPersian UnicodeScript = 59
 	// UnicodeScriptKharoshthi wraps G_UNICODE_SCRIPT_KHAROSHTHI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#kharoshthi
 	//
-	// Kharoshthi
 	UnicodeScriptKharoshthi UnicodeScript = 60
 	// UnicodeScriptUnknown wraps G_UNICODE_SCRIPT_UNKNOWN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#unknown
 	//
-	// an unassigned code point
 	UnicodeScriptUnknown UnicodeScript = 61
 	// UnicodeScriptBalinese wraps G_UNICODE_SCRIPT_BALINESE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#balinese
 	//
-	// Balinese
 	UnicodeScriptBalinese UnicodeScript = 62
 	// UnicodeScriptCuneiform wraps G_UNICODE_SCRIPT_CUNEIFORM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#cuneiform
 	//
-	// Cuneiform
 	UnicodeScriptCuneiform UnicodeScript = 63
 	// UnicodeScriptPhoenician wraps G_UNICODE_SCRIPT_PHOENICIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#phoenician
 	//
-	// Phoenician
 	UnicodeScriptPhoenician UnicodeScript = 64
 	// UnicodeScriptPhagsPa wraps G_UNICODE_SCRIPT_PHAGS_PA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#phags_pa
 	//
-	// Phags-pa
 	UnicodeScriptPhagsPa UnicodeScript = 65
 	// UnicodeScriptNko wraps G_UNICODE_SCRIPT_NKO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#nko
 	//
-	// N'Ko
 	UnicodeScriptNko UnicodeScript = 66
 	// UnicodeScriptKayahLi wraps G_UNICODE_SCRIPT_KAYAH_LI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#kayah_li
 	//
-	// Kayah Li. Since 2.16.3
 	UnicodeScriptKayahLi UnicodeScript = 67
 	// UnicodeScriptLepcha wraps G_UNICODE_SCRIPT_LEPCHA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#lepcha
 	//
-	// Lepcha. Since 2.16.3
 	UnicodeScriptLepcha UnicodeScript = 68
 	// UnicodeScriptRejang wraps G_UNICODE_SCRIPT_REJANG
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#rejang
 	//
-	// Rejang. Since 2.16.3
 	UnicodeScriptRejang UnicodeScript = 69
 	// UnicodeScriptSundanese wraps G_UNICODE_SCRIPT_SUNDANESE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#sundanese
 	//
-	// Sundanese. Since 2.16.3
 	UnicodeScriptSundanese UnicodeScript = 70
 	// UnicodeScriptSaurashtra wraps G_UNICODE_SCRIPT_SAURASHTRA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#saurashtra
 	//
-	// Saurashtra. Since 2.16.3
 	UnicodeScriptSaurashtra UnicodeScript = 71
 	// UnicodeScriptCham wraps G_UNICODE_SCRIPT_CHAM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#cham
 	//
-	// Cham. Since 2.16.3
 	UnicodeScriptCham UnicodeScript = 72
 	// UnicodeScriptOlChiki wraps G_UNICODE_SCRIPT_OL_CHIKI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#ol_chiki
 	//
-	// Ol Chiki. Since 2.16.3
 	UnicodeScriptOlChiki UnicodeScript = 73
 	// UnicodeScriptVai wraps G_UNICODE_SCRIPT_VAI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#vai
 	//
-	// Vai. Since 2.16.3
 	UnicodeScriptVai UnicodeScript = 74
 	// UnicodeScriptCarian wraps G_UNICODE_SCRIPT_CARIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#carian
 	//
-	// Carian. Since 2.16.3
 	UnicodeScriptCarian UnicodeScript = 75
 	// UnicodeScriptLycian wraps G_UNICODE_SCRIPT_LYCIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#lycian
 	//
-	// Lycian. Since 2.16.3
 	UnicodeScriptLycian UnicodeScript = 76
 	// UnicodeScriptLydian wraps G_UNICODE_SCRIPT_LYDIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#lydian
 	//
-	// Lydian. Since 2.16.3
 	UnicodeScriptLydian UnicodeScript = 77
 	// UnicodeScriptAvestan wraps G_UNICODE_SCRIPT_AVESTAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#avestan
 	//
-	// Avestan. Since 2.26
 	UnicodeScriptAvestan UnicodeScript = 78
 	// UnicodeScriptBamum wraps G_UNICODE_SCRIPT_BAMUM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#bamum
 	//
-	// Bamum. Since 2.26
 	UnicodeScriptBamum UnicodeScript = 79
 	// UnicodeScriptEgyptianHieroglyphs wraps G_UNICODE_SCRIPT_EGYPTIAN_HIEROGLYPHS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#egyptian_hieroglyphs
 	//
-	// Egyptian Hieroglpyhs. Since 2.26
 	UnicodeScriptEgyptianHieroglyphs UnicodeScript = 80
 	// UnicodeScriptImperialAramaic wraps G_UNICODE_SCRIPT_IMPERIAL_ARAMAIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#imperial_aramaic
 	//
-	// Imperial Aramaic. Since 2.26
 	UnicodeScriptImperialAramaic UnicodeScript = 81
 	// UnicodeScriptInscriptionalPahlavi wraps G_UNICODE_SCRIPT_INSCRIPTIONAL_PAHLAVI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#inscriptional_pahlavi
 	//
-	// Inscriptional Pahlavi. Since 2.26
 	UnicodeScriptInscriptionalPahlavi UnicodeScript = 82
 	// UnicodeScriptInscriptionalParthian wraps G_UNICODE_SCRIPT_INSCRIPTIONAL_PARTHIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#inscriptional_parthian
 	//
-	// Inscriptional Parthian. Since 2.26
 	UnicodeScriptInscriptionalParthian UnicodeScript = 83
 	// UnicodeScriptJavanese wraps G_UNICODE_SCRIPT_JAVANESE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#javanese
 	//
-	// Javanese. Since 2.26
 	UnicodeScriptJavanese UnicodeScript = 84
 	// UnicodeScriptKaithi wraps G_UNICODE_SCRIPT_KAITHI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#kaithi
 	//
-	// Kaithi. Since 2.26
 	UnicodeScriptKaithi UnicodeScript = 85
 	// UnicodeScriptLisu wraps G_UNICODE_SCRIPT_LISU
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#lisu
 	//
-	// Lisu. Since 2.26
 	UnicodeScriptLisu UnicodeScript = 86
 	// UnicodeScriptMeeteiMayek wraps G_UNICODE_SCRIPT_MEETEI_MAYEK
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#meetei_mayek
 	//
-	// Meetei Mayek. Since 2.26
 	UnicodeScriptMeeteiMayek UnicodeScript = 87
 	// UnicodeScriptOldSouthArabian wraps G_UNICODE_SCRIPT_OLD_SOUTH_ARABIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_south_arabian
 	//
-	// Old South Arabian. Since 2.26
 	UnicodeScriptOldSouthArabian UnicodeScript = 88
 	// UnicodeScriptOldTurkic wraps G_UNICODE_SCRIPT_OLD_TURKIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_turkic
 	//
-	// Old Turkic. Since 2.28
 	UnicodeScriptOldTurkic UnicodeScript = 89
 	// UnicodeScriptSamaritan wraps G_UNICODE_SCRIPT_SAMARITAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#samaritan
 	//
-	// Samaritan. Since 2.26
 	UnicodeScriptSamaritan UnicodeScript = 90
 	// UnicodeScriptTaiTham wraps G_UNICODE_SCRIPT_TAI_THAM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tai_tham
 	//
-	// Tai Tham. Since 2.26
 	UnicodeScriptTaiTham UnicodeScript = 91
 	// UnicodeScriptTaiViet wraps G_UNICODE_SCRIPT_TAI_VIET
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tai_viet
 	//
-	// Tai Viet. Since 2.26
 	UnicodeScriptTaiViet UnicodeScript = 92
 	// UnicodeScriptBatak wraps G_UNICODE_SCRIPT_BATAK
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#batak
 	//
-	// Batak. Since 2.28
 	UnicodeScriptBatak UnicodeScript = 93
 	// UnicodeScriptBrahmi wraps G_UNICODE_SCRIPT_BRAHMI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#brahmi
 	//
-	// Brahmi. Since 2.28
 	UnicodeScriptBrahmi UnicodeScript = 94
 	// UnicodeScriptMandaic wraps G_UNICODE_SCRIPT_MANDAIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#mandaic
 	//
-	// Mandaic. Since 2.28
 	UnicodeScriptMandaic UnicodeScript = 95
 	// UnicodeScriptChakma wraps G_UNICODE_SCRIPT_CHAKMA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#chakma
 	//
-	// Chakma. Since: 2.32
 	UnicodeScriptChakma UnicodeScript = 96
 	// UnicodeScriptMeroiticCursive wraps G_UNICODE_SCRIPT_MEROITIC_CURSIVE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#meroitic_cursive
 	//
-	// Meroitic Cursive. Since: 2.32
 	UnicodeScriptMeroiticCursive UnicodeScript = 97
 	// UnicodeScriptMeroiticHieroglyphs wraps G_UNICODE_SCRIPT_MEROITIC_HIEROGLYPHS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#meroitic_hieroglyphs
 	//
-	// Meroitic Hieroglyphs. Since: 2.32
 	UnicodeScriptMeroiticHieroglyphs UnicodeScript = 98
 	// UnicodeScriptMiao wraps G_UNICODE_SCRIPT_MIAO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#miao
 	//
-	// Miao. Since: 2.32
 	UnicodeScriptMiao UnicodeScript = 99
 	// UnicodeScriptSharada wraps G_UNICODE_SCRIPT_SHARADA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#sharada
 	//
-	// Sharada. Since: 2.32
 	UnicodeScriptSharada UnicodeScript = 100
 	// UnicodeScriptSoraSompeng wraps G_UNICODE_SCRIPT_SORA_SOMPENG
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#sora_sompeng
 	//
-	// Sora Sompeng. Since: 2.32
 	UnicodeScriptSoraSompeng UnicodeScript = 101
 	// UnicodeScriptTakri wraps G_UNICODE_SCRIPT_TAKRI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#takri
 	//
-	// Takri. Since: 2.32
 	UnicodeScriptTakri UnicodeScript = 102
 	// UnicodeScriptBassaVah wraps G_UNICODE_SCRIPT_BASSA_VAH
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#bassa_vah
 	//
-	// Bassa. Since: 2.42
 	UnicodeScriptBassaVah UnicodeScript = 103
 	// UnicodeScriptCaucasianAlbanian wraps G_UNICODE_SCRIPT_CAUCASIAN_ALBANIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#caucasian_albanian
 	//
-	// Caucasian Albanian. Since: 2.42
 	UnicodeScriptCaucasianAlbanian UnicodeScript = 104
 	// UnicodeScriptDuployan wraps G_UNICODE_SCRIPT_DUPLOYAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#duployan
 	//
-	// Duployan. Since: 2.42
 	UnicodeScriptDuployan UnicodeScript = 105
 	// UnicodeScriptElbasan wraps G_UNICODE_SCRIPT_ELBASAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#elbasan
 	//
-	// Elbasan. Since: 2.42
 	UnicodeScriptElbasan UnicodeScript = 106
 	// UnicodeScriptGrantha wraps G_UNICODE_SCRIPT_GRANTHA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#grantha
 	//
-	// Grantha. Since: 2.42
 	UnicodeScriptGrantha UnicodeScript = 107
 	// UnicodeScriptKhojki wraps G_UNICODE_SCRIPT_KHOJKI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#khojki
 	//
-	// Kjohki. Since: 2.42
 	UnicodeScriptKhojki UnicodeScript = 108
 	// UnicodeScriptKhudawadi wraps G_UNICODE_SCRIPT_KHUDAWADI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#khudawadi
 	//
-	// Khudawadi, Sindhi. Since: 2.42
 	UnicodeScriptKhudawadi UnicodeScript = 109
 	// UnicodeScriptLinearA wraps G_UNICODE_SCRIPT_LINEAR_A
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#linear_a
 	//
-	// Linear A. Since: 2.42
 	UnicodeScriptLinearA UnicodeScript = 110
 	// UnicodeScriptMahajani wraps G_UNICODE_SCRIPT_MAHAJANI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#mahajani
 	//
-	// Mahajani. Since: 2.42
 	UnicodeScriptMahajani UnicodeScript = 111
 	// UnicodeScriptManichaean wraps G_UNICODE_SCRIPT_MANICHAEAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#manichaean
 	//
-	// Manichaean. Since: 2.42
 	UnicodeScriptManichaean UnicodeScript = 112
 	// UnicodeScriptMendeKikakui wraps G_UNICODE_SCRIPT_MENDE_KIKAKUI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#mende_kikakui
 	//
-	// Mende Kikakui. Since: 2.42
 	UnicodeScriptMendeKikakui UnicodeScript = 113
 	// UnicodeScriptModi wraps G_UNICODE_SCRIPT_MODI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#modi
 	//
-	// Modi. Since: 2.42
 	UnicodeScriptModi UnicodeScript = 114
 	// UnicodeScriptMro wraps G_UNICODE_SCRIPT_MRO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#mro
 	//
-	// Mro. Since: 2.42
 	UnicodeScriptMro UnicodeScript = 115
 	// UnicodeScriptNabataean wraps G_UNICODE_SCRIPT_NABATAEAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#nabataean
 	//
-	// Nabataean. Since: 2.42
 	UnicodeScriptNabataean UnicodeScript = 116
 	// UnicodeScriptOldNorthArabian wraps G_UNICODE_SCRIPT_OLD_NORTH_ARABIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_north_arabian
 	//
-	// Old North Arabian. Since: 2.42
 	UnicodeScriptOldNorthArabian UnicodeScript = 117
 	// UnicodeScriptOldPermic wraps G_UNICODE_SCRIPT_OLD_PERMIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_permic
 	//
-	// Old Permic. Since: 2.42
 	UnicodeScriptOldPermic UnicodeScript = 118
 	// UnicodeScriptPahawhHmong wraps G_UNICODE_SCRIPT_PAHAWH_HMONG
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#pahawh_hmong
 	//
-	// Pahawh Hmong. Since: 2.42
 	UnicodeScriptPahawhHmong UnicodeScript = 119
 	// UnicodeScriptPalmyrene wraps G_UNICODE_SCRIPT_PALMYRENE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#palmyrene
 	//
-	// Palmyrene. Since: 2.42
 	UnicodeScriptPalmyrene UnicodeScript = 120
 	// UnicodeScriptPauCinHau wraps G_UNICODE_SCRIPT_PAU_CIN_HAU
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#pau_cin_hau
 	//
-	// Pau Cin Hau. Since: 2.42
 	UnicodeScriptPauCinHau UnicodeScript = 121
 	// UnicodeScriptPsalterPahlavi wraps G_UNICODE_SCRIPT_PSALTER_PAHLAVI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#psalter_pahlavi
 	//
-	// Psalter Pahlavi. Since: 2.42
 	UnicodeScriptPsalterPahlavi UnicodeScript = 122
 	// UnicodeScriptSiddham wraps G_UNICODE_SCRIPT_SIDDHAM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#siddham
 	//
-	// Siddham. Since: 2.42
 	UnicodeScriptSiddham UnicodeScript = 123
 	// UnicodeScriptTirhuta wraps G_UNICODE_SCRIPT_TIRHUTA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tirhuta
 	//
-	// Tirhuta. Since: 2.42
 	UnicodeScriptTirhuta UnicodeScript = 124
 	// UnicodeScriptWarangCiti wraps G_UNICODE_SCRIPT_WARANG_CITI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#warang_citi
 	//
-	// Warang Citi. Since: 2.42
 	UnicodeScriptWarangCiti UnicodeScript = 125
 	// UnicodeScriptAhom wraps G_UNICODE_SCRIPT_AHOM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#ahom
 	//
-	// Ahom. Since: 2.48
 	UnicodeScriptAhom UnicodeScript = 126
 	// UnicodeScriptAnatolianHieroglyphs wraps G_UNICODE_SCRIPT_ANATOLIAN_HIEROGLYPHS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#anatolian_hieroglyphs
 	//
-	// Anatolian Hieroglyphs. Since: 2.48
 	UnicodeScriptAnatolianHieroglyphs UnicodeScript = 127
 	// UnicodeScriptHatran wraps G_UNICODE_SCRIPT_HATRAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#hatran
 	//
-	// Hatran. Since: 2.48
 	UnicodeScriptHatran UnicodeScript = 128
 	// UnicodeScriptMultani wraps G_UNICODE_SCRIPT_MULTANI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#multani
 	//
-	// Multani. Since: 2.48
 	UnicodeScriptMultani UnicodeScript = 129
 	// UnicodeScriptOldHungarian wraps G_UNICODE_SCRIPT_OLD_HUNGARIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_hungarian
 	//
-	// Old Hungarian. Since: 2.48
 	UnicodeScriptOldHungarian UnicodeScript = 130
 	// UnicodeScriptSignwriting wraps G_UNICODE_SCRIPT_SIGNWRITING
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#signwriting
 	//
-	// Signwriting. Since: 2.48
 	UnicodeScriptSignwriting UnicodeScript = 131
 	// UnicodeScriptAdlam wraps G_UNICODE_SCRIPT_ADLAM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#adlam
 	//
-	// Adlam. Since: 2.50
 	UnicodeScriptAdlam UnicodeScript = 132
 	// UnicodeScriptBhaiksuki wraps G_UNICODE_SCRIPT_BHAIKSUKI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#bhaiksuki
 	//
-	// Bhaiksuki. Since: 2.50
 	UnicodeScriptBhaiksuki UnicodeScript = 133
 	// UnicodeScriptMarchen wraps G_UNICODE_SCRIPT_MARCHEN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#marchen
 	//
-	// Marchen. Since: 2.50
 	UnicodeScriptMarchen UnicodeScript = 134
 	// UnicodeScriptNewa wraps G_UNICODE_SCRIPT_NEWA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#newa
 	//
-	// Newa. Since: 2.50
 	UnicodeScriptNewa UnicodeScript = 135
 	// UnicodeScriptOsage wraps G_UNICODE_SCRIPT_OSAGE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#osage
 	//
-	// Osage. Since: 2.50
 	UnicodeScriptOsage UnicodeScript = 136
 	// UnicodeScriptTangut wraps G_UNICODE_SCRIPT_TANGUT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tangut
 	//
-	// Tangut. Since: 2.50
 	UnicodeScriptTangut UnicodeScript = 137
 	// UnicodeScriptMasaramGondi wraps G_UNICODE_SCRIPT_MASARAM_GONDI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#masaram_gondi
 	//
-	// Masaram Gondi. Since: 2.54
 	UnicodeScriptMasaramGondi UnicodeScript = 138
 	// UnicodeScriptNushu wraps G_UNICODE_SCRIPT_NUSHU
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#nushu
 	//
-	// Nushu. Since: 2.54
 	UnicodeScriptNushu UnicodeScript = 139
 	// UnicodeScriptSoyombo wraps G_UNICODE_SCRIPT_SOYOMBO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#soyombo
 	//
-	// Soyombo. Since: 2.54
 	UnicodeScriptSoyombo UnicodeScript = 140
 	// UnicodeScriptZanabazarSquare wraps G_UNICODE_SCRIPT_ZANABAZAR_SQUARE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#zanabazar_square
 	//
-	// Zanabazar Square. Since: 2.54
 	UnicodeScriptZanabazarSquare UnicodeScript = 141
 	// UnicodeScriptDogra wraps G_UNICODE_SCRIPT_DOGRA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#dogra
 	//
-	// Dogra. Since: 2.58
 	UnicodeScriptDogra UnicodeScript = 142
 	// UnicodeScriptGunjalaGondi wraps G_UNICODE_SCRIPT_GUNJALA_GONDI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#gunjala_gondi
 	//
-	// Gunjala Gondi. Since: 2.58
 	UnicodeScriptGunjalaGondi UnicodeScript = 143
 	// UnicodeScriptHanifiRohingya wraps G_UNICODE_SCRIPT_HANIFI_ROHINGYA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#hanifi_rohingya
 	//
-	// Hanifi Rohingya. Since: 2.58
 	UnicodeScriptHanifiRohingya UnicodeScript = 144
 	// UnicodeScriptMakasar wraps G_UNICODE_SCRIPT_MAKASAR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#makasar
 	//
-	// Makasar. Since: 2.58
 	UnicodeScriptMakasar UnicodeScript = 145
 	// UnicodeScriptMedefaidrin wraps G_UNICODE_SCRIPT_MEDEFAIDRIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#medefaidrin
 	//
-	// Medefaidrin. Since: 2.58
 	UnicodeScriptMedefaidrin UnicodeScript = 146
 	// UnicodeScriptOldSogdian wraps G_UNICODE_SCRIPT_OLD_SOGDIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_sogdian
 	//
-	// Old Sogdian. Since: 2.58
 	UnicodeScriptOldSogdian UnicodeScript = 147
 	// UnicodeScriptSogdian wraps G_UNICODE_SCRIPT_SOGDIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#sogdian
 	//
-	// Sogdian. Since: 2.58
 	UnicodeScriptSogdian UnicodeScript = 148
 	// UnicodeScriptElymaic wraps G_UNICODE_SCRIPT_ELYMAIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#elymaic
 	//
-	// Elym. Since: 2.62
 	UnicodeScriptElymaic UnicodeScript = 149
 	// UnicodeScriptNandinagari wraps G_UNICODE_SCRIPT_NANDINAGARI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#nandinagari
 	//
-	// Nand. Since: 2.62
 	UnicodeScriptNandinagari UnicodeScript = 150
 	// UnicodeScriptNyiakengPuachueHmong wraps G_UNICODE_SCRIPT_NYIAKENG_PUACHUE_HMONG
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#nyiakeng_puachue_hmong
 	//
-	// Rohg. Since: 2.62
 	UnicodeScriptNyiakengPuachueHmong UnicodeScript = 151
 	// UnicodeScriptWancho wraps G_UNICODE_SCRIPT_WANCHO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#wancho
 	//
-	// Wcho. Since: 2.62
 	UnicodeScriptWancho UnicodeScript = 152
 	// UnicodeScriptChorasmian wraps G_UNICODE_SCRIPT_CHORASMIAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#chorasmian
 	//
-	// Chorasmian. Since: 2.66
 	UnicodeScriptChorasmian UnicodeScript = 153
 	// UnicodeScriptDivesAkuru wraps G_UNICODE_SCRIPT_DIVES_AKURU
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#dives_akuru
 	//
-	// Dives Akuru. Since: 2.66
 	UnicodeScriptDivesAkuru UnicodeScript = 154
 	// UnicodeScriptKhitanSmallScript wraps G_UNICODE_SCRIPT_KHITAN_SMALL_SCRIPT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#khitan_small_script
 	//
-	// Khitan small script. Since: 2.66
 	UnicodeScriptKhitanSmallScript UnicodeScript = 155
 	// UnicodeScriptYezidi wraps G_UNICODE_SCRIPT_YEZIDI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#yezidi
 	//
-	// Yezidi. Since: 2.66
 	UnicodeScriptYezidi UnicodeScript = 156
 	// UnicodeScriptCyproMinoan wraps G_UNICODE_SCRIPT_CYPRO_MINOAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#cypro_minoan
 	//
-	// Cypro-Minoan. Since: 2.72
 	UnicodeScriptCyproMinoan UnicodeScript = 157
 	// UnicodeScriptOldUyghur wraps G_UNICODE_SCRIPT_OLD_UYGHUR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#old_uyghur
 	//
-	// Old Uyghur. Since: 2.72
 	UnicodeScriptOldUyghur UnicodeScript = 158
 	// UnicodeScriptTangsa wraps G_UNICODE_SCRIPT_TANGSA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tangsa
 	//
-	// Tangsa. Since: 2.72
 	UnicodeScriptTangsa UnicodeScript = 159
 	// UnicodeScriptToto wraps G_UNICODE_SCRIPT_TOTO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#toto
 	//
-	// Toto. Since: 2.72
 	UnicodeScriptToto UnicodeScript = 160
 	// UnicodeScriptVithkuqi wraps G_UNICODE_SCRIPT_VITHKUQI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#vithkuqi
 	//
-	// Vithkuqi. Since: 2.72
 	UnicodeScriptVithkuqi UnicodeScript = 161
 	// UnicodeScriptMath wraps G_UNICODE_SCRIPT_MATH
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#math
 	//
-	// Mathematical notation. Since: 2.72
 	UnicodeScriptMath UnicodeScript = 162
 	// UnicodeScriptKawi wraps G_UNICODE_SCRIPT_KAWI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#kawi
 	//
-	// Kawi. Since 2.74
 	UnicodeScriptKawi UnicodeScript = 163
 	// UnicodeScriptNagMundari wraps G_UNICODE_SCRIPT_NAG_MUNDARI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#nag_mundari
 	//
-	// Nag Mundari. Since 2.74
 	UnicodeScriptNagMundari UnicodeScript = 164
 	// UnicodeScriptTodhri wraps G_UNICODE_SCRIPT_TODHRI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#todhri
 	//
-	// Todhri. Since: 2.84
 	UnicodeScriptTodhri UnicodeScript = 165
 	// UnicodeScriptGaray wraps G_UNICODE_SCRIPT_GARAY
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#garay
 	//
-	// Garay. Since: 2.84
 	UnicodeScriptGaray UnicodeScript = 166
 	// UnicodeScriptTuluTigalari wraps G_UNICODE_SCRIPT_TULU_TIGALARI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#tulu_tigalari
 	//
-	// Tulu-Tigalari. Since: 2.84
 	UnicodeScriptTuluTigalari UnicodeScript = 167
 	// UnicodeScriptSunuwar wraps G_UNICODE_SCRIPT_SUNUWAR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#sunuwar
 	//
-	// Sunuwar. Since: 2.84
 	UnicodeScriptSunuwar UnicodeScript = 168
 	// UnicodeScriptGurungKhema wraps G_UNICODE_SCRIPT_GURUNG_KHEMA
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#gurung_khema
 	//
-	// Gurung Khema. Since: 2.84
 	UnicodeScriptGurungKhema UnicodeScript = 169
 	// UnicodeScriptKiratRai wraps G_UNICODE_SCRIPT_KIRAT_RAI
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#kirat_rai
 	//
-	// Kirat Rai. Since: 2.84
 	UnicodeScriptKiratRai UnicodeScript = 170
 	// UnicodeScriptOlOnal wraps G_UNICODE_SCRIPT_OL_ONAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeScript.html#ol_onal
 	//
-	// Ol Onal. Since: 2.84
 	UnicodeScriptOlOnal UnicodeScript = 171
 )
 
@@ -3415,23 +3673,8 @@ func (e UnicodeScript) String() string {
 
 // UnicodeScriptFromIso15924 wraps g_unicode_script_from_iso15924
 // 
-// The function takes the following parameters:
-// 
-// 	- iso15924 uint32: a Unicode script 
-// 
-// The function returns the following values:
-// 
-// 	- goret UnicodeScript 
+// see also https://docs.gtk.org/glib/func.g_unicode_script_from_iso15924.html
 //
-// Looks up the Unicode script for @iso15924.  ISO 15924 assigns four-letter
-// codes to scripts.  For example, the code for Arabic is 'Arab'.
-// This function accepts four letter codes encoded as a @guint32 in a
-// big-endian fashion.  That is, the code expected for Arabic is
-// 0x41726162 (0x41 is ASCII code for 'A', 0x72 is ASCII code for 'r', etc).
-// 
-// See
-// [Codes for the representation of names of scripts](http://unicode.org/iso15924/codelists.html)
-// for details.
 func UnicodeScriptFromIso15924(iso15924 uint32) UnicodeScript {
 	var carg1 C.guint32        // in, none, casted
 	var cret  C.GUnicodeScript // return, none, casted
@@ -3450,23 +3693,8 @@ func UnicodeScriptFromIso15924(iso15924 uint32) UnicodeScript {
 
 // UnicodeScriptToIso15924 wraps g_unicode_script_to_iso15924
 // 
-// The function takes the following parameters:
-// 
-// 	- script UnicodeScript: a Unicode script 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/func.g_unicode_script_to_iso15924.html
 //
-// Looks up the ISO 15924 code for @script.  ISO 15924 assigns four-letter
-// codes to scripts.  For example, the code for Arabic is 'Arab'.  The
-// four letter codes are encoded as a @guint32 by this function in a
-// big-endian fashion.  That is, the code returned for Arabic is
-// 0x41726162 (0x41 is ASCII code for 'A', 0x72 is ASCII code for 'r', etc).
-// 
-// See
-// [Codes for the representation of names of scripts](http://unicode.org/iso15924/codelists.html)
-// for details.
 func UnicodeScriptToIso15924(script UnicodeScript) uint32 {
 	var carg1 C.GUnicodeScript // in, none, casted
 	var cret  C.guint32        // return, none, casted
@@ -3484,132 +3712,161 @@ func UnicodeScriptToIso15924(script UnicodeScript) uint32 {
 }
 
 // UnicodeType wraps GUnicodeType
+// 
+// see also https://docs.gtk.org/glib/enum.UnicodeType.html
 //
-// These are the possible character classifications from the
-// Unicode specification.
-// See [Unicode Character Database](http://www.unicode.org/reports/tr44/#General_Category_Values).
 type UnicodeType C.int
 
 const (
 	// UnicodeControl wraps G_UNICODE_CONTROL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#control
 	//
-	// General category "Other, Control" (Cc)
 	UnicodeControl UnicodeType = 0
 	// UnicodeFormat wraps G_UNICODE_FORMAT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#format
 	//
-	// General category "Other, Format" (Cf)
 	UnicodeFormat UnicodeType = 1
 	// UnicodeUnassigned wraps G_UNICODE_UNASSIGNED
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#unassigned
 	//
-	// General category "Other, Not Assigned" (Cn)
 	UnicodeUnassigned UnicodeType = 2
 	// UnicodePrivateUse wraps G_UNICODE_PRIVATE_USE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#private_use
 	//
-	// General category "Other, Private Use" (Co)
 	UnicodePrivateUse UnicodeType = 3
 	// UnicodeSurrogate wraps G_UNICODE_SURROGATE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#surrogate
 	//
-	// General category "Other, Surrogate" (Cs)
 	UnicodeSurrogate UnicodeType = 4
 	// UnicodeLowercaseLetter wraps G_UNICODE_LOWERCASE_LETTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#lowercase_letter
 	//
-	// General category "Letter, Lowercase" (Ll)
 	UnicodeLowercaseLetter UnicodeType = 5
 	// UnicodeModifierLetter wraps G_UNICODE_MODIFIER_LETTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#modifier_letter
 	//
-	// General category "Letter, Modifier" (Lm)
 	UnicodeModifierLetter UnicodeType = 6
 	// UnicodeOtherLetter wraps G_UNICODE_OTHER_LETTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#other_letter
 	//
-	// General category "Letter, Other" (Lo)
 	UnicodeOtherLetter UnicodeType = 7
 	// UnicodeTitlecaseLetter wraps G_UNICODE_TITLECASE_LETTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#titlecase_letter
 	//
-	// General category "Letter, Titlecase" (Lt)
 	UnicodeTitlecaseLetter UnicodeType = 8
 	// UnicodeUppercaseLetter wraps G_UNICODE_UPPERCASE_LETTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#uppercase_letter
 	//
-	// General category "Letter, Uppercase" (Lu)
 	UnicodeUppercaseLetter UnicodeType = 9
 	// UnicodeSpacingMark wraps G_UNICODE_SPACING_MARK
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#spacing_mark
 	//
-	// General category "Mark, Spacing" (Mc)
 	UnicodeSpacingMark UnicodeType = 10
 	// UnicodeEnclosingMark wraps G_UNICODE_ENCLOSING_MARK
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#enclosing_mark
 	//
-	// General category "Mark, Enclosing" (Me)
 	UnicodeEnclosingMark UnicodeType = 11
 	// UnicodeNonSpacingMark wraps G_UNICODE_NON_SPACING_MARK
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#non_spacing_mark
 	//
-	// General category "Mark, Nonspacing" (Mn)
 	UnicodeNonSpacingMark UnicodeType = 12
 	// UnicodeDecimalNumber wraps G_UNICODE_DECIMAL_NUMBER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#decimal_number
 	//
-	// General category "Number, Decimal Digit" (Nd)
 	UnicodeDecimalNumber UnicodeType = 13
 	// UnicodeLetterNumber wraps G_UNICODE_LETTER_NUMBER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#letter_number
 	//
-	// General category "Number, Letter" (Nl)
 	UnicodeLetterNumber UnicodeType = 14
 	// UnicodeOtherNumber wraps G_UNICODE_OTHER_NUMBER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#other_number
 	//
-	// General category "Number, Other" (No)
 	UnicodeOtherNumber UnicodeType = 15
 	// UnicodeConnectPunctuation wraps G_UNICODE_CONNECT_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#connect_punctuation
 	//
-	// General category "Punctuation, Connector" (Pc)
 	UnicodeConnectPunctuation UnicodeType = 16
 	// UnicodeDashPunctuation wraps G_UNICODE_DASH_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#dash_punctuation
 	//
-	// General category "Punctuation, Dash" (Pd)
 	UnicodeDashPunctuation UnicodeType = 17
 	// UnicodeClosePunctuation wraps G_UNICODE_CLOSE_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#close_punctuation
 	//
-	// General category "Punctuation, Close" (Pe)
 	UnicodeClosePunctuation UnicodeType = 18
 	// UnicodeFinalPunctuation wraps G_UNICODE_FINAL_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#final_punctuation
 	//
-	// General category "Punctuation, Final quote" (Pf)
 	UnicodeFinalPunctuation UnicodeType = 19
 	// UnicodeInitialPunctuation wraps G_UNICODE_INITIAL_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#initial_punctuation
 	//
-	// General category "Punctuation, Initial quote" (Pi)
 	UnicodeInitialPunctuation UnicodeType = 20
 	// UnicodeOtherPunctuation wraps G_UNICODE_OTHER_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#other_punctuation
 	//
-	// General category "Punctuation, Other" (Po)
 	UnicodeOtherPunctuation UnicodeType = 21
 	// UnicodeOpenPunctuation wraps G_UNICODE_OPEN_PUNCTUATION
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#open_punctuation
 	//
-	// General category "Punctuation, Open" (Ps)
 	UnicodeOpenPunctuation UnicodeType = 22
 	// UnicodeCurrencySymbol wraps G_UNICODE_CURRENCY_SYMBOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#currency_symbol
 	//
-	// General category "Symbol, Currency" (Sc)
 	UnicodeCurrencySymbol UnicodeType = 23
 	// UnicodeModifierSymbol wraps G_UNICODE_MODIFIER_SYMBOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#modifier_symbol
 	//
-	// General category "Symbol, Modifier" (Sk)
 	UnicodeModifierSymbol UnicodeType = 24
 	// UnicodeMathSymbol wraps G_UNICODE_MATH_SYMBOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#math_symbol
 	//
-	// General category "Symbol, Math" (Sm)
 	UnicodeMathSymbol UnicodeType = 25
 	// UnicodeOtherSymbol wraps G_UNICODE_OTHER_SYMBOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#other_symbol
 	//
-	// General category "Symbol, Other" (So)
 	UnicodeOtherSymbol UnicodeType = 26
 	// UnicodeLineSeparator wraps G_UNICODE_LINE_SEPARATOR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#line_separator
 	//
-	// General category "Separator, Line" (Zl)
 	UnicodeLineSeparator UnicodeType = 27
 	// UnicodeParagraphSeparator wraps G_UNICODE_PARAGRAPH_SEPARATOR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#paragraph_separator
 	//
-	// General category "Separator, Paragraph" (Zp)
 	UnicodeParagraphSeparator UnicodeType = 28
 	// UnicodeSpaceSeparator wraps G_UNICODE_SPACE_SEPARATOR
+	// 
+	// see also https://docs.gtk.org/glib/flags.UnicodeType.html#space_separator
 	//
-	// General category "Separator, Space" (Zs)
 	UnicodeSpaceSeparator UnicodeType = 29
 )
 
@@ -3651,51 +3908,61 @@ func (e UnicodeType) String() string {
 }
 
 // UriError wraps GUriError
+// 
+// see also https://docs.gtk.org/glib/enum.UriError.html
 //
-// Error codes returned by #GUri methods.
 type UriError C.int
 
 const (
 	// URIErrorFailed wraps G_URI_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#failed
 	//
-	// Generic error if no more specific error is available.
-	//     See the error message for details.
 	URIErrorFailed UriError = 0
 	// URIErrorBadScheme wraps G_URI_ERROR_BAD_SCHEME
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_scheme
 	//
-	// The scheme of a URI could not be parsed.
 	URIErrorBadScheme UriError = 1
 	// URIErrorBadUser wraps G_URI_ERROR_BAD_USER
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_user
 	//
-	// The user/userinfo of a URI could not be parsed.
 	URIErrorBadUser UriError = 2
 	// URIErrorBadPassword wraps G_URI_ERROR_BAD_PASSWORD
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_password
 	//
-	// The password of a URI could not be parsed.
 	URIErrorBadPassword UriError = 3
 	// URIErrorBadAuthParams wraps G_URI_ERROR_BAD_AUTH_PARAMS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_auth_params
 	//
-	// The authentication parameters of a URI could not be parsed.
 	URIErrorBadAuthParams UriError = 4
 	// URIErrorBadHost wraps G_URI_ERROR_BAD_HOST
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_host
 	//
-	// The host of a URI could not be parsed.
 	URIErrorBadHost UriError = 5
 	// URIErrorBadPort wraps G_URI_ERROR_BAD_PORT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_port
 	//
-	// The port of a URI could not be parsed.
 	URIErrorBadPort UriError = 6
 	// URIErrorBadPath wraps G_URI_ERROR_BAD_PATH
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_path
 	//
-	// The path of a URI could not be parsed.
 	URIErrorBadPath UriError = 7
 	// URIErrorBadQuery wraps G_URI_ERROR_BAD_QUERY
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_query
 	//
-	// The query of a URI could not be parsed.
 	URIErrorBadQuery UriError = 8
 	// URIErrorBadFragment wraps G_URI_ERROR_BAD_FRAGMENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriError.html#bad_fragment
 	//
-	// The fragment of a URI could not be parsed.
 	URIErrorBadFragment UriError = 9
 )
 
@@ -3717,52 +3984,56 @@ func (e UriError) String() string {
 }
 
 // UserDirectory wraps GUserDirectory
-//
-// These are logical ids for special directories which are defined
-// depending on the platform used. You should use g_get_user_special_dir()
-// to retrieve the full path associated to the logical id.
 // 
-// The #GUserDirectory enumeration can be extended at later date. Not
-// every platform has a directory for every logical id in this
-// enumeration.
+// see also https://docs.gtk.org/glib/enum.UserDirectory.html
+//
 type UserDirectory C.int
 
 const (
 	// UserDirectoryDesktop wraps G_USER_DIRECTORY_DESKTOP
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_desktop
 	//
-	// the user's Desktop directory
 	UserDirectoryDesktop UserDirectory = 0
 	// UserDirectoryDocuments wraps G_USER_DIRECTORY_DOCUMENTS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_documents
 	//
-	// the user's Documents directory
 	UserDirectoryDocuments UserDirectory = 1
 	// UserDirectoryDownload wraps G_USER_DIRECTORY_DOWNLOAD
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_download
 	//
-	// the user's Downloads directory
 	UserDirectoryDownload UserDirectory = 2
 	// UserDirectoryMusic wraps G_USER_DIRECTORY_MUSIC
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_music
 	//
-	// the user's Music directory
 	UserDirectoryMusic UserDirectory = 3
 	// UserDirectoryPictures wraps G_USER_DIRECTORY_PICTURES
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_pictures
 	//
-	// the user's Pictures directory
 	UserDirectoryPictures UserDirectory = 4
 	// UserDirectoryPublicShare wraps G_USER_DIRECTORY_PUBLIC_SHARE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_public_share
 	//
-	// the user's shared directory
 	UserDirectoryPublicShare UserDirectory = 5
 	// UserDirectoryTemplates wraps G_USER_DIRECTORY_TEMPLATES
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_templates
 	//
-	// the user's Templates directory
 	UserDirectoryTemplates UserDirectory = 6
 	// UserDirectoryVideos wraps G_USER_DIRECTORY_VIDEOS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#directory_videos
 	//
-	// the user's Movies directory
 	UserDirectoryVideos UserDirectory = 7
 	// UserNDirectories wraps G_USER_N_DIRECTORIES
+	// 
+	// see also https://docs.gtk.org/glib/flags.UserDirectory.html#n_directories
 	//
-	// the number of enum values
 	UserNDirectories UserDirectory = 8
 )
 
@@ -3783,84 +4054,101 @@ func (e UserDirectory) String() string {
 }
 
 // VariantClass wraps GVariantClass
+// 
+// see also https://docs.gtk.org/glib/enum.VariantClass.html
 //
-// The range of possible top-level types of #GVariant instances.
 type VariantClass C.int
 
 const (
 	// VariantClassBoolean wraps G_VARIANT_CLASS_BOOLEAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#boolean
 	//
-	// The #GVariant is a boolean.
 	VariantClassBoolean VariantClass = 98
 	// VariantClassByte wraps G_VARIANT_CLASS_BYTE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#byte
 	//
-	// The #GVariant is a byte.
 	VariantClassByte VariantClass = 121
 	// VariantClassInt16 wraps G_VARIANT_CLASS_INT16
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#int16
 	//
-	// The #GVariant is a signed 16 bit integer.
 	VariantClassInt16 VariantClass = 110
 	// VariantClassUint16 wraps G_VARIANT_CLASS_UINT16
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#uint16
 	//
-	// The #GVariant is an unsigned 16 bit integer.
 	VariantClassUint16 VariantClass = 113
 	// VariantClassInt32 wraps G_VARIANT_CLASS_INT32
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#int32
 	//
-	// The #GVariant is a signed 32 bit integer.
 	VariantClassInt32 VariantClass = 105
 	// VariantClassUint32 wraps G_VARIANT_CLASS_UINT32
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#uint32
 	//
-	// The #GVariant is an unsigned 32 bit integer.
 	VariantClassUint32 VariantClass = 117
 	// VariantClassInt64 wraps G_VARIANT_CLASS_INT64
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#int64
 	//
-	// The #GVariant is a signed 64 bit integer.
 	VariantClassInt64 VariantClass = 120
 	// VariantClassUint64 wraps G_VARIANT_CLASS_UINT64
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#uint64
 	//
-	// The #GVariant is an unsigned 64 bit integer.
 	VariantClassUint64 VariantClass = 116
 	// VariantClassHandle wraps G_VARIANT_CLASS_HANDLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#handle
 	//
-	// The #GVariant is a file handle index.
 	VariantClassHandle VariantClass = 104
 	// VariantClassDouble wraps G_VARIANT_CLASS_DOUBLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#double
 	//
-	// The #GVariant is a double precision floating
-	//                          point value.
 	VariantClassDouble VariantClass = 100
 	// VariantClassString wraps G_VARIANT_CLASS_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#string
 	//
-	// The #GVariant is a normal string.
 	VariantClassString VariantClass = 115
 	// VariantClassObjectPath wraps G_VARIANT_CLASS_OBJECT_PATH
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#object_path
 	//
-	// The #GVariant is a D-Bus object path
-	//                               string.
 	VariantClassObjectPath VariantClass = 111
 	// VariantClassSignature wraps G_VARIANT_CLASS_SIGNATURE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#signature
 	//
-	// The #GVariant is a D-Bus signature string.
 	VariantClassSignature VariantClass = 103
 	// VariantClassVariant wraps G_VARIANT_CLASS_VARIANT
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#variant
 	//
-	// The #GVariant is a variant.
 	VariantClassVariant VariantClass = 118
 	// VariantClassMaybe wraps G_VARIANT_CLASS_MAYBE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#maybe
 	//
-	// The #GVariant is a maybe-typed value.
 	VariantClassMaybe VariantClass = 109
 	// VariantClassArray wraps G_VARIANT_CLASS_ARRAY
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#array
 	//
-	// The #GVariant is an array.
 	VariantClassArray VariantClass = 97
 	// VariantClassTuple wraps G_VARIANT_CLASS_TUPLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#tuple
 	//
-	// The #GVariant is a tuple.
 	VariantClassTuple VariantClass = 40
 	// VariantClassDictEntry wraps G_VARIANT_CLASS_DICT_ENTRY
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantClass.html#dict_entry
 	//
-	// The #GVariant is a dictionary entry.
 	VariantClassDictEntry VariantClass = 123
 )
 
@@ -3890,86 +4178,106 @@ func (e VariantClass) String() string {
 }
 
 // VariantParseError wraps GVariantParseError
+// 
+// see also https://docs.gtk.org/glib/enum.VariantParseError.html
 //
-// Error codes returned by parsing text-format GVariants.
 type VariantParseError C.int
 
 const (
 	// VariantParseErrorFailed wraps G_VARIANT_PARSE_ERROR_FAILED
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#failed
 	//
-	// generic error (unused)
 	VariantParseErrorFailed VariantParseError = 0
 	// VariantParseErrorBasicTypeExpected wraps G_VARIANT_PARSE_ERROR_BASIC_TYPE_EXPECTED
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#basic_type_expected
 	//
-	// a non-basic #GVariantType was given where a basic type was expected
 	VariantParseErrorBasicTypeExpected VariantParseError = 1
 	// VariantParseErrorCannotInferType wraps G_VARIANT_PARSE_ERROR_CANNOT_INFER_TYPE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#cannot_infer_type
 	//
-	// cannot infer the #GVariantType
 	VariantParseErrorCannotInferType VariantParseError = 2
 	// VariantParseErrorDefiniteTypeExpected wraps G_VARIANT_PARSE_ERROR_DEFINITE_TYPE_EXPECTED
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#definite_type_expected
 	//
-	// an indefinite #GVariantType was given where a definite type was expected
 	VariantParseErrorDefiniteTypeExpected VariantParseError = 3
 	// VariantParseErrorInputNotAtEnd wraps G_VARIANT_PARSE_ERROR_INPUT_NOT_AT_END
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#input_not_at_end
 	//
-	// extra data after parsing finished
 	VariantParseErrorInputNotAtEnd VariantParseError = 4
 	// VariantParseErrorInvalidCharacter wraps G_VARIANT_PARSE_ERROR_INVALID_CHARACTER
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#invalid_character
 	//
-	// invalid character in number or unicode escape
 	VariantParseErrorInvalidCharacter VariantParseError = 5
 	// VariantParseErrorInvalidFormatString wraps G_VARIANT_PARSE_ERROR_INVALID_FORMAT_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#invalid_format_string
 	//
-	// not a valid #GVariant format string
 	VariantParseErrorInvalidFormatString VariantParseError = 6
 	// VariantParseErrorInvalidObjectPath wraps G_VARIANT_PARSE_ERROR_INVALID_OBJECT_PATH
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#invalid_object_path
 	//
-	// not a valid object path
 	VariantParseErrorInvalidObjectPath VariantParseError = 7
 	// VariantParseErrorInvalidSignature wraps G_VARIANT_PARSE_ERROR_INVALID_SIGNATURE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#invalid_signature
 	//
-	// not a valid type signature
 	VariantParseErrorInvalidSignature VariantParseError = 8
 	// VariantParseErrorInvalidTypeString wraps G_VARIANT_PARSE_ERROR_INVALID_TYPE_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#invalid_type_string
 	//
-	// not a valid #GVariant type string
 	VariantParseErrorInvalidTypeString VariantParseError = 9
 	// VariantParseErrorNoCommonType wraps G_VARIANT_PARSE_ERROR_NO_COMMON_TYPE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#no_common_type
 	//
-	// could not find a common type for array entries
 	VariantParseErrorNoCommonType VariantParseError = 10
 	// VariantParseErrorNumberOutOfRange wraps G_VARIANT_PARSE_ERROR_NUMBER_OUT_OF_RANGE
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#number_out_of_range
 	//
-	// the numerical value is out of range of the given type
 	VariantParseErrorNumberOutOfRange VariantParseError = 11
 	// VariantParseErrorNumberTooBig wraps G_VARIANT_PARSE_ERROR_NUMBER_TOO_BIG
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#number_too_big
 	//
-	// the numerical value is out of range for any type
 	VariantParseErrorNumberTooBig VariantParseError = 12
 	// VariantParseErrorTypeError wraps G_VARIANT_PARSE_ERROR_TYPE_ERROR
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#type_error
 	//
-	// cannot parse as variant of the specified type
 	VariantParseErrorTypeError VariantParseError = 13
 	// VariantParseErrorUnexpectedToken wraps G_VARIANT_PARSE_ERROR_UNEXPECTED_TOKEN
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#unexpected_token
 	//
-	// an unexpected token was encountered
 	VariantParseErrorUnexpectedToken VariantParseError = 14
 	// VariantParseErrorUnknownKeyword wraps G_VARIANT_PARSE_ERROR_UNKNOWN_KEYWORD
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#unknown_keyword
 	//
-	// an unknown keyword was encountered
 	VariantParseErrorUnknownKeyword VariantParseError = 15
 	// VariantParseErrorUnterminatedStringConstant wraps G_VARIANT_PARSE_ERROR_UNTERMINATED_STRING_CONSTANT
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#unterminated_string_constant
 	//
-	// unterminated string constant
 	VariantParseErrorUnterminatedStringConstant VariantParseError = 16
 	// VariantParseErrorValueExpected wraps G_VARIANT_PARSE_ERROR_VALUE_EXPECTED
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#value_expected
 	//
-	// no value given
 	VariantParseErrorValueExpected VariantParseError = 17
 	// VariantParseErrorRecursion wraps G_VARIANT_PARSE_ERROR_RECURSION
+	// 
+	// see also https://docs.gtk.org/glib/flags.VariantParseError.html#recursion
 	//
-	// variant was too deeply nested; #GVariant is only guaranteed to handle nesting up to 64 levels (Since: 2.64)
 	VariantParseErrorRecursion VariantParseError = 18
 )
 
@@ -4000,30 +4308,54 @@ func (e VariantParseError) String() string {
 }
 
 // AsciiType wraps GAsciiType
+// 
+// see also https://docs.gtk.org/glib/flags.AsciiType.html
 type AsciiType C.gint
 
 const (
 	// ASCIIAlnum wraps G_ASCII_ALNUM
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#alnum
 	ASCIIAlnum AsciiType = 1
 	// ASCIIAlpha wraps G_ASCII_ALPHA
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#alpha
 	ASCIIAlpha AsciiType = 2
 	// ASCIICntrl wraps G_ASCII_CNTRL
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#cntrl
 	ASCIICntrl AsciiType = 4
 	// ASCIIDigit wraps G_ASCII_DIGIT
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#digit
 	ASCIIDigit AsciiType = 8
 	// ASCIIGraph wraps G_ASCII_GRAPH
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#graph
 	ASCIIGraph AsciiType = 16
 	// ASCIILower wraps G_ASCII_LOWER
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#lower
 	ASCIILower AsciiType = 32
 	// ASCIIPrint wraps G_ASCII_PRINT
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#print
 	ASCIIPrint AsciiType = 64
 	// ASCIIPunct wraps G_ASCII_PUNCT
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#punct
 	ASCIIPunct AsciiType = 128
 	// ASCIISpace wraps G_ASCII_SPACE
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#space
 	ASCIISpace AsciiType = 256
 	// ASCIIUpper wraps G_ASCII_UPPER
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#upper
 	ASCIIUpper AsciiType = 512
 	// ASCIIXdigit wraps G_ASCII_XDIGIT
+	// 
+	// see also https://docs.gtk.org/glib/flags.AsciiType.html#xdigit
 	ASCIIXdigit AsciiType = 1024
 )
 
@@ -4075,39 +4407,31 @@ func (f AsciiType) String() string {
 }
 
 // FileSetContentsFlags wraps GFileSetContentsFlags
+// 
+// see also https://docs.gtk.org/glib/flags.FileSetContentsFlags.html
 //
-// Flags to pass to g_file_set_contents_full() to affect its safety and
-// performance.
 type FileSetContentsFlags C.gint
 
 const (
 	// FileSetContentsNone wraps G_FILE_SET_CONTENTS_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileSetContentsFlags.html#none
 	//
-	// No guarantees about file consistency or durability.
-	//   The most dangerous setting, which is slightly faster than other settings.
 	FileSetContentsNone FileSetContentsFlags = 0
 	// FileSetContentsConsistent wraps G_FILE_SET_CONTENTS_CONSISTENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileSetContentsFlags.html#consistent
 	//
-	// Guarantee file consistency: after a crash,
-	//   either the old version of the file or the new version of the file will be
-	//   available, but not a mixture. On Unix systems this equates to an `fsync()`
-	//   on the file and use of an atomic `rename()` of the new version of the file
-	//   over the old.
 	FileSetContentsConsistent FileSetContentsFlags = 1
 	// FileSetContentsDurable wraps G_FILE_SET_CONTENTS_DURABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileSetContentsFlags.html#durable
 	//
-	// Guarantee file durability: after a crash, the
-	//   new version of the file will be available. On Unix systems this equates to
-	//   an `fsync()` on the file (if %G_FILE_SET_CONTENTS_CONSISTENT is unset), or
-	//   the effects of %G_FILE_SET_CONTENTS_CONSISTENT plus an `fsync()` on the
-	//   directory containing the file after calling `rename()`.
 	FileSetContentsDurable FileSetContentsFlags = 2
 	// FileSetContentsOnlyExisting wraps G_FILE_SET_CONTENTS_ONLY_EXISTING
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileSetContentsFlags.html#only_existing
 	//
-	// Only apply consistency and durability
-	//   guarantees if the file already exists. This may speed up file operations
-	//   if the file doesn&#x2019;t currently exist, but may result in a corrupted version
-	//   of the new file if the system crashes while writing it.
 	FileSetContentsOnlyExisting FileSetContentsFlags = 4
 )
 
@@ -4138,33 +4462,36 @@ func (f FileSetContentsFlags) String() string {
 }
 
 // FileTest wraps GFileTest
+// 
+// see also https://docs.gtk.org/glib/flags.FileTest.html
 //
-// A test to perform on a file using g_file_test().
 type FileTest C.gint
 
 const (
 	// FileTestIsRegular wraps G_FILE_TEST_IS_REGULAR
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileTest.html#is_regular
 	//
-	// %TRUE if the file is a regular file
-	//     (not a directory). Note that this test will also return %TRUE
-	//     if the tested file is a symlink to a regular file.
 	FileTestIsRegular FileTest = 1
 	// FileTestIsSymlink wraps G_FILE_TEST_IS_SYMLINK
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileTest.html#is_symlink
 	//
-	// %TRUE if the file is a symlink.
 	FileTestIsSymlink FileTest = 2
 	// FileTestIsDir wraps G_FILE_TEST_IS_DIR
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileTest.html#is_dir
 	//
-	// %TRUE if the file is a directory.
 	FileTestIsDir FileTest = 4
 	// FileTestIsExecutable wraps G_FILE_TEST_IS_EXECUTABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileTest.html#is_executable
 	//
-	// %TRUE if the file is executable.
 	FileTestIsExecutable FileTest = 8
 	// FileTestExists wraps G_FILE_TEST_EXISTS
+	// 
+	// see also https://docs.gtk.org/glib/flags.FileTest.html#exists
 	//
-	// %TRUE if the file exists. It may or may not
-	//     be a regular file.
 	FileTestExists FileTest = 16
 )
 
@@ -4198,43 +4525,41 @@ func (f FileTest) String() string {
 }
 
 // FormatSizeFlags wraps GFormatSizeFlags
+// 
+// see also https://docs.gtk.org/glib/flags.FormatSizeFlags.html
 //
-// Flags to modify the format of the string returned by g_format_size_full().
 type FormatSizeFlags C.gint
 
 const (
 	// FormatSizeDefault wraps G_FORMAT_SIZE_DEFAULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.FormatSizeFlags.html#default
 	//
-	// behave the same as g_format_size()
 	FormatSizeDefault FormatSizeFlags = 0
 	// FormatSizeLongFormat wraps G_FORMAT_SIZE_LONG_FORMAT
+	// 
+	// see also https://docs.gtk.org/glib/flags.FormatSizeFlags.html#long_format
 	//
-	// include the exact number of bytes as part
-	//     of the returned string.  For example, "45.6 kB (45,612 bytes)".
 	FormatSizeLongFormat FormatSizeFlags = 1
 	// FormatSizeIecUnits wraps G_FORMAT_SIZE_IEC_UNITS
+	// 
+	// see also https://docs.gtk.org/glib/flags.FormatSizeFlags.html#iec_units
 	//
-	// use IEC (base 1024) units with "KiB"-style
-	//     suffixes. IEC units should only be used for reporting things with
-	//     a strong "power of 2" basis, like RAM sizes or RAID stripe sizes.
-	//     Network and storage sizes should be reported in the normal SI units.
 	FormatSizeIecUnits FormatSizeFlags = 2
 	// FormatSizeBits wraps G_FORMAT_SIZE_BITS
+	// 
+	// see also https://docs.gtk.org/glib/flags.FormatSizeFlags.html#bits
 	//
-	// set the size as a quantity in bits, rather than
-	//     bytes, and return units in bits. For example, &#x2018;Mbit&#x2019; rather than &#x2018;MB&#x2019;.
 	FormatSizeBits FormatSizeFlags = 4
 	// FormatSizeOnlyValue wraps G_FORMAT_SIZE_ONLY_VALUE
+	// 
+	// see also https://docs.gtk.org/glib/flags.FormatSizeFlags.html#only_value
 	//
-	// return only value, without unit; this should
-	//     not be used together with @G_FORMAT_SIZE_LONG_FORMAT
-	//     nor @G_FORMAT_SIZE_ONLY_UNIT. Since: 2.74
 	FormatSizeOnlyValue FormatSizeFlags = 8
 	// FormatSizeOnlyUnit wraps G_FORMAT_SIZE_ONLY_UNIT
+	// 
+	// see also https://docs.gtk.org/glib/flags.FormatSizeFlags.html#only_unit
 	//
-	// return only unit, without value; this should
-	//     not be used together with @G_FORMAT_SIZE_LONG_FORMAT
-	//     nor @G_FORMAT_SIZE_ONLY_VALUE. Since: 2.74
 	FormatSizeOnlyUnit FormatSizeFlags = 16
 )
 
@@ -4271,36 +4596,41 @@ func (f FormatSizeFlags) String() string {
 }
 
 // IOCondition wraps GIOCondition
+// 
+// see also https://docs.gtk.org/glib/flags.IOCondition.html
 //
-// A bitwise combination representing a condition to watch for on an
-// event source.
 type IOCondition C.gint
 
 const (
 	// IOIn wraps G_IO_IN
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOCondition.html#in
 	//
-	// There is data to read.
 	IOIn IOCondition = 1
 	// IOOut wraps G_IO_OUT
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOCondition.html#out
 	//
-	// Data can be written (without blocking).
 	IOOut IOCondition = 4
 	// IOPri wraps G_IO_PRI
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOCondition.html#pri
 	//
-	// There is urgent data to read.
 	IOPri IOCondition = 2
 	// IOErr wraps G_IO_ERR
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOCondition.html#err
 	//
-	// Error condition.
 	IOErr IOCondition = 8
 	// IOHup wraps G_IO_HUP
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOCondition.html#hup
 	//
-	// Hung up (the connection has been broken, usually for
-	//            pipes and sockets).
 	IOHup IOCondition = 16
 	// IONval wraps G_IO_NVAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOCondition.html#nval
 	//
-	// Invalid request. The file descriptor is not open.
 	IONval IOCondition = 32
 )
 
@@ -4337,63 +4667,61 @@ func (f IOCondition) String() string {
 }
 
 // IOFlags wraps GIOFlags
+// 
+// see also https://docs.gtk.org/glib/flags.IOFlags.html
 //
-// Specifies properties of a #GIOChannel. Some of the flags can only be
-// read with g_io_channel_get_flags(), but not changed with
-// g_io_channel_set_flags().
 type IOFlags C.gint
 
 const (
 	// IOFlagNone wraps G_IO_FLAG_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#none
 	//
-	// no special flags set. Since: 2.74
 	IOFlagNone IOFlags = 0
 	// IOFlagAppend wraps G_IO_FLAG_APPEND
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#append
 	//
-	// turns on append mode, corresponds to %O_APPEND
-	//     (see the documentation of the UNIX open() syscall)
 	IOFlagAppend IOFlags = 1
 	// IOFlagNonblock wraps G_IO_FLAG_NONBLOCK
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#nonblock
 	//
-	// turns on nonblocking mode, corresponds to
-	//     %O_NONBLOCK/%O_NDELAY (see the documentation of the UNIX open()
-	//     syscall)
 	IOFlagNonblock IOFlags = 2
 	// IOFlagIsReadable wraps G_IO_FLAG_IS_READABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#is_readable
 	//
-	// indicates that the io channel is readable.
-	//     This flag cannot be changed.
 	IOFlagIsReadable IOFlags = 4
 	// IOFlagIsWritable wraps G_IO_FLAG_IS_WRITABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#is_writable
 	//
-	// indicates that the io channel is writable.
-	//     This flag cannot be changed.
 	IOFlagIsWritable IOFlags = 8
 	// IOFlagIsWriteable wraps G_IO_FLAG_IS_WRITEABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#is_writeable
 	//
-	// a misspelled version of @G_IO_FLAG_IS_WRITABLE
-	//     that existed before the spelling was fixed in GLib 2.30. It is kept
-	//     here for compatibility reasons. Deprecated since 2.30
 	IOFlagIsWriteable IOFlags = 8
 	// IOFlagIsSeekable wraps G_IO_FLAG_IS_SEEKABLE
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#is_seekable
 	//
-	// indicates that the io channel is seekable,
-	//     i.e. that g_io_channel_seek_position() can be used on it.
-	//     This flag cannot be changed.
 	IOFlagIsSeekable IOFlags = 16
 	// IOFlagMask wraps G_IO_FLAG_MASK
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#mask
 	//
-	// the mask that specifies all the valid flags.
 	IOFlagMask IOFlags = 31
 	// IOFlagGetMask wraps G_IO_FLAG_GET_MASK
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#get_mask
 	//
-	// the mask of the flags that are returned from
-	//     g_io_channel_get_flags()
 	IOFlagGetMask IOFlags = 31
 	// IOFlagSetMask wraps G_IO_FLAG_SET_MASK
+	// 
+	// see also https://docs.gtk.org/glib/flags.IOFlags.html#set_mask
 	//
-	// the mask of the flags that the user can modify
-	//     with g_io_channel_set_flags()
 	IOFlagSetMask IOFlags = 3
 )
 
@@ -4442,28 +4770,26 @@ func (f IOFlags) String() string {
 }
 
 // KeyFileFlags wraps GKeyFileFlags
+// 
+// see also https://docs.gtk.org/glib/flags.KeyFileFlags.html
 //
-// Flags which influence the parsing.
 type KeyFileFlags C.gint
 
 const (
 	// KeyFileNone wraps G_KEY_FILE_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileFlags.html#none
 	//
-	// No flags, default behaviour
 	KeyFileNone KeyFileFlags = 0
 	// KeyFileKeepComments wraps G_KEY_FILE_KEEP_COMMENTS
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileFlags.html#keep_comments
 	//
-	// Use this flag if you plan to write the
-	//   (possibly modified) contents of the key file back to a file;
-	//   otherwise all comments will be lost when the key file is
-	//   written back.
 	KeyFileKeepComments KeyFileFlags = 1
 	// KeyFileKeepTranslations wraps G_KEY_FILE_KEEP_TRANSLATIONS
+	// 
+	// see also https://docs.gtk.org/glib/flags.KeyFileFlags.html#keep_translations
 	//
-	// Use this flag if you plan to write the
-	//   (possibly modified) contents of the key file back to a file;
-	//   otherwise only the translations for the current language will be
-	//   written back.
 	KeyFileKeepTranslations KeyFileFlags = 2
 )
 
@@ -4491,52 +4817,56 @@ func (f KeyFileFlags) String() string {
 }
 
 // LogLevelFlags wraps GLogLevelFlags
-//
-// Flags specifying the level of log messages.
 // 
-// It is possible to change how GLib treats messages of the various
-// levels using [func@GLib.log_set_handler] and [func@GLib.log_set_fatal_mask].
+// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html
+//
 type LogLevelFlags C.gint
 
 const (
 	// LogFlagRecursion wraps G_LOG_FLAG_RECURSION
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#flag_recursion
 	//
-	// internal flag
 	LogFlagRecursion LogLevelFlags = 1
 	// LogFlagFatal wraps G_LOG_FLAG_FATAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#flag_fatal
 	//
-	// internal flag
 	LogFlagFatal LogLevelFlags = 2
 	// LogLevelError wraps G_LOG_LEVEL_ERROR
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#level_error
 	//
-	// log level for errors, see [func@GLib.error].
-	//   This level is also used for messages produced by [func@GLib.assert].
 	LogLevelError LogLevelFlags = 4
 	// LogLevelCritical wraps G_LOG_LEVEL_CRITICAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#level_critical
 	//
-	// log level for critical warning messages, see
-	//   [func@GLib.critical]. This level is also used for messages produced by
-	//   [func@GLib.return_if_fail] and [func@GLib.return_val_if_fail].
 	LogLevelCritical LogLevelFlags = 8
 	// LogLevelWarning wraps G_LOG_LEVEL_WARNING
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#level_warning
 	//
-	// log level for warnings, see [func@GLib.warning]
 	LogLevelWarning LogLevelFlags = 16
 	// LogLevelMessage wraps G_LOG_LEVEL_MESSAGE
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#level_message
 	//
-	// log level for messages, see [func@GLib.message]
 	LogLevelMessage LogLevelFlags = 32
 	// LogLevelInfo wraps G_LOG_LEVEL_INFO
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#level_info
 	//
-	// log level for informational messages, see [func@GLib.info]
 	LogLevelInfo LogLevelFlags = 64
 	// LogLevelDebug wraps G_LOG_LEVEL_DEBUG
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#level_debug
 	//
-	// log level for debug messages, see [func@GLib.debug]
 	LogLevelDebug LogLevelFlags = 128
 	// LogLevelMask wraps G_LOG_LEVEL_MASK
+	// 
+	// see also https://docs.gtk.org/glib/flags.LogLevelFlags.html#level_mask
 	//
-	// a mask including all log levels
 	LogLevelMask LogLevelFlags = -4
 )
 
@@ -4582,22 +4912,21 @@ func (f LogLevelFlags) String() string {
 }
 
 // MainContextFlags wraps GMainContextFlags
+// 
+// see also https://docs.gtk.org/glib/flags.MainContextFlags.html
 //
-// Flags to pass to [ctor@GLib.MainContext.new_with_flags] which affect the
-// behaviour of a [struct@GLib.MainContext].
 type MainContextFlags C.gint
 
 const (
 	// MainContextFlagsNone wraps G_MAIN_CONTEXT_FLAGS_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.MainContextFlags.html#none
 	//
-	// Default behaviour.
 	MainContextFlagsNone MainContextFlags = 0
 	// MainContextFlagsOwnerlessPolling wraps G_MAIN_CONTEXT_FLAGS_OWNERLESS_POLLING
+	// 
+	// see also https://docs.gtk.org/glib/flags.MainContextFlags.html#ownerless_polling
 	//
-	// Assume that polling for events will
-	// free the thread to process other jobs. That's useful if you're using
-	// `g_main_context_{prepare,query,check,dispatch}` to integrate GMainContext in
-	// other event loops.
 	MainContextFlagsOwnerlessPolling MainContextFlags = 1
 )
 
@@ -4622,54 +4951,41 @@ func (f MainContextFlags) String() string {
 }
 
 // MarkupCollectType wraps GMarkupCollectType
-//
-// A mixed enumerated type and flags field. You must specify one type
-// (string, strdup, boolean, tristate).  Additionally, you may  optionally
-// bitwise OR the type with the flag %G_MARKUP_COLLECT_OPTIONAL.
 // 
-// It is likely that this enum will be extended in the future to
-// support other types.
+// see also https://docs.gtk.org/glib/flags.MarkupCollectType.html
+//
 type MarkupCollectType C.gint
 
 const (
 	// MarkupCollectInvalid wraps G_MARKUP_COLLECT_INVALID
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupCollectType.html#invalid
 	//
-	// used to terminate the list of attributes
-	//     to collect
 	MarkupCollectInvalid MarkupCollectType = 0
 	// MarkupCollectString wraps G_MARKUP_COLLECT_STRING
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupCollectType.html#string
 	//
-	// collect the string pointer directly from
-	//     the attribute_values[] array. Expects a parameter of type (const
-	//     char **). If %G_MARKUP_COLLECT_OPTIONAL is specified and the
-	//     attribute isn't present then the pointer will be set to %NULL
 	MarkupCollectString MarkupCollectType = 1
 	// MarkupCollectStrdup wraps G_MARKUP_COLLECT_STRDUP
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupCollectType.html#strdup
 	//
-	// as with %G_MARKUP_COLLECT_STRING, but
-	//     expects a parameter of type (char **) and g_strdup()s the
-	//     returned pointer. The pointer must be freed with g_free()
 	MarkupCollectStrdup MarkupCollectType = 2
 	// MarkupCollectBoolean wraps G_MARKUP_COLLECT_BOOLEAN
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupCollectType.html#boolean
 	//
-	// expects a parameter of type (`gboolean *`)
-	//     and parses the attribute value as a boolean. Sets %FALSE if the
-	//     attribute isn't present. Valid boolean values consist of
-	//     (case-insensitive) "false", "f", "no", "n", "0" and "true", "t",
-	//     "yes", "y", "1"
 	MarkupCollectBoolean MarkupCollectType = 3
 	// MarkupCollectTristate wraps G_MARKUP_COLLECT_TRISTATE
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupCollectType.html#tristate
 	//
-	// as with %G_MARKUP_COLLECT_BOOLEAN, but
-	//     in the case of a missing attribute a value is set that compares
-	//     equal to neither %FALSE nor %TRUE %G_MARKUP_COLLECT_OPTIONAL is
-	//     implied
 	MarkupCollectTristate MarkupCollectType = 4
 	// MarkupCollectOptional wraps G_MARKUP_COLLECT_OPTIONAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupCollectType.html#optional
 	//
-	// can be bitwise ORed with the other fields.
-	//     If present, allows the attribute not to appear. A default value
-	//     is set depending on what value type is used
 	MarkupCollectOptional MarkupCollectType = 65536
 )
 
@@ -4706,41 +5022,36 @@ func (f MarkupCollectType) String() string {
 }
 
 // MarkupParseFlags wraps GMarkupParseFlags
+// 
+// see also https://docs.gtk.org/glib/flags.MarkupParseFlags.html
 //
-// Flags that affect the behaviour of the parser.
 type MarkupParseFlags C.gint
 
 const (
 	// MarkupDefaultFlags wraps G_MARKUP_DEFAULT_FLAGS
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupParseFlags.html#default_flags
 	//
-	// No special behaviour. Since: 2.74
 	MarkupDefaultFlags MarkupParseFlags = 0
 	// MarkupDoNotUseThisUnsupportedFlag wraps G_MARKUP_DO_NOT_USE_THIS_UNSUPPORTED_FLAG
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupParseFlags.html#do_not_use_this_unsupported_flag
 	//
-	// flag you should not use
 	MarkupDoNotUseThisUnsupportedFlag MarkupParseFlags = 1
 	// MarkupTreatCdataAsText wraps G_MARKUP_TREAT_CDATA_AS_TEXT
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupParseFlags.html#treat_cdata_as_text
 	//
-	// When this flag is set, CDATA marked
-	//     sections are not passed literally to the @passthrough function of
-	//     the parser. Instead, the content of the section (without the
-	//     `&lt;![CDATA[` and `]]&gt;`) is
-	//     passed to the @text function. This flag was added in GLib 2.12
 	MarkupTreatCdataAsText MarkupParseFlags = 2
 	// MarkupPrefixErrorPosition wraps G_MARKUP_PREFIX_ERROR_POSITION
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupParseFlags.html#prefix_error_position
 	//
-	// Normally errors caught by GMarkup
-	//     itself have line/column information prefixed to them to let the
-	//     caller know the location of the error. When this flag is set the
-	//     location information is also prefixed to errors generated by the
-	//     #GMarkupParser implementation functions
 	MarkupPrefixErrorPosition MarkupParseFlags = 4
 	// MarkupIgnoreQualified wraps G_MARKUP_IGNORE_QUALIFIED
+	// 
+	// see also https://docs.gtk.org/glib/flags.MarkupParseFlags.html#ignore_qualified
 	//
-	// Ignore (don't report) qualified
-	//     attributes and tags, along with their contents.  A qualified
-	//     attribute or tag is one that contains ':' in its name (ie: is in
-	//     another namespace).  Since: 2.40.
 	MarkupIgnoreQualified MarkupParseFlags = 8
 )
 
@@ -4774,65 +5085,56 @@ func (f MarkupParseFlags) String() string {
 }
 
 // OptionFlags wraps GOptionFlags
+// 
+// see also https://docs.gtk.org/glib/flags.OptionFlags.html
 //
-// Flags which modify individual options.
 type OptionFlags C.gint
 
 const (
 	// OptionFlagNone wraps G_OPTION_FLAG_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#none
 	//
-	// No flags.
 	OptionFlagNone OptionFlags = 0
 	// OptionFlagHidden wraps G_OPTION_FLAG_HIDDEN
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#hidden
 	//
-	// The option doesn't appear in `--help` output.
 	OptionFlagHidden OptionFlags = 1
 	// OptionFlagInMain wraps G_OPTION_FLAG_IN_MAIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#in_main
 	//
-	// The option appears in the main section of the
-	//   `--help` output, even if it is defined in a group.
 	OptionFlagInMain OptionFlags = 2
 	// OptionFlagReverse wraps G_OPTION_FLAG_REVERSE
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#reverse
 	//
-	// For options of the %G_OPTION_ARG_NONE kind, this
-	//   flag indicates that the sense of the option is reversed. i.e. %FALSE will
-	//   be stored into the argument rather than %TRUE.
 	OptionFlagReverse OptionFlags = 4
 	// OptionFlagNoArg wraps G_OPTION_FLAG_NO_ARG
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#no_arg
 	//
-	// For options of the %G_OPTION_ARG_CALLBACK kind,
-	//   this flag indicates that the callback does not take any argument
-	//   (like a %G_OPTION_ARG_NONE option). Since 2.8
 	OptionFlagNoArg OptionFlags = 8
 	// OptionFlagFilename wraps G_OPTION_FLAG_FILENAME
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#filename
 	//
-	// For options of the %G_OPTION_ARG_CALLBACK
-	//   kind, this flag indicates that the argument should be passed to the
-	//   callback in the GLib filename encoding rather than UTF-8. Since 2.8
 	OptionFlagFilename OptionFlags = 16
 	// OptionFlagOptionalArg wraps G_OPTION_FLAG_OPTIONAL_ARG
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#optional_arg
 	//
-	// For options of the %G_OPTION_ARG_CALLBACK
-	//   kind, this flag indicates that the argument supply is optional.
-	//   If no argument is given then data of %GOptionParseFunc will be
-	//   set to NULL. Since 2.8
 	OptionFlagOptionalArg OptionFlags = 32
 	// OptionFlagNoalias wraps G_OPTION_FLAG_NOALIAS
+	// 
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#noalias
 	//
-	// This flag turns off the automatic conflict
-	//   resolution which prefixes long option names with `groupname-` if
-	//   there is a conflict. This option should only be used in situations
-	//   where aliasing is necessary to model some legacy commandline interface.
-	//   It is not safe to use this option, unless all option groups are under
-	//   your direct control. Since 2.8.
 	OptionFlagNoalias OptionFlags = 64
 	// OptionFlagDeprecated wraps G_OPTION_FLAG_DEPRECATED
-	//
-	// This flag marks the option as deprecated in the `--help`.
 	// 
-	// You should update the description of the option to describe what
-	// the user should do in response to the deprecation, for instance:
-	// remove the option, or replace it with another one.
+	// see also https://docs.gtk.org/glib/flags.OptionFlags.html#deprecated
+	//
 	OptionFlagDeprecated OptionFlags = 128
 )
 
@@ -4878,142 +5180,106 @@ func (f OptionFlags) String() string {
 }
 
 // RegexCompileFlags wraps GRegexCompileFlags
+// 
+// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html
 //
-// Flags specifying compile-time options.
 type RegexCompileFlags C.gint
 
 const (
 	// RegexDefault wraps G_REGEX_DEFAULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#default
 	//
-	// No special options set. Since: 2.74
 	RegexDefault RegexCompileFlags = 0
 	// RegexCaseless wraps G_REGEX_CASELESS
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#caseless
 	//
-	// Letters in the pattern match both upper- and
-	//     lowercase letters. This option can be changed within a pattern
-	//     by a "(?i)" option setting.
 	RegexCaseless RegexCompileFlags = 1
 	// RegexMultiline wraps G_REGEX_MULTILINE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#multiline
 	//
-	// By default, GRegex treats the strings as consisting
-	//     of a single line of characters (even if it actually contains
-	//     newlines). The "start of line" metacharacter ("^") matches only
-	//     at the start of the string, while the "end of line" metacharacter
-	//     ("$") matches only at the end of the string, or before a terminating
-	//     newline (unless %G_REGEX_DOLLAR_ENDONLY is set). When
-	//     %G_REGEX_MULTILINE is set, the "start of line" and "end of line"
-	//     constructs match immediately following or immediately before any
-	//     newline in the string, respectively, as well as at the very start
-	//     and end. This can be changed within a pattern by a "(?m)" option
-	//     setting.
 	RegexMultiline RegexCompileFlags = 2
 	// RegexDotall wraps G_REGEX_DOTALL
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#dotall
 	//
-	// A dot metacharacter (".") in the pattern matches all
-	//     characters, including newlines. Without it, newlines are excluded.
-	//     This option can be changed within a pattern by a ("?s") option setting.
 	RegexDotall RegexCompileFlags = 4
 	// RegexExtended wraps G_REGEX_EXTENDED
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#extended
 	//
-	// Whitespace data characters in the pattern are
-	//     totally ignored except when escaped or inside a character class.
-	//     Whitespace does not include the VT character (code 11). In addition,
-	//     characters between an unescaped "#" outside a character class and
-	//     the next newline character, inclusive, are also ignored. This can
-	//     be changed within a pattern by a "(?x)" option setting.
 	RegexExtended RegexCompileFlags = 8
 	// RegexAnchored wraps G_REGEX_ANCHORED
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#anchored
 	//
-	// The pattern is forced to be "anchored", that is,
-	//     it is constrained to match only at the first matching point in the
-	//     string that is being searched. This effect can also be achieved by
-	//     appropriate constructs in the pattern itself such as the "^"
-	//     metacharacter.
 	RegexAnchored RegexCompileFlags = 16
 	// RegexDollarEndonly wraps G_REGEX_DOLLAR_ENDONLY
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#dollar_endonly
 	//
-	// A dollar metacharacter ("$") in the pattern
-	//     matches only at the end of the string. Without this option, a
-	//     dollar also matches immediately before the final character if
-	//     it is a newline (but not before any other newlines). This option
-	//     is ignored if %G_REGEX_MULTILINE is set.
 	RegexDollarEndonly RegexCompileFlags = 32
 	// RegexUngreedy wraps G_REGEX_UNGREEDY
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#ungreedy
 	//
-	// Inverts the "greediness" of the quantifiers so that
-	//     they are not greedy by default, but become greedy if followed by "?".
-	//     It can also be set by a "(?U)" option setting within the pattern.
 	RegexUngreedy RegexCompileFlags = 512
 	// RegexRaw wraps G_REGEX_RAW
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#raw
 	//
-	// Usually strings must be valid UTF-8 strings, using this
-	//     flag they are considered as a raw sequence of bytes.
 	RegexRaw RegexCompileFlags = 2048
 	// RegexNoAutoCapture wraps G_REGEX_NO_AUTO_CAPTURE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#no_auto_capture
 	//
-	// Disables the use of numbered capturing
-	//     parentheses in the pattern. Any opening parenthesis that is not
-	//     followed by "?" behaves as if it were followed by "?:" but named
-	//     parentheses can still be used for capturing (and they acquire numbers
-	//     in the usual way).
 	RegexNoAutoCapture RegexCompileFlags = 4096
 	// RegexOptimize wraps G_REGEX_OPTIMIZE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#optimize
 	//
-	// Since 2.74 and the port to pcre2, requests JIT
-	//     compilation, which, if the just-in-time compiler is available, further
-	//     processes a compiled pattern into machine code that executes much
-	//     faster. However, it comes at the cost of extra processing before the
-	//     match is performed, so it is most beneficial to use this when the same
-	//     compiled pattern is used for matching many times. Before 2.74 this
-	//     option used the built-in non-JIT optimizations in pcre1.
 	RegexOptimize RegexCompileFlags = 8192
 	// RegexFirstline wraps G_REGEX_FIRSTLINE
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#firstline
 	//
-	// Limits an unanchored pattern to match before (or at) the
-	//     first newline. Since: 2.34
 	RegexFirstline RegexCompileFlags = 262144
 	// RegexDupnames wraps G_REGEX_DUPNAMES
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#dupnames
 	//
-	// Names used to identify capturing subpatterns need not
-	//     be unique. This can be helpful for certain types of pattern when it
-	//     is known that only one instance of the named subpattern can ever be
-	//     matched.
 	RegexDupnames RegexCompileFlags = 524288
 	// RegexNewlineCr wraps G_REGEX_NEWLINE_CR
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#newline_cr
 	//
-	// Usually any newline character or character sequence is
-	//     recognized. If this option is set, the only recognized newline character
-	//     is '\r'.
 	RegexNewlineCr RegexCompileFlags = 1048576
 	// RegexNewlineLf wraps G_REGEX_NEWLINE_LF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#newline_lf
 	//
-	// Usually any newline character or character sequence is
-	//     recognized. If this option is set, the only recognized newline character
-	//     is '\n'.
 	RegexNewlineLf RegexCompileFlags = 2097152
 	// RegexNewlineCrlf wraps G_REGEX_NEWLINE_CRLF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#newline_crlf
 	//
-	// Usually any newline character or character sequence is
-	//     recognized. If this option is set, the only recognized newline character
-	//     sequence is '\r\n'.
 	RegexNewlineCrlf RegexCompileFlags = 3145728
 	// RegexNewlineAnycrlf wraps G_REGEX_NEWLINE_ANYCRLF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#newline_anycrlf
 	//
-	// Usually any newline character or character sequence
-	//     is recognized. If this option is set, the only recognized newline character
-	//     sequences are '\r', '\n', and '\r\n'. Since: 2.34
 	RegexNewlineAnycrlf RegexCompileFlags = 5242880
 	// RegexBsrAnycrlf wraps G_REGEX_BSR_ANYCRLF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#bsr_anycrlf
 	//
-	// Usually any newline character or character sequence
-	//     is recognised. If this option is set, then "\R" only recognizes the newline
-	//    characters '\r', '\n' and '\r\n'. Since: 2.34
 	RegexBsrAnycrlf RegexCompileFlags = 8388608
 	// RegexJavascriptCompat wraps G_REGEX_JAVASCRIPT_COMPAT
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexCompileFlags.html#javascript_compat
 	//
-	// Changes behaviour so that it is compatible with
-	//     JavaScript rather than PCRE. Since GLib 2.74 this is no longer supported,
-	//     as libpcre2 does not support it. Since: 2.34 Deprecated: 2.74
 	RegexJavascriptCompat RegexCompileFlags = 33554432
 )
 
@@ -5089,118 +5355,91 @@ func (f RegexCompileFlags) String() string {
 }
 
 // RegexMatchFlags wraps GRegexMatchFlags
+// 
+// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html
 //
-// Flags specifying match-time options.
 type RegexMatchFlags C.gint
 
 const (
 	// RegexMatchDefault wraps G_REGEX_MATCH_DEFAULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#default
 	//
-	// No special options set. Since: 2.74
 	RegexMatchDefault RegexMatchFlags = 0
 	// RegexMatchAnchored wraps G_REGEX_MATCH_ANCHORED
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#anchored
 	//
-	// The pattern is forced to be "anchored", that is,
-	//     it is constrained to match only at the first matching point in the
-	//     string that is being searched. This effect can also be achieved by
-	//     appropriate constructs in the pattern itself such as the "^"
-	//     metacharacter.
 	RegexMatchAnchored RegexMatchFlags = 16
 	// RegexMatchNotbol wraps G_REGEX_MATCH_NOTBOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#notbol
 	//
-	// Specifies that first character of the string is
-	//     not the beginning of a line, so the circumflex metacharacter should
-	//     not match before it. Setting this without %G_REGEX_MULTILINE (at
-	//     compile time) causes circumflex never to match. This option affects
-	//     only the behaviour of the circumflex metacharacter, it does not
-	//     affect "\A".
 	RegexMatchNotbol RegexMatchFlags = 128
 	// RegexMatchNoteol wraps G_REGEX_MATCH_NOTEOL
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#noteol
 	//
-	// Specifies that the end of the subject string is
-	//     not the end of a line, so the dollar metacharacter should not match
-	//     it nor (except in multiline mode) a newline immediately before it.
-	//     Setting this without %G_REGEX_MULTILINE (at compile time) causes
-	//     dollar never to match. This option affects only the behaviour of
-	//     the dollar metacharacter, it does not affect "\Z" or "\z".
 	RegexMatchNoteol RegexMatchFlags = 256
 	// RegexMatchNotempty wraps G_REGEX_MATCH_NOTEMPTY
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#notempty
 	//
-	// An empty string is not considered to be a valid
-	//     match if this option is set. If there are alternatives in the pattern,
-	//     they are tried. If all the alternatives match the empty string, the
-	//     entire match fails. For example, if the pattern "a?b?" is applied to
-	//     a string not beginning with "a" or "b", it matches the empty string
-	//     at the start of the string. With this flag set, this match is not
-	//     valid, so GRegex searches further into the string for occurrences
-	//     of "a" or "b".
 	RegexMatchNotempty RegexMatchFlags = 1024
 	// RegexMatchPartial wraps G_REGEX_MATCH_PARTIAL
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#partial
 	//
-	// Turns on the partial matching feature, for more
-	//     documentation on partial matching see g_match_info_is_partial_match().
 	RegexMatchPartial RegexMatchFlags = 32768
 	// RegexMatchNewlineCr wraps G_REGEX_MATCH_NEWLINE_CR
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#newline_cr
 	//
-	// Overrides the newline definition set when
-	//     creating a new #GRegex, setting the '\r' character as line terminator.
 	RegexMatchNewlineCr RegexMatchFlags = 1048576
 	// RegexMatchNewlineLf wraps G_REGEX_MATCH_NEWLINE_LF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#newline_lf
 	//
-	// Overrides the newline definition set when
-	//     creating a new #GRegex, setting the '\n' character as line terminator.
 	RegexMatchNewlineLf RegexMatchFlags = 2097152
 	// RegexMatchNewlineCrlf wraps G_REGEX_MATCH_NEWLINE_CRLF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#newline_crlf
 	//
-	// Overrides the newline definition set when
-	//     creating a new #GRegex, setting the '\r\n' characters sequence as line terminator.
 	RegexMatchNewlineCrlf RegexMatchFlags = 3145728
 	// RegexMatchNewlineAny wraps G_REGEX_MATCH_NEWLINE_ANY
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#newline_any
 	//
-	// Overrides the newline definition set when
-	//     creating a new #GRegex, any Unicode newline sequence
-	//     is recognised as a newline. These are '\r', '\n' and '\rn', and the
-	//     single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
-	//     U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
-	//     U+2029 PARAGRAPH SEPARATOR.
 	RegexMatchNewlineAny RegexMatchFlags = 4194304
 	// RegexMatchNewlineAnycrlf wraps G_REGEX_MATCH_NEWLINE_ANYCRLF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#newline_anycrlf
 	//
-	// Overrides the newline definition set when
-	//     creating a new #GRegex; any '\r', '\n', or '\r\n' character sequence
-	//     is recognized as a newline. Since: 2.34
 	RegexMatchNewlineAnycrlf RegexMatchFlags = 5242880
 	// RegexMatchBsrAnycrlf wraps G_REGEX_MATCH_BSR_ANYCRLF
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#bsr_anycrlf
 	//
-	// Overrides the newline definition for "\R" set when
-	//     creating a new #GRegex; only '\r', '\n', or '\r\n' character sequences
-	//     are recognized as a newline by "\R". Since: 2.34
 	RegexMatchBsrAnycrlf RegexMatchFlags = 8388608
 	// RegexMatchBsrAny wraps G_REGEX_MATCH_BSR_ANY
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#bsr_any
 	//
-	// Overrides the newline definition for "\R" set when
-	//     creating a new #GRegex; any Unicode newline character or character sequence
-	//     are recognized as a newline by "\R". These are '\r', '\n' and '\rn', and the
-	//     single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
-	//     U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
-	//     U+2029 PARAGRAPH SEPARATOR. Since: 2.34
 	RegexMatchBsrAny RegexMatchFlags = 16777216
 	// RegexMatchPartialSoft wraps G_REGEX_MATCH_PARTIAL_SOFT
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#partial_soft
 	//
-	// An alias for %G_REGEX_MATCH_PARTIAL. Since: 2.34
 	RegexMatchPartialSoft RegexMatchFlags = 32768
 	// RegexMatchPartialHard wraps G_REGEX_MATCH_PARTIAL_HARD
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#partial_hard
 	//
-	// Turns on the partial matching feature. In contrast to
-	//     to %G_REGEX_MATCH_PARTIAL_SOFT, this stops matching as soon as a partial match
-	//     is found, without continuing to search for a possible complete match. See
-	//     g_match_info_is_partial_match() for more information. Since: 2.34
 	RegexMatchPartialHard RegexMatchFlags = 134217728
 	// RegexMatchNotemptyAtstart wraps G_REGEX_MATCH_NOTEMPTY_ATSTART
+	// 
+	// see also https://docs.gtk.org/glib/flags.RegexMatchFlags.html#notempty_atstart
 	//
-	// Like %G_REGEX_MATCH_NOTEMPTY, but only applied to
-	//     the start of the matched string. For anchored
-	//     patterns this can only happen for pattern containing "\K". Since: 2.34
 	RegexMatchNotemptyAtstart RegexMatchFlags = 268435456
 )
 
@@ -5267,75 +5506,76 @@ func (f RegexMatchFlags) String() string {
 }
 
 // SpawnFlags wraps GSpawnFlags
+// 
+// see also https://docs.gtk.org/glib/flags.SpawnFlags.html
 //
-// Flags passed to g_spawn_sync(), g_spawn_async() and g_spawn_async_with_pipes().
 type SpawnFlags C.gint
 
 const (
 	// SpawnDefault wraps G_SPAWN_DEFAULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#default
 	//
-	// no flags, default behaviour
 	SpawnDefault SpawnFlags = 0
 	// SpawnLeaveDescriptorsOpen wraps G_SPAWN_LEAVE_DESCRIPTORS_OPEN
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#leave_descriptors_open
 	//
-	// the parent's open file descriptors will
-	//     be inherited by the child; otherwise all descriptors except stdin,
-	//     stdout and stderr will be closed before calling exec() in the child.
 	SpawnLeaveDescriptorsOpen SpawnFlags = 1
 	// SpawnDoNotReapChild wraps G_SPAWN_DO_NOT_REAP_CHILD
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#do_not_reap_child
 	//
-	// the child will not be automatically reaped;
-	//     you must use g_child_watch_add() yourself (or call waitpid() or handle
-	//     `SIGCHLD` yourself), or the child will become a zombie.
 	SpawnDoNotReapChild SpawnFlags = 2
 	// SpawnSearchPath wraps G_SPAWN_SEARCH_PATH
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#search_path
 	//
-	// `argv[0]` need not be an absolute path, it will be
-	//     looked for in the user's `PATH`.
 	SpawnSearchPath SpawnFlags = 4
 	// SpawnStdoutToDevNull wraps G_SPAWN_STDOUT_TO_DEV_NULL
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#stdout_to_dev_null
 	//
-	// the child's standard output will be discarded,
-	//     instead of going to the same location as the parent's standard output.
 	SpawnStdoutToDevNull SpawnFlags = 8
 	// SpawnStderrToDevNull wraps G_SPAWN_STDERR_TO_DEV_NULL
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#stderr_to_dev_null
 	//
-	// the child's standard error will be discarded.
 	SpawnStderrToDevNull SpawnFlags = 16
 	// SpawnChildInheritsStdin wraps G_SPAWN_CHILD_INHERITS_STDIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#child_inherits_stdin
 	//
-	// the child will inherit the parent's standard
-	//     input (by default, the child's standard input is attached to `/dev/null`).
 	SpawnChildInheritsStdin SpawnFlags = 32
 	// SpawnFileAndArgvZero wraps G_SPAWN_FILE_AND_ARGV_ZERO
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#file_and_argv_zero
 	//
-	// the first element of `argv` is the file to
-	//     execute, while the remaining elements are the actual argument vector
-	//     to pass to the file. Normally g_spawn_async_with_pipes() uses `argv[0]`
-	//     as the file to execute, and passes all of `argv` to the child.
 	SpawnFileAndArgvZero SpawnFlags = 64
 	// SpawnSearchPathFromEnvp wraps G_SPAWN_SEARCH_PATH_FROM_ENVP
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#search_path_from_envp
 	//
-	// if `argv[0]` is not an absolute path,
-	//     it will be looked for in the `PATH` from the passed child environment.
-	//     Since: 2.34
 	SpawnSearchPathFromEnvp SpawnFlags = 128
 	// SpawnCloexecPipes wraps G_SPAWN_CLOEXEC_PIPES
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#cloexec_pipes
 	//
-	// create all pipes with the `O_CLOEXEC` flag set.
-	//     Since: 2.40
 	SpawnCloexecPipes SpawnFlags = 256
 	// SpawnChildInheritsStdout wraps G_SPAWN_CHILD_INHERITS_STDOUT
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#child_inherits_stdout
 	//
-	// The child will inherit the parent's standard output.
 	SpawnChildInheritsStdout SpawnFlags = 512
 	// SpawnChildInheritsStderr wraps G_SPAWN_CHILD_INHERITS_STDERR
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#child_inherits_stderr
 	//
-	// The child will inherit the parent's standard error.
 	SpawnChildInheritsStderr SpawnFlags = 1024
 	// SpawnStdinFromDevNull wraps G_SPAWN_STDIN_FROM_DEV_NULL
+	// 
+	// see also https://docs.gtk.org/glib/flags.SpawnFlags.html#stdin_from_dev_null
 	//
-	// The child's standard input is attached to `/dev/null`.
 	SpawnStdinFromDevNull SpawnFlags = 2048
 )
 
@@ -5393,38 +5633,31 @@ func (f SpawnFlags) String() string {
 }
 
 // TestSubprocessFlags wraps GTestSubprocessFlags
-//
-// Flags to pass to [func@GLib.test_trap_subprocess] to control input and output.
 // 
-// Note that in contrast with [func@GLib.test_trap_fork], the default
-// behavior of [func@GLib.test_trap_subprocess] is to not show stdout
-// and stderr.
+// see also https://docs.gtk.org/glib/flags.TestSubprocessFlags.html
+//
 type TestSubprocessFlags C.gint
 
 const (
 	// TestSubprocessDefault wraps G_TEST_SUBPROCESS_DEFAULT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestSubprocessFlags.html#default
 	//
-	// Default behaviour. Since: 2.74
 	TestSubprocessDefault TestSubprocessFlags = 0
 	// TestSubprocessInheritStdin wraps G_TEST_SUBPROCESS_INHERIT_STDIN
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestSubprocessFlags.html#inherit_stdin
 	//
-	// If this flag is given, the child
-	//   process will inherit the parent's stdin. Otherwise, the child's
-	//   stdin is redirected to `/dev/null`.
 	TestSubprocessInheritStdin TestSubprocessFlags = 1
 	// TestSubprocessInheritStdout wraps G_TEST_SUBPROCESS_INHERIT_STDOUT
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestSubprocessFlags.html#inherit_stdout
 	//
-	// If this flag is given, the child
-	//   process will inherit the parent's stdout. Otherwise, the child's
-	//   stdout will not be visible, but it will be captured to allow
-	//   later tests with [func@GLib.test_trap_assert_stdout].
 	TestSubprocessInheritStdout TestSubprocessFlags = 2
 	// TestSubprocessInheritStderr wraps G_TEST_SUBPROCESS_INHERIT_STDERR
+	// 
+	// see also https://docs.gtk.org/glib/flags.TestSubprocessFlags.html#inherit_stderr
 	//
-	// If this flag is given, the child
-	//   process will inherit the parent's stderr. Otherwise, the child's
-	//   stderr will not be visible, but it will be captured to allow
-	//   later tests with [func@GLib.test_trap_assert_stderr].
 	TestSubprocessInheritStderr TestSubprocessFlags = 4
 )
 
@@ -5455,39 +5688,41 @@ func (f TestSubprocessFlags) String() string {
 }
 
 // TraverseFlags wraps GTraverseFlags
+// 
+// see also https://docs.gtk.org/glib/flags.TraverseFlags.html
 //
-// Specifies which nodes are visited during several of the tree
-// functions, including g_node_traverse() and g_node_find().
 type TraverseFlags C.gint
 
 const (
 	// TraverseLeaves wraps G_TRAVERSE_LEAVES
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseFlags.html#leaves
 	//
-	// only leaf nodes should be visited. This name has
-	//                     been introduced in 2.6, for older version use
-	//                     %G_TRAVERSE_LEAFS.
 	TraverseLeaves TraverseFlags = 1
 	// TraverseNonLeaves wraps G_TRAVERSE_NON_LEAVES
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseFlags.html#non_leaves
 	//
-	// only non-leaf nodes should be visited. This
-	//                         name has been introduced in 2.6, for older
-	//                         version use %G_TRAVERSE_NON_LEAFS.
 	TraverseNonLeaves TraverseFlags = 2
 	// TraverseAll wraps G_TRAVERSE_ALL
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseFlags.html#all
 	//
-	// all nodes should be visited.
 	TraverseAll TraverseFlags = 3
 	// TraverseMask wraps G_TRAVERSE_MASK
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseFlags.html#mask
 	//
-	// a mask of all traverse flags.
 	TraverseMask TraverseFlags = 3
 	// TraverseLeafs wraps G_TRAVERSE_LEAFS
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseFlags.html#leafs
 	//
-	// identical to %G_TRAVERSE_LEAVES.
 	TraverseLeafs TraverseFlags = 1
 	// TraverseNonLeafs wraps G_TRAVERSE_NON_LEAFS
+	// 
+	// see also https://docs.gtk.org/glib/flags.TraverseFlags.html#non_leafs
 	//
-	// identical to %G_TRAVERSE_NON_LEAVES.
 	TraverseNonLeafs TraverseFlags = 2
 )
 
@@ -5524,74 +5759,61 @@ func (f TraverseFlags) String() string {
 }
 
 // UriFlags wraps GUriFlags
-//
-// Flags that describe a URI.
 // 
-// When parsing a URI, if you need to choose different flags based on
-// the type of URI, you can use g_uri_peek_scheme() on the URI string
-// to check the scheme first, and use that to decide what flags to
-// parse it with.
+// see also https://docs.gtk.org/glib/flags.UriFlags.html
+//
 type UriFlags C.gint
 
 const (
 	// URIFlagsNone wraps G_URI_FLAGS_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#none
 	//
-	// No flags set.
 	URIFlagsNone UriFlags = 0
 	// URIFlagsParseRelaxed wraps G_URI_FLAGS_PARSE_RELAXED
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#parse_relaxed
 	//
-	// Parse the URI more relaxedly than the
-	//     [RFC 3986](https://tools.ietf.org/html/rfc3986) grammar specifies,
-	//     fixing up or ignoring common mistakes in URIs coming from external
-	//     sources. This is also needed for some obscure URI schemes where `;`
-	//     separates the host from the path. Don&#x2019;t use this flag unless you need to.
 	URIFlagsParseRelaxed UriFlags = 1
 	// URIFlagsHasPassword wraps G_URI_FLAGS_HAS_PASSWORD
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#has_password
 	//
-	// The userinfo field may contain a password,
-	//     which will be separated from the username by `:`.
 	URIFlagsHasPassword UriFlags = 2
 	// URIFlagsHasAuthParams wraps G_URI_FLAGS_HAS_AUTH_PARAMS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#has_auth_params
 	//
-	// The userinfo may contain additional
-	//     authentication-related parameters, which will be separated from
-	//     the username and/or password by `;`.
 	URIFlagsHasAuthParams UriFlags = 4
 	// URIFlagsEncoded wraps G_URI_FLAGS_ENCODED
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#encoded
 	//
-	// When parsing a URI, this indicates that `%`-encoded
-	//     characters in the userinfo, path, query, and fragment fields
-	//     should not be decoded. (And likewise the host field if
-	//     %G_URI_FLAGS_NON_DNS is also set.) When building a URI, it indicates
-	//     that you have already `%`-encoded the components, and so #GUri
-	//     should not do any encoding itself.
 	URIFlagsEncoded UriFlags = 8
 	// URIFlagsNonDns wraps G_URI_FLAGS_NON_DNS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#non_dns
 	//
-	// The host component should not be assumed to be a
-	//     DNS hostname or IP address (for example, for `smb` URIs with NetBIOS
-	//     hostnames).
 	URIFlagsNonDns UriFlags = 16
 	// URIFlagsEncodedQuery wraps G_URI_FLAGS_ENCODED_QUERY
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#encoded_query
 	//
-	// Same as %G_URI_FLAGS_ENCODED, for the query
-	//     field only.
 	URIFlagsEncodedQuery UriFlags = 32
 	// URIFlagsEncodedPath wraps G_URI_FLAGS_ENCODED_PATH
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#encoded_path
 	//
-	// Same as %G_URI_FLAGS_ENCODED, for the path only.
 	URIFlagsEncodedPath UriFlags = 64
 	// URIFlagsEncodedFragment wraps G_URI_FLAGS_ENCODED_FRAGMENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#encoded_fragment
 	//
-	// Same as %G_URI_FLAGS_ENCODED, for the
-	//     fragment only.
 	URIFlagsEncodedFragment UriFlags = 128
 	// URIFlagsSchemeNormalize wraps G_URI_FLAGS_SCHEME_NORMALIZE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriFlags.html#scheme_normalize
 	//
-	// A scheme-based normalization will be applied.
-	//     For example, when parsing an HTTP URI changing omitted path to `/` and
-	//     omitted port to `80`; and when building a URI, changing empty path to `/`
-	//     and default port `80`). This only supports a subset of known schemes. (Since: 2.68)
 	URIFlagsSchemeNormalize UriFlags = 256
 )
 
@@ -5640,37 +5862,41 @@ func (f UriFlags) String() string {
 }
 
 // UriHideFlags wraps GUriHideFlags
+// 
+// see also https://docs.gtk.org/glib/flags.UriHideFlags.html
 //
-// Flags describing what parts of the URI to hide in
-// g_uri_to_string_partial(). Note that %G_URI_HIDE_PASSWORD and
-// %G_URI_HIDE_AUTH_PARAMS will only work if the #GUri was parsed with
-// the corresponding flags.
 type UriHideFlags C.gint
 
 const (
 	// URIHideNone wraps G_URI_HIDE_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriHideFlags.html#none
 	//
-	// No flags set.
 	URIHideNone UriHideFlags = 0
 	// URIHideUserinfo wraps G_URI_HIDE_USERINFO
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriHideFlags.html#userinfo
 	//
-	// Hide the userinfo.
 	URIHideUserinfo UriHideFlags = 1
 	// URIHidePassword wraps G_URI_HIDE_PASSWORD
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriHideFlags.html#password
 	//
-	// Hide the password.
 	URIHidePassword UriHideFlags = 2
 	// URIHideAuthParams wraps G_URI_HIDE_AUTH_PARAMS
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriHideFlags.html#auth_params
 	//
-	// Hide the auth_params.
 	URIHideAuthParams UriHideFlags = 4
 	// URIHideQuery wraps G_URI_HIDE_QUERY
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriHideFlags.html#query
 	//
-	// Hide the query.
 	URIHideQuery UriHideFlags = 8
 	// URIHideFragment wraps G_URI_HIDE_FRAGMENT
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriHideFlags.html#fragment
 	//
-	// Hide the fragment.
 	URIHideFragment UriHideFlags = 16
 )
 
@@ -5707,28 +5933,31 @@ func (f UriHideFlags) String() string {
 }
 
 // UriParamsFlags wraps GUriParamsFlags
+// 
+// see also https://docs.gtk.org/glib/flags.UriParamsFlags.html
 //
-// Flags modifying the way parameters are handled by g_uri_parse_params() and
-// #GUriParamsIter.
 type UriParamsFlags C.gint
 
 const (
 	// URIParamsNone wraps G_URI_PARAMS_NONE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriParamsFlags.html#none
 	//
-	// No flags set.
 	URIParamsNone UriParamsFlags = 0
 	// URIParamsCaseInsensitive wraps G_URI_PARAMS_CASE_INSENSITIVE
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriParamsFlags.html#case_insensitive
 	//
-	// Parameter names are case insensitive.
 	URIParamsCaseInsensitive UriParamsFlags = 1
 	// URIParamsWwwForm wraps G_URI_PARAMS_WWW_FORM
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriParamsFlags.html#www_form
 	//
-	// Replace `+` with space character. Only useful for
-	//     URLs on the web, using the `https` or `http` schemas.
 	URIParamsWwwForm UriParamsFlags = 2
 	// URIParamsParseRelaxed wraps G_URI_PARAMS_PARSE_RELAXED
+	// 
+	// see also https://docs.gtk.org/glib/flags.UriParamsFlags.html#parse_relaxed
 	//
-	// See %G_URI_FLAGS_PARSE_RELAXED.
 	URIParamsParseRelaxed UriParamsFlags = 4
 )
 
@@ -5760,145 +5989,50 @@ func (f UriParamsFlags) String() string {
 
 // LogFunc wraps GLogFunc
 // 
-// The function takes the following parameters:
-// 
-// 	- logDomain string (nullable): the log domain of the message 
-// 	- logLevel LogLevelFlags: the log level of the message (including the
-//   fatal and recursion flags) 
-// 	- message string: the message to process 
+// see also https://docs.gtk.org/glib/callback.LogFunc.html
 //
-// Specifies the prototype of log handler functions.
-// 
-// The default log handler, [func@GLib.log_default_handler], automatically appends a
-// new-line character to @message when printing it. It is advised that any
-// custom log handler functions behave similarly, so that logging calls in user
-// code do not need modifying to add a new-line character to the message if the
-// log handler is changed.
-// 
-// The `log_domain` parameter can be set to `NULL` or an empty string to use the default
-// application domain.
-// 
-// This is not used if structured logging is enabled; see
-// [Using Structured Logging](logging.html#using-structured-logging).
 type LogFunc func(logDomain string, logLevel LogLevelFlags, message string)
 
 // LogWriterFunc wraps GLogWriterFunc
 // 
-// The function takes the following parameters:
-// 
-// 	- logLevel LogLevelFlags: log level of the message 
-// 	- fields []LogField: fields forming the message 
-// 
-// The function returns the following values:
-// 
-// 	- goret LogWriterOutput 
+// see also https://docs.gtk.org/glib/callback.LogWriterFunc.html
 //
-// Writer function for log entries. A log entry is a collection of one or more
-// #GLogFields, using the standard [field names from journal
-// specification](https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html).
-// See g_log_structured() for more information.
-// 
-// Writer functions must ignore fields which they do not recognise, unless they
-// can write arbitrary binary output, as field values may be arbitrary binary.
-// 
-// @log_level is guaranteed to be included in @fields as the `PRIORITY` field,
-// but is provided separately for convenience of deciding whether or where to
-// output the log entry.
-// 
-// Writer functions should return %G_LOG_WRITER_HANDLED if they handled the log
-// message successfully or if they deliberately ignored it. If there was an
-// error handling the message (for example, if the writer function is meant to
-// send messages to a remote logging server and there is a network error), it
-// should return %G_LOG_WRITER_UNHANDLED. This allows writer functions to be
-// chained and fall back to simpler handlers in case of failure.
 type LogWriterFunc func(logLevel LogLevelFlags, fields []LogField) (goret LogWriterOutput)
 
 // SourceFunc wraps GSourceFunc
 // 
-// The function takes the following parameters:
-// 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/callback.SourceFunc.html
 //
-// Specifies the type of function passed to [func@GLib.timeout_add],
-// [func@GLib.timeout_add_full], [func@GLib.idle_add], and
-// [func@GLib.idle_add_full].
-// 
-// When calling [method@GLib.Source.set_callback], you may need to cast a
-// function of a different type to this type. Use [func@GLib.SOURCE_FUNC] to
-// avoid warnings about incompatible function types.
 type SourceFunc func() (goret bool)
 
 // SourceOnceFunc wraps GSourceOnceFunc
 // 
-// The function takes the following parameters:
-// 
+// see also https://docs.gtk.org/glib/callback.SourceOnceFunc.html
 //
-// A source function that is only called once before being removed from the main
-// context automatically.
-// 
-// See: [func@GLib.idle_add_once], [func@GLib.timeout_add_once]
 type SourceOnceFunc func()
 
 // TestDataFunc wraps GTestDataFunc
 // 
-// The function takes the following parameters:
-// 
+// see also https://docs.gtk.org/glib/callback.TestDataFunc.html
 //
-// The type used for test case functions that take an extra pointer
-// argument.
 type TestDataFunc func()
 
 // TestLogFatalFunc wraps GTestLogFatalFunc
 // 
-// The function takes the following parameters:
-// 
-// 	- logDomain string: the log domain of the message 
-// 	- logLevel LogLevelFlags: the log level of the message (including the fatal and recursion flags) 
-// 	- message string: the message to process 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/callback.TestLogFatalFunc.html
 //
-// Specifies the prototype of fatal log handler functions.
 type TestLogFatalFunc func(logDomain string, logLevel LogLevelFlags, message string) (goret bool)
 
 // ChildWatchFunc wraps GChildWatchFunc
 // 
-// The function takes the following parameters:
-// 
-// 	- pid Pid: the process id of the child process 
-// 	- waitStatus int32: Status information about the child process, encoded
-//               in a platform-specific manner 
+// see also https://docs.gtk.org/glib/callback.ChildWatchFunc.html
 //
-// Prototype of a #GChildWatchSource callback, called when a child
-// process has exited.
-// 
-// To interpret @wait_status, see the documentation for
-// [func@GLib.spawn_check_wait_status]. In particular,
-// on Unix platforms, note that it is usually not equal
-// to the integer passed to `exit()` or returned from `main()`.
 type ChildWatchFunc func(pid Pid, waitStatus int32)
 
 // ASCIIDigitValue wraps g_ascii_digit_value
 // 
-// The function takes the following parameters:
-// 
-// 	- c byte: an ASCII character 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_ascii_digit_value.html
 //
-// Determines the numeric value of a character as a decimal digit. If the
-// character is not a decimal digit according to [func@GLib.ascii_isdigit],
-// `-1` is returned.
-// 
-// Differs from [func@GLib.unichar_digit_value] because it takes a char, so
-// there's no worry about sign extension if characters are signed.
 func ASCIIDigitValue(c byte) int32 {
 	var carg1 C.gchar // in, none, casted
 	var cret  C.gint  // return, none, casted
@@ -5917,25 +6051,8 @@ func ASCIIDigitValue(c byte) int32 {
 
 // ASCIIDtostr wraps g_ascii_dtostr
 // 
-// The function takes the following parameters:
-// 
-// 	- buffer string: a buffer to place the resulting string in 
-// 	- bufLen int32: the length of the buffer 
-// 	- d float64: the value to convert 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ascii_dtostr.html
 //
-// Converts a `gdouble` to a string, using the '.' as
-// decimal point.
-// 
-// This function generates enough precision that converting
-// the string back using [func@GLib.ascii_strtod] gives the same machine-number
-// (on machines with IEEE compatible 64bit doubles). It is
-// guaranteed that the size of the resulting string will never
-// be larger than [const@GLib.ASCII_DTOSTR_BUF_SIZE] bytes, including the terminating
-// nul character, which is always added.
 func ASCIIDtostr(buffer string, bufLen int32, d float64) string {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 C.gint    // in, none, casted
@@ -5962,30 +6079,8 @@ func ASCIIDtostr(buffer string, bufLen int32, d float64) string {
 
 // ASCIIFormatd wraps g_ascii_formatd
 // 
-// The function takes the following parameters:
-// 
-// 	- buffer string: a buffer to place the resulting string in 
-// 	- bufLen int32: the length of the buffer 
-// 	- format string: the `printf()`-style format to use for the
-//   code to use for converting 
-// 	- d float64: the value to convert 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ascii_formatd.html
 //
-// Converts a `gdouble` to a string, using the '.' as
-// decimal point. To format the number you pass in
-// a `printf()`-style format string. Allowed conversion
-// specifiers are 'e', 'E', 'f', 'F', 'g' and 'G'.
-// 
-// The @format must just be a single format specifier
-// starting with `%`, expecting a `gdouble` argument.
-// 
-// The returned buffer is guaranteed to be nul-terminated.
-// 
-// If you just want to want to serialize the value into a
-// string, use [func@GLib.ascii_dtostr].
 func ASCIIFormatd(buffer string, bufLen int32, format string, d float64) string {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 C.gint    // in, none, casted
@@ -6016,30 +6111,8 @@ func ASCIIFormatd(buffer string, bufLen int32, format string, d float64) string 
 
 // ASCIIStrcasecmp wraps g_ascii_strcasecmp
 // 
-// The function takes the following parameters:
-// 
-// 	- s1 string: string to compare with @s2 
-// 	- s2 string: string to compare with @s1 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_ascii_strcasecmp.html
 //
-// Compare two strings, ignoring the case of ASCII characters.
-// 
-// Unlike the BSD `strcasecmp()` function, this only recognizes standard
-// ASCII letters and ignores the locale, treating all non-ASCII
-// bytes as if they are not letters.
-// 
-// This function should be used only on strings that are known to be
-// in encodings where the bytes corresponding to ASCII letters always
-// represent themselves. This includes UTF-8 and the ISO-8859-*
-// charsets, but not for instance double-byte encodings like the
-// Windows Codepage 932, where the trailing bytes of double-byte
-// characters include all ASCII letters. If you compare two CP932
-// strings using this function, you will get false matches.
-// 
-// Both @s1 and @s2 must be non-`NULL`.
 func ASCIIStrcasecmp(s1 string, s2 string) int32 {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -6063,17 +6136,8 @@ func ASCIIStrcasecmp(s1 string, s2 string) int32 {
 
 // ASCIIStrdown wraps g_ascii_strdown
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string 
-// 	- len int: length of @str in bytes, or `-1` if @str is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ascii_strdown.html
 //
-// Converts all upper case ASCII letters to lower case ASCII letters, with
-// semantics that exactly match [func@GLib.ascii_tolower].
 func ASCIIStrdown(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -6097,40 +6161,8 @@ func ASCIIStrdown(str string, len int) string {
 
 // ASCIIStringToSigned wraps g_ascii_string_to_signed
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string to convert 
-// 	- base uint: base of a parsed number 
-// 	- min int64: a lower bound (inclusive) 
-// 	- max int64: an upper bound (inclusive) 
-// 
-// The function returns the following values:
-// 
-// 	- outNum int64: a return location for a number 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_ascii_string_to_signed.html
 //
-// A convenience function for converting a string to a signed number.
-// 
-// This function assumes that @str contains only a number of the given
-// @base that is within inclusive bounds limited by @min and @max. If
-// this is true, then the converted number is stored in @out_num. An
-// empty string is not a valid input. A string with leading or
-// trailing whitespace is also an invalid input.
-// 
-// @base can be between 2 and 36 inclusive. Hexadecimal numbers must
-// not be prefixed with "0x" or "0X". Such a problem does not exist
-// for octal numbers, since they were usually prefixed with a zero
-// which does not change the value of the parsed number.
-// 
-// Parsing failures result in an error with the `G_NUMBER_PARSER_ERROR`
-// domain. If the input is invalid, the error code will be
-// [error@GLib.NumberParserError.INVALID]. If the parsed number is out of
-// bounds - [error@GLib.NumberParserError.OUT_OF_BOUNDS].
-// 
-// See [func@GLib.ascii_strtoll] if you have more complex needs such as
-// parsing a string which starts with a number, but then has other
-// characters.
 func ASCIIStringToSigned(str string, base uint, min int64, max int64) (int64, bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.guint    // in, none, casted
@@ -6169,41 +6201,8 @@ func ASCIIStringToSigned(str string, base uint, min int64, max int64) (int64, bo
 
 // ASCIIStringToUnsigned wraps g_ascii_string_to_unsigned
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string 
-// 	- base uint: base of a parsed number 
-// 	- min uint64: a lower bound (inclusive) 
-// 	- max uint64: an upper bound (inclusive) 
-// 
-// The function returns the following values:
-// 
-// 	- outNum uint64: a return location for a number 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_ascii_string_to_unsigned.html
 //
-// A convenience function for converting a string to an unsigned number.
-// 
-// This function assumes that @str contains only a number of the given
-// @base that is within inclusive bounds limited by @min and @max. If
-// this is true, then the converted number is stored in @out_num. An
-// empty string is not a valid input. A string with leading or
-// trailing whitespace is also an invalid input. A string with a leading sign
-// (`-` or `+`) is not a valid input for the unsigned parser.
-// 
-// @base can be between 2 and 36 inclusive. Hexadecimal numbers must
-// not be prefixed with "0x" or "0X". Such a problem does not exist
-// for octal numbers, since they were usually prefixed with a zero
-// which does not change the value of the parsed number.
-// 
-// Parsing failures result in an error with the `G_NUMBER_PARSER_ERROR`
-// domain. If the input is invalid, the error code will be
-// [error@GLib.NumberParserError.INVALID]. If the parsed number is out of
-// bounds - [error@GLib.NumberParserError.OUT_OF_BOUNDS].
-// 
-// See [func@GLib.ascii_strtoull] if you have more complex needs such as
-// parsing a string which starts with a number, but then has other
-// characters.
 func ASCIIStringToUnsigned(str string, base uint, min uint64, max uint64) (uint64, bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.guint    // in, none, casted
@@ -6242,28 +6241,8 @@ func ASCIIStringToUnsigned(str string, base uint, min uint64, max uint64) (uint6
 
 // ASCIIStrncasecmp wraps g_ascii_strncasecmp
 // 
-// The function takes the following parameters:
-// 
-// 	- s1 string: string to compare with @s2 
-// 	- s2 string: string to compare with @s1 
-// 	- n uint: number of characters to compare 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_ascii_strncasecmp.html
 //
-// Compare @s1 and @s2, ignoring the case of ASCII characters and any
-// characters after the first @n in each string. If either string is
-// less than @n bytes long, comparison will stop at the first nul byte
-// encountered.
-// 
-// Unlike the BSD `strncasecmp()` function, this only recognizes standard
-// ASCII letters and ignores the locale, treating all non-ASCII
-// characters as if they are not letters.
-// 
-// The same warning as in [func@GLib.ascii_strcasecmp] applies: Use this
-// function only on strings known to be in encodings where bytes
-// corresponding to ASCII letters always represent themselves.
 func ASCIIStrncasecmp(s1 string, s2 string, n uint) int32 {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -6290,39 +6269,8 @@ func ASCIIStrncasecmp(s1 string, s2 string, n uint) int32 {
 
 // ASCIIStrtod wraps g_ascii_strtod
 // 
-// The function takes the following parameters:
-// 
-// 	- nptr string: the string to convert to a numeric value 
-// 
-// The function returns the following values:
-// 
-// 	- endptr string: if non-`NULL`, it returns the
-//   character after the last character used in the conversion 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_ascii_strtod.html
 //
-// Converts a string to a floating point value.
-// 
-// This function behaves like the standard `strtod()` function
-// does in the C locale. It does this without actually changing
-// the current locale, since that would not be thread-safe.
-// A limitation of the implementation is that this function
-// will still accept localized versions of infinities and NANs.
-// 
-// This function is typically used when reading configuration
-// files or other non-user input that should be locale independent.
-// To handle input from the user you should normally use the
-// locale-sensitive system `strtod()` function.
-// 
-// To convert from a gdouble to a string in a locale-insensitive
-// way, use [func@GLib.ascii_dtostr].
-// 
-// If the correct value would cause overflow, plus or minus `HUGE_VAL`
-// is returned (according to the sign of the value), and `ERANGE` is
-// stored in `errno`. If the correct value would cause underflow,
-// zero is returned and `ERANGE` is stored in `errno`.
-// 
-// This function resets `errno` before calling `strtod()` so that
-// you can reliably detect overflow and underflow.
 func ASCIIStrtod(nptr string) (string, float64) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 *C.gchar  // out, none, string
@@ -6345,35 +6293,8 @@ func ASCIIStrtod(nptr string) (string, float64) {
 
 // ASCIIStrtoll wraps g_ascii_strtoll
 // 
-// The function takes the following parameters:
-// 
-// 	- nptr string: the string to convert to a numeric value 
-// 	- base uint: to be used for the conversion, 2..36 or 0 
-// 
-// The function returns the following values:
-// 
-// 	- endptr string: if non-`NULL`, it returns the
-//   character after the last character used in the conversion 
-// 	- goret int64 
+// see also https://docs.gtk.org/glib/func.g_ascii_strtoll.html
 //
-// Converts a string to a `gint64` value.
-// 
-// This function behaves like the standard `strtoll()` function
-// does in the C locale. It does this without actually
-// changing the current locale, since that would not be
-// thread-safe.
-// 
-// This function is typically used when reading configuration
-// files or other non-user input that should be locale independent.
-// To handle input from the user you should normally use the
-// locale-sensitive system `strtoll()` function.
-// 
-// If the correct value would cause overflow, [const@GLib.MAXINT64] or
-// [const@GLib.MININT64] is returned, and `ERANGE` is stored in `errno`.
-// If the base is outside the valid range, zero is returned, and
-// `EINVAL` is stored in `errno`. If the
-// string conversion fails, zero is returned, and @endptr returns @nptr
-// (if @endptr is non-`NULL`).
 func ASCIIStrtoll(nptr string, base uint) (string, int64) {
 	var carg1 *C.gchar // in, none, string
 	var carg3 C.guint  // in, none, casted
@@ -6399,40 +6320,8 @@ func ASCIIStrtoll(nptr string, base uint) (string, int64) {
 
 // ASCIIStrtoull wraps g_ascii_strtoull
 // 
-// The function takes the following parameters:
-// 
-// 	- nptr string: the string to convert to a numeric value 
-// 	- base uint: to be used for the conversion, 2..36 or 0 
-// 
-// The function returns the following values:
-// 
-// 	- endptr string: if non-`NULL`, it returns the
-//   character after the last character used in the conversion 
-// 	- goret uint64 
+// see also https://docs.gtk.org/glib/func.g_ascii_strtoull.html
 //
-// Converts a string to a `guint64` value.
-// 
-// This function behaves like the standard `strtoull()` function
-// does in the C locale. It does this without actually
-// changing the current locale, since that would not be
-// thread-safe.
-// 
-// Note that input with a leading minus sign (`-`) is accepted, and will return
-// the negation of the parsed number, unless that would overflow a `guint64`.
-// Critically, this means you cannot assume that a short fixed length input will
-// result in a low return value, as the input could have a leading `-`.
-// 
-// This function is typically used when reading configuration
-// files or other non-user input that should be locale independent.
-// To handle input from the user you should normally use the
-// locale-sensitive system `strtoull()` function.
-// 
-// If the correct value would cause overflow, [const@GLib.MAXUINT64]
-// is returned, and `ERANGE` is stored in `errno`.
-// If the base is outside the valid range, zero is returned, and
-// `EINVAL` is stored in `errno`.
-// If the string conversion fails, zero is returned, and @endptr returns
-// @nptr (if @endptr is non-`NULL`).
 func ASCIIStrtoull(nptr string, base uint) (string, uint64) {
 	var carg1 *C.gchar  // in, none, string
 	var carg3 C.guint   // in, none, casted
@@ -6458,17 +6347,8 @@ func ASCIIStrtoull(nptr string, base uint) (string, uint64) {
 
 // ASCIIStrup wraps g_ascii_strup
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string 
-// 	- len int: length of @str in bytes, or `-1` if @str is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ascii_strup.html
 //
-// Converts all lower case ASCII letters to upper case ASCII letters, with
-// semantics that exactly match [func@GLib.ascii_toupper].
 func ASCIIStrup(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -6492,24 +6372,8 @@ func ASCIIStrup(str string, len int) string {
 
 // ASCIITolower wraps g_ascii_tolower
 // 
-// The function takes the following parameters:
-// 
-// 	- c byte: any character 
-// 
-// The function returns the following values:
-// 
-// 	- goret byte 
+// see also https://docs.gtk.org/glib/func.g_ascii_tolower.html
 //
-// Convert a character to ASCII lower case. If the character is not an
-// ASCII upper case letter, it is returned unchanged.
-// 
-// Unlike the standard C library `tolower()` function, this only
-// recognizes standard ASCII letters and ignores the locale, returning
-// all non-ASCII characters unchanged, even if they are lower case
-// letters in a particular character set. Also unlike the standard
-// library function, this takes and returns a char, not an int, so
-// don't call it on `EOF` but no need to worry about casting to `guchar`
-// before passing a possibly non-ASCII character in.
 func ASCIITolower(c byte) byte {
 	var carg1 C.gchar // in, none, casted
 	var cret  C.gchar // return, none, casted
@@ -6528,24 +6392,8 @@ func ASCIITolower(c byte) byte {
 
 // ASCIIToupper wraps g_ascii_toupper
 // 
-// The function takes the following parameters:
-// 
-// 	- c byte: any character 
-// 
-// The function returns the following values:
-// 
-// 	- goret byte 
+// see also https://docs.gtk.org/glib/func.g_ascii_toupper.html
 //
-// Convert a character to ASCII upper case. If the character is not an
-// ASCII lower case letter, it is returned unchanged.
-// 
-// Unlike the standard C library `toupper()` function, this only
-// recognizes standard ASCII letters and ignores the locale, returning
-// all non-ASCII characters unchanged, even if they are upper case
-// letters in a particular character set. Also unlike the standard
-// library function, this takes and returns a char, not an int, so
-// don't call it on `EOF` but no need to worry about casting to `guchar`
-// before passing a possibly non-ASCII character in.
 func ASCIIToupper(c byte) byte {
 	var carg1 C.gchar // in, none, casted
 	var cret  C.gchar // return, none, casted
@@ -6564,23 +6412,8 @@ func ASCIIToupper(c byte) byte {
 
 // ASCIIXdigitValue wraps g_ascii_xdigit_value
 // 
-// The function takes the following parameters:
-// 
-// 	- c byte: an ASCII character 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_ascii_xdigit_value.html
 //
-// Determines the numeric value of a character as a hexadecimal digit. If the
-// character is not a hex digit according to [func@GLib.ascii_isxdigit],
-// `-1` is returned.
-// 
-// Differs from [func@GLib.unichar_xdigit_value] because it takes a char, so
-// there's no worry about sign extension if characters are signed.
-// 
-// Differs from [func@GLib.unichar_xdigit_value] because it takes a char, so
-// there's no worry about sign extension if characters are signed.
 func ASCIIXdigitValue(c byte) int32 {
 	var carg1 C.gchar // in, none, casted
 	var cret  C.gint  // return, none, casted
@@ -6599,13 +6432,7 @@ func ASCIIXdigitValue(c byte) int32 {
 
 // AssertWarning wraps g_assert_warning
 // 
-// The function takes the following parameters:
-// 
-// 	- logDomain string 
-// 	- file string 
-// 	- line int32 
-// 	- prettyFunction string 
-// 	- expression string 
+// see also https://docs.gtk.org/glib/func.g_assert_warning.html
 func AssertWarning(logDomain string, file string, line int32, prettyFunction string, expression string) {
 	var carg1 *C.char // in, none, string
 	var carg2 *C.char // in, none, string
@@ -6633,13 +6460,7 @@ func AssertWarning(logDomain string, file string, line int32, prettyFunction str
 
 // AssertionMessage wraps g_assertion_message
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string 
-// 	- file string 
-// 	- line int32 
-// 	- fn string 
-// 	- message string 
+// see also https://docs.gtk.org/glib/func.g_assertion_message.html
 func AssertionMessage(domain string, file string, line int32, fn string, message string) {
 	var carg1 *C.char // in, none, string
 	var carg2 *C.char // in, none, string
@@ -6667,17 +6488,7 @@ func AssertionMessage(domain string, file string, line int32, fn string, message
 
 // AssertionMessageCmpint wraps g_assertion_message_cmpint
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string 
-// 	- file string 
-// 	- line int32 
-// 	- fn string 
-// 	- expr string 
-// 	- arg1 uint64 
-// 	- cmp string 
-// 	- arg2 uint64 
-// 	- numtype byte 
+// see also https://docs.gtk.org/glib/func.g_assertion_message_cmpint.html
 func AssertionMessageCmpint(domain string, file string, line int32, fn string, expr string, arg1 uint64, cmp string, arg2 uint64, numtype byte) {
 	var carg1 *C.char   // in, none, string
 	var carg2 *C.char   // in, none, string
@@ -6718,16 +6529,7 @@ func AssertionMessageCmpint(domain string, file string, line int32, fn string, e
 
 // AssertionMessageCmpstr wraps g_assertion_message_cmpstr
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string 
-// 	- file string 
-// 	- line int32 
-// 	- fn string 
-// 	- expr string 
-// 	- arg1 string 
-// 	- cmp string 
-// 	- arg2 string 
+// see also https://docs.gtk.org/glib/func.g_assertion_message_cmpstr.html
 func AssertionMessageCmpstr(domain string, file string, line int32, fn string, expr string, arg1 string, cmp string, arg2 string) {
 	var carg1 *C.char // in, none, string
 	var carg2 *C.char // in, none, string
@@ -6767,18 +6569,8 @@ func AssertionMessageCmpstr(domain string, file string, line int32, fn string, e
 
 // Base64Decode wraps g_base64_decode
 // 
-// The function takes the following parameters:
-// 
-// 	- text string: zero-terminated string with base64 text to decode 
-// 
-// The function returns the following values:
-// 
-// 	- outLen uint: The length of the decoded data is written here 
-// 	- goret []uint8 
+// see also https://docs.gtk.org/glib/func.g_base64_decode.html
 //
-// Decode a sequence of Base-64 encoded text into binary data.  Note
-// that the returned binary data is not necessarily zero-terminated,
-// so it should not be used as a character string.
 func Base64Decode(text string) (uint, []uint8) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 C.gsize   // out, full, casted
@@ -6803,16 +6595,8 @@ func Base64Decode(text string) (uint, []uint8) {
 
 // Base64Encode wraps g_base64_encode
 // 
-// The function takes the following parameters:
-// 
-// 	- data []uint8 (nullable): the binary data to encode 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_base64_encode.html
 //
-// Encode a sequence of binary data into its Base-64 stringified
-// representation.
 func Base64Encode(data []uint8) string {
 	var carg1 *C.guchar // in, transfer: none, C Pointers: 1, Name: array[guint8], nullable, array (inner guint8 (*typesystem.CastablePrimitive), length-by: carg2)
 	var carg2 C.gsize   // implicit
@@ -6836,19 +6620,8 @@ func Base64Encode(data []uint8) string {
 
 // BitNthLsf wraps g_bit_nth_lsf
 // 
-// The function takes the following parameters:
-// 
-// 	- mask uint32: a #gulong containing flags 
-// 	- nthBit int32: the index of the bit to start the search from 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_bit_nth_lsf.html
 //
-// Find the position of the first bit set in @mask, searching
-// from (but not including) @nth_bit upwards. Bits are numbered
-// from 0 (least significant) to sizeof(#gulong) * 8 - 1 (31 or 63,
-// usually). To start searching from the 0th bit, set @nth_bit to -1.
 func BitNthLsf(mask uint32, nthBit int32) int32 {
 	var carg1 C.gulong // in, none, casted
 	var carg2 C.gint   // in, none, casted
@@ -6870,20 +6643,8 @@ func BitNthLsf(mask uint32, nthBit int32) int32 {
 
 // BitNthMsf wraps g_bit_nth_msf
 // 
-// The function takes the following parameters:
-// 
-// 	- mask uint32: a #gulong containing flags 
-// 	- nthBit int32: the index of the bit to start the search from 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_bit_nth_msf.html
 //
-// Find the position of the first bit set in @mask, searching
-// from (but not including) @nth_bit downwards. Bits are numbered
-// from 0 (least significant) to sizeof(#gulong) * 8 - 1 (31 or 63,
-// usually). To start searching from the last bit, set @nth_bit to
-// -1 or GLIB_SIZEOF_LONG * 8.
 func BitNthMsf(mask uint32, nthBit int32) int32 {
 	var carg1 C.gulong // in, none, casted
 	var carg2 C.gint   // in, none, casted
@@ -6905,16 +6666,8 @@ func BitNthMsf(mask uint32, nthBit int32) int32 {
 
 // BitStorage wraps g_bit_storage
 // 
-// The function takes the following parameters:
-// 
-// 	- number uint32: a #guint 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_bit_storage.html
 //
-// Gets the number of bits used to hold @number,
-// e.g. if @number is 4, 3 bits are needed.
 func BitStorage(number uint32) uint {
 	var carg1 C.gulong // in, none, casted
 	var cret  C.guint  // return, none, casted
@@ -6933,24 +6686,8 @@ func BitStorage(number uint32) uint {
 
 // BuildFilenamev wraps g_build_filenamev
 // 
-// The function takes the following parameters:
-// 
-// 	- args []string: %NULL-terminated
-//   array of strings containing the path elements. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_build_filenamev.html
 //
-// Creates a filename from a vector of elements using the correct
-// separator for the current platform.
-// 
-// This function behaves exactly like g_build_filename(), but takes the path
-// elements as a string array, instead of varargs. This function is mainly
-// meant for language bindings.
-// 
-// If you are building a path programmatically you may want to use
-// #GPathBuf instead.
 func BuildFilenamev(args []string) string {
 	var carg1 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[filename], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var cret  *C.gchar  // return, full, string
@@ -6972,20 +6709,8 @@ func BuildFilenamev(args []string) string {
 
 // BuildPathv wraps g_build_pathv
 // 
-// The function takes the following parameters:
-// 
-// 	- separator string: a string used to separator the elements of the path. 
-// 	- args []string: %NULL-terminated
-//   array of strings containing the path elements. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_build_pathv.html
 //
-// Behaves exactly like g_build_path(), but takes the path elements
-// as a string array, instead of variadic arguments.
-// 
-// This function is mainly meant for language bindings.
 func BuildPathv(separator string, args []string) string {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[filename], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -7011,30 +6736,8 @@ func BuildPathv(separator string, args []string) string {
 
 // CanonicalizeFilename wraps g_canonicalize_filename
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: the name of the file 
-// 	- relativeTo string (nullable): the relative directory, or %NULL
-// to use the current working directory 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_canonicalize_filename.html
 //
-// Gets the canonical file name from @filename. All triple slashes are turned into
-// single slashes, and all `..` and `.`s resolved against @relative_to.
-// 
-// Symlinks are not followed, and the returned path is guaranteed to be absolute.
-// 
-// If @filename is an absolute path, @relative_to is ignored. Otherwise,
-// @relative_to will be prepended to @filename to make it absolute. @relative_to
-// must be an absolute path, or %NULL. If @relative_to is %NULL, it'll fallback
-// to g_get_current_dir().
-// 
-// This function never fails, and will canonicalize file paths even if they don't
-// exist.
-// 
-// No file system I/O is done.
 func CanonicalizeFilename(filename string, relativeTo string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string, nullable-string
@@ -7061,31 +6764,8 @@ func CanonicalizeFilename(filename string, relativeTo string) string {
 
 // CheckVersion wraps glib_check_version
 // 
-// The function takes the following parameters:
-// 
-// 	- requiredMajor uint: the required major version 
-// 	- requiredMinor uint: the required minor version 
-// 	- requiredMicro uint: the required micro version 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.glib_check_version.html
 //
-// Checks that the GLib library in use is compatible with the
-// given version.
-// 
-// Generally you would pass in the constants %GLIB_MAJOR_VERSION,
-// %GLIB_MINOR_VERSION, %GLIB_MICRO_VERSION as the three arguments
-// to this function; that produces a check that the library in use
-// is compatible with the version of GLib the application or module
-// was compiled against.
-// 
-// Compatibility is defined by two things: first the version
-// of the running library is newer than the version
-// `@required_major.required_minor.@required_micro`. Second
-// the running library must be binary compatible with the
-// version `@required_major.@required_minor.@required_micro`
-// (same major version.)
 func CheckVersion(requiredMajor uint, requiredMinor uint, requiredMicro uint) string {
 	var carg1 C.guint  // in, none, casted
 	var carg2 C.guint  // in, none, casted
@@ -7112,44 +6792,8 @@ func CheckVersion(requiredMajor uint, requiredMinor uint, requiredMicro uint) st
 
 // ChildWatchAddFull wraps g_child_watch_add_full
 // 
-// The function takes the following parameters:
-// 
-// 	- priority int32: the priority of the idle source. Typically this will be in the
-//   range between [const@GLib.PRIORITY_DEFAULT_IDLE] and
-//   [const@GLib.PRIORITY_HIGH_IDLE]. 
-// 	- pid Pid: process to watch. On POSIX the positive pid of a child process. On
-// Windows a handle for a process (which doesn't have to be a child). 
-// 	- function ChildWatchFunc: function to call 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_child_watch_add_full.html
 //
-// Sets a function to be called when the child indicated by @pid
-// exits, at the priority @priority.
-// 
-// If you obtain @pid from [func@GLib.spawn_async] or
-// [func@GLib.spawn_async_with_pipes] you will need to pass
-// %G_SPAWN_DO_NOT_REAP_CHILD as flag to the spawn function for the child
-// watching to work.
-// 
-// In many programs, you will want to call [func@GLib.spawn_check_wait_status]
-// in the callback to determine whether or not the child exited
-// successfully.
-// 
-// Also, note that on platforms where #GPid must be explicitly closed
-// (see [func@GLib.spawn_close_pid]) @pid must not be closed while the source
-// is still active.  Typically, you should invoke [func@GLib.spawn_close_pid]
-// in the callback function for the source.
-// 
-// GLib supports only a single callback per process id.
-// On POSIX platforms, the same restrictions mentioned for
-// [func@GLib.child_watch_source_new] apply to this function.
-// 
-// This internally creates a main loop source using
-// [func@GLib.child_watch_source_new] and attaches it to the main loop context
-// using [method@GLib.Source.attach]. You can do these steps manually if you
-// need greater control.
 func ChildWatchAddFull(priority int32, pid Pid, function ChildWatchFunc) uint {
 	var carg1 C.gint            // in, none, casted
 	var carg2 C.GPid            // in, none, casted, alias
@@ -7178,12 +6822,8 @@ func ChildWatchAddFull(priority int32, pid Pid, function ChildWatchFunc) uint {
 
 // ClearError wraps g_clear_error
 // 
-// The function returns the following values:
-// 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_clear_error.html
 //
-// If @err or `*err` is %NULL, does nothing. Otherwise,
-// calls g_error_free() on `*err` and sets `*err` to %NULL.
 func ClearError() error {
 	var _cerr *C.GError // out, full, converted, nullable
 
@@ -7200,20 +6840,8 @@ func ClearError() error {
 
 // ComputeChecksumForBytes wraps g_compute_checksum_for_bytes
 // 
-// The function takes the following parameters:
-// 
-// 	- checksumType ChecksumType: a #GChecksumType 
-// 	- data *Bytes: binary blob to compute the digest of 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_compute_checksum_for_bytes.html
 //
-// Computes the checksum for a binary @data. This is a
-// convenience wrapper for g_checksum_new(), g_checksum_get_string()
-// and g_checksum_free().
-// 
-// The hexadecimal string returned will be in lower case.
 func ComputeChecksumForBytes(checksumType ChecksumType, data *Bytes) string {
 	var carg1 C.GChecksumType // in, none, casted
 	var carg2 *C.GBytes       // in, none, converted
@@ -7238,20 +6866,8 @@ func ComputeChecksumForBytes(checksumType ChecksumType, data *Bytes) string {
 
 // ComputeChecksumForData wraps g_compute_checksum_for_data
 // 
-// The function takes the following parameters:
-// 
-// 	- checksumType ChecksumType: a #GChecksumType 
-// 	- data []uint8: binary blob to compute the digest of 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_compute_checksum_for_data.html
 //
-// Computes the checksum for a binary @data of @length. This is a
-// convenience wrapper for g_checksum_new(), g_checksum_get_string()
-// and g_checksum_free().
-// 
-// The hexadecimal string returned will be in lower case.
 func ComputeChecksumForData(checksumType ChecksumType, data []uint8) string {
 	var carg1 C.GChecksumType // in, none, casted
 	var carg2 *C.guchar       // in, transfer: none, C Pointers: 1, Name: array[guint8], array (inner guint8 (*typesystem.CastablePrimitive), length-by: carg3)
@@ -7280,19 +6896,8 @@ func ComputeChecksumForData(checksumType ChecksumType, data []uint8) string {
 
 // ComputeChecksumForString wraps g_compute_checksum_for_string
 // 
-// The function takes the following parameters:
-// 
-// 	- checksumType ChecksumType: a #GChecksumType 
-// 	- str string: the string to compute the checksum of 
-// 	- length int: the length of the string, or -1 if the string is null-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_compute_checksum_for_string.html
 //
-// Computes the checksum of a string.
-// 
-// The hexadecimal string returned will be in lower case.
 func ComputeChecksumForString(checksumType ChecksumType, str string, length int) string {
 	var carg1 C.GChecksumType // in, none, casted
 	var carg2 *C.gchar        // in, none, string
@@ -7321,21 +6926,8 @@ func ComputeChecksumForString(checksumType ChecksumType, str string, length int)
 
 // ComputeHmacForBytes wraps g_compute_hmac_for_bytes
 // 
-// The function takes the following parameters:
-// 
-// 	- digestType ChecksumType: a #GChecksumType to use for the HMAC 
-// 	- key *Bytes: the key to use in the HMAC 
-// 	- data *Bytes: binary blob to compute the HMAC of 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_compute_hmac_for_bytes.html
 //
-// Computes the HMAC for a binary @data. This is a
-// convenience wrapper for g_hmac_new(), g_hmac_get_string()
-// and g_hmac_unref().
-// 
-// The hexadecimal string returned will be in lower case.
 func ComputeHmacForBytes(digestType ChecksumType, key *Bytes, data *Bytes) string {
 	var carg1 C.GChecksumType // in, none, casted
 	var carg2 *C.GBytes       // in, none, converted
@@ -7361,21 +6953,8 @@ func ComputeHmacForBytes(digestType ChecksumType, key *Bytes, data *Bytes) strin
 
 // ComputeHmacForData wraps g_compute_hmac_for_data
 // 
-// The function takes the following parameters:
-// 
-// 	- digestType ChecksumType: a #GChecksumType to use for the HMAC 
-// 	- key []byte: the key to use in the HMAC 
-// 	- data []byte: binary blob to compute the HMAC of 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_compute_hmac_for_data.html
 //
-// Computes the HMAC for a binary @data of @length. This is a
-// convenience wrapper for g_hmac_new(), g_hmac_get_string()
-// and g_hmac_unref().
-// 
-// The hexadecimal string returned will be in lower case.
 func ComputeHmacForData(digestType ChecksumType, key []byte, data []byte) string {
 	var carg1 C.GChecksumType // in, none, casted
 	var carg2 *C.guchar       // in, transfer: none, C Pointers: 1, Name: array[guchar], array (inner guchar (*typesystem.CastablePrimitive), length-by: carg3)
@@ -7409,20 +6988,8 @@ func ComputeHmacForData(digestType ChecksumType, key []byte, data []byte) string
 
 // ComputeHmacForString wraps g_compute_hmac_for_string
 // 
-// The function takes the following parameters:
-// 
-// 	- digestType ChecksumType: a #GChecksumType to use for the HMAC 
-// 	- key []byte: the key to use in the HMAC 
-// 	- str string: the string to compute the HMAC for 
-// 	- length int: the length of the string, or -1 if the string is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_compute_hmac_for_string.html
 //
-// Computes the HMAC for a string.
-// 
-// The hexadecimal string returned will be in lower case.
 func ComputeHmacForString(digestType ChecksumType, key []byte, str string, length int) string {
 	var carg1 C.GChecksumType // in, none, casted
 	var carg2 *C.guchar       // in, transfer: none, C Pointers: 1, Name: array[guchar], array (inner guchar (*typesystem.CastablePrimitive), length-by: carg3)
@@ -7456,42 +7023,8 @@ func ComputeHmacForString(digestType ChecksumType, key []byte, str string, lengt
 
 // Convert wraps g_convert
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: 
-//                 the string to convert. 
-// 	- toCodeset string: name of character set into which to convert @str 
-// 	- fromCodeset string: character set of @str. 
-// 
-// The function returns the following values:
-// 
-// 	- bytesRead uint: location to store the number of bytes in
-//                 the input string that were successfully converted, or %NULL.
-//                 Even if the conversion was successful, this may be
-//                 less than @len if there were partial characters
-//                 at the end of the input. If the error
-//                 %G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
-//                 stored will be the byte offset after the last valid
-//                 input sequence. 
-// 	- bytesWritten uint: the number of bytes stored in
-//                 the output buffer (not including the terminating nul). 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_convert.html
 //
-// Converts a string from one character set to another.
-// 
-// Note that you should use g_iconv() for streaming conversions.
-// Despite the fact that @bytes_read can return information about partial
-// characters, the g_convert_... functions are not generally suitable
-// for streaming. If the underlying converter maintains internal state,
-// then this won't be preserved across successive calls to g_convert(),
-// g_convert_with_iconv() or g_convert_with_fallback(). (An example of
-// this is the GNU C converter for CP1255 which does not emit a base
-// character until it knows that the next character is not a mark that
-// could combine with the base character.)
-// 
-// Using extensions such as "//TRANSLIT" may not work (or may not work
-// well) on many platforms.  Consider using g_str_to_ascii() instead.
 func Convert(str string, toCodeset string, fromCodeset string) (uint, uint, string, error) {
 	var carg1 *C.gchar  // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
 	var carg2 C.gssize  // implicit
@@ -7535,9 +7068,7 @@ func Convert(str string, toCodeset string, fromCodeset string) (uint, uint, stri
 
 // ConvertErrorQuark wraps g_convert_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_convert_error_quark.html
 func ConvertErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -7552,47 +7083,8 @@ func ConvertErrorQuark() Quark {
 
 // ConvertWithFallback wraps g_convert_with_fallback
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: 
-//                the string to convert. 
-// 	- toCodeset string: name of character set into which to convert @str 
-// 	- fromCodeset string: character set of @str. 
-// 	- fallback string: UTF-8 string to use in place of characters not
-//                present in the target encoding. (The string must be
-//                representable in the target encoding).
-//                If %NULL, characters not in the target encoding will
-//                be represented as Unicode escapes \uxxxx or \Uxxxxyyyy. 
-// 
-// The function returns the following values:
-// 
-// 	- bytesRead uint: location to store the number of bytes in
-//                the input string that were successfully converted, or %NULL.
-//                Even if the conversion was successful, this may be
-//                less than @len if there were partial characters
-//                at the end of the input. 
-// 	- bytesWritten uint: the number of bytes stored in
-//                 the output buffer (not including the terminating nul). 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_convert_with_fallback.html
 //
-// Converts a string from one character set to another, possibly
-// including fallback sequences for characters not representable
-// in the output. Note that it is not guaranteed that the specification
-// for the fallback sequences in @fallback will be honored. Some
-// systems may do an approximate conversion from @from_codeset
-// to @to_codeset in their iconv() functions,
-// in which case GLib will simply return that approximate conversion.
-// 
-// Note that you should use g_iconv() for streaming conversions.
-// Despite the fact that @bytes_read can return information about partial
-// characters, the g_convert_... functions are not generally suitable
-// for streaming. If the underlying converter maintains internal state,
-// then this won't be preserved across successive calls to g_convert(),
-// g_convert_with_iconv() or g_convert_with_fallback(). (An example of
-// this is the GNU C converter for CP1255 which does not emit a base
-// character until it knows that the next character is not a mark that
-// could combine with the base character.)
 func ConvertWithFallback(str string, toCodeset string, fromCodeset string, fallback string) (uint, uint, string, error) {
 	var carg1 *C.gchar  // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
 	var carg2 C.gssize  // implicit
@@ -7640,21 +7132,8 @@ func ConvertWithFallback(str string, toCodeset string, fromCodeset string, fallb
 
 // Dcgettext wraps g_dcgettext
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string (nullable): the translation domain to use, or %NULL to use
-//   the domain set with textdomain() 
-// 	- msgid string: message to translate 
-// 	- category int32: a locale category 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_dcgettext.html
 //
-// This is a variant of g_dgettext() that allows specifying a locale
-// category instead of always using `LC_MESSAGES`. See g_dgettext() for
-// more information about how this functions differs from calling
-// dcgettext() directly.
 func Dcgettext(domain string, msgid string, category int32) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var carg2 *C.gchar // in, none, string
@@ -7683,48 +7162,8 @@ func Dcgettext(domain string, msgid string, category int32) string {
 
 // Dgettext wraps g_dgettext
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string (nullable): the translation domain to use, or %NULL to use
-//   the domain set with textdomain() 
-// 	- msgid string: message to translate 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_dgettext.html
 //
-// This function is a wrapper of dgettext() which does not translate
-// the message if the default domain as set with textdomain() has no
-// translations for the current locale.
-// 
-// The advantage of using this function over dgettext() proper is that
-// libraries using this function (like GTK) will not use translations
-// if the application using the library does not have translations for
-// the current locale.  This results in a consistent English-only
-// interface instead of one having partial translations.  For this
-// feature to work, the call to textdomain() and setlocale() should
-// precede any g_dgettext() invocations.  For GTK, it means calling
-// textdomain() before gtk_init or its variants.
-// 
-// This function disables translations if and only if upon its first
-// call all the following conditions hold:
-// 
-// - @domain is not %NULL
-// 
-// - textdomain() has been called to set a default text domain
-// 
-// - there is no translations available for the default text domain
-//   and the current locale
-// 
-// - current locale is not "C" or any English locales (those
-//   starting with "en_")
-// 
-// Note that this behavior may not be desired for example if an application
-// has its untranslated messages in a language other than English. In those
-// cases the application should call textdomain() after initializing GTK.
-// 
-// Applications should normally not use this function directly,
-// but use the _() macro for translations.
 func Dgettext(domain string, msgid string) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var carg2 *C.gchar // in, none, string
@@ -7750,24 +7189,8 @@ func Dgettext(domain string, msgid string) string {
 
 // Dngettext wraps g_dngettext
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string (nullable): the translation domain to use, or %NULL to use
-//   the domain set with textdomain() 
-// 	- msgid string: message to translate 
-// 	- msgidPlural string: plural form of the message 
-// 	- n uint32: the quantity for which translation is needed 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_dngettext.html
 //
-// This function is a wrapper of dngettext() which does not translate
-// the message if the default domain as set with textdomain() has no
-// translations for the current locale.
-// 
-// See g_dgettext() for details of how this differs from dngettext()
-// proper.
 func Dngettext(domain string, msgid string, msgidPlural string, n uint32) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var carg2 *C.gchar // in, none, string
@@ -7800,31 +7223,8 @@ func Dngettext(domain string, msgid string, msgidPlural string, n uint32) string
 
 // Dpgettext wraps g_dpgettext
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string (nullable): the translation domain to use, or %NULL to use
-//   the domain set with textdomain() 
-// 	- msgctxtid string: a combined message context and message id, separated
-//   by a \004 character 
-// 	- msgidoffset uint: the offset of the message id in @msgctxid 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_dpgettext.html
 //
-// This function is a variant of g_dgettext() which supports
-// a disambiguating message context. GNU gettext uses the
-// '\004' character to separate the message context and
-// message id in @msgctxtid.
-// If 0 is passed as @msgidoffset, this function will fall back to
-// trying to use the deprecated convention of using "|" as a separation
-// character.
-// 
-// This uses g_dgettext() internally. See that functions for differences
-// with dgettext() proper.
-// 
-// Applications should normally not use this function directly,
-// but use the C_() macro for translations with context.
 func Dpgettext(domain string, msgctxtid string, msgidoffset uint) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var carg2 *C.gchar // in, none, string
@@ -7853,27 +7253,8 @@ func Dpgettext(domain string, msgctxtid string, msgidoffset uint) string {
 
 // Dpgettext2 wraps g_dpgettext2
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string (nullable): the translation domain to use, or %NULL to use
-//   the domain set with textdomain() 
-// 	- _context string: the message context 
-// 	- msgid string: the message 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_dpgettext2.html
 //
-// This function is a variant of g_dgettext() which supports
-// a disambiguating message context. GNU gettext uses the
-// '\004' character to separate the message context and
-// message id in @msgctxtid.
-// 
-// This uses g_dgettext() internally. See that functions for differences
-// with dgettext() proper.
-// 
-// This function differs from C_() in that it is not a macro and
-// thus you may use non-string-literals as context and msgid arguments.
 func Dpgettext2(domain string, _context string, msgid string) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var carg2 *C.gchar // in, none, string
@@ -7903,19 +7284,8 @@ func Dpgettext2(domain string, _context string, msgid string) string {
 
 // EnvironGetenv wraps g_environ_getenv
 // 
-// The function takes the following parameters:
-// 
-// 	- envp []string (nullable): 
-//     an environment list (eg, as returned from g_get_environ()), or %NULL
-//     for an empty environment list 
-// 	- variable string: the environment variable to get 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_environ_getenv.html
 //
-// Returns the value of the environment variable @variable in the
-// provided list @envp.
 func EnvironGetenv(envp []string, variable string) string {
 	var carg1 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[filename], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var carg2 *C.gchar  // in, none, string
@@ -7942,23 +7312,8 @@ func EnvironGetenv(envp []string, variable string) string {
 
 // EnvironSetenv wraps g_environ_setenv
 // 
-// The function takes the following parameters:
-// 
-// 	- envp []string (nullable): 
-//     an environment list that can be freed using g_strfreev() (e.g., as
-//     returned from g_get_environ()), or %NULL for an empty
-//     environment list 
-// 	- variable string: the environment variable to set, must not
-//     contain '=' 
-// 	- value string: the value for to set the variable to 
-// 	- overwrite bool: whether to change the variable if it already exists 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_environ_setenv.html
 //
-// Sets the environment variable @variable in the provided list
-// @envp to @value.
 func EnvironSetenv(envp []string, variable string, value string, overwrite bool) []string {
 	var carg1 **C.gchar  // in, transfer: full, C Pointers: 2, Name: array[filename], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var carg2 *C.gchar   // in, none, string
@@ -7994,20 +7349,8 @@ func EnvironSetenv(envp []string, variable string, value string, overwrite bool)
 
 // EnvironUnsetenv wraps g_environ_unsetenv
 // 
-// The function takes the following parameters:
-// 
-// 	- envp []string (nullable): 
-//     an environment list that can be freed using g_strfreev() (e.g., as
-//     returned from g_get_environ()), or %NULL for an empty environment list 
-// 	- variable string: the environment variable to remove, must not
-//     contain '=' 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_environ_unsetenv.html
 //
-// Removes the environment variable @variable from the provided
-// environment @envp.
 func EnvironUnsetenv(envp []string, variable string) []string {
 	var carg1 **C.gchar // in, transfer: full, C Pointers: 2, Name: array[filename], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var carg2 *C.gchar  // in, none, string
@@ -8034,23 +7377,8 @@ func EnvironUnsetenv(envp []string, variable string) []string {
 
 // FileErrorFromErrno wraps g_file_error_from_errno
 // 
-// The function takes the following parameters:
-// 
-// 	- errNo int32: an "errno" value 
-// 
-// The function returns the following values:
-// 
-// 	- goret FileError 
+// see also https://docs.gtk.org/glib/func.g_file_error_from_errno.html
 //
-// Gets a #GFileError constant based on the passed-in @err_no.
-// 
-// For example, if you pass in `EEXIST` this function returns
-// %G_FILE_ERROR_EXIST. Unlike `errno` values, you can portably
-// assume that all #GFileError values will exist.
-// 
-// Normally a #GFileError value goes into a #GError returned
-// from a function that manipulates files. So you would use
-// g_file_error_from_errno() when constructing a #GError.
 func FileErrorFromErrno(errNo int32) FileError {
 	var carg1 C.gint       // in, none, casted
 	var cret  C.GFileError // return, none, casted
@@ -8069,9 +7397,7 @@ func FileErrorFromErrno(errNo int32) FileError {
 
 // FileErrorQuark wraps g_file_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_file_error_quark.html
 func FileErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -8086,28 +7412,8 @@ func FileErrorQuark() Quark {
 
 // FileGetContents wraps g_file_get_contents
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: name of a file to read contents from, in the GLib file name encoding 
-// 
-// The function returns the following values:
-// 
-// 	- contents string: location to store an allocated string, use g_free() to free
-//     the returned string 
-// 	- length uint: location to store length in bytes of the contents, or %NULL 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_file_get_contents.html
 //
-// Reads an entire file into allocated memory, with good error
-// checking.
-// 
-// If the call was successful, it returns %TRUE and sets @contents to the file
-// contents and @length to the length of the file contents in bytes. The string
-// stored in @contents will be nul-terminated, so for text files you can pass
-// %NULL for the @length argument. If the call was not successful, it returns
-// %FALSE and sets @error. The error domain is %G_FILE_ERROR. Possible error
-// codes are those in the #GFileError enumeration. In the error case,
-// @contents is set to %NULL and @length is set to zero.
 func FileGetContents(filename string) (string, bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // out, transfer: full, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg3)
@@ -8141,34 +7447,8 @@ func FileGetContents(filename string) (string, bool, error) {
 
 // FileOpenTmp wraps g_file_open_tmp
 // 
-// The function takes the following parameters:
-// 
-// 	- tmpl string (nullable): Template for file name, as in
-//   g_mkstemp(), basename only, or %NULL for a default template 
-// 
-// The function returns the following values:
-// 
-// 	- nameUsed string: location to store actual name used,
-//   or %NULL 
-// 	- goret int32 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_file_open_tmp.html
 //
-// Opens a file for writing in the preferred directory for temporary
-// files (as returned by g_get_tmp_dir()).
-// 
-// @tmpl should be a string in the GLib file name encoding containing
-// a sequence of six 'X' characters, as the parameter to g_mkstemp().
-// However, unlike these functions, the template should only be a
-// basename, no directory components are allowed. If template is
-// %NULL, a default template is used.
-// 
-// Note that in contrast to g_mkstemp() (and mkstemp()) @tmpl is not
-// modified, and might thus be a read-only literal string.
-// 
-// Upon success, and if @name_used is non-%NULL, the actual name used
-// is returned in @name_used. This string should be freed with g_free()
-// when not needed any longer. The returned name is in the GLib file
-// name encoding.
 func FileOpenTmp(tmpl string) (string, int32, error) {
 	var carg1 *C.gchar  // in, none, string, nullable-string
 	var carg2 *C.gchar  // out, full, string
@@ -8199,38 +7479,8 @@ func FileOpenTmp(tmpl string) (string, int32, error) {
 
 // FileReadLink wraps g_file_read_link
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: the symbolic link 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_file_read_link.html
 //
-// Reads the contents of the symbolic link @filename like the POSIX
-// `readlink()` function.
-// 
-// The returned string is in the encoding used for filenames. Use
-// g_filename_to_utf8() to convert it to UTF-8.
-// 
-// The returned string may also be a relative path. Use g_build_filename()
-// to convert it to an absolute path:
-// 
-// |[&lt;!-- language="C" --&gt;
-// g_autoptr(GError) local_error = NULL;
-// g_autofree gchar *link_target = g_file_read_link ("/etc/localtime", &amp;local_error);
-// 
-// if (local_error != NULL)
-//   g_error ("Error reading link: %s", local_error-&gt;message);
-// 
-// if (!g_path_is_absolute (link_target))
-//   {
-//     g_autofree gchar *absolute_link_target = g_build_filename ("/etc", link_target, NULL);
-//     g_free (link_target);
-//     link_target = g_steal_pointer (&amp;absolute_link_target);
-//   }
-// ]|
 func FileReadLink(filename string) (string, error) {
 	var carg1 *C.gchar  // in, none, string
 	var cret  *C.gchar  // return, full, string
@@ -8256,21 +7506,8 @@ func FileReadLink(filename string) (string, error) {
 
 // FileSetContents wraps g_file_set_contents
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: name of a file to write @contents to, in the GLib file name
-//   encoding 
-// 	- contents string: string to write to the file 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_file_set_contents.html
 //
-// Writes all of @contents to a file named @filename. This is a convenience
-// wrapper around calling g_file_set_contents_full() with `flags` set to
-// `G_FILE_SET_CONTENTS_CONSISTENT | G_FILE_SET_CONTENTS_ONLY_EXISTING` and
-// `mode` set to `0666`.
 func FileSetContents(filename string, contents string) (bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg3)
@@ -8304,73 +7541,8 @@ func FileSetContents(filename string, contents string) (bool, error) {
 
 // FileSetContentsFull wraps g_file_set_contents_full
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: name of a file to write @contents to, in the GLib file name
-//   encoding 
-// 	- contents string: string to write to the file 
-// 	- flags FileSetContentsFlags: flags controlling the safety vs speed of the operation 
-// 	- mode int32: file mode, as passed to `open()`; typically this will be `0666` 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_file_set_contents_full.html
 //
-// Writes all of @contents to a file named @filename, with good error checking.
-// If a file called @filename already exists it will be overwritten.
-// 
-// @flags control the properties of the write operation: whether it&#x2019;s atomic,
-// and what the tradeoff is between returning quickly or being resilient to
-// system crashes.
-// 
-// As this function performs file I/O, it is recommended to not call it anywhere
-// where blocking would cause problems, such as in the main loop of a graphical
-// application. In particular, if @flags has any value other than
-// %G_FILE_SET_CONTENTS_NONE then this function may call `fsync()`.
-// 
-// If %G_FILE_SET_CONTENTS_CONSISTENT is set in @flags, the operation is atomic
-// in the sense that it is first written to a temporary file which is then
-// renamed to the final name.
-// 
-// Notes:
-// 
-// - On UNIX, if @filename already exists hard links to @filename will break.
-//   Also since the file is recreated, existing permissions, access control
-//   lists, metadata etc. may be lost. If @filename is a symbolic link,
-//   the link itself will be replaced, not the linked file.
-// 
-// - On UNIX, if @filename already exists and is non-empty, and if the system
-//   supports it (via a journalling filesystem or equivalent), and if
-//   %G_FILE_SET_CONTENTS_CONSISTENT is set in @flags, the `fsync()` call (or
-//   equivalent) will be used to ensure atomic replacement: @filename
-//   will contain either its old contents or @contents, even in the face of
-//   system power loss, the disk being unsafely removed, etc.
-// 
-// - On UNIX, if @filename does not already exist or is empty, there is a
-//   possibility that system power loss etc. after calling this function will
-//   leave @filename empty or full of NUL bytes, depending on the underlying
-//   filesystem, unless %G_FILE_SET_CONTENTS_DURABLE and
-//   %G_FILE_SET_CONTENTS_CONSISTENT are set in @flags.
-// 
-// - On Windows renaming a file will not remove an existing file with the
-//   new name, so on Windows there is a race condition between the existing
-//   file being removed and the temporary file being renamed.
-// 
-// - On Windows there is no way to remove a file that is open to some
-//   process, or mapped into memory. Thus, this function will fail if
-//   @filename already exists and is open.
-// 
-// If the call was successful, it returns %TRUE. If the call was not successful,
-// it returns %FALSE and sets @error. The error domain is %G_FILE_ERROR.
-// Possible error codes are those in the #GFileError enumeration.
-// 
-// Note that the name for the temporary file is constructed by appending up
-// to 7 characters to @filename.
-// 
-// If the file didn&#x2019;t exist before and is created, it will be given the
-// permissions from @mode. Otherwise, the permissions of the existing file will
-// remain unchanged.
 func FileSetContentsFull(filename string, contents string, flags FileSetContentsFlags, mode int32) (bool, error) {
 	var carg1 *C.gchar                // in, none, string
 	var carg2 *C.gchar                // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg3)
@@ -8410,75 +7582,8 @@ func FileSetContentsFull(filename string, contents string, flags FileSetContents
 
 // TestFile wraps g_file_test
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: a filename to test in the
-//     GLib file name encoding 
-// 	- test FileTest: bitfield of #GFileTest flags 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_file_test.html
 //
-// Returns %TRUE if any of the tests in the bitfield @test are
-// %TRUE. For example, `(G_FILE_TEST_EXISTS | G_FILE_TEST_IS_DIR)`
-// will return %TRUE if the file exists; the check whether it's a
-// directory doesn't matter since the existence test is %TRUE. With
-// the current set of available tests, there's no point passing in
-// more than one test at a time.
-// 
-// Apart from %G_FILE_TEST_IS_SYMLINK all tests follow symbolic links,
-// so for a symbolic link to a regular file g_file_test() will return
-// %TRUE for both %G_FILE_TEST_IS_SYMLINK and %G_FILE_TEST_IS_REGULAR.
-// 
-// Note, that for a dangling symbolic link g_file_test() will return
-// %TRUE for %G_FILE_TEST_IS_SYMLINK and %FALSE for all other flags.
-// 
-// You should never use g_file_test() to test whether it is safe
-// to perform an operation, because there is always the possibility
-// of the condition changing before you actually perform the operation,
-// see [TOCTOU](https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use).
-// 
-// For example, you might think you could use %G_FILE_TEST_IS_SYMLINK
-// to know whether it is safe to write to a file without being
-// tricked into writing into a different location. It doesn't work!
-// 
-// |[&lt;!-- language="C" --&gt;
-//  // DON'T DO THIS
-//  if (!g_file_test (filename, G_FILE_TEST_IS_SYMLINK))
-//    {
-//      fd = g_open (filename, O_WRONLY);
-//      // write to fd
-//    }
-// 
-//  // DO THIS INSTEAD
-//  fd = g_open (filename, O_WRONLY | O_NOFOLLOW | O_CLOEXEC);
-//  if (fd == -1)
-//    {
-//      // check error
-//      if (errno == ELOOP)
-//        // file is a symlink and can be ignored
-//      else
-//        // handle errors as before
-//    }
-//  else
-//    {
-//      // write to fd
-//    }
-// ]|
-// 
-// Another thing to note is that %G_FILE_TEST_EXISTS and
-// %G_FILE_TEST_IS_EXECUTABLE are implemented using the access()
-// system call. This usually doesn't matter, but if your program
-// is setuid or setgid it means that these tests will give you
-// the answer for the real user ID and group ID, rather than the
-// effective user ID and group ID.
-// 
-// On Windows, there are no symlinks, so testing for
-// %G_FILE_TEST_IS_SYMLINK will always return %FALSE. Testing for
-// %G_FILE_TEST_IS_EXECUTABLE will just check that the file exists and
-// its name indicates that it is executable, checking for well-known
-// extensions and those listed in the `PATHEXT` environment variable.
 func TestFile(filename string, test FileTest) bool {
 	var carg1 *C.gchar    // in, none, string
 	var carg2 C.GFileTest // in, none, casted
@@ -8503,31 +7608,8 @@ func TestFile(filename string, test FileTest) bool {
 
 // FilenameDisplayBasename wraps g_filename_display_basename
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: an absolute pathname in the
-//     GLib file name encoding 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_filename_display_basename.html
 //
-// Returns the display basename for the particular filename, guaranteed
-// to be valid UTF-8. The display name might not be identical to the filename,
-// for instance there might be problems converting it to UTF-8, and some files
-// can be translated in the display.
-// 
-// If GLib cannot make sense of the encoding of @filename, as a last resort it
-// replaces unknown characters with U+FFFD, the Unicode replacement character.
-// You can search the result for the UTF-8 encoding of this character (which is
-// "\357\277\275" in octal notation) to find out if @filename was in an invalid
-// encoding.
-// 
-// You must pass the whole absolute pathname to this functions so that
-// translation of well known locations can be done.
-// 
-// This function is preferred over g_filename_display_name() if you know the
-// whole path, as it allows translation.
 func FilenameDisplayBasename(filename string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -8548,30 +7630,8 @@ func FilenameDisplayBasename(filename string) string {
 
 // FilenameDisplayName wraps g_filename_display_name
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: a pathname hopefully in the
-//     GLib file name encoding 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_filename_display_name.html
 //
-// Converts a filename into a valid UTF-8 string. The conversion is
-// not necessarily reversible, so you should keep the original around
-// and use the return value of this function only for display purposes.
-// Unlike g_filename_to_utf8(), the result is guaranteed to be non-%NULL
-// even if the filename actually isn't in the GLib file name encoding.
-// 
-// If GLib cannot make sense of the encoding of @filename, as a last resort it
-// replaces unknown characters with U+FFFD, the Unicode replacement character.
-// You can search the result for the UTF-8 encoding of this character (which is
-// "\357\277\275" in octal notation) to find out if @filename was in an invalid
-// encoding.
-// 
-// If you know the whole pathname of the file you should use
-// g_filename_display_basename(), since that allows location-based
-// translation of filenames.
 func FilenameDisplayName(filename string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -8592,25 +7652,8 @@ func FilenameDisplayName(filename string) string {
 
 // FilenameFromURI wraps g_filename_from_uri
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a uri describing a filename (escaped, encoded in ASCII). 
-// 
-// The function returns the following values:
-// 
-// 	- hostname string (nullable): Location to store hostname for the URI.
-//            If there is no hostname in the URI, %NULL will be
-//            stored in this location. 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_filename_from_uri.html
 //
-// Converts an escaped ASCII-encoded URI to a local filename in the
-// encoding used for filenames.
-// 
-// Since GLib 2.78, the query string and fragment can be present in the URI,
-// but are not part of the resulting filename.
-// We take inspiration from https://url.spec.whatwg.org/#file-state,
-// but we don't support the entire standard.
 func FilenameFromURI(uri string) (string, string, error) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 *C.gchar  // out, full, string, nullable-string
@@ -8642,37 +7685,8 @@ func FilenameFromURI(uri string) (string, string, error) {
 
 // FilenameFromUTF8 wraps g_filename_from_utf8
 // 
-// The function takes the following parameters:
-// 
-// 	- utf8string string: a UTF-8 encoded string. 
-// 	- len int: the length of the string, or -1 if the string is
-//                 nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- bytesRead uint: location to store the number of bytes in
-//                 the input string that were successfully converted, or %NULL.
-//                 Even if the conversion was successful, this may be
-//                 less than @len if there were partial characters
-//                 at the end of the input. If the error
-//                 %G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
-//                 stored will be the byte offset after the last valid
-//                 input sequence. 
-// 	- bytesWritten uint: the number of bytes stored in
-//                 the output buffer (not including the terminating nul). 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_filename_from_utf8.html
 //
-// Converts a string from UTF-8 to the encoding GLib uses for
-// filenames. Note that on Windows GLib uses UTF-8 for filenames;
-// on other platforms, this function indirectly depends on the
-// [current locale](running.html#locale).
-// 
-// The input string shall not contain nul characters even if the @len
-// argument is positive. A nul character found inside the string will result
-// in error %G_CONVERT_ERROR_ILLEGAL_SEQUENCE. If the filename encoding is
-// not UTF-8 and the conversion output contains a nul character, the error
-// %G_CONVERT_ERROR_EMBEDDED_NUL is set and the function returns %NULL.
 func FilenameFromUTF8(utf8string string, len int) (uint, uint, string, error) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 C.gssize  // in, none, casted
@@ -8707,20 +7721,8 @@ func FilenameFromUTF8(utf8string string, len int) (uint, uint, string, error) {
 
 // FilenameToURI wraps g_filename_to_uri
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: an absolute filename specified in the GLib file
-//     name encoding, which is the on-disk file name bytes on Unix, and UTF-8
-//     on Windows 
-// 	- hostname string (nullable): A UTF-8 encoded hostname, or %NULL for none. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_filename_to_uri.html
 //
-// Converts an absolute filename to an escaped ASCII-encoded URI, with the path
-// component following Section 3.3. of RFC 2396.
 func FilenameToURI(filename string, hostname string) (string, error) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 *C.gchar  // in, none, string, nullable-string
@@ -8752,41 +7754,8 @@ func FilenameToURI(filename string, hostname string) (string, error) {
 
 // FilenameToUTF8 wraps g_filename_to_utf8
 // 
-// The function takes the following parameters:
-// 
-// 	- opsysstring string: a string in the encoding for filenames 
-// 	- len int: the length of the string, or -1 if the string is
-//                 nul-terminated (Note that some encodings may allow nul
-//                 bytes to occur inside strings. In that case, using -1
-//                 for the @len parameter is unsafe) 
-// 
-// The function returns the following values:
-// 
-// 	- bytesRead uint: location to store the number of bytes in the
-//                 input string that were successfully converted, or %NULL.
-//                 Even if the conversion was successful, this may be
-//                 less than @len if there were partial characters
-//                 at the end of the input. If the error
-//                 %G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
-//                 stored will be the byte offset after the last valid
-//                 input sequence. 
-// 	- bytesWritten uint: the number of bytes stored in the output
-//                 buffer (not including the terminating nul). 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_filename_to_utf8.html
 //
-// Converts a string which is in the encoding used by GLib for
-// filenames into a UTF-8 string. Note that on Windows GLib uses UTF-8
-// for filenames; on other platforms, this function indirectly depends on
-// the [current locale](running.html#locale).
-// 
-// The input string shall not contain nul characters even if the @len
-// argument is positive. A nul character found inside the string will result
-// in error %G_CONVERT_ERROR_ILLEGAL_SEQUENCE.
-// If the source encoding is not UTF-8 and the conversion output contains a
-// nul character, the error %G_CONVERT_ERROR_EMBEDDED_NUL is set and the
-// function returns %NULL. Use g_convert() to produce output that
-// may contain embedded nul characters.
 func FilenameToUTF8(opsysstring string, len int) (uint, uint, string, error) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 C.gssize  // in, none, casted
@@ -8821,31 +7790,8 @@ func FilenameToUTF8(opsysstring string, len int) (uint, uint, string, error) {
 
 // FindProgramInPath wraps g_find_program_in_path
 // 
-// The function takes the following parameters:
-// 
-// 	- program string: a program name in the GLib file name encoding 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_find_program_in_path.html
 //
-// Locates the first executable named @program in the user's path, in the
-// same way that execvp() would locate it. Returns an allocated string
-// with the absolute path name, or %NULL if the program is not found in
-// the path. If @program is already an absolute path, returns a copy of
-// @program if @program exists and is executable, and %NULL otherwise.
-//  
-// On Windows, if @program does not have a file type suffix, tries
-// with the suffixes .exe, .cmd, .bat and .com, and the suffixes in
-// the `PATHEXT` environment variable.
-// 
-// On Windows, it looks for the file in the same way as CreateProcess()
-// would. This means first in the directory where the executing
-// program was loaded from, then in the current directory, then in the
-// Windows 32-bit system directory, then in the Windows directory, and
-// finally in the directories in the `PATH` environment variable. If
-// the program is found, the return value contains the full name
-// including the type suffix.
 func FindProgramInPath(program string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -8868,27 +7814,8 @@ func FindProgramInPath(program string) string {
 
 // FormatSize wraps g_format_size
 // 
-// The function takes the following parameters:
-// 
-// 	- size uint64: a size in bytes 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_format_size.html
 //
-// Formats a size (for example the size of a file) into a human readable
-// string.  Sizes are rounded to the nearest size prefix (kB, MB, GB)
-// and are displayed rounded to the nearest tenth. E.g. the file size
-// 3292528 bytes will be converted into the string "3.2 MB". The returned string
-// is UTF-8, and may use a non-breaking space to separate the number and units,
-// to ensure they aren&#x2019;t separated when line wrapped.
-// 
-// The prefix units base is 1000 (i.e. 1 kB is 1000 bytes).
-// 
-// This string should be freed with g_free() when not needed any longer.
-// 
-// See g_format_size_full() for more options about how the size might be
-// formatted.
 func FormatSize(size uint64) string {
 	var carg1 C.guint64 // in, none, casted
 	var cret  *C.gchar  // return, full, string
@@ -8908,19 +7835,8 @@ func FormatSize(size uint64) string {
 
 // FormatSizeFull wraps g_format_size_full
 // 
-// The function takes the following parameters:
-// 
-// 	- size uint64: a size in bytes 
-// 	- flags FormatSizeFlags: #GFormatSizeFlags to modify the output 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_format_size_full.html
 //
-// Formats a size.
-// 
-// This function is similar to g_format_size() but allows for flags
-// that modify the output. See #GFormatSizeFlags.
 func FormatSizeFull(size uint64, flags FormatSizeFlags) string {
 	var carg1 C.guint64          // in, none, casted
 	var carg2 C.GFormatSizeFlags // in, none, casted
@@ -8943,17 +7859,8 @@ func FormatSizeFull(size uint64, flags FormatSizeFlags) string {
 
 // GetApplicationName wraps g_get_application_name
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_get_application_name.html
 //
-// Gets a human-readable name for the application, as set by
-// g_set_application_name(). This name should be localized if
-// possible, and is intended for display to the user.  Contrast with
-// g_get_prgname(), which gets a non-localized name. If
-// g_set_application_name() has not been called, returns the result of
-// g_get_prgname() (which may be %NULL if g_set_prgname() has also not
-// been called).
 func GetApplicationName() string {
 	var cret *C.gchar // return, none, string, nullable-string
 
@@ -8970,33 +7877,8 @@ func GetApplicationName() string {
 
 // GetCharset wraps g_get_charset
 // 
-// The function returns the following values:
-// 
-// 	- charset string: return location for character set
-//   name, or %NULL. 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_get_charset.html
 //
-// Obtains the character set for the [current locale](running.html#locale);
-// you might use this character set as an argument to g_convert(), to convert
-// from the current locale's encoding to some other encoding. (Frequently
-// g_locale_to_utf8() and g_locale_from_utf8() are nice shortcuts, though.)
-// 
-// On Windows the character set returned by this function is the
-// so-called system default ANSI code-page. That is the character set
-// used by the "narrow" versions of C library and Win32 functions that
-// handle file names. It might be different from the character set
-// used by the C library's current locale.
-// 
-// On Linux, the character set is found by consulting nl_langinfo() if
-// available. If not, the environment variables `LC_ALL`, `LC_CTYPE`, `LANG`
-// and `CHARSET` are queried in order. nl_langinfo() returns the C locale if
-// no locale has been loaded by setlocale().
-// 
-// The return value is %TRUE if the locale's encoding is UTF-8, in that
-// case you can perhaps avoid calling g_convert().
-// 
-// The string returned in @charset is not allocated, and should not be
-// freed.
 func GetCharset() (string, bool) {
 	var carg1 *C.char    // out, none, string
 	var cret  C.gboolean // return
@@ -9016,11 +7898,8 @@ func GetCharset() (string, bool) {
 
 // GetCodeset wraps g_get_codeset
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_codeset.html
 //
-// Gets the character set for the current locale.
 func GetCodeset() string {
 	var cret *C.gchar // return, full, string
 
@@ -9036,29 +7915,8 @@ func GetCodeset() string {
 
 // GetConsoleCharset wraps g_get_console_charset
 // 
-// The function returns the following values:
-// 
-// 	- charset string: return location for character set
-//   name, or %NULL. 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_get_console_charset.html
 //
-// Obtains the character set used by the console attached to the process,
-// which is suitable for printing output to the terminal.
-// 
-// Usually this matches the result returned by g_get_charset(), but in
-// environments where the locale's character set does not match the encoding
-// of the console this function tries to guess a more suitable value instead.
-// 
-// On Windows the character set returned by this function is the
-// output code page used by the console associated with the calling process.
-// If the codepage can't be determined (for example because there is no
-// console attached) UTF-8 is assumed.
-// 
-// The return value is %TRUE if the locale's encoding is UTF-8, in that
-// case you can perhaps avoid calling g_convert().
-// 
-// The string returned in @charset is not allocated, and should not be
-// freed.
 func GetConsoleCharset() (string, bool) {
 	var carg1 *C.char    // out, none, string
 	var cret  C.gboolean // return
@@ -9078,20 +7936,8 @@ func GetConsoleCharset() (string, bool) {
 
 // GetCurrentDir wraps g_get_current_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_current_dir.html
 //
-// Gets the current directory.
-// 
-// The returned string should be freed when no longer needed.
-// The encoding of the returned string is system defined.
-// On Windows, it is always UTF-8.
-// 
-// Since GLib 2.40, this function will return the value of the "PWD"
-// environment variable if it is set and it happens to be the same as
-// the current directory.  This can make a difference in the case that
-// the current directory is the target of a symbolic link.
 func GetCurrentDir() string {
 	var cret *C.gchar // return, full, string
 
@@ -9107,20 +7953,8 @@ func GetCurrentDir() string {
 
 // GetEnviron wraps g_get_environ
 // 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_get_environ.html
 //
-// Gets the list of environment variables for the current process.
-// 
-// The list is %NULL terminated and each item in the list is of the
-// form 'NAME=VALUE'.
-// 
-// This is equivalent to direct access to the 'environ' global variable,
-// except portable.
-// 
-// The return value is freshly allocated and it should be freed with
-// g_strfreev() when it is no longer needed.
 func GetEnviron() []string {
 	var cret **C.gchar // return, transfer: full, C Pointers: 2, Name: array[filename], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -9137,30 +7971,8 @@ func GetEnviron() []string {
 
 // GetHomeDir wraps g_get_home_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_home_dir.html
 //
-// Gets the current user's home directory.
-// 
-// As with most UNIX tools, this function will return the value of the
-// `HOME` environment variable if it is set to an existing absolute path
-// name, falling back to the `passwd` file in the case that it is unset.
-// 
-// If the path given in `HOME` is non-absolute, does not exist, or is
-// not a directory, the result is undefined.
-// 
-// Before version 2.36 this function would ignore the `HOME` environment
-// variable, taking the value from the `passwd` database instead. This was
-// changed to increase the compatibility of GLib with other programs (and
-// the XDG basedir specification) and to increase testability of programs
-// based on GLib (by making it easier to run them from test frameworks).
-// 
-// If your program has a strong requirement for either the new or the
-// old behaviour (and if you don't wish to increase your GLib
-// dependency to ensure that the new behaviour is in effect) then you
-// should either directly check the `HOME` environment variable yourself
-// or unset it before calling any functions in GLib.
 func GetHomeDir() string {
 	var cret *C.gchar // return, none, string
 
@@ -9175,24 +7987,8 @@ func GetHomeDir() string {
 
 // GetHostName wraps g_get_host_name
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_host_name.html
 //
-// Return a name for the machine.
-// 
-// The returned name is not necessarily a fully-qualified domain name,
-// or even present in DNS or some other name service at all. It need
-// not even be unique on your local network or site, but usually it
-// is. Callers should not rely on the return value having any specific
-// properties like uniqueness for security purposes. Even if the name
-// of the machine is changed while an application is running, the
-// return value from this function does not change. The returned
-// string is owned by GLib and should not be modified or freed. If no
-// name can be determined, a default fixed string "localhost" is
-// returned.
-// 
-// The encoding of the returned string is UTF-8.
 func GetHostName() string {
 	var cret *C.gchar // return, none, string
 
@@ -9207,21 +8003,8 @@ func GetHostName() string {
 
 // GetLanguageNames wraps g_get_language_names
 // 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_get_language_names.html
 //
-// Computes a list of applicable locale names, which can be used to
-// e.g. construct locale-dependent filenames or search paths. The returned
-// list is sorted from most desirable to least desirable and always contains
-// the default locale "C".
-// 
-// For example, if LANGUAGE=de:en_US, then the returned list is
-// "de", "en_US", "en", "C".
-// 
-// This function consults the environment variables `LANGUAGE`, `LC_ALL`,
-// `LC_MESSAGES` and `LANG` to find the list of locales specified by the
-// user.
 func GetLanguageNames() []string {
 	var cret **C.gchar // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -9238,24 +8021,8 @@ func GetLanguageNames() []string {
 
 // GetLanguageNamesWithCategory wraps g_get_language_names_with_category
 // 
-// The function takes the following parameters:
-// 
-// 	- categoryName string: a locale category name 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_get_language_names_with_category.html
 //
-// Computes a list of applicable locale names with a locale category name,
-// which can be used to construct the fallback locale-dependent filenames
-// or search paths. The returned list is sorted from most desirable to
-// least desirable and always contains the default locale "C".
-// 
-// This function consults the environment variables `LANGUAGE`, `LC_ALL`,
-// @category_name, and `LANG` to find the list of locales specified by the
-// user.
-// 
-// g_get_language_names() returns g_get_language_names_with_category("LC_MESSAGES").
 func GetLanguageNamesWithCategory(categoryName string) []string {
 	var carg1 *C.gchar  // in, none, string
 	var cret  **C.gchar // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -9277,29 +8044,8 @@ func GetLanguageNamesWithCategory(categoryName string) []string {
 
 // GetLocaleVariants wraps g_get_locale_variants
 // 
-// The function takes the following parameters:
-// 
-// 	- locale string: a locale identifier 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_get_locale_variants.html
 //
-// Returns a list of derived variants of @locale, which can be used to
-// e.g. construct locale-dependent filenames or search paths. The returned
-// list is sorted from most desirable to least desirable.
-// This function handles territory, charset and extra locale modifiers. See
-// [`setlocale(3)`](man:setlocale) for information about locales and their format.
-// 
-// @locale itself is guaranteed to be returned in the output.
-// 
-// For example, if @locale is `fr_BE`, then the returned list
-// is `fr_BE`, `fr`. If @locale is `en_GB.UTF-8@euro`, then the returned list
-// is `en_GB.UTF-8@euro`, `en_GB.UTF-8`, `en_GB@euro`, `en_GB`, `en.UTF-8@euro`,
-// `en.UTF-8`, `en@euro`, `en`.
-// 
-// If you need the list of variants for the current locale,
-// use g_get_language_names().
 func GetLocaleVariants(locale string) []string {
 	var carg1 *C.gchar  // in, none, string
 	var cret  **C.gchar // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -9321,20 +8067,8 @@ func GetLocaleVariants(locale string) []string {
 
 // GetMonotonicTime wraps g_get_monotonic_time
 // 
-// The function returns the following values:
-// 
-// 	- goret int64 
+// see also https://docs.gtk.org/glib/func.g_get_monotonic_time.html
 //
-// Queries the system monotonic time.
-// 
-// The monotonic clock will always increase and doesn't suffer
-// discontinuities when the user (or NTP) changes the system time.  It
-// may or may not continue to tick during times where the machine is
-// suspended.
-// 
-// We try to use the clock that corresponds as closely as possible to
-// the passage of time as measured by system calls such as poll() but it
-// may not always be possible to do this.
 func GetMonotonicTime() int64 {
 	var cret C.gint64 // return, none, casted
 
@@ -9349,14 +8083,8 @@ func GetMonotonicTime() int64 {
 
 // GetNumProcessors wraps g_get_num_processors
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_get_num_processors.html
 //
-// Determine the approximate number of threads that the system will
-// schedule simultaneously for this process.  This is intended to be
-// used as a parameter to g_thread_pool_new() for CPU bound tasks and
-// similar cases.
 func GetNumProcessors() uint {
 	var cret C.guint // return, none, casted
 
@@ -9371,22 +8099,8 @@ func GetNumProcessors() uint {
 
 // GetOsInfo wraps g_get_os_info
 // 
-// The function takes the following parameters:
-// 
-// 	- keyName string: a key for the OS info being requested, for example %G_OS_INFO_KEY_NAME. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_get_os_info.html
 //
-// Get information about the operating system.
-// 
-// On Linux this comes from the `/etc/os-release` file. On other systems, it may
-// come from a variety of sources. You can either use the standard key names
-// like %G_OS_INFO_KEY_NAME or pass any UTF-8 string key name. For example,
-// `/etc/os-release` provides a number of other less commonly used values that may
-// be useful. No key is guaranteed to be provided, so the caller should always
-// check if the result is %NULL.
 func GetOsInfo(keyName string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -9409,18 +8123,8 @@ func GetOsInfo(keyName string) string {
 
 // GetPrgname wraps g_get_prgname
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_get_prgname.html
 //
-// Gets the name of the program. This name should not be localized,
-// in contrast to g_get_application_name().
-// 
-// If you are using #GApplication the program name is set in
-// g_application_run(). In case of GDK or GTK it is set in
-// gdk_init(), which is called by gtk_init() and the
-// #GtkApplication::startup handler. The program name is found by
-// taking the last component of @argv[0].
 func GetPrgname() string {
 	var cret *C.gchar // return, none, string, nullable-string
 
@@ -9437,15 +8141,8 @@ func GetPrgname() string {
 
 // GetRealName wraps g_get_real_name
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_real_name.html
 //
-// Gets the real name of the user. This usually comes from the user's
-// entry in the `passwd` file. The encoding of the returned string is
-// system-defined. (On Windows, it is, however, always UTF-8.) If the
-// real user name cannot be determined, the string "Unknown" is
-// returned.
 func GetRealName() string {
 	var cret *C.gchar // return, none, string
 
@@ -9460,19 +8157,8 @@ func GetRealName() string {
 
 // GetRealTime wraps g_get_real_time
 // 
-// The function returns the following values:
-// 
-// 	- goret int64 
+// see also https://docs.gtk.org/glib/func.g_get_real_time.html
 //
-// Queries the system wall-clock time.
-// 
-// This call is functionally equivalent to [func@GLib.get_current_time] except
-// that the return value is often more convenient than dealing with a
-// #GTimeVal.
-// 
-// You should only use this call if you are actually interested in the real
-// wall-clock time. [func@GLib.get_monotonic_time] is probably more useful for
-// measuring intervals.
 func GetRealTime() int64 {
 	var cret C.gint64 // return, none, casted
 
@@ -9487,30 +8173,8 @@ func GetRealTime() int64 {
 
 // GetSystemConfigDirs wraps g_get_system_config_dirs
 // 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_get_system_config_dirs.html
 //
-// Returns an ordered list of base directories in which to access
-// system-wide configuration information.
-// 
-// On UNIX platforms this is determined using the mechanisms described
-// in the
-// [XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec).
-// In this case the list of directories retrieved will be `XDG_CONFIG_DIRS`.
-// 
-// On Windows it follows XDG Base Directory Specification if `XDG_CONFIG_DIRS` is defined.
-// If `XDG_CONFIG_DIRS` is undefined, the directory that contains application
-// data for all users is used instead. A typical path is
-// `C:\Documents and Settings\All Users\Application Data`.
-// This folder is used for application data
-// that is not user specific. For example, an application can store
-// a spell-check dictionary, a database of clip art, or a log file in the
-// FOLDERID_ProgramData folder. This information will not roam and is available
-// to anyone using the computer.
-// 
-// The return value is cached and modifying it at runtime is not supported, as
-// it&#x2019;s not thread-safe to modify environment variables at runtime.
 func GetSystemConfigDirs() []string {
 	var cret **C.gchar // return, transfer: none, C Pointers: 2, Name: array[filename], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -9527,44 +8191,8 @@ func GetSystemConfigDirs() []string {
 
 // GetSystemDataDirs wraps g_get_system_data_dirs
 // 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_get_system_data_dirs.html
 //
-// Returns an ordered list of base directories in which to access
-// system-wide application data.
-// 
-// On UNIX platforms this is determined using the mechanisms described
-// in the
-// [XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec)
-// In this case the list of directories retrieved will be `XDG_DATA_DIRS`.
-// 
-// On Windows it follows XDG Base Directory Specification if `XDG_DATA_DIRS` is defined.
-// If `XDG_DATA_DIRS` is undefined,
-// the first elements in the list are the Application Data
-// and Documents folders for All Users. (These can be determined only
-// on Windows 2000 or later and are not present in the list on other
-// Windows versions.) See documentation for FOLDERID_ProgramData and
-// FOLDERID_PublicDocuments.
-// 
-// Then follows the "share" subfolder in the installation folder for
-// the package containing the DLL that calls this function, if it can
-// be determined.
-// 
-// Finally the list contains the "share" subfolder in the installation
-// folder for GLib, and in the installation folder for the package the
-// application's .exe file belongs to.
-// 
-// The installation folders above are determined by looking up the
-// folder where the module (DLL or EXE) in question is located. If the
-// folder's name is "bin", its parent is used, otherwise the folder
-// itself.
-// 
-// Note that on Windows the returned list can vary depending on where
-// this function is called.
-// 
-// The return value is cached and modifying it at runtime is not supported, as
-// it&#x2019;s not thread-safe to modify environment variables at runtime.
 func GetSystemDataDirs() []string {
 	var cret **C.gchar // return, transfer: none, C Pointers: 2, Name: array[filename], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -9581,24 +8209,8 @@ func GetSystemDataDirs() []string {
 
 // GetTmpDir wraps g_get_tmp_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_tmp_dir.html
 //
-// Gets the directory to use for temporary files.
-// 
-// On UNIX, this is taken from the `TMPDIR` environment variable.
-// If the variable is not set, `P_tmpdir` is
-// used, as defined by the system C library. Failing that, a
-// hard-coded default of "/tmp" is returned.
-// 
-// On Windows, the `TEMP` environment variable is used, with the
-// root directory of the Windows installation (eg: "C:\") used
-// as a default.
-// 
-// The encoding of the returned string is system-defined. On Windows,
-// it is always UTF-8. The return value is never %NULL or the empty
-// string.
 func GetTmpDir() string {
 	var cret *C.gchar // return, none, string
 
@@ -9613,26 +8225,8 @@ func GetTmpDir() string {
 
 // GetUserCacheDir wraps g_get_user_cache_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_user_cache_dir.html
 //
-// Returns a base directory in which to store non-essential, cached
-// data specific to particular user.
-// 
-// On UNIX platforms this is determined using the mechanisms described
-// in the
-// [XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec).
-// In this case the directory retrieved will be `XDG_CACHE_HOME`.
-// 
-// On Windows it follows XDG Base Directory Specification if `XDG_CACHE_HOME` is defined.
-// If `XDG_CACHE_HOME` is undefined, the directory that serves as a common
-// repository for temporary Internet files is used instead. A typical path is
-// `C:\Documents and Settings\username\Local Settings\Temporary Internet Files`.
-// See the [documentation for `FOLDERID_InternetCache`](https://docs.microsoft.com/en-us/windows/win32/shell/knownfolderid).
-// 
-// The return value is cached and modifying it at runtime is not supported, as
-// it&#x2019;s not thread-safe to modify environment variables at runtime.
 func GetUserCacheDir() string {
 	var cret *C.gchar // return, none, string
 
@@ -9647,27 +8241,8 @@ func GetUserCacheDir() string {
 
 // GetUserConfigDir wraps g_get_user_config_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_user_config_dir.html
 //
-// Returns a base directory in which to store user-specific application
-// configuration information such as user preferences and settings.
-// 
-// On UNIX platforms this is determined using the mechanisms described
-// in the
-// [XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec).
-// In this case the directory retrieved will be `XDG_CONFIG_HOME`.
-// 
-// On Windows it follows XDG Base Directory Specification if `XDG_CONFIG_HOME` is defined.
-// If `XDG_CONFIG_HOME` is undefined, the folder to use for local (as opposed
-// to roaming) application data is used instead. See the
-// [documentation for `FOLDERID_LocalAppData`](https://docs.microsoft.com/en-us/windows/win32/shell/knownfolderid).
-// Note that in this case on Windows it will be  the same
-// as what g_get_user_data_dir() returns.
-// 
-// The return value is cached and modifying it at runtime is not supported, as
-// it&#x2019;s not thread-safe to modify environment variables at runtime.
 func GetUserConfigDir() string {
 	var cret *C.gchar // return, none, string
 
@@ -9682,27 +8257,8 @@ func GetUserConfigDir() string {
 
 // GetUserDataDir wraps g_get_user_data_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_user_data_dir.html
 //
-// Returns a base directory in which to access application data such
-// as icons that is customized for a particular user.
-// 
-// On UNIX platforms this is determined using the mechanisms described
-// in the
-// [XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec).
-// In this case the directory retrieved will be `XDG_DATA_HOME`.
-// 
-// On Windows it follows XDG Base Directory Specification if `XDG_DATA_HOME`
-// is defined. If `XDG_DATA_HOME` is undefined, the folder to use for local (as
-// opposed to roaming) application data is used instead. See the
-// [documentation for `FOLDERID_LocalAppData`](https://docs.microsoft.com/en-us/windows/win32/shell/knownfolderid).
-// Note that in this case on Windows it will be the same
-// as what g_get_user_config_dir() returns.
-// 
-// The return value is cached and modifying it at runtime is not supported, as
-// it&#x2019;s not thread-safe to modify environment variables at runtime.
 func GetUserDataDir() string {
 	var cret *C.gchar // return, none, string
 
@@ -9717,14 +8273,8 @@ func GetUserDataDir() string {
 
 // GetUserName wraps g_get_user_name
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_user_name.html
 //
-// Gets the user name of the current user. The encoding of the returned
-// string is system-defined. On UNIX, it might be the preferred file name
-// encoding, or something else, and there is no guarantee that it is even
-// consistent on a machine. On Windows, it is always UTF-8.
 func GetUserName() string {
 	var cret *C.gchar // return, none, string
 
@@ -9739,23 +8289,8 @@ func GetUserName() string {
 
 // GetUserRuntimeDir wraps g_get_user_runtime_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_user_runtime_dir.html
 //
-// Returns a directory that is unique to the current user on the local
-// system.
-// 
-// This is determined using the mechanisms described
-// in the
-// [XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec).
-// This is the directory
-// specified in the `XDG_RUNTIME_DIR` environment variable.
-// In the case that this variable is not set, we return the value of
-// g_get_user_cache_dir(), after verifying that it exists.
-// 
-// The return value is cached and modifying it at runtime is not supported, as
-// it&#x2019;s not thread-safe to modify environment variables at runtime.
 func GetUserRuntimeDir() string {
 	var cret *C.gchar // return, none, string
 
@@ -9770,24 +8305,8 @@ func GetUserRuntimeDir() string {
 
 // GetUserSpecialDir wraps g_get_user_special_dir
 // 
-// The function takes the following parameters:
-// 
-// 	- directory UserDirectory: the logical id of special directory 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_get_user_special_dir.html
 //
-// Returns the full path of a special directory using its logical id.
-// 
-// On UNIX this is done using the XDG special user directories.
-// For compatibility with existing practise, %G_USER_DIRECTORY_DESKTOP
-// falls back to `$HOME/Desktop` when XDG special user directories have
-// not been set up.
-// 
-// Depending on the platform, the user might be able to change the path
-// of the special directory without requiring the session to restart; GLib
-// will not reflect any change once the special directories are loaded.
 func GetUserSpecialDir(directory UserDirectory) string {
 	var carg1 C.GUserDirectory // in, none, casted
 	var cret  *C.gchar         // return, none, string, nullable
@@ -9808,27 +8327,8 @@ func GetUserSpecialDir(directory UserDirectory) string {
 
 // GetUserStateDir wraps g_get_user_state_dir
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_get_user_state_dir.html
 //
-// Returns a base directory in which to store state files specific to
-// particular user.
-// 
-// On UNIX platforms this is determined using the mechanisms described
-// in the
-// [XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec).
-// In this case the directory retrieved will be `XDG_STATE_HOME`.
-// 
-// On Windows it follows XDG Base Directory Specification if `XDG_STATE_HOME` is defined.
-// If `XDG_STATE_HOME` is undefined, the folder to use for local (as opposed
-// to roaming) application data is used instead. See the
-// [documentation for `FOLDERID_LocalAppData`](https://docs.microsoft.com/en-us/windows/win32/shell/knownfolderid).
-// Note that in this case on Windows it will be the same
-// as what g_get_user_data_dir() returns.
-// 
-// The return value is cached and modifying it at runtime is not supported, as
-// it&#x2019;s not thread-safe to modify environment variables at runtime.
 func GetUserStateDir() string {
 	var cret *C.gchar // return, none, string
 
@@ -9843,21 +8343,8 @@ func GetUserStateDir() string {
 
 // Getenv wraps g_getenv
 // 
-// The function takes the following parameters:
-// 
-// 	- variable string: the environment variable to get 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_getenv.html
 //
-// Returns the value of an environment variable.
-// 
-// On UNIX, the name and value are byte strings which might or might not
-// be in some consistent character set and encoding. On Windows, they are
-// in UTF-8.
-// On Windows, in case the environment variable's value contains
-// references to other environment variables, they are expanded.
 func Getenv(variable string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, none, string, nullable
@@ -9879,22 +8366,8 @@ func Getenv(variable string) string {
 
 // HostnameIsASCIIEncoded wraps g_hostname_is_ascii_encoded
 // 
-// The function takes the following parameters:
-// 
-// 	- hostname string: a hostname 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_hostname_is_ascii_encoded.html
 //
-// Tests if @hostname contains segments with an ASCII-compatible
-// encoding of an Internationalized Domain Name. If this returns
-// %TRUE, you should decode the hostname with g_hostname_to_unicode()
-// before displaying it to the user.
-// 
-// Note that a hostname might contain a mix of encoded and unencoded
-// segments, and so it is possible for g_hostname_is_non_ascii() and
-// g_hostname_is_ascii_encoded() to both return %TRUE for a name.
 func HostnameIsASCIIEncoded(hostname string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -9916,18 +8389,8 @@ func HostnameIsASCIIEncoded(hostname string) bool {
 
 // HostnameIsIpAddress wraps g_hostname_is_ip_address
 // 
-// The function takes the following parameters:
-// 
-// 	- hostname string: a hostname (or IP address in string form) 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_hostname_is_ip_address.html
 //
-// Tests if @hostname is the string form of an IPv4 or IPv6 address.
-// (Eg, "192.168.0.1".)
-// 
-// Since 2.66, IPv6 addresses with a zone-id are accepted (RFC6874).
 func HostnameIsIpAddress(hostname string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -9949,21 +8412,8 @@ func HostnameIsIpAddress(hostname string) bool {
 
 // HostnameIsNonASCII wraps g_hostname_is_non_ascii
 // 
-// The function takes the following parameters:
-// 
-// 	- hostname string: a hostname 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_hostname_is_non_ascii.html
 //
-// Tests if @hostname contains Unicode characters. If this returns
-// %TRUE, you need to encode the hostname with g_hostname_to_ascii()
-// before using it in non-IDN-aware contexts.
-// 
-// Note that a hostname might contain a mix of encoded and unencoded
-// segments, and so it is possible for g_hostname_is_non_ascii() and
-// g_hostname_is_ascii_encoded() to both return %TRUE for a name.
 func HostnameIsNonASCII(hostname string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -9985,17 +8435,8 @@ func HostnameIsNonASCII(hostname string) bool {
 
 // HostnameToASCII wraps g_hostname_to_ascii
 // 
-// The function takes the following parameters:
-// 
-// 	- hostname string: a valid UTF-8 or ASCII hostname 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_hostname_to_ascii.html
 //
-// Converts @hostname to its canonical ASCII form; an ASCII-only
-// string containing no uppercase letters and not ending with a
-// trailing dot.
 func HostnameToASCII(hostname string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -10018,21 +8459,8 @@ func HostnameToASCII(hostname string) string {
 
 // HostnameToUnicode wraps g_hostname_to_unicode
 // 
-// The function takes the following parameters:
-// 
-// 	- hostname string: a valid UTF-8 or ASCII hostname 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_hostname_to_unicode.html
 //
-// Converts @hostname to its canonical presentation form; a UTF-8
-// string in Unicode normalization form C, containing no uppercase
-// letters, no forbidden characters, and no ASCII-encoded segments,
-// and not ending with a trailing dot.
-// 
-// Of course if @hostname is not an internationalized hostname, then
-// the canonical presentation form will be entirely ASCII.
 func HostnameToUnicode(hostname string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -10055,31 +8483,8 @@ func HostnameToUnicode(hostname string) string {
 
 // IdleAddFull wraps g_idle_add_full
 // 
-// The function takes the following parameters:
-// 
-// 	- priority int32: the priority of the idle source. Typically this will be in the
-//   range between [const@GLib.PRIORITY_DEFAULT_IDLE] and
-//   [const@GLib.PRIORITY_HIGH_IDLE]. 
-// 	- function SourceFunc: function to call 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_idle_add_full.html
 //
-// Adds a function to be called whenever there are no higher priority
-// events pending.
-// 
-// If the function returns [const@GLib.SOURCE_REMOVE] or %FALSE it is automatically
-// removed from the list of event sources and will not be called again.
-// 
-// See [mainloop memory management](main-loop.html#memory-management-of-sources) for details
-// on how to handle the return value and memory management of @data.
-// 
-// This internally creates a main loop source using [func@GLib.idle_source_new]
-// and attaches it to the global [struct@GLib.MainContext] using
-// [method@GLib.Source.attach], so the callback will be invoked in whichever
-// thread is running that main context. You can do these steps manually if you
-// need greater control or to use a custom main context.
 func IdleAddFull(priority int32, function SourceFunc) uint {
 	var carg1 C.gint           // in, none, casted
 	var carg2 C.GSourceFunc    // callback, scope: notified, closure: carg3, destroy: carg4
@@ -10105,22 +8510,8 @@ func IdleAddFull(priority int32, function SourceFunc) uint {
 
 // InternStaticString wraps g_intern_static_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): a static string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_intern_static_string.html
 //
-// Returns a canonical representation for @string. Interned strings
-// can be compared for equality by comparing the pointers, instead of
-// using strcmp(). g_intern_static_string() does not copy the string,
-// therefore @string must not be freed or modified.
-// 
-// This function must not be used before library constructors have finished
-// running. In particular, this means it cannot be used to initialize global
-// variables in C++.
 func InternStaticString(str string) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var cret  *C.gchar // return, none, string
@@ -10142,21 +8533,8 @@ func InternStaticString(str string) string {
 
 // InternString wraps g_intern_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): a string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_intern_string.html
 //
-// Returns a canonical representation for @string. Interned strings
-// can be compared for equality by comparing the pointers, instead of
-// using strcmp().
-// 
-// This function must not be used before library constructors have finished
-// running. In particular, this means it cannot be used to initialize global
-// variables in C++.
 func InternString(str string) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var cret  *C.gchar // return, none, string
@@ -10178,18 +8556,8 @@ func InternString(str string) string {
 
 // Listenv wraps g_listenv
 // 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_listenv.html
 //
-// Gets the names of all variables set in the environment.
-// 
-// Programs that want to be portable to Windows should typically use
-// this function and g_getenv() instead of using the environ array
-// from the C library directly. On Windows, the strings in the environ
-// array are in system codepage encoding, while in most of the typical
-// use cases for environment variables in GLib-using programs you want
-// the UTF-8 encoding that this function and g_getenv() provide.
 func Listenv() []string {
 	var cret **C.gchar // return, transfer: full, C Pointers: 2, Name: array[filename], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -10206,36 +8574,8 @@ func Listenv() []string {
 
 // LocaleFromUTF8 wraps g_locale_from_utf8
 // 
-// The function takes the following parameters:
-// 
-// 	- utf8string string: a UTF-8 encoded string 
-// 	- len int: the length of the string, or -1 if the string is
-//                 nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- bytesRead uint: location to store the number of bytes in the
-//                 input string that were successfully converted, or %NULL.
-//                 Even if the conversion was successful, this may be
-//                 less than @len if there were partial characters
-//                 at the end of the input. If the error
-//                 %G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
-//                 stored will be the byte offset after the last valid
-//                 input sequence. 
-// 	- bytesWritten uint: the number of bytes stored in the output
-//                 buffer (not including the terminating nul). 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_locale_from_utf8.html
 //
-// Converts a string from UTF-8 to the encoding used for strings by
-// the C runtime (usually the same as that used by the operating
-// system) in the [current locale](running.html#locale).
-// On Windows this means the system codepage.
-// 
-// The input string shall not contain nul characters even if the @len
-// argument is positive. A nul character found inside the string will result
-// in error %G_CONVERT_ERROR_ILLEGAL_SEQUENCE. Use g_convert() to convert
-// input that may contain embedded nul characters.
 func LocaleFromUTF8(utf8string string, len int) (uint, uint, string, error) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 C.gssize  // in, none, casted
@@ -10271,38 +8611,8 @@ func LocaleFromUTF8(utf8string string, len int) (uint, uint, string, error) {
 
 // LocaleToUTF8 wraps g_locale_to_utf8
 // 
-// The function takes the following parameters:
-// 
-// 	- opsysstring string: a string in the
-//                 encoding of the current locale. On Windows
-//                 this means the system codepage. 
-// 
-// The function returns the following values:
-// 
-// 	- bytesRead uint: location to store the number of bytes in the
-//                 input string that were successfully converted, or %NULL.
-//                 Even if the conversion was successful, this may be
-//                 less than @len if there were partial characters
-//                 at the end of the input. If the error
-//                 %G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
-//                 stored will be the byte offset after the last valid
-//                 input sequence. 
-// 	- bytesWritten uint: the number of bytes stored in the output
-//                 buffer (not including the terminating nul). 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_locale_to_utf8.html
 //
-// Converts a string which is in the encoding used for strings by
-// the C runtime (usually the same as that used by the operating
-// system) in the [current locale](running.html#locale) into a UTF-8 string.
-// 
-// If the source encoding is not UTF-8 and the conversion output contains a
-// nul character, the error %G_CONVERT_ERROR_EMBEDDED_NUL is set and the
-// function returns %NULL.
-// If the source encoding is UTF-8, an embedded nul character is treated with
-// the %G_CONVERT_ERROR_ILLEGAL_SEQUENCE error for backward compatibility with
-// earlier versions of this library. Use g_convert() to produce output that
-// may contain embedded nul characters.
 func LocaleToUTF8(opsysstring string) (uint, uint, string, error) {
 	var carg1 *C.gchar  // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
 	var carg2 C.gssize  // implicit
@@ -10337,19 +8647,8 @@ func LocaleToUTF8(opsysstring string) (uint, uint, string, error) {
 
 // LogGetDebugEnabled wraps g_log_get_debug_enabled
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_log_get_debug_enabled.html
 //
-// Return whether debug output from the GLib logging system is enabled.
-// 
-// Note that this should not be used to conditionalise calls to [func@GLib.debug] or
-// other logging functions; it should only be used from [type@GLib.LogWriterFunc]
-// implementations.
-// 
-// Note also that the value of this does not depend on `G_MESSAGES_DEBUG`, nor
-// `DEBUG_INVOCATION`, nor [func@GLib.log_writer_default_set_debug_domains]; see
-// the docs for [func@GLib.log_set_debug_enabled].
 func LogGetDebugEnabled() bool {
 	var cret C.gboolean // return
 
@@ -10366,16 +8665,8 @@ func LogGetDebugEnabled() bool {
 
 // LogRemoveHandler wraps g_log_remove_handler
 // 
-// The function takes the following parameters:
-// 
-// 	- logDomain string: the log domain 
-// 	- handlerId uint: the ID of the handler, which was returned
-//   in [func@GLib.log_set_handler] 
+// see also https://docs.gtk.org/glib/func.g_log_remove_handler.html
 //
-// Removes the log handler.
-// 
-// This has no effect if structured logging is enabled; see
-// [Using Structured Logging](logging.html#using-structured-logging).
 func LogRemoveHandler(logDomain string, handlerId uint) {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.guint  // in, none, casted
@@ -10391,32 +8682,8 @@ func LogRemoveHandler(logDomain string, handlerId uint) {
 
 // LogSetAlwaysFatal wraps g_log_set_always_fatal
 // 
-// The function takes the following parameters:
-// 
-// 	- fatalMask LogLevelFlags: the mask containing bits set for each level of error which is
-//   to be fatal 
-// 
-// The function returns the following values:
-// 
-// 	- goret LogLevelFlags 
+// see also https://docs.gtk.org/glib/func.g_log_set_always_fatal.html
 //
-// Sets the message levels which are always fatal, in any log domain.
-// 
-// When a message with any of these levels is logged the program terminates.
-// You can only set the levels defined by GLib to be fatal.
-// [flags@GLib.LogLevelFlags.LEVEL_ERROR] is always fatal.
-// 
-// You can also make some message levels fatal at runtime by setting
-// the `G_DEBUG` environment variable (see
-// [Running GLib Applications](running.html)).
-// 
-// Libraries should not call this function, as it affects all messages logged
-// by a process, including those from other libraries.
-// 
-// Structured log messages (using [func@GLib.log_structured] and
-// [func@GLib.log_structured_array]) are fatal only if the default log writer is used;
-// otherwise it is up to the writer function to determine which log messages
-// are fatal. See [Using Structured Logging](logging.html#using-structured-logging).
 func LogSetAlwaysFatal(fatalMask LogLevelFlags) LogLevelFlags {
 	var carg1 C.GLogLevelFlags // in, none, casted
 	var cret  C.GLogLevelFlags // return, none, casted
@@ -10435,18 +8702,8 @@ func LogSetAlwaysFatal(fatalMask LogLevelFlags) LogLevelFlags {
 
 // LogSetDebugEnabled wraps g_log_set_debug_enabled
 // 
-// The function takes the following parameters:
-// 
-// 	- enabled bool: `TRUE` to enable debug output, `FALSE` otherwise 
+// see also https://docs.gtk.org/glib/func.g_log_set_debug_enabled.html
 //
-// Enable or disable debug output from the GLib logging system for all domains.
-// 
-// This value interacts disjunctively with `G_MESSAGES_DEBUG`, `DEBUG_INVOCATION` and
-// [func@GLib.log_writer_default_set_debug_domains] &#x2014; if any of them would allow
-// a debug message to be outputted, it will be.
-// 
-// Note that this should not be used from within library code to enable debug
-// output &#x2014; it is intended for external use.
 func LogSetDebugEnabled(enabled bool) {
 	var carg1 C.gboolean // in
 
@@ -10460,29 +8717,8 @@ func LogSetDebugEnabled(enabled bool) {
 
 // LogSetFatalMask wraps g_log_set_fatal_mask
 // 
-// The function takes the following parameters:
-// 
-// 	- logDomain string: the log domain 
-// 	- fatalMask LogLevelFlags: the new fatal mask 
-// 
-// The function returns the following values:
-// 
-// 	- goret LogLevelFlags 
+// see also https://docs.gtk.org/glib/func.g_log_set_fatal_mask.html
 //
-// Sets the log levels which are fatal in the given domain.
-// 
-// [flags@GLib.LogLevelFlags.LEVEL_ERROR] is always fatal.
-// 
-// This has no effect on structured log messages (using [func@GLib.log_structured] or
-// [func@GLib.log_structured_array]). To change the fatal behaviour for specific log
-// messages, programs must install a custom log writer function using
-// [func@GLib.log_set_writer_func]. See
-// [Using Structured Logging](logging.html#using-structured-logging).
-// 
-// This function is mostly intended to be used with
-// [flags@GLib.LogLevelFlags.LEVEL_CRITICAL].  You should typically not set
-// [flags@GLib.LogLevelFlags.LEVEL_WARNING], [flags@GLib.LogLevelFlags.LEVEL_MESSAGE], [flags@GLib.LogLevelFlags.LEVEL_INFO] or
-// [flags@GLib.LogLevelFlags.LEVEL_DEBUG] as fatal except inside of test programs.
 func LogSetFatalMask(logDomain string, fatalMask LogLevelFlags) LogLevelFlags {
 	var carg1 *C.gchar         // in, none, string
 	var carg2 C.GLogLevelFlags // in, none, casted
@@ -10505,27 +8741,8 @@ func LogSetFatalMask(logDomain string, fatalMask LogLevelFlags) LogLevelFlags {
 
 // LogSetHandlerFull wraps g_log_set_handler_full
 // 
-// The function takes the following parameters:
-// 
-// 	- logDomain string (nullable): the log domain
-//   application domain 
-// 	- logLevels LogLevelFlags: the log levels to apply the log handler for.
-//   To handle fatal and recursive messages as well, combine
-//   the log levels with the [flags@GLib.LogLevelFlags.FLAG_FATAL] and
-//   [flags@GLib.LogLevelFlags.FLAG_RECURSION] bit flags. 
-// 	- logFunc LogFunc: the log handler function 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_log_set_handler_full.html
 //
-// Like [func@GLib.log_set_handler], but takes a destroy notify for the @user_data.
-// 
-// This has no effect if structured logging is enabled; see
-// [Using Structured Logging](logging.html#using-structured-logging).
-// 
-// The `log_domain` parameter can be set to `NULL` or an empty string to use the default
-// application domain.
 func LogSetHandlerFull(logDomain string, logLevels LogLevelFlags, logFunc LogFunc) uint {
 	var carg1 *C.gchar         // in, none, string, nullable-string
 	var carg2 C.GLogLevelFlags // in, none, casted
@@ -10557,20 +8774,8 @@ func LogSetHandlerFull(logDomain string, logLevels LogLevelFlags, logFunc LogFun
 
 // LogSetWriterFunc wraps g_log_set_writer_func
 // 
-// The function takes the following parameters:
-// 
+// see also https://docs.gtk.org/glib/func.g_log_set_writer_func.html
 //
-// Set a writer function which will be called to format and write out each log
-// message.
-// 
-// Each program should set a writer function, or the default writer
-// ([func@GLib.log_writer_default]) will be used.
-// 
-// Libraries **must not** call this function &#x2014; only programs are allowed to
-// install a writer function, as there must be a single, central point where
-// log messages are formatted and outputted.
-// 
-// There can only be one writer function. It is an error to set more than one.
 func LogSetWriterFunc() {
 	var carg1 C.GLogWriterFunc // implicit
 	var carg2 C.gpointer       // implicit
@@ -10581,24 +8786,8 @@ func LogSetWriterFunc() {
 
 // LogStructuredArray wraps g_log_structured_array
 // 
-// The function takes the following parameters:
-// 
-// 	- logLevel LogLevelFlags: log level, either from [type@GLib.LogLevelFlags], or a user-defined
-//    level 
-// 	- fields []LogField: key&#x2013;value pairs of structured data to add
-//    to the log message 
+// see also https://docs.gtk.org/glib/func.g_log_structured_array.html
 //
-// Log a message with structured data.
-// 
-// The message will be passed through to the log writer set by the application
-// using [func@GLib.log_set_writer_func]. If the
-// message is fatal (i.e. its log level is [flags@GLib.LogLevelFlags.LEVEL_ERROR]), the program will
-// be aborted at the end of this function.
-// 
-// See [func@GLib.log_structured] for more documentation.
-// 
-// This assumes that @log_level is already present in @fields (typically as the
-// `PRIORITY` field).
 func LogStructuredArray(logLevel LogLevelFlags, fields []LogField) {
 	var carg1 C.GLogLevelFlags // in, none, casted
 	var carg2 *C.GLogField     // in, transfer: none, C Pointers: 1, Name: array[LogField], array (inner GLogField (*typesystem.Record), length-by: carg3)
@@ -10617,26 +8806,8 @@ func LogStructuredArray(logLevel LogLevelFlags, fields []LogField) {
 
 // LogWriterDefaultSetUseStderr wraps g_log_writer_default_set_use_stderr
 // 
-// The function takes the following parameters:
-// 
-// 	- useStderr bool: If `TRUE`, use `stderr` for log messages that would
-//  normally have appeared on `stdout` 
+// see also https://docs.gtk.org/glib/func.g_log_writer_default_set_use_stderr.html
 //
-// Configure whether the built-in log functions will output all log messages to
-// `stderr`.
-// 
-// The built-in log functions are [func@GLib.log_default_handler] for the
-// old-style API, and both [func@GLib.log_writer_default] and
-// [func@GLib.log_writer_standard_streams] for the structured API.
-// 
-// By default, log messages of levels [flags@GLib.LogLevelFlags.LEVEL_INFO] and
-// [flags@GLib.LogLevelFlags.LEVEL_DEBUG] are sent to `stdout`, and other log messages are
-// sent to `stderr`. This is problematic for applications that intend
-// to reserve `stdout` for structured output such as JSON or XML.
-// 
-// This function sets global state. It is not thread-aware, and should be
-// called at the very start of a program, before creating any other threads
-// or creating objects that could create worker threads of their own.
 func LogWriterDefaultSetUseStderr(useStderr bool) {
 	var carg1 C.gboolean // in
 
@@ -10650,43 +8821,8 @@ func LogWriterDefaultSetUseStderr(useStderr bool) {
 
 // LogWriterDefaultWouldDrop wraps g_log_writer_default_would_drop
 // 
-// The function takes the following parameters:
-// 
-// 	- logLevel LogLevelFlags: log level, either from [type@GLib.LogLevelFlags], or a user-defined
-//    level 
-// 	- logDomain string (nullable): log domain 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_log_writer_default_would_drop.html
 //
-// Check whether [func@GLib.log_writer_default] and [func@GLib.log_default_handler] would
-// ignore a message with the given domain and level.
-// 
-// As with [func@GLib.log_default_handler], this function drops debug and informational
-// messages unless their log domain (or `all`) is listed in the space-separated
-// `G_MESSAGES_DEBUG` environment variable, or `DEBUG_INVOCATION=1` is set in
-// the environment, or by [func@GLib.log_writer_default_set_debug_domains].
-// 
-// This can be used when implementing log writers with the same filtering
-// behaviour as the default, but a different destination or output format:
-// 
-// ```c
-// if (g_log_writer_default_would_drop (log_level, log_domain))
-//   return G_LOG_WRITER_HANDLED;
-// ]|
-// 
-// or to skip an expensive computation if it is only needed for a debugging
-// message, and `G_MESSAGES_DEBUG` and `DEBUG_INVOCATION` are not set:
-// 
-// ```c
-// if (!g_log_writer_default_would_drop (G_LOG_LEVEL_DEBUG, G_LOG_DOMAIN))
-//   {
-//     g_autofree gchar *result = expensive_computation (my_object);
-// 
-//     g_debug ("my_object result: %s", result);
-//   }
-// ```
 func LogWriterDefaultWouldDrop(logLevel LogLevelFlags, logDomain string) bool {
 	var carg1 C.GLogLevelFlags // in, none, casted
 	var carg2 *C.char          // in, none, string, nullable-string
@@ -10713,31 +8849,8 @@ func LogWriterDefaultWouldDrop(logLevel LogLevelFlags, logDomain string) bool {
 
 // LogWriterFormatFields wraps g_log_writer_format_fields
 // 
-// The function takes the following parameters:
-// 
-// 	- logLevel LogLevelFlags: log level, either from [type@GLib.LogLevelFlags], or a user-defined
-//    level 
-// 	- fields []LogField: key&#x2013;value pairs of structured data forming
-//    the log message 
-// 	- useColor bool: `TRUE` to use
-//   [ANSI color escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code)
-//   when formatting the message, `FALSE` to not 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_log_writer_format_fields.html
 //
-// Format a structured log message as a string suitable for outputting to the
-// terminal (or elsewhere).
-// 
-// This will include the values of all fields it knows
-// how to interpret, which includes `MESSAGE` and `GLIB_DOMAIN` (see the
-// documentation for [func@GLib.log_structured]). It does not include values from
-// unknown fields.
-// 
-// The returned string does **not** have a trailing new-line character. It is
-// encoded in the character set of the current locale, which is not necessarily
-// UTF-8.
 func LogWriterFormatFields(logLevel LogLevelFlags, fields []LogField, useColor bool) string {
 	var carg1 C.GLogLevelFlags // in, none, casted
 	var carg2 *C.GLogField     // in, transfer: none, C Pointers: 1, Name: array[LogField], array (inner GLogField (*typesystem.Record), length-by: carg3)
@@ -10769,23 +8882,8 @@ func LogWriterFormatFields(logLevel LogLevelFlags, fields []LogField, useColor b
 
 // LogWriterIsJournald wraps g_log_writer_is_journald
 // 
-// The function takes the following parameters:
-// 
-// 	- outputFd int32: output file descriptor to check 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_log_writer_is_journald.html
 //
-// Check whether the given @output_fd file descriptor is a connection to the
-// systemd journal, or something else (like a log file or `stdout` or
-// `stderr`).
-// 
-// Invalid file descriptors are accepted and return `FALSE`, which allows for
-// the following construct without needing any additional error handling:
-// ```c
-// is_journald = g_log_writer_is_journald (fileno (stderr));
-// ```
 func LogWriterIsJournald(outputFd int32) bool {
 	var carg1 C.gint     // in, none, casted
 	var cret  C.gboolean // return
@@ -10806,18 +8904,8 @@ func LogWriterIsJournald(outputFd int32) bool {
 
 // LogWriterSupportsColor wraps g_log_writer_supports_color
 // 
-// The function takes the following parameters:
-// 
-// 	- outputFd int32: output file descriptor to check 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_log_writer_supports_color.html
 //
-// Check whether the given @output_fd file descriptor supports
-// [ANSI color escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code).
-// 
-// If so, they can safely be used when formatting log messages.
 func LogWriterSupportsColor(outputFd int32) bool {
 	var carg1 C.gint     // in, none, casted
 	var cret  C.gboolean // return
@@ -10838,111 +8926,8 @@ func LogWriterSupportsColor(outputFd int32) bool {
 
 // MainDepth wraps g_main_depth
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_main_depth.html
 //
-// Returns the depth of the stack of calls to
-// [method@GLib.MainContext.dispatch] on any #GMainContext in the current thread.
-// That is, when called from the toplevel, it gives 0. When
-// called from within a callback from [method@GLib.MainContext.iteration]
-// (or [method@GLib.MainLoop.run], etc.) it returns 1. When called from within
-// a callback to a recursive call to [method@GLib.MainContext.iteration],
-// it returns 2. And so forth.
-// 
-// This function is useful in a situation like the following:
-// Imagine an extremely simple "garbage collected" system.
-// 
-// |[&lt;!-- language="C" --&gt;
-// static GList *free_list;
-// 
-// gpointer
-// allocate_memory (gsize size)
-// {
-//   gpointer result = g_malloc (size);
-//   free_list = g_list_prepend (free_list, result);
-//   return result;
-// }
-// 
-// void
-// free_allocated_memory (void)
-// {
-//   GList *l;
-//   for (l = free_list; l; l = l-&gt;next);
-//     g_free (l-&gt;data);
-//   g_list_free (free_list);
-//   free_list = NULL;
-//  }
-// 
-// [...]
-// 
-// while (TRUE);
-//  {
-//    g_main_context_iteration (NULL, TRUE);
-//    free_allocated_memory();
-//   }
-// ]|
-// 
-// This works from an application, however, if you want to do the same
-// thing from a library, it gets more difficult, since you no longer
-// control the main loop. You might think you can simply use an idle
-// function to make the call to free_allocated_memory(), but that
-// doesn't work, since the idle function could be called from a
-// recursive callback. This can be fixed by using [func@GLib.main_depth]
-// 
-// |[&lt;!-- language="C" --&gt;
-// gpointer
-// allocate_memory (gsize size)
-// {
-//   FreeListBlock *block = g_new (FreeListBlock, 1);
-//   block-&gt;mem = g_malloc (size);
-//   block-&gt;depth = g_main_depth ();
-//   free_list = g_list_prepend (free_list, block);
-//   return block-&gt;mem;
-// }
-// 
-// void
-// free_allocated_memory (void)
-// {
-//   GList *l;
-//   
-//   int depth = g_main_depth ();
-//   for (l = free_list; l; );
-//     {
-//       GList *next = l-&gt;next;
-//       FreeListBlock *block = l-&gt;data;
-//       if (block-&gt;depth &gt; depth)
-//         {
-//           g_free (block-&gt;mem);
-//           g_free (block);
-//           free_list = g_list_delete_link (free_list, l);
-//         }
-//               
-//       l = next;
-//     }
-//   }
-// ]|
-// 
-// There is a temptation to use [func@GLib.main_depth] to solve
-// problems with reentrancy. For instance, while waiting for data
-// to be received from the network in response to a menu item,
-// the menu item might be selected again. It might seem that
-// one could make the menu item's callback return immediately
-// and do nothing if [func@GLib.main_depth] returns a value greater than 1.
-// However, this should be avoided since the user then sees selecting
-// the menu item do nothing. Furthermore, you'll find yourself adding
-// these checks all over your code, since there are doubtless many,
-// many things that the user could do. Instead, you can use the
-// following techniques:
-// 
-// 1. Use gtk_widget_set_sensitive() or modal dialogs to prevent
-//    the user from interacting with elements while the main
-//    loop is recursing.
-// 
-// 2. Avoid main loop recursion in situations where you can't handle
-//    arbitrary  callbacks. Instead, structure your code so that you
-//    simply return to the main loop and then get called again when
-//    there is more work to do.
 func MainDepth() int32 {
 	var cret C.gint // return, none, casted
 
@@ -10957,9 +8942,7 @@ func MainDepth() int32 {
 
 // MarkupErrorQuark wraps g_markup_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_markup_error_quark.html
 func MarkupErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -10974,29 +8957,8 @@ func MarkupErrorQuark() Quark {
 
 // MarkupEscapeText wraps g_markup_escape_text
 // 
-// The function takes the following parameters:
-// 
-// 	- text string: some valid UTF-8 text 
-// 	- length int: length of @text in bytes, or -1 if the text is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_markup_escape_text.html
 //
-// Escapes text so that the markup parser will parse it verbatim.
-// Less than, greater than, ampersand, etc. are replaced with the
-// corresponding entities. This function would typically be used
-// when writing out a file to be parsed with the markup parser.
-// 
-// Note that this function doesn't protect whitespace and line endings
-// from being processed according to the XML rules for normalization
-// of line endings and attribute values.
-// 
-// Note also that this function will produce character references in
-// the range of &amp;#x1; ... &amp;#x1f; for all control sequences
-// except for tabstop, newline and carriage return.  The character
-// references in this range are not valid XML 1.0, but they are
-// valid XML 1.1 and will be accepted by the GMarkup parser.
 func MarkupEscapeText(text string, length int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -11020,17 +8982,8 @@ func MarkupEscapeText(text string, length int) string {
 
 // MkdirWithParents wraps g_mkdir_with_parents
 // 
-// The function takes the following parameters:
-// 
-// 	- pathname string: a pathname in the GLib file name encoding 
-// 	- mode int32: permissions to use for newly created directories 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_mkdir_with_parents.html
 //
-// Create a directory if it doesn't already exist. Create intermediate
-// parent directories as needed, too.
 func MkdirWithParents(pathname string, mode int32) int32 {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gint   // in, none, casted
@@ -11053,9 +9006,7 @@ func MkdirWithParents(pathname string, mode int32) int32 {
 
 // NumberParserErrorQuark wraps g_number_parser_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_number_parser_error_quark.html
 func NumberParserErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -11070,59 +9021,8 @@ func NumberParserErrorQuark() Quark {
 
 // OnErrorQuery wraps g_on_error_query
 // 
-// The function takes the following parameters:
-// 
-// 	- prgName string: the program name, needed by gdb for the "[S]tack trace"
-//     option. If @prg_name is %NULL, g_get_prgname() is called to get
-//     the program name (which will work correctly if gdk_init() or
-//     gtk_init() has been called) 
+// see also https://docs.gtk.org/glib/func.g_on_error_query.html
 //
-// Prompts the user with
-// `[E]xit, [H]alt, show [S]tack trace or [P]roceed`.
-// This function is intended to be used for debugging use only.
-// The following example shows how it can be used together with
-// the g_log() functions.
-// 
-// |[&lt;!-- language="C" --&gt;
-// #include &lt;glib.h&gt;
-// 
-// static void
-// log_handler (const gchar   *log_domain,
-//              GLogLevelFlags log_level,
-//              const gchar   *message,
-//              gpointer       user_data)
-// {
-//   g_log_default_handler (log_domain, log_level, message, user_data);
-// 
-//   g_on_error_query (MY_PROGRAM_NAME);
-// }
-// 
-// int
-// main (int argc, char *argv[])
-// {
-//   g_log_set_handler (MY_LOG_DOMAIN,
-//                      G_LOG_LEVEL_WARNING |
-//                      G_LOG_LEVEL_ERROR |
-//                      G_LOG_LEVEL_CRITICAL,
-//                      log_handler,
-//                      NULL);
-//   ...
-// ]|
-// 
-// If "[E]xit" is selected, the application terminates with a call
-// to _exit(0).
-// 
-// If "[S]tack" trace is selected, g_on_error_stack_trace() is called.
-// This invokes gdb, which attaches to the current process and shows
-// a stack trace. The prompt is then shown again.
-// 
-// If "[P]roceed" is selected, the function returns.
-// 
-// This function may cause different actions on non-UNIX platforms.
-// 
-// On Windows consider using the `G_DEBUGGER` environment
-// variable (see [Running GLib Applications](running.html)) and
-// calling g_on_error_stack_trace() instead.
 func OnErrorQuery(prgName string) {
 	var carg1 *C.gchar // in, none, string
 
@@ -11135,24 +9035,8 @@ func OnErrorQuery(prgName string) {
 
 // OnErrorStackTrace wraps g_on_error_stack_trace
 // 
-// The function takes the following parameters:
-// 
-// 	- prgName string (nullable): the program name, needed by gdb for the
-//   "[S]tack trace" option, or `NULL` to use a default string 
+// see also https://docs.gtk.org/glib/func.g_on_error_stack_trace.html
 //
-// Invokes gdb, which attaches to the current process and shows a
-// stack trace. Called by g_on_error_query() when the "[S]tack trace"
-// option is selected. You can get the current process's program name
-// with g_get_prgname(), assuming that you have called gtk_init() or
-// gdk_init().
-// 
-// This function may cause different actions on non-UNIX platforms.
-// 
-// When running on Windows, this function is *not* called by
-// g_on_error_query(). If called directly, it will raise an
-// exception, which will crash the program. If the `G_DEBUGGER` environment
-// variable is set, a debugger will be invoked to attach and
-// handle that exception (see [Running GLib Applications](running.html)).
 func OnErrorStackTrace(prgName string) {
 	var carg1 *C.gchar // in, none, string, nullable-string
 
@@ -11167,9 +9051,7 @@ func OnErrorStackTrace(prgName string) {
 
 // OptionErrorQuark wraps g_option_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_option_error_quark.html
 func OptionErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -11184,29 +9066,8 @@ func OptionErrorQuark() Quark {
 
 // ParseDebugString wraps g_parse_debug_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): a list of debug options separated by colons, spaces, or
-// commas, or %NULL. 
-// 	- keys []DebugKey: pointer to an array of #GDebugKey which associate
-//     strings with bit flags. 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_parse_debug_string.html
 //
-// Parses a string containing debugging options
-// into a %guint containing bit flags. This is used
-// within GDK and GTK to parse the debug options passed on the
-// command line or through environment variables.
-// 
-// If @string is equal to "all", all flags are set. Any flags
-// specified along with "all" in @string are inverted; thus,
-// "all,foo,bar" or "foo,bar,all" sets all flags except those
-// corresponding to "foo" and "bar".
-// 
-// If @string is equal to "help", all the available keys in @keys
-// are printed out to standard error.
 func ParseDebugString(str string, keys []DebugKey) uint {
 	var carg1 *C.gchar     // in, none, string, nullable-string
 	var carg2 *C.GDebugKey // in, transfer: none, C Pointers: 1, Name: array[DebugKey], array (inner GDebugKey (*typesystem.Record), length-by: carg3)
@@ -11235,20 +9096,8 @@ func ParseDebugString(str string, keys []DebugKey) uint {
 
 // PathGetBasename wraps g_path_get_basename
 // 
-// The function takes the following parameters:
-// 
-// 	- fileName string: the name of the file 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_path_get_basename.html
 //
-// Gets the last component of the filename.
-// 
-// If @file_name ends with a directory separator it gets the component
-// before the last slash. If @file_name consists only of directory
-// separators (and on Windows, possibly a drive letter), a single
-// separator is returned. If @file_name is empty, it gets ".".
 func PathGetBasename(fileName string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -11269,20 +9118,8 @@ func PathGetBasename(fileName string) string {
 
 // PathGetDirname wraps g_path_get_dirname
 // 
-// The function takes the following parameters:
-// 
-// 	- fileName string: the name of the file 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_path_get_dirname.html
 //
-// Gets the directory components of a file name. For example, the directory
-// component of `/usr/bin/test` is `/usr/bin`. The directory component of `/`
-// is `/`.
-// 
-// If the file name has no directory components "." is returned.
-// The returned string should be freed when no longer needed.
 func PathGetDirname(fileName string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -11303,38 +9140,8 @@ func PathGetDirname(fileName string) string {
 
 // PathIsAbsolute wraps g_path_is_absolute
 // 
-// The function takes the following parameters:
-// 
-// 	- fileName string: a file name 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_path_is_absolute.html
 //
-// Returns %TRUE if the given @file_name is an absolute file name.
-// Note that this is a somewhat vague concept on Windows.
-// 
-// On POSIX systems, an absolute file name is well-defined. It always
-// starts from the single root directory. For example "/usr/local".
-// 
-// On Windows, the concepts of current drive and drive-specific
-// current directory introduce vagueness. This function interprets as
-// an absolute file name one that either begins with a directory
-// separator such as "\Users\tml" or begins with the root on a drive,
-// for example "C:\Windows". The first case also includes UNC paths
-// such as "\\\\myserver\docs\foo". In all cases, either slashes or
-// backslashes are accepted.
-// 
-// Note that a file name relative to the current drive root does not
-// truly specify a file uniquely over time and across processes, as
-// the current drive is a per-process value and can be changed.
-// 
-// File names relative the current directory on some specific drive,
-// such as "D:foo/bar", are not interpreted as absolute by this
-// function, but they obviously are not relative to the normal current
-// directory as returned by getcwd() or g_get_current_dir()
-// either. Such paths should be avoided, or need to be handled using
-// Windows-specific code.
 func PathIsAbsolute(fileName string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -11356,17 +9163,8 @@ func PathIsAbsolute(fileName string) bool {
 
 // PathSkipRoot wraps g_path_skip_root
 // 
-// The function takes the following parameters:
-// 
-// 	- fileName string: a file name 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_path_skip_root.html
 //
-// Returns a pointer into @file_name after the root component,
-// i.e. after the "/" in UNIX or "C:\" under Windows. If @file_name
-// is not an absolute path it returns %NULL.
 func PathSkipRoot(fileName string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, none, string, nullable
@@ -11388,21 +9186,8 @@ func PathSkipRoot(fileName string) string {
 
 // PatternMatchSimple wraps g_pattern_match_simple
 // 
-// The function takes the following parameters:
-// 
-// 	- pattern string: the UTF-8 encoded pattern 
-// 	- str string: the UTF-8 encoded string to match 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_pattern_match_simple.html
 //
-// Matches a string against a pattern given as a string.
-// 
-// If this
-// function is to be called in a loop, it&#x2019;s more efficient to compile
-// the pattern once with [ctor@GLib.PatternSpec.new] and call
-// [method@GLib.PatternSpec.match_string] repeatedly.
 func PatternMatchSimple(pattern string, str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -11428,33 +9213,8 @@ func PatternMatchSimple(pattern string, str string) bool {
 
 // Poll wraps g_poll
 // 
-// The function takes the following parameters:
-// 
-// 	- fds *PollFD: file descriptors to poll 
-// 	- nfds uint: the number of file descriptors in @fds 
-// 	- timeout int32: amount of time to wait, in milliseconds, or -1 to wait forever 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_poll.html
 //
-// Polls @fds, as with the poll() system call, but portably. (On
-// systems that don't have poll(), it is emulated using select().)
-// This is used internally by #GMainContext, but it can be called
-// directly if you need to block until a file descriptor is ready, but
-// don't want to run the full main loop.
-// 
-// Each element of @fds is a #GPollFD describing a single file
-// descriptor to poll. The @fd field indicates the file descriptor,
-// and the @events field indicates the events to poll for. On return,
-// the @revents fields will be filled with the events that actually
-// occurred.
-// 
-// On POSIX systems, the file descriptors in @fds can be any sort of
-// file descriptor, but the situation is much more complicated on
-// Windows. If you need to use g_poll() in code that has to run on
-// Windows, the easiest solution is to construct all of your
-// #GPollFDs with g_io_channel_win32_make_pollfd().
 func Poll(fds *PollFD, nfds uint, timeout int32) int32 {
 	var carg1 *C.GPollFD // in, none, converted
 	var carg2 C.guint    // in, none, casted
@@ -11479,22 +9239,8 @@ func Poll(fds *PollFD, nfds uint, timeout int32) int32 {
 
 // PropagateError wraps g_propagate_error
 // 
-// The function takes the following parameters:
-// 
-// 	- src error: error to move into the return location 
-// 
-// The function returns the following values:
-// 
-// 	- dest error (nullable): error return location 
+// see also https://docs.gtk.org/glib/func.g_propagate_error.html
 //
-// If @dest is %NULL, free @src; otherwise, moves @src into `*dest`.
-// The error variable @dest points to must be %NULL.
-// 
-// @src must be non-%NULL.
-// 
-// Note that @src is no longer valid after this call. If you want
-// to keep using the same GError*, you need to set it to %NULL
-// after calling this function on it.
 func PropagateError(src error) error {
 	var carg2 *C.GError // in, full, converted
 	var carg1 *C.GError // out, full, converted, nullable
@@ -11515,30 +9261,8 @@ func PropagateError(src error) error {
 
 // QuarkFromStaticString wraps g_quark_from_static_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): a string 
-// 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_quark_from_static_string.html
 //
-// Gets the #GQuark identifying the given (static) string. If the
-// string does not currently have an associated #GQuark, a new #GQuark
-// is created, linked to the given string.
-// 
-// Note that this function is identical to g_quark_from_string() except
-// that if a new #GQuark is created the string itself is used rather
-// than a copy. This saves memory, but can only be used if the string
-// will continue to exist until the program terminates. It can be used
-// with statically allocated strings in the main program, but not with
-// statically allocated memory in dynamically loaded modules, if you
-// expect to ever unload the module again (e.g. do not use this
-// function in GTK theme engines).
-// 
-// This function must not be used before library constructors have finished
-// running. In particular, this means it cannot be used to initialize global
-// variables in C++.
 func QuarkFromStaticString(str string) Quark {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var cret  C.GQuark // return, none, casted, alias
@@ -11560,21 +9284,8 @@ func QuarkFromStaticString(str string) Quark {
 
 // QuarkFromString wraps g_quark_from_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): a string 
-// 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_quark_from_string.html
 //
-// Gets the #GQuark identifying the given string. If the string does
-// not currently have an associated #GQuark, a new #GQuark is created,
-// using a copy of the string.
-// 
-// This function must not be used before library constructors have finished
-// running. In particular, this means it cannot be used to initialize global
-// variables in C++.
 func QuarkFromString(str string) Quark {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var cret  C.GQuark // return, none, casted, alias
@@ -11596,15 +9307,8 @@ func QuarkFromString(str string) Quark {
 
 // QuarkToString wraps g_quark_to_string
 // 
-// The function takes the following parameters:
-// 
-// 	- quark Quark: a #GQuark. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_quark_to_string.html
 //
-// Gets the string associated with the given #GQuark.
 func QuarkToString(quark Quark) string {
 	var carg1 C.GQuark // in, none, casted, alias
 	var cret  *C.gchar // return, none, string
@@ -11623,22 +9327,8 @@ func QuarkToString(quark Quark) string {
 
 // QuarkTryString wraps g_quark_try_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): a string 
-// 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_quark_try_string.html
 //
-// Gets the #GQuark associated with the given string, or 0 if string is
-// %NULL or it has no associated #GQuark.
-// 
-// If you want the GQuark to be created if it doesn't already exist,
-// use g_quark_from_string() or g_quark_from_static_string().
-// 
-// This function must not be used before library constructors have finished
-// running.
 func QuarkTryString(str string) Quark {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var cret  C.GQuark // return, none, casted, alias
@@ -11660,11 +9350,8 @@ func QuarkTryString(str string) Quark {
 
 // RandomDouble wraps g_random_double
 // 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_random_double.html
 //
-// Returns a random #gdouble equally distributed over the range [0..1).
 func RandomDouble() float64 {
 	var cret C.gdouble // return, none, casted
 
@@ -11679,17 +9366,8 @@ func RandomDouble() float64 {
 
 // RandomDoubleRange wraps g_random_double_range
 // 
-// The function takes the following parameters:
-// 
-// 	- begin float64: lower closed bound of the interval 
-// 	- end float64: upper open bound of the interval 
-// 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_random_double_range.html
 //
-// Returns a random #gdouble equally distributed over the range
-// [@begin..@end).
 func RandomDoubleRange(begin float64, end float64) float64 {
 	var carg1 C.gdouble // in, none, casted
 	var carg2 C.gdouble // in, none, casted
@@ -11711,12 +9389,8 @@ func RandomDoubleRange(begin float64, end float64) float64 {
 
 // RandomInt wraps g_random_int
 // 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/func.g_random_int.html
 //
-// Return a random #guint32 equally distributed over the range
-// [0..2^32-1].
 func RandomInt() uint32 {
 	var cret C.guint32 // return, none, casted
 
@@ -11731,17 +9405,8 @@ func RandomInt() uint32 {
 
 // RandomIntRange wraps g_random_int_range
 // 
-// The function takes the following parameters:
-// 
-// 	- begin int32: lower closed bound of the interval 
-// 	- end int32: upper open bound of the interval 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_random_int_range.html
 //
-// Returns a random #gint32 equally distributed over the range
-// [@begin..@end-1].
 func RandomIntRange(begin int32, end int32) int32 {
 	var carg1 C.gint32 // in, none, casted
 	var carg2 C.gint32 // in, none, casted
@@ -11763,12 +9428,8 @@ func RandomIntRange(begin int32, end int32) int32 {
 
 // RandomSetSeed wraps g_random_set_seed
 // 
-// The function takes the following parameters:
-// 
-// 	- seed uint32: a value to reinitialize the global random number generator 
+// see also https://docs.gtk.org/glib/func.g_random_set_seed.html
 //
-// Sets the seed for the global random number generator, which is used
-// by the g_random_* functions, to @seed.
 func RandomSetSeed(seed uint32) {
 	var carg1 C.guint32 // in, none, casted
 
@@ -11780,16 +9441,8 @@ func RandomSetSeed(seed uint32) {
 
 // RefCountCompare wraps g_ref_count_compare
 // 
-// The function takes the following parameters:
-// 
-// 	- rc *int32: the address of a reference count variable 
-// 	- val int32: the value to compare 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_ref_count_compare.html
 //
-// Compares the current value of @rc with @val.
 func RefCountCompare(rc *int32, val int32) bool {
 	var carg1 *C.grefcount // in, transfer: none, C Pointers: 1, Name: gint
 	var carg2 C.gint       // in, none, casted
@@ -11815,11 +9468,8 @@ func RefCountCompare(rc *int32, val int32) bool {
 
 // RefCountInit wraps g_ref_count_init
 // 
-// The function returns the following values:
-// 
-// 	- rc int32: the address of a reference count variable 
+// see also https://docs.gtk.org/glib/func.g_ref_count_init.html
 //
-// Initializes a reference count variable to 1.
 func RefCountInit() int32 {
 	var carg1 C.grefcount // out, full, casted
 
@@ -11834,15 +9484,8 @@ func RefCountInit() int32 {
 
 // RefStringAcquire wraps g_ref_string_acquire
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a reference counted string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ref_string_acquire.html
 //
-// Acquires a reference on a string.
 func RefStringAcquire(str string) string {
 	var carg1 *C.char // in, none, string
 	var cret  *C.char // return, full, string
@@ -11863,15 +9506,8 @@ func RefStringAcquire(str string) string {
 
 // RefStringLength wraps g_ref_string_length
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a reference counted string 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_ref_string_length.html
 //
-// Retrieves the length of @str.
 func RefStringLength(str string) uint {
 	var carg1 *C.char // in, none, string
 	var cret  C.gsize // return, none, casted
@@ -11891,16 +9527,8 @@ func RefStringLength(str string) uint {
 
 // NewRefString wraps g_ref_string_new
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a NUL-terminated string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ref_string_new.html
 //
-// Creates a new reference counted string and copies the contents of @str
-// into it.
 func NewRefString(str string) string {
 	var carg1 *C.char // in, none, string
 	var cret  *C.char // return, full, string
@@ -11921,20 +9549,8 @@ func NewRefString(str string) string {
 
 // RefStringNewIntern wraps g_ref_string_new_intern
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a NUL-terminated string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ref_string_new_intern.html
 //
-// Creates a new reference counted string and copies the content of @str
-// into it.
-// 
-// If you call this function multiple times with the same @str, or with
-// the same contents of @str, it will return a new reference, instead of
-// creating a new string.
 func RefStringNewIntern(str string) string {
 	var carg1 *C.char // in, none, string
 	var cret  *C.char // return, full, string
@@ -11955,20 +9571,8 @@ func RefStringNewIntern(str string) string {
 
 // RefStringNewLen wraps g_ref_string_new_len
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string 
-// 	- len int: length of @str to use, or -1 if @str is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_ref_string_new_len.html
 //
-// Creates a new reference counted string and copies the contents of @str
-// into it, up to @len bytes.
-// 
-// Since this function does not stop at nul bytes, it is the caller's
-// responsibility to ensure that @str has at least @len addressable bytes.
 func RefStringNewLen(str string, len int) string {
 	var carg1 *C.char  // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -11992,12 +9596,8 @@ func RefStringNewLen(str string, len int) string {
 
 // RefStringRelease wraps g_ref_string_release
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a reference counted string 
+// see also https://docs.gtk.org/glib/func.g_ref_string_release.html
 //
-// Releases a reference on a string; if it was the last reference, the
-// resources allocated by the string are freed as well.
 func RefStringRelease(str string) {
 	var carg1 *C.char // in, none, string
 
@@ -12009,15 +9609,9 @@ func RefStringRelease(str string) {
 }
 
 // ReloadUserSpecialDirsCache wraps g_reload_user_special_dirs_cache
-//
-// Resets the cache used for g_get_user_special_dir(), so
-// that the latest on-disk version is used. Call this only
-// if you just changed the data on disk yourself.
 // 
-// Due to thread safety issues this may cause leaking of strings
-// that were previously returned from g_get_user_special_dir()
-// that can't be freed. We ensure to only leak the data for
-// the directories that actually changed value though.
+// see also https://docs.gtk.org/glib/func.g_reload_user_special_dirs_cache.html
+//
 func ReloadUserSpecialDirsCache() {
 
 	C.g_reload_user_special_dirs_cache()
@@ -12025,21 +9619,8 @@ func ReloadUserSpecialDirsCache() {
 
 // SetApplicationName wraps g_set_application_name
 // 
-// The function takes the following parameters:
-// 
-// 	- applicationName string: localized name of the application 
+// see also https://docs.gtk.org/glib/func.g_set_application_name.html
 //
-// Sets a human-readable name for the application. This name should be
-// localized if possible, and is intended for display to the user.
-// Contrast with g_set_prgname(), which sets a non-localized name.
-// g_set_prgname() will be called automatically by gtk_init(),
-// but g_set_application_name() will not.
-// 
-// Note that for thread safety reasons, this function can only
-// be called once.
-// 
-// The application name will be used in contexts such as error messages,
-// or when displaying an application's name in the task list.
 func SetApplicationName(applicationName string) {
 	var carg1 *C.gchar // in, none, string
 
@@ -12052,21 +9633,8 @@ func SetApplicationName(applicationName string) {
 
 // SetErrorLiteral wraps g_set_error_literal
 // 
-// The function takes the following parameters:
-// 
-// 	- domain Quark: error domain 
-// 	- code int32: error code 
-// 	- message string: error message 
-// 
-// The function returns the following values:
-// 
-// 	- err error: a return location for a #GError 
+// see also https://docs.gtk.org/glib/func.g_set_error_literal.html
 //
-// Does nothing if @err is %NULL; if @err is non-%NULL, then `*err`
-// must be %NULL. A new #GError is created and assigned to `*err`.
-// Unlike g_set_error(), @message is not a printf()-style format string.
-// Use this function if @message contains text you don't have control over,
-// that could include printf() escape sequences.
 func SetErrorLiteral(domain Quark, code int32, message string) error {
 	var carg2 C.GQuark  // in, none, casted, alias
 	var carg3 C.gint    // in, none, casted
@@ -12092,25 +9660,8 @@ func SetErrorLiteral(domain Quark, code int32, message string) error {
 
 // SetPrgname wraps g_set_prgname
 // 
-// The function takes the following parameters:
-// 
-// 	- prgname string: the name of the program. 
+// see also https://docs.gtk.org/glib/func.g_set_prgname.html
 //
-// Sets the name of the program. This name should not be localized,
-// in contrast to g_set_application_name().
-// 
-// If you are using #GApplication the program name is set in
-// g_application_run(). In case of GDK or GTK it is set in
-// gdk_init(), which is called by gtk_init() and the
-// #GtkApplication::startup handler. By default, the program name is
-// found by taking the last component of @argv[0].
-// 
-// Since GLib 2.72, this function can be called multiple times
-// and is fully thread safe. Prior to GLib 2.72, this function
-// could only be called once per process.
-// 
-// See the [GTK documentation](https://docs.gtk.org/gtk4/migrating-3to4.html#set-a-proper-application-id)
-// for requirements on integrating g_set_prgname() with GTK applications.
 func SetPrgname(prgname string) {
 	var carg1 *C.gchar // in, none, string
 
@@ -12123,36 +9674,8 @@ func SetPrgname(prgname string) {
 
 // Setenv wraps g_setenv
 // 
-// The function takes the following parameters:
-// 
-// 	- variable string: the environment variable to set, must not
-//     contain '='. 
-// 	- value string: the value for to set the variable to. 
-// 	- overwrite bool: whether to change the variable if it already exists. 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_setenv.html
 //
-// Sets an environment variable. On UNIX, both the variable's name and
-// value can be arbitrary byte strings, except that the variable's name
-// cannot contain '='. On Windows, they should be in UTF-8.
-// 
-// Note that on some systems, when variables are overwritten, the memory
-// used for the previous variables and its value isn't reclaimed.
-// 
-// You should be mindful of the fact that environment variable handling
-// in UNIX is not thread-safe, and your program may crash if one thread
-// calls g_setenv() while another thread is calling getenv(). (And note
-// that many functions, such as gettext(), call getenv() internally.)
-// This function is only safe to use at the very start of your program,
-// before creating any other threads (or creating objects that create
-// worker threads of their own).
-// 
-// If you need to set up the environment for a child process, you can
-// use g_get_environ() to get an environment array, modify that with
-// g_environ_setenv() and g_environ_unsetenv(), and then pass that
-// array directly to execvpe(), g_spawn_async(), or the like.
 func Setenv(variable string, value string, overwrite bool) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -12183,9 +9706,7 @@ func Setenv(variable string, value string, overwrite bool) bool {
 
 // ShellErrorQuark wraps g_shell_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_shell_error_quark.html
 func ShellErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -12200,36 +9721,8 @@ func ShellErrorQuark() Quark {
 
 // ShellParseArgv wraps g_shell_parse_argv
 // 
-// The function takes the following parameters:
-// 
-// 	- commandLine string: command line to parse 
-// 
-// The function returns the following values:
-// 
-// 	- argcp int32: return location for number of args 
-// 	- argvp []string: 
-//   return location for array of args 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_shell_parse_argv.html
 //
-// Parses a command line into an argument vector, in much the same way
-// the shell would, but without many of the expansions the shell would
-// perform (variable expansion, globs, operators, filename expansion,
-// etc. are not supported).
-// 
-// The results are defined to be the same as those you would get from
-// a UNIX98 `/bin/sh`, as long as the input contains none of the
-// unsupported shell expansions. If the input does contain such expansions,
-// they are passed through literally.
-// 
-// Possible errors are those from the %G_SHELL_ERROR domain.
-// 
-// In particular, if @command_line is an empty string (or a string containing
-// only whitespace), %G_SHELL_ERROR_EMPTY_STRING will be returned. It&#x2019;s
-// guaranteed that @argvp will be a non-empty array if this function returns
-// successfully.
-// 
-// Free the returned vector with g_strfreev().
 func ShellParseArgv(commandLine string) ([]string, bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.gint     // implicit
@@ -12263,24 +9756,8 @@ func ShellParseArgv(commandLine string) ([]string, bool, error) {
 
 // ShellQuote wraps g_shell_quote
 // 
-// The function takes the following parameters:
-// 
-// 	- unquotedString string: a literal string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_shell_quote.html
 //
-// Quotes a string so that the shell (/bin/sh) will interpret the
-// quoted string to mean @unquoted_string.
-// 
-// If you pass a filename to the shell, for example, you should first
-// quote it with this function.
-// 
-// The return value must be freed with g_free().
-// 
-// The quoting style used is undefined (single or double quotes may be
-// used).
 func ShellQuote(unquotedString string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -12301,42 +9778,8 @@ func ShellQuote(unquotedString string) string {
 
 // ShellUnquote wraps g_shell_unquote
 // 
-// The function takes the following parameters:
-// 
-// 	- quotedString string: shell-quoted string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_shell_unquote.html
 //
-// Unquotes a string as the shell (/bin/sh) would.
-// 
-// This function only handles quotes; if a string contains file globs,
-// arithmetic operators, variables, backticks, redirections, or other
-// special-to-the-shell features, the result will be different from the
-// result a real shell would produce (the variables, backticks, etc.
-// will be passed through literally instead of being expanded).
-// 
-// This function is guaranteed to succeed if applied to the result of
-// g_shell_quote(). If it fails, it returns %NULL and sets the
-// error.
-// 
-// The @quoted_string need not actually contain quoted or escaped text;
-// g_shell_unquote() simply goes through the string and unquotes/unescapes
-// anything that the shell would. Both single and double quotes are
-// handled, as are escapes including escaped newlines.
-// 
-// The return value must be freed with g_free().
-// 
-// Possible errors are in the %G_SHELL_ERROR domain.
-// 
-// Shell quoting rules are a bit strange. Single quotes preserve the
-// literal string exactly. escape sequences are not allowed; not even
-// `\'` - if you want a `'` in the quoted text, you have to do something
-// like `'foo'\''bar'`. Double quotes allow `$`, ```, `"`, `\`, and
-// newline to be escaped with backslash. Otherwise double quotes
-// preserve things literally.
 func ShellUnquote(quotedString string) (string, error) {
 	var carg1 *C.gchar  // in, none, string
 	var cret  *C.gchar  // return, full, string
@@ -12362,13 +9805,7 @@ func ShellUnquote(quotedString string) (string, error) {
 
 // SliceGetConfig wraps g_slice_get_config
 // 
-// The function takes the following parameters:
-// 
-// 	- ckey SliceConfig 
-// 
-// The function returns the following values:
-// 
-// 	- goret int64 
+// see also https://docs.gtk.org/glib/func.g_slice_get_config.html
 func SliceGetConfig(ckey SliceConfig) int64 {
 	var carg1 C.GSliceConfig // in, none, casted
 	var cret  C.gint64       // return, none, casted
@@ -12387,15 +9824,7 @@ func SliceGetConfig(ckey SliceConfig) int64 {
 
 // SliceGetConfigState wraps g_slice_get_config_state
 // 
-// The function takes the following parameters:
-// 
-// 	- ckey SliceConfig 
-// 	- address int64 
-// 	- nValues *uint 
-// 
-// The function returns the following values:
-// 
-// 	- goret *int64 
+// see also https://docs.gtk.org/glib/func.g_slice_get_config_state.html
 func SliceGetConfigState(ckey SliceConfig, address int64, nValues *uint) *int64 {
 	var carg1 C.GSliceConfig // in, none, casted
 	var carg2 C.gint64       // in, none, casted
@@ -12424,10 +9853,7 @@ func SliceGetConfigState(ckey SliceConfig, address int64, nValues *uint) *int64 
 
 // SliceSetConfig wraps g_slice_set_config
 // 
-// The function takes the following parameters:
-// 
-// 	- ckey SliceConfig 
-// 	- value int64 
+// see also https://docs.gtk.org/glib/func.g_slice_set_config.html
 func SliceSetConfig(ckey SliceConfig, value int64) {
 	var carg1 C.GSliceConfig // in, none, casted
 	var carg2 C.gint64       // in, none, casted
@@ -12442,20 +9868,8 @@ func SliceSetConfig(ckey SliceConfig, value int64) {
 
 // SpacedPrimesClosest wraps g_spaced_primes_closest
 // 
-// The function takes the following parameters:
-// 
-// 	- num uint: a #guint 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_spaced_primes_closest.html
 //
-// Gets the smallest prime number from a built-in array of primes which
-// is larger than @num. This is used within GLib to calculate the optimum
-// size of a #GHashTable.
-// 
-// The built-in array of primes ranges from 11 to 13845163 such that
-// each prime is approximately 1.5-2 times the previous prime.
 func SpacedPrimesClosest(num uint) uint {
 	var carg1 C.guint // in, none, casted
 	var cret  C.guint // return, none, casted
@@ -12474,54 +9888,8 @@ func SpacedPrimesClosest(num uint) uint {
 
 // SpawnCheckWaitStatus wraps g_spawn_check_wait_status
 // 
-// The function takes the following parameters:
-// 
-// 	- waitStatus int32: A platform-specific wait status as returned from g_spawn_sync() 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_spawn_check_wait_status.html
 //
-// Set @error if @wait_status indicates the child exited abnormally
-// (e.g. with a nonzero exit code, or via a fatal signal).
-// 
-// The g_spawn_sync() and g_child_watch_add() family of APIs return the
-// status of subprocesses encoded in a platform-specific way.
-// On Unix, this is guaranteed to be in the same format waitpid() returns,
-// and on Windows it is guaranteed to be the result of GetExitCodeProcess().
-// 
-// Prior to the introduction of this function in GLib 2.34, interpreting
-// @wait_status required use of platform-specific APIs, which is problematic
-// for software using GLib as a cross-platform layer.
-// 
-// Additionally, many programs simply want to determine whether or not
-// the child exited successfully, and either propagate a #GError or
-// print a message to standard error. In that common case, this function
-// can be used. Note that the error message in @error will contain
-// human-readable information about the wait status.
-// 
-// The @domain and @code of @error have special semantics in the case
-// where the process has an "exit code", as opposed to being killed by
-// a signal. On Unix, this happens if WIFEXITED() would be true of
-// @wait_status. On Windows, it is always the case.
-// 
-// The special semantics are that the actual exit code will be the
-// code set in @error, and the domain will be %G_SPAWN_EXIT_ERROR.
-// This allows you to differentiate between different exit codes.
-// 
-// If the process was terminated by some means other than an exit
-// status (for example if it was killed by a signal), the domain will be
-// %G_SPAWN_ERROR and the code will be %G_SPAWN_ERROR_FAILED.
-// 
-// This function just offers convenience; you can of course also check
-// the available platform via a macro such as %G_OS_UNIX, and use
-// WIFEXITED() and WEXITSTATUS() on @wait_status directly. Do not attempt
-// to scan or parse the error message string; it may be translated and/or
-// change in future versions of GLib.
-// 
-// Prior to version 2.70, g_spawn_check_exit_status() provides the same
-// functionality, although under a misleading name.
 func SpawnCheckWaitStatus(waitStatus int32) (bool, error) {
 	var carg1 C.gint     // in, none, casted
 	var cret  C.gboolean // return
@@ -12547,14 +9915,8 @@ func SpawnCheckWaitStatus(waitStatus int32) (bool, error) {
 
 // SpawnClosePid wraps g_spawn_close_pid
 // 
-// The function takes the following parameters:
-// 
-// 	- pid Pid: The process reference to close 
+// see also https://docs.gtk.org/glib/func.g_spawn_close_pid.html
 //
-// On some platforms, notably Windows, the #GPid type represents a resource
-// which must be closed to prevent resource leaking. g_spawn_close_pid()
-// is provided for this purpose. It should be used on all platforms, even
-// though it doesn't do anything under UNIX.
 func SpawnClosePid(pid Pid) {
 	var carg1 C.GPid // in, none, casted, alias
 
@@ -12566,25 +9928,8 @@ func SpawnClosePid(pid Pid) {
 
 // SpawnCommandLineAsync wraps g_spawn_command_line_async
 // 
-// The function takes the following parameters:
-// 
-// 	- commandLine string: a command line 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_spawn_command_line_async.html
 //
-// A simple version of g_spawn_async() that parses a command line with
-// g_shell_parse_argv() and passes it to g_spawn_async().
-// 
-// Runs a command line in the background. Unlike g_spawn_async(), the
-// %G_SPAWN_SEARCH_PATH flag is enabled, other flags are not. Note
-// that %G_SPAWN_SEARCH_PATH can have security implications, so
-// consider using g_spawn_async() directly if appropriate. Possible
-// errors are those from g_shell_parse_argv() and g_spawn_async().
-// 
-// The same concerns on Windows apply as for g_spawn_command_line_sync().
 func SpawnCommandLineAsync(commandLine string) (bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -12611,47 +9956,8 @@ func SpawnCommandLineAsync(commandLine string) (bool, error) {
 
 // SpawnCommandLineSync wraps g_spawn_command_line_sync
 // 
-// The function takes the following parameters:
-// 
-// 	- commandLine string: a command line 
-// 
-// The function returns the following values:
-// 
-// 	- standardOutput string: return location for child output 
-// 	- standardError string: return location for child errors 
-// 	- waitStatus int32: return location for child wait status, as returned by waitpid() 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_spawn_command_line_sync.html
 //
-// A simple version of g_spawn_sync() with little-used parameters
-// removed, taking a command line instead of an argument vector.
-// 
-// See g_spawn_sync() for full details.
-// 
-// The @command_line argument will be parsed by g_shell_parse_argv().
-// 
-// Unlike g_spawn_sync(), the %G_SPAWN_SEARCH_PATH flag is enabled.
-// Note that %G_SPAWN_SEARCH_PATH can have security implications, so
-// consider using g_spawn_sync() directly if appropriate.
-// 
-// Possible errors are those from g_spawn_sync() and those
-// from g_shell_parse_argv().
-// 
-// If @wait_status is non-%NULL, the platform-specific status of
-// the child is stored there; see the documentation of
-// g_spawn_check_wait_status() for how to use and interpret this.
-// On Unix platforms, note that it is usually not equal
-// to the integer passed to `exit()` or returned from `main()`.
-// 
-// On Windows, please note the implications of g_shell_parse_argv()
-// parsing @command_line. Parsing is done according to Unix shell rules, not
-// Windows command interpreter rules.
-// Space is a separator, and backslashes are
-// special. Thus you cannot simply pass a @command_line containing
-// canonical Windows paths, like "c:\\program files\\app\\app.exe", as
-// the backslashes will be eaten, and the space will act as a
-// separator. You need to enclose such paths with single quotes, like
-// "'c:\\program files\\app\\app.exe' 'e:\\folder\\argument.txt'".
 func SpawnCommandLineSync(commandLine string) (string, string, int32, bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // out, transfer: full, C Pointers: 1, Name: array[unknown], optional, array (inner unknown, zero-terminated)
@@ -12691,9 +9997,7 @@ func SpawnCommandLineSync(commandLine string) (string, string, int32, bool, erro
 
 // SpawnErrorQuark wraps g_spawn_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_spawn_error_quark.html
 func SpawnErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -12708,9 +10012,7 @@ func SpawnErrorQuark() Quark {
 
 // SpawnExitErrorQuark wraps g_spawn_exit_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_spawn_exit_error_quark.html
 func SpawnExitErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -12725,19 +10027,8 @@ func SpawnExitErrorQuark() Quark {
 
 // Stpcpy wraps g_stpcpy
 // 
-// The function takes the following parameters:
-// 
-// 	- dest string: destination buffer 
-// 	- src string: source string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_stpcpy.html
 //
-// Copies a nul-terminated string into the destination buffer, including
-// the trailing nul byte, and returns a pointer to the trailing nul byte
-// in `dest`.  The return value is useful for concatenating multiple
-// strings without having to repeatedly scan for the end.
 func Stpcpy(dest string, src string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.char  // in, none, string
@@ -12762,16 +10053,8 @@ func Stpcpy(dest string, src string) string {
 
 // StrHasPrefix wraps g_str_has_prefix
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string to look in 
-// 	- prefix string: the prefix to look for 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_str_has_prefix.html
 //
-// Looks whether the string @str begins with @prefix.
 func StrHasPrefix(str string, prefix string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -12797,16 +10080,8 @@ func StrHasPrefix(str string, prefix string) bool {
 
 // StrHasSuffix wraps g_str_has_suffix
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string to look in 
-// 	- suffix string: the suffix to look for 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_str_has_suffix.html
 //
-// Looks whether a string ends with @suffix.
 func StrHasSuffix(str string, suffix string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -12832,16 +10107,8 @@ func StrHasSuffix(str string, suffix string) bool {
 
 // StrIsASCII wraps g_str_is_ascii
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_str_is_ascii.html
 //
-// Determines if a string is pure ASCII. A string is pure ASCII if it
-// contains no bytes with the high bit set.
 func StrIsASCII(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -12863,38 +10130,8 @@ func StrIsASCII(str string) bool {
 
 // StrMatchString wraps g_str_match_string
 // 
-// The function takes the following parameters:
-// 
-// 	- searchTerm string: the search term from the user 
-// 	- potentialHit string: the text that may be a hit 
-// 	- acceptAlternates bool: if true, ASCII alternates are accepted 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_str_match_string.html
 //
-// Checks if a search conducted for @search_term should match
-// @potential_hit.
-// 
-// This function calls [func@GLib.str_tokenize_and_fold] on both
-// @search_term and @potential_hit. ASCII alternates are never taken
-// for @search_term but will be taken for @potential_hit according to
-// the value of @accept_alternates.
-// 
-// A hit occurs when each folded token in @search_term is a prefix of a
-// folded token from @potential_hit.
-// 
-// Depending on how you're performing the search, it will typically be
-// faster to call `g_str_tokenize_and_fold()` on each string in
-// your corpus and build an index on the returned folded tokens, then
-// call `g_str_tokenize_and_fold()` on the search term and
-// perform lookups into that index.
-// 
-// As some examples, searching for &#x2018;fred&#x2019; would match the potential hit
-// &#x2018;Smith, Fred&#x2019; and also &#x2018;Fr&#xE9;d&#xE9;ric&#x2019;.  Searching for &#x2018;Fr&#xE9;d&#x2019; would match
-// &#x2018;Fr&#xE9;d&#xE9;ric&#x2019; but not &#x2018;Frederic&#x2019; (due to the one-directional nature of
-// accent matching).  Searching &#x2018;fo&#x2019; would match &#x2018;Foo&#x2019; and &#x2018;Bar Foo
-// Baz&#x2019;, but not &#x2018;SFO&#x2019; (because no word has &#x2018;fo&#x2019; as a prefix).
 func StrMatchString(searchTerm string, potentialHit string, acceptAlternates bool) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -12925,33 +10162,8 @@ func StrMatchString(searchTerm string, potentialHit string, acceptAlternates boo
 
 // StrToASCII wraps g_str_to_ascii
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string, in UTF-8 
-// 	- fromLocale string (nullable): the source locale, if known 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_str_to_ascii.html
 //
-// Transliterate @str to plain ASCII.
-// 
-// For best results, @str should be in composed normalised form.
-// 
-// This function performs a reasonably good set of character
-// replacements.  The particular set of replacements that is done may
-// change by version or even by runtime environment.
-// 
-// If the source language of @str is known, it can used to improve the
-// accuracy of the translation by passing it as @from_locale.  It should
-// be a valid POSIX locale string (of the form
-// `language[_territory][.codeset][@modifier]`).
-// 
-// If @from_locale is %NULL then the current locale is used.
-// 
-// If you want to do translation for no specific locale, and you want it
-// to be done independently of the currently locale, specify `"C"` for
-// @from_locale.
 func StrToASCII(str string, fromLocale string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string, nullable-string
@@ -12978,31 +10190,8 @@ func StrToASCII(str string, fromLocale string) string {
 
 // Strcanon wraps g_strcanon
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a nul-terminated array of bytes 
-// 	- validChars string: bytes permitted in @string 
-// 	- substitutor byte: replacement character for disallowed bytes 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strcanon.html
 //
-// For each character in @string, if the character is not in @valid_chars,
-// replaces the character with @substitutor.
-// 
-// Modifies @string in place, and return @string itself, not a copy. The
-// return value is to allow nesting such as:
-// ```C
-// g_ascii_strup (g_strcanon (str, "abc", '?'))
-// ```
-// 
-// In order to modify a copy, you may use [func@GLib.strdup]:
-// ```C
-// reformatted = g_strcanon (g_strdup (const_str), "abc", '?');
-// &#x2026;
-// g_free (reformatted);
-// ```
 func Strcanon(str string, validChars string, substitutor byte) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -13030,23 +10219,8 @@ func Strcanon(str string, validChars string, substitutor byte) string {
 
 // Strchomp wraps g_strchomp
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string to remove the trailing whitespace from 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strchomp.html
 //
-// Removes trailing whitespace from a string.
-// 
-// This function doesn't allocate or reallocate any memory;
-// it modifies @string in place. Therefore, it cannot be used
-// on statically allocated strings.
-// 
-// The pointer to @string is returned to allow the nesting of functions.
-// 
-// Also see [func@GLib.strchug] and [func@GLib.strstrip].
 func Strchomp(str string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -13067,24 +10241,8 @@ func Strchomp(str string) string {
 
 // Strchug wraps g_strchug
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string to remove the leading whitespace from 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strchug.html
 //
-// Removes leading whitespace from a string, by moving the rest
-// of the characters forward.
-// 
-// This function doesn't allocate or reallocate any memory;
-// it modifies @string in place. Therefore, it cannot be used on
-// statically allocated strings.
-// 
-// The pointer to @string is returned to allow the nesting of functions.
-// 
-// Also see [func@GLib.strchomp] and [func@GLib.strstrip].
 func Strchug(str string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -13105,19 +10263,8 @@ func Strchug(str string) string {
 
 // Strcmp0 wraps g_strcmp0
 // 
-// The function takes the following parameters:
-// 
-// 	- str1 string (nullable): a string 
-// 	- str2 string (nullable): another string 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_strcmp0.html
 //
-// Compares @str1 and @str2 like `strcmp()`.
-// 
-// Handles `NULL` gracefully by sorting it before non-`NULL` strings.
-// Comparing two `NULL` pointers returns 0.
 func Strcmp0(str1 string, str2 string) int32 {
 	var carg1 *C.char // in, none, string, nullable-string
 	var carg2 *C.char // in, none, string, nullable-string
@@ -13145,28 +10292,8 @@ func Strcmp0(str1 string, str2 string) int32 {
 
 // Strcompress wraps g_strcompress
 // 
-// The function takes the following parameters:
-// 
-// 	- source string: a string to compress 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strcompress.html
 //
-// Makes a copy of a string replacing C string-style escape
-// sequences with their one byte equivalent:
-// 
-// - `\b` &#x2192; [U+0008 Backspace](https://en.wikipedia.org/wiki/Backspace)
-// - `\f` &#x2192; [U+000C Form Feed](https://en.wikipedia.org/wiki/Form_feed)
-// - `\n` &#x2192; [U+000A Line Feed](https://en.wikipedia.org/wiki/Newline)
-// - `\r` &#x2192; [U+000D Carriage Return](https://en.wikipedia.org/wiki/Carriage_return)
-// - `\t` &#x2192; [U+0009 Horizontal Tabulation](https://en.wikipedia.org/wiki/Tab_character)
-// - `\v` &#x2192; [U+000B Vertical Tabulation](https://en.wikipedia.org/wiki/Vertical_Tab)
-// - `\` followed by one to three octal digits &#x2192; the numeric value (mod 255)
-// - `\` followed by any other character &#x2192; the character as is.
-//   For example, `\\` will turn into a backslash (`\`) and `\"` into a double quote (`"`).
-// 
-// [func@GLib.strescape] does the reverse conversion.
 func Strcompress(source string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -13187,34 +10314,8 @@ func Strcompress(source string) string {
 
 // Strdelimit wraps g_strdelimit
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to convert 
-// 	- delimiters string (nullable): a string containing the current delimiters, or
-//   `NULL` to use the standard delimiters defined in [const@GLib.STR_DELIMITERS] 
-// 	- newDelimiter byte: the new delimiter character 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strdelimit.html
 //
-// Converts any delimiter characters in @string to @new_delimiter.
-// 
-// Any characters in @string which are found in @delimiters are
-// changed to the @new_delimiter character. Modifies @string in place,
-// and returns @string itself, not a copy.
-// 
-// The return value is to allow nesting such as:
-// ```C
-// g_ascii_strup (g_strdelimit (str, "abc", '?'))
-// ```
-// 
-// In order to modify a copy, you may use [func@GLib.strdup]:
-// ```C
-// reformatted = g_strdelimit (g_strdup (const_str), "abc", '?');
-// &#x2026;
-// g_free (reformatted);
-// ```
 func Strdelimit(str string, delimiters string, newDelimiter byte) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string, nullable-string
@@ -13244,15 +10345,8 @@ func Strdelimit(str string, delimiters string, newDelimiter byte) string {
 
 // Strdup wraps g_strdup
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): the string to duplicate 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strdup.html
 //
-// Duplicates a string. If @str is `NULL` it returns `NULL`.
 func Strdup(str string) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var cret  *C.gchar // return, full, string
@@ -13275,18 +10369,8 @@ func Strdup(str string) string {
 
 // Strdupv wraps g_strdupv
 // 
-// The function takes the following parameters:
-// 
-// 	- strArray []string (nullable): an array of strings to copy 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_strdupv.html
 //
-// Copies an array of strings. The copy is a deep copy; each string is also
-// copied.
-// 
-// If called on a `NULL` value, `g_strdupv()` simply returns `NULL`.
 func Strdupv(strArray []string) []string {
 	var carg1 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[utf8], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var cret  **C.gchar // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -13309,35 +10393,8 @@ func Strdupv(strArray []string) []string {
 
 // Strerror wraps g_strerror
 // 
-// The function takes the following parameters:
-// 
-// 	- errnum int32: the system error number. See the standard C `errno` documentation 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strerror.html
 //
-// Returns a string corresponding to the given error code, e.g. "no
-// such process".
-// 
-// Unlike `strerror()`, this always returns a string in
-// UTF-8 encoding, and the pointer is guaranteed to remain valid for
-// the lifetime of the process. If the error code is unknown, it returns a
-// string like &#x201C;Unknown error &lt;code\&gt;&#x201D;.
-// 
-// Note that the string may be translated according to the current locale.
-// 
-// The value of `errno` will not be changed by this function. However, it may
-// be changed by intermediate function calls, so you should save its value
-// as soon as the call returns:
-// ```C
-// int saved_errno;
-// 
-// ret = read (blah);
-// saved_errno = errno;
-// 
-// g_strerror (saved_errno);
-// ```
 func Strerror(errnum int32) string {
 	var carg1 C.gint   // in, none, casted
 	var cret  *C.gchar // return, none, string
@@ -13356,34 +10413,8 @@ func Strerror(errnum int32) string {
 
 // Strescape wraps g_strescape
 // 
-// The function takes the following parameters:
-// 
-// 	- source string: a string to escape 
-// 	- exceptions string (nullable): a string of characters not to escape in @source 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strescape.html
 //
-// It replaces the following special characters in the string @source
-// with their corresponding C escape sequence:
-// 
-// | Symbol                                                                      | Escape |
-// |-----------------------------------------------------------------------------|--------|
-// | [U+0008 Backspace](https://en.wikipedia.org/wiki/Backspace)                 | `\b`   |
-// | [U+000C Form Feed](https://en.wikipedia.org/wiki/Form_feed)                 | `\f`   |
-// | [U+000A Line Feed](https://en.wikipedia.org/wiki/Newline)                   | `\n`   |
-// | [U+000D Carriage Return](https://en.wikipedia.org/wiki/Carriage_return)     | `\r`   |
-// | [U+0009 Horizontal Tabulation](https://en.wikipedia.org/wiki/Tab_character) | `\t`   |
-// | [U+000B Vertical Tabulation](https://en.wikipedia.org/wiki/Vertical_Tab)    | `\v`   |
-// 
-// It also inserts a backslash (`\`) before any backslash or a double quote (`"`).
-// Additionally all characters in the range 0x01-0x1F (everything
-// below SPACE) and in the range 0x7F-0xFF (all non-ASCII chars) are
-// replaced with a backslash followed by their octal representation.
-// Characters supplied in @exceptions are not escaped.
-// 
-// [func@GLib.strcompress] does the reverse conversion.
 func Strescape(source string, exceptions string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string, nullable-string
@@ -13410,14 +10441,8 @@ func Strescape(source string, exceptions string) string {
 
 // Strfreev wraps g_strfreev
 // 
-// The function takes the following parameters:
-// 
-// 	- strArray []string (nullable): an
-//   array of strings to free 
+// see also https://docs.gtk.org/glib/func.g_strfreev.html
 //
-// Frees an array of strings, as well as each string it contains.
-// 
-// If @str_array is `NULL`, this function simply returns.
 func Strfreev(strArray []string) {
 	var carg1 **C.gchar // in, transfer: full, C Pointers: 2, Name: array[utf8], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -13431,16 +10456,8 @@ func Strfreev(strArray []string) {
 
 // StripContext wraps g_strip_context
 // 
-// The function takes the following parameters:
-// 
-// 	- msgid string: a string 
-// 	- msgval string: another string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strip_context.html
 //
-// An auxiliary function for gettext() support (see Q_()).
 func StripContext(msgid string, msgval string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -13464,21 +10481,8 @@ func StripContext(msgid string, msgval string) string {
 
 // Strjoinv wraps g_strjoinv
 // 
-// The function takes the following parameters:
-// 
-// 	- separator string (nullable): a string to insert between each of the strings 
-// 	- strArray []string: an array of strings to join 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strjoinv.html
 //
-// Joins an array of strings together to form one long string, with the
-// optional @separator inserted between each of them.
-// 
-// If @str_array has no items, the return value will be an
-// empty string. If @str_array contains a single item, @separator will not
-// appear in the resulting string.
 func Strjoinv(separator string, strArray []string) string {
 	var carg1 *C.gchar  // in, none, string, nullable-string
 	var carg2 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -13506,30 +10510,8 @@ func Strjoinv(separator string, strArray []string) string {
 
 // Strlcat wraps g_strlcat
 // 
-// The function takes the following parameters:
-// 
-// 	- dest string: destination buffer, already containing one nul-terminated string 
-// 	- src string: source buffer 
-// 	- destSize uint: length of @dest buffer in bytes (not length of existing string
-//   inside @dest) 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_strlcat.html
 //
-// Portability wrapper that calls `strlcat()` on systems which have it,
-// and emulates it otherwise. Appends nul-terminated @src string to @dest,
-// guaranteeing nul-termination for @dest. The total size of @dest won't
-// exceed @dest_size.
-// 
-// At most @dest_size - 1 characters will be copied. Unlike `strncat()`,
-// @dest_size is the full size of dest, not the space left over. This
-// function does not allocate memory. It always nul-terminates (unless
-// @dest_size == 0 or there were no nul characters in the @dest_size
-// characters of dest to start with).
-// 
-// Caveat: this is supposedly a more secure alternative to `strcat()` or
-// `strncat()`, but for real security [func@GLib.strconcat] is harder to mess up.
 func Strlcat(dest string, src string, destSize uint) uint {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -13556,30 +10538,8 @@ func Strlcat(dest string, src string, destSize uint) uint {
 
 // Strlcpy wraps g_strlcpy
 // 
-// The function takes the following parameters:
-// 
-// 	- dest string: destination buffer 
-// 	- src string: source buffer 
-// 	- destSize uint: length of @dest in bytes 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_strlcpy.html
 //
-// Portability wrapper that calls `strlcpy()` on systems which have it,
-// and emulates `strlcpy()` otherwise. Copies @src to @dest; @dest is
-// guaranteed to be nul-terminated; @src must be nul-terminated;
-// @dest_size is the buffer size, not the number of bytes to copy.
-// 
-// At most @dest_size - 1 characters will be copied. Always nul-terminates
-// (unless @dest_size is 0). This function does not allocate memory. Unlike
-// `strncpy()`, this function doesn't pad @dest (so it's often faster). It
-// returns the size of the attempted result, `strlen (src)`, so if
-// @retval &gt;= @dest_size, truncation occurred.
-// 
-// Caveat: `strlcpy()` is supposedly more secure than `strcpy()` or `strncpy()`,
-// but if you really want to avoid screwups, [func@GLib.strdup] is an even better
-// idea.
 func Strlcpy(dest string, src string, destSize uint) uint {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -13606,22 +10566,8 @@ func Strlcpy(dest string, src string, destSize uint) uint {
 
 // Strndup wraps g_strndup
 // 
-// The function takes the following parameters:
-// 
-// 	- str string (nullable): the string to duplicate 
-// 	- n uint: the maximum number of bytes to copy from @str 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_strndup.html
 //
-// Duplicates the first @n bytes of a string, returning a newly-allocated
-// buffer @n + 1 bytes long which will always be nul-terminated. If @str
-// is less than @n bytes long the buffer is padded with nuls. If @str is
-// `NULL` it returns `NULL`.
-// 
-// To copy a number of characters from a UTF-8 encoded string,
-// use [func@GLib.utf8_strncpy] instead.
 func Strndup(str string, n uint) string {
 	var carg1 *C.gchar // in, none, string, nullable-string
 	var carg2 C.gsize  // in, none, casted
@@ -13649,16 +10595,8 @@ func Strndup(str string, n uint) string {
 
 // Strnfill wraps g_strnfill
 // 
-// The function takes the following parameters:
-// 
-// 	- length uint: the length of the new string 
-// 	- fillChar byte: the byte to fill the string with 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strnfill.html
 //
-// Creates a new string @length bytes long filled with @fill_char.
 func Strnfill(length uint, fillChar byte) string {
 	var carg1 C.gsize  // in, none, casted
 	var carg2 C.gchar  // in, none, casted
@@ -13681,20 +10619,8 @@ func Strnfill(length uint, fillChar byte) string {
 
 // Strreverse wraps g_strreverse
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to reverse 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strreverse.html
 //
-// Reverses all of the bytes in a string. For example,
-// `g_strreverse ("abcdef")` will result in "fedcba".
-// 
-// Note that `g_strreverse()` doesn't work on UTF-8 strings
-// containing multibyte characters. For that purpose, use
-// [func@GLib.utf8_strreverse].
 func Strreverse(str string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -13715,20 +10641,8 @@ func Strreverse(str string) string {
 
 // Strrstr wraps g_strrstr
 // 
-// The function takes the following parameters:
-// 
-// 	- haystack string: a string to search in 
-// 	- needle string: the string to search for 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_strrstr.html
 //
-// Searches the string @haystack for the last occurrence
-// of the string @needle.
-// 
-// The fact that this function returns `gchar *` rather than `const gchar *` is
-// a historical artifact.
 func Strrstr(haystack string, needle string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -13754,23 +10668,8 @@ func Strrstr(haystack string, needle string) string {
 
 // StrrstrLen wraps g_strrstr_len
 // 
-// The function takes the following parameters:
-// 
-// 	- haystack string: a string to search in 
-// 	- haystackLen int: the maximum length of @haystack in bytes. A length of `-1`
-//   can be used to mean "search the entire string", like [func@GLib.strrstr] 
-// 	- needle string: the string to search for 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_strrstr_len.html
 //
-// Searches the string @haystack for the last occurrence
-// of the string @needle, limiting the length of the search
-// to @haystack_len.
-// 
-// The fact that this function returns `gchar *` rather than `const gchar *` is
-// a historical artifact.
 func StrrstrLen(haystack string, haystackLen int, needle string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -13799,20 +10698,8 @@ func StrrstrLen(haystack string, haystackLen int, needle string) string {
 
 // Strsignal wraps g_strsignal
 // 
-// The function takes the following parameters:
-// 
-// 	- signum int32: the signal number. See the `signal` documentation 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_strsignal.html
 //
-// Returns a string describing the given signal, e.g. "Segmentation fault".
-// If the signal is unknown, it returns &#x201C;unknown signal (&lt;signum\&gt;)&#x201D;.
-// 
-// You should use this function in preference to `strsignal()`, because it
-// returns a string in UTF-8 encoding, and since not all platforms support
-// the `strsignal()` function.
 func Strsignal(signum int32) string {
 	var carg1 C.gint   // in, none, casted
 	var cret  *C.gchar // return, none, string
@@ -13831,32 +10718,8 @@ func Strsignal(signum int32) string {
 
 // Strsplit wraps g_strsplit
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string to split 
-// 	- delimiter string: a string which specifies the places at which to split
-//   the string. The delimiter is not included in any of the resulting
-//   strings, unless @max_tokens is reached. 
-// 	- maxTokens int32: the maximum number of pieces to split @string into
-//   If this is less than 1, the string is split completely 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_strsplit.html
 //
-// Splits a string into a maximum of @max_tokens pieces, using the given
-// @delimiter. If @max_tokens is reached, the remainder of @string is
-// appended to the last token.
-// 
-// As an example, the result of `g_strsplit (":a:bc::d:", ":", -1)` is an array
-// containing the six strings "", "a", "bc", "", "d" and "".
-// 
-// As a special case, the result of splitting the empty string "" is an empty
-// array, not an array containing a single string. The reason for this
-// special case is that being able to represent an empty array is typically
-// more useful than consistent handling of empty elements. If you do need
-// to represent empty elements, you'll need to check for the empty string
-// before calling `g_strsplit()`.
 func Strsplit(str string, delimiter string, maxTokens int32) []string {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 *C.gchar  // in, none, string
@@ -13885,38 +10748,8 @@ func Strsplit(str string, delimiter string, maxTokens int32) []string {
 
 // StrsplitSet wraps g_strsplit_set
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string to split 
-// 	- delimiters string: a string containing characters that are used to split the
-//   string. Can be empty, which will result in no string splitting 
-// 	- maxTokens int32: the maximum number of tokens to split @string into.
-//   If this is less than 1, the string is split completely 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_strsplit_set.html
 //
-// Splits @string into a number of tokens not containing any of the characters
-// in @delimiters. A token is the (possibly empty) longest string that does not
-// contain any of the characters in @delimiters. If @max_tokens is reached, the
-// remainder is appended to the last token.
-// 
-// For example, the result of g_strsplit_set ("abc:def/ghi", ":/", -1) is an
-// array containing the three strings "abc", "def", and "ghi".
-// 
-// The result of g_strsplit_set (":def/ghi:", ":/", -1) is an array containing
-// the four strings "", "def", "ghi", and "".
-// 
-// As a special case, the result of splitting the empty string "" is an empty
-// array, not an array containing a single string. The reason for this
-// special case is that being able to represent an empty array is typically
-// more useful than consistent handling of empty elements. If you do need
-// to represent empty elements, you'll need to check for the empty string
-// before calling `g_strsplit_set()`.
-// 
-// Note that this function works on bytes not characters, so it can't be used
-// to delimit UTF-8 strings for anything but ASCII characters.
 func StrsplitSet(str string, delimiters string, maxTokens int32) []string {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 *C.gchar  // in, none, string
@@ -13945,26 +10778,8 @@ func StrsplitSet(str string, delimiters string, maxTokens int32) []string {
 
 // StrstrLen wraps g_strstr_len
 // 
-// The function takes the following parameters:
-// 
-// 	- haystack string: a string to search in 
-// 	- haystackLen int: the maximum length of @haystack in bytes, or `-1` to
-//   search it entirely 
-// 	- needle string: the string to search for 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_strstr_len.html
 //
-// Searches the string @haystack for the first occurrence
-// of the string @needle, limiting the length of the search
-// to @haystack_len or a nul terminator byte (whichever is reached first).
-// 
-// A length of `-1` can be used to mean &#x201C;search the entire string&#x201D;, like
-// `strstr()`.
-// 
-// The fact that this function returns `gchar *` rather than `const gchar *` is
-// a historical artifact.
 func StrstrLen(haystack string, haystackLen int, needle string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -13993,28 +10808,8 @@ func StrstrLen(haystack string, haystackLen int, needle string) string {
 
 // Strtod wraps g_strtod
 // 
-// The function takes the following parameters:
-// 
-// 	- nptr string: the string to convert to a numeric value 
-// 
-// The function returns the following values:
-// 
-// 	- endptr string: if non-`NULL`, it returns the
-//   character after the last character used in the conversion 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_strtod.html
 //
-// Converts a string to a floating point value.
-// 
-// It calls the standard `strtod()` function to handle the conversion, but
-// if the string is not completely converted it attempts the conversion
-// again with [func@GLib.ascii_strtod], and returns the best match.
-// 
-// This function should seldom be used. The normal situation when reading
-// numbers not for human consumption is to use [func@GLib.ascii_strtod]. Only when
-// you know that you must expect both locale formatted and C formatted numbers
-// should you use this. Make sure that you don't pass strings such as comma
-// separated lists of values, since the commas may be interpreted as a decimal
-// point in some locales, causing unexpected results.
 func Strtod(nptr string) (string, float64) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 *C.gchar  // out, none, string
@@ -14037,17 +10832,8 @@ func Strtod(nptr string) (string, float64) {
 
 // StrvContains wraps g_strv_contains
 // 
-// The function takes the following parameters:
-// 
-// 	- strv []string: an array of strings to search in 
-// 	- str string: the string to search for 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_strv_contains.html
 //
-// Checks if an array of strings contains the string @str according to
-// [func@GLib.str_equal]. @strv must not be `NULL`.
 func StrvContains(strv []string, str string) bool {
 	var carg1 **C.gchar  // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var carg2 *C.gchar   // in, none, string
@@ -14074,24 +10860,8 @@ func StrvContains(strv []string, str string) bool {
 
 // StrvEqual wraps g_strv_equal
 // 
-// The function takes the following parameters:
-// 
-// 	- strv1 []string: an array of strings to compare to @strv2 
-// 	- strv2 []string: an array of strings to compare to @strv1 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_strv_equal.html
 //
-// Checks if two arrays of strings contain exactly the same elements in
-// exactly the same order.
-// 
-// Elements are compared using [func@GLib.str_equal]. To match independently
-// of order, sort the arrays first (using [func@GLib.qsort_with_data]
-// or similar).
-// 
-// Two empty arrays are considered equal. Neither @strv1 nor @strv2 may be
-// `NULL`.
 func StrvEqual(strv1 []string, strv2 []string) bool {
 	var carg1 **C.gchar  // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var carg2 **C.gchar  // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -14119,15 +10889,8 @@ func StrvEqual(strv1 []string, strv2 []string) bool {
 
 // StrvLength wraps g_strv_length
 // 
-// The function takes the following parameters:
-// 
-// 	- strArray []string: an array of strings 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_strv_length.html
 //
-// Returns the length of an array of strings. @str_array must not be `NULL`.
 func StrvLength(strArray []string) uint {
 	var carg1 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var cret  C.guint   // return, none, casted
@@ -14148,12 +10911,7 @@ func StrvLength(strArray []string) uint {
 
 // TestAssertExpectedMessagesInternal wraps g_test_assert_expected_messages_internal
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string 
-// 	- file string 
-// 	- line int32 
-// 	- fn string 
+// see also https://docs.gtk.org/glib/func.g_test_assert_expected_messages_internal.html
 func TestAssertExpectedMessagesInternal(domain string, file string, line int32, fn string) {
 	var carg1 *C.char // in, none, string
 	var carg2 *C.char // in, none, string
@@ -14177,21 +10935,8 @@ func TestAssertExpectedMessagesInternal(domain string, file string, line int32, 
 
 // TestBug wraps g_test_bug
 // 
-// The function takes the following parameters:
-// 
-// 	- bugUriSnippet string: Bug specific bug tracker URI or URI portion. 
+// see also https://docs.gtk.org/glib/func.g_test_bug.html
 //
-// Adds a message to test reports that associates a bug URI with a test case.
-// 
-// Bug URIs are constructed from a base URI set with [func@GLib.test_bug_base]
-// and @bug_uri_snippet. If [func@GLib.test_bug_base] has not been called, it is
-// assumed to be the empty string, so a full URI can be provided to
-// [func@GLib.test_bug] instead.
-// 
-// See also [func@GLib.test_summary].
-// 
-// Since GLib 2.70, the base URI is not prepended to @bug_uri_snippet
-// if it is already a valid URI.
 func TestBug(bugUriSnippet string) {
 	var carg1 *C.char // in, none, string
 
@@ -14204,24 +10949,8 @@ func TestBug(bugUriSnippet string) {
 
 // TestBugBase wraps g_test_bug_base
 // 
-// The function takes the following parameters:
-// 
-// 	- uriPattern string: the base pattern for bug URIs 
+// see also https://docs.gtk.org/glib/func.g_test_bug_base.html
 //
-// Specifies the base URI for bug reports.
-// 
-// The base URI is used to construct bug report messages for
-// [func@GLib.test_message] when [func@GLib.test_bug] is called.
-// Calling this function outside of a test case sets the
-// default base URI for all test cases. Calling it from within
-// a test case changes the base URI for the scope of the test
-// case only.
-// Bug URIs are constructed by appending a bug specific URI
-// portion to @uri_pattern, or by replacing the special string
-// `%s` within @uri_pattern if that is present.
-// 
-// If [func@GLib.test_bug_base] is not called, bug URIs are formed
-// solely from the value provided by [func@GLib.test_bug].
 func TestBugBase(uriPattern string) {
 	var carg1 *C.char // in, none, string
 
@@ -14233,12 +10962,9 @@ func TestBugBase(uriPattern string) {
 }
 
 // TestDisableCrashReporting wraps g_test_disable_crash_reporting
-//
-// Attempts to disable system crash reporting infrastructure.
 // 
-// This function should be called before exercising code paths that are
-// expected or intended to crash, to avoid wasting resources in system-wide
-// crash collection infrastructure such as systemd-coredump or abrt.
+// see also https://docs.gtk.org/glib/func.g_test_disable_crash_reporting.html
+//
 func TestDisableCrashReporting() {
 
 	C.g_test_disable_crash_reporting()
@@ -14246,47 +10972,8 @@ func TestDisableCrashReporting() {
 
 // TestExpectMessage wraps g_test_expect_message
 // 
-// The function takes the following parameters:
-// 
-// 	- logDomain string (nullable): the log domain of the message 
-// 	- logLevel LogLevelFlags: the log level of the message 
-// 	- pattern string: a glob-style pattern (see [type@GLib.PatternSpec]) 
+// see also https://docs.gtk.org/glib/func.g_test_expect_message.html
 //
-// Indicates that a message with the given @log_domain and @log_level,
-// with text matching @pattern, is expected to be logged.
-// 
-// When this message is logged, it will not be printed, and the test case will
-// not abort.
-// 
-// This API may only be used with the old logging API ([func@GLib.log] without
-// `G_LOG_USE_STRUCTURED` defined). It will not work with the structured logging
-// API. See [Testing for Messages](logging.html#testing-for-messages).
-// 
-// Use [func@GLib.test_assert_expected_messages] to assert that all
-// previously-expected messages have been seen and suppressed.
-// 
-// You can call this multiple times in a row, if multiple messages are
-// expected as a result of a single call. (The messages must appear in
-// the same order as the calls to [func@GLib.test_expect_message].)
-// 
-// For example:
-// 
-// ```c
-// // g_main_context_push_thread_default() should fail if the
-// // context is already owned by another thread.
-// g_test_expect_message (G_LOG_DOMAIN,
-//                        G_LOG_LEVEL_CRITICAL,
-//                        "assertion*acquired_context*failed");
-// g_main_context_push_thread_default (bad_context);
-// g_test_assert_expected_messages ();
-// ```
-// 
-// Note that you cannot use this to test [func@GLib.error] messages, since
-// [func@GLib.error] intentionally never returns even if the program doesn&#x2019;t
-// abort; use [func@GLib.test_trap_subprocess] in this case.
-// 
-// If messages at [flags@GLib.LogLevelFlags.LEVEL_DEBUG] are emitted, but not explicitly
-// expected via [func@GLib.test_expect_message] then they will be ignored.
 func TestExpectMessage(logDomain string, logLevel LogLevelFlags, pattern string) {
 	var carg1 *C.gchar         // in, none, string, nullable-string
 	var carg2 C.GLogLevelFlags // in, none, casted
@@ -14307,27 +10994,9 @@ func TestExpectMessage(logDomain string, logLevel LogLevelFlags, pattern string)
 }
 
 // TestFail wraps g_test_fail
+// 
+// see also https://docs.gtk.org/glib/func.g_test_fail.html
 //
-// Indicates that a test failed.
-// 
-// This function can be called multiple times from the same test.
-// You can use this function if your test failed in a recoverable way.
-// 
-// Do not use this function if the failure of a test could cause
-// other tests to malfunction.
-// 
-// Calling this function will not stop the test from running, you
-// need to return from the test function yourself. So you can
-// produce additional diagnostic messages or even continue running
-// the test.
-// 
-// If not called from inside a test, this function does nothing.
-// 
-// Note that unlike [func@GLib.test_skip] and [func@GLib.test_incomplete],
-// this function does not log a message alongside the test failure.
-// If details of the test failure are available, either log them with
-// [func@GLib.test_message] before [func@GLib.test_fail], or use
-// [func@GLib.test_fail_printf] instead.
 func TestFail() {
 
 	C.g_test_fail()
@@ -14335,21 +11004,8 @@ func TestFail() {
 
 // TestFailed wraps g_test_failed
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_test_failed.html
 //
-// Returns whether a test has already failed.
-// 
-// This will be the case when [func@GLib.test_fail],
-// [func@GLib.test_incomplete] or [func@GLib.test_skip] have
-// been called, but also if an assertion has failed.
-// 
-// This can be useful to return early from a test if
-// continuing after a failed assertion might be harmful.
-// 
-// The return value of this function is only meaningful
-// if it is called from inside a test function.
 func TestFailed() bool {
 	var cret C.gboolean // return
 
@@ -14366,19 +11022,8 @@ func TestFailed() bool {
 
 // TestGetDir wraps g_test_get_dir
 // 
-// The function takes the following parameters:
-// 
-// 	- fileType TestFileType: the type of file (built vs. distributed) 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_test_get_dir.html
 //
-// Gets the pathname of the directory containing test files of the type
-// specified by @file_type.
-// 
-// This is approximately the same as calling `g_test_build_filename(".")`,
-// but you don't need to free the return value.
 func TestGetDir(fileType TestFileType) string {
 	var carg1 C.GTestFileType // in, none, casted
 	var cret  *C.gchar        // return, none, string
@@ -14397,18 +11042,8 @@ func TestGetDir(fileType TestFileType) string {
 
 // TestGetPath wraps g_test_get_path
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_test_get_path.html
 //
-// Gets the test path for the test currently being run.
-// 
-// In essence, it will be the same string passed as the first argument
-// to e.g. [func@GLib.test_add] when the test was added.
-// 
-// This function returns a valid string only within a test function.
-// 
-// Note that this is a test path, not a file system path.
 func TestGetPath() string {
 	var cret *C.char // return, none, string
 
@@ -14423,21 +11058,8 @@ func TestGetPath() string {
 
 // TestIncomplete wraps g_test_incomplete
 // 
-// The function takes the following parameters:
-// 
-// 	- msg string (nullable): explanation 
+// see also https://docs.gtk.org/glib/func.g_test_incomplete.html
 //
-// Indicates that a test failed because of some incomplete
-// functionality.
-// 
-// This function can be called multiple times from the same test.
-// 
-// Calling this function will not stop the test from running, you
-// need to return from the test function yourself. So you can
-// produce additional diagnostic messages or even continue running
-// the test.
-// 
-// If not called from inside a test, this function does nothing.
 func TestIncomplete(msg string) {
 	var carg1 *C.gchar // in, none, string, nullable-string
 
@@ -14452,13 +11074,7 @@ func TestIncomplete(msg string) {
 
 // TestLogTypeName wraps g_test_log_type_name
 // 
-// The function takes the following parameters:
-// 
-// 	- logType TestLogType 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_test_log_type_name.html
 func TestLogTypeName(logType TestLogType) string {
 	var carg1 C.GTestLogType // in, none, casted
 	var cret  *C.char        // return, none, string
@@ -14477,13 +11093,8 @@ func TestLogTypeName(logType TestLogType) string {
 
 // TestRandDouble wraps g_test_rand_double
 // 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_test_rand_double.html
 //
-// Gets a reproducible random floating point number.
-// 
-// See [func@GLib.test_rand_int] for details on test case random numbers.
 func TestRandDouble() float64 {
 	var cret C.double // return, none, casted
 
@@ -14498,18 +11109,8 @@ func TestRandDouble() float64 {
 
 // TestRandDoubleRange wraps g_test_rand_double_range
 // 
-// The function takes the following parameters:
-// 
-// 	- rangeStart float64: the minimum value returned by this function 
-// 	- rangeEnd float64: the minimum value not returned by this function 
-// 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_test_rand_double_range.html
 //
-// Gets a reproducible random floating point number out of a specified range.
-// 
-// See [func@GLib.test_rand_int] for details on test case random numbers.
 func TestRandDoubleRange(rangeStart float64, rangeEnd float64) float64 {
 	var carg1 C.double // in, none, casted
 	var carg2 C.double // in, none, casted
@@ -14531,19 +11132,8 @@ func TestRandDoubleRange(rangeStart float64, rangeEnd float64) float64 {
 
 // TestRandInt wraps g_test_rand_int
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_test_rand_int.html
 //
-// Gets a reproducible random integer number.
-// 
-// The random numbers generated by the g_test_rand_*() family of functions
-// change with every new test program start, unless the --seed option is
-// given when starting test programs.
-// 
-// For individual test cases however, the random number generator is
-// reseeded, to avoid dependencies between tests and to make --seed
-// effective for all test cases.
 func TestRandInt() int32 {
 	var cret C.gint32 // return, none, casted
 
@@ -14558,18 +11148,8 @@ func TestRandInt() int32 {
 
 // TestRandIntRange wraps g_test_rand_int_range
 // 
-// The function takes the following parameters:
-// 
-// 	- begin int32: the minimum value returned by this function 
-// 	- end int32: the smallest value not to be returned by this function 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_test_rand_int_range.html
 //
-// Gets a reproducible random integer number out of a specified range.
-// 
-// See [func@GLib.test_rand_int] for details on test case random numbers.
 func TestRandIntRange(begin int32, end int32) int32 {
 	var carg1 C.gint32 // in, none, casted
 	var carg2 C.gint32 // in, none, casted
@@ -14591,44 +11171,8 @@ func TestRandIntRange(begin int32, end int32) int32 {
 
 // TestRun wraps g_test_run
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_test_run.html
 //
-// Runs all tests under the toplevel suite.
-// 
-// The toplevel suite can be retrieved with [func@GLib.test_get_root].
-// 
-// Similar to [func@GLib.test_run_suite], the test cases to be run are
-// filtered according to test path arguments (`-p testpath` and `-s testpath`)
-// as parsed by [func@GLib.test_init]. [func@GLib.test_run_suite] or
-// [func@GLib.test_run] may only be called once in a program.
-// 
-// In general, the tests and sub-suites within each suite are run in
-// the order in which they are defined. However, note that prior to
-// GLib 2.36, there was a bug in the `g_test_add_*`
-// functions which caused them to create multiple suites with the same
-// name, meaning that if you created tests "/foo/simple",
-// "/bar/simple", and "/foo/using-bar" in that order, they would get
-// run in that order (since [func@GLib.test_run] would run the first "/foo"
-// suite, then the "/bar" suite, then the second "/foo" suite). As of
-// 2.36, this bug is fixed, and adding the tests in that order would
-// result in a running order of "/foo/simple", "/foo/using-bar",
-// "/bar/simple". If this new ordering is sub-optimal (because it puts
-// more-complicated tests before simpler ones, making it harder to
-// figure out exactly what has failed), you can fix it by changing the
-// test paths to group tests by suite in a way that will result in the
-// desired running order. Eg, "/simple/foo", "/simple/bar",
-// "/complex/foo-using-bar".
-// 
-// However, you should never make the actual result of a test depend
-// on the order that tests are run in. If you need to ensure that some
-// particular code runs before or after a given test case, use
-// [func@GLib.test_add], which lets you specify setup and teardown functions.
-// 
-// If all tests are skipped or marked as incomplete (expected failures),
-// this function will return 0 if producing TAP output, or 77 (treated
-// as "skip test" by Automake) otherwise.
 func TestRun() int32 {
 	var cret C.int // return, none, casted
 
@@ -14643,23 +11187,8 @@ func TestRun() int32 {
 
 // TestRunSuite wraps g_test_run_suite
 // 
-// The function takes the following parameters:
-// 
-// 	- suite *TestSuite: a test suite 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_test_run_suite.html
 //
-// Executes the tests within @suite and all nested test suites.
-// 
-// The test suites to be executed are filtered according to
-// test path arguments (`-p testpath` and `-s testpath`) as parsed by
-// [func@GLib.test_init]. See the [func@GLib.test_run] documentation
-// for more information on the order that tests are run in.
-// 
-// [func@GLib.test_run_suite] or [func@GLib.test_run] may only be
-// called once in a program.
 func TestRunSuite(suite *TestSuite) int32 {
 	var carg1 *C.GTestSuite // in, none, converted
 	var cret  C.int         // return, none, casted
@@ -14677,22 +11206,9 @@ func TestRunSuite(suite *TestSuite) int32 {
 }
 
 // TestSetNonfatalAssertions wraps g_test_set_nonfatal_assertions
+// 
+// see also https://docs.gtk.org/glib/func.g_test_set_nonfatal_assertions.html
 //
-// Changes the behaviour of the various assertion macros.
-// 
-// The `g_assert_*()` macros, `g_test_assert_expected_messages()`
-// and the various `g_test_trap_assert_*()` macros are changed
-// to not abort to program.
-// 
-// Instead, they will call [func@GLib.test_fail] and continue.
-// (This also changes the behavior of [func@GLib.test_fail] so that
-// it will not cause the test program to abort after completing
-// the failed test.)
-// 
-// Note that the [func@GLib.assert_not_reached] and [func@GLib.assert]
-// macros are not affected by this.
-// 
-// This function can only be called after [func@GLib.test_init].
 func TestSetNonfatalAssertions() {
 
 	C.g_test_set_nonfatal_assertions()
@@ -14700,18 +11216,8 @@ func TestSetNonfatalAssertions() {
 
 // TestSkip wraps g_test_skip
 // 
-// The function takes the following parameters:
-// 
-// 	- msg string (nullable): explanation 
+// see also https://docs.gtk.org/glib/func.g_test_skip.html
 //
-// Indicates that a test was skipped.
-// 
-// Calling this function will not stop the test from running, you
-// need to return from the test function yourself. So you can
-// produce additional diagnostic messages or even continue running
-// the test.
-// 
-// If not called from inside a test, this function does nothing.
 func TestSkip(msg string) {
 	var carg1 *C.gchar // in, none, string, nullable-string
 
@@ -14726,11 +11232,8 @@ func TestSkip(msg string) {
 
 // TestSubprocess wraps g_test_subprocess
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_test_subprocess.html
 //
-// Returns true if the test program is running under [func@GLib.test_trap_subprocess].
 func TestSubprocess() bool {
 	var cret C.gboolean // return
 
@@ -14747,32 +11250,8 @@ func TestSubprocess() bool {
 
 // TestSummary wraps g_test_summary
 // 
-// The function takes the following parameters:
-// 
-// 	- summary string: summary of the test purpose 
+// see also https://docs.gtk.org/glib/func.g_test_summary.html
 //
-// Sets the summary for a test.
-// 
-// This may be included in test report output, and is useful documentation for
-// anyone reading the source code or modifying a test in future. It must be a
-// single line, and it should summarise what the test checks, and how.
-// 
-// This should be called at the top of a test function.
-// 
-// For example:
-// 
-// ```c
-// static void
-// test_array_sort (void)
-// {
-//   g_test_summary ("Test my_array_sort() sorts the array correctly and stably, "
-//                   "including testing zero length and one-element arrays.");
-// 
-//   // ...
-// }
-// ```
-// 
-// See also [func@GLib.test_bug].
 func TestSummary(summary string) {
 	var carg1 *C.char // in, none, string
 
@@ -14785,12 +11264,8 @@ func TestSummary(summary string) {
 
 // TestTimerElapsed wraps g_test_timer_elapsed
 // 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_test_timer_elapsed.html
 //
-// Gets the number of seconds since the last start of the timer with
-// [func@GLib.test_timer_start].
 func TestTimerElapsed() float64 {
 	var cret C.double // return, none, casted
 
@@ -14805,11 +11280,8 @@ func TestTimerElapsed() float64 {
 
 // TestTimerLast wraps g_test_timer_last
 // 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/func.g_test_timer_last.html
 //
-// Reports the last result of [func@GLib.test_timer_elapsed].
 func TestTimerLast() float64 {
 	var cret C.double // return, none, casted
 
@@ -14823,11 +11295,9 @@ func TestTimerLast() float64 {
 }
 
 // TestTimerStart wraps g_test_timer_start
-//
-// Starts a timing test.
 // 
-// Call [func@GLib.test_timer_elapsed] when the task is supposed
-// to be done. Call this function again to restart the timer.
+// see also https://docs.gtk.org/glib/func.g_test_timer_start.html
+//
 func TestTimerStart() {
 
 	C.g_test_timer_start()
@@ -14835,14 +11305,7 @@ func TestTimerStart() {
 
 // TestTrapAssertions wraps g_test_trap_assertions
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string 
-// 	- file string 
-// 	- line int32 
-// 	- fn string 
-// 	- assertionFlags uint64 
-// 	- pattern string 
+// see also https://docs.gtk.org/glib/func.g_test_trap_assertions.html
 func TestTrapAssertions(domain string, file string, line int32, fn string, assertionFlags uint64, pattern string) {
 	var carg1 *C.char   // in, none, string
 	var carg2 *C.char   // in, none, string
@@ -14873,11 +11336,8 @@ func TestTrapAssertions(domain string, file string, line int32, fn string, asser
 
 // TestTrapHasPassed wraps g_test_trap_has_passed
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_test_trap_has_passed.html
 //
-// Checks the result of the last [func@GLib.test_trap_subprocess] call.
 func TestTrapHasPassed() bool {
 	var cret C.gboolean // return
 
@@ -14894,11 +11354,8 @@ func TestTrapHasPassed() bool {
 
 // TestTrapReachedTimeout wraps g_test_trap_reached_timeout
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_test_trap_reached_timeout.html
 //
-// Checks the result of the last [func@GLib.test_trap_subprocess] call.
 func TestTrapReachedTimeout() bool {
 	var cret C.gboolean // return
 
@@ -14915,17 +11372,8 @@ func TestTrapReachedTimeout() bool {
 
 // TestTrapSubprocess wraps g_test_trap_subprocess
 // 
-// The function takes the following parameters:
-// 
-// 	- testPath string (nullable): test to run in a subprocess 
-// 	- usecTimeout uint64: timeout for the subprocess test in microseconds. 
-// 	- testFlags TestSubprocessFlags: flags to modify subprocess behaviour 
+// see also https://docs.gtk.org/glib/func.g_test_trap_subprocess.html
 //
-// Respawns the test program to run only @test_path in a subprocess.
-// 
-// This is equivalent to calling [func@GLib.test_trap_subprocess_with_envp]
-// with `envp` set to `NULL`. See the documentation for that function
-// for full details.
 func TestTrapSubprocess(testPath string, usecTimeout uint64, testFlags TestSubprocessFlags) {
 	var carg1 *C.char                // in, none, string, nullable-string
 	var carg2 C.guint64              // in, none, casted
@@ -14946,103 +11394,8 @@ func TestTrapSubprocess(testPath string, usecTimeout uint64, testFlags TestSubpr
 
 // TestTrapSubprocessWithEnvp wraps g_test_trap_subprocess_with_envp
 // 
-// The function takes the following parameters:
-// 
-// 	- testPath string (nullable): test to run in a subprocess 
-// 	- envp []string (nullable): environment
-//   to run the test in 
-// 	- usecTimeout uint64: timeout for the subprocess test in microseconds 
-// 	- testFlags TestSubprocessFlags: flags to modify subprocess behaviour 
+// see also https://docs.gtk.org/glib/func.g_test_trap_subprocess_with_envp.html
 //
-// Respawns the test program to run only @test_path in a subprocess with
-// a given environment.
-// 
-// This can be used for a test case that might not return, or that
-// might abort.
-// 
-// If @test_path is `NULL` then the same test is re-run in a subprocess.
-// You can use [func@GLib.test_subprocess] to determine whether the test
-// is in a subprocess or not.
-// 
-// @test_path can also be the name of the parent test, followed by
-// "`/subprocess/`" and then a name for the specific subtest (or just
-// ending with "`/subprocess`" if the test only has one child test);
-// tests with names of this form will automatically be skipped in the
-// parent process.
-// 
-// If @envp is `NULL`, the parent process&#x2019; environment will be inherited.
-// 
-// If @usec_timeout is non-0, the test subprocess is aborted and
-// considered failing if its run time exceeds it.
-// 
-// The subprocess behavior can be configured with [flags@GLib.TestSubprocessFlags]
-// flags.
-// 
-// You can use methods such as [func@GLib.test_trap_assert_passed],
-// [func@GLib.test_trap_assert_failed], and [func@GLib.test_trap_assert_stderr] to
-// check the results of the subprocess. (But note that
-// [func@GLib.test_trap_assert_stdout] and [func@GLib.test_trap_assert_stderr]
-// cannot be used if @test_flags specifies that the child should
-// inherit the parent stdout/stderr.)
-// 
-// If your `main ()` needs to behave differently in the subprocess, you can
-// call [func@GLib.test_subprocess] (after calling [func@GLib.test_init])
-// to see whether you are in a subprocess.
-// 
-// Internally, this function tracks the child process using
-// [func@GLib.child_watch_source_new], so your process must not ignore
-// `SIGCHLD`, and must not attempt to watch or wait for the child process
-// via another mechanism.
-// 
-// The following example tests that calling `my_object_new(1000000)` will
-// abort with an error message.
-// 
-// ```c
-//   static void
-//   test_create_large_object (void)
-//   {
-//     if (g_test_subprocess ())
-//       {
-//         my_object_new (1000000);
-//         return;
-//       }
-// 
-//     // Reruns this same test in a subprocess
-//     g_test_trap_subprocess (NULL, 0, G_TEST_SUBPROCESS_DEFAULT);
-//     g_test_trap_assert_failed ();
-//     g_test_trap_assert_stderr ("*ERROR*too large*");
-//   }
-// 
-//   static void
-//   test_different_username (void)
-//   {
-//     if (g_test_subprocess ())
-//       {
-//         // Code under test goes here
-//         g_message ("Username is now simulated as %s", g_getenv ("USER"));
-//         return;
-//       }
-// 
-//     // Reruns this same test in a subprocess
-//     g_autoptr(GStrv) envp = g_get_environ ();
-//     envp = g_environ_setenv (g_steal_pointer (&amp;envp), "USER", "charlie", TRUE);
-//     g_test_trap_subprocess_with_envp (NULL, envp, 0, G_TEST_SUBPROCESS_DEFAULT);
-//     g_test_trap_assert_passed ();
-//     g_test_trap_assert_stdout ("Username is now simulated as charlie");
-//   }
-// 
-//   int
-//   main (int argc, char **argv)
-//   {
-//     g_test_init (&amp;argc, &amp;argv, NULL);
-// 
-//     g_test_add_func ("/myobject/create-large-object",
-//                      test_create_large_object);
-//     g_test_add_func ("/myobject/different-username",
-//                      test_different_username);
-//     return g_test_run ();
-//   }
-// ```
 func TestTrapSubprocessWithEnvp(testPath string, envp []string, usecTimeout uint64, testFlags TestSubprocessFlags) {
 	var carg1 *C.char                // in, none, string, nullable-string
 	var carg2 **C.char               // in, transfer: none, C Pointers: 2, Name: array[filename], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -15068,44 +11421,8 @@ func TestTrapSubprocessWithEnvp(testPath string, envp []string, usecTimeout uint
 
 // TimeoutAddFull wraps g_timeout_add_full
 // 
-// The function takes the following parameters:
-// 
-// 	- priority int32: the priority of the timeout source. Typically this will be in
-//   the range between [const@GLib.PRIORITY_DEFAULT] and
-//   [const@GLib.PRIORITY_HIGH]. 
-// 	- interval uint: the time between calls to the function, in milliseconds
-//   (1/1000ths of a second) 
-// 	- function SourceFunc: function to call 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_timeout_add_full.html
 //
-// Sets a function to be called at regular intervals, with the given
-// priority.  The function is called repeatedly until it returns
-// %FALSE, at which point the timeout is automatically destroyed and
-// the function will not be called again.  The @notify function is
-// called when the timeout is destroyed.  The first call to the
-// function will be at the end of the first @interval.
-// 
-// Note that timeout functions may be delayed, due to the processing of other
-// event sources. Thus they should not be relied on for precise timing.
-// After each call to the timeout function, the time of the next
-// timeout is recalculated based on the current time and the given interval
-// (it does not try to 'catch up' time lost in delays).
-// 
-// See [mainloop memory management](main-loop.html#memory-management-of-sources) for details
-// on how to handle the return value and memory management of @data.
-// 
-// This internally creates a main loop source using
-// [func@GLib.timeout_source_new] and attaches it to the global
-// [struct@GLib.MainContext] using [method@GLib.Source.attach], so the callback
-// will be invoked in whichever thread is running that main context. You can do
-// these steps manually if you need greater control or to use a custom main
-// context.
-// 
-// The interval given is in terms of monotonic time, not wall clock time.
-// See [func@GLib.get_monotonic_time].
 func TimeoutAddFull(priority int32, interval uint, function SourceFunc) uint {
 	var carg1 C.gint           // in, none, casted
 	var carg2 C.guint          // in, none, casted
@@ -15134,58 +11451,8 @@ func TimeoutAddFull(priority int32, interval uint, function SourceFunc) uint {
 
 // TimeoutAddSecondsFull wraps g_timeout_add_seconds_full
 // 
-// The function takes the following parameters:
-// 
-// 	- priority int32: the priority of the timeout source. Typically this will be in
-//   the range between [const@GLib.PRIORITY_DEFAULT] and
-//   [const@GLib.PRIORITY_HIGH]. 
-// 	- interval uint: the time between calls to the function, in seconds 
-// 	- function SourceFunc: function to call 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_timeout_add_seconds_full.html
 //
-// Sets a function to be called at regular intervals, with @priority.
-// 
-// The function is called repeatedly until it returns [const@GLib.SOURCE_REMOVE]
-// or %FALSE, at which point the timeout is automatically destroyed and
-// the function will not be called again.
-// 
-// Unlike [func@GLib.timeout_add], this function operates at whole second
-// granularity. The initial starting point of the timer is determined by the
-// implementation and the implementation is expected to group multiple timers
-// together so that they fire all at the same time. To allow this grouping, the
-// @interval to the first timer is rounded and can deviate up to one second
-// from the specified interval. Subsequent timer iterations will generally run
-// at the specified interval.
-// 
-// Note that timeout functions may be delayed, due to the processing of other
-// event sources. Thus they should not be relied on for precise timing.
-// After each call to the timeout function, the time of the next
-// timeout is recalculated based on the current time and the given @interval
-// 
-// See [mainloop memory management](main-loop.html#memory-management-of-sources) for details
-// on how to handle the return value and memory management of @data.
-// 
-// If you want timing more precise than whole seconds, use
-// [func@GLib.timeout_add] instead.
-// 
-// The grouping of timers to fire at the same time results in a more power
-// and CPU efficient behavior so if your timer is in multiples of seconds
-// and you don't require the first timer exactly one second from now, the
-// use of [func@GLib.timeout_add_seconds] is preferred over
-// [func@GLib.timeout_add].
-// 
-// This internally creates a main loop source using
-// [func@GLib.timeout_source_new_seconds] and attaches it to the main loop
-// context using [method@GLib.Source.attach]. You can do these steps manually
-// if you need greater control.
-// 
-// It is safe to call this function from any thread.
-// 
-// The interval given is in terms of monotonic time, not wall clock
-// time. See [func@GLib.get_monotonic_time].
 func TimeoutAddSecondsFull(priority int32, interval uint, function SourceFunc) uint {
 	var carg1 C.gint           // in, none, casted
 	var carg2 C.guint          // in, none, casted
@@ -15214,24 +11481,8 @@ func TimeoutAddSecondsFull(priority int32, interval uint, function SourceFunc) u
 
 // UCS4ToUTF8 wraps g_ucs4_to_utf8
 // 
-// The function takes the following parameters:
-// 
-// 	- str []uint32: a UCS-4 encoded string 
-// 
-// The function returns the following values:
-// 
-// 	- itemsRead int32: location to store number of
-//   characters read, or `NULL`. 
-// 	- itemsWritten int32: location to store number
-//   of bytes written or `NULL`. The value here stored does not include the
-//   trailing nul byte. 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_ucs4_to_utf8.html
 //
-// Convert a string from a 32-bit fixed width representation as UCS-4.
-// to UTF-8.
-// 
-// The result will be terminated with a nul byte.
 func UCS4ToUTF8(str []uint32) (int32, int32, string, error) {
 	var carg1 *C.gunichar // in, transfer: none, C Pointers: 1, Name: array[gunichar], array (inner gunichar (*typesystem.CastablePrimitive), length-by: carg2)
 	var carg2 C.glong     // implicit
@@ -15266,20 +11517,8 @@ func UCS4ToUTF8(str []uint32) (int32, int32, string, error) {
 
 // UnicharBreakType wraps g_unichar_break_type
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret UnicodeBreakType 
+// see also https://docs.gtk.org/glib/func.g_unichar_break_type.html
 //
-// Determines the break type of @c. @c should be a Unicode character
-// (to derive a character from UTF-8 encoded text, use
-// g_utf8_get_char()). The break type is used to find word and line
-// breaks ("text boundaries"), Pango implements the Unicode boundary
-// resolution algorithms and normally you would use a function such
-// as pango_break() instead of caring about break types yourself.
 func UnicharBreakType(c uint32) UnicodeBreakType {
 	var carg1 C.gunichar          // in, none, casted
 	var cret  C.GUnicodeBreakType // return, none, casted
@@ -15298,15 +11537,8 @@ func UnicharBreakType(c uint32) UnicodeBreakType {
 
 // UnicharCombiningClass wraps g_unichar_combining_class
 // 
-// The function takes the following parameters:
-// 
-// 	- uc uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_unichar_combining_class.html
 //
-// Determines the canonical combining class of a Unicode character.
 func UnicharCombiningClass(uc uint32) int32 {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gint     // return, none, casted
@@ -15325,32 +11557,8 @@ func UnicharCombiningClass(uc uint32) int32 {
 
 // UnicharCompose wraps g_unichar_compose
 // 
-// The function takes the following parameters:
-// 
-// 	- a uint32: a Unicode character 
-// 	- b uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- ch uint32: return location for the composed character 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_compose.html
 //
-// Performs a single composition step of the
-// Unicode canonical composition algorithm.
-// 
-// This function includes algorithmic Hangul Jamo composition,
-// but it is not exactly the inverse of g_unichar_decompose().
-// No composition can have either of @a or @b equal to zero.
-// To be precise, this function composes if and only if
-// there exists a Primary Composite P which is canonically
-// equivalent to the sequence &lt;@a,@b&gt;.  See the Unicode
-// Standard for the definition of Primary Composite.
-// 
-// If @a and @b do not compose a new character, @ch is set to zero.
-// 
-// See
-// [UAX#15](http://unicode.org/reports/tr15/)
-// for details.
 func UnicharCompose(a uint32, b uint32) (uint32, bool) {
 	var carg1 C.gunichar // in, none, casted
 	var carg2 C.gunichar // in, none, casted
@@ -15377,39 +11585,8 @@ func UnicharCompose(a uint32, b uint32) (uint32, bool) {
 
 // UnicharDecompose wraps g_unichar_decompose
 // 
-// The function takes the following parameters:
-// 
-// 	- ch uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- a uint32: return location for the first component of @ch 
-// 	- b uint32: return location for the second component of @ch 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_decompose.html
 //
-// Performs a single decomposition step of the
-// Unicode canonical decomposition algorithm.
-// 
-// This function does not include compatibility
-// decompositions. It does, however, include algorithmic
-// Hangul Jamo decomposition, as well as 'singleton'
-// decompositions which replace a character by a single
-// other character. In the case of singletons `*b` will
-// be set to zero.
-// 
-// If @ch is not decomposable, `*a` is set to @ch and `*b`
-// is set to zero.
-// 
-// Note that the way Unicode decomposition pairs are
-// defined, it is guaranteed that @b would not decompose
-// further, but @a may itself decompose.  To get the full
-// canonical decomposition for @ch, one would need to
-// recursively call this function on @a.  Or use
-// g_unichar_fully_decompose().
-// 
-// See
-// [UAX#15](http://unicode.org/reports/tr15/)
-// for details.
 func UnicharDecompose(ch uint32) (uint32, uint32, bool) {
 	var carg1 C.gunichar // in, none, casted
 	var carg2 C.gunichar // out, full, casted
@@ -15436,16 +11613,8 @@ func UnicharDecompose(ch uint32) (uint32, uint32, bool) {
 
 // UnicharDigitValue wraps g_unichar_digit_value
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_unichar_digit_value.html
 //
-// Determines the numeric value of a character as a decimal
-// digit.
 func UnicharDigitValue(c uint32) int32 {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gint     // return, none, casted
@@ -15464,36 +11633,8 @@ func UnicharDigitValue(c uint32) int32 {
 
 // UnicharFullyDecompose wraps g_unichar_fully_decompose
 // 
-// The function takes the following parameters:
-// 
-// 	- ch uint32: a Unicode character. 
-// 	- compat bool: whether perform canonical or compatibility decomposition 
-// 	- resultLen uint: length of @result 
-// 
-// The function returns the following values:
-// 
-// 	- result uint32: location to store decomposed result, or %NULL 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_unichar_fully_decompose.html
 //
-// Computes the canonical or compatibility decomposition of a
-// Unicode character.  For compatibility decomposition,
-// pass %TRUE for @compat; for canonical decomposition
-// pass %FALSE for @compat.
-// 
-// The decomposed sequence is placed in @result.  Only up to
-// @result_len characters are written into @result.  The length
-// of the full decomposition (irrespective of @result_len) is
-// returned by the function.  For canonical decomposition,
-// currently all decompositions are of length at most 4, but
-// this may change in the future (very unlikely though).
-// At any rate, Unicode does guarantee that a buffer of length
-// 18 is always enough for both compatibility and canonical
-// decompositions, so that is the size recommended. This is provided
-// as %G_UNICHAR_MAX_DECOMPOSITION_LENGTH.
-// 
-// See
-// [UAX#15](http://unicode.org/reports/tr15/)
-// for details.
 func UnicharFullyDecompose(ch uint32, compat bool, resultLen uint) (uint32, uint) {
 	var carg1 C.gunichar // in, none, casted
 	var carg2 C.gboolean // in
@@ -15525,24 +11666,8 @@ func UnicharFullyDecompose(ch uint32, compat bool, resultLen uint) (uint32, uint
 
 // UnicharGetMirrorChar wraps g_unichar_get_mirror_char
 // 
-// The function takes the following parameters:
-// 
-// 	- ch uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- mirroredCh uint32: location to store the mirrored character 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_get_mirror_char.html
 //
-// In Unicode, some characters are "mirrored". This means that their
-// images are mirrored horizontally in text that is laid out from right
-// to left. For instance, "(" would become its mirror image, ")", in
-// right-to-left text.
-// 
-// If @ch has the Unicode mirrored property and there is another unicode
-// character that typically has a glyph that is the mirror image of @ch's
-// glyph and @mirrored_ch is set, it puts that character in the address
-// pointed to by @mirrored_ch.  Otherwise the original character is put.
 func UnicharGetMirrorChar(ch uint32) (uint32, bool) {
 	var carg1 C.gunichar // in, none, casted
 	var carg2 C.gunichar // out, full, casted
@@ -15566,21 +11691,8 @@ func UnicharGetMirrorChar(ch uint32) (uint32, bool) {
 
 // UnicharGetScript wraps g_unichar_get_script
 // 
-// The function takes the following parameters:
-// 
-// 	- ch uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret UnicodeScript 
+// see also https://docs.gtk.org/glib/func.g_unichar_get_script.html
 //
-// Looks up the #GUnicodeScript for a particular character (as defined
-// by Unicode Standard Annex \#24). No check is made for @ch being a
-// valid Unicode character; if you pass in invalid character, the
-// result is undefined.
-// 
-// This function is equivalent to pango_script_for_unichar() and the
-// two are interchangeable.
 func UnicharGetScript(ch uint32) UnicodeScript {
 	var carg1 C.gunichar       // in, none, casted
 	var cret  C.GUnicodeScript // return, none, casted
@@ -15599,17 +11711,8 @@ func UnicharGetScript(ch uint32) UnicodeScript {
 
 // UnicharIsalnum wraps g_unichar_isalnum
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isalnum.html
 //
-// Determines whether a character is alphanumeric.
-// Given some UTF-8 text, obtain a character value
-// with g_utf8_get_char().
 func UnicharIsalnum(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15630,17 +11733,8 @@ func UnicharIsalnum(c uint32) bool {
 
 // UnicharIsalpha wraps g_unichar_isalpha
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isalpha.html
 //
-// Determines whether a character is alphabetic (i.e. a letter).
-// Given some UTF-8 text, obtain a character value with
-// g_utf8_get_char().
 func UnicharIsalpha(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15661,17 +11755,8 @@ func UnicharIsalpha(c uint32) bool {
 
 // UnicharIscntrl wraps g_unichar_iscntrl
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_iscntrl.html
 //
-// Determines whether a character is a control character.
-// Given some UTF-8 text, obtain a character value with
-// g_utf8_get_char().
 func UnicharIscntrl(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15692,16 +11777,8 @@ func UnicharIscntrl(c uint32) bool {
 
 // UnicharIsdefined wraps g_unichar_isdefined
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isdefined.html
 //
-// Determines if a given character is assigned in the Unicode
-// standard.
 func UnicharIsdefined(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15722,17 +11799,8 @@ func UnicharIsdefined(c uint32) bool {
 
 // UnicharIsdigit wraps g_unichar_isdigit
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isdigit.html
 //
-// Determines whether a character is numeric (i.e. a digit).  This
-// covers ASCII 0-9 and also digits in other languages/scripts.  Given
-// some UTF-8 text, obtain a character value with g_utf8_get_char().
 func UnicharIsdigit(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15753,19 +11821,8 @@ func UnicharIsdigit(c uint32) bool {
 
 // UnicharIsgraph wraps g_unichar_isgraph
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isgraph.html
 //
-// Determines whether a character is printable and not a space
-// (returns %FALSE for control characters, format characters, and
-// spaces). g_unichar_isprint() is similar, but returns %TRUE for
-// spaces. Given some UTF-8 text, obtain a character value with
-// g_utf8_get_char().
 func UnicharIsgraph(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15786,17 +11843,8 @@ func UnicharIsgraph(c uint32) bool {
 
 // UnicharIslower wraps g_unichar_islower
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_islower.html
 //
-// Determines whether a character is a lowercase letter.
-// Given some UTF-8 text, obtain a character value with
-// g_utf8_get_char().
 func UnicharIslower(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15817,23 +11865,8 @@ func UnicharIslower(c uint32) bool {
 
 // UnicharIsmark wraps g_unichar_ismark
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_ismark.html
 //
-// Determines whether a character is a mark (non-spacing mark,
-// combining mark, or enclosing mark in Unicode speak).
-// Given some UTF-8 text, obtain a character value
-// with g_utf8_get_char().
-// 
-// Note: in most cases where isalpha characters are allowed,
-// ismark characters should be allowed to as they are essential
-// for writing most European languages as well as many non-Latin
-// scripts.
 func UnicharIsmark(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15854,18 +11887,8 @@ func UnicharIsmark(c uint32) bool {
 
 // UnicharIsprint wraps g_unichar_isprint
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isprint.html
 //
-// Determines whether a character is printable.
-// Unlike g_unichar_isgraph(), returns %TRUE for spaces.
-// Given some UTF-8 text, obtain a character value with
-// g_utf8_get_char().
 func UnicharIsprint(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15886,17 +11909,8 @@ func UnicharIsprint(c uint32) bool {
 
 // UnicharIspunct wraps g_unichar_ispunct
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_ispunct.html
 //
-// Determines whether a character is punctuation or a symbol.
-// Given some UTF-8 text, obtain a character value with
-// g_utf8_get_char().
 func UnicharIspunct(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15917,21 +11931,8 @@ func UnicharIspunct(c uint32) bool {
 
 // UnicharIsspace wraps g_unichar_isspace
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isspace.html
 //
-// Determines whether a character is a space, tab, or line separator
-// (newline, carriage return, etc.).  Given some UTF-8 text, obtain a
-// character value with g_utf8_get_char().
-// 
-// (Note: don't use this to do word breaking; you have to use
-// Pango or equivalent to get word breaking right, the algorithm
-// is fairly complex.)
 func UnicharIsspace(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15952,20 +11953,8 @@ func UnicharIsspace(c uint32) bool {
 
 // UnicharIstitle wraps g_unichar_istitle
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_istitle.html
 //
-// Determines if a character is titlecase. Some characters in
-// Unicode which are composites, such as the DZ digraph
-// have three case variants instead of just two. The titlecase
-// form is used at the beginning of a word where only the
-// first letter is capitalized. The titlecase form of the DZ
-// digraph is U+01F2 LATIN CAPITAL LETTTER D WITH SMALL LETTER Z.
 func UnicharIstitle(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -15986,15 +11975,8 @@ func UnicharIstitle(c uint32) bool {
 
 // UnicharIsupper wraps g_unichar_isupper
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isupper.html
 //
-// Determines if a character is uppercase.
 func UnicharIsupper(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -16015,16 +11997,8 @@ func UnicharIsupper(c uint32) bool {
 
 // UnicharIswide wraps g_unichar_iswide
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_iswide.html
 //
-// Determines if a character is typically rendered in a double-width
-// cell.
 func UnicharIswide(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -16045,24 +12019,8 @@ func UnicharIswide(c uint32) bool {
 
 // UnicharIswideCjk wraps g_unichar_iswide_cjk
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_iswide_cjk.html
 //
-// Determines if a character is typically rendered in a double-width
-// cell under legacy East Asian locales.  If a character is wide according to
-// g_unichar_iswide(), then it is also reported wide with this function, but
-// the converse is not necessarily true. See the
-// [Unicode Standard Annex #11](http://www.unicode.org/reports/tr11/)
-// for details.
-// 
-// If a character passes the g_unichar_iswide() test then it will also pass
-// this test, but not the other way around.  Note that some characters may
-// pass both this test and g_unichar_iszerowidth().
 func UnicharIswideCjk(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -16083,15 +12041,8 @@ func UnicharIswideCjk(c uint32) bool {
 
 // UnicharIsxdigit wraps g_unichar_isxdigit
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character. 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_isxdigit.html
 //
-// Determines if a character is a hexadecimal digit.
 func UnicharIsxdigit(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -16112,23 +12063,8 @@ func UnicharIsxdigit(c uint32) bool {
 
 // UnicharIszerowidth wraps g_unichar_iszerowidth
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_iszerowidth.html
 //
-// Determines if a given character typically takes zero width when rendered.
-// The return value is %TRUE for all non-spacing and enclosing marks
-// (e.g., combining accents), format characters, zero-width
-// space, but not U+00AD SOFT HYPHEN.
-// 
-// A typical use of this function is with one of g_unichar_iswide() or
-// g_unichar_iswide_cjk() to determine the number of cells a string occupies
-// when displayed on a grid display (terminals).  However, note that not all
-// terminals support zero-width rendering of zero-width marks.
 func UnicharIszerowidth(c uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -16149,18 +12085,8 @@ func UnicharIszerowidth(c uint32) bool {
 
 // UnicharToUTF8 wraps g_unichar_to_utf8
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character code 
-// 
-// The function returns the following values:
-// 
-// 	- outbuf byte: output buffer, must have at
-//   least 6 bytes of space. If `NULL`, the length will be computed and
-//   returned and nothing will be written to @outbuf. 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_unichar_to_utf8.html
 //
-// Converts a single character to UTF-8.
 func UnicharToUTF8(c uint32) (byte, int32) {
 	var carg1 C.gunichar // in, none, casted
 	var carg2 C.gchar    // out, transfer: none, C Pointers: 0, Name: gchar, optional, caller-allocates
@@ -16184,15 +12110,8 @@ func UnicharToUTF8(c uint32) (byte, int32) {
 
 // UnicharTolower wraps g_unichar_tolower
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character. 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/func.g_unichar_tolower.html
 //
-// Converts a character to lower case.
 func UnicharTolower(c uint32) uint32 {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gunichar // return, none, casted
@@ -16211,15 +12130,8 @@ func UnicharTolower(c uint32) uint32 {
 
 // UnicharTotitle wraps g_unichar_totitle
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/func.g_unichar_totitle.html
 //
-// Converts a character to the titlecase.
 func UnicharTotitle(c uint32) uint32 {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gunichar // return, none, casted
@@ -16238,15 +12150,8 @@ func UnicharTotitle(c uint32) uint32 {
 
 // UnicharToupper wraps g_unichar_toupper
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/func.g_unichar_toupper.html
 //
-// Converts a character to uppercase.
 func UnicharToupper(c uint32) uint32 {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gunichar // return, none, casted
@@ -16265,15 +12170,8 @@ func UnicharToupper(c uint32) uint32 {
 
 // UnicharType wraps g_unichar_type
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret UnicodeType 
+// see also https://docs.gtk.org/glib/func.g_unichar_type.html
 //
-// Classifies a Unicode character by type.
 func UnicharType(c uint32) UnicodeType {
 	var carg1 C.gunichar     // in, none, casted
 	var cret  C.GUnicodeType // return, none, casted
@@ -16292,18 +12190,8 @@ func UnicharType(c uint32) UnicodeType {
 
 // UnicharValidate wraps g_unichar_validate
 // 
-// The function takes the following parameters:
-// 
-// 	- ch uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_unichar_validate.html
 //
-// Checks whether @ch is a valid Unicode character.
-// 
-// Some possible integer values of @ch will not be valid. U+0000 is considered a
-// valid character, though it&#x2019;s normally a string terminator.
 func UnicharValidate(ch uint32) bool {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gboolean // return
@@ -16324,16 +12212,8 @@ func UnicharValidate(ch uint32) bool {
 
 // UnicharXdigitValue wraps g_unichar_xdigit_value
 // 
-// The function takes the following parameters:
-// 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_unichar_xdigit_value.html
 //
-// Determines the numeric value of a character as a hexadecimal
-// digit.
 func UnicharXdigitValue(c uint32) int32 {
 	var carg1 C.gunichar // in, none, casted
 	var cret  C.gint     // return, none, casted
@@ -16352,14 +12232,8 @@ func UnicharXdigitValue(c uint32) int32 {
 
 // UnicodeCanonicalOrdering wraps g_unicode_canonical_ordering
 // 
-// The function takes the following parameters:
-// 
-// 	- str []uint32: a UCS-4 encoded string. 
+// see also https://docs.gtk.org/glib/func.g_unicode_canonical_ordering.html
 //
-// Computes the canonical ordering of a string in-place.
-// This rearranges decomposed characters in the string
-// according to their combining classes.  See the Unicode
-// manual for more information.
 func UnicodeCanonicalOrdering(str []uint32) {
 	var carg1 *C.gunichar // in, transfer: none, C Pointers: 1, Name: array[gunichar], array (inner gunichar (*typesystem.CastablePrimitive), length-by: carg2)
 	var carg2 C.gsize     // implicit
@@ -16375,28 +12249,8 @@ func UnicodeCanonicalOrdering(str []uint32) {
 
 // Unsetenv wraps g_unsetenv
 // 
-// The function takes the following parameters:
-// 
-// 	- variable string: the environment variable to remove, must
-//     not contain '=' 
+// see also https://docs.gtk.org/glib/func.g_unsetenv.html
 //
-// Removes an environment variable from the environment.
-// 
-// Note that on some systems, when variables are overwritten, the
-// memory used for the previous variables and its value isn't reclaimed.
-// 
-// You should be mindful of the fact that environment variable handling
-// in UNIX is not thread-safe, and your program may crash if one thread
-// calls g_unsetenv() while another thread is calling getenv(). (And note
-// that many functions, such as gettext(), call getenv() internally.) This
-// function is only safe to use at the very start of your program, before
-// creating any other threads (or creating objects that create worker
-// threads of their own).
-// 
-// If you need to set up the environment for a child process, you can
-// use g_get_environ() to get an environment array, modify that with
-// g_environ_setenv() and g_environ_unsetenv(), and then pass that
-// array directly to execvpe(), g_spawn_async(), or the like.
 func Unsetenv(variable string) {
 	var carg1 *C.gchar // in, none, string
 
@@ -16409,16 +12263,8 @@ func Unsetenv(variable string) {
 
 // Usleep wraps g_usleep
 // 
-// The function takes the following parameters:
-// 
-// 	- microseconds uint32: number of microseconds to pause 
+// see also https://docs.gtk.org/glib/func.g_usleep.html
 //
-// Pauses the current thread for the given number of microseconds.
-// 
-// There are 1 million microseconds per second (represented by the
-// %G_USEC_PER_SEC macro). g_usleep() may have limited precision,
-// depending on hardware and operating system; don't rely on the exact
-// length of the sleep.
 func Usleep(microseconds uint32) {
 	var carg1 C.gulong // in, none, casted
 
@@ -16430,25 +12276,8 @@ func Usleep(microseconds uint32) {
 
 // UTF16ToUCS4 wraps g_utf16_to_ucs4
 // 
-// The function takes the following parameters:
-// 
-// 	- str []uint16: a UTF-16 encoded string 
-// 
-// The function returns the following values:
-// 
-// 	- itemsRead int32: location to store number of words read, or
-//   `NULL`. If `NULL`, then [error@GLib.ConvertError.PARTIAL_INPUT] will be
-//   returned in case @str contains a trailing partial character. If
-//   an error occurs then the index of the invalid input is stored here. 
-// 	- itemsWritten int32: location to store number
-//   of characters written, or `NULL`. The value stored here does not include
-//   the trailing nul character. 
-// 	- goret *uint32 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_utf16_to_ucs4.html
 //
-// Convert a string from UTF-16 to UCS-4.
-// 
-// The result will be nul-terminated.
 func UTF16ToUCS4(str []uint16) (int32, int32, *uint32, error) {
 	var carg1 *C.gunichar2 // in, transfer: none, C Pointers: 1, Name: array[guint16], array (inner guint16 (*typesystem.CastablePrimitive), length-by: carg2)
 	var carg2 C.glong      // implicit
@@ -16484,37 +12313,8 @@ func UTF16ToUCS4(str []uint16) (int32, int32, *uint32, error) {
 
 // UTF16ToUTF8 wraps g_utf16_to_utf8
 // 
-// The function takes the following parameters:
-// 
-// 	- str []uint16: a UTF-16 encoded string 
-// 
-// The function returns the following values:
-// 
-// 	- itemsRead int32: location to store number of words read, or
-//   `NULL`. If `NULL`, then [error@GLib.ConvertError.PARTIAL_INPUT] will
-//   be returned in case @str contains a trailing partial character. If
-//   an error occurs then the index of the invalid input is stored here.
-//   It&#x2019;s guaranteed to be non-negative. 
-// 	- itemsWritten int32: location to store number
-//   of bytes written, or `NULL`. The value stored here does not include the
-//   trailing nul byte. It&#x2019;s guaranteed to be non-negative. 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_utf16_to_utf8.html
 //
-// Convert a string from UTF-16 to UTF-8.
-// 
-// The result will be terminated with a nul byte.
-// 
-// Note that the input is expected to be already in native endianness,
-// an initial byte-order-mark character is not handled specially.
-// [func@GLib.convert] can be used to convert a byte buffer of UTF-16 data of
-// ambiguous endianness.
-// 
-// Further note that this function does not validate the result
-// string; it may (for example) include embedded nul characters. The only
-// validation done by this function is to ensure that the input can
-// be correctly interpreted as UTF-16, i.e. it doesn&#x2019;t contain
-// unpaired surrogates or partial character sequences.
 func UTF16ToUTF8(str []uint16) (int32, int32, string, error) {
 	var carg1 *C.gunichar2 // in, transfer: none, C Pointers: 1, Name: array[guint16], array (inner guint16 (*typesystem.CastablePrimitive), length-by: carg2)
 	var carg2 C.glong      // implicit
@@ -16549,26 +12349,8 @@ func UTF16ToUTF8(str []uint16) (int32, int32, string, error) {
 
 // UTF8Casefold wraps g_utf8_casefold
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- len int: length of @str, in bytes, or -1 if @str is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_casefold.html
 //
-// Converts a string into a form that is independent of case. The
-// result will not correspond to any particular case, but can be
-// compared for equality or ordered with the results of calling
-// g_utf8_casefold() on other strings.
-// 
-// Note that calling g_utf8_casefold() followed by g_utf8_collate() is
-// only an approximation to the correct linguistic case insensitive
-// ordering, though it is a fairly good one. Getting this exactly
-// right would require a more sophisticated collation function that
-// takes case sensitivity into account. GLib does not currently
-// provide such a function.
 func UTF8Casefold(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -16592,25 +12374,8 @@ func UTF8Casefold(str string, len int) string {
 
 // UTF8Collate wraps g_utf8_collate
 // 
-// The function takes the following parameters:
-// 
-// 	- str1 string: a UTF-8 encoded string 
-// 	- str2 string: a UTF-8 encoded string 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_utf8_collate.html
 //
-// Compares two strings for ordering using the linguistically
-// correct rules for the [current locale](running.html#locale).
-// When sorting a large number of strings, it will be significantly
-// faster to obtain collation keys with g_utf8_collate_key() and
-// compare the keys with strcmp() when sorting instead of sorting
-// the original strings.
-// 
-// If the two strings are not comparable due to being in different collation
-// sequences, the result is undefined. This can happen if the strings are in
-// different language scripts, for example.
 func UTF8Collate(str1 string, str2 string) int32 {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -16634,28 +12399,8 @@ func UTF8Collate(str1 string, str2 string) int32 {
 
 // UTF8CollateKey wraps g_utf8_collate_key
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string. 
-// 	- len int: length of @str, in bytes, or -1 if @str is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_collate_key.html
 //
-// Converts a string into a collation key that can be compared
-// with other collation keys produced by the same function using
-// strcmp().
-// 
-// The results of comparing the collation keys of two strings
-// with strcmp() will always be the same as comparing the two
-// original keys with g_utf8_collate().
-// 
-// Note that this function depends on the [current locale](running.html#locale).
-// 
-// Note that the returned string is not guaranteed to be in any
-// encoding, especially UTF-8. The returned value is meant to be
-// used only for comparisons.
 func UTF8CollateKey(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -16679,30 +12424,8 @@ func UTF8CollateKey(str string, len int) string {
 
 // UTF8CollateKeyForFilename wraps g_utf8_collate_key_for_filename
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string. 
-// 	- len int: length of @str, in bytes, or -1 if @str is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_collate_key_for_filename.html
 //
-// Converts a string into a collation key that can be compared
-// with other collation keys produced by the same function using strcmp().
-// 
-// In order to sort filenames correctly, this function treats the dot '.'
-// as a special case. Most dictionary orderings seem to consider it
-// insignificant, thus producing the ordering "event.c" "eventgenerator.c"
-// "event.h" instead of "event.c" "event.h" "eventgenerator.c". Also, we
-// would like to treat numbers intelligently so that "file1" "file10" "file5"
-// is sorted as "file1" "file5" "file10".
-// 
-// Note that this function depends on the [current locale](running.html#locale).
-// 
-// Note that the returned string is not guaranteed to be in any
-// encoding, especially UTF-8. The returned value is meant to be
-// used only for comparisons.
 func UTF8CollateKeyForFilename(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -16726,26 +12449,8 @@ func UTF8CollateKeyForFilename(str string, len int) string {
 
 // UTF8FindNextChar wraps g_utf8_find_next_char
 // 
-// The function takes the following parameters:
-// 
-// 	- p string: a pointer to a position within a UTF-8 encoded string 
-// 	- end string (nullable): a pointer to the byte following the end of the string,
-//     or `NULL` to indicate that the string is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_utf8_find_next_char.html
 //
-// Finds the start of the next UTF-8 character in the string after @p.
-// 
-// @p does not have to be at the beginning of a UTF-8 character. No check
-// is made to see if the character found is actually valid other than
-// it starts with an appropriate byte.
-// 
-// If @end is `NULL`, the return value will never be `NULL`: if the end of the
-// string is reached, a pointer to the terminating nul byte is returned. If
-// @end is non-`NULL`, the return value will be `NULL` if the end of the string
-// is reached.
 func UTF8FindNextChar(p string, end string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string, nullable-string
@@ -16773,22 +12478,8 @@ func UTF8FindNextChar(p string, end string) string {
 
 // UTF8FindPrevChar wraps g_utf8_find_prev_char
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: pointer to the beginning of a UTF-8 encoded string 
-// 	- p string: pointer to some position within @str 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_utf8_find_prev_char.html
 //
-// Given a position @p with a UTF-8 encoded string @str, find the start
-// of the previous UTF-8 character starting before @p. Returns `NULL` if no
-// UTF-8 characters are present in @str before @p.
-// 
-// @p does not have to be at the beginning of a UTF-8 character. No check
-// is made to see if the character found is actually valid other than
-// it starts with an appropriate byte.
 func UTF8FindPrevChar(str string, p string) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -16814,20 +12505,8 @@ func UTF8FindPrevChar(str string, p string) string {
 
 // UTF8GetChar wraps g_utf8_get_char
 // 
-// The function takes the following parameters:
-// 
-// 	- p string: a pointer to Unicode character encoded as UTF-8 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/func.g_utf8_get_char.html
 //
-// Converts a sequence of bytes encoded as UTF-8 to a Unicode character.
-// 
-// If @p does not point to a valid UTF-8 encoded character, results
-// are undefined. If you are not sure that the bytes are complete
-// valid Unicode characters, you should use [func@GLib.utf8_get_char_validated]
-// instead.
 func UTF8GetChar(p string) uint32 {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gunichar // return, none, casted
@@ -16847,24 +12526,8 @@ func UTF8GetChar(p string) uint32 {
 
 // UTF8GetCharValidated wraps g_utf8_get_char_validated
 // 
-// The function takes the following parameters:
-// 
-// 	- p string: a pointer to Unicode character encoded as UTF-8 
-// 	- maxLen int: the maximum number of bytes to read, or `-1` if @p is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/func.g_utf8_get_char_validated.html
 //
-// Convert a sequence of bytes encoded as UTF-8 to a Unicode character.
-// 
-// This function checks for incomplete characters, for invalid characters
-// such as characters that are out of the range of Unicode, and for
-// overlong encodings of valid characters.
-// 
-// Note that [func@GLib.utf8_get_char_validated] returns `(gunichar)-2` if
-// @max_len is positive and any of the bytes in the first UTF-8 character
-// sequence are nul.
 func UTF8GetCharValidated(p string, maxLen int) uint32 {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.gssize   // in, none, casted
@@ -16887,25 +12550,8 @@ func UTF8GetCharValidated(p string, maxLen int) uint32 {
 
 // UTF8MakeValid wraps g_utf8_make_valid
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: string to coerce into UTF-8 
-// 	- len int: the maximum length of @str to use, in bytes. If @len is negative,
-//   then the string is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_make_valid.html
 //
-// If the provided string is valid UTF-8, return a copy of it. If not,
-// return a copy in which bytes that could not be interpreted as valid Unicode
-// are replaced with the Unicode replacement character (U+FFFD).
-// 
-// For example, this is an appropriate function to use if you have received
-// a string that was incorrectly declared to be UTF-8, and you need a valid
-// UTF-8 version of it that can be logged or displayed to the user, with the
-// assumption that it is close enough to ASCII or UTF-8 to be mostly
-// readable as-is.
 func UTF8MakeValid(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -16929,41 +12575,8 @@ func UTF8MakeValid(str string, len int) string {
 
 // UTF8Normalize wraps g_utf8_normalize
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string. 
-// 	- len int: length of @str, in bytes, or -1 if @str is nul-terminated. 
-// 	- mode NormalizeMode: the type of normalization to perform. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_utf8_normalize.html
 //
-// Converts a string into canonical form, standardizing
-// such issues as whether a character with an accent
-// is represented as a base character and combining
-// accent or as a single precomposed character. The
-// string has to be valid UTF-8, otherwise %NULL is
-// returned. You should generally call g_utf8_normalize()
-// before comparing two Unicode strings.
-// 
-// The normalization mode %G_NORMALIZE_DEFAULT only
-// standardizes differences that do not affect the
-// text content, such as the above-mentioned accent
-// representation. %G_NORMALIZE_ALL also standardizes
-// the "compatibility" characters in Unicode, such
-// as SUPERSCRIPT THREE to the standard forms
-// (in this case DIGIT THREE). Formatting information
-// may be lost but for most text operations such
-// characters should be considered the same.
-// 
-// %G_NORMALIZE_DEFAULT_COMPOSE and %G_NORMALIZE_ALL_COMPOSE
-// are like %G_NORMALIZE_DEFAULT and %G_NORMALIZE_ALL,
-// but returned a result with composed forms rather
-// than a maximally decomposed form. This is often
-// useful if you intend to convert the string to
-// a legacy encoding or pass it to a system with
-// less capable Unicode handling.
 func UTF8Normalize(str string, len int, mode NormalizeMode) string {
 	var carg1 *C.gchar         // in, none, string
 	var carg2 C.gssize         // in, none, casted
@@ -16992,28 +12605,8 @@ func UTF8Normalize(str string, len int, mode NormalizeMode) string {
 
 // UTF8OffsetToPointer wraps g_utf8_offset_to_pointer
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- offset int32: a character offset within @str 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_offset_to_pointer.html
 //
-// Converts from an integer character offset to a pointer to a position
-// within the string.
-// 
-// Since 2.10, this function allows to pass a negative @offset to
-// step backwards. It is usually worth stepping backwards from the end
-// instead of forwards if @offset is in the last fourth of the string,
-// since moving forward is about 3 times faster than moving backward.
-// 
-// Note that this function doesn&#x2019;t abort when reaching the end of @str.
-// Therefore you should be sure that @offset is within string boundaries
-// before calling that function. Call [func@GLib.utf8_strlen] when unsure.
-// This limitation exists as this function is called frequently during
-// text rendering and therefore has to be as fast as possible.
 func UTF8OffsetToPointer(str string, offset int32) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.glong  // in, none, casted
@@ -17036,20 +12629,8 @@ func UTF8OffsetToPointer(str string, offset int32) string {
 
 // UTF8PointerToOffset wraps g_utf8_pointer_to_offset
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- pos string: a pointer to a position within @str 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_utf8_pointer_to_offset.html
 //
-// Converts from a pointer to position within a string to an integer
-// character offset.
-// 
-// Since 2.10, this function allows @pos to be before @str, and returns
-// a negative offset in this case.
 func UTF8PointerToOffset(str string, pos string) int32 {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -17073,21 +12654,8 @@ func UTF8PointerToOffset(str string, pos string) int32 {
 
 // UTF8PrevChar wraps g_utf8_prev_char
 // 
-// The function takes the following parameters:
-// 
-// 	- p string: a pointer to a position within a UTF-8 encoded string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_prev_char.html
 //
-// Finds the previous UTF-8 character in the string before @p.
-// 
-// @p does not have to be at the beginning of a UTF-8 character. No check
-// is made to see if the character found is actually valid other than
-// it starts with an appropriate byte. If @p might be the first
-// character of the string, you must use [func@GLib.utf8_find_prev_char]
-// instead.
 func UTF8PrevChar(p string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, none, string
@@ -17107,20 +12675,8 @@ func UTF8PrevChar(p string) string {
 
 // UTF8Strchr wraps g_utf8_strchr
 // 
-// The function takes the following parameters:
-// 
-// 	- p string: a nul-terminated UTF-8 encoded string 
-// 	- len int: the maximum length of @p 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_utf8_strchr.html
 //
-// Finds the leftmost occurrence of the given Unicode character
-// in a UTF-8 encoded string, while limiting the search to @len bytes.
-// 
-// If @len is `-1`, allow unbounded search.
 func UTF8Strchr(p string, len int, c uint32) string {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.gssize   // in, none, casted
@@ -17148,19 +12704,8 @@ func UTF8Strchr(p string, len int, c uint32) string {
 
 // UTF8Strdown wraps g_utf8_strdown
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- len int: length of @str, in bytes, or -1 if @str is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_strdown.html
 //
-// Converts all Unicode characters in the string that have a case
-// to lowercase. The exact manner that this is done depends
-// on the current locale, and may result in the number of
-// characters in the string changing.
 func UTF8Strdown(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -17184,22 +12729,8 @@ func UTF8Strdown(str string, len int) string {
 
 // UTF8Strlen wraps g_utf8_strlen
 // 
-// The function takes the following parameters:
-// 
-// 	- p string: pointer to the start of a UTF-8 encoded string 
-// 	- max int: the maximum number of bytes to examine. If @max
-//   is less than 0, then the string is assumed to be
-//   nul-terminated. If @max is 0, @p will not be examined and
-//   may be `NULL`. If @max is greater than 0, up to @max
-//   bytes are examined 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/func.g_utf8_strlen.html
 //
-// Computes the length of the string in characters, not including
-// the terminating nul character. If the @max&#x2019;th byte falls in the
-// middle of a character, the last (partial) character is not counted.
 func UTF8Strlen(p string, max int) int32 {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -17222,25 +12753,8 @@ func UTF8Strlen(p string, max int) int32 {
 
 // UTF8Strncpy wraps g_utf8_strncpy
 // 
-// The function takes the following parameters:
-// 
-// 	- dest string: buffer to fill with characters from @src 
-// 	- src string: UTF-8 encoded string 
-// 	- n uint: character count 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_strncpy.html
 //
-// Like the standard C [`strncpy()`](man:strncpy) function, but copies a given
-// number of characters instead of a given number of bytes.
-// 
-// The @src string must be valid UTF-8 encoded text. (Use
-// [func@GLib.utf8_validate] on all text before trying to use UTF-8 utility
-// functions with it.)
-// 
-// Note you must ensure @dest is at least 4 * @n + 1 to fit the
-// largest possible UTF-8 characters
 func UTF8Strncpy(dest string, src string, n uint) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -17267,20 +12781,8 @@ func UTF8Strncpy(dest string, src string, n uint) string {
 
 // UTF8Strrchr wraps g_utf8_strrchr
 // 
-// The function takes the following parameters:
-// 
-// 	- p string: a nul-terminated UTF-8 encoded string 
-// 	- len int: the maximum length of @p 
-// 	- c uint32: a Unicode character 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_utf8_strrchr.html
 //
-// Find the rightmost occurrence of the given Unicode character
-// in a UTF-8 encoded string, while limiting the search to @len bytes.
-// 
-// If @len is `-1`, allow unbounded search.
 func UTF8Strrchr(p string, len int, c uint32) string {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.gssize   // in, none, casted
@@ -17308,30 +12810,8 @@ func UTF8Strrchr(p string, len int, c uint32) string {
 
 // UTF8Strreverse wraps g_utf8_strreverse
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- len int: the maximum length of @str to use, in bytes. If @len is negative,
-//   then the string is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_strreverse.html
 //
-// Reverses a UTF-8 string.
-// 
-// @str must be valid UTF-8 encoded text. (Use [func@GLib.utf8_validate] on all
-// text before trying to use UTF-8 utility functions with it.)
-// 
-// This function is intended for programmatic uses of reversed strings.
-// It pays no attention to decomposed characters, combining marks, byte
-// order marks, directional indicators (LRM, LRO, etc) and similar
-// characters which might need special handling when reversing a string
-// for display purposes.
-// 
-// Note that unlike [func@GLib.strreverse], this function returns
-// newly-allocated memory, which should be freed with [func@GLib.free] when
-// no longer needed.
 func UTF8Strreverse(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -17355,20 +12835,8 @@ func UTF8Strreverse(str string, len int) string {
 
 // UTF8Strup wraps g_utf8_strup
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- len int: length of @str, in bytes, or -1 if @str is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_strup.html
 //
-// Converts all Unicode characters in the string that have a case
-// to uppercase. The exact manner that this is done depends
-// on the current locale, and may result in the number of
-// characters in the string increasing. (For instance, the
-// German ess-zet will be changed to SS.)
 func UTF8Strup(str string, len int) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gssize // in, none, casted
@@ -17392,22 +12860,8 @@ func UTF8Strup(str string, len int) string {
 
 // UTF8Substring wraps g_utf8_substring
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- startPos int32: a character offset within @str 
-// 	- endPos int32: another character offset within @str,
-//   or `-1` to indicate the end of the string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_substring.html
 //
-// Copies a substring out of a UTF-8 encoded string.
-// The substring will contain @end_pos - @start_pos characters.
-// 
-// Since GLib 2.72, `-1` can be passed to @end_pos to indicate the
-// end of the string.
 func UTF8Substring(str string, startPos int32, endPos int32) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.glong  // in, none, casted
@@ -17434,30 +12888,8 @@ func UTF8Substring(str string, startPos int32, endPos int32) string {
 
 // UTF8ToUCS4 wraps g_utf8_to_ucs4
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- len int32: the maximum length of @str to use, in bytes. If @len is negative,
-//   then the string is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- itemsRead int32: location to store number of
-//  bytes read, or `NULL`.
-//   If `NULL`, then %G_CONVERT_ERROR_PARTIAL_INPUT will be
-//   returned in case @str contains a trailing partial
-//   character. If an error occurs then the index of the
-//   invalid input is stored here. 
-// 	- itemsWritten int32: location to store number
-//   of characters written or `NULL`. The value here stored does not include
-//   the trailing nul character. 
-// 	- goret *uint32 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_utf8_to_ucs4.html
 //
-// Convert a string from UTF-8 to a 32-bit fixed width representation as UCS-4.
-// 
-// A trailing nul character (U+0000) will be added to the string after the
-// converted text.
 func UTF8ToUCS4(str string, len int32) (int32, int32, *uint32, error) {
 	var carg1 *C.gchar    // in, none, string
 	var carg2 C.glong     // in, none, casted
@@ -17493,24 +12925,8 @@ func UTF8ToUCS4(str string, len int32) (int32, int32, *uint32, error) {
 
 // UTF8ToUCS4Fast wraps g_utf8_to_ucs4_fast
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- len int32: the maximum length of @str to use, in bytes. If @len is negative,
-//   then the string is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- itemsWritten int32: location to store the
-//   number of characters in the result, or `NULL`. 
-// 	- goret *uint32 
+// see also https://docs.gtk.org/glib/func.g_utf8_to_ucs4_fast.html
 //
-// Convert a string from UTF-8 to a 32-bit fixed width
-// representation as UCS-4, assuming valid UTF-8 input.
-// 
-// This function is roughly twice as fast as [func@GLib.utf8_to_ucs4]
-// but does no error checking on the input. A trailing nul character (U+0000)
-// will be added to the string after the converted text.
 func UTF8ToUCS4Fast(str string, len int32) (int32, *uint32) {
 	var carg1 *C.gchar    // in, none, string
 	var carg2 C.glong     // in, none, casted
@@ -17538,27 +12954,8 @@ func UTF8ToUCS4Fast(str string, len int32) (int32, *uint32) {
 
 // UTF8ToUTF16 wraps g_utf8_to_utf16
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a UTF-8 encoded string 
-// 	- len int32: the maximum length (number of bytes) of @str to use.
-//   If @len is negative, then the string is nul-terminated. 
-// 
-// The function returns the following values:
-// 
-// 	- itemsRead int32: location to store number of bytes read, or
-//   `NULL`. If `NULL`, then [error@GLib.ConvertError.PARTIAL_INPUT] will
-//   be returned in case @str contains a trailing partial character. If
-//   an error occurs then the index of the invalid input is stored here. 
-// 	- itemsWritten int32: location to store number
-//   of `gunichar2` written, or `NULL`. The value stored here does not include
-//   the trailing nul. 
-// 	- goret *uint16 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_utf8_to_utf16.html
 //
-// Convert a string from UTF-8 to UTF-16.
-// 
-// A nul character (U+0000) will be added to the result after the converted text.
 func UTF8ToUTF16(str string, len int32) (int32, int32, *uint16, error) {
 	var carg1 *C.gchar     // in, none, string
 	var carg2 C.glong      // in, none, casted
@@ -17594,20 +12991,8 @@ func UTF8ToUTF16(str string, len int32) (int32, int32, *uint16, error) {
 
 // UTF8TruncateMiddle wraps g_utf8_truncate_middle
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a nul-terminated UTF-8 encoded string 
-// 	- truncateLength uint: the new size of @string, in characters, including the ellipsis character 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_utf8_truncate_middle.html
 //
-// Cuts off the middle of the string, preserving half of @truncate_length
-// characters at the beginning and half at the end.
-// 
-// If @string is already short enough, this returns a copy of @string.
-// If @truncate_length is `0`, an empty string is returned.
 func UTF8TruncateMiddle(str string, truncateLength uint) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gsize  // in, none, casted
@@ -17631,32 +13016,8 @@ func UTF8TruncateMiddle(str string, truncateLength uint) string {
 
 // UTF8Validate wraps g_utf8_validate
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a pointer to character data 
-// 
-// The function returns the following values:
-// 
-// 	- end string: return location for end of valid data 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_utf8_validate.html
 //
-// Validates UTF-8 encoded text.
-// 
-// @str is the text to validate; if @str is nul-terminated, then @max_len can be
-// `-1`, otherwise @max_len should be the number of bytes to validate.
-// 
-// If @end is non-`NULL`, then the end of the valid range will be stored there.
-// This is the first byte of the first invalid character if some bytes were
-// invalid, or the end of the text being validated otherwise &#x2014; either the
-// trailing nul byte, or the first byte beyond @max_len (if it&#x2019;s positive).
-// 
-// Note that `g_utf8_validate()` returns `FALSE` if @max_len is  positive and
-// any of the @max_len bytes are nul.
-// 
-// Returns `TRUE` if all of @str was valid. Many GLib and GTK
-// routines require valid UTF-8 as input; so data read from a file
-// or the network should be checked with `g_utf8_validate()` before
-// doing anything else with it.
 func UTF8Validate(str string) (string, bool) {
 	var carg1 *C.gchar   // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
 	var carg2 C.gssize   // implicit
@@ -17684,19 +13045,8 @@ func UTF8Validate(str string) (string, bool) {
 
 // UTF8ValidateLen wraps g_utf8_validate_len
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a pointer to character data 
-// 
-// The function returns the following values:
-// 
-// 	- end string: return location for end of valid data 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_utf8_validate_len.html
 //
-// Validates UTF-8 encoded text.
-// 
-// As with [func@GLib.utf8_validate], but @max_len must be set, and hence this
-// function will always return `FALSE` if any of the bytes of @str are nul.
 func UTF8ValidateLen(str string) (string, bool) {
 	var carg1 *C.gchar   // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
 	var carg2 C.gsize    // implicit
@@ -17724,22 +13074,8 @@ func UTF8ValidateLen(str string) (string, bool) {
 
 // UuidStringIsValid wraps g_uuid_string_is_valid
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a string representing a UUID 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_uuid_string_is_valid.html
 //
-// Parses the string @str and verify if it is a UUID.
-// 
-// The function accepts the following syntax:
-// 
-// - simple forms (e.g. `f81d4fae-7dec-11d0-a765-00a0c91e6bf6`)
-// 
-// Note that hyphens are required within the UUID string itself,
-// as per the aforementioned RFC.
 func UuidStringIsValid(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -17761,13 +13097,8 @@ func UuidStringIsValid(str string) bool {
 
 // UuidStringRandom wraps g_uuid_string_random
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_uuid_string_random.html
 //
-// Generates a random UUID (RFC 4122 version 4) as a string. It has the same
-// randomness guarantees as #GRand, so must not be used for cryptographic
-// purposes such as key generation, nonces, salts or one-time pads.
 func UuidStringRandom() string {
 	var cret *C.gchar // return, full, string
 
@@ -17782,10 +13113,9 @@ func UuidStringRandom() string {
 }
 
 // AsyncQueue wraps GAsyncQueue
-//
-// An opaque data structure which represents an asynchronous queue.
 // 
-// It should only be accessed through the `g_async_queue_*` functions.
+// see also https://docs.gtk.org/glib/struct.AsyncQueue.html
+//
 type AsyncQueue struct {
 	*asyncQueue
 }
@@ -17847,7 +13177,7 @@ func UnsafeAsyncQueueFromGlibFull(p unsafe.Pointer) *AsyncQueue {
 // 
 // When this is called without an associated call to [AsyncQueue.UnsafeAsyncQueueUnref], then [AsyncQueue] will leak memory.
 func UnsafeAsyncQueueRef(a *AsyncQueue) {
-	C.g_async_queue_ref(a.native)
+	C.g_async_queue_ref((*C.GAsyncQueue)(a.native))
 }
 
 // UnsafeAsyncQueueUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -17879,11 +13209,8 @@ func UnsafeAsyncQueueToGlibFull(a *AsyncQueue) unsafe.Pointer {
 
 // NewAsyncQueue wraps g_async_queue_new
 // 
-// The function returns the following values:
-// 
-// 	- goret *AsyncQueue 
+// see also https://docs.gtk.org/glib/func.g_async_queue_new.html
 //
-// Creates a new asynchronous queue.
 func NewAsyncQueue() *AsyncQueue {
 	var cret *C.GAsyncQueue // return, full, converted
 
@@ -17898,18 +13225,8 @@ func NewAsyncQueue() *AsyncQueue {
 
 // Length wraps g_async_queue_length
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_async_queue_length.g_async_queue_length.html
 //
-// Returns the length of the queue.
-// 
-// Actually this function returns the number of data items in
-// the queue minus the number of waiting threads, so a negative
-// value means waiting threads, and a positive value means available
-// entries in the @queue. A return value of 0 could mean n entries
-// in the queue and n threads waiting. This can happen due to locking
-// of the queue or due to scheduling.
 func (queue *AsyncQueue) Length() int32 {
 	var carg0 *C.GAsyncQueue // in, none, converted
 	var cret  C.gint         // return, none, casted
@@ -17928,20 +13245,8 @@ func (queue *AsyncQueue) Length() int32 {
 
 // LengthUnlocked wraps g_async_queue_length_unlocked
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_async_queue_length_unlocked.g_async_queue_length_unlocked.html
 //
-// Returns the length of the queue.
-// 
-// Actually this function returns the number of data items in
-// the queue minus the number of waiting threads, so a negative
-// value means waiting threads, and a positive value means available
-// entries in the @queue. A return value of 0 could mean n entries
-// in the queue and n threads waiting. This can happen due to locking
-// of the queue or due to scheduling.
-// 
-// This function must be called while holding the @queue's lock.
 func (queue *AsyncQueue) LengthUnlocked() int32 {
 	var carg0 *C.GAsyncQueue // in, none, converted
 	var cret  C.gint         // return, none, casted
@@ -17959,16 +13264,9 @@ func (queue *AsyncQueue) LengthUnlocked() int32 {
 }
 
 // Lock wraps g_async_queue_lock
+// 
+// see also https://docs.gtk.org/glib/method.g_async_queue_lock.g_async_queue_lock.html
 //
-// Acquires the @queue's lock. If another thread is already
-// holding the lock, this call will block until the lock
-// becomes available.
-// 
-// Call g_async_queue_unlock() to drop the lock again.
-// 
-// While holding the lock, you can only call the
-// g_async_queue_*_unlocked() functions on @queue. Otherwise,
-// deadlock may occur.
 func (queue *AsyncQueue) Lock() {
 	var carg0 *C.GAsyncQueue // in, none, converted
 
@@ -17979,12 +13277,9 @@ func (queue *AsyncQueue) Lock() {
 }
 
 // Unlock wraps g_async_queue_unlock
-//
-// Releases the queue's lock.
 // 
-// Calling this function when you have not acquired
-// the with g_async_queue_lock() leads to undefined
-// behaviour.
+// see also https://docs.gtk.org/glib/method.g_async_queue_unlock.g_async_queue_unlock.html
+//
 func (queue *AsyncQueue) Unlock() {
 	var carg0 *C.GAsyncQueue // in, none, converted
 
@@ -17995,44 +13290,9 @@ func (queue *AsyncQueue) Unlock() {
 }
 
 // BookmarkFile wraps GBookmarkFile
+// 
+// see also https://docs.gtk.org/glib/struct.BookmarkFile.html
 //
-// `GBookmarkFile` lets you parse, edit or create files containing bookmarks.
-// 
-// Bookmarks refer to a URI, along with some meta-data about the resource
-// pointed by the URI like its MIME type, the application that is registering
-// the bookmark and the icon that should be used to represent the bookmark.
-// The data is stored using the
-// [Desktop Bookmark Specification](https://www.freedesktop.org/wiki/Specifications/desktop-bookmark-spec/).
-// 
-// The syntax of the bookmark files is described in detail inside the
-// Desktop Bookmark Specification, here is a quick summary: bookmark
-// files use a sub-class of the XML Bookmark Exchange Language
-// specification, consisting of valid UTF-8 encoded XML, under the
-// `&lt;xbel&gt;` root element; each bookmark is stored inside a
-// `&lt;bookmark&gt;` element, using its URI: no relative paths can
-// be used inside a bookmark file. The bookmark may have a user defined
-// title and description, to be used instead of the URI. Under the
-// `&lt;metadata&gt;` element, with its owner attribute set to
-// `http://freedesktop.org`, is stored the meta-data about a resource
-// pointed by its URI. The meta-data consists of the resource's MIME
-// type; the applications that have registered a bookmark; the groups
-// to which a bookmark belongs to; a visibility flag, used to set the
-// bookmark as "private" to the applications and groups that has it
-// registered; the URI and MIME type of an icon, to be used when
-// displaying the bookmark inside a GUI.
-// 
-// Here is an example of a bookmark file:
-// [bookmarks.xbel](https://gitlab.gnome.org/GNOME/glib/-/blob/HEAD/glib/tests/bookmarks.xbel)
-// 
-// A bookmark file might contain more than one bookmark; each bookmark
-// is accessed through its URI.
-// 
-// The important caveat of bookmark files is that when you add a new
-// bookmark you must also add the application that is registering it, using
-// [method@GLib.BookmarkFile.add_application] or [method@GLib.BookmarkFile.set_application_info].
-// If a bookmark has no applications then it won't be dumped when creating
-// the on disk representation, using [method@GLib.BookmarkFile.to_data] or
-// [method@GLib.BookmarkFile.to_file].
 type BookmarkFile struct {
 	*bookmarkFile
 }
@@ -18113,15 +13373,8 @@ func UnsafeBookmarkFileToGlibFull(b *BookmarkFile) unsafe.Pointer {
 
 // NewBookmarkFile wraps g_bookmark_file_new
 // 
-// The function returns the following values:
-// 
-// 	- goret *BookmarkFile 
+// see also https://docs.gtk.org/glib/func.g_bookmark_file_new.html
 //
-// Creates a new empty #GBookmarkFile object.
-// 
-// Use g_bookmark_file_load_from_file(), g_bookmark_file_load_from_data()
-// or g_bookmark_file_load_from_data_dirs() to read an existing bookmark
-// file.
 func NewBookmarkFile() *BookmarkFile {
 	var cret *C.GBookmarkFile // return, full, converted
 
@@ -18136,9 +13389,7 @@ func NewBookmarkFile() *BookmarkFile {
 
 // BookmarkFileErrorQuark wraps g_bookmark_file_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_bookmark_file_error_quark.html
 func BookmarkFileErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -18153,35 +13404,8 @@ func BookmarkFileErrorQuark() Quark {
 
 // AddApplication wraps g_bookmark_file_add_application
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- name string (nullable): the name of the application registering the bookmark
-//   or %NULL 
-// 	- exec string (nullable): command line to be used to launch the bookmark or %NULL 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_add_application.g_bookmark_file_add_application.html
 //
-// Adds the application with @name and @exec to the list of
-// applications that have registered a bookmark for @uri into
-// @bookmark.
-// 
-// Every bookmark inside a #GBookmarkFile must have at least an
-// application registered.  Each application must provide a name, a
-// command line useful for launching the bookmark, the number of times
-// the bookmark has been registered by the application and the last
-// time the application registered this bookmark.
-// 
-// If @name is %NULL, the name of the application will be the
-// same returned by g_get_application_name(); if @exec is %NULL, the
-// command line will be a composition of the program name as
-// returned by g_get_prgname() and the "\%u" modifier, which will be
-// expanded to the bookmark's URI.
-// 
-// This function will automatically take care of updating the
-// registrations count and timestamping in case an application
-// with the same @name had already registered a bookmark for
-// @uri inside @bookmark.
-// 
-// If no bookmark for @uri is found, one is created.
 func (bookmark *BookmarkFile) AddApplication(uri string, name string, exec string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18209,15 +13433,8 @@ func (bookmark *BookmarkFile) AddApplication(uri string, name string, exec strin
 
 // AddGroup wraps g_bookmark_file_add_group
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- group string: the group name to be added 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_add_group.g_bookmark_file_add_group.html
 //
-// Adds @group to the list of groups to which the bookmark for @uri
-// belongs to.
-// 
-// If no bookmark for @uri is found then it is created.
 func (bookmark *BookmarkFile) AddGroup(uri string, group string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18237,11 +13454,8 @@ func (bookmark *BookmarkFile) AddGroup(uri string, group string) {
 
 // Copy wraps g_bookmark_file_copy
 // 
-// The function returns the following values:
-// 
-// 	- goret *BookmarkFile 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_copy.g_bookmark_file_copy.html
 //
-// Deeply copies a @bookmark #GBookmarkFile object to a new one.
 func (bookmark *BookmarkFile) Copy() *BookmarkFile {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var cret  *C.GBookmarkFile // return, full, converted
@@ -18260,21 +13474,8 @@ func (bookmark *BookmarkFile) Copy() *BookmarkFile {
 
 // GetApplications wraps g_bookmark_file_get_applications
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: return location of the length of the returned list, or %NULL 
-// 	- goret []string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_applications.g_bookmark_file_get_applications.html
 //
-// Retrieves the names of the applications that have registered the
-// bookmark for @uri.
-// 
-// In the event the URI cannot be found, %NULL is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
 func (bookmark *BookmarkFile) GetApplications(uri string) (uint, []string, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18307,19 +13508,8 @@ func (bookmark *BookmarkFile) GetApplications(uri string) (uint, []string, error
 
 // GetDescription wraps g_bookmark_file_get_description
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_description.g_bookmark_file_get_description.html
 //
-// Retrieves the description of the bookmark for @uri.
-// 
-// In the event the URI cannot be found, %NULL is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
 func (bookmark *BookmarkFile) GetDescription(uri string) (string, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18348,23 +13538,8 @@ func (bookmark *BookmarkFile) GetDescription(uri string) (string, error) {
 
 // GetGroups wraps g_bookmark_file_get_groups
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the length of the returned string, or %NULL 
-// 	- goret []string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_groups.g_bookmark_file_get_groups.html
 //
-// Retrieves the list of group names of the bookmark for @uri.
-// 
-// In the event the URI cannot be found, %NULL is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
-// 
-// The returned array is %NULL terminated, so @length may optionally
-// be %NULL.
 func (bookmark *BookmarkFile) GetGroups(uri string) (uint, []string, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18397,21 +13572,8 @@ func (bookmark *BookmarkFile) GetGroups(uri string) (uint, []string, error) {
 
 // GetIcon wraps g_bookmark_file_get_icon
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- href string: return location for the icon's location or %NULL 
-// 	- mimeType string: return location for the icon's MIME type or %NULL 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_icon.g_bookmark_file_get_icon.html
 //
-// Gets the icon of the bookmark for @uri.
-// 
-// In the event the URI cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
 func (bookmark *BookmarkFile) GetIcon(uri string) (string, string, bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18449,21 +13611,8 @@ func (bookmark *BookmarkFile) GetIcon(uri string) (string, string, bool, error) 
 
 // GetIsPrivate wraps g_bookmark_file_get_is_private
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_is_private.g_bookmark_file_get_is_private.html
 //
-// Gets whether the private flag of the bookmark for @uri is set.
-// 
-// In the event the URI cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.  In the
-// event that the private flag cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_INVALID_VALUE.
 func (bookmark *BookmarkFile) GetIsPrivate(uri string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18493,21 +13642,8 @@ func (bookmark *BookmarkFile) GetIsPrivate(uri string) (bool, error) {
 
 // GetMimeType wraps g_bookmark_file_get_mime_type
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_mime_type.g_bookmark_file_get_mime_type.html
 //
-// Retrieves the MIME type of the resource pointed by @uri.
-// 
-// In the event the URI cannot be found, %NULL is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.  In the
-// event that the MIME type cannot be found, %NULL is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_INVALID_VALUE.
 func (bookmark *BookmarkFile) GetMimeType(uri string) (string, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18536,11 +13672,8 @@ func (bookmark *BookmarkFile) GetMimeType(uri string) (string, error) {
 
 // GetSize wraps g_bookmark_file_get_size
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_size.g_bookmark_file_get_size.html
 //
-// Gets the number of bookmarks inside @bookmark.
 func (bookmark *BookmarkFile) GetSize() int32 {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var cret  C.gint           // return, none, casted
@@ -18559,21 +13692,8 @@ func (bookmark *BookmarkFile) GetSize() int32 {
 
 // GetTitle wraps g_bookmark_file_get_title
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string (nullable): a valid URI or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_title.g_bookmark_file_get_title.html
 //
-// Returns the title of the bookmark for @uri.
-// 
-// If @uri is %NULL, the title of @bookmark is returned.
-// 
-// In the event the URI cannot be found, %NULL is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
 func (bookmark *BookmarkFile) GetTitle(uri string) (string, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string, nullable-string
@@ -18604,14 +13724,8 @@ func (bookmark *BookmarkFile) GetTitle(uri string) (string, error) {
 
 // GetUris wraps g_bookmark_file_get_uris
 // 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the number of returned URIs, or %NULL 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_get_uris.g_bookmark_file_get_uris.html
 //
-// Returns all URIs of the bookmarks in the bookmark file @bookmark.
-// The array of returned URIs will be %NULL-terminated, so @length may
-// optionally be %NULL.
 func (bookmark *BookmarkFile) GetUris() (uint, []string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 C.gsize          // out, full, casted
@@ -18635,21 +13749,8 @@ func (bookmark *BookmarkFile) GetUris() (uint, []string) {
 
 // HasApplication wraps g_bookmark_file_has_application
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- name string: the name of the application 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_has_application.g_bookmark_file_has_application.html
 //
-// Checks whether the bookmark for @uri inside @bookmark has been
-// registered by application @name.
-// 
-// In the event the URI cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
 func (bookmark *BookmarkFile) HasApplication(uri string, name string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18683,21 +13784,8 @@ func (bookmark *BookmarkFile) HasApplication(uri string, name string) (bool, err
 
 // HasGroup wraps g_bookmark_file_has_group
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- group string: the group name to be searched 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_has_group.g_bookmark_file_has_group.html
 //
-// Checks whether @group appears in the list of groups to which
-// the bookmark for @uri belongs to.
-// 
-// In the event the URI cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
 func (bookmark *BookmarkFile) HasGroup(uri string, group string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18731,15 +13819,8 @@ func (bookmark *BookmarkFile) HasGroup(uri string, group string) (bool, error) {
 
 // HasItem wraps g_bookmark_file_has_item
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_has_item.g_bookmark_file_has_item.html
 //
-// Looks whether the desktop bookmark has an item with its URI set to @uri.
 func (bookmark *BookmarkFile) HasItem(uri string) bool {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18764,19 +13845,8 @@ func (bookmark *BookmarkFile) HasItem(uri string) bool {
 
 // LoadFromData wraps g_bookmark_file_load_from_data
 // 
-// The function takes the following parameters:
-// 
-// 	- data string: desktop bookmarks
-//    loaded in memory 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_load_from_data.g_bookmark_file_load_from_data.html
 //
-// Loads a bookmark file from memory into an empty #GBookmarkFile
-// structure.  If the object cannot be created then @error is set to a
-// #GBookmarkFileError.
 func (bookmark *BookmarkFile) LoadFromData(data string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -18809,22 +13879,8 @@ func (bookmark *BookmarkFile) LoadFromData(data string) (bool, error) {
 
 // LoadFromDataDirs wraps g_bookmark_file_load_from_data_dirs
 // 
-// The function takes the following parameters:
-// 
-// 	- file string: a relative path to a filename to open and parse 
-// 
-// The function returns the following values:
-// 
-// 	- fullPath string: return location for a string
-//    containing the full path of the file, or %NULL 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_load_from_data_dirs.g_bookmark_file_load_from_data_dirs.html
 //
-// This function looks for a desktop bookmark file named @file in the
-// paths returned from g_get_user_data_dir() and g_get_system_data_dirs(),
-// loads the file into @bookmark and returns the file's full path in
-// @full_path.  If the file could not be loaded then @error is
-// set to either a #GFileError or #GBookmarkFileError.
 func (bookmark *BookmarkFile) LoadFromDataDirs(file string) (string, bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18858,19 +13914,8 @@ func (bookmark *BookmarkFile) LoadFromDataDirs(file string) (string, bool, error
 
 // LoadFromFile wraps g_bookmark_file_load_from_file
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: the path of a filename to load, in the
-//     GLib file name encoding 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_load_from_file.g_bookmark_file_load_from_file.html
 //
-// Loads a desktop bookmark file into an empty #GBookmarkFile structure.
-// If the file could not be loaded then @error is set to either a #GFileError
-// or #GBookmarkFileError.
 func (bookmark *BookmarkFile) LoadFromFile(filename string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18900,22 +13945,8 @@ func (bookmark *BookmarkFile) LoadFromFile(filename string) (bool, error) {
 
 // MoveItem wraps g_bookmark_file_move_item
 // 
-// The function takes the following parameters:
-// 
-// 	- oldUri string: a valid URI 
-// 	- newUri string (nullable): a valid URI, or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_move_item.g_bookmark_file_move_item.html
 //
-// Changes the URI of a bookmark item from @old_uri to @new_uri.  Any
-// existing bookmark for @new_uri will be overwritten.  If @new_uri is
-// %NULL, then the bookmark is removed.
-// 
-// In the event the URI cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
 func (bookmark *BookmarkFile) MoveItem(oldUri string, newUri string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -18951,24 +13982,8 @@ func (bookmark *BookmarkFile) MoveItem(oldUri string, newUri string) (bool, erro
 
 // RemoveApplication wraps g_bookmark_file_remove_application
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- name string: the name of the application 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_remove_application.g_bookmark_file_remove_application.html
 //
-// Removes application registered with @name from the list of applications
-// that have registered a bookmark for @uri inside @bookmark.
-// 
-// In the event the URI cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
-// In the event that no application with name @app_name has registered
-// a bookmark for @uri,  %FALSE is returned and error is set to
-// %G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED.
 func (bookmark *BookmarkFile) RemoveApplication(uri string, name string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19002,23 +14017,8 @@ func (bookmark *BookmarkFile) RemoveApplication(uri string, name string) (bool, 
 
 // RemoveGroup wraps g_bookmark_file_remove_group
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- group string: the group name to be removed 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_remove_group.g_bookmark_file_remove_group.html
 //
-// Removes @group from the list of groups to which the bookmark
-// for @uri belongs to.
-// 
-// In the event the URI cannot be found, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.
-// In the event no group was defined, %FALSE is returned and
-// @error is set to %G_BOOKMARK_FILE_ERROR_INVALID_VALUE.
 func (bookmark *BookmarkFile) RemoveGroup(uri string, group string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19052,16 +14052,8 @@ func (bookmark *BookmarkFile) RemoveGroup(uri string, group string) (bool, error
 
 // RemoveItem wraps g_bookmark_file_remove_item
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_remove_item.g_bookmark_file_remove_item.html
 //
-// Removes the bookmark for @uri from the bookmark file @bookmark.
 func (bookmark *BookmarkFile) RemoveItem(uri string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19091,16 +14083,8 @@ func (bookmark *BookmarkFile) RemoveItem(uri string) (bool, error) {
 
 // SetDescription wraps g_bookmark_file_set_description
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string (nullable): a valid URI or %NULL 
-// 	- description string: a string 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_set_description.g_bookmark_file_set_description.html
 //
-// Sets @description as the description of the bookmark for @uri.
-// 
-// If @uri is %NULL, the description of @bookmark is set.
-// 
-// If a bookmark for @uri cannot be found then it is created.
 func (bookmark *BookmarkFile) SetDescription(uri string, description string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string, nullable-string
@@ -19122,16 +14106,8 @@ func (bookmark *BookmarkFile) SetDescription(uri string, description string) {
 
 // SetGroups wraps g_bookmark_file_set_groups
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: an item's URI 
-// 	- groups []string (nullable): an array of
-//    group names, or %NULL to remove all groups 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_set_groups.g_bookmark_file_set_groups.html
 //
-// Sets a list of group names for the item with URI @uri.  Each previously
-// set group name list is removed.
-// 
-// If @uri cannot be found then an item for it is created.
 func (bookmark *BookmarkFile) SetGroups(uri string, groups []string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19154,17 +14130,8 @@ func (bookmark *BookmarkFile) SetGroups(uri string, groups []string) {
 
 // SetIcon wraps g_bookmark_file_set_icon
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- href string (nullable): the URI of the icon for the bookmark, or %NULL 
-// 	- mimeType string: the MIME type of the icon for the bookmark 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_set_icon.g_bookmark_file_set_icon.html
 //
-// Sets the icon for the bookmark for @uri. If @href is %NULL, unsets
-// the currently set icon. @href can either be a full URL for the icon
-// file or the icon name following the Icon Naming specification.
-// 
-// If no bookmark for @uri is found one is created.
 func (bookmark *BookmarkFile) SetIcon(uri string, href string, mimeType string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19190,14 +14157,8 @@ func (bookmark *BookmarkFile) SetIcon(uri string, href string, mimeType string) 
 
 // SetIsPrivate wraps g_bookmark_file_set_is_private
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- isPrivate bool: %TRUE if the bookmark should be marked as private 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_set_is_private.g_bookmark_file_set_is_private.html
 //
-// Sets the private flag of the bookmark for @uri.
-// 
-// If a bookmark for @uri cannot be found then it is created.
 func (bookmark *BookmarkFile) SetIsPrivate(uri string, isPrivate bool) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19218,14 +14179,8 @@ func (bookmark *BookmarkFile) SetIsPrivate(uri string, isPrivate bool) {
 
 // SetMimeType wraps g_bookmark_file_set_mime_type
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI 
-// 	- mimeType string: a MIME type 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_set_mime_type.g_bookmark_file_set_mime_type.html
 //
-// Sets @mime_type as the MIME type of the bookmark for @uri.
-// 
-// If a bookmark for @uri cannot be found then it is created.
 func (bookmark *BookmarkFile) SetMimeType(uri string, mimeType string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19245,17 +14200,8 @@ func (bookmark *BookmarkFile) SetMimeType(uri string, mimeType string) {
 
 // SetTitle wraps g_bookmark_file_set_title
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string (nullable): a valid URI or %NULL 
-// 	- title string: a UTF-8 encoded string 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_set_title.g_bookmark_file_set_title.html
 //
-// Sets @title as the title of the bookmark for @uri inside the
-// bookmark file @bookmark.
-// 
-// If @uri is %NULL, the title of @bookmark is set.
-// 
-// If a bookmark for @uri cannot be found then it is created.
 func (bookmark *BookmarkFile) SetTitle(uri string, title string) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string, nullable-string
@@ -19277,13 +14223,8 @@ func (bookmark *BookmarkFile) SetTitle(uri string, title string) {
 
 // ToData wraps g_bookmark_file_to_data
 // 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the length of the returned string, or %NULL 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_to_data.g_bookmark_file_to_data.html
 //
-// This function outputs @bookmark as a string.
 func (bookmark *BookmarkFile) ToData() (uint, string, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 C.gsize          // out, full, casted
@@ -19312,17 +14253,8 @@ func (bookmark *BookmarkFile) ToData() (uint, string, error) {
 
 // ToFile wraps g_bookmark_file_to_file
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: path of the output file 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_bookmark_file_to_file.g_bookmark_file_to_file.html
 //
-// This function outputs @bookmark into a file.  The write process is
-// guaranteed to be atomic by using g_file_set_contents() internally.
 func (bookmark *BookmarkFile) ToFile(filename string) (bool, error) {
 	var carg0 *C.GBookmarkFile // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -19351,8 +14283,9 @@ func (bookmark *BookmarkFile) ToFile(filename string) (bool, error) {
 }
 
 // ByteArray wraps GByteArray
+// 
+// see also https://docs.gtk.org/glib/struct.ByteArray.html
 //
-// Contains the public fields of a GByteArray.
 type ByteArray struct {
 	*byteArray
 }
@@ -19432,34 +14365,9 @@ func UnsafeByteArrayToGlibFull(b *ByteArray) unsafe.Pointer {
 }
 
 // Bytes wraps GBytes
+// 
+// see also https://docs.gtk.org/glib/struct.Bytes.html
 //
-// A simple reference counted data type representing an immutable sequence of
-// zero or more bytes from an unspecified origin.
-// 
-// The purpose of a `GBytes` is to keep the memory region that it holds
-// alive for as long as anyone holds a reference to the bytes.  When
-// the last reference count is dropped, the memory is released. Multiple
-// unrelated callers can use byte data in the `GBytes` without coordinating
-// their activities, resting assured that the byte data will not change or
-// move while they hold a reference.
-// 
-// A `GBytes` can come from many different origins that may have
-// different procedures for freeing the memory region.  Examples are
-// memory from [func@GLib.malloc], from memory slices, from a
-// [struct@GLib.MappedFile] or memory from other allocators.
-// 
-// `GBytes` work well as keys in [struct@GLib.HashTable]. Use
-// [method@GLib.Bytes.equal] and [method@GLib.Bytes.hash] as parameters to
-// [func@GLib.HashTable.new] or [func@GLib.HashTable.new_full].
-// `GBytes` can also be used as keys in a [struct@GLib.Tree] by passing the
-// [method@GLib.Bytes.compare] function to [ctor@GLib.Tree.new].
-// 
-// The data pointed to by this bytes must not be modified. For a mutable
-// array of bytes see [struct@GLib.ByteArray]. Use
-// [method@GLib.Bytes.unref_to_array] to create a mutable array for a `GBytes`
-// sequence. To create an immutable `GBytes` from a mutable
-// [struct@GLib.ByteArray], use the [func@GLib.ByteArray.free_to_bytes]
-// function.
 type Bytes struct {
 	*bytes
 }
@@ -19521,7 +14429,7 @@ func UnsafeBytesFromGlibFull(p unsafe.Pointer) *Bytes {
 // 
 // When this is called without an associated call to [Bytes.UnsafeBytesUnref], then [Bytes] will leak memory.
 func UnsafeBytesRef(b *Bytes) {
-	C.g_bytes_ref(b.native)
+	C.g_bytes_ref((*C.GBytes)(b.native))
 }
 
 // UnsafeBytesUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -19553,13 +14461,8 @@ func UnsafeBytesToGlibFull(b *Bytes) unsafe.Pointer {
 
 // GetSize wraps g_bytes_get_size
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_bytes_get_size.g_bytes_get_size.html
 //
-// Get the size of the byte data in the [struct@GLib.Bytes].
-// 
-// This function will always return the same value for a given `GBytes`.
 func (bytes *Bytes) GetSize() uint {
 	var carg0 *C.GBytes // in, none, converted
 	var cret  C.gsize   // return, none, casted
@@ -19578,27 +14481,8 @@ func (bytes *Bytes) GetSize() uint {
 
 // NewFromBytes wraps g_bytes_new_from_bytes
 // 
-// The function takes the following parameters:
-// 
-// 	- offset uint: offset which subsection starts at 
-// 	- length uint: length of subsection 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Bytes 
+// see also https://docs.gtk.org/glib/method.g_bytes_new_from_bytes.g_bytes_new_from_bytes.html
 //
-// Creates a [struct@GLib.Bytes] which is a subsection of another `GBytes`.
-// 
-// The @offset + @length may not be longer than the size of @bytes.
-// 
-// A reference to @bytes will be held by the newly created `GBytes` until
-// the byte data is no longer needed.
-// 
-// Since 2.56, if @offset is 0 and @length matches the size of @bytes, then
-// @bytes will be returned with the reference count incremented by 1. If @bytes
-// is a slice of another `GBytes`, then the resulting `GBytes` will reference
-// the same `GBytes` instead of @bytes. This allows consumers to simplify the
-// usage of `GBytes` when asynchronously writing to streams.
 func (bytes *Bytes) NewFromBytes(offset uint, length uint) *Bytes {
 	var carg0 *C.GBytes // in, none, converted
 	var carg1 C.gsize   // in, none, casted
@@ -19622,23 +14506,9 @@ func (bytes *Bytes) NewFromBytes(offset uint, length uint) *Bytes {
 }
 
 // Checksum wraps GChecksum
+// 
+// see also https://docs.gtk.org/glib/struct.Checksum.html
 //
-// GLib provides a generic API for computing checksums (or &#x2018;digests&#x2019;)
-// for a sequence of arbitrary bytes, using various hashing algorithms
-// like MD5, SHA-1 and SHA-256. Checksums are commonly used in various
-// environments and specifications.
-// 
-// To create a new `GChecksum`, use [ctor@GLib.Checksum.new]. To free
-// a `GChecksum`, use [method@GLib.Checksum.free].
-// 
-// GLib supports incremental checksums using the `GChecksum` data
-// structure, by calling [method@GLib.Checksum.update] as long as there&#x2019;s data
-// available and then using [method@GLib.Checksum.get_string] or
-// [method@GLib.Checksum.get_digest] to compute the checksum and return it
-// either as a string in hexadecimal form, or as a raw sequence of bytes. To
-// compute the checksum for binary blobs and nul-terminated strings in
-// one go, use the convenience functions [func@GLib.compute_checksum_for_data]
-// and [func@GLib.compute_checksum_for_string], respectively.
 type Checksum struct {
 	*checksum
 }
@@ -19719,27 +14589,8 @@ func UnsafeChecksumToGlibFull(c *Checksum) unsafe.Pointer {
 
 // NewChecksum wraps g_checksum_new
 // 
-// The function takes the following parameters:
-// 
-// 	- checksumType ChecksumType: the desired type of checksum 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Checksum (nullable) 
+// see also https://docs.gtk.org/glib/func.g_checksum_new.html
 //
-// Creates a new #GChecksum, using the checksum algorithm @checksum_type.
-// If the @checksum_type is not known, %NULL is returned.
-// A #GChecksum can be used to compute the checksum, or digest, of an
-// arbitrary binary blob, using different hashing algorithms.
-// 
-// A #GChecksum works by feeding a binary blob through g_checksum_update()
-// until there is data to be checked; the digest can then be extracted
-// using g_checksum_get_string(), which will return the checksum as a
-// hexadecimal string; or g_checksum_get_digest(), which will return a
-// vector of raw bytes. Once either g_checksum_get_string() or
-// g_checksum_get_digest() have been called on a #GChecksum, the checksum
-// will be closed and it won't be possible to call g_checksum_update()
-// on it anymore.
 func NewChecksum(checksumType ChecksumType) *Checksum {
 	var carg1 C.GChecksumType // in, none, casted
 	var cret  *C.GChecksum    // return, full, converted, nullable
@@ -19760,15 +14611,8 @@ func NewChecksum(checksumType ChecksumType) *Checksum {
 
 // ChecksumTypeGetLength wraps g_checksum_type_get_length
 // 
-// The function takes the following parameters:
-// 
-// 	- checksumType ChecksumType: a #GChecksumType 
-// 
-// The function returns the following values:
-// 
-// 	- goret int 
+// see also https://docs.gtk.org/glib/func.g_checksum_type_get_length.html
 //
-// Gets the length in bytes of digests of type @checksum_type
 func ChecksumTypeGetLength(checksumType ChecksumType) int {
 	var carg1 C.GChecksumType // in, none, casted
 	var cret  C.gssize        // return, none, casted
@@ -19787,13 +14631,8 @@ func ChecksumTypeGetLength(checksumType ChecksumType) int {
 
 // Copy wraps g_checksum_copy
 // 
-// The function returns the following values:
-// 
-// 	- goret *Checksum 
+// see also https://docs.gtk.org/glib/method.g_checksum_copy.g_checksum_copy.html
 //
-// Copies a #GChecksum. If @checksum has been closed, by calling
-// g_checksum_get_string() or g_checksum_get_digest(), the copied
-// checksum will be closed as well.
 func (checksum *Checksum) Copy() *Checksum {
 	var carg0 *C.GChecksum // in, none, converted
 	var cret  *C.GChecksum // return, full, converted
@@ -19812,16 +14651,8 @@ func (checksum *Checksum) Copy() *Checksum {
 
 // GetString wraps g_checksum_get_string
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_checksum_get_string.g_checksum_get_string.html
 //
-// Gets the digest as a hexadecimal string.
-// 
-// Once this function has been called the #GChecksum can no longer be
-// updated with g_checksum_update().
-// 
-// The hexadecimal characters will be lower case.
 func (checksum *Checksum) GetString() string {
 	var carg0 *C.GChecksum // in, none, converted
 	var cret  *C.gchar     // return, none, string
@@ -19839,8 +14670,9 @@ func (checksum *Checksum) GetString() string {
 }
 
 // Reset wraps g_checksum_reset
+// 
+// see also https://docs.gtk.org/glib/method.g_checksum_reset.g_checksum_reset.html
 //
-// Resets the state of the @checksum back to its initial state.
 func (checksum *Checksum) Reset() {
 	var carg0 *C.GChecksum // in, none, converted
 
@@ -19852,13 +14684,8 @@ func (checksum *Checksum) Reset() {
 
 // Update wraps g_checksum_update
 // 
-// The function takes the following parameters:
-// 
-// 	- data []uint8: buffer used to compute the checksum 
+// see also https://docs.gtk.org/glib/method.g_checksum_update.g_checksum_update.html
 //
-// Feeds @data into an existing #GChecksum. The checksum must still be
-// open, that is g_checksum_get_string() or g_checksum_get_digest() must
-// not have been called on @checksum.
 func (checksum *Checksum) Update(data []uint8) {
 	var carg0 *C.GChecksum // in, none, converted
 	var carg1 *C.guchar    // in, transfer: none, C Pointers: 1, Name: array[guint8], array (inner guint8 (*typesystem.CastablePrimitive), length-by: carg2)
@@ -19876,72 +14703,9 @@ func (checksum *Checksum) Update(data []uint8) {
 }
 
 // Cond wraps GCond
+// 
+// see also https://docs.gtk.org/glib/struct.Cond.html
 //
-// The #GCond struct is an opaque data structure that represents a
-// condition. Threads can block on a #GCond if they find a certain
-// condition to be false. If other threads change the state of this
-// condition they signal the #GCond, and that causes the waiting
-// threads to be woken up.
-// 
-// Consider the following example of a shared variable.  One or more
-// threads can wait for data to be published to the variable and when
-// another thread publishes the data, it can signal one of the waiting
-// threads to wake up to collect the data.
-// 
-// Here is an example for using GCond to block a thread until a condition
-// is satisfied:
-// |[&lt;!-- language="C" --&gt;
-//   gpointer current_data = NULL;
-//   GMutex data_mutex;
-//   GCond data_cond;
-// 
-//   void
-//   push_data (gpointer data)
-//   {
-//     g_mutex_lock (&amp;data_mutex);
-//     current_data = data;
-//     g_cond_signal (&amp;data_cond);
-//     g_mutex_unlock (&amp;data_mutex);
-//   }
-// 
-//   gpointer
-//   pop_data (void)
-//   {
-//     gpointer data;
-// 
-//     g_mutex_lock (&amp;data_mutex);
-//     while (!current_data)
-//       g_cond_wait (&amp;data_cond, &amp;data_mutex);
-//     data = current_data;
-//     current_data = NULL;
-//     g_mutex_unlock (&amp;data_mutex);
-// 
-//     return data;
-//   }
-// ]|
-// Whenever a thread calls pop_data() now, it will wait until
-// current_data is non-%NULL, i.e. until some other thread
-// has called push_data().
-// 
-// The example shows that use of a condition variable must always be
-// paired with a mutex.  Without the use of a mutex, there would be a
-// race between the check of @current_data by the while loop in
-// pop_data() and waiting. Specifically, another thread could set
-// @current_data after the check, and signal the cond (with nobody
-// waiting on it) before the first thread goes to sleep. #GCond is
-// specifically useful for its ability to release the mutex and go
-// to sleep atomically.
-// 
-// It is also important to use the g_cond_wait() and g_cond_wait_until()
-// functions only inside a loop which checks for the condition to be
-// true.  See g_cond_wait() for an explanation of why the condition may
-// not be true even after it returns.
-// 
-// If a #GCond is allocated in static storage then it can be used
-// without initialisation.  Otherwise, you should call g_cond_init()
-// on it and g_cond_clear() when done.
-// 
-// A #GCond should only be accessed via the g_cond_ functions.
 type Cond struct {
 	*cond
 }
@@ -20021,11 +14785,9 @@ func UnsafeCondToGlibFull(c *Cond) unsafe.Pointer {
 }
 
 // Broadcast wraps g_cond_broadcast
+// 
+// see also https://docs.gtk.org/glib/method.g_cond_broadcast.g_cond_broadcast.html
 //
-// If threads are waiting for @cond, all of them are unblocked.
-// If no threads are waiting for @cond, this function has no effect.
-// It is good practice to lock the same mutex as the waiting threads
-// while calling this function, though not required.
 func (cond *Cond) Broadcast() {
 	var carg0 *C.GCond // in, none, converted
 
@@ -20036,14 +14798,9 @@ func (cond *Cond) Broadcast() {
 }
 
 // Clear wraps g_cond_clear
+// 
+// see also https://docs.gtk.org/glib/method.g_cond_clear.g_cond_clear.html
 //
-// Frees the resources allocated to a #GCond with g_cond_init().
-// 
-// This function should not be used with a #GCond that has been
-// statically allocated.
-// 
-// Calling g_cond_clear() for a #GCond on which threads are
-// blocking leads to undefined behaviour.
 func (cond *Cond) Clear() {
 	var carg0 *C.GCond // in, none, converted
 
@@ -20054,18 +14811,9 @@ func (cond *Cond) Clear() {
 }
 
 // Init wraps g_cond_init
+// 
+// see also https://docs.gtk.org/glib/method.g_cond_init.g_cond_init.html
 //
-// Initialises a #GCond so that it can be used.
-// 
-// This function is useful to initialise a #GCond that has been
-// allocated as part of a larger structure.  It is not necessary to
-// initialise a #GCond that has been statically allocated.
-// 
-// To undo the effect of g_cond_init() when a #GCond is no longer
-// needed, use g_cond_clear().
-// 
-// Calling g_cond_init() on an already-initialised #GCond leads
-// to undefined behaviour.
 func (cond *Cond) Init() {
 	var carg0 *C.GCond // in, none, converted
 
@@ -20076,11 +14824,9 @@ func (cond *Cond) Init() {
 }
 
 // Signal wraps g_cond_signal
+// 
+// see also https://docs.gtk.org/glib/method.g_cond_signal.g_cond_signal.html
 //
-// If threads are waiting for @cond, at least one of them is unblocked.
-// If no threads are waiting for @cond, this function has no effect.
-// It is good practice to hold the same lock as the waiting thread
-// while calling this function, though not required.
 func (cond *Cond) Signal() {
 	var carg0 *C.GCond // in, none, converted
 
@@ -20091,10 +14837,9 @@ func (cond *Cond) Signal() {
 }
 
 // Data wraps GData
-//
-// An opaque data structure that represents a keyed data list.
 // 
-// See also: [Keyed data lists](datalist-and-dataset.html).
+// see also https://docs.gtk.org/glib/struct.Data.html
+//
 type Data struct {
 	*data
 }
@@ -20174,9 +14919,9 @@ func UnsafeDataToGlibFull(d *Data) unsafe.Pointer {
 }
 
 // DebugKey wraps GDebugKey
+// 
+// see also https://docs.gtk.org/glib/struct.DebugKey.html
 //
-// Associates a string with a bit flag.
-// Used in g_parse_debug_string().
 type DebugKey struct {
 	*debugKey
 }
@@ -20256,8 +15001,9 @@ func UnsafeDebugKeyToGlibFull(d *DebugKey) unsafe.Pointer {
 }
 
 // Dir wraps GDir
+// 
+// see also https://docs.gtk.org/glib/struct.Dir.html
 //
-// An opaque structure representing an opened directory.
 type Dir struct {
 	*dir
 }
@@ -20319,7 +15065,7 @@ func UnsafeDirFromGlibFull(p unsafe.Pointer) *Dir {
 // 
 // When this is called without an associated call to [Dir.UnsafeDirUnref], then [Dir] will leak memory.
 func UnsafeDirRef(d *Dir) {
-	C.g_dir_ref(d.native)
+	C.g_dir_ref((*C.GDir)(d.native))
 }
 
 // UnsafeDirUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -20351,20 +15097,8 @@ func UnsafeDirToGlibFull(d *Dir) unsafe.Pointer {
 
 // DirOpen wraps g_dir_open
 // 
-// The function takes the following parameters:
-// 
-// 	- path string: the path to the directory you are interested in. On Unix
-//         in the on-disk encoding. On Windows in UTF-8 
-// 	- flags uint: Currently must be set to 0. Reserved for future use. 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Dir 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_dir_open.html
 //
-// Opens a directory for reading. The names of the files in the
-// directory can then be retrieved using g_dir_read_name().  Note
-// that the ordering is not defined.
 func DirOpen(path string, flags uint) (*Dir, error) {
 	var carg1 *C.gchar  // in, none, string
 	var carg2 C.guint   // in, none, casted
@@ -20392,27 +15126,8 @@ func DirOpen(path string, flags uint) (*Dir, error) {
 
 // DirMakeTmp wraps g_dir_make_tmp
 // 
-// The function takes the following parameters:
-// 
-// 	- tmpl string (nullable): Template for directory name,
-//   as in g_mkdtemp(), basename only, or %NULL for a default template 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_dir_make_tmp.html
 //
-// Creates a subdirectory in the preferred directory for temporary
-// files (as returned by g_get_tmp_dir()).
-// 
-// @tmpl should be a string in the GLib file name encoding containing
-// a sequence of six 'X' characters, as the parameter to g_mkstemp().
-// However, unlike these functions, the template should only be a
-// basename, no directory components are allowed. If template is
-// %NULL, a default template is used.
-// 
-// Note that in contrast to g_mkdtemp() (and mkdtemp()) @tmpl is not
-// modified, and might thus be a read-only literal string.
 func DirMakeTmp(tmpl string) (string, error) {
 	var carg1 *C.gchar  // in, none, string, nullable-string
 	var cret  *C.gchar  // return, full, string
@@ -20439,15 +15154,9 @@ func DirMakeTmp(tmpl string) (string, error) {
 }
 
 // Close wraps g_dir_close
+// 
+// see also https://docs.gtk.org/glib/method.g_dir_close.g_dir_close.html
 //
-// Closes the directory immediately and decrements the reference count.
-// 
-// Once the reference count reaches zero, the `GDir` structure itself will be
-// freed. Prior to GLib 2.80, `GDir` was not reference counted.
-// 
-// It is an error to call any of the `GDir` methods other than
-// [method@GLib.Dir.ref] and [method@GLib.Dir.unref] on a `GDir` after calling
-// [method@GLib.Dir.close] on it.
 func (dir *Dir) Close() {
 	var carg0 *C.GDir // in, none, converted
 
@@ -20459,23 +15168,8 @@ func (dir *Dir) Close() {
 
 // ReadName wraps g_dir_read_name
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_dir_read_name.g_dir_read_name.html
 //
-// Retrieves the name of another entry in the directory, or %NULL.
-// The order of entries returned from this function is not defined,
-// and may vary by file system or other operating-system dependent
-// factors.
-// 
-// %NULL may also be returned in case of errors. On Unix, you can
-// check `errno` to find out if %NULL was returned because of an error.
-// 
-// On Unix, the '.' and '..' entries are omitted, and the returned
-// name is in the on-disk encoding.
-// 
-// On Windows, as is true of all GLib functions which operate on
-// filenames, the returned name is in UTF-8.
 func (dir *Dir) ReadName() string {
 	var carg0 *C.GDir  // in, none, converted
 	var cret  *C.gchar // return, none, string
@@ -20493,9 +15187,9 @@ func (dir *Dir) ReadName() string {
 }
 
 // Rewind wraps g_dir_rewind
+// 
+// see also https://docs.gtk.org/glib/method.g_dir_rewind.g_dir_rewind.html
 //
-// Resets the given directory. The next call to g_dir_read_name()
-// will return the first entry again.
 func (dir *Dir) Rewind() {
 	var carg0 *C.GDir // in, none, converted
 
@@ -20506,14 +15200,9 @@ func (dir *Dir) Rewind() {
 }
 
 // HashTableIter wraps GHashTableIter
-//
-// A GHashTableIter structure represents an iterator that can be used
-// to iterate over the elements of a #GHashTable. GHashTableIter
-// structures are typically allocated on the stack and then initialized
-// with g_hash_table_iter_init().
 // 
-// The iteration order of a #GHashTableIter over the keys/values in a hash
-// table is not defined.
+// see also https://docs.gtk.org/glib/struct.HashTableIter.html
+//
 type HashTableIter struct {
 	*hashTableIter
 }
@@ -20593,25 +15282,9 @@ func UnsafeHashTableIterToGlibFull(h *HashTableIter) unsafe.Pointer {
 }
 
 // Remove wraps g_hash_table_iter_remove
+// 
+// see also https://docs.gtk.org/glib/method.g_hash_table_iter_remove.g_hash_table_iter_remove.html
 //
-// Removes the key/value pair currently pointed to by the iterator
-// from its associated #GHashTable. Can only be called after
-// g_hash_table_iter_next() returned %TRUE, and cannot be called
-// more than once for the same key/value pair.
-// 
-// If the #GHashTable was created using g_hash_table_new_full(),
-// the key and value are freed using the supplied destroy functions,
-// otherwise you have to make sure that any dynamically allocated
-// values are freed yourself.
-// 
-// It is safe to continue iterating the #GHashTable afterward:
-// |[&lt;!-- language="C" --&gt;
-// while (g_hash_table_iter_next (&amp;iter, &amp;key, &amp;value))
-//   {
-//     if (condition)
-//       g_hash_table_iter_remove (&amp;iter);
-//   }
-// ]|
 func (iter *HashTableIter) Remove() {
 	var carg0 *C.GHashTableIter // in, none, converted
 
@@ -20622,12 +15295,9 @@ func (iter *HashTableIter) Remove() {
 }
 
 // Steal wraps g_hash_table_iter_steal
+// 
+// see also https://docs.gtk.org/glib/method.g_hash_table_iter_steal.g_hash_table_iter_steal.html
 //
-// Removes the key/value pair currently pointed to by the
-// iterator from its associated #GHashTable, without calling
-// the key and value destroy functions. Can only be called
-// after g_hash_table_iter_next() returned %TRUE, and cannot
-// be called more than once for the same key/value pair.
 func (iter *HashTableIter) Steal() {
 	var carg0 *C.GHashTableIter // in, none, converted
 
@@ -20638,22 +15308,9 @@ func (iter *HashTableIter) Steal() {
 }
 
 // Hmac wraps GHmac
+// 
+// see also https://docs.gtk.org/glib/struct.Hmac.html
 //
-// HMACs should be used when producing a cookie or hash based on data
-// and a key. Simple mechanisms for using SHA1 and other algorithms to
-// digest a key and data together are vulnerable to various security
-// issues.
-// [HMAC](http://en.wikipedia.org/wiki/HMAC)
-// uses algorithms like SHA1 in a secure way to produce a digest of a
-// key and data.
-// 
-// Both the key and data are arbitrary byte arrays of bytes or characters.
-// 
-// Support for HMAC Digests has been added in GLib 2.30, and support for SHA-512
-// in GLib 2.42. Support for SHA-384 was added in GLib 2.52.
-// 
-// To create a new `GHmac`, use [ctor@GLib.Hmac.new]. To free a `GHmac`, use
-// [method@GLib.Hmac.unref].
 type Hmac struct {
 	*hmac
 }
@@ -20715,7 +15372,7 @@ func UnsafeHmacFromGlibFull(p unsafe.Pointer) *Hmac {
 // 
 // When this is called without an associated call to [Hmac.UnsafeHmacUnref], then [Hmac] will leak memory.
 func UnsafeHmacRef(h *Hmac) {
-	C.g_hmac_ref(h.native)
+	C.g_hmac_ref((*C.GHmac)(h.native))
 }
 
 // UnsafeHmacUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -20747,31 +15404,8 @@ func UnsafeHmacToGlibFull(h *Hmac) unsafe.Pointer {
 
 // NewHmac wraps g_hmac_new
 // 
-// The function takes the following parameters:
-// 
-// 	- digestType ChecksumType: the desired type of digest 
-// 	- key []byte: the key for the HMAC 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Hmac (nullable) 
+// see also https://docs.gtk.org/glib/func.g_hmac_new.html
 //
-// Creates a new #GHmac, using the digest algorithm @digest_type.
-// If the @digest_type is not known, %NULL is returned.
-// A #GHmac can be used to compute the HMAC of a key and an
-// arbitrary binary blob, using different hashing algorithms.
-// 
-// A #GHmac works by feeding a binary blob through g_hmac_update()
-// until the data is complete; the digest can then be extracted
-// using g_hmac_get_string(), which will return the checksum as a
-// hexadecimal string; or g_hmac_get_digest(), which will return a
-// array of raw bytes. Once either g_hmac_get_string() or
-// g_hmac_get_digest() have been called on a #GHmac, the HMAC
-// will be closed and it won't be possible to call g_hmac_update()
-// on it anymore.
-// 
-// Support for digests of type %G_CHECKSUM_SHA512 has been added in GLib 2.42.
-// Support for %G_CHECKSUM_SHA384 was added in GLib 2.52.
 func NewHmac(digestType ChecksumType, key []byte) *Hmac {
 	var carg1 C.GChecksumType // in, none, casted
 	var carg2 *C.guchar       // in, transfer: none, C Pointers: 1, Name: array[guchar], array (inner guchar (*typesystem.CastablePrimitive), length-by: carg3)
@@ -20799,13 +15433,8 @@ func NewHmac(digestType ChecksumType, key []byte) *Hmac {
 
 // Copy wraps g_hmac_copy
 // 
-// The function returns the following values:
-// 
-// 	- goret *Hmac 
+// see also https://docs.gtk.org/glib/method.g_hmac_copy.g_hmac_copy.html
 //
-// Copies a #GHmac. If @hmac has been closed, by calling
-// g_hmac_get_string() or g_hmac_get_digest(), the copied
-// HMAC will be closed as well.
 func (hmac *Hmac) Copy() *Hmac {
 	var carg0 *C.GHmac // in, none, converted
 	var cret  *C.GHmac // return, full, converted
@@ -20824,16 +15453,8 @@ func (hmac *Hmac) Copy() *Hmac {
 
 // GetString wraps g_hmac_get_string
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_hmac_get_string.g_hmac_get_string.html
 //
-// Gets the HMAC as a hexadecimal string.
-// 
-// Once this function has been called the #GHmac can no longer be
-// updated with g_hmac_update().
-// 
-// The hexadecimal characters will be lower case.
 func (hmac *Hmac) GetString() string {
 	var carg0 *C.GHmac // in, none, converted
 	var cret  *C.gchar // return, none, string
@@ -20852,14 +15473,8 @@ func (hmac *Hmac) GetString() string {
 
 // Update wraps g_hmac_update
 // 
-// The function takes the following parameters:
-// 
-// 	- data []byte: buffer used to compute the checksum 
+// see also https://docs.gtk.org/glib/method.g_hmac_update.g_hmac_update.html
 //
-// Feeds @data into an existing #GHmac.
-// 
-// The HMAC must still be open, that is g_hmac_get_string() or
-// g_hmac_get_digest() must not have been called on @hmac.
 func (hmac *Hmac) Update(data []byte) {
 	var carg0 *C.GHmac  // in, none, converted
 	var carg1 *C.guchar // in, transfer: none, C Pointers: 1, Name: array[guchar], array (inner guchar (*typesystem.CastablePrimitive), length-by: carg2)
@@ -20877,8 +15492,9 @@ func (hmac *Hmac) Update(data []byte) {
 }
 
 // Hook wraps GHook
+// 
+// see also https://docs.gtk.org/glib/struct.Hook.html
 //
-// The #GHook struct represents a single hook function in a #GHookList.
 type Hook struct {
 	*hook
 }
@@ -20959,16 +15575,8 @@ func UnsafeHookToGlibFull(h *Hook) unsafe.Pointer {
 
 // HookDestroy wraps g_hook_destroy
 // 
-// The function takes the following parameters:
-// 
-// 	- hookList *HookList: a #GHookList 
-// 	- hookId uint32: a hook ID 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_hook_destroy.html
 //
-// Destroys a #GHook, given its ID.
 func HookDestroy(hookList *HookList, hookId uint32) bool {
 	var carg1 *C.GHookList // in, none, converted
 	var carg2 C.gulong     // in, none, casted
@@ -20992,13 +15600,8 @@ func HookDestroy(hookList *HookList, hookId uint32) bool {
 
 // HookDestroyLink wraps g_hook_destroy_link
 // 
-// The function takes the following parameters:
-// 
-// 	- hookList *HookList: a #GHookList 
-// 	- hook *Hook: the #GHook to remove 
+// see also https://docs.gtk.org/glib/func.g_hook_destroy_link.html
 //
-// Removes one #GHook from a #GHookList, marking it
-// inactive and calling g_hook_unref() on it.
 func HookDestroyLink(hookList *HookList, hook *Hook) {
 	var carg1 *C.GHookList // in, none, converted
 	var carg2 *C.GHook     // in, none, converted
@@ -21013,13 +15616,8 @@ func HookDestroyLink(hookList *HookList, hook *Hook) {
 
 // HookFree wraps g_hook_free
 // 
-// The function takes the following parameters:
-// 
-// 	- hookList *HookList: a #GHookList 
-// 	- hook *Hook: the #GHook to free 
+// see also https://docs.gtk.org/glib/func.g_hook_free.html
 //
-// Calls the #GHookList @finalize_hook function if it exists,
-// and frees the memory allocated for the #GHook.
 func HookFree(hookList *HookList, hook *Hook) {
 	var carg1 *C.GHookList // in, none, converted
 	var carg2 *C.GHook     // in, none, converted
@@ -21034,13 +15632,8 @@ func HookFree(hookList *HookList, hook *Hook) {
 
 // HookInsertBefore wraps g_hook_insert_before
 // 
-// The function takes the following parameters:
-// 
-// 	- hookList *HookList: a #GHookList 
-// 	- sibling *Hook (nullable): the #GHook to insert the new #GHook before 
-// 	- hook *Hook: the #GHook to insert 
+// see also https://docs.gtk.org/glib/func.g_hook_insert_before.html
 //
-// Inserts a #GHook into a #GHookList, before a given #GHook.
 func HookInsertBefore(hookList *HookList, sibling *Hook, hook *Hook) {
 	var carg1 *C.GHookList // in, none, converted
 	var carg2 *C.GHook     // in, none, converted, nullable
@@ -21060,12 +15653,8 @@ func HookInsertBefore(hookList *HookList, sibling *Hook, hook *Hook) {
 
 // HookPrepend wraps g_hook_prepend
 // 
-// The function takes the following parameters:
-// 
-// 	- hookList *HookList: a #GHookList 
-// 	- hook *Hook: the #GHook to add to the start of @hook_list 
+// see also https://docs.gtk.org/glib/func.g_hook_prepend.html
 //
-// Prepends a #GHook on the start of a #GHookList.
 func HookPrepend(hookList *HookList, hook *Hook) {
 	var carg1 *C.GHookList // in, none, converted
 	var carg2 *C.GHook     // in, none, converted
@@ -21080,14 +15669,8 @@ func HookPrepend(hookList *HookList, hook *Hook) {
 
 // HookUnref wraps g_hook_unref
 // 
-// The function takes the following parameters:
-// 
-// 	- hookList *HookList: a #GHookList 
-// 	- hook *Hook: the #GHook to unref 
+// see also https://docs.gtk.org/glib/func.g_hook_unref.html
 //
-// Decrements the reference count of a #GHook.
-// If the reference count falls to 0, the #GHook is removed
-// from the #GHookList and g_hook_free() is called to free it.
 func HookUnref(hookList *HookList, hook *Hook) {
 	var carg1 *C.GHookList // in, none, converted
 	var carg2 *C.GHook     // in, none, converted
@@ -21102,16 +15685,8 @@ func HookUnref(hookList *HookList, hook *Hook) {
 
 // CompareIDs wraps g_hook_compare_ids
 // 
-// The function takes the following parameters:
-// 
-// 	- sibling *Hook: a #GHook to compare with @new_hook 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_hook_compare_ids.g_hook_compare_ids.html
 //
-// Compares the ids of two #GHook elements, returning a negative value
-// if the second id is greater than the first.
 func (newHook *Hook) CompareIDs(sibling *Hook) int32 {
 	var carg0 *C.GHook // in, none, converted
 	var carg1 *C.GHook // in, none, converted
@@ -21132,8 +15707,9 @@ func (newHook *Hook) CompareIDs(sibling *Hook) int32 {
 }
 
 // HookList wraps GHookList
+// 
+// see also https://docs.gtk.org/glib/struct.HookList.html
 //
-// The #GHookList struct represents a list of hook functions.
 type HookList struct {
 	*hookList
 }
@@ -21213,8 +15789,9 @@ func UnsafeHookListToGlibFull(h *HookList) unsafe.Pointer {
 }
 
 // Clear wraps g_hook_list_clear
+// 
+// see also https://docs.gtk.org/glib/method.g_hook_list_clear.g_hook_list_clear.html
 //
-// Removes all the #GHook elements from a #GHookList.
 func (hookList *HookList) Clear() {
 	var carg0 *C.GHookList // in, none, converted
 
@@ -21226,13 +15803,8 @@ func (hookList *HookList) Clear() {
 
 // Init wraps g_hook_list_init
 // 
-// The function takes the following parameters:
-// 
-// 	- hookSize uint: the size of each element in the #GHookList,
-//     typically `sizeof (GHook)`. 
+// see also https://docs.gtk.org/glib/method.g_hook_list_init.g_hook_list_init.html
 //
-// Initializes a #GHookList.
-// This must be called before the #GHookList is used.
 func (hookList *HookList) Init(hookSize uint) {
 	var carg0 *C.GHookList // in, none, converted
 	var carg1 C.guint      // in, none, casted
@@ -21247,13 +15819,8 @@ func (hookList *HookList) Init(hookSize uint) {
 
 // Invoke wraps g_hook_list_invoke
 // 
-// The function takes the following parameters:
-// 
-// 	- mayRecurse bool: %TRUE if functions which are already running
-//     (e.g. in another thread) can be called. If set to %FALSE,
-//     these are skipped 
+// see also https://docs.gtk.org/glib/method.g_hook_list_invoke.g_hook_list_invoke.html
 //
-// Calls all of the #GHook functions in a #GHookList.
 func (hookList *HookList) Invoke(mayRecurse bool) {
 	var carg0 *C.GHookList // in, none, converted
 	var carg1 C.gboolean   // in
@@ -21270,14 +15837,8 @@ func (hookList *HookList) Invoke(mayRecurse bool) {
 
 // InvokeCheck wraps g_hook_list_invoke_check
 // 
-// The function takes the following parameters:
-// 
-// 	- mayRecurse bool: %TRUE if functions which are already running
-//     (e.g. in another thread) can be called. If set to %FALSE,
-//     these are skipped 
+// see also https://docs.gtk.org/glib/method.g_hook_list_invoke_check.g_hook_list_invoke_check.html
 //
-// Calls all of the #GHook functions in a #GHookList.
-// Any function which returns %FALSE is removed from the #GHookList.
 func (hookList *HookList) InvokeCheck(mayRecurse bool) {
 	var carg0 *C.GHookList // in, none, converted
 	var carg1 C.gboolean   // in
@@ -21293,43 +15854,9 @@ func (hookList *HookList) InvokeCheck(mayRecurse bool) {
 }
 
 // IOChannel wraps GIOChannel
+// 
+// see also https://docs.gtk.org/glib/struct.IOChannel.html
 //
-// The `GIOChannel` data type aims to provide a portable method for
-// using file descriptors, pipes, and sockets, and integrating them
-// into the main event loop (see [struct@GLib.MainContext]). Currently,
-// full support is available on UNIX platforms; support for Windows
-// is only partially complete.
-// 
-// To create a new `GIOChannel` on UNIX systems use
-// [ctor@GLib.IOChannel.unix_new]. This works for plain file descriptors,
-// pipes and sockets. Alternatively, a channel can be created for a
-// file in a system independent manner using [ctor@GLib.IOChannel.new_file].
-// 
-// Once a `GIOChannel` has been created, it can be used in a generic
-// manner with the functions [method@GLib.IOChannel.read_chars],
-// [method@GLib.IOChannel.write_chars], [method@GLib.IOChannel.seek_position],
-// and [method@GLib.IOChannel.shutdown].
-// 
-// To add a `GIOChannel` to the main event loop, use [func@GLib.io_add_watch] or
-// [func@GLib.io_add_watch_full]. Here you specify which events you are
-// interested in on the `GIOChannel`, and provide a function to be called
-// whenever these events occur.
-// 
-// `GIOChannel` instances are created with an initial reference count of 1.
-// [method@GLib.IOChannel.ref] and [method@GLib.IOChannel.unref] can be used to
-// increment or decrement the reference count respectively. When the
-// reference count falls to 0, the `GIOChannel` is freed. (Though it
-// isn&#x2019;t closed automatically, unless it was created using
-// [ctor@GLib.IOChannel.new_file].) Using [func@GLib.io_add_watch] or
-// [func@GLib.io_add_watch_full] increments a channel&#x2019;s reference count.
-// 
-// The new functions [method@GLib.IOChannel.read_chars],
-// [method@GLib.IOChannel.read_line], [method@GLib.IOChannel.read_line_string],
-// [method@GLib.IOChannel.read_to_end], [method@GLib.IOChannel.write_chars],
-// [method@GLib.IOChannel.seek_position], and [method@GLib.IOChannel.flush]
-// should not be mixed with the deprecated functions
-// [method@GLib.IOChannel.read], [method@GLib.IOChannel.write], and
-// [method@GLib.IOChannel.seek] on the same channel.
 type IOChannel struct {
 	*iOChannel
 }
@@ -21391,7 +15918,7 @@ func UnsafeIOChannelFromGlibFull(p unsafe.Pointer) *IOChannel {
 // 
 // When this is called without an associated call to [IOChannel.UnsafeIOChannelUnref], then [IOChannel] will leak memory.
 func UnsafeIOChannelRef(i *IOChannel) {
-	C.g_io_channel_ref(i.native)
+	C.g_io_channel_ref((*C.GIOChannel)(i.native))
 }
 
 // UnsafeIOChannelUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -21423,22 +15950,8 @@ func UnsafeIOChannelToGlibFull(i *IOChannel) unsafe.Pointer {
 
 // NewIOChannelFile wraps g_io_channel_new_file
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: A string containing the name of a file 
-// 	- mode string: One of "r", "w", "a", "r+", "w+", "a+". These have
-//        the same meaning as in fopen() 
-// 
-// The function returns the following values:
-// 
-// 	- goret *IOChannel 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_io_channel_new_file.html
 //
-// Open a file @filename as a #GIOChannel using mode @mode. This
-// channel will be closed when the last reference to it is dropped,
-// so there is no need to call g_io_channel_close() (though doing
-// so will not cause problems, as long as no attempt is made to
-// access the channel after it is closed).
 func NewIOChannelFile(filename string, mode string) (*IOChannel, error) {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string
@@ -21467,15 +15980,8 @@ func NewIOChannelFile(filename string, mode string) (*IOChannel, error) {
 
 // IOChannelErrorFromErrno wraps g_io_channel_error_from_errno
 // 
-// The function takes the following parameters:
-// 
-// 	- en int32: an `errno` error number, e.g. `EINVAL` 
-// 
-// The function returns the following values:
-// 
-// 	- goret IOChannelError 
+// see also https://docs.gtk.org/glib/func.g_io_channel_error_from_errno.html
 //
-// Converts an `errno` error number to a #GIOChannelError.
 func IOChannelErrorFromErrno(en int32) IOChannelError {
 	var carg1 C.gint            // in, none, casted
 	var cret  C.GIOChannelError // return, none, casted
@@ -21494,9 +16000,7 @@ func IOChannelErrorFromErrno(en int32) IOChannelError {
 
 // IOChannelErrorQuark wraps g_io_channel_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_io_channel_error_quark.html
 func IOChannelErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -21511,12 +16015,8 @@ func IOChannelErrorQuark() Quark {
 
 // Flush wraps g_io_channel_flush
 // 
-// The function returns the following values:
-// 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_flush.g_io_channel_flush.html
 //
-// Flushes the write buffer for the GIOChannel.
 func (channel *IOChannel) Flush() (IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var cret  C.GIOStatus   // return, none, casted
@@ -21540,13 +16040,8 @@ func (channel *IOChannel) Flush() (IOStatus, error) {
 
 // GetBufferCondition wraps g_io_channel_get_buffer_condition
 // 
-// The function returns the following values:
-// 
-// 	- goret IOCondition 
+// see also https://docs.gtk.org/glib/method.g_io_channel_get_buffer_condition.g_io_channel_get_buffer_condition.html
 //
-// This function returns a #GIOCondition depending on whether there
-// is data to be read/space to write data in the internal buffers in
-// the #GIOChannel. Only the flags %G_IO_IN and %G_IO_OUT may be set.
 func (channel *IOChannel) GetBufferCondition() IOCondition {
 	var carg0 *C.GIOChannel  // in, none, converted
 	var cret  C.GIOCondition // return, none, casted
@@ -21565,11 +16060,8 @@ func (channel *IOChannel) GetBufferCondition() IOCondition {
 
 // GetBufferSize wraps g_io_channel_get_buffer_size
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_io_channel_get_buffer_size.g_io_channel_get_buffer_size.html
 //
-// Gets the buffer size.
 func (channel *IOChannel) GetBufferSize() uint {
 	var carg0 *C.GIOChannel // in, none, converted
 	var cret  C.gsize       // return, none, casted
@@ -21588,11 +16080,8 @@ func (channel *IOChannel) GetBufferSize() uint {
 
 // GetBuffered wraps g_io_channel_get_buffered
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_io_channel_get_buffered.g_io_channel_get_buffered.html
 //
-// Returns whether @channel is buffered.
 func (channel *IOChannel) GetBuffered() bool {
 	var carg0 *C.GIOChannel // in, none, converted
 	var cret  C.gboolean    // return
@@ -21613,14 +16102,8 @@ func (channel *IOChannel) GetBuffered() bool {
 
 // GetCloseOnUnref wraps g_io_channel_get_close_on_unref
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_io_channel_get_close_on_unref.g_io_channel_get_close_on_unref.html
 //
-// Returns whether the file/socket/whatever associated with @channel
-// will be closed when @channel receives its final unref and is
-// destroyed. The default value of this is %TRUE for channels created
-// by g_io_channel_new_file (), and %FALSE for all other channels.
 func (channel *IOChannel) GetCloseOnUnref() bool {
 	var carg0 *C.GIOChannel // in, none, converted
 	var cret  C.gboolean    // return
@@ -21641,13 +16124,8 @@ func (channel *IOChannel) GetCloseOnUnref() bool {
 
 // GetEncoding wraps g_io_channel_get_encoding
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_io_channel_get_encoding.g_io_channel_get_encoding.html
 //
-// Gets the encoding for the input/output of the channel.
-// The internal encoding is always UTF-8. The encoding %NULL
-// makes the channel safe for binary data.
 func (channel *IOChannel) GetEncoding() string {
 	var carg0 *C.GIOChannel // in, none, converted
 	var cret  *C.gchar      // return, none, string
@@ -21666,19 +16144,8 @@ func (channel *IOChannel) GetEncoding() string {
 
 // GetFlags wraps g_io_channel_get_flags
 // 
-// The function returns the following values:
-// 
-// 	- goret IOFlags 
+// see also https://docs.gtk.org/glib/method.g_io_channel_get_flags.g_io_channel_get_flags.html
 //
-// Gets the current flags for a #GIOChannel, including read-only
-// flags such as %G_IO_FLAG_IS_READABLE.
-// 
-// The values of the flags %G_IO_FLAG_IS_READABLE and %G_IO_FLAG_IS_WRITABLE
-// are cached for internal use by the channel when it is created.
-// If they should change at some later point (e.g. partial shutdown
-// of a socket with the UNIX shutdown() function), the user
-// should immediately call g_io_channel_get_flags() to update
-// the internal values of these flags.
 func (channel *IOChannel) GetFlags() IOFlags {
 	var carg0 *C.GIOChannel // in, none, converted
 	var cret  C.GIOFlags    // return, none, casted
@@ -21697,15 +16164,8 @@ func (channel *IOChannel) GetFlags() IOFlags {
 
 // GetLineTerm wraps g_io_channel_get_line_term
 // 
-// The function returns the following values:
-// 
-// 	- length int32: a location to return the length of the line terminator 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_io_channel_get_line_term.g_io_channel_get_line_term.html
 //
-// This returns the string that #GIOChannel uses to determine
-// where in the file a line break occurs. A value of %NULL
-// indicates autodetection. Since 2.84, the return value is always
-// nul-terminated.
 func (channel *IOChannel) GetLineTerm() (int32, string) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gint        // out, full, casted
@@ -21726,12 +16186,9 @@ func (channel *IOChannel) GetLineTerm() (int32, string) {
 }
 
 // Init wraps g_io_channel_init
-//
-// Initializes a #GIOChannel struct.
 // 
-// This is called by each of the above functions when creating a
-// #GIOChannel, and so is not often needed by the application
-// programmer (unless you are creating a new type of #GIOChannel).
+// see also https://docs.gtk.org/glib/method.g_io_channel_init.g_io_channel_init.html
+//
 func (channel *IOChannel) Init() {
 	var carg0 *C.GIOChannel // in, none, converted
 
@@ -21743,21 +16200,8 @@ func (channel *IOChannel) Init() {
 
 // ReadLine wraps g_io_channel_read_line
 // 
-// The function returns the following values:
-// 
-// 	- strReturn string: The line read from the #GIOChannel, including the
-//              line terminator. This data should be freed with g_free()
-//              when no longer needed. This is a nul-terminated string.
-//              If a @length of zero is returned, this will be %NULL instead. 
-// 	- length uint: location to store length of the read data, or %NULL 
-// 	- terminatorPos uint: location to store position of line terminator, or %NULL 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_read_line.g_io_channel_read_line.html
 //
-// Reads a line, including the terminating character(s),
-// from a #GIOChannel into a newly-allocated string.
-// @str_return will contain allocated memory if the return
-// is %G_IO_STATUS_NORMAL.
 func (channel *IOChannel) ReadLine() (string, uint, uint, IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 *C.gchar      // out, full, string
@@ -21791,18 +16235,8 @@ func (channel *IOChannel) ReadLine() (string, uint, uint, IOStatus, error) {
 
 // ReadToEnd wraps g_io_channel_read_to_end
 // 
-// The function returns the following values:
-// 
-// 	- strReturn string: Location to
-//              store a pointer to a string holding the remaining data in the
-//              #GIOChannel. This data should be freed with g_free() when no
-//              longer needed. This data is terminated by an extra nul
-//              character, but there may be other nuls in the intervening data. 
-// 	- length uint: location to store length of the data 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_read_to_end.g_io_channel_read_to_end.html
 //
-// Reads all the remaining data from the file.
 func (channel *IOChannel) ReadToEnd() (string, IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 *C.gchar      // out, transfer: full, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -21833,14 +16267,8 @@ func (channel *IOChannel) ReadToEnd() (string, IOStatus, error) {
 
 // ReadUnichar wraps g_io_channel_read_unichar
 // 
-// The function returns the following values:
-// 
-// 	- thechar uint32: a location to return a character 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_read_unichar.g_io_channel_read_unichar.html
 //
-// Reads a Unicode character from @channel.
-// This function cannot be called on a channel with %NULL encoding.
 func (channel *IOChannel) ReadUnichar() (uint32, IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gunichar    // out, full, casted
@@ -21867,20 +16295,8 @@ func (channel *IOChannel) ReadUnichar() (uint32, IOStatus, error) {
 
 // SeekPosition wraps g_io_channel_seek_position
 // 
-// The function takes the following parameters:
-// 
-// 	- offset int64: The offset in bytes from the position specified by @type 
-// 	- typ SeekType: a #GSeekType. The type %G_SEEK_CUR is only allowed in those
-//                      cases where a call to g_io_channel_set_encoding ()
-//                      is allowed. See the documentation for
-//                      g_io_channel_set_encoding () for details. 
-// 
-// The function returns the following values:
-// 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_seek_position.g_io_channel_seek_position.html
 //
-// Replacement for g_io_channel_seek() with the new API.
 func (channel *IOChannel) SeekPosition(offset int64, typ SeekType) (IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gint64      // in, none, casted
@@ -21910,11 +16326,8 @@ func (channel *IOChannel) SeekPosition(offset int64, typ SeekType) (IOStatus, er
 
 // SetBufferSize wraps g_io_channel_set_buffer_size
 // 
-// The function takes the following parameters:
-// 
-// 	- size uint: the size of the buffer, or 0 to let GLib pick a good size 
+// see also https://docs.gtk.org/glib/method.g_io_channel_set_buffer_size.g_io_channel_set_buffer_size.html
 //
-// Sets the buffer size.
 func (channel *IOChannel) SetBufferSize(size uint) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gsize       // in, none, casted
@@ -21929,29 +16342,8 @@ func (channel *IOChannel) SetBufferSize(size uint) {
 
 // SetBuffered wraps g_io_channel_set_buffered
 // 
-// The function takes the following parameters:
-// 
-// 	- buffered bool: whether to set the channel buffered or unbuffered 
+// see also https://docs.gtk.org/glib/method.g_io_channel_set_buffered.g_io_channel_set_buffered.html
 //
-// The buffering state can only be set if the channel's encoding
-// is %NULL. For any other encoding, the channel must be buffered.
-// 
-// A buffered channel can only be set unbuffered if the channel's
-// internal buffers have been flushed. Newly created channels or
-// channels which have returned %G_IO_STATUS_EOF
-// not require such a flush. For write-only channels, a call to
-// g_io_channel_flush () is sufficient. For all other channels,
-// the buffers may be flushed by a call to g_io_channel_seek_position ().
-// This includes the possibility of seeking with seek type %G_SEEK_CUR
-// and an offset of zero. Note that this means that socket-based
-// channels cannot be set unbuffered once they have had data
-// read from them.
-// 
-// On unbuffered channels, it is safe to mix read and write
-// calls from the new and old APIs, if this is necessary for
-// maintaining old code.
-// 
-// The default state of the channel is buffered.
 func (channel *IOChannel) SetBuffered(buffered bool) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gboolean    // in
@@ -21968,17 +16360,8 @@ func (channel *IOChannel) SetBuffered(buffered bool) {
 
 // SetCloseOnUnref wraps g_io_channel_set_close_on_unref
 // 
-// The function takes the following parameters:
-// 
-// 	- doClose bool: Whether to close the channel on the final unref of
-//            the GIOChannel data structure. 
+// see also https://docs.gtk.org/glib/method.g_io_channel_set_close_on_unref.g_io_channel_set_close_on_unref.html
 //
-// Whether to close the channel on the final unref of the #GIOChannel
-// data structure. The default value of this is %TRUE for channels
-// created by g_io_channel_new_file (), and %FALSE for all other channels.
-// 
-// Setting this flag to %TRUE for a channel you have already closed
-// can cause problems when the final reference to the #GIOChannel is dropped.
 func (channel *IOChannel) SetCloseOnUnref(doClose bool) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gboolean    // in
@@ -21995,49 +16378,8 @@ func (channel *IOChannel) SetCloseOnUnref(doClose bool) {
 
 // SetEncoding wraps g_io_channel_set_encoding
 // 
-// The function takes the following parameters:
-// 
-// 	- encoding string (nullable): the encoding type 
-// 
-// The function returns the following values:
-// 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_set_encoding.g_io_channel_set_encoding.html
 //
-// Sets the encoding for the input/output of the channel.
-// The internal encoding is always UTF-8. The default encoding
-// for the external file is UTF-8.
-// 
-// The encoding %NULL is safe to use with binary data.
-// 
-// The encoding can only be set if one of the following conditions
-// is true:
-// 
-// - The channel was just created, and has not been written to or read from yet.
-// 
-// - The channel is write-only.
-// 
-// - The channel is a file, and the file pointer was just repositioned
-//   by a call to g_io_channel_seek_position(). (This flushes all the
-//   internal buffers.)
-// 
-// - The current encoding is %NULL or UTF-8.
-// 
-// - One of the (new API) read functions has just returned %G_IO_STATUS_EOF
-//   (or, in the case of g_io_channel_read_to_end(), %G_IO_STATUS_NORMAL).
-// 
-// -  One of the functions g_io_channel_read_chars() or
-//    g_io_channel_read_unichar() has returned %G_IO_STATUS_AGAIN or
-//    %G_IO_STATUS_ERROR. This may be useful in the case of
-//    %G_CONVERT_ERROR_ILLEGAL_SEQUENCE.
-//    Returning one of these statuses from g_io_channel_read_line(),
-//    g_io_channel_read_line_string(), or g_io_channel_read_to_end()
-//    does not guarantee that the encoding can be changed.
-// 
-// Channels which do not meet one of the above conditions cannot call
-// g_io_channel_seek_position() with an offset of %G_SEEK_CUR, and, if
-// they are "seekable", cannot call g_io_channel_write_chars() after
-// calling one of the API "read" functions.
 func (channel *IOChannel) SetEncoding(encoding string) (IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 *C.gchar      // in, none, string, nullable-string
@@ -22067,16 +16409,8 @@ func (channel *IOChannel) SetEncoding(encoding string) (IOStatus, error) {
 
 // SetFlags wraps g_io_channel_set_flags
 // 
-// The function takes the following parameters:
-// 
-// 	- flags IOFlags: the flags to set on the IO channel 
-// 
-// The function returns the following values:
-// 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_set_flags.g_io_channel_set_flags.html
 //
-// Sets the (writeable) flags in @channel to (@flags &amp; %G_IO_FLAG_SET_MASK).
 func (channel *IOChannel) SetFlags(flags IOFlags) (IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.GIOFlags    // in, none, casted
@@ -22103,18 +16437,8 @@ func (channel *IOChannel) SetFlags(flags IOFlags) (IOStatus, error) {
 
 // SetLineTerm wraps g_io_channel_set_line_term
 // 
-// The function takes the following parameters:
-// 
-// 	- lineTerm string (nullable): The line termination string. Use %NULL for
-//             autodetect.  Autodetection breaks on "\n", "\r\n", "\r", "\0",
-//             and the Unicode paragraph separator. Autodetection should not be
-//             used for anything other than file-based channels. 
-// 	- length int32: The length of the termination string. If -1 is passed, the
-//          string is assumed to be nul-terminated. This option allows
-//          termination strings with embedded nuls. 
+// see also https://docs.gtk.org/glib/method.g_io_channel_set_line_term.g_io_channel_set_line_term.html
 //
-// This sets the string that #GIOChannel uses to determine
-// where in the file a line break occurs.
 func (channel *IOChannel) SetLineTerm(lineTerm string, length int32) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 *C.gchar      // in, none, string, nullable-string
@@ -22135,18 +16459,8 @@ func (channel *IOChannel) SetLineTerm(lineTerm string, length int32) {
 
 // Shutdown wraps g_io_channel_shutdown
 // 
-// The function takes the following parameters:
-// 
-// 	- flush bool: if %TRUE, flush pending 
-// 
-// The function returns the following values:
-// 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_shutdown.g_io_channel_shutdown.html
 //
-// Close an IO channel. Any pending data to be written will be
-// flushed if @flush is %TRUE. The channel will not be freed until the
-// last reference is dropped using g_io_channel_unref().
 func (channel *IOChannel) Shutdown(flush bool) (IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gboolean    // in
@@ -22175,17 +16489,8 @@ func (channel *IOChannel) Shutdown(flush bool) (IOStatus, error) {
 
 // WriteUnichar wraps g_io_channel_write_unichar
 // 
-// The function takes the following parameters:
-// 
-// 	- thechar uint32: a character 
-// 
-// The function returns the following values:
-// 
-// 	- goret IOStatus 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_io_channel_write_unichar.g_io_channel_write_unichar.html
 //
-// Writes a Unicode character to @channel.
-// This function cannot be called on a channel with %NULL encoding.
 func (channel *IOChannel) WriteUnichar(thechar uint32) (IOStatus, error) {
 	var carg0 *C.GIOChannel // in, none, converted
 	var carg1 C.gunichar    // in, none, casted
@@ -22211,9 +16516,9 @@ func (channel *IOChannel) WriteUnichar(thechar uint32) (IOStatus, error) {
 }
 
 // IOFuncs wraps GIOFuncs
+// 
+// see also https://docs.gtk.org/glib/struct.IOFuncs.html
 //
-// A table of functions used to handle different types of #GIOChannel
-// in a generic way.
 type IOFuncs struct {
 	*iOFuncs
 }
@@ -22293,140 +16598,9 @@ func UnsafeIOFuncsToGlibFull(i *IOFuncs) unsafe.Pointer {
 }
 
 // KeyFile wraps GKeyFile
+// 
+// see also https://docs.gtk.org/glib/struct.KeyFile.html
 //
-// `GKeyFile` parses .ini-like config files.
-// 
-// `GKeyFile` lets you parse, edit or create files containing groups of
-// key-value pairs, which we call &#x2018;key files&#x2019; for lack of a better name.
-// Several freedesktop.org specifications use key files. For example, the
-// [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/)
-// and the [Icon Theme Specification](https://specifications.freedesktop.org/icon-theme-spec/latest/).
-// 
-// The syntax of key files is described in detail in the
-// [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/),
-// here is a quick summary: Key files consists of groups of key-value pairs, interspersed
-// with comments.
-// 
-// ```txt
-// # this is just an example
-// # there can be comments before the first group
-// 
-// [First Group]
-// 
-// Name=Key File Example\tthis value shows\nescaping
-// 
-// # localized strings are stored in multiple key-value pairs
-// Welcome=Hello
-// Welcome[de]=Hallo
-// Welcome[fr_FR]=Bonjour
-// Welcome[it]=Ciao
-// 
-// [Another Group]
-// 
-// Numbers=2;20;-200;0
-// 
-// Booleans=true;false;true;true
-// ```
-// 
-// Lines beginning with a `#` and blank lines are considered comments.
-// 
-// Groups are started by a header line containing the group name enclosed
-// in `[` and `]`, and ended implicitly by the start of the next group or
-// the end of the file. Each key-value pair must be contained in a group.
-// 
-// Key-value pairs generally have the form `key=value`, with the exception
-// of localized strings, which have the form `key[locale]=value`, with a
-// locale identifier of the form `lang_COUNTRY@MODIFIER` where `COUNTRY`
-// and `MODIFIER` are optional. As a special case, the locale `C` is associated
-// with the untranslated pair `key=value` (since GLib 2.84). Space before and
-// after the `=` character is ignored. Newline, tab, carriage return and
-// backslash characters in value are escaped as `\n`, `\t`, `\r`, and `\\\\`,
-// respectively. To preserve leading spaces in values, these can also be escaped
-// as `\s`.
-// 
-// Key files can store strings (possibly with localized variants), integers,
-// booleans and lists of these. Lists are separated by a separator character,
-// typically `;` or `,`. To use the list separator character in a value in
-// a list, it has to be escaped by prefixing it with a backslash.
-// 
-// This syntax is obviously inspired by the .ini files commonly met
-// on Windows, but there are some important differences:
-// 
-// - .ini files use the `;` character to begin comments,
-//   key files use the `#` character.
-// 
-// - Key files do not allow for ungrouped keys meaning only
-//   comments can precede the first group.
-// 
-// - Key files are always encoded in UTF-8.
-// 
-// - Key and Group names are case-sensitive. For example, a group called
-//   `[GROUP]` is a different from `[group]`.
-// 
-// - .ini files don&#x2019;t have a strongly typed boolean entry type,
-//    they only have `GetProfileInt()`. In key files, only
-//    `true` and `false` (in lower case) are allowed.
-// 
-// Note that in contrast to the
-// [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/latest/),
-// groups in key files may contain the same key multiple times; the last entry wins.
-// Key files may also contain multiple groups with the same name; they are merged
-// together. Another difference is that keys and group names in key files are not
-// restricted to ASCII characters.
-// 
-// Here is an example of loading a key file and reading a value:
-// 
-// ```c
-// g_autoptr(GError) error = NULL;
-// g_autoptr(GKeyFile) key_file = g_key_file_new ();
-// 
-// if (!g_key_file_load_from_file (key_file, "key-file.ini", flags, &amp;error))
-//   {
-//     if (!g_error_matches (error, G_FILE_ERROR, G_FILE_ERROR_NOENT))
-//       g_warning ("Error loading key file: %s", error-&gt;message);
-//     return;
-//   }
-// 
-// g_autofree gchar *val = g_key_file_get_string (key_file, "Group Name", "SomeKey", &amp;error);
-// if (val == NULL &amp;&amp;
-//     !g_error_matches (error, G_KEY_FILE_ERROR, G_KEY_FILE_ERROR_KEY_NOT_FOUND))
-//   {
-//     g_warning ("Error finding key in key file: %s", error-&gt;message);
-//     return;
-//   }
-// else if (val == NULL)
-//   {
-//     // Fall back to a default value.
-//     val = g_strdup ("default-value");
-//   }
-// ```
-// 
-// Here is an example of creating and saving a key file:
-// 
-// ```c
-// g_autoptr(GKeyFile) key_file = g_key_file_new ();
-// const gchar *val = &#x2026;;
-// g_autoptr(GError) error = NULL;
-// 
-// g_key_file_set_string (key_file, "Group Name", "SomeKey", val);
-// 
-// // Save as a file.
-// if (!g_key_file_save_to_file (key_file, "key-file.ini", &amp;error))
-//   {
-//     g_warning ("Error saving key file: %s", error-&gt;message);
-//     return;
-//   }
-// 
-// // Or store to a GBytes for use elsewhere.
-// gsize data_len;
-// g_autofree guint8 *data = (guint8 *) g_key_file_to_data (key_file, &amp;data_len, &amp;error);
-// if (data == NULL)
-//   {
-//     g_warning ("Error saving key file: %s", error-&gt;message);
-//     return;
-//   }
-// g_autoptr(GBytes) bytes = g_bytes_new_take (g_steal_pointer (&amp;data), data_len);
-// ```
 type KeyFile struct {
 	*keyFile
 }
@@ -22488,7 +16662,7 @@ func UnsafeKeyFileFromGlibFull(p unsafe.Pointer) *KeyFile {
 // 
 // When this is called without an associated call to [KeyFile.UnsafeKeyFileUnref], then [KeyFile] will leak memory.
 func UnsafeKeyFileRef(k *KeyFile) {
-	C.g_key_file_ref(k.native)
+	C.g_key_file_ref((*C.GKeyFile)(k.native))
 }
 
 // UnsafeKeyFileUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -22520,16 +16694,8 @@ func UnsafeKeyFileToGlibFull(k *KeyFile) unsafe.Pointer {
 
 // NewKeyFile wraps g_key_file_new
 // 
-// The function returns the following values:
-// 
-// 	- goret *KeyFile 
+// see also https://docs.gtk.org/glib/func.g_key_file_new.html
 //
-// Creates a new empty [struct@GLib.KeyFile] object.
-// 
-// Use [method@GLib.KeyFile.load_from_file],
-// [method@GLib.KeyFile.load_from_data], [method@GLib.KeyFile.load_from_dirs] or
-// [method@GLib.KeyFile.load_from_data_dirs] to
-// read an existing key file.
 func NewKeyFile() *KeyFile {
 	var cret *C.GKeyFile // return, full, converted
 
@@ -22544,9 +16710,7 @@ func NewKeyFile() *KeyFile {
 
 // KeyFileErrorQuark wraps g_key_file_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_key_file_error_quark.html
 func KeyFileErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -22561,22 +16725,8 @@ func KeyFileErrorQuark() Quark {
 
 // GetBoolean wraps g_key_file_get_boolean
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_boolean.g_key_file_get_boolean.html
 //
-// Returns the value associated with @key under @group_name as a
-// boolean.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. Likewise, if the value associated with @key cannot be interpreted
-// as a boolean then [error@GLib.KeyFileError.INVALID_VALUE] is returned.
 func (keyFile *KeyFile) GetBoolean(groupName string, key string) (bool, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -22610,23 +16760,8 @@ func (keyFile *KeyFile) GetBoolean(groupName string, key string) (bool, error) {
 
 // GetBooleanList wraps g_key_file_get_boolean_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: the number of booleans returned 
-// 	- goret []bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_boolean_list.g_key_file_get_boolean_list.html
 //
-// Returns the values associated with @key under @group_name as
-// booleans.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. Likewise, if the values associated with @key cannot be interpreted
-// as booleans then [error@GLib.KeyFileError.INVALID_VALUE] is returned.
 func (keyFile *KeyFile) GetBooleanList(groupName string, key string) (uint, []bool, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -22663,25 +16798,8 @@ func (keyFile *KeyFile) GetBooleanList(groupName string, key string) (uint, []bo
 
 // GetComment wraps g_key_file_get_comment
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string (nullable): a group name, or `NULL` to get a top-level comment 
-// 	- key string (nullable): a key, or `NULL` to get a group comment 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_comment.g_key_file_get_comment.html
 //
-// Retrieves a comment above @key from @group_name.
-// 
-// If @key is `NULL` then @comment will be read from above
-// @group_name. If both @key and @group_name are `NULL`, then
-// @comment will be read from above the first group in the file.
-// 
-// Note that the returned string does not include the `#` comment markers,
-// but does include any whitespace after them (on each line). It includes
-// the line breaks between lines, but does not include the final line break.
 func (keyFile *KeyFile) GetComment(groupName string, key string) (string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string, nullable-string
@@ -22718,21 +16836,8 @@ func (keyFile *KeyFile) GetComment(groupName string, key string) (string, error)
 
 // GetDouble wraps g_key_file_get_double
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- goret float64 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_double.g_key_file_get_double.html
 //
-// Returns the value associated with @key under @group_name as a double.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. Likewise, if the value associated with @key cannot be interpreted
-// as a double then [error@GLib.KeyFileError.INVALID_VALUE] is returned.
 func (keyFile *KeyFile) GetDouble(groupName string, key string) (float64, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -22764,23 +16869,8 @@ func (keyFile *KeyFile) GetDouble(groupName string, key string) (float64, error)
 
 // GetDoubleList wraps g_key_file_get_double_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: the number of doubles returned 
-// 	- goret []float64 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_double_list.g_key_file_get_double_list.html
 //
-// Returns the values associated with @key under @group_name as
-// doubles.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. Likewise, if the values associated with @key cannot be interpreted
-// as doubles then [error@GLib.KeyFileError.INVALID_VALUE] is returned.
 func (keyFile *KeyFile) GetDoubleList(groupName string, key string) (uint, []float64, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -22817,16 +16907,8 @@ func (keyFile *KeyFile) GetDoubleList(groupName string, key string) (uint, []flo
 
 // GetGroups wraps g_key_file_get_groups
 // 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the number of returned groups,
-//    or `NULL` to ignore 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_groups.g_key_file_get_groups.html
 //
-// Returns all groups in the key file loaded with @key_file.
-// 
-// The array of returned groups will be `NULL`-terminated, so
-// @length may optionally be `NULL`.
 func (keyFile *KeyFile) GetGroups() (uint, []string) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 C.gsize     // out, full, casted
@@ -22850,21 +16932,8 @@ func (keyFile *KeyFile) GetGroups() (uint, []string) {
 
 // GetInt64 wraps g_key_file_get_int64
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- goret int64 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_int64.g_key_file_get_int64.html
 //
-// Returns the value associated with @key under @group_name as a signed
-// 64-bit integer.
-// 
-// This is similar to [method@GLib.KeyFile.get_integer] but can return
-// 64-bit results without truncation.
 func (keyFile *KeyFile) GetInt64(groupName string, key string) (int64, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -22896,23 +16965,8 @@ func (keyFile *KeyFile) GetInt64(groupName string, key string) (int64, error) {
 
 // GetInteger wraps g_key_file_get_integer
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_integer.g_key_file_get_integer.html
 //
-// Returns the value associated with @key under @group_name as an
-// integer.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. Likewise, if the value associated with @key cannot be interpreted
-// as an integer, or is out of range for a `gint`, then
-// [error@GLib.KeyFileError.INVALID_VALUE] is returned.
 func (keyFile *KeyFile) GetInteger(groupName string, key string) (int32, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -22944,24 +16998,8 @@ func (keyFile *KeyFile) GetInteger(groupName string, key string) (int32, error) 
 
 // GetIntegerList wraps g_key_file_get_integer_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: the number of integers returned 
-// 	- goret []int32 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_integer_list.g_key_file_get_integer_list.html
 //
-// Returns the values associated with @key under @group_name as
-// integers.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. Likewise, if the values associated with @key cannot be interpreted
-// as integers, or are out of range for `gint`, then
-// [error@GLib.KeyFileError.INVALID_VALUE] is returned.
 func (keyFile *KeyFile) GetIntegerList(groupName string, key string) (uint, []int32, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -22998,22 +17036,8 @@ func (keyFile *KeyFile) GetIntegerList(groupName string, key string) (uint, []in
 
 // GetKeys wraps g_key_file_get_keys
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the number of keys returned,
-//    or `NULL` to ignore 
-// 	- goret []string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_keys.g_key_file_get_keys.html
 //
-// Returns all keys for the group name @group_name.
-// 
-// The array of returned keys will be `NULL`-terminated, so @length may
-// optionally be `NULL`. If the @group_name cannot be found,
-// [error@GLib.KeyFileError.GROUP_NOT_FOUND] is returned.
 func (keyFile *KeyFile) GetKeys(groupName string) (uint, []string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23046,25 +17070,8 @@ func (keyFile *KeyFile) GetKeys(groupName string) (uint, []string, error) {
 
 // GetLocaleForKey wraps g_key_file_get_locale_for_key
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- locale string (nullable): a locale identifier or `NULL` to use the current locale 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_locale_for_key.g_key_file_get_locale_for_key.html
 //
-// Returns the actual locale which the result of
-// [method@GLib.KeyFile.get_locale_string] or
-// [method@GLib.KeyFile.get_locale_string_list] came from.
-// 
-// If calling [method@GLib.KeyFile.get_locale_string] or
-// [method@GLib.KeyFile.get_locale_string_list] with exactly the same @key_file,
-// @group_name, @key and @locale, the result of those functions will
-// have originally been tagged with the locale that is the result of
-// this function.
 func (keyFile *KeyFile) GetLocaleForKey(groupName string, key string, locale string) string {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23100,33 +17107,8 @@ func (keyFile *KeyFile) GetLocaleForKey(groupName string, key string, locale str
 
 // GetLocaleString wraps g_key_file_get_locale_string
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- locale string (nullable): a locale identifier or `NULL` to use the current locale 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_locale_string.g_key_file_get_locale_string.html
 //
-// Returns the value associated with @key under @group_name
-// translated in the given @locale if available.
-// 
-// If @locale is `C` then the untranslated value is returned (since GLib 2.84).
-// 
-// If @locale is `NULL` then the current locale is assumed.
-// 
-// If @locale is to be non-`NULL`, or if the current locale will change over
-// the lifetime of the [struct@GLib.KeyFile], it must be loaded with
-// [flags@GLib.KeyFileFlags.KEEP_TRANSLATIONS] in order to load strings for all
-// locales.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. If the value associated
-// with @key cannot be interpreted or no suitable translation can
-// be found then the untranslated value is returned.
 func (keyFile *KeyFile) GetLocaleString(groupName string, key string, locale string) (string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23165,37 +17147,8 @@ func (keyFile *KeyFile) GetLocaleString(groupName string, key string, locale str
 
 // GetLocaleStringList wraps g_key_file_get_locale_string_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- locale string (nullable): a locale identifier or `NULL` to use the current locale 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the number of returned strings
-//    or `NULL` to ignore 
-// 	- goret []string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_locale_string_list.g_key_file_get_locale_string_list.html
 //
-// Returns the values associated with @key under @group_name
-// translated in the given @locale if available.
-// 
-// If @locale is `C` then the untranslated value is returned (since GLib 2.84).
-// 
-// If @locale is `NULL` then the current locale is assumed.
-// 
-// If @locale is to be non-`NULL`, or if the current locale will change over
-// the lifetime of the [struct@GLib.KeyFile], it must be loaded with
-// [flags@GLib.KeyFileFlags.KEEP_TRANSLATIONS] in order to load strings for all
-// locales.
-// 
-// If @key cannot be found then [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. If the values associated
-// with @key cannot be interpreted or no suitable translations
-// can be found then the untranslated values are returned. The
-// returned array is `NULL`-terminated, so @length may optionally
-// be `NULL`.
 func (keyFile *KeyFile) GetLocaleStringList(groupName string, key string, locale string) (uint, []string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23238,11 +17191,8 @@ func (keyFile *KeyFile) GetLocaleStringList(groupName string, key string, locale
 
 // GetStartGroup wraps g_key_file_get_start_group
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_start_group.g_key_file_get_start_group.html
 //
-// Returns the name of the start group of the file.
 func (keyFile *KeyFile) GetStartGroup() string {
 	var carg0 *C.GKeyFile // in, none, converted
 	var cret  *C.gchar    // return, full, string, nullable-string
@@ -23264,24 +17214,8 @@ func (keyFile *KeyFile) GetStartGroup() string {
 
 // GetString wraps g_key_file_get_string
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_string.g_key_file_get_string.html
 //
-// Returns the string value associated with @key under @group_name.
-// 
-// Unlike [method@GLib.KeyFile.get_value], this function handles escape
-// sequences like `\s`.
-// 
-// If the key cannot be found, [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. If the @group_name cannot be found,
-// [error@GLib.KeyFileError.GROUP_NOT_FOUND] is returned.
 func (keyFile *KeyFile) GetString(groupName string, key string) (string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23314,23 +17248,8 @@ func (keyFile *KeyFile) GetString(groupName string, key string) (string, error) 
 
 // GetStringList wraps g_key_file_get_string_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the number of returned
-//    strings, or `NULL` to ignore 
-// 	- goret []string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_string_list.g_key_file_get_string_list.html
 //
-// Returns the values associated with @key under @group_name.
-// 
-// If the key cannot be found, [error@GLib.KeyFileError.KEY_NOT_FOUND] is
-// returned. If the @group_name cannot be found,
-// [error@GLib.KeyFileError.GROUP_NOT_FOUND] is returned.
 func (keyFile *KeyFile) GetStringList(groupName string, key string) (uint, []string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23367,21 +17286,8 @@ func (keyFile *KeyFile) GetStringList(groupName string, key string) (uint, []str
 
 // GetUint64 wraps g_key_file_get_uint64
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint64 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_uint64.g_key_file_get_uint64.html
 //
-// Returns the value associated with @key under @group_name as an unsigned
-// 64-bit integer.
-// 
-// This is similar to [method@GLib.KeyFile.get_integer] but can return
-// large positive results without truncation.
 func (keyFile *KeyFile) GetUint64(groupName string, key string) (uint64, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23413,23 +17319,8 @@ func (keyFile *KeyFile) GetUint64(groupName string, key string) (uint64, error) 
 
 // GetValue wraps g_key_file_get_value
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_get_value.g_key_file_get_value.html
 //
-// Returns the raw value associated with @key under @group_name.
-// 
-// Use [method@GLib.KeyFile.get_string] to retrieve an unescaped UTF-8 string.
-// 
-// If the key cannot be found, [error@GLib.KeyFileError.KEY_NOT_FOUND]
-// is returned.  If the @group_name cannot be found,
-// [error@GLib.KeyFileError.GROUP_NOT_FOUND] is returned.
 func (keyFile *KeyFile) GetValue(groupName string, key string) (string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23462,15 +17353,8 @@ func (keyFile *KeyFile) GetValue(groupName string, key string) (string, error) {
 
 // HasGroup wraps g_key_file_has_group
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_key_file_has_group.g_key_file_has_group.html
 //
-// Looks whether the key file has the group @group_name.
 func (keyFile *KeyFile) HasGroup(groupName string) bool {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23495,20 +17379,8 @@ func (keyFile *KeyFile) HasGroup(groupName string) bool {
 
 // LoadFromBytes wraps g_key_file_load_from_bytes
 // 
-// The function takes the following parameters:
-// 
-// 	- bytes *Bytes: a [struct@GLib.Bytes] 
-// 	- flags KeyFileFlags: flags from [flags@GLib.KeyFileFlags] 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_load_from_bytes.g_key_file_load_from_bytes.html
 //
-// Loads a key file from the data in @bytes into an empty [struct@GLib.KeyFile]
-// structure.
-// 
-// If the object cannot be created then a [error@GLib.KeyFileError] is returned.
 func (keyFile *KeyFile) LoadFromBytes(bytes *Bytes, flags KeyFileFlags) (bool, error) {
 	var carg0 *C.GKeyFile     // in, none, converted
 	var carg1 *C.GBytes       // in, none, converted
@@ -23540,20 +17412,8 @@ func (keyFile *KeyFile) LoadFromBytes(bytes *Bytes, flags KeyFileFlags) (bool, e
 
 // LoadFromData wraps g_key_file_load_from_data
 // 
-// The function takes the following parameters:
-// 
-// 	- data string: key file loaded in memory 
-// 	- length uint: the length of @data in bytes (or `(gsize)-1` if data is nul-terminated) 
-// 	- flags KeyFileFlags: flags from [flags@GLib.KeyFileFlags] 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_load_from_data.g_key_file_load_from_data.html
 //
-// Loads a key file from memory into an empty [struct@GLib.KeyFile] structure.
-// 
-// If the object cannot be created then a [error@GLib.KeyFileError is returned.
 func (keyFile *KeyFile) LoadFromData(data string, length uint, flags KeyFileFlags) (bool, error) {
 	var carg0 *C.GKeyFile     // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -23589,27 +17449,8 @@ func (keyFile *KeyFile) LoadFromData(data string, length uint, flags KeyFileFlag
 
 // LoadFromDataDirs wraps g_key_file_load_from_data_dirs
 // 
-// The function takes the following parameters:
-// 
-// 	- file string: a relative path to a filename to open and parse 
-// 	- flags KeyFileFlags: flags from [flags@GLib.KeyFileFlags] 
-// 
-// The function returns the following values:
-// 
-// 	- fullPath string: return location for a string
-//    containing the full path of the file, or `NULL` to ignore 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_load_from_data_dirs.g_key_file_load_from_data_dirs.html
 //
-// Looks for a key file named @file in the paths returned from
-// [func@GLib.get_user_data_dir] and [func@GLib.get_system_data_dirs].
-// 
-// The search algorithm from [method@GLib.KeyFile.load_from_dirs] is used. If
-// @file is found, it&#x2019;s loaded into @key_file and its full path is returned in
-// @full_path.
-// 
-// If the file could not be loaded then either a [error@GLib.FileError] or
-// [error@GLib.KeyFileError] is returned.
 func (keyFile *KeyFile) LoadFromDataDirs(file string, flags KeyFileFlags) (string, bool, error) {
 	var carg0 *C.GKeyFile     // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -23646,35 +17487,8 @@ func (keyFile *KeyFile) LoadFromDataDirs(file string, flags KeyFileFlags) (strin
 
 // LoadFromDirs wraps g_key_file_load_from_dirs
 // 
-// The function takes the following parameters:
-// 
-// 	- file string: a relative path to a filename to open and parse 
-// 	- searchDirs []string: `NULL`-terminated
-//    array of directories to search 
-// 	- flags KeyFileFlags: flags from [flags@GLib.KeyFileFlags] 
-// 
-// The function returns the following values:
-// 
-// 	- fullPath string: return location for a string
-//    containing the full path of the file, or `NULL` to ignore 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_load_from_dirs.g_key_file_load_from_dirs.html
 //
-// Looks for a key file named @file in the paths specified in @search_dirs,
-// loads the file into @key_file and returns the file&#x2019;s full path in @full_path.
-// 
-// @search_dirs are checked in the order listed in the array, with the highest
-// priority directory listed first. Within each directory, @file is looked for.
-// If it&#x2019;s not found, `-` characters in @file are progressively replaced with
-// directory separators to search subdirectories of the search directory. If the
-// file has not been found after all `-` characters have been replaced, the next
-// search directory in @search_dirs is checked.
-// 
-// If the file could not be found in any of the @search_dirs,
-// [error@GLib.KeyFileError.NOT_FOUND] is returned. If
-// the file is found but the OS returns an error when opening or reading the
-// file, a [error@GLib.FileError] is returned. If there is a problem parsing the
-// file, a [error@GLib.KeyFileError] is returned.
 func (keyFile *KeyFile) LoadFromDirs(file string, searchDirs []string, flags KeyFileFlags) (string, bool, error) {
 	var carg0 *C.GKeyFile     // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -23716,24 +17530,8 @@ func (keyFile *KeyFile) LoadFromDirs(file string, searchDirs []string, flags Key
 
 // LoadFromFile wraps g_key_file_load_from_file
 // 
-// The function takes the following parameters:
-// 
-// 	- file string: the path of a filename to load, in the GLib filename encoding 
-// 	- flags KeyFileFlags: flags from [flags@GLib.KeyFileFlags] 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_load_from_file.g_key_file_load_from_file.html
 //
-// Loads a key file into an empty [struct@GLib.KeyFile] structure.
-// 
-// If the OS returns an error when opening or reading the file, a
-// [error@GLib.FileError] is returned. If there is a problem parsing the file,
-// a [error@GLib.KeyFileError] is returned.
-// 
-// This function will never return a [error@GLib.KeyFileError.NOT_FOUND]
-// error. If the @file is not found, [error@GLib.FileError.NOENT] is returned.
 func (keyFile *KeyFile) LoadFromFile(file string, flags KeyFileFlags) (bool, error) {
 	var carg0 *C.GKeyFile     // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -23766,21 +17564,8 @@ func (keyFile *KeyFile) LoadFromFile(file string, flags KeyFileFlags) (bool, err
 
 // RemoveComment wraps g_key_file_remove_comment
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string (nullable): a group name, or `NULL` to get a top-level comment 
-// 	- key string (nullable): a key, or `NULL` to get a group comment 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_remove_comment.g_key_file_remove_comment.html
 //
-// Removes a comment above @key from @group_name.
-// 
-// If @key is `NULL` then @comment will be removed above @group_name.
-// If both @key and @group_name are `NULL`, then @comment will
-// be removed above the first group in the file.
 func (keyFile *KeyFile) RemoveComment(groupName string, key string) (bool, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string, nullable-string
@@ -23818,17 +17603,8 @@ func (keyFile *KeyFile) RemoveComment(groupName string, key string) (bool, error
 
 // RemoveGroup wraps g_key_file_remove_group
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_remove_group.g_key_file_remove_group.html
 //
-// Removes the specified group, @group_name,
-// from the key file.
 func (keyFile *KeyFile) RemoveGroup(groupName string) (bool, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23858,17 +17634,8 @@ func (keyFile *KeyFile) RemoveGroup(groupName string) (bool, error) {
 
 // RemoveKey wraps g_key_file_remove_key
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key name to remove 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_remove_key.g_key_file_remove_key.html
 //
-// Removes @key in @group_name from the key file.
 func (keyFile *KeyFile) RemoveKey(groupName string, key string) (bool, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23902,25 +17669,8 @@ func (keyFile *KeyFile) RemoveKey(groupName string, key string) (bool, error) {
 
 // SaveToFile wraps g_key_file_save_to_file
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: the name of the file to write to 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_save_to_file.g_key_file_save_to_file.html
 //
-// Writes the contents of @key_file to @filename using
-// [func@GLib.file_set_contents].
-// 
-// If you need stricter guarantees about durability of
-// the written file than are provided by [func@GLib.file_set_contents], use
-// [func@GLib.file_set_contents_full] with the return value of
-// [method@GLib.KeyFile.to_data].
-// 
-// This function can fail for any of the reasons that
-// [func@GLib.file_set_contents] may fail.
 func (keyFile *KeyFile) SaveToFile(filename string) (bool, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23950,15 +17700,8 @@ func (keyFile *KeyFile) SaveToFile(filename string) (bool, error) {
 
 // SetBoolean wraps g_key_file_set_boolean
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- value bool: true or false 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_boolean.g_key_file_set_boolean.html
 //
-// Associates a new boolean value with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetBoolean(groupName string, key string, value bool) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -23983,15 +17726,8 @@ func (keyFile *KeyFile) SetBoolean(groupName string, key string, value bool) {
 
 // SetBooleanList wraps g_key_file_set_boolean_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- list []bool: an array of boolean values 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_boolean_list.g_key_file_set_boolean_list.html
 //
-// Associates a list of boolean values with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetBooleanList(groupName string, key string, list []bool) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24018,30 +17754,8 @@ func (keyFile *KeyFile) SetBooleanList(groupName string, key string, list []bool
 
 // SetComment wraps g_key_file_set_comment
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string (nullable): a group name, or `NULL` to write a top-level comment 
-// 	- key string (nullable): a key, or `NULL` to write a group comment 
-// 	- comment string: a comment 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_comment.g_key_file_set_comment.html
 //
-// Places a comment above @key from @group_name.
-// 
-// If @key is `NULL` then @comment will be written above @group_name.
-// If both @key and @group_name are `NULL`, then @comment will be
-// written above the first group in the file.
-// 
-// Passing a non-existent @group_name or @key to this function returns
-// false and populates @error. (In contrast, passing a non-existent
-// `group_name` or `key` to [method@GLib.KeyFile.set_string]
-// creates the associated group name and key.)
-// 
-// Note that this function prepends a `#` comment marker to
-// each line of @comment.
 func (keyFile *KeyFile) SetComment(groupName string, key string, comment string) (bool, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string, nullable-string
@@ -24083,15 +17797,8 @@ func (keyFile *KeyFile) SetComment(groupName string, key string, comment string)
 
 // SetDouble wraps g_key_file_set_double
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- value float64: a double value 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_double.g_key_file_set_double.html
 //
-// Associates a new double value with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetDouble(groupName string, key string, value float64) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24114,15 +17821,8 @@ func (keyFile *KeyFile) SetDouble(groupName string, key string, value float64) {
 
 // SetDoubleList wraps g_key_file_set_double_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- list []float64: an array of double values 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_double_list.g_key_file_set_double_list.html
 //
-// Associates a list of double values with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetDoubleList(groupName string, key string, list []float64) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24149,15 +17849,8 @@ func (keyFile *KeyFile) SetDoubleList(groupName string, key string, list []float
 
 // SetInt64 wraps g_key_file_set_int64
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- value int64: an integer value 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_int64.g_key_file_set_int64.html
 //
-// Associates a new integer value with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetInt64(groupName string, key string, value int64) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24180,15 +17873,8 @@ func (keyFile *KeyFile) SetInt64(groupName string, key string, value int64) {
 
 // SetInteger wraps g_key_file_set_integer
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- value int32: an integer value 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_integer.g_key_file_set_integer.html
 //
-// Associates a new integer value with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetInteger(groupName string, key string, value int32) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24211,15 +17897,8 @@ func (keyFile *KeyFile) SetInteger(groupName string, key string, value int32) {
 
 // SetIntegerList wraps g_key_file_set_integer_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- list []int32: an array of integer values 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_integer_list.g_key_file_set_integer_list.html
 //
-// Associates a list of integer values with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetIntegerList(groupName string, key string, list []int32) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24246,14 +17925,8 @@ func (keyFile *KeyFile) SetIntegerList(groupName string, key string, list []int3
 
 // SetListSeparator wraps g_key_file_set_list_separator
 // 
-// The function takes the following parameters:
-// 
-// 	- separator byte: the separator 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_list_separator.g_key_file_set_list_separator.html
 //
-// Sets the character which is used to separate values in lists.
-// 
-// Typically `;` or `,` are used as separators. The default list separator
-// is `;`.
 func (keyFile *KeyFile) SetListSeparator(separator byte) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 C.gchar     // in, none, casted
@@ -24268,18 +17941,8 @@ func (keyFile *KeyFile) SetListSeparator(separator byte) {
 
 // SetLocaleString wraps g_key_file_set_locale_string
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- locale string: a locale identifier 
-// 	- str string: a string 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_locale_string.g_key_file_set_locale_string.html
 //
-// Associates a string value for @key and @locale under @group_name.
-// 
-// If the translation for @key cannot be found then it is created.
-// 
-// If @locale is `C` then the untranslated value is set (since GLib 2.84).
 func (keyFile *KeyFile) SetLocaleString(groupName string, key string, locale string, str string) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24307,20 +17970,8 @@ func (keyFile *KeyFile) SetLocaleString(groupName string, key string, locale str
 
 // SetLocaleStringList wraps g_key_file_set_locale_string_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- locale string: a locale identifier 
-// 	- list []string: a `NULL`-terminated array of
-//    locale string values 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_locale_string_list.g_key_file_set_locale_string_list.html
 //
-// Associates a list of string values for @key and @locale under
-// @group_name.
-// 
-// If @locale is `C` then the untranslated value is set (since GLib 2.84).
-// 
-// If the translation for @key cannot be found then it is created.
 func (keyFile *KeyFile) SetLocaleStringList(groupName string, key string, locale string, list []string) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24351,18 +18002,8 @@ func (keyFile *KeyFile) SetLocaleStringList(groupName string, key string, locale
 
 // SetString wraps g_key_file_set_string
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- str string: a string 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_string.g_key_file_set_string.html
 //
-// Associates a new string value with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
-// If @group_name cannot be found then it is created.
-// Unlike [method@GLib.KeyFile.set_value], this function handles characters
-// that need escaping, such as newlines.
 func (keyFile *KeyFile) SetString(groupName string, key string, str string) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24386,17 +18027,8 @@ func (keyFile *KeyFile) SetString(groupName string, key string, str string) {
 
 // SetStringList wraps g_key_file_set_string_list
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- list []string: an array
-//    of string values 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_string_list.g_key_file_set_string_list.html
 //
-// Associates a list of string values for @key under @group_name.
-// 
-// If @key cannot be found then it is created.
-// If @group_name cannot be found then it is created.
 func (keyFile *KeyFile) SetStringList(groupName string, key string, list []string) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24423,15 +18055,8 @@ func (keyFile *KeyFile) SetStringList(groupName string, key string, list []strin
 
 // SetUint64 wraps g_key_file_set_uint64
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- value uint64: an integer value 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_uint64.g_key_file_set_uint64.html
 //
-// Associates a new integer value with @key under @group_name.
-// 
-// If @key cannot be found then it is created.
 func (keyFile *KeyFile) SetUint64(groupName string, key string, value uint64) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24454,18 +18079,8 @@ func (keyFile *KeyFile) SetUint64(groupName string, key string, value uint64) {
 
 // SetValue wraps g_key_file_set_value
 // 
-// The function takes the following parameters:
-// 
-// 	- groupName string: a group name 
-// 	- key string: a key 
-// 	- value string: a string 
+// see also https://docs.gtk.org/glib/method.g_key_file_set_value.g_key_file_set_value.html
 //
-// Associates a new value with @key under @group_name.
-// 
-// If @key cannot be found then it is created. If @group_name cannot
-// be found then it is created. To set an UTF-8 string which may contain
-// characters that need escaping (such as newlines or spaces), use
-// [method@GLib.KeyFile.set_string].
 func (keyFile *KeyFile) SetValue(groupName string, key string, value string) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -24489,16 +18104,8 @@ func (keyFile *KeyFile) SetValue(groupName string, key string, value string) {
 
 // ToData wraps g_key_file_to_data
 // 
-// The function returns the following values:
-// 
-// 	- length uint: return location for the length of the
-//   returned string, or `NULL` to ignore 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_key_file_to_data.g_key_file_to_data.html
 //
-// Outputs @key_file as a string.
-// 
-// Note that this function never reports an error.
 func (keyFile *KeyFile) ToData() (uint, string, error) {
 	var carg0 *C.GKeyFile // in, none, converted
 	var carg1 C.gsize     // out, full, casted
@@ -24525,14 +18132,9 @@ func (keyFile *KeyFile) ToData() (uint, string, error) {
 }
 
 // LogField wraps GLogField
-//
-// Structure representing a single field in a structured log entry. See
-// g_log_structured() for details.
 // 
-// Log fields may contain arbitrary values, including binary with embedded nul
-// bytes. If the field contains a string, the string must be UTF-8 encoded and
-// have a trailing nul byte. Otherwise, @length must be set to a non-negative
-// value.
+// see also https://docs.gtk.org/glib/struct.LogField.html
+//
 type LogField struct {
 	*logField
 }
@@ -24612,9 +18214,9 @@ func UnsafeLogFieldToGlibFull(l *LogField) unsafe.Pointer {
 }
 
 // MainContext wraps GMainContext
+// 
+// see also https://docs.gtk.org/glib/struct.MainContext.html
 //
-// The `GMainContext` struct is an opaque data
-// type representing a set of sources to be handled in a main loop.
 type MainContext struct {
 	*mainContext
 }
@@ -24676,7 +18278,7 @@ func UnsafeMainContextFromGlibFull(p unsafe.Pointer) *MainContext {
 // 
 // When this is called without an associated call to [MainContext.UnsafeMainContextUnref], then [MainContext] will leak memory.
 func UnsafeMainContextRef(m *MainContext) {
-	C.g_main_context_ref(m.native)
+	C.g_main_context_ref((*C.GMainContext)(m.native))
 }
 
 // UnsafeMainContextUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -24708,11 +18310,8 @@ func UnsafeMainContextToGlibFull(m *MainContext) unsafe.Pointer {
 
 // NewMainContext wraps g_main_context_new
 // 
-// The function returns the following values:
-// 
-// 	- goret *MainContext 
+// see also https://docs.gtk.org/glib/func.g_main_context_new.html
 //
-// Creates a new [struct@GLib.MainContext] structure.
 func NewMainContext() *MainContext {
 	var cret *C.GMainContext // return, full, converted
 
@@ -24727,16 +18326,8 @@ func NewMainContext() *MainContext {
 
 // NewMainContextWithFlags wraps g_main_context_new_with_flags
 // 
-// The function takes the following parameters:
-// 
-// 	- flags MainContextFlags: a bitwise-OR combination of #GMainContextFlags flags that can only be
-//         set at creation time. 
-// 
-// The function returns the following values:
-// 
-// 	- goret *MainContext 
+// see also https://docs.gtk.org/glib/func.g_main_context_new_with_flags.html
 //
-// Creates a new [struct@GLib.MainContext] structure.
 func NewMainContextWithFlags(flags MainContextFlags) *MainContext {
 	var carg1 C.GMainContextFlags // in, none, casted
 	var cret  *C.GMainContext     // return, full, converted
@@ -24755,14 +18346,8 @@ func NewMainContextWithFlags(flags MainContextFlags) *MainContext {
 
 // MainContextDefault wraps g_main_context_default
 // 
-// The function returns the following values:
-// 
-// 	- goret *MainContext 
+// see also https://docs.gtk.org/glib/func.g_main_context_default.html
 //
-// Returns the global-default main context. This is the main context
-// used for main loop functions when a main loop is not explicitly
-// specified, and corresponds to the "main" main loop. See also
-// [func@GLib.MainContext.get_thread_default].
 func MainContextDefault() *MainContext {
 	var cret *C.GMainContext // return, none, converted
 
@@ -24777,21 +18362,8 @@ func MainContextDefault() *MainContext {
 
 // MainContextGetThreadDefault wraps g_main_context_get_thread_default
 // 
-// The function returns the following values:
-// 
-// 	- goret *MainContext (nullable) 
+// see also https://docs.gtk.org/glib/func.g_main_context_get_thread_default.html
 //
-// Gets the thread-default #GMainContext for this thread. Asynchronous
-// operations that want to be able to be run in contexts other than
-// the default one should call this method or
-// [func@GLib.MainContext.ref_thread_default] to get a
-// [struct@GLib.MainContext] to add their [struct@GLib.Source]s to. (Note that
-// even in single-threaded programs applications may sometimes want to
-// temporarily push a non-default context, so it is not safe to assume that
-// this will always return %NULL if you are running in the default thread.)
-// 
-// If you need to hold a reference on the context, use
-// [func@GLib.MainContext.ref_thread_default] instead.
 func MainContextGetThreadDefault() *MainContext {
 	var cret *C.GMainContext // return, none, converted, nullable
 
@@ -24808,17 +18380,8 @@ func MainContextGetThreadDefault() *MainContext {
 
 // MainContextRefThreadDefault wraps g_main_context_ref_thread_default
 // 
-// The function returns the following values:
-// 
-// 	- goret *MainContext 
+// see also https://docs.gtk.org/glib/func.g_main_context_ref_thread_default.html
 //
-// Gets the thread-default [struct@GLib.MainContext] for this thread, as with
-// [func@GLib.MainContext.get_thread_default], but also adds a reference to
-// it with [method@GLib.MainContext.ref]. In addition, unlike
-// [func@GLib.MainContext.get_thread_default], if the thread-default context
-// is the global-default context, this will return that
-// [struct@GLib.MainContext] (with a ref added to it) rather than returning
-// %NULL.
 func MainContextRefThreadDefault() *MainContext {
 	var cret *C.GMainContext // return, full, converted
 
@@ -24833,24 +18396,8 @@ func MainContextRefThreadDefault() *MainContext {
 
 // Acquire wraps g_main_context_acquire
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_main_context_acquire.g_main_context_acquire.html
 //
-// Tries to become the owner of the specified context.
-// If some other thread is the owner of the context,
-// returns %FALSE immediately. Ownership is properly
-// recursive: the owner can require ownership again
-// and will release ownership when [method@GLib.MainContext.release]
-// is called as many times as [method@GLib.MainContext.acquire].
-// 
-// You must be the owner of a context before you
-// can call [method@GLib.MainContext.prepare], [method@GLib.MainContext.query],
-// [method@GLib.MainContext.check], [method@GLib.MainContext.dispatch],
-// [method@GLib.MainContext.release].
-// 
-// Since 2.76 @context can be %NULL to use the global-default
-// main context.
 func (_context *MainContext) Acquire() bool {
 	var carg0 *C.GMainContext // in, none, converted
 	var cret  C.gboolean      // return
@@ -24871,17 +18418,8 @@ func (_context *MainContext) Acquire() bool {
 
 // AddPoll wraps g_main_context_add_poll
 // 
-// The function takes the following parameters:
-// 
-// 	- fd *PollFD: a #GPollFD structure holding information about a file
-//      descriptor to watch. 
-// 	- priority int32: the priority for this file descriptor which should be
-//      the same as the priority used for [method@GLib.Source.attach] to ensure
-//      that the file descriptor is polled whenever the results may be needed. 
+// see also https://docs.gtk.org/glib/method.g_main_context_add_poll.g_main_context_add_poll.html
 //
-// Adds a file descriptor to the set of file descriptors polled for
-// this context. This will very seldom be used directly. Instead
-// a typical event source will use `g_source_add_unix_fd` instead.
 func (_context *MainContext) AddPoll(fd *PollFD, priority int32) {
 	var carg0 *C.GMainContext // in, none, converted
 	var carg1 *C.GPollFD      // in, none, converted
@@ -24899,26 +18437,8 @@ func (_context *MainContext) AddPoll(fd *PollFD, priority int32) {
 
 // Check wraps g_main_context_check
 // 
-// The function takes the following parameters:
-// 
-// 	- maxPriority int32: the maximum numerical priority of sources to check 
-// 	- fds []PollFD: array of #GPollFD's that was passed to
-//       the last call to [method@GLib.MainContext.query] 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_main_context_check.g_main_context_check.html
 //
-// Passes the results of polling back to the main loop. You should be
-// careful to pass @fds and its length @n_fds as received from
-// [method@GLib.MainContext.query], as this functions relies on assumptions
-// on how @fds is filled.
-// 
-// You must have successfully acquired the context with
-// [method@GLib.MainContext.acquire] before you may call this function.
-// 
-// Since 2.76 @context can be %NULL to use the global-default
-// main context.
 func (_context *MainContext) Check(maxPriority int32, fds []PollFD) bool {
 	var carg0 *C.GMainContext // in, none, converted
 	var carg1 C.gint          // in, none, casted
@@ -24948,14 +18468,9 @@ func (_context *MainContext) Check(maxPriority int32, fds []PollFD) bool {
 }
 
 // Dispatch wraps g_main_context_dispatch
+// 
+// see also https://docs.gtk.org/glib/method.g_main_context_dispatch.g_main_context_dispatch.html
 //
-// Dispatches all pending sources.
-// 
-// You must have successfully acquired the context with
-// [method@GLib.MainContext.acquire] before you may call this function.
-// 
-// Since 2.76 @context can be %NULL to use the global-default
-// main context.
 func (_context *MainContext) Dispatch() {
 	var carg0 *C.GMainContext // in, none, converted
 
@@ -24967,20 +18482,8 @@ func (_context *MainContext) Dispatch() {
 
 // InvokeFull wraps g_main_context_invoke_full
 // 
-// The function takes the following parameters:
-// 
-// 	- priority int32: the priority at which to run @function 
-// 	- function SourceFunc: function to call 
+// see also https://docs.gtk.org/glib/method.g_main_context_invoke_full.g_main_context_invoke_full.html
 //
-// Invokes a function in such a way that @context is owned during the
-// invocation of @function.
-// 
-// This function is the same as [method@GLib.MainContext.invoke] except that it
-// lets you specify the priority in case @function ends up being
-// scheduled as an idle and also lets you give a #GDestroyNotify for @data.
-// 
-// @notify should not assume that it is called from any particular
-// thread or with any particular context acquired.
 func (_context *MainContext) InvokeFull(priority int32, function SourceFunc) {
 	var carg0 *C.GMainContext  // in, none, converted
 	var carg1 C.gint           // in, none, casted
@@ -25002,14 +18505,8 @@ func (_context *MainContext) InvokeFull(priority int32, function SourceFunc) {
 
 // IsOwner wraps g_main_context_is_owner
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_main_context_is_owner.g_main_context_is_owner.html
 //
-// Determines whether this thread holds the (recursive)
-// ownership of this [struct@GLib.MainContext]. This is useful to
-// know before waiting on another thread that may be
-// blocking to get ownership of @context.
 func (_context *MainContext) IsOwner() bool {
 	var carg0 *C.GMainContext // in, none, converted
 	var cret  C.gboolean      // return
@@ -25030,26 +18527,8 @@ func (_context *MainContext) IsOwner() bool {
 
 // Iteration wraps g_main_context_iteration
 // 
-// The function takes the following parameters:
-// 
-// 	- mayBlock bool: whether the call may block. 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_main_context_iteration.g_main_context_iteration.html
 //
-// Runs a single iteration for the given main loop. This involves
-// checking to see if any event sources are ready to be processed,
-// then if no events sources are ready and @may_block is %TRUE, waiting
-// for a source to become ready, then dispatching the highest priority
-// events sources that are ready. Otherwise, if @may_block is %FALSE
-// sources are not waited to become ready, only those highest priority
-// events sources will be dispatched (if any), that are ready at this
-// given moment without further waiting.
-// 
-// Note that even when @may_block is %TRUE, it is still possible for
-// [method@GLib.MainContext.iteration] to return %FALSE, since the wait may
-// be interrupted for other reasons than an event source becoming ready.
 func (_context *MainContext) Iteration(mayBlock bool) bool {
 	var carg0 *C.GMainContext // in, none, converted
 	var carg1 C.gboolean      // in
@@ -25075,11 +18554,8 @@ func (_context *MainContext) Iteration(mayBlock bool) bool {
 
 // Pending wraps g_main_context_pending
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_main_context_pending.g_main_context_pending.html
 //
-// Checks if any sources have pending events for the given context.
 func (_context *MainContext) Pending() bool {
 	var carg0 *C.GMainContext // in, none, converted
 	var cret  C.gboolean      // return
@@ -25099,9 +18575,9 @@ func (_context *MainContext) Pending() bool {
 }
 
 // PopThreadDefault wraps g_main_context_pop_thread_default
+// 
+// see also https://docs.gtk.org/glib/method.g_main_context_pop_thread_default.g_main_context_pop_thread_default.html
 //
-// Pops @context off the thread-default context stack (verifying that
-// it was on the top of the stack).
 func (_context *MainContext) PopThreadDefault() {
 	var carg0 *C.GMainContext // in, none, converted
 
@@ -25113,17 +18589,8 @@ func (_context *MainContext) PopThreadDefault() {
 
 // Prepare wraps g_main_context_prepare
 // 
-// The function returns the following values:
-// 
-// 	- priority int32: location to store priority of highest priority
-//            source already ready. 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_main_context_prepare.g_main_context_prepare.html
 //
-// Prepares to poll sources within a main loop. The resulting information
-// for polling is determined by calling [method@GLib.MainContext.query].
-// 
-// You must have successfully acquired the context with
-// [method@GLib.MainContext.acquire] before you may call this function.
 func (_context *MainContext) Prepare() (int32, bool) {
 	var carg0 *C.GMainContext // in, none, converted
 	var carg1 C.gint          // out, full, casted
@@ -25146,46 +18613,9 @@ func (_context *MainContext) Prepare() (int32, bool) {
 }
 
 // PushThreadDefault wraps g_main_context_push_thread_default
+// 
+// see also https://docs.gtk.org/glib/method.g_main_context_push_thread_default.g_main_context_push_thread_default.html
 //
-// Acquires @context and sets it as the thread-default context for the
-// current thread. This will cause certain asynchronous operations
-// (such as most [Gio](../gio/index.html)-based I/O) which are
-// started in this thread to run under @context and deliver their
-// results to its main loop, rather than running under the global
-// default main context in the main thread. Note that calling this function
-// changes the context returned by [func@GLib.MainContext.get_thread_default],
-// not the one returned by [func@GLib.MainContext.default], so it does not
-// affect the context used by functions like [func@GLib.idle_add].
-// 
-// Normally you would call this function shortly after creating a new
-// thread, passing it a [struct@GLib.MainContext] which will be run by a
-// [struct@GLib.MainLoop] in that thread, to set a new default context for all
-// async operations in that thread. In this case you may not need to
-// ever call [method@GLib.MainContext.pop_thread_default], assuming you want
-// the new [struct@GLib.MainContext] to be the default for the whole lifecycle
-// of the thread.
-// 
-// If you don't have control over how the new thread was created (e.g.
-// in the new thread isn't newly created, or if the thread life
-// cycle is managed by a #GThreadPool), it is always suggested to wrap
-// the logic that needs to use the new [struct@GLib.MainContext] inside a
-// [method@GLib.MainContext.push_thread_default] /
-// [method@GLib.MainContext.pop_thread_default] pair, otherwise threads that
-// are re-used will end up never explicitly releasing the
-// [struct@GLib.MainContext] reference they hold.
-// 
-// In some cases you may want to schedule a single operation in a
-// non-default context, or temporarily use a non-default context in
-// the main thread. In that case, you can wrap the call to the
-// asynchronous operation inside a
-// [method@GLib.MainContext.push_thread_default] /
-// [method@GLib.MainContext.pop_thread_default] pair, but it is up to you to
-// ensure that no other asynchronous operations accidentally get
-// started while the non-default context is active.
-// 
-// Beware that libraries that predate this function may not correctly
-// handle being used from a thread with a thread-default context. Eg,
-// see g_file_supports_thread_contexts().
 func (_context *MainContext) PushThreadDefault() {
 	var carg0 *C.GMainContext // in, none, converted
 
@@ -25196,14 +18626,9 @@ func (_context *MainContext) PushThreadDefault() {
 }
 
 // Release wraps g_main_context_release
-//
-// Releases ownership of a context previously acquired by this thread
-// with [method@GLib.MainContext.acquire]. If the context was acquired multiple
-// times, the ownership will be released only when [method@GLib.MainContext.release]
-// is called as many times as it was acquired.
 // 
-// You must have successfully acquired the context with
-// [method@GLib.MainContext.acquire] before you may call this function.
+// see also https://docs.gtk.org/glib/method.g_main_context_release.g_main_context_release.html
+//
 func (_context *MainContext) Release() {
 	var carg0 *C.GMainContext // in, none, converted
 
@@ -25215,13 +18640,8 @@ func (_context *MainContext) Release() {
 
 // RemovePoll wraps g_main_context_remove_poll
 // 
-// The function takes the following parameters:
-// 
-// 	- fd *PollFD: a #GPollFD descriptor previously added with
-//   [method@GLib.MainContext.add_poll] 
+// see also https://docs.gtk.org/glib/method.g_main_context_remove_poll.g_main_context_remove_poll.html
 //
-// Removes file descriptor from the set of file descriptors to be
-// polled for a particular context.
 func (_context *MainContext) RemovePoll(fd *PollFD) {
 	var carg0 *C.GMainContext // in, none, converted
 	var carg1 *C.GPollFD      // in, none, converted
@@ -25235,35 +18655,9 @@ func (_context *MainContext) RemovePoll(fd *PollFD) {
 }
 
 // Wakeup wraps g_main_context_wakeup
+// 
+// see also https://docs.gtk.org/glib/method.g_main_context_wakeup.g_main_context_wakeup.html
 //
-// If @context is currently blocking in [method@GLib.MainContext.iteration]
-// waiting for a source to become ready, cause it to stop blocking
-// and return.  Otherwise, cause the next invocation of
-// [method@GLib.MainContext.iteration] to return without blocking.
-// 
-// This API is useful for low-level control over [struct@GLib.MainContext]; for
-// example, integrating it with main loop implementations such as
-// [struct@GLib.MainLoop].
-// 
-// Another related use for this function is when implementing a main
-// loop with a termination condition, computed from multiple threads:
-// 
-// |[&lt;!-- language="C" --&gt;
-//   #define NUM_TASKS 10
-//   static gint tasks_remaining = NUM_TASKS;  // (atomic)
-//   ...
-//  
-//   while (g_atomic_int_get (&amp;tasks_remaining) != 0)
-//     g_main_context_iteration (NULL, TRUE);
-// ]|
-//  
-// Then in a thread:
-// |[&lt;!-- language="C" --&gt;
-//   perform_work();
-// 
-//   if (g_atomic_int_dec_and_test (&amp;tasks_remaining))
-//     g_main_context_wakeup (NULL);
-// ]|
 func (_context *MainContext) Wakeup() {
 	var carg0 *C.GMainContext // in, none, converted
 
@@ -25274,9 +18668,9 @@ func (_context *MainContext) Wakeup() {
 }
 
 // MainLoop wraps GMainLoop
+// 
+// see also https://docs.gtk.org/glib/struct.MainLoop.html
 //
-// The `GMainLoop` struct is an opaque data type
-// representing the main event loop of a GLib or GTK application.
 type MainLoop struct {
 	*mainLoop
 }
@@ -25338,7 +18732,7 @@ func UnsafeMainLoopFromGlibFull(p unsafe.Pointer) *MainLoop {
 // 
 // When this is called without an associated call to [MainLoop.UnsafeMainLoopUnref], then [MainLoop] will leak memory.
 func UnsafeMainLoopRef(m *MainLoop) {
-	C.g_main_loop_ref(m.native)
+	C.g_main_loop_ref((*C.GMainLoop)(m.native))
 }
 
 // UnsafeMainLoopUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -25370,19 +18764,8 @@ func UnsafeMainLoopToGlibFull(m *MainLoop) unsafe.Pointer {
 
 // NewMainLoop wraps g_main_loop_new
 // 
-// The function takes the following parameters:
-// 
-// 	- _context *MainContext (nullable): a #GMainContext  (if %NULL, the global-default
-//   main context will be used). 
-// 	- isRunning bool: set to %TRUE to indicate that the loop is running. This
-// is not very important since calling [method@GLib.MainLoop.run] will set this
-// to %TRUE anyway. 
-// 
-// The function returns the following values:
-// 
-// 	- goret *MainLoop 
+// see also https://docs.gtk.org/glib/func.g_main_loop_new.html
 //
-// Creates a new [struct@GLib.MainLoop] structure.
 func NewMainLoop(_context *MainContext, isRunning bool) *MainLoop {
 	var carg1 *C.GMainContext // in, none, converted, nullable
 	var carg2 C.gboolean      // in
@@ -25408,11 +18791,8 @@ func NewMainLoop(_context *MainContext, isRunning bool) *MainLoop {
 
 // GetContext wraps g_main_loop_get_context
 // 
-// The function returns the following values:
-// 
-// 	- goret *MainContext 
+// see also https://docs.gtk.org/glib/method.g_main_loop_get_context.g_main_loop_get_context.html
 //
-// Returns the [struct@GLib.MainContext] of @loop.
 func (loop *MainLoop) GetContext() *MainContext {
 	var carg0 *C.GMainLoop    // in, none, converted
 	var cret  *C.GMainContext // return, none, converted
@@ -25431,12 +18811,8 @@ func (loop *MainLoop) GetContext() *MainContext {
 
 // IsRunning wraps g_main_loop_is_running
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_main_loop_is_running.g_main_loop_is_running.html
 //
-// Checks to see if the main loop is currently being run via
-// [method@GLib.MainLoop.run].
 func (loop *MainLoop) IsRunning() bool {
 	var carg0 *C.GMainLoop // in, none, converted
 	var cret  C.gboolean   // return
@@ -25456,12 +18832,9 @@ func (loop *MainLoop) IsRunning() bool {
 }
 
 // Quit wraps g_main_loop_quit
-//
-// Stops a [struct@GLib.MainLoop] from running. Any calls to
-// [method@GLib.MainLoop.run] for the loop will return.
 // 
-// Note that sources that have already been dispatched when
-// [method@GLib.MainLoop.quit] is called will still be executed.
+// see also https://docs.gtk.org/glib/method.g_main_loop_quit.g_main_loop_quit.html
+//
 func (loop *MainLoop) Quit() {
 	var carg0 *C.GMainLoop // in, none, converted
 
@@ -25472,11 +18845,9 @@ func (loop *MainLoop) Quit() {
 }
 
 // Run wraps g_main_loop_run
+// 
+// see also https://docs.gtk.org/glib/method.g_main_loop_run.g_main_loop_run.html
 //
-// Runs a main loop until [method@GLib.MainLoop.quit] is called on the loop.
-// If this is called for the thread of the loop's #GMainContext,
-// it will process events from the loop, otherwise it will
-// simply wait.
 func (loop *MainLoop) Run() {
 	var carg0 *C.GMainLoop // in, none, converted
 
@@ -25487,10 +18858,9 @@ func (loop *MainLoop) Run() {
 }
 
 // MappedFile wraps GMappedFile
+// 
+// see also https://docs.gtk.org/glib/struct.MappedFile.html
 //
-// The #GMappedFile represents a file mapping created with
-// g_mapped_file_new(). It has only private members and should
-// not be accessed directly.
 type MappedFile struct {
 	*mappedFile
 }
@@ -25552,7 +18922,7 @@ func UnsafeMappedFileFromGlibFull(p unsafe.Pointer) *MappedFile {
 // 
 // When this is called without an associated call to [MappedFile.UnsafeMappedFileUnref], then [MappedFile] will leak memory.
 func UnsafeMappedFileRef(m *MappedFile) {
-	C.g_mapped_file_ref(m.native)
+	C.g_mapped_file_ref((*C.GMappedFile)(m.native))
 }
 
 // UnsafeMappedFileUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -25584,33 +18954,8 @@ func UnsafeMappedFileToGlibFull(m *MappedFile) unsafe.Pointer {
 
 // NewMappedFile wraps g_mapped_file_new
 // 
-// The function takes the following parameters:
-// 
-// 	- filename string: The path of the file to load, in the GLib
-//     filename encoding 
-// 	- writable bool: whether the mapping should be writable 
-// 
-// The function returns the following values:
-// 
-// 	- goret *MappedFile 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_mapped_file_new.html
 //
-// Maps a file into memory. On UNIX, this is using the mmap() function.
-// 
-// If @writable is %TRUE, the mapped buffer may be modified, otherwise
-// it is an error to modify the mapped buffer. Modifications to the buffer
-// are not visible to other processes mapping the same file, and are not
-// written back to the file.
-// 
-// Note that modifications of the underlying file might affect the contents
-// of the #GMappedFile. Therefore, mapping should only be used if the file
-// will not be modified, or if all modifications of the file are done
-// atomically (e.g. using g_file_set_contents()).
-// 
-// If @filename is the name of an empty, regular file, the function
-// will successfully return an empty #GMappedFile. In other cases of
-// size 0 (e.g. device files such as /dev/null), @error will be set
-// to the #GFileError value %G_FILE_ERROR_INVAL.
 func NewMappedFile(filename string, writable bool) (*MappedFile, error) {
 	var carg1 *C.gchar       // in, none, string
 	var carg2 C.gboolean     // in
@@ -25640,27 +18985,8 @@ func NewMappedFile(filename string, writable bool) (*MappedFile, error) {
 
 // NewMappedFileFromFd wraps g_mapped_file_new_from_fd
 // 
-// The function takes the following parameters:
-// 
-// 	- fd int32: The file descriptor of the file to load 
-// 	- writable bool: whether the mapping should be writable 
-// 
-// The function returns the following values:
-// 
-// 	- goret *MappedFile 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_mapped_file_new_from_fd.html
 //
-// Maps a file into memory. On UNIX, this is using the mmap() function.
-// 
-// If @writable is %TRUE, the mapped buffer may be modified, otherwise
-// it is an error to modify the mapped buffer. Modifications to the buffer
-// are not visible to other processes mapping the same file, and are not
-// written back to the file.
-// 
-// Note that modifications of the underlying file might affect the contents
-// of the #GMappedFile. Therefore, mapping should only be used if the file
-// will not be modified, or if all modifications of the file are done
-// atomically (e.g. using g_file_set_contents()).
 func NewMappedFileFromFd(fd int32, writable bool) (*MappedFile, error) {
 	var carg1 C.gint         // in, none, casted
 	var carg2 C.gboolean     // in
@@ -25689,13 +19015,8 @@ func NewMappedFileFromFd(fd int32, writable bool) (*MappedFile, error) {
 
 // GetBytes wraps g_mapped_file_get_bytes
 // 
-// The function returns the following values:
-// 
-// 	- goret *Bytes 
+// see also https://docs.gtk.org/glib/method.g_mapped_file_get_bytes.g_mapped_file_get_bytes.html
 //
-// Creates a new #GBytes which references the data mapped from @file.
-// The mapped contents of the file must not be modified after creating this
-// bytes object, because a #GBytes should be immutable.
 func (file *MappedFile) GetBytes() *Bytes {
 	var carg0 *C.GMappedFile // in, none, converted
 	var cret  *C.GBytes      // return, full, converted
@@ -25714,16 +19035,8 @@ func (file *MappedFile) GetBytes() *Bytes {
 
 // GetContents wraps g_mapped_file_get_contents
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_mapped_file_get_contents.g_mapped_file_get_contents.html
 //
-// Returns the contents of a #GMappedFile.
-// 
-// Note that the contents may not be zero-terminated,
-// even if the #GMappedFile is backed by a text file.
-// 
-// If the file is empty then %NULL is returned.
 func (file *MappedFile) GetContents() string {
 	var carg0 *C.GMappedFile // in, none, converted
 	var cret  *C.gchar       // return, none, string, nullable-string
@@ -25744,11 +19057,8 @@ func (file *MappedFile) GetContents() string {
 
 // GetLength wraps g_mapped_file_get_length
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_mapped_file_get_length.g_mapped_file_get_length.html
 //
-// Returns the length of the contents of a #GMappedFile.
 func (file *MappedFile) GetLength() uint {
 	var carg0 *C.GMappedFile // in, none, converted
 	var cret  C.gsize        // return, none, casted
@@ -25766,12 +19076,9 @@ func (file *MappedFile) GetLength() uint {
 }
 
 // MarkupParseContext wraps GMarkupParseContext
-//
-// A parse context is used to parse a stream of bytes that
-// you expect to contain marked-up text.
 // 
-// See g_markup_parse_context_new(), #GMarkupParser, and so
-// on for more details.
+// see also https://docs.gtk.org/glib/struct.MarkupParseContext.html
+//
 type MarkupParseContext struct {
 	*markupParseContext
 }
@@ -25833,7 +19140,7 @@ func UnsafeMarkupParseContextFromGlibFull(p unsafe.Pointer) *MarkupParseContext 
 // 
 // When this is called without an associated call to [MarkupParseContext.UnsafeMarkupParseContextUnref], then [MarkupParseContext] will leak memory.
 func UnsafeMarkupParseContextRef(m *MarkupParseContext) {
-	C.g_markup_parse_context_ref(m.native)
+	C.g_markup_parse_context_ref((*C.GMarkupParseContext)(m.native))
 }
 
 // UnsafeMarkupParseContextUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -25865,16 +19172,8 @@ func UnsafeMarkupParseContextToGlibFull(m *MarkupParseContext) unsafe.Pointer {
 
 // EndParse wraps g_markup_parse_context_end_parse
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_markup_parse_context_end_parse.g_markup_parse_context_end_parse.html
 //
-// Signals to the #GMarkupParseContext that all data has been
-// fed into the parse context with g_markup_parse_context_parse().
-// 
-// This function reports an error if the document isn't complete,
-// for example if elements are still open.
 func (_context *MarkupParseContext) EndParse() (bool, error) {
 	var carg0 *C.GMarkupParseContext // in, none, converted
 	var cret  C.gboolean             // return
@@ -25900,15 +19199,8 @@ func (_context *MarkupParseContext) EndParse() (bool, error) {
 
 // GetElement wraps g_markup_parse_context_get_element
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_markup_parse_context_get_element.g_markup_parse_context_get_element.html
 //
-// Retrieves the name of the currently open element.
-// 
-// If called from the start_element or end_element handlers this will
-// give the element_name as passed to those functions. For the parent
-// elements, see g_markup_parse_context_get_element_stack().
 func (_context *MarkupParseContext) GetElement() string {
 	var carg0 *C.GMarkupParseContext // in, none, converted
 	var cret  *C.gchar               // return, none, string
@@ -25927,21 +19219,8 @@ func (_context *MarkupParseContext) GetElement() string {
 
 // GetElementStack wraps g_markup_parse_context_get_element_stack
 // 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/method.g_markup_parse_context_get_element_stack.g_markup_parse_context_get_element_stack.html
 //
-// Retrieves the element stack from the internal state of the parser.
-// 
-// The returned #GSList is a list of strings where the first item is
-// the currently open tag (as would be returned by
-// g_markup_parse_context_get_element()) and the next item is its
-// immediate parent.
-// 
-// This function is intended to be used in the start_element and
-// end_element handlers where g_markup_parse_context_get_element()
-// would merely return the name of the element that is being
-// processed.
 func (_context *MarkupParseContext) GetElementStack() []string {
 	var carg0 *C.GMarkupParseContext // in, none, converted
 	var cret  *C.GSList              // container, transfer: none
@@ -25967,15 +19246,8 @@ func (_context *MarkupParseContext) GetElementStack() []string {
 
 // GetPosition wraps g_markup_parse_context_get_position
 // 
-// The function returns the following values:
-// 
-// 	- lineNumber int32: return location for a line number, or %NULL 
-// 	- charNumber int32: return location for a char-on-line number, or %NULL 
+// see also https://docs.gtk.org/glib/method.g_markup_parse_context_get_position.g_markup_parse_context_get_position.html
 //
-// Retrieves the current line number and the number of the character on
-// that line. Intended for use in error messages; there are no strict
-// semantics for what constitutes the "current" line number other than
-// "the best number we could come up with for error messages."
 func (_context *MarkupParseContext) GetPosition() (int32, int32) {
 	var carg0 *C.GMarkupParseContext // in, none, converted
 	var carg1 C.gint                 // out, full, casted
@@ -25997,26 +19269,8 @@ func (_context *MarkupParseContext) GetPosition() (int32, int32) {
 
 // Parse wraps g_markup_parse_context_parse
 // 
-// The function takes the following parameters:
-// 
-// 	- text string: chunk of text to parse 
-// 	- textLen int: length of @text in bytes 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_markup_parse_context_parse.g_markup_parse_context_parse.html
 //
-// Feed some data to the #GMarkupParseContext.
-// 
-// The data need not be valid UTF-8; an error will be signaled if
-// it's invalid. The data need not be an entire document; you can
-// feed a document into the parser incrementally, via multiple calls
-// to this function. Typically, as you receive data from a network
-// connection or file, you feed each received chunk of data into this
-// function, aborting the process if an error occurs. Once an error
-// is reported, no further data may be fed to the #GMarkupParseContext;
-// all errors are fatal.
 func (_context *MarkupParseContext) Parse(text string, textLen int) (bool, error) {
 	var carg0 *C.GMarkupParseContext // in, none, converted
 	var carg1 *C.gchar               // in, none, string
@@ -26048,18 +19302,9 @@ func (_context *MarkupParseContext) Parse(text string, textLen int) (bool, error
 }
 
 // MarkupParser wraps GMarkupParser
-//
-// Any of the fields in #GMarkupParser can be %NULL, in which case they
-// will be ignored. Except for the @error function, any of these callbacks
-// can set an error; in particular the %G_MARKUP_ERROR_UNKNOWN_ELEMENT,
-// %G_MARKUP_ERROR_UNKNOWN_ATTRIBUTE, and %G_MARKUP_ERROR_INVALID_CONTENT
-// errors are intended to be set from these callbacks. If you set an error
-// from a callback, g_markup_parse_context_parse() will report that error
-// back to its caller.
 // 
-// Refer to the [GMarkup](../glib/markup.html) documentation to understand
-// the scope and limitations of `GMarkupParser`. In particular, it is not a
-// full XML parser and it must not be used to process untrusted data.
+// see also https://docs.gtk.org/glib/struct.MarkupParser.html
+//
 type MarkupParser struct {
 	*markupParser
 }
@@ -26139,9 +19384,9 @@ func UnsafeMarkupParserToGlibFull(m *MarkupParser) unsafe.Pointer {
 }
 
 // MatchInfo wraps GMatchInfo
+// 
+// see also https://docs.gtk.org/glib/struct.MatchInfo.html
 //
-// A GMatchInfo is an opaque struct used to return information about
-// matches.
 type MatchInfo struct {
 	*matchInfo
 }
@@ -26203,7 +19448,7 @@ func UnsafeMatchInfoFromGlibFull(p unsafe.Pointer) *MatchInfo {
 // 
 // When this is called without an associated call to [MatchInfo.UnsafeMatchInfoUnref], then [MatchInfo] will leak memory.
 func UnsafeMatchInfoRef(m *MatchInfo) {
-	C.g_match_info_ref(m.native)
+	C.g_match_info_ref((*C.GMatchInfo)(m.native))
 }
 
 // UnsafeMatchInfoUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -26235,32 +19480,8 @@ func UnsafeMatchInfoToGlibFull(m *MatchInfo) unsafe.Pointer {
 
 // ExpandReferences wraps g_match_info_expand_references
 // 
-// The function takes the following parameters:
-// 
-// 	- stringToExpand string: the string to expand 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_match_info_expand_references.g_match_info_expand_references.html
 //
-// Returns a new string containing the text in @string_to_expand with
-// references and escape sequences expanded. References refer to the last
-// match done with @string against @regex and have the same syntax used by
-// g_regex_replace().
-// 
-// The @string_to_expand must be UTF-8 encoded even if %G_REGEX_RAW was
-// passed to g_regex_new().
-// 
-// The backreferences are extracted from the string passed to the match
-// function, so you cannot call this function after freeing the string.
-// 
-// @match_info may be %NULL in which case @string_to_expand must not
-// contain references. For instance "foo\n" does not refer to an actual
-// pattern and '\n' merely will be replaced with \n character,
-// while to expand "\0" (whole match) one needs the result of a match.
-// Use g_regex_check_replacement() to find out whether @string_to_expand
-// contains references.
 func (matchInfo *MatchInfo) ExpandReferences(stringToExpand string) (string, error) {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var carg1 *C.gchar      // in, none, string
@@ -26291,30 +19512,8 @@ func (matchInfo *MatchInfo) ExpandReferences(stringToExpand string) (string, err
 
 // Fetch wraps g_match_info_fetch
 // 
-// The function takes the following parameters:
-// 
-// 	- matchNum int32: number of the sub expression 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_match_info_fetch.g_match_info_fetch.html
 //
-// Retrieves the text matching the @match_num'th capturing
-// parentheses. 0 is the full text of the match, 1 is the first paren
-// set, 2 the second, and so on.
-// 
-// If @match_num is a valid sub pattern but it didn't match anything
-// (e.g. sub pattern 1, matching "b" against "(a)?b") then an empty
-// string is returned.
-// 
-// If the match was obtained using the DFA algorithm, that is using
-// g_regex_match_all() or g_regex_match_all_full(), the retrieved
-// string is not that of a set of parentheses but that of a matched
-// substring. Substrings are matched in reverse order of length, so
-// 0 is the longest match.
-// 
-// The string is fetched from the string passed to the match function,
-// so you cannot call this function after freeing the string.
 func (matchInfo *MatchInfo) Fetch(matchNum int32) string {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var carg1 C.gint        // in, none, casted
@@ -26339,26 +19538,8 @@ func (matchInfo *MatchInfo) Fetch(matchNum int32) string {
 
 // FetchAll wraps g_match_info_fetch_all
 // 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/method.g_match_info_fetch_all.g_match_info_fetch_all.html
 //
-// Bundles up pointers to each of the matching substrings from a match
-// and stores them in an array of gchar pointers. The first element in
-// the returned array is the match number 0, i.e. the entire matched
-// text.
-// 
-// If a sub pattern didn't match anything (e.g. sub pattern 1, matching
-// "b" against "(a)?b") then an empty string is inserted.
-// 
-// If the last match was obtained using the DFA algorithm, that is using
-// g_regex_match_all() or g_regex_match_all_full(), the retrieved
-// strings are not that matched by sets of parentheses but that of the
-// matched substring. Substrings are matched in reverse order of length,
-// so the first one is the longest match.
-// 
-// The strings are fetched from the string passed to the match function,
-// so you cannot call this function after freeing the string.
 func (matchInfo *MatchInfo) FetchAll() []string {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var cret  **C.gchar     // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -26379,22 +19560,8 @@ func (matchInfo *MatchInfo) FetchAll() []string {
 
 // FetchNamed wraps g_match_info_fetch_named
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: name of the subexpression 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_match_info_fetch_named.g_match_info_fetch_named.html
 //
-// Retrieves the text matching the capturing parentheses named @name.
-// 
-// If @name is a valid sub pattern name but it didn't match anything
-// (e.g. sub pattern `"X"`, matching `"b"` against `"(?P&lt;X&gt;a)?b"`)
-// then an empty string is returned.
-// 
-// The string is fetched from the string passed to the match function,
-// so you cannot call this function after freeing the string.
 func (matchInfo *MatchInfo) FetchNamed(name string) string {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var carg1 *C.gchar      // in, none, string
@@ -26420,26 +19587,8 @@ func (matchInfo *MatchInfo) FetchNamed(name string) string {
 
 // FetchNamedPos wraps g_match_info_fetch_named_pos
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: name of the subexpression 
-// 
-// The function returns the following values:
-// 
-// 	- startPos int32: pointer to location where to store
-//     the start position, or %NULL 
-// 	- endPos int32: pointer to location where to store
-//     the end position (the byte after the final byte of the match), or %NULL 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_match_info_fetch_named_pos.g_match_info_fetch_named_pos.html
 //
-// Retrieves the position in bytes of the capturing parentheses named @name.
-// 
-// If @name is a valid sub pattern name but it didn't match anything
-// (e.g. sub pattern `"X"`, matching `"b"` against `"(?P&lt;X&gt;a)?b"`)
-// then @start_pos and @end_pos are set to -1 and %TRUE is returned.
-// 
-// As @end_pos is set to the byte after the final byte of the match (on success),
-// the length of the match can be calculated as `end_pos - start_pos`.
 func (matchInfo *MatchInfo) FetchNamedPos(name string) (int32, int32, bool) {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var carg1 *C.gchar      // in, none, string
@@ -26470,221 +19619,8 @@ func (matchInfo *MatchInfo) FetchNamedPos(name string) (int32, int32, bool) {
 
 // FetchPos wraps g_match_info_fetch_pos
 // 
-// The function takes the following parameters:
-// 
-// 	- matchNum int32: number of the capture parenthesis 
-// 
-// The function returns the following values:
-// 
-// 	- startPos int32: pointer to location where to store
-//     the start position, or %NULL 
-// 	- endPos int32: pointer to location where to store
-//     the end position (the byte after the final byte of the match), or %NULL 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_match_info_fetch_pos.g_match_info_fetch_pos.html
 //
-// Returns the start and end positions (in bytes) of a successfully matching
-// capture parenthesis.
-// 
-// Valid values for @match_num are `0` for the full text of the match,
-// `1` for the first paren set, `2` for the second, and so on.
-// 
-// As @end_pos is set to the byte after the final byte of the match (on success),
-// the length of the match can be calculated as `end_pos - start_pos`.
-// 
-// As a best practice, initialize @start_pos and @end_pos to identifiable
-// values, such as `G_MAXINT`, so that you can test if
-// `g_match_info_fetch_pos()` actually changed the value for a given
-// capture parenthesis.
-// 
-// The parameter @match_num corresponds to a matched capture parenthesis. The
-// actual value you use for @match_num depends on the method used to generate
-// @match_info. The following sections describe those methods.
-// 
-// ## Methods Using Non-deterministic Finite Automata Matching
-// 
-// The methods [method@GLib.Regex.match] and [method@GLib.Regex.match_full]
-// return a [struct@GLib.MatchInfo] using traditional (greedy) pattern
-// matching, also known as
-// [Non-deterministic Finite Automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
-// (NFA) matching. You pass the returned `GMatchInfo` from these methods to
-// `g_match_info_fetch_pos()` to determine the start and end positions
-// of capture parentheses. The values for @match_num correspond to the capture
-// parentheses in order, with `0` corresponding to the entire matched string.
-// 
-// @match_num can refer to a capture parenthesis with no match. For example,
-// the string `b` matches against the pattern `(a)?b`, but the capture
-// parenthesis `(a)` has no match. In this case, `g_match_info_fetch_pos()`
-// returns true and sets @start_pos and @end_pos to `-1` when called with
-// `match_num` as `1` (for `(a)`).
-// 
-// For an expanded example, a regex pattern is `(a)?(.*?)the (.*)`,
-// and a candidate string is `glib regexes are the best`. In this scenario
-// there are four capture parentheses numbered 0&#x2013;3: an implicit one
-// for the entire string, and three explicitly declared in the regex pattern.
-// 
-// Given this example, the following table describes the return values
-// from `g_match_info_fetch_pos()` for various values of @match_num.
-// 
-// `match_num` | Contents | Return value | Returned `start_pos` | Returned `end_pos`
-// ----------- | -------- | ------------ | -------------------- | ------------------
-// 0 | Matches entire string | True | 0 | 25
-// 1 | Does not match first character | True | -1 | -1
-// 2 | All text before `the ` | True | 0 | 17
-// 3 | All text after `the ` | True | 21 | 25
-// 4 | Capture paren out of range | False | Unchanged | Unchanged
-// 
-// The following code sample and output implements this example.
-// 
-// ``` { .c }
-// #include &lt;glib.h&gt;
-// 
-// int
-// main (int argc, char *argv[])
-// {
-//   g_autoptr(GError) local_error = NULL;
-//   const char *regex_pattern = "(a)?(.*?)the (.*)";
-//   const char *test_string = "glib regexes are the best";
-//   g_autoptr(GRegex) regex = NULL;
-// 
-//   regex = g_regex_new (regex_pattern,
-//                        G_REGEX_DEFAULT,
-//                        G_REGEX_MATCH_DEFAULT,
-//                        &amp;local_error);
-//   if (regex == NULL)
-//     {
-//       g_printerr ("Error creating regex: %s\n", local_error-&gt;message);
-//       return 1;
-//     }
-// 
-//   g_autoptr(GMatchInfo) match_info = NULL;
-//   g_regex_match (regex, test_string, G_REGEX_MATCH_DEFAULT, &amp;match_info);
-// 
-//   int n_matched_strings = g_match_info_get_match_count (match_info);
-// 
-//   // Print header line
-//   g_print ("match_num Contents                  Return value returned start_pos returned end_pos\n");
-// 
-//   // Iterate over each capture paren, including one that is out of range as a demonstration.
-//   for (int match_num = 0; match_num &lt;= n_matched_strings; match_num++)
-//     {
-//       gboolean found_match;
-//       g_autofree char *paren_string = NULL;
-//       int start_pos = G_MAXINT;
-//       int end_pos = G_MAXINT;
-// 
-//       found_match = g_match_info_fetch_pos (match_info,
-//                                             match_num,
-//                                             &amp;start_pos,
-//                                             &amp;end_pos);
-// 
-//       // If no match, display N/A as the found string.
-//       if (start_pos == G_MAXINT || start_pos == -1)
-//         paren_string = g_strdup ("N/A");
-//       else
-//         paren_string = g_strndup (test_string + start_pos, end_pos - start_pos);
-// 
-//       g_print ("%-9d %-25s %-12d %-18d %d\n", match_num, paren_string, found_match, start_pos, end_pos);
-//     }
-// 
-//   return 0;
-// }
-// ```
-// 
-// ```
-// match_num Contents                  Return value returned start_pos returned end_pos
-// 0         glib regexes are the best 1            0                  25
-// 1         N/A                       1            -1                 -1
-// 2         glib regexes are          1            0                  17
-// 3         best                      1            21                 25
-// 4         N/A                       0            2147483647         2147483647
-// ```
-// ## Methods Using Deterministic Finite Automata Matching
-// 
-// The methods [method@GLib.Regex.match_all] and
-// [method@GLib.Regex.match_all_full]
-// return a `GMatchInfo` using
-// [Deterministic Finite Automaton](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
-// (DFA) pattern matching. This algorithm detects overlapping matches. You pass
-// the returned `GMatchInfo` from these methods to `g_match_info_fetch_pos()`
-// to determine the start and end positions of each overlapping match. Use the
-// method [method@GLib.MatchInfo.get_match_count] to determine the number
-// of overlapping matches.
-// 
-// For example, a regex pattern is `&lt;.*&gt;`, and a candidate string is
-// `&lt;a&gt; &lt;b&gt; &lt;c&gt;`. In this scenario there are three implicit capture
-// parentheses: one for the entire string, one for `&lt;a&gt; &lt;b&gt;`, and one for `&lt;a&gt;`.
-// 
-// Given this example, the following table describes the return values from
-// `g_match_info_fetch_pos()` for various values of @match_num.
-// 
-// `match_num` | Contents | Return value | Returned `start_pos` | Returned `end_pos`
-// ----------- | -------- | ------------ | -------------------- | ------------------
-// 0 | Matches entire string | True | 0 | 11
-// 1 | Matches `&lt;a&gt; &lt;b&gt;` | True | 0 | 7
-// 2 | Matches `&lt;a&gt;` | True | 0 | 3
-// 3 | Capture paren out of range | False | Unchanged | Unchanged
-// 
-// The following code sample and output implements this example.
-// 
-// ``` { .c }
-// #include &lt;glib.h&gt;
-// 
-// int
-// main (int argc, char *argv[])
-// {
-//   g_autoptr(GError) local_error = NULL;
-//   const char *regex_pattern = "&lt;.*&gt;";
-//   const char *test_string = "&lt;a&gt; &lt;b&gt; &lt;c&gt;";
-//   g_autoptr(GRegex) regex = NULL;
-// 
-//   regex = g_regex_new (regex_pattern,
-//                        G_REGEX_DEFAULT,
-//                        G_REGEX_MATCH_DEFAULT,
-//                        &amp;local_error);
-//   if (regex == NULL)
-//     {
-//       g_printerr ("Error creating regex: %s\n", local_error-&gt;message);
-//       return -1;
-//     }
-// 
-//   g_autoptr(GMatchInfo) match_info = NULL;
-//   g_regex_match_all (regex, test_string, G_REGEX_MATCH_DEFAULT, &amp;match_info);
-// 
-//   int n_matched_strings = g_match_info_get_match_count (match_info);
-// 
-//   // Print header line
-//   g_print ("match_num Contents                  Return value returned start_pos returned end_pos\n");
-// 
-//   // Iterate over each capture paren, including one that is out of range as a demonstration.
-//   for (int match_num = 0; match_num &lt;= n_matched_strings; match_num++)
-//     {
-//       gboolean found_match;
-//       g_autofree char *paren_string = NULL;
-//       int start_pos = G_MAXINT;
-//       int end_pos = G_MAXINT;
-// 
-//       found_match = g_match_info_fetch_pos (match_info, match_num, &amp;start_pos, &amp;end_pos);
-// 
-//       // If no match, display N/A as the found string.
-//       if (start_pos == G_MAXINT || start_pos == -1)
-//         paren_string = g_strdup ("N/A");
-//       else
-//         paren_string = g_strndup (test_string + start_pos, end_pos - start_pos);
-// 
-//       g_print ("%-9d %-25s %-12d %-18d %d\n", match_num, paren_string, found_match, start_pos, end_pos);
-//     }
-// 
-//   return 0;
-// }
-// ```
-// 
-// ```
-// match_num Contents                  Return value returned start_pos returned end_pos
-// 0         &lt;a&gt; &lt;b&gt; &lt;c&gt;               1            0                  11
-// 1         &lt;a&gt; &lt;b&gt;                   1            0                  7
-// 2         &lt;a&gt;                       1            0                  3
-// 3         N/A                       0            2147483647         2147483647
-// ```
 func (matchInfo *MatchInfo) FetchPos(matchNum int32) (int32, int32, bool) {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var carg1 C.gint        // in, none, casted
@@ -26714,18 +19650,8 @@ func (matchInfo *MatchInfo) FetchPos(matchNum int32) (int32, int32, bool) {
 
 // GetMatchCount wraps g_match_info_get_match_count
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_match_info_get_match_count.g_match_info_get_match_count.html
 //
-// Retrieves the number of matched substrings (including substring 0,
-// that is the whole matched text), so 1 is returned if the pattern
-// has no substrings in it and 0 is returned if the match failed.
-// 
-// If the last match was obtained using the DFA algorithm, that is
-// using g_regex_match_all() or g_regex_match_all_full(), the retrieved
-// count is not that of the number of capturing parentheses but that of
-// the number of matched substrings.
 func (matchInfo *MatchInfo) GetMatchCount() int32 {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var cret  C.gint        // return, none, casted
@@ -26744,13 +19670,8 @@ func (matchInfo *MatchInfo) GetMatchCount() int32 {
 
 // GetRegex wraps g_match_info_get_regex
 // 
-// The function returns the following values:
-// 
-// 	- goret *Regex 
+// see also https://docs.gtk.org/glib/method.g_match_info_get_regex.g_match_info_get_regex.html
 //
-// Returns #GRegex object used in @match_info. It belongs to Glib
-// and must not be freed. Use g_regex_ref() if you need to keep it
-// after you free @match_info object.
 func (matchInfo *MatchInfo) GetRegex() *Regex {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var cret  *C.GRegex     // return, none, converted
@@ -26769,13 +19690,8 @@ func (matchInfo *MatchInfo) GetRegex() *Regex {
 
 // GetString wraps g_match_info_get_string
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_match_info_get_string.g_match_info_get_string.html
 //
-// Returns the string searched with @match_info. This is the
-// string passed to g_regex_match() or g_regex_replace() so
-// you may not free it before calling this function.
 func (matchInfo *MatchInfo) GetString() string {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var cret  *C.gchar      // return, none, string
@@ -26794,43 +19710,8 @@ func (matchInfo *MatchInfo) GetString() string {
 
 // IsPartialMatch wraps g_match_info_is_partial_match
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_match_info_is_partial_match.g_match_info_is_partial_match.html
 //
-// Usually if the string passed to g_regex_match*() matches as far as
-// it goes, but is too short to match the entire pattern, %FALSE is
-// returned. There are circumstances where it might be helpful to
-// distinguish this case from other cases in which there is no match.
-// 
-// Consider, for example, an application where a human is required to
-// type in data for a field with specific formatting requirements. An
-// example might be a date in the form ddmmmyy, defined by the pattern
-// "^\d?\d(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\d\d$".
-// If the application sees the user&#x2019;s keystrokes one by one, and can
-// check that what has been typed so far is potentially valid, it is
-// able to raise an error as soon as a mistake is made.
-// 
-// GRegex supports the concept of partial matching by means of the
-// %G_REGEX_MATCH_PARTIAL_SOFT and %G_REGEX_MATCH_PARTIAL_HARD flags.
-// When they are used, the return code for
-// g_regex_match() or g_regex_match_full() is, as usual, %TRUE
-// for a complete match, %FALSE otherwise. But, when these functions
-// return %FALSE, you can check if the match was partial calling
-// g_match_info_is_partial_match().
-// 
-// The difference between %G_REGEX_MATCH_PARTIAL_SOFT and
-// %G_REGEX_MATCH_PARTIAL_HARD is that when a partial match is encountered
-// with %G_REGEX_MATCH_PARTIAL_SOFT, matching continues to search for a
-// possible complete match, while with %G_REGEX_MATCH_PARTIAL_HARD matching
-// stops at the partial match.
-// When both %G_REGEX_MATCH_PARTIAL_SOFT and %G_REGEX_MATCH_PARTIAL_HARD
-// are set, the latter takes precedence.
-// 
-// There were formerly some restrictions on the pattern for partial matching.
-// The restrictions no longer apply.
-// 
-// See pcrepartial(3) for more information on partial matching.
 func (matchInfo *MatchInfo) IsPartialMatch() bool {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var cret  C.gboolean    // return
@@ -26851,11 +19732,8 @@ func (matchInfo *MatchInfo) IsPartialMatch() bool {
 
 // Matches wraps g_match_info_matches
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_match_info_matches.g_match_info_matches.html
 //
-// Returns whether the previous match operation succeeded.
 func (matchInfo *MatchInfo) Matches() bool {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var cret  C.gboolean    // return
@@ -26876,17 +19754,8 @@ func (matchInfo *MatchInfo) Matches() bool {
 
 // Next wraps g_match_info_next
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_match_info_next.g_match_info_next.html
 //
-// Scans for the next match using the same parameters of the previous
-// call to g_regex_match_full() or g_regex_match() that returned
-// @match_info.
-// 
-// The match is done on the string passed to the match function, so you
-// cannot free it before calling this function.
 func (matchInfo *MatchInfo) Next() (bool, error) {
 	var carg0 *C.GMatchInfo // in, none, converted
 	var cret  C.gboolean    // return
@@ -26911,12 +19780,9 @@ func (matchInfo *MatchInfo) Next() (bool, error) {
 }
 
 // MemVTable wraps GMemVTable
-//
-// A set of functions used to perform memory allocation. The same #GMemVTable must
-// be used for all allocations in the same program; a call to g_mem_set_vtable(),
-// if it exists, should be prior to any use of GLib.
 // 
-// This functions related to this has been deprecated in 2.46, and no longer work.
+// see also https://docs.gtk.org/glib/struct.MemVTable.html
+//
 type MemVTable struct {
 	*memVTable
 }
@@ -26996,8 +19862,9 @@ func UnsafeMemVTableToGlibFull(m *MemVTable) unsafe.Pointer {
 }
 
 // Node wraps GNode
+// 
+// see also https://docs.gtk.org/glib/struct.Node.html
 //
-// The #GNode struct represents one node in a [n-ary tree](data-structures.html#n-ary-trees).
 type Node struct {
 	*node
 }
@@ -27078,17 +19945,8 @@ func UnsafeNodeToGlibFull(n *Node) unsafe.Pointer {
 
 // ChildPosition wraps g_node_child_position
 // 
-// The function takes the following parameters:
-// 
-// 	- child *Node: a child of @node 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_node_child_position.g_node_child_position.html
 //
-// Gets the position of a #GNode with respect to its siblings.
-// @child must be a child of @node. The first child is numbered 0,
-// the second 1, and so on.
 func (node *Node) ChildPosition(child *Node) int32 {
 	var carg0 *C.GNode // in, none, converted
 	var carg1 *C.GNode // in, none, converted
@@ -27110,14 +19968,8 @@ func (node *Node) ChildPosition(child *Node) int32 {
 
 // Depth wraps g_node_depth
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_node_depth.g_node_depth.html
 //
-// Gets the depth of a #GNode.
-// 
-// If @node is %NULL the depth is 0. The root node has a depth of 1.
-// For the children of the root node the depth is 2. And so on.
 func (node *Node) Depth() uint {
 	var carg0 *C.GNode // in, none, converted
 	var cret  C.guint  // return, none, casted
@@ -27136,17 +19988,8 @@ func (node *Node) Depth() uint {
 
 // IsAncestor wraps g_node_is_ancestor
 // 
-// The function takes the following parameters:
-// 
-// 	- descendant *Node: a #GNode 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_node_is_ancestor.g_node_is_ancestor.html
 //
-// Returns %TRUE if @node is an ancestor of @descendant.
-// This is true if node is the parent of @descendant,
-// or if node is the grandparent of @descendant etc.
 func (node *Node) IsAncestor(descendant *Node) bool {
 	var carg0 *C.GNode   // in, none, converted
 	var carg1 *C.GNode   // in, none, converted
@@ -27170,15 +20013,8 @@ func (node *Node) IsAncestor(descendant *Node) bool {
 
 // MaxHeight wraps g_node_max_height
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_node_max_height.g_node_max_height.html
 //
-// Gets the maximum height of all branches beneath a #GNode.
-// This is the maximum distance from the #GNode to all leaf nodes.
-// 
-// If @root is %NULL, 0 is returned. If @root has no children,
-// 1 is returned. If @root has children, 2 is returned. And so on.
 func (root *Node) MaxHeight() uint {
 	var carg0 *C.GNode // in, none, converted
 	var cret  C.guint  // return, none, casted
@@ -27197,11 +20033,8 @@ func (root *Node) MaxHeight() uint {
 
 // NChildren wraps g_node_n_children
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_node_n_children.g_node_n_children.html
 //
-// Gets the number of children of a #GNode.
 func (node *Node) NChildren() uint {
 	var carg0 *C.GNode // in, none, converted
 	var cret  C.guint  // return, none, casted
@@ -27220,16 +20053,8 @@ func (node *Node) NChildren() uint {
 
 // NNodes wraps g_node_n_nodes
 // 
-// The function takes the following parameters:
-// 
-// 	- flags TraverseFlags: which types of children are to be counted, one of
-//     %G_TRAVERSE_ALL, %G_TRAVERSE_LEAVES and %G_TRAVERSE_NON_LEAVES 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_node_n_nodes.g_node_n_nodes.html
 //
-// Gets the number of nodes in a tree.
 func (root *Node) NNodes(flags TraverseFlags) uint {
 	var carg0 *C.GNode         // in, none, converted
 	var carg1 C.GTraverseFlags // in, none, casted
@@ -27250,9 +20075,9 @@ func (root *Node) NNodes(flags TraverseFlags) uint {
 }
 
 // ReverseChildren wraps g_node_reverse_children
+// 
+// see also https://docs.gtk.org/glib/method.g_node_reverse_children.g_node_reverse_children.html
 //
-// Reverses the order of the children of a #GNode.
-// (It doesn't change the order of the grandchildren.)
 func (node *Node) ReverseChildren() {
 	var carg0 *C.GNode // in, none, converted
 
@@ -27263,8 +20088,9 @@ func (node *Node) ReverseChildren() {
 }
 
 // Unlink wraps g_node_unlink
+// 
+// see also https://docs.gtk.org/glib/method.g_node_unlink.g_node_unlink.html
 //
-// Unlinks a #GNode from a tree, resulting in two separate trees.
 func (node *Node) Unlink() {
 	var carg0 *C.GNode // in, none, converted
 
@@ -27275,10 +20101,9 @@ func (node *Node) Unlink() {
 }
 
 // Once wraps GOnce
+// 
+// see also https://docs.gtk.org/glib/struct.Once.html
 //
-// A #GOnce struct controls a one-time initialization function. Any
-// one-time initialization function must have its own unique #GOnce
-// struct.
 type Once struct {
 	*once
 }
@@ -27359,13 +20184,7 @@ func UnsafeOnceToGlibFull(o *Once) unsafe.Pointer {
 
 // OnceInitEnterImpl wraps g_once_init_enter_impl
 // 
-// The function takes the following parameters:
-// 
-// 	- location *uint 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_once_init_enter_impl.html
 func OnceInitEnterImpl(location *uint) bool {
 	var carg1 *C.gsize   // in, transfer: none, C Pointers: 1, Name: gsize
 	var cret  C.gboolean // return
@@ -27387,10 +20206,9 @@ func OnceInitEnterImpl(location *uint) bool {
 }
 
 // OptionContext wraps GOptionContext
+// 
+// see also https://docs.gtk.org/glib/struct.OptionContext.html
 //
-// A `GOptionContext` struct defines which options
-// are accepted by the commandline option parser. The struct has only private
-// fields and should not be directly accessed.
 type OptionContext struct {
 	*optionContext
 }
@@ -27471,13 +20289,8 @@ func UnsafeOptionContextToGlibFull(o *OptionContext) unsafe.Pointer {
 
 // AddGroup wraps g_option_context_add_group
 // 
-// The function takes the following parameters:
-// 
-// 	- group *OptionGroup: the group to add 
+// see also https://docs.gtk.org/glib/method.g_option_context_add_group.g_option_context_add_group.html
 //
-// Adds a #GOptionGroup to the @context, so that parsing with @context
-// will recognize the options in the group. Note that this will take
-// ownership of the @group and thus the @group should not be freed.
 func (_context *OptionContext) AddGroup(group *OptionGroup) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 *C.GOptionGroup   // in, full, converted
@@ -27492,15 +20305,8 @@ func (_context *OptionContext) AddGroup(group *OptionGroup) {
 
 // AddMainEntries wraps g_option_context_add_main_entries
 // 
-// The function takes the following parameters:
-// 
-// 	- entries []OptionEntry: a %NULL-terminated array of #GOptionEntrys 
-// 	- translationDomain string (nullable): a translation domain to use for translating
-//    the `--help` output for the options in @entries
-//    with gettext(), or %NULL 
+// see also https://docs.gtk.org/glib/method.g_option_context_add_main_entries.g_option_context_add_main_entries.html
 //
-// A convenience function which creates a main group if it doesn't
-// exist, adds the @entries to it and sets the translation domain.
 func (_context *OptionContext) AddMainEntries(entries []OptionEntry, translationDomain string) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 *C.GOptionEntry   // in, transfer: none, C Pointers: 1, Name: array[OptionEntry], array (inner GOptionEntry (*typesystem.Record), zero-terminated)
@@ -27523,11 +20329,8 @@ func (_context *OptionContext) AddMainEntries(entries []OptionEntry, translation
 
 // GetDescription wraps g_option_context_get_description
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_option_context_get_description.g_option_context_get_description.html
 //
-// Returns the description. See g_option_context_set_description().
 func (_context *OptionContext) GetDescription() string {
 	var carg0 *C.GOptionContext // in, none, converted
 	var cret  *C.gchar          // return, none, string
@@ -27546,22 +20349,8 @@ func (_context *OptionContext) GetDescription() string {
 
 // GetHelp wraps g_option_context_get_help
 // 
-// The function takes the following parameters:
-// 
-// 	- mainHelp bool: if %TRUE, only include the main group 
-// 	- group *OptionGroup (nullable): the #GOptionGroup to create help for, or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_option_context_get_help.g_option_context_get_help.html
 //
-// Returns a formatted, translated help text for the given context.
-// To obtain the text produced by `--help`, call
-// `g_option_context_get_help (context, TRUE, NULL)`.
-// To obtain the text produced by `--help-all`, call
-// `g_option_context_get_help (context, FALSE, NULL)`.
-// To obtain the help text for an option group, call
-// `g_option_context_get_help (context, FALSE, group)`.
 func (_context *OptionContext) GetHelp(mainHelp bool, group *OptionGroup) string {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 C.gboolean        // in
@@ -27591,12 +20380,8 @@ func (_context *OptionContext) GetHelp(mainHelp bool, group *OptionGroup) string
 
 // GetHelpEnabled wraps g_option_context_get_help_enabled
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_option_context_get_help_enabled.g_option_context_get_help_enabled.html
 //
-// Returns whether automatic `--help` generation
-// is turned on for @context. See g_option_context_set_help_enabled().
 func (_context *OptionContext) GetHelpEnabled() bool {
 	var carg0 *C.GOptionContext // in, none, converted
 	var cret  C.gboolean        // return
@@ -27617,12 +20402,8 @@ func (_context *OptionContext) GetHelpEnabled() bool {
 
 // GetIgnoreUnknownOptions wraps g_option_context_get_ignore_unknown_options
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_option_context_get_ignore_unknown_options.g_option_context_get_ignore_unknown_options.html
 //
-// Returns whether unknown options are ignored or not. See
-// g_option_context_set_ignore_unknown_options().
 func (_context *OptionContext) GetIgnoreUnknownOptions() bool {
 	var carg0 *C.GOptionContext // in, none, converted
 	var cret  C.gboolean        // return
@@ -27643,11 +20424,8 @@ func (_context *OptionContext) GetIgnoreUnknownOptions() bool {
 
 // GetMainGroup wraps g_option_context_get_main_group
 // 
-// The function returns the following values:
-// 
-// 	- goret *OptionGroup 
+// see also https://docs.gtk.org/glib/method.g_option_context_get_main_group.g_option_context_get_main_group.html
 //
-// Returns a pointer to the main group of @context.
 func (_context *OptionContext) GetMainGroup() *OptionGroup {
 	var carg0 *C.GOptionContext // in, none, converted
 	var cret  *C.GOptionGroup   // return, none, converted
@@ -27666,13 +20444,8 @@ func (_context *OptionContext) GetMainGroup() *OptionGroup {
 
 // GetStrictPosix wraps g_option_context_get_strict_posix
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_option_context_get_strict_posix.g_option_context_get_strict_posix.html
 //
-// Returns whether strict POSIX code is enabled.
-// 
-// See g_option_context_set_strict_posix() for more information.
 func (_context *OptionContext) GetStrictPosix() bool {
 	var carg0 *C.GOptionContext // in, none, converted
 	var cret  C.gboolean        // return
@@ -27693,11 +20466,8 @@ func (_context *OptionContext) GetStrictPosix() bool {
 
 // GetSummary wraps g_option_context_get_summary
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_option_context_get_summary.g_option_context_get_summary.html
 //
-// Returns the summary. See g_option_context_set_summary().
 func (_context *OptionContext) GetSummary() string {
 	var carg0 *C.GOptionContext // in, none, converted
 	var cret  *C.gchar          // return, none, string
@@ -27716,16 +20486,8 @@ func (_context *OptionContext) GetSummary() string {
 
 // SetDescription wraps g_option_context_set_description
 // 
-// The function takes the following parameters:
-// 
-// 	- description string (nullable): a string to be shown in `--help` output
-//   after the list of options, or %NULL 
+// see also https://docs.gtk.org/glib/method.g_option_context_set_description.g_option_context_set_description.html
 //
-// Adds a string to be displayed in `--help` output after the list
-// of options. This text often includes a bug reporting address.
-// 
-// Note that the summary is translated (see
-// g_option_context_set_translate_func()).
 func (_context *OptionContext) SetDescription(description string) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 *C.gchar          // in, none, string, nullable-string
@@ -27743,14 +20505,8 @@ func (_context *OptionContext) SetDescription(description string) {
 
 // SetHelpEnabled wraps g_option_context_set_help_enabled
 // 
-// The function takes the following parameters:
-// 
-// 	- helpEnabled bool: %TRUE to enable `--help`, %FALSE to disable it 
+// see also https://docs.gtk.org/glib/method.g_option_context_set_help_enabled.g_option_context_set_help_enabled.html
 //
-// Enables or disables automatic generation of `--help` output.
-// By default, g_option_context_parse() recognizes `--help`, `-h`,
-// `-?`, `--help-all` and `--help-groupname` and creates suitable
-// output to stdout.
 func (_context *OptionContext) SetHelpEnabled(helpEnabled bool) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 C.gboolean        // in
@@ -27767,18 +20523,8 @@ func (_context *OptionContext) SetHelpEnabled(helpEnabled bool) {
 
 // SetIgnoreUnknownOptions wraps g_option_context_set_ignore_unknown_options
 // 
-// The function takes the following parameters:
-// 
-// 	- ignoreUnknown bool: %TRUE to ignore unknown options, %FALSE to produce
-//    an error when unknown options are met 
+// see also https://docs.gtk.org/glib/method.g_option_context_set_ignore_unknown_options.g_option_context_set_ignore_unknown_options.html
 //
-// Sets whether to ignore unknown options or not. If an argument is
-// ignored, it is left in the @argv array after parsing. By default,
-// g_option_context_parse() treats unknown options as error.
-// 
-// This setting does not affect non-option arguments (i.e. arguments
-// which don't start with a dash). But note that GOption cannot reliably
-// determine whether a non-option belongs to a preceding unknown option.
 func (_context *OptionContext) SetIgnoreUnknownOptions(ignoreUnknown bool) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 C.gboolean        // in
@@ -27795,14 +20541,8 @@ func (_context *OptionContext) SetIgnoreUnknownOptions(ignoreUnknown bool) {
 
 // SetMainGroup wraps g_option_context_set_main_group
 // 
-// The function takes the following parameters:
-// 
-// 	- group *OptionGroup: the group to set as main group 
+// see also https://docs.gtk.org/glib/method.g_option_context_set_main_group.g_option_context_set_main_group.html
 //
-// Sets a #GOptionGroup as main group of the @context.
-// This has the same effect as calling g_option_context_add_group(),
-// the only difference is that the options in the main group are
-// treated differently when generating `--help` output.
 func (_context *OptionContext) SetMainGroup(group *OptionGroup) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 *C.GOptionGroup   // in, full, converted
@@ -27817,34 +20557,8 @@ func (_context *OptionContext) SetMainGroup(group *OptionGroup) {
 
 // SetStrictPosix wraps g_option_context_set_strict_posix
 // 
-// The function takes the following parameters:
-// 
-// 	- strictPosix bool: the new value 
+// see also https://docs.gtk.org/glib/method.g_option_context_set_strict_posix.g_option_context_set_strict_posix.html
 //
-// Sets strict POSIX mode.
-// 
-// By default, this mode is disabled.
-// 
-// In strict POSIX mode, the first non-argument parameter encountered
-// (eg: filename) terminates argument processing.  Remaining arguments
-// are treated as non-options and are not attempted to be parsed.
-// 
-// If strict POSIX mode is disabled then parsing is done in the GNU way
-// where option arguments can be freely mixed with non-options.
-// 
-// As an example, consider "ls foo -l".  With GNU style parsing, this
-// will list "foo" in long mode.  In strict POSIX style, this will list
-// the files named "foo" and "-l".
-// 
-// It may be useful to force strict POSIX mode when creating "verb
-// style" command line tools.  For example, the "gsettings" command line
-// tool supports the global option "--schemadir" as well as many
-// subcommands ("get", "set", etc.) which each have their own set of
-// arguments.  Using strict POSIX mode will allow parsing the global
-// options up to the verb name while leaving the remaining options to be
-// parsed by the relevant subcommand (which can be determined by
-// examining the verb name, which should be present in argv[1] after
-// parsing).
 func (_context *OptionContext) SetStrictPosix(strictPosix bool) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 C.gboolean        // in
@@ -27861,17 +20575,8 @@ func (_context *OptionContext) SetStrictPosix(strictPosix bool) {
 
 // SetSummary wraps g_option_context_set_summary
 // 
-// The function takes the following parameters:
-// 
-// 	- summary string (nullable): a string to be shown in `--help` output
-//  before the list of options, or %NULL 
+// see also https://docs.gtk.org/glib/method.g_option_context_set_summary.g_option_context_set_summary.html
 //
-// Adds a string to be displayed in `--help` output before the list
-// of options. This is typically a summary of the program functionality.
-// 
-// Note that the summary is translated (see
-// g_option_context_set_translate_func() and
-// g_option_context_set_translation_domain()).
 func (_context *OptionContext) SetSummary(summary string) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 *C.gchar          // in, none, string, nullable-string
@@ -27889,12 +20594,8 @@ func (_context *OptionContext) SetSummary(summary string) {
 
 // SetTranslationDomain wraps g_option_context_set_translation_domain
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string: the domain to use 
+// see also https://docs.gtk.org/glib/method.g_option_context_set_translation_domain.g_option_context_set_translation_domain.html
 //
-// A convenience function to use gettext() for translating
-// user-visible strings.
 func (_context *OptionContext) SetTranslationDomain(domain string) {
 	var carg0 *C.GOptionContext // in, none, converted
 	var carg1 *C.gchar          // in, none, string
@@ -27909,23 +20610,9 @@ func (_context *OptionContext) SetTranslationDomain(domain string) {
 }
 
 // OptionEntry wraps GOptionEntry
-//
-// - %G_OPTION_ARG_NONE: %gboolean
-//     - %G_OPTION_ARG_STRING: %gchar*
-//     - %G_OPTION_ARG_INT: %gint
-//     - %G_OPTION_ARG_FILENAME: %gchar*
-//     - %G_OPTION_ARG_STRING_ARRAY: %gchar**
-//     - %G_OPTION_ARG_FILENAME_ARRAY: %gchar**
-//     - %G_OPTION_ARG_DOUBLE: %gdouble
 // 
-//     If @arg type is %G_OPTION_ARG_STRING or %G_OPTION_ARG_FILENAME,
-//     the location will contain a newly allocated string if the option
-//     was given. That string needs to be freed by the callee using g_free().
-//     Likewise if @arg type is %G_OPTION_ARG_STRING_ARRAY or
-//     %G_OPTION_ARG_FILENAME_ARRAY, the data should be freed using g_strfreev().
-// A GOptionEntry struct defines a single option. To have an effect, they
-// must be added to a #GOptionGroup with g_option_context_add_main_entries()
-// or g_option_group_add_entries().
+// see also https://docs.gtk.org/glib/struct.OptionEntry.html
+//
 type OptionEntry struct {
 	*optionEntry
 }
@@ -28005,14 +20692,9 @@ func UnsafeOptionEntryToGlibFull(o *OptionEntry) unsafe.Pointer {
 }
 
 // OptionGroup wraps GOptionGroup
-//
-// A `GOptionGroup` struct defines the options in a single
-// group. The struct has only private fields and should not be directly accessed.
 // 
-// All options in a group share the same translation function. Libraries which
-// need to parse commandline options are expected to provide a function for
-// getting a `GOptionGroup` holding their options, which
-// the application can then add to its #GOptionContext.
+// see also https://docs.gtk.org/glib/struct.OptionGroup.html
+//
 type OptionGroup struct {
 	*optionGroup
 }
@@ -28074,7 +20756,7 @@ func UnsafeOptionGroupFromGlibFull(p unsafe.Pointer) *OptionGroup {
 // 
 // When this is called without an associated call to [OptionGroup.UnsafeOptionGroupUnref], then [OptionGroup] will leak memory.
 func UnsafeOptionGroupRef(o *OptionGroup) {
-	C.g_option_group_ref(o.native)
+	C.g_option_group_ref((*C.GOptionGroup)(o.native))
 }
 
 // UnsafeOptionGroupUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -28106,11 +20788,8 @@ func UnsafeOptionGroupToGlibFull(o *OptionGroup) unsafe.Pointer {
 
 // AddEntries wraps g_option_group_add_entries
 // 
-// The function takes the following parameters:
-// 
-// 	- entries []OptionEntry: a %NULL-terminated array of #GOptionEntrys 
+// see also https://docs.gtk.org/glib/method.g_option_group_add_entries.g_option_group_add_entries.html
 //
-// Adds the options specified in @entries to @group.
 func (group *OptionGroup) AddEntries(entries []OptionEntry) {
 	var carg0 *C.GOptionGroup // in, none, converted
 	var carg1 *C.GOptionEntry // in, transfer: none, C Pointers: 1, Name: array[OptionEntry], array (inner GOptionEntry (*typesystem.Record), zero-terminated)
@@ -28127,12 +20806,8 @@ func (group *OptionGroup) AddEntries(entries []OptionEntry) {
 
 // SetTranslationDomain wraps g_option_group_set_translation_domain
 // 
-// The function takes the following parameters:
-// 
-// 	- domain string: the domain to use 
+// see also https://docs.gtk.org/glib/method.g_option_group_set_translation_domain.g_option_group_set_translation_domain.html
 //
-// A convenience function to use gettext() for translating
-// user-visible strings.
 func (group *OptionGroup) SetTranslationDomain(domain string) {
 	var carg0 *C.GOptionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -28147,37 +20822,9 @@ func (group *OptionGroup) SetTranslationDomain(domain string) {
 }
 
 // PathBuf wraps GPathBuf
+// 
+// see also https://docs.gtk.org/glib/struct.PathBuf.html
 //
-// `GPathBuf` is a helper type that allows you to easily build paths from
-// individual elements, using the platform specific conventions for path
-// separators.
-// 
-// ```c
-// g_auto (GPathBuf) path;
-// 
-// g_path_buf_init (&amp;path);
-// 
-// g_path_buf_push (&amp;path, "usr");
-// g_path_buf_push (&amp;path, "bin");
-// g_path_buf_push (&amp;path, "echo");
-// 
-// g_autofree char *echo = g_path_buf_to_path (&amp;path);
-// g_assert_cmpstr (echo, ==, "/usr/bin/echo");
-// ```
-// 
-// You can also load a full path and then operate on its components:
-// 
-// ```c
-// g_auto (GPathBuf) path;
-// 
-// g_path_buf_init_from_path (&amp;path, "/usr/bin/echo");
-// 
-// g_path_buf_pop (&amp;path);
-// g_path_buf_push (&amp;path, "sh");
-// 
-// g_autofree char *sh = g_path_buf_to_path (&amp;path);
-// g_assert_cmpstr (sh, ==, "/usr/bin/sh");
-// ```
 type PathBuf struct {
 	*pathBuf
 }
@@ -28257,12 +20904,9 @@ func UnsafePathBufToGlibFull(p *PathBuf) unsafe.Pointer {
 }
 
 // Clear wraps g_path_buf_clear
-//
-// Clears the contents of the path buffer.
 // 
-// This function should be use to free the resources in a stack-allocated
-// `GPathBuf` initialized using g_path_buf_init() or
-// g_path_buf_init_from_path().
+// see also https://docs.gtk.org/glib/method.g_path_buf_clear.g_path_buf_clear.html
+//
 func (buf *PathBuf) Clear() {
 	var carg0 *C.GPathBuf // in, none, converted
 
@@ -28274,15 +20918,8 @@ func (buf *PathBuf) Clear() {
 
 // ClearToPath wraps g_path_buf_clear_to_path
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_path_buf_clear_to_path.g_path_buf_clear_to_path.html
 //
-// Clears the contents of the path buffer and returns the built path.
-// 
-// This function returns `NULL` if the `GPathBuf` is empty.
-// 
-// See also: g_path_buf_to_path()
 func (buf *PathBuf) ClearToPath() string {
 	var carg0 *C.GPathBuf // in, none, converted
 	var cret  *C.char     // return, full, string, nullable
@@ -28304,16 +20941,8 @@ func (buf *PathBuf) ClearToPath() string {
 
 // FreeToPath wraps g_path_buf_free_to_path
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_path_buf_free_to_path.g_path_buf_free_to_path.html
 //
-// Frees a `GPathBuf` allocated by g_path_buf_new(), and
-// returns the path inside the buffer.
-// 
-// This function returns `NULL` if the `GPathBuf` is empty.
-// 
-// See also: g_path_buf_to_path()
 func (buf *PathBuf) FreeToPath() string {
 	var carg0 *C.GPathBuf // in, none, converted
 	var cret  *C.char     // return, full, string, nullable
@@ -28335,11 +20964,8 @@ func (buf *PathBuf) FreeToPath() string {
 
 // Init wraps g_path_buf_init
 // 
-// The function returns the following values:
-// 
-// 	- goret *PathBuf 
+// see also https://docs.gtk.org/glib/method.g_path_buf_init.g_path_buf_init.html
 //
-// Initializes a `GPathBuf` instance.
 func (buf *PathBuf) Init() *PathBuf {
 	var carg0 *C.GPathBuf // in, none, converted
 	var cret  *C.GPathBuf // return, none, converted
@@ -28358,15 +20984,8 @@ func (buf *PathBuf) Init() *PathBuf {
 
 // InitFromPath wraps g_path_buf_init_from_path
 // 
-// The function takes the following parameters:
-// 
-// 	- path string (nullable): a file system path 
-// 
-// The function returns the following values:
-// 
-// 	- goret *PathBuf 
+// see also https://docs.gtk.org/glib/method.g_path_buf_init_from_path.g_path_buf_init_from_path.html
 //
-// Initializes a `GPathBuf` instance with the given path.
 func (buf *PathBuf) InitFromPath(path string) *PathBuf {
 	var carg0 *C.GPathBuf // in, none, converted
 	var carg1 *C.char     // in, none, string, nullable-string
@@ -28391,33 +21010,8 @@ func (buf *PathBuf) InitFromPath(path string) *PathBuf {
 
 // Pop wraps g_path_buf_pop
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_path_buf_pop.g_path_buf_pop.html
 //
-// Removes the last element of the path buffer.
-// 
-// If there is only one element in the path buffer (for example, `/` on
-// Unix-like operating systems or the drive on Windows systems), it will
-// not be removed and %FALSE will be returned instead.
-// 
-// |[&lt;!-- language="C" --&gt;
-// GPathBuf buf, cmp;
-// 
-// g_path_buf_init_from_path (&amp;buf, "/bin/sh");
-// 
-// g_path_buf_pop (&amp;buf);
-// g_path_buf_init_from_path (&amp;cmp, "/bin");
-// g_assert_true (g_path_buf_equal (&amp;buf, &amp;cmp));
-// g_path_buf_clear (&amp;cmp);
-// 
-// g_path_buf_pop (&amp;buf);
-// g_path_buf_init_from_path (&amp;cmp, "/");
-// g_assert_true (g_path_buf_equal (&amp;buf, &amp;cmp));
-// g_path_buf_clear (&amp;cmp);
-// 
-// g_path_buf_clear (&amp;buf);
-// ]|
 func (buf *PathBuf) Pop() bool {
 	var carg0 *C.GPathBuf // in, none, converted
 	var cret  C.gboolean  // return
@@ -28438,41 +21032,8 @@ func (buf *PathBuf) Pop() bool {
 
 // Push wraps g_path_buf_push
 // 
-// The function takes the following parameters:
-// 
-// 	- path string: a path 
-// 
-// The function returns the following values:
-// 
-// 	- goret *PathBuf 
+// see also https://docs.gtk.org/glib/method.g_path_buf_push.g_path_buf_push.html
 //
-// Extends the given path buffer with @path.
-// 
-// If @path is absolute, it replaces the current path.
-// 
-// If @path contains a directory separator, the buffer is extended by
-// as many elements the path provides.
-// 
-// On Windows, both forward slashes and backslashes are treated as
-// directory separators. On other platforms, %G_DIR_SEPARATOR_S is the
-// only directory separator.
-// 
-// |[&lt;!-- language="C" --&gt;
-// GPathBuf buf, cmp;
-// 
-// g_path_buf_init_from_path (&amp;buf, "/tmp");
-// g_path_buf_push (&amp;buf, ".X11-unix/X0");
-// g_path_buf_init_from_path (&amp;cmp, "/tmp/.X11-unix/X0");
-// g_assert_true (g_path_buf_equal (&amp;buf, &amp;cmp));
-// g_path_buf_clear (&amp;cmp);
-// 
-// g_path_buf_push (&amp;buf, "/etc/locale.conf");
-// g_path_buf_init_from_path (&amp;cmp, "/etc/locale.conf");
-// g_assert_true (g_path_buf_equal (&amp;buf, &amp;cmp));
-// g_path_buf_clear (&amp;cmp);
-// 
-// g_path_buf_clear (&amp;buf);
-// ]|
 func (buf *PathBuf) Push(path string) *PathBuf {
 	var carg0 *C.GPathBuf // in, none, converted
 	var carg1 *C.char     // in, none, string
@@ -28495,20 +21056,8 @@ func (buf *PathBuf) Push(path string) *PathBuf {
 
 // SetExtension wraps g_path_buf_set_extension
 // 
-// The function takes the following parameters:
-// 
-// 	- extension string (nullable): the file extension 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_path_buf_set_extension.g_path_buf_set_extension.html
 //
-// Adds an extension to the file name in the path buffer.
-// 
-// If @extension is `NULL`, the extension will be unset.
-// 
-// If the path buffer does not have a file name set, this function returns
-// `FALSE` and leaves the path buffer unmodified.
 func (buf *PathBuf) SetExtension(extension string) bool {
 	var carg0 *C.GPathBuf // in, none, converted
 	var carg1 *C.char     // in, none, string, nullable-string
@@ -28535,44 +21084,8 @@ func (buf *PathBuf) SetExtension(extension string) bool {
 
 // SetFilename wraps g_path_buf_set_filename
 // 
-// The function takes the following parameters:
-// 
-// 	- fileName string: the file name in the path 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_path_buf_set_filename.g_path_buf_set_filename.html
 //
-// Sets the file name of the path.
-// 
-// If the path buffer is empty, the filename is left unset and this
-// function returns `FALSE`.
-// 
-// If the path buffer only contains the root element (on Unix-like operating
-// systems) or the drive (on Windows), this is the equivalent of pushing
-// the new @file_name.
-// 
-// If the path buffer contains a path, this is the equivalent of
-// popping the path buffer and pushing @file_name, creating a
-// sibling of the original path.
-// 
-// |[&lt;!-- language="C" --&gt;
-// GPathBuf buf, cmp;
-// 
-// g_path_buf_init_from_path (&amp;buf, "/");
-// 
-// g_path_buf_set_filename (&amp;buf, "bar");
-// g_path_buf_init_from_path (&amp;cmp, "/bar");
-// g_assert_true (g_path_buf_equal (&amp;buf, &amp;cmp));
-// g_path_buf_clear (&amp;cmp);
-// 
-// g_path_buf_set_filename (&amp;buf, "baz.txt");
-// g_path_buf_init_from_path (&amp;cmp, "/baz.txt");
-// g_assert_true (g_path_buf_equal (&amp;buf, &amp;cmp);
-// g_path_buf_clear (&amp;cmp);
-// 
-// g_path_buf_clear (&amp;buf);
-// ]|
 func (buf *PathBuf) SetFilename(fileName string) bool {
 	var carg0 *C.GPathBuf // in, none, converted
 	var carg1 *C.char     // in, none, string
@@ -28597,16 +21110,8 @@ func (buf *PathBuf) SetFilename(fileName string) bool {
 
 // ToPath wraps g_path_buf_to_path
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_path_buf_to_path.g_path_buf_to_path.html
 //
-// Retrieves the built path from the path buffer.
-// 
-// On Windows, the result contains backslashes as directory separators,
-// even if forward slashes were used in input.
-// 
-// If the path buffer is empty, this function returns `NULL`.
 func (buf *PathBuf) ToPath() string {
 	var carg0 *C.GPathBuf // in, none, converted
 	var cret  *C.char     // return, full, string, nullable
@@ -28627,23 +21132,9 @@ func (buf *PathBuf) ToPath() string {
 }
 
 // PatternSpec wraps GPatternSpec
+// 
+// see also https://docs.gtk.org/glib/struct.PatternSpec.html
 //
-// A `GPatternSpec` struct is the &#x2018;compiled&#x2019; form of a glob-style pattern.
-// 
-// The [func@GLib.pattern_match_simple] and [method@GLib.PatternSpec.match] functions
-// match a string against a pattern containing `*` and `?` wildcards with similar
-// semantics as the standard `glob()` function: `*` matches an arbitrary,
-// possibly empty, string, `?` matches an arbitrary character.
-// 
-// Note that in contrast to [`glob()`](man:glob(3)), the `/` character can be
-// matched by the wildcards, there are no `[&#x2026;]` character ranges and `*` and `?`
-// can not be escaped to include them literally in a pattern.
-// 
-// When multiple strings must be matched against the same pattern, it is better
-// to compile the pattern to a [struct@GLib.PatternSpec] using
-// [ctor@GLib.PatternSpec.new] and use [method@GLib.PatternSpec.match_string]
-// instead of [func@GLib.pattern_match_simple]. This avoids the overhead of repeated
-// pattern compilation.
 type PatternSpec struct {
 	*patternSpec
 }
@@ -28724,15 +21215,8 @@ func UnsafePatternSpecToGlibFull(p *PatternSpec) unsafe.Pointer {
 
 // NewPatternSpec wraps g_pattern_spec_new
 // 
-// The function takes the following parameters:
-// 
-// 	- pattern string: a zero-terminated UTF-8 encoded string 
-// 
-// The function returns the following values:
-// 
-// 	- goret *PatternSpec 
+// see also https://docs.gtk.org/glib/func.g_pattern_spec_new.html
 //
-// Compiles a pattern to a [type@GLib.PatternSpec].
 func NewPatternSpec(pattern string) *PatternSpec {
 	var carg1 *C.gchar        // in, none, string
 	var cret  *C.GPatternSpec // return, full, converted
@@ -28752,11 +21236,8 @@ func NewPatternSpec(pattern string) *PatternSpec {
 
 // Copy wraps g_pattern_spec_copy
 // 
-// The function returns the following values:
-// 
-// 	- goret *PatternSpec 
+// see also https://docs.gtk.org/glib/method.g_pattern_spec_copy.g_pattern_spec_copy.html
 //
-// Copies @pspec in a new [type@GLib.PatternSpec].
 func (pspec *PatternSpec) Copy() *PatternSpec {
 	var carg0 *C.GPatternSpec // in, none, converted
 	var cret  *C.GPatternSpec // return, full, converted
@@ -28775,16 +21256,8 @@ func (pspec *PatternSpec) Copy() *PatternSpec {
 
 // Equal wraps g_pattern_spec_equal
 // 
-// The function takes the following parameters:
-// 
-// 	- pspec2 *PatternSpec: another #GPatternSpec 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_pattern_spec_equal.g_pattern_spec_equal.html
 //
-// Compares two compiled pattern specs and returns whether they will
-// match the same set of strings.
 func (pspec1 *PatternSpec) Equal(pspec2 *PatternSpec) bool {
 	var carg0 *C.GPatternSpec // in, none, converted
 	var carg1 *C.GPatternSpec // in, none, converted
@@ -28808,36 +21281,8 @@ func (pspec1 *PatternSpec) Equal(pspec2 *PatternSpec) bool {
 
 // Match wraps g_pattern_spec_match
 // 
-// The function takes the following parameters:
-// 
-// 	- stringLength uint: the length of @string (in bytes, i.e. `strlen()`,
-//    not [func@GLib.utf8_strlen]) 
-// 	- str string: the UTF-8 encoded string to match 
-// 	- stringReversed string (nullable): the reverse of @string 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_pattern_spec_match.g_pattern_spec_match.html
 //
-// Matches a string against a compiled pattern.
-// 
-// Passing the correct
-// length of the string given is mandatory. The reversed string can be
-// omitted by passing `NULL`, this is more efficient if the reversed
-// version of the string to be matched is not at hand, as
-// [method@GLib.PatternSpec.match] will only construct it if the compiled pattern
-// requires reverse matches.
-// 
-// Note that, if the user code will (possibly) match a string against a
-// multitude of patterns containing wildcards, chances are high that
-// some patterns will require a reversed string. In this case, it&#x2019;s
-// more efficient to provide the reversed string to avoid multiple
-// constructions thereof in the various calls to [method@GLib.PatternSpec.match].
-// 
-// Note also that the reverse of a UTF-8 encoded string can in general
-// not be obtained by [func@GLib.strreverse]. This works only if the string
-// does not contain any multibyte characters. GLib offers the
-// [func@GLib.utf8_strreverse] function to reverse UTF-8 encoded strings.
 func (pspec *PatternSpec) Match(stringLength uint, str string, stringReversed string) bool {
 	var carg0 *C.GPatternSpec // in, none, converted
 	var carg1 C.gsize         // in, none, casted
@@ -28871,19 +21316,8 @@ func (pspec *PatternSpec) Match(stringLength uint, str string, stringReversed st
 
 // MatchString wraps g_pattern_spec_match_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the UTF-8 encoded string to match 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_pattern_spec_match_string.g_pattern_spec_match_string.html
 //
-// Matches a string against a compiled pattern.
-// 
-// If the string is to be
-// matched against more than one pattern, consider using
-// [method@GLib.PatternSpec.match] instead while supplying the reversed string.
 func (pspec *PatternSpec) MatchString(str string) bool {
 	var carg0 *C.GPatternSpec // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -28907,9 +21341,9 @@ func (pspec *PatternSpec) MatchString(str string) bool {
 }
 
 // PollFD wraps GPollFD
+// 
+// see also https://docs.gtk.org/glib/struct.PollFD.html
 //
-// Represents a file descriptor, which events to poll for, and which events
-// occurred.
 type PollFD struct {
 	*pollFD
 }
@@ -28989,70 +21423,9 @@ func UnsafePollFDToGlibFull(p *PollFD) unsafe.Pointer {
 }
 
 // RWLock wraps GRWLock
+// 
+// see also https://docs.gtk.org/glib/struct.RWLock.html
 //
-// The GRWLock struct is an opaque data structure to represent a
-// reader-writer lock. It is similar to a #GMutex in that it allows
-// multiple threads to coordinate access to a shared resource.
-// 
-// The difference to a mutex is that a reader-writer lock discriminates
-// between read-only ('reader') and full ('writer') access. While only
-// one thread at a time is allowed write access (by holding the 'writer'
-// lock via g_rw_lock_writer_lock()), multiple threads can gain
-// simultaneous read-only access (by holding the 'reader' lock via
-// g_rw_lock_reader_lock()).
-// 
-// It is unspecified whether readers or writers have priority in acquiring the
-// lock when a reader already holds the lock and a writer is queued to acquire
-// it.
-// 
-// Here is an example for an array with access functions:
-// |[&lt;!-- language="C" --&gt;
-//   GRWLock lock;
-//   GPtrArray *array;
-// 
-//   gpointer
-//   my_array_get (guint index)
-//   {
-//     gpointer retval = NULL;
-// 
-//     if (!array)
-//       return NULL;
-// 
-//     g_rw_lock_reader_lock (&amp;lock);
-//     if (index &lt; array-&gt;len)
-//       retval = g_ptr_array_index (array, index);
-//     g_rw_lock_reader_unlock (&amp;lock);
-// 
-//     return retval;
-//   }
-// 
-//   void
-//   my_array_set (guint index, gpointer data)
-//   {
-//     g_rw_lock_writer_lock (&amp;lock);
-// 
-//     if (!array)
-//       array = g_ptr_array_new ();
-// 
-//     if (index &gt;= array-&gt;len)
-//       g_ptr_array_set_size (array, index+1);
-//     g_ptr_array_index (array, index) = data;
-// 
-//     g_rw_lock_writer_unlock (&amp;lock);
-//   }
-//  ]|
-// This example shows an array which can be accessed by many readers
-// (the my_array_get() function) simultaneously, whereas the writers
-// (the my_array_set() function) will only be allowed one at a time
-// and only if no readers currently access the array. This is because
-// of the potentially dangerous resizing of the array. Using these
-// functions is fully multi-thread safe now.
-// 
-// If a #GRWLock is allocated in static storage then it can be used
-// without initialisation.  Otherwise, you should call
-// g_rw_lock_init() on it and g_rw_lock_clear() when done.
-// 
-// A GRWLock should only be accessed with the g_rw_lock_ functions.
 type RWLock struct {
 	*rWLock
 }
@@ -29132,14 +21505,9 @@ func UnsafeRWLockToGlibFull(r *RWLock) unsafe.Pointer {
 }
 
 // Clear wraps g_rw_lock_clear
+// 
+// see also https://docs.gtk.org/glib/method.g_rw_lock_clear.g_rw_lock_clear.html
 //
-// Frees the resources allocated to a lock with g_rw_lock_init().
-// 
-// This function should not be used with a #GRWLock that has been
-// statically allocated.
-// 
-// Calling g_rw_lock_clear() when any thread holds the lock
-// leads to undefined behaviour.
 func (rwLock *RWLock) Clear() {
 	var carg0 *C.GRWLock // in, none, converted
 
@@ -29150,31 +21518,9 @@ func (rwLock *RWLock) Clear() {
 }
 
 // Init wraps g_rw_lock_init
+// 
+// see also https://docs.gtk.org/glib/method.g_rw_lock_init.g_rw_lock_init.html
 //
-// Initializes a #GRWLock so that it can be used.
-// 
-// This function is useful to initialize a lock that has been
-// allocated on the stack, or as part of a larger structure.  It is not
-// necessary to initialise a reader-writer lock that has been statically
-// allocated.
-// 
-// |[&lt;!-- language="C" --&gt;
-//   typedef struct {
-//     GRWLock l;
-//     ...
-//   } Blob;
-// 
-// Blob *b;
-// 
-// b = g_new (Blob, 1);
-// g_rw_lock_init (&amp;b-&gt;l);
-// ]|
-// 
-// To undo the effect of g_rw_lock_init() when a lock is no longer
-// needed, use g_rw_lock_clear().
-// 
-// Calling g_rw_lock_init() on an already initialized #GRWLock leads
-// to undefined behaviour.
 func (rwLock *RWLock) Init() {
 	var carg0 *C.GRWLock // in, none, converted
 
@@ -29185,22 +21531,9 @@ func (rwLock *RWLock) Init() {
 }
 
 // ReaderLock wraps g_rw_lock_reader_lock
+// 
+// see also https://docs.gtk.org/glib/method.g_rw_lock_reader_lock.g_rw_lock_reader_lock.html
 //
-// Obtain a read lock on @rw_lock. If another thread currently holds
-// the write lock on @rw_lock, the current thread will block until the
-// write lock was (held and) released. If another thread does not hold
-// the write lock, but is waiting for it, it is implementation defined
-// whether the reader or writer will block. Read locks can be taken
-// recursively.
-// 
-// Calling g_rw_lock_reader_lock() while the current thread already
-// owns a write lock leads to undefined behaviour. Read locks however
-// can be taken recursively, in which case you need to make sure to
-// call g_rw_lock_reader_unlock() the same amount of times.
-// 
-// It is implementation-defined how many read locks are allowed to be
-// held on the same lock simultaneously. If the limit is hit,
-// or if a deadlock is detected, a critical warning will be emitted.
 func (rwLock *RWLock) ReaderLock() {
 	var carg0 *C.GRWLock // in, none, converted
 
@@ -29212,13 +21545,8 @@ func (rwLock *RWLock) ReaderLock() {
 
 // ReaderTrylock wraps g_rw_lock_reader_trylock
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_rw_lock_reader_trylock.g_rw_lock_reader_trylock.html
 //
-// Tries to obtain a read lock on @rw_lock and returns %TRUE if
-// the read lock was successfully obtained. Otherwise it
-// returns %FALSE.
 func (rwLock *RWLock) ReaderTrylock() bool {
 	var carg0 *C.GRWLock // in, none, converted
 	var cret  C.gboolean // return
@@ -29238,11 +21566,9 @@ func (rwLock *RWLock) ReaderTrylock() bool {
 }
 
 // ReaderUnlock wraps g_rw_lock_reader_unlock
-//
-// Release a read lock on @rw_lock.
 // 
-// Calling g_rw_lock_reader_unlock() on a lock that is not held
-// by the current thread leads to undefined behaviour.
+// see also https://docs.gtk.org/glib/method.g_rw_lock_reader_unlock.g_rw_lock_reader_unlock.html
+//
 func (rwLock *RWLock) ReaderUnlock() {
 	var carg0 *C.GRWLock // in, none, converted
 
@@ -29253,13 +21579,9 @@ func (rwLock *RWLock) ReaderUnlock() {
 }
 
 // WriterLock wraps g_rw_lock_writer_lock
-//
-// Obtain a write lock on @rw_lock. If another thread currently holds
-// a read or write lock on @rw_lock, the current thread will block
-// until all other threads have dropped their locks on @rw_lock.
 // 
-// Calling g_rw_lock_writer_lock() while the current thread already
-// owns a read or write lock on @rw_lock leads to undefined behaviour.
+// see also https://docs.gtk.org/glib/method.g_rw_lock_writer_lock.g_rw_lock_writer_lock.html
+//
 func (rwLock *RWLock) WriterLock() {
 	var carg0 *C.GRWLock // in, none, converted
 
@@ -29271,14 +21593,8 @@ func (rwLock *RWLock) WriterLock() {
 
 // WriterTrylock wraps g_rw_lock_writer_trylock
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_rw_lock_writer_trylock.g_rw_lock_writer_trylock.html
 //
-// Tries to obtain a write lock on @rw_lock. If another thread
-// currently holds a read or write lock on @rw_lock, it immediately
-// returns %FALSE.
-// Otherwise it locks @rw_lock and returns %TRUE.
 func (rwLock *RWLock) WriterTrylock() bool {
 	var carg0 *C.GRWLock // in, none, converted
 	var cret  C.gboolean // return
@@ -29298,11 +21614,9 @@ func (rwLock *RWLock) WriterTrylock() bool {
 }
 
 // WriterUnlock wraps g_rw_lock_writer_unlock
-//
-// Release a write lock on @rw_lock.
 // 
-// Calling g_rw_lock_writer_unlock() on a lock that is not held
-// by the current thread leads to undefined behaviour.
+// see also https://docs.gtk.org/glib/method.g_rw_lock_writer_unlock.g_rw_lock_writer_unlock.html
+//
 func (rwLock *RWLock) WriterUnlock() {
 	var carg0 *C.GRWLock // in, none, converted
 
@@ -29313,9 +21627,9 @@ func (rwLock *RWLock) WriterUnlock() {
 }
 
 // Rand wraps GRand
+// 
+// see also https://docs.gtk.org/glib/struct.Rand.html
 //
-// The GRand struct is an opaque data structure. It should only be
-// accessed through the g_rand_* functions.
 type Rand struct {
 	*rand
 }
@@ -29396,15 +21710,8 @@ func UnsafeRandToGlibFull(r *Rand) unsafe.Pointer {
 
 // NewRand wraps g_rand_new
 // 
-// The function returns the following values:
-// 
-// 	- goret *Rand 
+// see also https://docs.gtk.org/glib/func.g_rand_new.html
 //
-// Creates a new random number generator initialized with a seed taken
-// either from `/dev/urandom` (if existing) or from the current time
-// (as a fallback).
-// 
-// On Windows, the seed is taken from rand_s().
 func NewRand() *Rand {
 	var cret *C.GRand // return, full, converted
 
@@ -29419,15 +21726,8 @@ func NewRand() *Rand {
 
 // NewRandWithSeed wraps g_rand_new_with_seed
 // 
-// The function takes the following parameters:
-// 
-// 	- seed uint32: a value to initialize the random number generator 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Rand 
+// see also https://docs.gtk.org/glib/func.g_rand_new_with_seed.html
 //
-// Creates a new random number generator initialized with @seed.
 func NewRandWithSeed(seed uint32) *Rand {
 	var carg1 C.guint32 // in, none, casted
 	var cret  *C.GRand  // return, full, converted
@@ -29446,17 +21746,8 @@ func NewRandWithSeed(seed uint32) *Rand {
 
 // NewRandWithSeedArray wraps g_rand_new_with_seed_array
 // 
-// The function takes the following parameters:
-// 
-// 	- seed *uint32: an array of seeds to initialize the random number generator 
-// 	- seedLength uint: an array of seeds to initialize the random number
-//     generator 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Rand 
+// see also https://docs.gtk.org/glib/func.g_rand_new_with_seed_array.html
 //
-// Creates a new random number generator initialized with @seed.
 func NewRandWithSeedArray(seed *uint32, seedLength uint) *Rand {
 	var carg1 *C.guint32 // in, transfer: none, C Pointers: 1, Name: guint32
 	var carg2 C.guint    // in, none, casted
@@ -29480,13 +21771,8 @@ func NewRandWithSeedArray(seed *uint32, seedLength uint) *Rand {
 
 // Copy wraps g_rand_copy
 // 
-// The function returns the following values:
-// 
-// 	- goret *Rand 
+// see also https://docs.gtk.org/glib/method.g_rand_copy.g_rand_copy.html
 //
-// Copies a #GRand into a new one with the same exact state as before.
-// This way you can take a snapshot of the random number generator for
-// replaying later.
 func (rand *Rand) Copy() *Rand {
 	var carg0 *C.GRand // in, none, converted
 	var cret  *C.GRand // return, full, converted
@@ -29505,12 +21791,8 @@ func (rand *Rand) Copy() *Rand {
 
 // Double wraps g_rand_double
 // 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/method.g_rand_double.g_rand_double.html
 //
-// Returns the next random #gdouble from @rand_ equally distributed over
-// the range [0..1).
 func (rand *Rand) Double() float64 {
 	var carg0 *C.GRand  // in, none, converted
 	var cret  C.gdouble // return, none, casted
@@ -29529,17 +21811,8 @@ func (rand *Rand) Double() float64 {
 
 // DoubleRange wraps g_rand_double_range
 // 
-// The function takes the following parameters:
-// 
-// 	- begin float64: lower closed bound of the interval 
-// 	- end float64: upper open bound of the interval 
-// 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/method.g_rand_double_range.g_rand_double_range.html
 //
-// Returns the next random #gdouble from @rand_ equally distributed over
-// the range [@begin..@end).
 func (rand *Rand) DoubleRange(begin float64, end float64) float64 {
 	var carg0 *C.GRand  // in, none, converted
 	var carg1 C.gdouble // in, none, casted
@@ -29564,12 +21837,8 @@ func (rand *Rand) DoubleRange(begin float64, end float64) float64 {
 
 // Int wraps g_rand_int
 // 
-// The function returns the following values:
-// 
-// 	- goret uint32 
+// see also https://docs.gtk.org/glib/method.g_rand_int.g_rand_int.html
 //
-// Returns the next random #guint32 from @rand_ equally distributed over
-// the range [0..2^32-1].
 func (rand *Rand) Int() uint32 {
 	var carg0 *C.GRand  // in, none, converted
 	var cret  C.guint32 // return, none, casted
@@ -29588,17 +21857,8 @@ func (rand *Rand) Int() uint32 {
 
 // IntRange wraps g_rand_int_range
 // 
-// The function takes the following parameters:
-// 
-// 	- begin int32: lower closed bound of the interval 
-// 	- end int32: upper open bound of the interval 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_rand_int_range.g_rand_int_range.html
 //
-// Returns the next random #gint32 from @rand_ equally distributed over
-// the range [@begin..@end-1].
 func (rand *Rand) IntRange(begin int32, end int32) int32 {
 	var carg0 *C.GRand // in, none, converted
 	var carg1 C.gint32 // in, none, casted
@@ -29623,11 +21883,8 @@ func (rand *Rand) IntRange(begin int32, end int32) int32 {
 
 // SetSeed wraps g_rand_set_seed
 // 
-// The function takes the following parameters:
-// 
-// 	- seed uint32: a value to reinitialize the random number generator 
+// see also https://docs.gtk.org/glib/method.g_rand_set_seed.g_rand_set_seed.html
 //
-// Sets the seed for the random number generator #GRand to @seed.
 func (rand *Rand) SetSeed(seed uint32) {
 	var carg0 *C.GRand  // in, none, converted
 	var carg1 C.guint32 // in, none, casted
@@ -29642,16 +21899,8 @@ func (rand *Rand) SetSeed(seed uint32) {
 
 // SetSeedArray wraps g_rand_set_seed_array
 // 
-// The function takes the following parameters:
-// 
-// 	- seed *uint32: array to initialize with 
-// 	- seedLength uint: length of array 
+// see also https://docs.gtk.org/glib/method.g_rand_set_seed_array.g_rand_set_seed_array.html
 //
-// Initializes the random number generator by an array of longs.
-// Array can be of arbitrary size, though only the first 624 values
-// are taken.  This function is useful if you have many low entropy
-// seeds, or if you require more then 32 bits of actual entropy for
-// your application.
 func (rand *Rand) SetSeedArray(seed *uint32, seedLength uint) {
 	var carg0 *C.GRand   // in, none, converted
 	var carg1 *C.guint32 // in, transfer: none, C Pointers: 1, Name: guint32
@@ -29670,19 +21919,9 @@ func (rand *Rand) SetSeedArray(seed *uint32, seedLength uint) {
 }
 
 // RecMutex wraps GRecMutex
+// 
+// see also https://docs.gtk.org/glib/struct.RecMutex.html
 //
-// The GRecMutex struct is an opaque data structure to represent a
-// recursive mutex. It is similar to a #GMutex with the difference
-// that it is possible to lock a GRecMutex multiple times in the same
-// thread without deadlock. When doing so, care has to be taken to
-// unlock the recursive mutex as often as it has been locked.
-// 
-// If a #GRecMutex is allocated in static storage then it can be used
-// without initialisation.  Otherwise, you should call
-// g_rec_mutex_init() on it and g_rec_mutex_clear() when done.
-// 
-// A GRecMutex should only be accessed with the
-// g_rec_mutex_ functions.
 type RecMutex struct {
 	*recMutex
 }
@@ -29762,15 +22001,9 @@ func UnsafeRecMutexToGlibFull(r *RecMutex) unsafe.Pointer {
 }
 
 // Clear wraps g_rec_mutex_clear
+// 
+// see also https://docs.gtk.org/glib/method.g_rec_mutex_clear.g_rec_mutex_clear.html
 //
-// Frees the resources allocated to a recursive mutex with
-// g_rec_mutex_init().
-// 
-// This function should not be used with a #GRecMutex that has been
-// statically allocated.
-// 
-// Calling g_rec_mutex_clear() on a locked recursive mutex leads
-// to undefined behaviour.
 func (recMutex *RecMutex) Clear() {
 	var carg0 *C.GRecMutex // in, none, converted
 
@@ -29781,33 +22014,9 @@ func (recMutex *RecMutex) Clear() {
 }
 
 // Init wraps g_rec_mutex_init
+// 
+// see also https://docs.gtk.org/glib/method.g_rec_mutex_init.g_rec_mutex_init.html
 //
-// Initializes a #GRecMutex so that it can be used.
-// 
-// This function is useful to initialize a recursive mutex
-// that has been allocated on the stack, or as part of a larger
-// structure.
-// 
-// It is not necessary to initialise a recursive mutex that has been
-// statically allocated.
-// 
-// |[&lt;!-- language="C" --&gt;
-//   typedef struct {
-//     GRecMutex m;
-//     ...
-//   } Blob;
-// 
-// Blob *b;
-// 
-// b = g_new (Blob, 1);
-// g_rec_mutex_init (&amp;b-&gt;m);
-// ]|
-// 
-// Calling g_rec_mutex_init() on an already initialized #GRecMutex
-// leads to undefined behaviour.
-// 
-// To undo the effect of g_rec_mutex_init() when a recursive mutex
-// is no longer needed, use g_rec_mutex_clear().
 func (recMutex *RecMutex) Init() {
 	var carg0 *C.GRecMutex // in, none, converted
 
@@ -29818,13 +22027,9 @@ func (recMutex *RecMutex) Init() {
 }
 
 // Lock wraps g_rec_mutex_lock
+// 
+// see also https://docs.gtk.org/glib/method.g_rec_mutex_lock.g_rec_mutex_lock.html
 //
-// Locks @rec_mutex. If @rec_mutex is already locked by another
-// thread, the current thread will block until @rec_mutex is
-// unlocked by the other thread. If @rec_mutex is already locked
-// by the current thread, the 'lock count' of @rec_mutex is increased.
-// The mutex will only become available again when it is unlocked
-// as many times as it has been locked.
 func (recMutex *RecMutex) Lock() {
 	var carg0 *C.GRecMutex // in, none, converted
 
@@ -29836,13 +22041,8 @@ func (recMutex *RecMutex) Lock() {
 
 // Trylock wraps g_rec_mutex_trylock
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_rec_mutex_trylock.g_rec_mutex_trylock.html
 //
-// Tries to lock @rec_mutex. If @rec_mutex is already locked
-// by another thread, it immediately returns %FALSE. Otherwise
-// it locks @rec_mutex and returns %TRUE.
 func (recMutex *RecMutex) Trylock() bool {
 	var carg0 *C.GRecMutex // in, none, converted
 	var cret  C.gboolean   // return
@@ -29862,13 +22062,9 @@ func (recMutex *RecMutex) Trylock() bool {
 }
 
 // Unlock wraps g_rec_mutex_unlock
-//
-// Unlocks @rec_mutex. If another thread is blocked in a
-// g_rec_mutex_lock() call for @rec_mutex, it will become unblocked
-// and can lock @rec_mutex itself.
 // 
-// Calling g_rec_mutex_unlock() on a recursive mutex that is not
-// locked by the current thread leads to undefined behaviour.
+// see also https://docs.gtk.org/glib/method.g_rec_mutex_unlock.g_rec_mutex_unlock.html
+//
 func (recMutex *RecMutex) Unlock() {
 	var carg0 *C.GRecMutex // in, none, converted
 
@@ -29879,135 +22075,9 @@ func (recMutex *RecMutex) Unlock() {
 }
 
 // Regex wraps GRegex
+// 
+// see also https://docs.gtk.org/glib/struct.Regex.html
 //
-// A `GRegex` is a compiled form of a regular expression.
-// 
-// After instantiating a `GRegex`, you can use its methods to find matches
-// in a string, replace matches within a string, or split the string at matches.
-// 
-// `GRegex` implements regular expression pattern matching using syntax and
-// semantics (such as character classes, quantifiers, and capture groups)
-// similar to Perl regular expression. See the
-// [PCRE documentation](man:pcre2pattern(3)) for details.
-// 
-// A typical scenario for regex pattern matching is to check if a string
-// matches a pattern. The following statements implement this scenario.
-// 
-// ``` { .c }
-// const char *regex_pattern = ".*GLib.*";
-// const char *string_to_search = "You will love the GLib implementation of regex";
-// g_autoptr(GMatchInfo) match_info = NULL;
-// g_autoptr(GRegex) regex = NULL;
-// 
-// regex = g_regex_new (regex_pattern, G_REGEX_DEFAULT, G_REGEX_MATCH_DEFAULT, NULL);
-// g_assert (regex != NULL);
-// 
-// if (g_regex_match (regex, string_to_search, G_REGEX_MATCH_DEFAULT, &amp;match_info))
-//   {
-//     int start_pos, end_pos;
-//     g_match_info_fetch_pos (match_info, 0, &amp;start_pos, &amp;end_pos);
-//     g_print ("Match successful! Overall pattern matches bytes %d to %d\n", start_pos, end_pos);
-//   }
-// else
-//   {
-//     g_print ("No match!\n");
-//   }
-// ```
-// 
-// The constructor for `GRegex` includes two sets of bitmapped flags:
-// 
-// * [flags@GLib.RegexCompileFlags]&#x2014;These flags
-// control how GLib compiles the regex. There are options for case
-// sensitivity, multiline, ignoring whitespace, etc.
-// * [flags@GLib.RegexMatchFlags]&#x2014;These flags control
-// `GRegex`&#x2019;s matching behavior, such as anchoring and customizing definitions
-// for newline characters.
-// 
-// Some regex patterns include backslash assertions, such as `\d` (digit) or
-// `\D` (non-digit). The regex pattern must escape those backslashes. For
-// example, the pattern `"\\d\\D"` matches a digit followed by a non-digit.
-// 
-// GLib&#x2019;s implementation of pattern matching includes a `start_position`
-// argument for some of the match, replace, and split methods. Specifying
-// a start position provides flexibility when you want to ignore the first
-// _n_ characters of a string, but want to incorporate backslash assertions
-// at character _n_ - 1. For example, a database field contains inconsistent
-// spelling for a job title: `healthcare provider` and `health-care provider`.
-// The database manager wants to make the spelling consistent by adding a
-// hyphen when it is missing. The following regex pattern tests for the string
-// `care` preceded by a non-word boundary character (instead of a hyphen)
-// and followed by a space.
-// 
-// ``` { .c }
-// const char *regex_pattern = "\\Bcare\\s";
-// ```
-// 
-// An efficient way to match with this pattern is to start examining at
-// `start_position` 6 in the string `healthcare` or `health-care`.
-// 
-// ``` { .c }
-// const char *regex_pattern = "\\Bcare\\s";
-// const char *string_to_search = "healthcare provider";
-// g_autoptr(GMatchInfo) match_info = NULL;
-// g_autoptr(GRegex) regex = NULL;
-// 
-// regex = g_regex_new (
-//   regex_pattern,
-//   G_REGEX_DEFAULT,
-//   G_REGEX_MATCH_DEFAULT,
-//   NULL);
-// g_assert (regex != NULL);
-// 
-// g_regex_match_full (
-//   regex,
-//   string_to_search,
-//   -1,
-//   6, // position of 'c' in the test string.
-//   G_REGEX_MATCH_DEFAULT,
-//   &amp;match_info,
-//   NULL);
-// ```
-// 
-// The method [method@GLib.Regex.match_full] (and other methods implementing
-// `start_pos`) allow for lookback before the start position to determine if
-// the previous character satisfies an assertion.
-// 
-// Unless you set the [flags@GLib.RegexCompileFlags.RAW] as one of
-// the `GRegexCompileFlags`, all the strings passed to `GRegex` methods must
-// be encoded in UTF-8. The lengths and the positions inside the strings are
-// in bytes and not in characters, so, for instance, `\xc3\xa0` (i.e., `&#xE0;`)
-// is two bytes long but it is treated as a single character. If you set
-// `G_REGEX_RAW`, the strings can be non-valid UTF-8 strings and a byte is
-// treated as a character, so `\xc3\xa0` is two bytes and two characters long.
-// 
-// Regarding line endings, `\n` matches a `\n` character, and `\r` matches
-// a `\r` character. More generally, `\R` matches all typical line endings:
-// CR + LF (`\r\n`), LF (linefeed, U+000A, `\n`), VT (vertical tab, U+000B,
-// `\v`), FF (formfeed, U+000C, `\f`), CR (carriage return, U+000D, `\r`),
-// NEL (next line, U+0085), LS (line separator, U+2028), and PS (paragraph
-// separator, U+2029).
-// 
-// The behaviour of the dot, circumflex, and dollar metacharacters are
-// affected by newline characters. By default, `GRegex` matches any newline
-// character matched by `\R`. You can limit the matched newline characters by
-// specifying the [flags@GLib.RegexMatchFlags.NEWLINE_CR],
-// [flags@GLib.RegexMatchFlags.NEWLINE_LF], and
-// [flags@GLib.RegexMatchFlags.NEWLINE_CRLF] compile options, and
-// with [flags@GLib.RegexMatchFlags.NEWLINE_ANY],
-// [flags@GLib.RegexMatchFlags.NEWLINE_CR],
-// [flags@GLib.RegexMatchFlags.NEWLINE_LF] and
-// [flags@GLib.RegexMatchFlags.NEWLINE_CRLF] match options.
-// These settings are also relevant when compiling a pattern if
-// [flags@GLib.RegexCompileFlags.EXTENDED] is set and an unescaped
-// `#` outside a character class is encountered. This indicates a comment
-// that lasts until after the next newline.
-// 
-// Because `GRegex` does not modify its internal state between creation and
-// destruction, you can create and modify the same `GRegex` instance from
-// different threads. In contrast, [struct@GLib.MatchInfo] is not thread safe.
-// 
-// The regular expression low-level functionalities are obtained through
-// the excellent [PCRE](http://www.pcre.org/) library written by Philip Hazel.
 type Regex struct {
 	*regex
 }
@@ -30069,7 +22139,7 @@ func UnsafeRegexFromGlibFull(p unsafe.Pointer) *Regex {
 // 
 // When this is called without an associated call to [Regex.UnsafeRegexUnref], then [Regex] will leak memory.
 func UnsafeRegexRef(r *Regex) {
-	C.g_regex_ref(r.native)
+	C.g_regex_ref((*C.GRegex)(r.native))
 }
 
 // UnsafeRegexUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -30101,19 +22171,8 @@ func UnsafeRegexToGlibFull(r *Regex) unsafe.Pointer {
 
 // NewRegex wraps g_regex_new
 // 
-// The function takes the following parameters:
-// 
-// 	- pattern string: the regular expression 
-// 	- compileOptions RegexCompileFlags: compile options for the regular expression, or 0 
-// 	- matchOptions RegexMatchFlags: match options for the regular expression, or 0 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Regex (nullable) 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_regex_new.html
 //
-// Compiles the regular expression to an internal form, and does
-// the initial setup of the #GRegex structure.
 func NewRegex(pattern string, compileOptions RegexCompileFlags, matchOptions RegexMatchFlags) (*Regex, error) {
 	var carg1 *C.gchar             // in, none, string
 	var carg2 C.GRegexCompileFlags // in, none, casted
@@ -30146,26 +22205,8 @@ func NewRegex(pattern string, compileOptions RegexCompileFlags, matchOptions Reg
 
 // RegexCheckReplacement wraps g_regex_check_replacement
 // 
-// The function takes the following parameters:
-// 
-// 	- replacement string: the replacement string 
-// 
-// The function returns the following values:
-// 
-// 	- hasReferences bool: location to store information about
-//   references in @replacement or %NULL 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_regex_check_replacement.html
 //
-// Checks whether @replacement is a valid replacement string
-// (see g_regex_replace()), i.e. that all escape sequences in
-// it are valid.
-// 
-// If @has_references is not %NULL then @replacement is checked
-// for pattern references. For instance, replacement text 'foo\n'
-// does not contain references and may be evaluated without information
-// about actual match, but '\0\1' (whole match followed by first
-// subpattern) requires valid #GMatchInfo object.
 func RegexCheckReplacement(replacement string) (bool, bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.gboolean // out
@@ -30197,9 +22238,7 @@ func RegexCheckReplacement(replacement string) (bool, bool, error) {
 
 // RegexErrorQuark wraps g_regex_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_regex_error_quark.html
 func RegexErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -30214,20 +22253,8 @@ func RegexErrorQuark() Quark {
 
 // RegexEscapeNul wraps g_regex_escape_nul
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to escape 
-// 	- length int32: the length of @string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_regex_escape_nul.html
 //
-// Escapes the nul characters in @string to "\x00".  It can be used
-// to compile a regex with embedded nul characters.
-// 
-// For completeness, @length can be -1 for a nul-terminated string.
-// In this case the output string will be of course equal to @string.
 func RegexEscapeNul(str string, length int32) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gint   // in, none, casted
@@ -30251,22 +22278,8 @@ func RegexEscapeNul(str string, length int32) string {
 
 // RegexEscapeString wraps g_regex_escape_string
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to escape 
-// 	- length int32: the length of @string, in bytes, or -1 if @string is nul-terminated 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_regex_escape_string.html
 //
-// Escapes the special characters used for regular expressions
-// in @string, for instance "a.b*c" becomes "a\.b\*c". This
-// function is useful to dynamically generate regular expressions.
-// 
-// @string can contain nul characters that are replaced with "\0",
-// in this case remember to specify the correct length of @string
-// in @length.
 func RegexEscapeString(str string, length int32) string {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.gint   // in, none, casted
@@ -30290,27 +22303,8 @@ func RegexEscapeString(str string, length int32) string {
 
 // RegexMatchSimple wraps g_regex_match_simple
 // 
-// The function takes the following parameters:
-// 
-// 	- pattern string: the regular expression 
-// 	- str string: the string to scan for matches 
-// 	- compileOptions RegexCompileFlags: compile options for the regular expression, or 0 
-// 	- matchOptions RegexMatchFlags: match options, or 0 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_regex_match_simple.html
 //
-// Scans for a match in @string for @pattern.
-// 
-// This function is equivalent to g_regex_match() but it does not
-// require to compile the pattern with g_regex_new(), avoiding some
-// lines of code when you need just to do a match without extracting
-// substrings, capture counts, and so on.
-// 
-// If this function is to be called on the same @pattern more than
-// once, it's more efficient to compile the pattern once with
-// g_regex_new() and then use g_regex_match().
 func RegexMatchSimple(pattern string, str string, compileOptions RegexCompileFlags, matchOptions RegexMatchFlags) bool {
 	var carg1 *C.gchar             // in, none, string
 	var carg2 *C.gchar             // in, none, string
@@ -30342,44 +22336,8 @@ func RegexMatchSimple(pattern string, str string, compileOptions RegexCompileFla
 
 // RegexSplitSimple wraps g_regex_split_simple
 // 
-// The function takes the following parameters:
-// 
-// 	- pattern string: the regular expression 
-// 	- str string: the string to scan for matches 
-// 	- compileOptions RegexCompileFlags: compile options for the regular expression, or 0 
-// 	- matchOptions RegexMatchFlags: match options, or 0 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_regex_split_simple.html
 //
-// Breaks the string on the pattern, and returns an array of
-// the tokens. If the pattern contains capturing parentheses,
-// then the text for each of the substrings will also be returned.
-// If the pattern does not match anywhere in the string, then the
-// whole string is returned as the first token.
-// 
-// This function is equivalent to g_regex_split() but it does
-// not require to compile the pattern with g_regex_new(), avoiding
-// some lines of code when you need just to do a split without
-// extracting substrings, capture counts, and so on.
-// 
-// If this function is to be called on the same @pattern more than
-// once, it's more efficient to compile the pattern once with
-// g_regex_new() and then use g_regex_split().
-// 
-// As a special case, the result of splitting the empty string ""
-// is an empty vector, not a vector containing a single string.
-// The reason for this special case is that being able to represent
-// an empty vector is typically more useful than consistent handling
-// of empty elements. If you do need to represent empty elements,
-// you'll need to check for the empty string before calling this
-// function.
-// 
-// A pattern that can match empty strings splits @string into
-// separate characters wherever it matches the empty string between
-// characters. For example splitting "ab c" using as a separator
-// "\s*", you will get "a", "b" and "c".
 func RegexSplitSimple(pattern string, str string, compileOptions RegexCompileFlags, matchOptions RegexMatchFlags) []string {
 	var carg1 *C.gchar             // in, none, string
 	var carg2 *C.gchar             // in, none, string
@@ -30411,11 +22369,8 @@ func RegexSplitSimple(pattern string, str string, compileOptions RegexCompileFla
 
 // GetCaptureCount wraps g_regex_get_capture_count
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_regex_get_capture_count.g_regex_get_capture_count.html
 //
-// Returns the number of capturing subpatterns in the pattern.
 func (regex *Regex) GetCaptureCount() int32 {
 	var carg0 *C.GRegex // in, none, converted
 	var cret  C.gint    // return, none, casted
@@ -30434,15 +22389,8 @@ func (regex *Regex) GetCaptureCount() int32 {
 
 // GetCompileFlags wraps g_regex_get_compile_flags
 // 
-// The function returns the following values:
-// 
-// 	- goret RegexCompileFlags 
+// see also https://docs.gtk.org/glib/method.g_regex_get_compile_flags.g_regex_get_compile_flags.html
 //
-// Returns the compile options that @regex was created with.
-// 
-// Depending on the version of PCRE that is used, this may or may not
-// include flags set by option expressions such as `(?i)` found at the
-// top-level within the compiled pattern.
 func (regex *Regex) GetCompileFlags() RegexCompileFlags {
 	var carg0 *C.GRegex            // in, none, converted
 	var cret  C.GRegexCompileFlags // return, none, casted
@@ -30461,11 +22409,8 @@ func (regex *Regex) GetCompileFlags() RegexCompileFlags {
 
 // GetHasCrOrLf wraps g_regex_get_has_cr_or_lf
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_regex_get_has_cr_or_lf.g_regex_get_has_cr_or_lf.html
 //
-// Checks whether the pattern contains explicit CR or LF references.
 func (regex *Regex) GetHasCrOrLf() bool {
 	var carg0 *C.GRegex  // in, none, converted
 	var cret  C.gboolean // return
@@ -30486,11 +22431,8 @@ func (regex *Regex) GetHasCrOrLf() bool {
 
 // GetMatchFlags wraps g_regex_get_match_flags
 // 
-// The function returns the following values:
-// 
-// 	- goret RegexMatchFlags 
+// see also https://docs.gtk.org/glib/method.g_regex_get_match_flags.g_regex_get_match_flags.html
 //
-// Returns the match options that @regex was created with.
 func (regex *Regex) GetMatchFlags() RegexMatchFlags {
 	var carg0 *C.GRegex          // in, none, converted
 	var cret  C.GRegexMatchFlags // return, none, casted
@@ -30509,13 +22451,8 @@ func (regex *Regex) GetMatchFlags() RegexMatchFlags {
 
 // GetMaxBackref wraps g_regex_get_max_backref
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_regex_get_max_backref.g_regex_get_max_backref.html
 //
-// Returns the number of the highest back reference
-// in the pattern, or 0 if the pattern does not contain
-// back references.
 func (regex *Regex) GetMaxBackref() int32 {
 	var carg0 *C.GRegex // in, none, converted
 	var cret  C.gint    // return, none, casted
@@ -30534,13 +22471,8 @@ func (regex *Regex) GetMaxBackref() int32 {
 
 // GetMaxLookbehind wraps g_regex_get_max_lookbehind
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_regex_get_max_lookbehind.g_regex_get_max_lookbehind.html
 //
-// Gets the number of characters in the longest lookbehind assertion in the
-// pattern. This information is useful when doing multi-segment matching using
-// the partial matching facilities.
 func (regex *Regex) GetMaxLookbehind() int32 {
 	var carg0 *C.GRegex // in, none, converted
 	var cret  C.gint    // return, none, casted
@@ -30559,12 +22491,8 @@ func (regex *Regex) GetMaxLookbehind() int32 {
 
 // GetPattern wraps g_regex_get_pattern
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_regex_get_pattern.g_regex_get_pattern.html
 //
-// Gets the pattern string associated with @regex, i.e. a copy of
-// the string passed to g_regex_new().
 func (regex *Regex) GetPattern() string {
 	var carg0 *C.GRegex // in, none, converted
 	var cret  *C.gchar  // return, none, string
@@ -30583,15 +22511,8 @@ func (regex *Regex) GetPattern() string {
 
 // GetStringNumber wraps g_regex_get_string_number
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: name of the subexpression 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_regex_get_string_number.g_regex_get_string_number.html
 //
-// Retrieves the number of the subexpression named @name.
 func (regex *Regex) GetStringNumber(name string) int32 {
 	var carg0 *C.GRegex // in, none, converted
 	var carg1 *C.gchar  // in, none, string
@@ -30614,57 +22535,8 @@ func (regex *Regex) GetStringNumber(name string) int32 {
 
 // Match wraps g_regex_match
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to scan for matches 
-// 	- matchOptions RegexMatchFlags: match options 
-// 
-// The function returns the following values:
-// 
-// 	- matchInfo *MatchInfo: pointer to location where to store
-//     the #GMatchInfo, or %NULL if you do not need it 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_regex_match.g_regex_match.html
 //
-// Scans for a match in @string for the pattern in @regex.
-// The @match_options are combined with the match options specified
-// when the @regex structure was created, letting you have more
-// flexibility in reusing #GRegex structures.
-// 
-// Unless %G_REGEX_RAW is specified in the options, @string must be valid UTF-8.
-// 
-// A #GMatchInfo structure, used to get information on the match,
-// is stored in @match_info if not %NULL. Note that if @match_info
-// is not %NULL then it is created even if the function returns %FALSE,
-// i.e. you must free it regardless if regular expression actually matched.
-// 
-// To retrieve all the non-overlapping matches of the pattern in
-// string you can use g_match_info_next().
-// 
-// |[&lt;!-- language="C" --&gt;
-// static void
-// print_uppercase_words (const gchar *string)
-// {
-//   // Print all uppercase-only words.
-//   GRegex *regex;
-//   GMatchInfo *match_info;
-//  
-//   regex = g_regex_new ("[A-Z]+", G_REGEX_DEFAULT, G_REGEX_MATCH_DEFAULT, NULL);
-//   g_regex_match (regex, string, 0, &amp;match_info);
-//   while (g_match_info_matches (match_info))
-//     {
-//       gchar *word = g_match_info_fetch (match_info, 0);
-//       g_print ("Found: %s\n", word);
-//       g_free (word);
-//       g_match_info_next (match_info, NULL);
-//     }
-//   g_match_info_free (match_info);
-//   g_regex_unref (regex);
-// }
-// ]|
-// 
-// @string is not copied and is used in #GMatchInfo internally. If
-// you use any #GMatchInfo method (except g_match_info_free()) after
-// freeing or modifying @string then the behaviour is undefined.
 func (regex *Regex) Match(str string, matchOptions RegexMatchFlags) (*MatchInfo, bool) {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, none, string
@@ -30695,31 +22567,8 @@ func (regex *Regex) Match(str string, matchOptions RegexMatchFlags) (*MatchInfo,
 
 // MatchAll wraps g_regex_match_all
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to scan for matches 
-// 	- matchOptions RegexMatchFlags: match options 
-// 
-// The function returns the following values:
-// 
-// 	- matchInfo *MatchInfo: pointer to location where to store
-//     the #GMatchInfo, or %NULL if you do not need it 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_regex_match_all.g_regex_match_all.html
 //
-// Using the standard algorithm for regular expression matching only
-// the longest match in the string is retrieved. This function uses
-// a different algorithm so it can retrieve all the possible matches.
-// For more documentation see g_regex_match_all_full().
-// 
-// A #GMatchInfo structure, used to get information on the match, is
-// stored in @match_info if not %NULL. Note that if @match_info is
-// not %NULL then it is created even if the function returns %FALSE,
-// i.e. you must free it regardless if regular expression actually
-// matched.
-// 
-// @string is not copied and is used in #GMatchInfo internally. If
-// you use any #GMatchInfo method (except g_match_info_free()) after
-// freeing or modifying @string then the behaviour is undefined.
 func (regex *Regex) MatchAll(str string, matchOptions RegexMatchFlags) (*MatchInfo, bool) {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, none, string
@@ -30750,57 +22599,8 @@ func (regex *Regex) MatchAll(str string, matchOptions RegexMatchFlags) (*MatchIn
 
 // MatchAllFull wraps g_regex_match_all_full
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to scan for matches 
-// 	- startPosition int32: starting index of the string to match, in bytes 
-// 	- matchOptions RegexMatchFlags: match options 
-// 
-// The function returns the following values:
-// 
-// 	- matchInfo *MatchInfo: pointer to location where to store
-//     the #GMatchInfo, or %NULL if you do not need it 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_regex_match_all_full.g_regex_match_all_full.html
 //
-// Using the standard algorithm for regular expression matching only
-// the longest match in the @string is retrieved, it is not possible
-// to obtain all the available matches. For instance matching
-// `"&lt;a&gt; &lt;b&gt; &lt;c&gt;"` against the pattern `"&lt;.*&gt;"`
-// you get `"&lt;a&gt; &lt;b&gt; &lt;c&gt;"`.
-// 
-// This function uses a different algorithm (called DFA, i.e. deterministic
-// finite automaton), so it can retrieve all the possible matches, all
-// starting at the same point in the string. For instance matching
-// `"&lt;a&gt; &lt;b&gt; &lt;c&gt;"` against the pattern `"&lt;.*&gt;"`
-// you would obtain three matches: `"&lt;a&gt; &lt;b&gt; &lt;c&gt;"`,
-// `"&lt;a&gt; &lt;b&gt;"` and `"&lt;a&gt;"`.
-// 
-// The number of matched strings is retrieved using
-// g_match_info_get_match_count(). To obtain the matched strings and
-// their position you can use, respectively, g_match_info_fetch() and
-// g_match_info_fetch_pos(). Note that the strings are returned in
-// reverse order of length; that is, the longest matching string is
-// given first.
-// 
-// Note that the DFA algorithm is slower than the standard one and it
-// is not able to capture substrings, so backreferences do not work.
-// 
-// Setting @start_position differs from just passing over a shortened
-// string and setting %G_REGEX_MATCH_NOTBOL in the case of a pattern
-// that begins with any kind of lookbehind assertion, such as "\b".
-// 
-// Unless %G_REGEX_RAW is specified in the options, @string must be valid UTF-8.
-// 
-// A #GMatchInfo structure, used to get information on the match, is
-// stored in @match_info if not %NULL. Note that if @match_info is
-// not %NULL then it is created even if the function returns %FALSE,
-// i.e. you must free it regardless if regular expression actually
-// matched.
-// 
-// @string is not copied and is used in #GMatchInfo internally. If
-// you use any #GMatchInfo method (except g_match_info_free()) after
-// freeing or modifying @string then the behaviour is undefined.
 func (regex *Regex) MatchAllFull(str string, startPosition int32, matchOptions RegexMatchFlags) (*MatchInfo, bool, error) {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -30842,70 +22642,8 @@ func (regex *Regex) MatchAllFull(str string, startPosition int32, matchOptions R
 
 // MatchFull wraps g_regex_match_full
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to scan for matches 
-// 	- startPosition int32: starting index of the string to match, in bytes 
-// 	- matchOptions RegexMatchFlags: match options 
-// 
-// The function returns the following values:
-// 
-// 	- matchInfo *MatchInfo: pointer to location where to store
-//     the #GMatchInfo, or %NULL if you do not need it 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_regex_match_full.g_regex_match_full.html
 //
-// Scans for a match in @string for the pattern in @regex.
-// The @match_options are combined with the match options specified
-// when the @regex structure was created, letting you have more
-// flexibility in reusing #GRegex structures.
-// 
-// Setting @start_position differs from just passing over a shortened
-// string and setting %G_REGEX_MATCH_NOTBOL in the case of a pattern
-// that begins with any kind of lookbehind assertion, such as "\b".
-// 
-// Unless %G_REGEX_RAW is specified in the options, @string must be valid UTF-8.
-// 
-// A #GMatchInfo structure, used to get information on the match, is
-// stored in @match_info if not %NULL. Note that if @match_info is
-// not %NULL then it is created even if the function returns %FALSE,
-// i.e. you must free it regardless if regular expression actually
-// matched.
-// 
-// @string is not copied and is used in #GMatchInfo internally. If
-// you use any #GMatchInfo method (except g_match_info_free()) after
-// freeing or modifying @string then the behaviour is undefined.
-// 
-// To retrieve all the non-overlapping matches of the pattern in
-// string you can use g_match_info_next().
-// 
-// |[&lt;!-- language="C" --&gt;
-// static void
-// print_uppercase_words (const gchar *string)
-// {
-//   // Print all uppercase-only words.
-//   GRegex *regex;
-//   GMatchInfo *match_info;
-//   GError *error = NULL;
-//   
-//   regex = g_regex_new ("[A-Z]+", G_REGEX_DEFAULT, G_REGEX_MATCH_DEFAULT, NULL);
-//   g_regex_match_full (regex, string, -1, 0, 0, &amp;match_info, &amp;error);
-//   while (g_match_info_matches (match_info))
-//     {
-//       gchar *word = g_match_info_fetch (match_info, 0);
-//       g_print ("Found: %s\n", word);
-//       g_free (word);
-//       g_match_info_next (match_info, &amp;error);
-//     }
-//   g_match_info_free (match_info);
-//   g_regex_unref (regex);
-//   if (error != NULL)
-//     {
-//       g_printerr ("Error while matching: %s\n", error-&gt;message);
-//       g_error_free (error);
-//     }
-// }
-// ]|
 func (regex *Regex) MatchFull(str string, startPosition int32, matchOptions RegexMatchFlags) (*MatchInfo, bool, error) {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -30947,44 +22685,8 @@ func (regex *Regex) MatchFull(str string, startPosition int32, matchOptions Rege
 
 // Replace wraps g_regex_replace
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to perform matches against 
-// 	- startPosition int32: starting index of the string to match, in bytes 
-// 	- replacement string: text to replace each match with 
-// 	- matchOptions RegexMatchFlags: options for the match 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_regex_replace.g_regex_replace.html
 //
-// Replaces all occurrences of the pattern in @regex with the
-// replacement text. Backreferences of the form `\number` or
-// `\g&lt;number&gt;` in the replacement text are interpolated by the
-// number-th captured subexpression of the match, `\g&lt;name&gt;` refers
-// to the captured subexpression with the given name. `\0` refers
-// to the complete match, but `\0` followed by a number is the octal
-// representation of a character. To include a literal `\` in the
-// replacement, write `\\\\`.
-// 
-// There are also escapes that changes the case of the following text:
-// 
-// - \l: Convert to lower case the next character
-// - \u: Convert to upper case the next character
-// - \L: Convert to lower case till \E
-// - \U: Convert to upper case till \E
-// - \E: End case modification
-// 
-// If you do not need to use backreferences use g_regex_replace_literal().
-// 
-// The @replacement string must be UTF-8 encoded even if %G_REGEX_RAW was
-// passed to g_regex_new(). If you want to use not UTF-8 encoded strings
-// you can use g_regex_replace_literal().
-// 
-// Setting @start_position differs from just passing over a shortened
-// string and setting %G_REGEX_MATCH_NOTBOL in the case of a pattern that
-// begins with any kind of lookbehind assertion, such as "\b".
 func (regex *Regex) Replace(str string, startPosition int32, replacement string, matchOptions RegexMatchFlags) (string, error) {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -31026,26 +22728,8 @@ func (regex *Regex) Replace(str string, startPosition int32, replacement string,
 
 // ReplaceLiteral wraps g_regex_replace_literal
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to perform matches against 
-// 	- startPosition int32: starting index of the string to match, in bytes 
-// 	- replacement string: text to replace each match with 
-// 	- matchOptions RegexMatchFlags: options for the match 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_regex_replace_literal.g_regex_replace_literal.html
 //
-// Replaces all occurrences of the pattern in @regex with the
-// replacement text. @replacement is replaced literally, to
-// include backreferences use g_regex_replace().
-// 
-// Setting @start_position differs from just passing over a
-// shortened string and setting %G_REGEX_MATCH_NOTBOL in the
-// case of a pattern that begins with any kind of lookbehind
-// assertion, such as "\b".
 func (regex *Regex) ReplaceLiteral(str string, startPosition int32, replacement string, matchOptions RegexMatchFlags) (string, error) {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -31087,32 +22771,8 @@ func (regex *Regex) ReplaceLiteral(str string, startPosition int32, replacement 
 
 // Split wraps g_regex_split
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to split with the pattern 
-// 	- matchOptions RegexMatchFlags: match time option flags 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/method.g_regex_split.g_regex_split.html
 //
-// Breaks the string on the pattern, and returns an array of the tokens.
-// If the pattern contains capturing parentheses, then the text for each
-// of the substrings will also be returned. If the pattern does not match
-// anywhere in the string, then the whole string is returned as the first
-// token.
-// 
-// As a special case, the result of splitting the empty string "" is an
-// empty vector, not a vector containing a single string. The reason for
-// this special case is that being able to represent an empty vector is
-// typically more useful than consistent handling of empty elements. If
-// you do need to represent empty elements, you'll need to check for the
-// empty string before calling this function.
-// 
-// A pattern that can match empty strings splits @string into separate
-// characters wherever it matches the empty string between characters.
-// For example splitting "ab c" using as a separator "\s*", you will get
-// "a", "b" and "c".
 func (regex *Regex) Split(str string, matchOptions RegexMatchFlags) []string {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, none, string
@@ -31140,40 +22800,8 @@ func (regex *Regex) Split(str string, matchOptions RegexMatchFlags) []string {
 
 // SplitFull wraps g_regex_split_full
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to split with the pattern 
-// 	- startPosition int32: starting index of the string to match, in bytes 
-// 	- matchOptions RegexMatchFlags: match time option flags 
-// 	- maxTokens int32: the maximum number of tokens to split @string into.
-//   If this is less than 1, the string is split completely 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_regex_split_full.g_regex_split_full.html
 //
-// Breaks the string on the pattern, and returns an array of the tokens.
-// If the pattern contains capturing parentheses, then the text for each
-// of the substrings will also be returned. If the pattern does not match
-// anywhere in the string, then the whole string is returned as the first
-// token.
-// 
-// As a special case, the result of splitting the empty string "" is an
-// empty vector, not a vector containing a single string. The reason for
-// this special case is that being able to represent an empty vector is
-// typically more useful than consistent handling of empty elements. If
-// you do need to represent empty elements, you'll need to check for the
-// empty string before calling this function.
-// 
-// A pattern that can match empty strings splits @string into separate
-// characters wherever it matches the empty string between characters.
-// For example splitting "ab c" using as a separator "\s*", you will get
-// "a", "b" and "c".
-// 
-// Setting @start_position differs from just passing over a shortened
-// string and setting %G_REGEX_MATCH_NOTBOL in the case of a pattern
-// that begins with any kind of lookbehind assertion, such as "\b".
 func (regex *Regex) SplitFull(str string, startPosition int32, matchOptions RegexMatchFlags, maxTokens int32) ([]string, error) {
 	var carg0 *C.GRegex          // in, none, converted
 	var carg1 *C.gchar           // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -31214,21 +22842,9 @@ func (regex *Regex) SplitFull(str string, startPosition int32, matchOptions Rege
 }
 
 // Scanner wraps GScanner
+// 
+// see also https://docs.gtk.org/glib/struct.Scanner.html
 //
-// `GScanner` provides a general-purpose lexical scanner.
-// 
-// You should set @input_name after creating the scanner, since
-// it is used by the default message handler when displaying
-// warnings and errors. If you are scanning a file, the filename
-// would be a good choice.
-// 
-// The @user_data and @max_parse_errors fields are not used.
-// If you need to associate extra data with the scanner you
-// can place them here.
-// 
-// If you want to use your own message handler you can set the
-// @msg_handler field. The type of the message handler function
-// is declared by #GScannerMsgFunc.
 type Scanner struct {
 	*scanner
 }
@@ -31309,13 +22925,8 @@ func UnsafeScannerToGlibFull(s *Scanner) unsafe.Pointer {
 
 // CurLine wraps g_scanner_cur_line
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_scanner_cur_line.g_scanner_cur_line.html
 //
-// Returns the current line in the input stream (counting
-// from 1). This is the line of the last token parsed via
-// g_scanner_get_next_token().
 func (scanner *Scanner) CurLine() uint {
 	var carg0 *C.GScanner // in, none, converted
 	var cret  C.guint     // return, none, casted
@@ -31334,13 +22945,8 @@ func (scanner *Scanner) CurLine() uint {
 
 // CurPosition wraps g_scanner_cur_position
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_scanner_cur_position.g_scanner_cur_position.html
 //
-// Returns the current position in the current line (counting
-// from 0). This is the position of the last token parsed via
-// g_scanner_get_next_token().
 func (scanner *Scanner) CurPosition() uint {
 	var carg0 *C.GScanner // in, none, converted
 	var cret  C.guint     // return, none, casted
@@ -31359,12 +22965,8 @@ func (scanner *Scanner) CurPosition() uint {
 
 // CurToken wraps g_scanner_cur_token
 // 
-// The function returns the following values:
-// 
-// 	- goret TokenType 
+// see also https://docs.gtk.org/glib/method.g_scanner_cur_token.g_scanner_cur_token.html
 //
-// Gets the current token type. This is simply the @token
-// field in the #GScanner structure.
 func (scanner *Scanner) CurToken() TokenType {
 	var carg0 *C.GScanner  // in, none, converted
 	var cret  C.GTokenType // return, none, casted
@@ -31383,12 +22985,8 @@ func (scanner *Scanner) CurToken() TokenType {
 
 // EOF wraps g_scanner_eof
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_scanner_eof.g_scanner_eof.html
 //
-// Returns %TRUE if the scanner has reached the end of
-// the file or text buffer.
 func (scanner *Scanner) EOF() bool {
 	var carg0 *C.GScanner // in, none, converted
 	var cret  C.gboolean  // return
@@ -31409,14 +23007,8 @@ func (scanner *Scanner) EOF() bool {
 
 // GetNextToken wraps g_scanner_get_next_token
 // 
-// The function returns the following values:
-// 
-// 	- goret TokenType 
+// see also https://docs.gtk.org/glib/method.g_scanner_get_next_token.g_scanner_get_next_token.html
 //
-// Parses the next token just like g_scanner_peek_next_token()
-// and also removes it from the input stream. The token data is
-// placed in the @token, @value, @line, and @position fields of
-// the #GScanner structure.
 func (scanner *Scanner) GetNextToken() TokenType {
 	var carg0 *C.GScanner  // in, none, converted
 	var cret  C.GTokenType // return, none, casted
@@ -31435,11 +23027,8 @@ func (scanner *Scanner) GetNextToken() TokenType {
 
 // InputFile wraps g_scanner_input_file
 // 
-// The function takes the following parameters:
-// 
-// 	- inputFd int32: a file descriptor 
+// see also https://docs.gtk.org/glib/method.g_scanner_input_file.g_scanner_input_file.html
 //
-// Prepares to scan a file.
 func (scanner *Scanner) InputFile(inputFd int32) {
 	var carg0 *C.GScanner // in, none, converted
 	var carg1 C.gint      // in, none, casted
@@ -31454,12 +23043,8 @@ func (scanner *Scanner) InputFile(inputFd int32) {
 
 // InputText wraps g_scanner_input_text
 // 
-// The function takes the following parameters:
-// 
-// 	- text string: the text buffer to scan 
-// 	- textLen uint: the length of the text buffer 
+// see also https://docs.gtk.org/glib/method.g_scanner_input_text.g_scanner_input_text.html
 //
-// Prepares to scan a text buffer.
 func (scanner *Scanner) InputText(text string, textLen uint) {
 	var carg0 *C.GScanner // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -31478,21 +23063,8 @@ func (scanner *Scanner) InputText(text string, textLen uint) {
 
 // PeekNextToken wraps g_scanner_peek_next_token
 // 
-// The function returns the following values:
-// 
-// 	- goret TokenType 
+// see also https://docs.gtk.org/glib/method.g_scanner_peek_next_token.g_scanner_peek_next_token.html
 //
-// Parses the next token, without removing it from the input stream.
-// The token data is placed in the @next_token, @next_value, @next_line,
-// and @next_position fields of the #GScanner structure.
-// 
-// Note that, while the token is not removed from the input stream
-// (i.e. the next call to g_scanner_get_next_token() will return the
-// same token), it will not be reevaluated. This can lead to surprising
-// results when changing scope or the scanner configuration after peeking
-// the next token. Getting the next token after switching the scope or
-// configuration will return whatever was peeked before, regardless of
-// any symbols that may have been added or removed in the new scope.
 func (scanner *Scanner) PeekNextToken() TokenType {
 	var carg0 *C.GScanner  // in, none, converted
 	var cret  C.GTokenType // return, none, casted
@@ -31511,12 +23083,8 @@ func (scanner *Scanner) PeekNextToken() TokenType {
 
 // ScopeRemoveSymbol wraps g_scanner_scope_remove_symbol
 // 
-// The function takes the following parameters:
-// 
-// 	- scopeId uint: the scope id 
-// 	- symbol string: the symbol to remove 
+// see also https://docs.gtk.org/glib/method.g_scanner_scope_remove_symbol.g_scanner_scope_remove_symbol.html
 //
-// Removes a symbol from a scope.
 func (scanner *Scanner) ScopeRemoveSymbol(scopeId uint, symbol string) {
 	var carg0 *C.GScanner // in, none, converted
 	var carg1 C.guint     // in, none, casted
@@ -31535,15 +23103,8 @@ func (scanner *Scanner) ScopeRemoveSymbol(scopeId uint, symbol string) {
 
 // SetScope wraps g_scanner_set_scope
 // 
-// The function takes the following parameters:
-// 
-// 	- scopeId uint: the new scope id 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_scanner_set_scope.g_scanner_set_scope.html
 //
-// Sets the current scope.
 func (scanner *Scanner) SetScope(scopeId uint) uint {
 	var carg0 *C.GScanner // in, none, converted
 	var carg1 C.guint     // in, none, casted
@@ -31564,11 +23125,9 @@ func (scanner *Scanner) SetScope(scopeId uint) uint {
 }
 
 // SyncFileOffset wraps g_scanner_sync_file_offset
+// 
+// see also https://docs.gtk.org/glib/method.g_scanner_sync_file_offset.g_scanner_sync_file_offset.html
 //
-// Rewinds the filedescriptor to the current buffer position
-// and blows the file read ahead buffer. This is useful for
-// third party uses of the scanners filedescriptor, which hooks
-// onto the current scanning position.
 func (scanner *Scanner) SyncFileOffset() {
 	var carg0 *C.GScanner // in, none, converted
 
@@ -31580,31 +23139,8 @@ func (scanner *Scanner) SyncFileOffset() {
 
 // UnexpToken wraps g_scanner_unexp_token
 // 
-// The function takes the following parameters:
-// 
-// 	- expectedToken TokenType: the expected token 
-// 	- identifierSpec string: a string describing how the scanner's user
-//     refers to identifiers (%NULL defaults to "identifier").
-//     This is used if @expected_token is %G_TOKEN_IDENTIFIER or
-//     %G_TOKEN_IDENTIFIER_NULL. 
-// 	- symbolSpec string: a string describing how the scanner's user refers
-//     to symbols (%NULL defaults to "symbol"). This is used if
-//     @expected_token is %G_TOKEN_SYMBOL or any token value greater
-//     than %G_TOKEN_LAST. 
-// 	- symbolName string: the name of the symbol, if the scanner's current
-//     token is a symbol. 
-// 	- message string: a message string to output at the end of the
-//     warning/error, or %NULL. 
-// 	- isError int32: if %TRUE it is output as an error. If %FALSE it is
-//     output as a warning. 
+// see also https://docs.gtk.org/glib/method.g_scanner_unexp_token.g_scanner_unexp_token.html
 //
-// Outputs a message through the scanner's msg_handler,
-// resulting from an unexpected token in the input stream.
-// Note that you should not call g_scanner_peek_next_token()
-// followed by g_scanner_unexp_token() without an intermediate
-// call to g_scanner_get_next_token(), as g_scanner_unexp_token()
-// evaluates the scanner's current token (not the peeked token)
-// to construct part of the message.
 func (scanner *Scanner) UnexpToken(expectedToken TokenType, identifierSpec string, symbolSpec string, symbolName string, message string, isError int32) {
 	var carg0 *C.GScanner  // in, none, converted
 	var carg1 C.GTokenType // in, none, casted
@@ -31637,10 +23173,9 @@ func (scanner *Scanner) UnexpToken(expectedToken TokenType, identifierSpec strin
 }
 
 // ScannerConfig wraps GScannerConfig
+// 
+// see also https://docs.gtk.org/glib/struct.ScannerConfig.html
 //
-// Specifies the #GScanner parser configuration. Most settings can
-// be changed during the parsing phase and will affect the lexical
-// parsing of the next unpeeked token.
 type ScannerConfig struct {
 	*scannerConfig
 }
@@ -31720,9 +23255,9 @@ func UnsafeScannerConfigToGlibFull(s *ScannerConfig) unsafe.Pointer {
 }
 
 // Sequence wraps GSequence
+// 
+// see also https://docs.gtk.org/glib/struct.Sequence.html
 //
-// The #GSequence struct is an opaque data type representing a
-// [sequence](data-structures.html#scalable-lists) data type.
 type Sequence struct {
 	*sequence
 }
@@ -31803,16 +23338,8 @@ func UnsafeSequenceToGlibFull(s *Sequence) unsafe.Pointer {
 
 // SequenceMove wraps g_sequence_move
 // 
-// The function takes the following parameters:
-// 
-// 	- src *SequenceIter: a #GSequenceIter pointing to the item to move 
-// 	- dest *SequenceIter: a #GSequenceIter pointing to the position to which
-//     the item is moved 
+// see also https://docs.gtk.org/glib/func.g_sequence_move.html
 //
-// Moves the item pointed to by @src to the position indicated by @dest.
-// After calling this function @dest will point to the position immediately
-// after @src. It is allowed for @src and @dest to point into different
-// sequences.
 func SequenceMove(src *SequenceIter, dest *SequenceIter) {
 	var carg1 *C.GSequenceIter // in, none, converted
 	var carg2 *C.GSequenceIter // in, none, converted
@@ -31827,20 +23354,8 @@ func SequenceMove(src *SequenceIter, dest *SequenceIter) {
 
 // SequenceMoveRange wraps g_sequence_move_range
 // 
-// The function takes the following parameters:
-// 
-// 	- dest *SequenceIter: a #GSequenceIter 
-// 	- begin *SequenceIter: a #GSequenceIter 
-// 	- end *SequenceIter: a #GSequenceIter 
+// see also https://docs.gtk.org/glib/func.g_sequence_move_range.html
 //
-// Inserts the (@begin, @end) range at the destination pointed to by @dest.
-// The @begin and @end iters must point into the same sequence. It is
-// allowed for @dest to point to a different sequence than the one pointed
-// into by @begin and @end.
-// 
-// If @dest is %NULL, the range indicated by @begin and @end is
-// removed from the sequence. If @dest points to a place within
-// the (@begin, @end) range, the range does not move.
 func SequenceMoveRange(dest *SequenceIter, begin *SequenceIter, end *SequenceIter) {
 	var carg1 *C.GSequenceIter // in, none, converted
 	var carg2 *C.GSequenceIter // in, none, converted
@@ -31858,21 +23373,8 @@ func SequenceMoveRange(dest *SequenceIter, begin *SequenceIter, end *SequenceIte
 
 // SequenceRangeGetMidpoint wraps g_sequence_range_get_midpoint
 // 
-// The function takes the following parameters:
-// 
-// 	- begin *SequenceIter: a #GSequenceIter 
-// 	- end *SequenceIter: a #GSequenceIter 
-// 
-// The function returns the following values:
-// 
-// 	- goret *SequenceIter 
+// see also https://docs.gtk.org/glib/func.g_sequence_range_get_midpoint.html
 //
-// Finds an iterator somewhere in the range (@begin, @end). This
-// iterator will be close to the middle of the range, but is not
-// guaranteed to be exactly in the middle.
-// 
-// The @begin and @end iterators must both point to the same sequence
-// and @begin must come before or be equal to @end in the sequence.
 func SequenceRangeGetMidpoint(begin *SequenceIter, end *SequenceIter) *SequenceIter {
 	var carg1 *C.GSequenceIter // in, none, converted
 	var carg2 *C.GSequenceIter // in, none, converted
@@ -31894,15 +23396,8 @@ func SequenceRangeGetMidpoint(begin *SequenceIter, end *SequenceIter) *SequenceI
 
 // SequenceRemove wraps g_sequence_remove
 // 
-// The function takes the following parameters:
-// 
-// 	- iter *SequenceIter: a #GSequenceIter 
+// see also https://docs.gtk.org/glib/func.g_sequence_remove.html
 //
-// Removes the item pointed to by @iter. It is an error to pass the
-// end iterator to this function.
-// 
-// If the sequence has a data destroy function associated with it, this
-// function is called on the data for the removed item.
 func SequenceRemove(iter *SequenceIter) {
 	var carg1 *C.GSequenceIter // in, none, converted
 
@@ -31914,15 +23409,8 @@ func SequenceRemove(iter *SequenceIter) {
 
 // SequenceRemoveRange wraps g_sequence_remove_range
 // 
-// The function takes the following parameters:
-// 
-// 	- begin *SequenceIter: a #GSequenceIter 
-// 	- end *SequenceIter: a #GSequenceIter 
+// see also https://docs.gtk.org/glib/func.g_sequence_remove_range.html
 //
-// Removes all items in the (@begin, @end) range.
-// 
-// If the sequence has a data destroy function associated with it, this
-// function is called on the data for the removed items.
 func SequenceRemoveRange(begin *SequenceIter, end *SequenceIter) {
 	var carg1 *C.GSequenceIter // in, none, converted
 	var carg2 *C.GSequenceIter // in, none, converted
@@ -31937,13 +23425,8 @@ func SequenceRemoveRange(begin *SequenceIter, end *SequenceIter) {
 
 // SequenceSwap wraps g_sequence_swap
 // 
-// The function takes the following parameters:
-// 
-// 	- a *SequenceIter: a #GSequenceIter 
-// 	- b *SequenceIter: a #GSequenceIter 
+// see also https://docs.gtk.org/glib/func.g_sequence_swap.html
 //
-// Swaps the items pointed to by @a and @b. It is allowed for @a and @b
-// to point into difference sequences.
 func SequenceSwap(a *SequenceIter, b *SequenceIter) {
 	var carg1 *C.GSequenceIter // in, none, converted
 	var carg2 *C.GSequenceIter // in, none, converted
@@ -31958,11 +23441,8 @@ func SequenceSwap(a *SequenceIter, b *SequenceIter) {
 
 // GetBeginIter wraps g_sequence_get_begin_iter
 // 
-// The function returns the following values:
-// 
-// 	- goret *SequenceIter 
+// see also https://docs.gtk.org/glib/method.g_sequence_get_begin_iter.g_sequence_get_begin_iter.html
 //
-// Returns the begin iterator for @seq.
 func (seq *Sequence) GetBeginIter() *SequenceIter {
 	var carg0 *C.GSequence     // in, none, converted
 	var cret  *C.GSequenceIter // return, none, converted
@@ -31981,11 +23461,8 @@ func (seq *Sequence) GetBeginIter() *SequenceIter {
 
 // GetEndIter wraps g_sequence_get_end_iter
 // 
-// The function returns the following values:
-// 
-// 	- goret *SequenceIter 
+// see also https://docs.gtk.org/glib/method.g_sequence_get_end_iter.g_sequence_get_end_iter.html
 //
-// Returns the end iterator for @seg
 func (seq *Sequence) GetEndIter() *SequenceIter {
 	var carg0 *C.GSequence     // in, none, converted
 	var cret  *C.GSequenceIter // return, none, converted
@@ -32004,16 +23481,8 @@ func (seq *Sequence) GetEndIter() *SequenceIter {
 
 // GetIterAtPos wraps g_sequence_get_iter_at_pos
 // 
-// The function takes the following parameters:
-// 
-// 	- pos int32: a position in @seq, or -1 for the end 
-// 
-// The function returns the following values:
-// 
-// 	- goret *SequenceIter 
+// see also https://docs.gtk.org/glib/method.g_sequence_get_iter_at_pos.g_sequence_get_iter_at_pos.html
 //
-// Returns the iterator at position @pos. If @pos is negative or larger
-// than the number of items in @seq, the end iterator is returned.
 func (seq *Sequence) GetIterAtPos(pos int32) *SequenceIter {
 	var carg0 *C.GSequence     // in, none, converted
 	var carg1 C.gint           // in, none, casted
@@ -32035,13 +23504,8 @@ func (seq *Sequence) GetIterAtPos(pos int32) *SequenceIter {
 
 // GetLength wraps g_sequence_get_length
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_sequence_get_length.g_sequence_get_length.html
 //
-// Returns the positive length (&gt;= 0) of @seq. Note that this method is
-// O(h) where `h' is the height of the tree. It is thus more efficient
-// to use g_sequence_is_empty() when comparing the length to zero.
 func (seq *Sequence) GetLength() int32 {
 	var carg0 *C.GSequence // in, none, converted
 	var cret  C.gint       // return, none, casted
@@ -32060,15 +23524,8 @@ func (seq *Sequence) GetLength() int32 {
 
 // IsEmpty wraps g_sequence_is_empty
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_sequence_is_empty.g_sequence_is_empty.html
 //
-// Returns %TRUE if the sequence contains zero items.
-// 
-// This function is functionally identical to checking the result of
-// g_sequence_get_length() being equal to zero. However this function is
-// implemented in O(1) running time.
 func (seq *Sequence) IsEmpty() bool {
 	var carg0 *C.GSequence // in, none, converted
 	var cret  C.gboolean   // return
@@ -32088,9 +23545,9 @@ func (seq *Sequence) IsEmpty() bool {
 }
 
 // SequenceIter wraps GSequenceIter
+// 
+// see also https://docs.gtk.org/glib/struct.SequenceIter.html
 //
-// The #GSequenceIter struct is an opaque data type representing an
-// iterator pointing into a #GSequence.
 type SequenceIter struct {
 	*sequenceIter
 }
@@ -32171,18 +23628,8 @@ func UnsafeSequenceIterToGlibFull(s *SequenceIter) unsafe.Pointer {
 
 // Compare wraps g_sequence_iter_compare
 // 
-// The function takes the following parameters:
-// 
-// 	- b *SequenceIter: a #GSequenceIter 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_compare.g_sequence_iter_compare.html
 //
-// Returns a negative number if @a comes before @b, 0 if they are equal,
-// and a positive number if @a comes after @b.
-// 
-// The @a and @b iterators must point into the same sequence.
 func (a *SequenceIter) Compare(b *SequenceIter) int32 {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var carg1 *C.GSequenceIter // in, none, converted
@@ -32204,11 +23651,8 @@ func (a *SequenceIter) Compare(b *SequenceIter) int32 {
 
 // GetPosition wraps g_sequence_iter_get_position
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_get_position.g_sequence_iter_get_position.html
 //
-// Returns the position of @iter
 func (iter *SequenceIter) GetPosition() int32 {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var cret  C.gint           // return, none, casted
@@ -32227,11 +23671,8 @@ func (iter *SequenceIter) GetPosition() int32 {
 
 // GetSequence wraps g_sequence_iter_get_sequence
 // 
-// The function returns the following values:
-// 
-// 	- goret *Sequence 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_get_sequence.g_sequence_iter_get_sequence.html
 //
-// Returns the #GSequence that @iter points into.
 func (iter *SequenceIter) GetSequence() *Sequence {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var cret  *C.GSequence     // return, none, converted
@@ -32250,11 +23691,8 @@ func (iter *SequenceIter) GetSequence() *Sequence {
 
 // IsBegin wraps g_sequence_iter_is_begin
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_is_begin.g_sequence_iter_is_begin.html
 //
-// Returns whether @iter is the begin iterator
 func (iter *SequenceIter) IsBegin() bool {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var cret  C.gboolean       // return
@@ -32275,11 +23713,8 @@ func (iter *SequenceIter) IsBegin() bool {
 
 // IsEnd wraps g_sequence_iter_is_end
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_is_end.g_sequence_iter_is_end.html
 //
-// Returns whether @iter is the end iterator
 func (iter *SequenceIter) IsEnd() bool {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var cret  C.gboolean       // return
@@ -32300,19 +23735,8 @@ func (iter *SequenceIter) IsEnd() bool {
 
 // Move wraps g_sequence_iter_move
 // 
-// The function takes the following parameters:
-// 
-// 	- delta int32: A positive or negative number indicating how many positions away
-//    from @iter the returned #GSequenceIter will be 
-// 
-// The function returns the following values:
-// 
-// 	- goret *SequenceIter 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_move.g_sequence_iter_move.html
 //
-// Returns the #GSequenceIter which is @delta positions away from @iter.
-// If @iter is closer than -@delta positions to the beginning of the sequence,
-// the begin iterator is returned. If @iter is closer than @delta positions
-// to the end of the sequence, the end iterator is returned.
 func (iter *SequenceIter) Move(delta int32) *SequenceIter {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var carg1 C.gint           // in, none, casted
@@ -32334,12 +23758,8 @@ func (iter *SequenceIter) Move(delta int32) *SequenceIter {
 
 // Next wraps g_sequence_iter_next
 // 
-// The function returns the following values:
-// 
-// 	- goret *SequenceIter 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_next.g_sequence_iter_next.html
 //
-// Returns an iterator pointing to the next position after @iter.
-// If @iter is the end iterator, the end iterator is returned.
 func (iter *SequenceIter) Next() *SequenceIter {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var cret  *C.GSequenceIter // return, none, converted
@@ -32358,12 +23778,8 @@ func (iter *SequenceIter) Next() *SequenceIter {
 
 // Prev wraps g_sequence_iter_prev
 // 
-// The function returns the following values:
-// 
-// 	- goret *SequenceIter 
+// see also https://docs.gtk.org/glib/method.g_sequence_iter_prev.g_sequence_iter_prev.html
 //
-// Returns an iterator pointing to the previous position before @iter.
-// If @iter is the begin iterator, the begin iterator is returned.
 func (iter *SequenceIter) Prev() *SequenceIter {
 	var carg0 *C.GSequenceIter // in, none, converted
 	var cret  *C.GSequenceIter // return, none, converted
@@ -32381,9 +23797,9 @@ func (iter *SequenceIter) Prev() *SequenceIter {
 }
 
 // SourceCallbackFuncs wraps GSourceCallbackFuncs
+// 
+// see also https://docs.gtk.org/glib/struct.SourceCallbackFuncs.html
 //
-// The `GSourceCallbackFuncs` struct contains
-// functions for managing callback objects.
 type SourceCallbackFuncs struct {
 	*sourceCallbackFuncs
 }
@@ -32463,27 +23879,9 @@ func UnsafeSourceCallbackFuncsToGlibFull(s *SourceCallbackFuncs) unsafe.Pointer 
 }
 
 // SourceFuncs wraps GSourceFuncs
+// 
+// see also https://docs.gtk.org/glib/struct.SourceFuncs.html
 //
-// The `GSourceFuncs` struct contains a table of
-// functions used to handle event sources in a generic manner.
-// 
-// For idle sources, the prepare and check functions always return %TRUE
-// to indicate that the source is always ready to be processed. The prepare
-// function also returns a timeout value of 0 to ensure that the poll() call
-// doesn't block (since that would be time wasted which could have been spent
-// running the idle function).
-// 
-// For timeout sources, the prepare and check functions both return %TRUE
-// if the timeout interval has expired. The prepare function also returns
-// a timeout value to ensure that the poll() call doesn't block too long
-// and miss the next timeout.
-// 
-// For file descriptor sources, the prepare function typically returns %FALSE,
-// since it must wait until poll() has been called before it knows whether
-// any events need to be processed. It sets the returned timeout to -1 to
-// indicate that it doesn't mind how long the poll() call blocks. In the
-// check function, it tests the results of the poll() call to see if the
-// required condition has been met, and returns %TRUE if so.
 type SourceFuncs struct {
 	*sourceFuncs
 }
@@ -32563,30 +23961,9 @@ func UnsafeSourceFuncsToGlibFull(s *SourceFuncs) unsafe.Pointer {
 }
 
 // StringChunk wraps GStringChunk
+// 
+// see also https://docs.gtk.org/glib/struct.StringChunk.html
 //
-// `GStringChunk` provides efficient storage of groups of strings
-// 
-// String chunks are used to store groups of strings. Memory is
-// allocated in blocks, and as strings are added to the `GStringChunk`
-// they are copied into the next free position in a block. When a block
-// is full a new block is allocated.
-// 
-// When storing a large number of strings, string chunks are more
-// efficient than using [func@GLib.strdup] since fewer calls to `malloc()`
-// are needed, and less memory is wasted in memory allocation overheads.
-// 
-// By adding strings with [method@GLib.StringChunk.insert_const] it is also
-// possible to remove duplicates.
-// 
-// To create a new `GStringChunk` use [func@GLib.StringChunk.new].
-// 
-// To add strings to a `GStringChunk` use [method@GLib.StringChunk.insert].
-// 
-// To add strings to a `GStringChunk`, but without duplicating strings
-// which are already in the `GStringChunk`, use [method@GLib.StringChunk.insert_const].
-// 
-// To free the entire `GStringChunk` use [method@GLib.StringChunk.free].
-// It is not possible to free individual strings.
 type StringChunk struct {
 	*stringChunk
 }
@@ -32666,10 +24043,9 @@ func UnsafeStringChunkToGlibFull(s *StringChunk) unsafe.Pointer {
 }
 
 // Clear wraps g_string_chunk_clear
+// 
+// see also https://docs.gtk.org/glib/method.g_string_chunk_clear.g_string_chunk_clear.html
 //
-// Frees all strings contained within the #GStringChunk.
-// After calling g_string_chunk_clear() it is not safe to
-// access any of the strings which were contained within it.
 func (chunk *StringChunk) Clear() {
 	var carg0 *C.GStringChunk // in, none, converted
 
@@ -32681,25 +24057,8 @@ func (chunk *StringChunk) Clear() {
 
 // Insert wraps g_string_chunk_insert
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to add 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_string_chunk_insert.g_string_chunk_insert.html
 //
-// Adds a copy of @string to the #GStringChunk.
-// It returns a pointer to the new copy of the string
-// in the #GStringChunk. The characters in the string
-// can be changed, if necessary, though you should not
-// change anything after the end of the string.
-// 
-// Unlike g_string_chunk_insert_const(), this function
-// does not check for duplicates. Also strings added
-// with g_string_chunk_insert() will not be searched
-// by g_string_chunk_insert_const() when looking for
-// duplicates.
 func (chunk *StringChunk) Insert(str string) string {
 	var carg0 *C.GStringChunk // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -32723,27 +24082,8 @@ func (chunk *StringChunk) Insert(str string) string {
 
 // InsertConst wraps g_string_chunk_insert_const
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: the string to add 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_string_chunk_insert_const.g_string_chunk_insert_const.html
 //
-// Adds a copy of @string to the #GStringChunk, unless the same
-// string has already been added to the #GStringChunk with
-// g_string_chunk_insert_const().
-// 
-// This function is useful if you need to copy a large number
-// of strings but do not want to waste space storing duplicates.
-// But you must remember that there may be several pointers to
-// the same string, and so any changes made to the strings
-// should be done very carefully.
-// 
-// Note that g_string_chunk_insert_const() will not return a
-// pointer to a string added with g_string_chunk_insert(), even
-// if they do match.
 func (chunk *StringChunk) InsertConst(str string) string {
 	var carg0 *C.GStringChunk // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -32767,25 +24107,8 @@ func (chunk *StringChunk) InsertConst(str string) string {
 
 // InsertLen wraps g_string_chunk_insert_len
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: bytes to insert 
-// 	- len int: number of bytes of @string to insert, or -1 to insert a
-//     nul-terminated string 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_string_chunk_insert_len.g_string_chunk_insert_len.html
 //
-// Adds a copy of the first @len bytes of @string to the #GStringChunk.
-// The copy is nul-terminated.
-// 
-// Since this function does not stop at nul bytes, it is the caller's
-// responsibility to ensure that @string has at least @len addressable
-// bytes.
-// 
-// The characters in the returned string can be changed, if necessary,
-// though you should not change anything after the end of the string.
 func (chunk *StringChunk) InsertLen(str string, len int) string {
 	var carg0 *C.GStringChunk // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -32811,20 +24134,9 @@ func (chunk *StringChunk) InsertLen(str string, len int) string {
 }
 
 // StrvBuilder wraps GStrvBuilder
+// 
+// see also https://docs.gtk.org/glib/struct.StrvBuilder.html
 //
-// `GStrvBuilder` is a helper object to build a %NULL-terminated string arrays.
-// 
-// The following example shows how to build a two element array:
-// 
-// ```c
-//   g_autoptr(GStrvBuilder) builder = g_strv_builder_new ();
-//   g_strv_builder_add (builder, "hello");
-//   g_strv_builder_add (builder, "world");
-// 
-//   g_auto(GStrv) array = g_strv_builder_end (builder);
-// 
-//   g_assert_true (g_strv_equal (array, (const char *[]) { "hello", "world", NULL }));
-// ```
 type StrvBuilder struct {
 	*strvBuilder
 }
@@ -32886,7 +24198,7 @@ func UnsafeStrvBuilderFromGlibFull(p unsafe.Pointer) *StrvBuilder {
 // 
 // When this is called without an associated call to [StrvBuilder.UnsafeStrvBuilderUnref], then [StrvBuilder] will leak memory.
 func UnsafeStrvBuilderRef(s *StrvBuilder) {
-	C.g_strv_builder_ref(s.native)
+	C.g_strv_builder_ref((*C.GStrvBuilder)(s.native))
 }
 
 // UnsafeStrvBuilderUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -32918,12 +24230,8 @@ func UnsafeStrvBuilderToGlibFull(s *StrvBuilder) unsafe.Pointer {
 
 // NewStrvBuilder wraps g_strv_builder_new
 // 
-// The function returns the following values:
-// 
-// 	- goret *StrvBuilder 
+// see also https://docs.gtk.org/glib/func.g_strv_builder_new.html
 //
-// Creates a new #GStrvBuilder with a reference count of 1.
-// Use g_strv_builder_unref() on the returned value when no longer needed.
 func NewStrvBuilder() *StrvBuilder {
 	var cret *C.GStrvBuilder // return, full, converted
 
@@ -32938,13 +24246,8 @@ func NewStrvBuilder() *StrvBuilder {
 
 // Add wraps g_strv_builder_add
 // 
-// The function takes the following parameters:
-// 
-// 	- value string: a string. 
+// see also https://docs.gtk.org/glib/method.g_strv_builder_add.g_strv_builder_add.html
 //
-// Add a string to the end of the array.
-// 
-// Since 2.68
 func (builder *StrvBuilder) Add(value string) {
 	var carg0 *C.GStrvBuilder // in, none, converted
 	var carg1 *C.char         // in, none, string
@@ -32960,13 +24263,8 @@ func (builder *StrvBuilder) Add(value string) {
 
 // Addv wraps g_strv_builder_addv
 // 
-// The function takes the following parameters:
-// 
-// 	- value []string: the vector of strings to add 
+// see also https://docs.gtk.org/glib/method.g_strv_builder_addv.g_strv_builder_addv.html
 //
-// Appends all the strings in the given vector to the builder.
-// 
-// Since 2.70
 func (builder *StrvBuilder) Addv(value []string) {
 	var carg0 *C.GStrvBuilder // in, none, converted
 	var carg1 **C.char        // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -32983,15 +24281,8 @@ func (builder *StrvBuilder) Addv(value []string) {
 
 // Take wraps g_strv_builder_take
 // 
-// The function takes the following parameters:
-// 
-// 	- value string: a string.
-//     Ownership of the string is transferred to the #GStrvBuilder 
+// see also https://docs.gtk.org/glib/method.g_strv_builder_take.g_strv_builder_take.html
 //
-// Add a string to the end of the array. After @value belongs to the
-// #GStrvBuilder and may no longer be modified by the caller.
-// 
-// Since 2.80
 func (builder *StrvBuilder) Take(value string) {
 	var carg0 *C.GStrvBuilder // in, none, converted
 	var carg1 *C.char         // in, full, string
@@ -33005,8 +24296,9 @@ func (builder *StrvBuilder) Take(value string) {
 }
 
 // TestCase wraps GTestCase
+// 
+// see also https://docs.gtk.org/glib/struct.TestCase.html
 //
-// An opaque structure representing a test case.
 type TestCase struct {
 	*testCase
 }
@@ -33086,6 +24378,8 @@ func UnsafeTestCaseToGlibFull(t *TestCase) unsafe.Pointer {
 }
 
 // TestConfig wraps GTestConfig
+// 
+// see also https://docs.gtk.org/glib/struct.TestConfig.html
 type TestConfig struct {
 	*testConfig
 }
@@ -33165,6 +24459,8 @@ func UnsafeTestConfigToGlibFull(t *TestConfig) unsafe.Pointer {
 }
 
 // TestLogBuffer wraps GTestLogBuffer
+// 
+// see also https://docs.gtk.org/glib/struct.TestLogBuffer.html
 type TestLogBuffer struct {
 	*testLogBuffer
 }
@@ -33245,12 +24541,8 @@ func UnsafeTestLogBufferToGlibFull(t *TestLogBuffer) unsafe.Pointer {
 
 // Push wraps g_test_log_buffer_push
 // 
-// The function takes the following parameters:
-// 
-// 	- nBytes uint 
-// 	- bytes *uint8 
+// see also https://docs.gtk.org/glib/method.g_test_log_buffer_push.g_test_log_buffer_push.html
 //
-// Internal function for gtester to decode test log messages, no ABI guarantees provided.
 func (tbuffer *TestLogBuffer) Push(nBytes uint, bytes *uint8) {
 	var carg0 *C.GTestLogBuffer // in, none, converted
 	var carg1 C.guint           // in, none, casted
@@ -33269,8 +24561,9 @@ func (tbuffer *TestLogBuffer) Push(nBytes uint, bytes *uint8) {
 }
 
 // TestSuite wraps GTestSuite
+// 
+// see also https://docs.gtk.org/glib/struct.TestSuite.html
 //
-// An opaque structure representing a test suite.
 type TestSuite struct {
 	*testSuite
 }
@@ -33351,11 +24644,8 @@ func UnsafeTestSuiteToGlibFull(t *TestSuite) unsafe.Pointer {
 
 // Add wraps g_test_suite_add
 // 
-// The function takes the following parameters:
-// 
-// 	- testCase *TestCase: a test case 
+// see also https://docs.gtk.org/glib/method.g_test_suite_add.g_test_suite_add.html
 //
-// Adds @test_case to @suite.
 func (suite *TestSuite) Add(testCase *TestCase) {
 	var carg0 *C.GTestSuite // in, none, converted
 	var carg1 *C.GTestCase  // in, none, converted
@@ -33370,11 +24660,8 @@ func (suite *TestSuite) Add(testCase *TestCase) {
 
 // AddSuite wraps g_test_suite_add_suite
 // 
-// The function takes the following parameters:
-// 
-// 	- nestedsuite *TestSuite: another test suite 
+// see also https://docs.gtk.org/glib/method.g_test_suite_add_suite.g_test_suite_add_suite.html
 //
-// Adds @nestedsuite to @suite.
 func (suite *TestSuite) AddSuite(nestedsuite *TestSuite) {
 	var carg0 *C.GTestSuite // in, none, converted
 	var carg1 *C.GTestSuite // in, none, converted
@@ -33388,33 +24675,9 @@ func (suite *TestSuite) AddSuite(nestedsuite *TestSuite) {
 }
 
 // TimeZone wraps GTimeZone
+// 
+// see also https://docs.gtk.org/glib/struct.TimeZone.html
 //
-// A `GTimeZone` represents a time zone, at no particular point in time.
-// 
-// The `GTimeZone` struct is refcounted and immutable.
-// 
-// Each time zone has an identifier (for example, &#x2018;Europe/London&#x2019;) which is
-// platform dependent. See [ctor@GLib.TimeZone.new] for information on the
-// identifier formats. The identifier of a time zone can be retrieved using
-// [method@GLib.TimeZone.get_identifier].
-// 
-// A time zone contains a number of intervals. Each interval has an abbreviation
-// to describe it (for example, &#x2018;PDT&#x2019;), an offset to UTC and a flag indicating
-// if the daylight savings time is in effect during that interval. A time zone
-// always has at least one interval &#x2014; interval 0. Note that interval abbreviations
-// are not the same as time zone identifiers (apart from &#x2018;UTC&#x2019;), and cannot be
-// passed to [ctor@GLib.TimeZone.new].
-// 
-// Every UTC time is contained within exactly one interval, but a given
-// local time may be contained within zero, one or two intervals (due to
-// incontinuities associated with daylight savings time).
-// 
-// An interval may refer to a specific period of time (eg: the duration
-// of daylight savings time during 2010) or it may refer to many periods
-// of time that share the same properties (eg: all periods of daylight
-// savings time).  It is also possible (usually for political reasons)
-// that some properties (like the abbreviation) change between intervals
-// without other properties changing.
 type TimeZone struct {
 	*timeZone
 }
@@ -33476,7 +24739,7 @@ func UnsafeTimeZoneFromGlibFull(p unsafe.Pointer) *TimeZone {
 // 
 // When this is called without an associated call to [TimeZone.UnsafeTimeZoneUnref], then [TimeZone] will leak memory.
 func UnsafeTimeZoneRef(t *TimeZone) {
-	C.g_time_zone_ref(t.native)
+	C.g_time_zone_ref((*C.GTimeZone)(t.native))
 }
 
 // UnsafeTimeZoneUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -33508,79 +24771,8 @@ func UnsafeTimeZoneToGlibFull(t *TimeZone) unsafe.Pointer {
 
 // NewTimeZoneIdentifier wraps g_time_zone_new_identifier
 // 
-// The function takes the following parameters:
-// 
-// 	- identifier string (nullable): a timezone identifier 
-// 
-// The function returns the following values:
-// 
-// 	- goret *TimeZone (nullable) 
+// see also https://docs.gtk.org/glib/func.g_time_zone_new_identifier.html
 //
-// Creates a #GTimeZone corresponding to @identifier. If @identifier cannot be
-// parsed or loaded, %NULL is returned.
-// 
-// @identifier can either be an RFC3339/ISO 8601 time offset or
-// something that would pass as a valid value for the `TZ` environment
-// variable (including %NULL).
-// 
-// In Windows, @identifier can also be the unlocalized name of a time
-// zone for standard time, for example "Pacific Standard Time".
-// 
-// Valid RFC3339 time offsets are `"Z"` (for UTC) or
-// `"&#xB1;hh:mm"`.  ISO 8601 additionally specifies
-// `"&#xB1;hhmm"` and `"&#xB1;hh"`.  Offsets are
-// time values to be added to Coordinated Universal Time (UTC) to get
-// the local time.
-// 
-// In UNIX, the `TZ` environment variable typically corresponds
-// to the name of a file in the zoneinfo database, an absolute path to a file
-// somewhere else, or a string in
-// "std offset [dst [offset],start[/time],end[/time]]" (POSIX) format.
-// There  are  no spaces in the specification. The name of standard
-// and daylight savings time zone must be three or more alphabetic
-// characters. Offsets are time values to be added to local time to
-// get Coordinated Universal Time (UTC) and should be
-// `"[&#xB1;]hh[[:]mm[:ss]]"`.  Dates are either
-// `"Jn"` (Julian day with n between 1 and 365, leap
-// years not counted), `"n"` (zero-based Julian day
-// with n between 0 and 365) or `"Mm.w.d"` (day d
-// (0 &lt;= d &lt;= 6) of week w (1 &lt;= w &lt;= 5) of month m (1 &lt;= m &lt;= 12), day
-// 0 is a Sunday).  Times are in local wall clock time, the default is
-// 02:00:00.
-// 
-// In Windows, the "tzn[+|&#x2013;]hh[:mm[:ss]][dzn]" format is used, but also
-// accepts POSIX format.  The Windows format uses US rules for all time
-// zones; daylight savings time is 60 minutes behind the standard time
-// with date and time of change taken from Pacific Standard Time.
-// Offsets are time values to be added to the local time to get
-// Coordinated Universal Time (UTC).
-// 
-// g_time_zone_new_local() calls this function with the value of the
-// `TZ` environment variable. This function itself is independent of
-// the value of `TZ`, but if @identifier is %NULL then `/etc/localtime`
-// will be consulted to discover the correct time zone on UNIX and the
-// registry will be consulted or GetTimeZoneInformation() will be used
-// to get the local time zone on Windows.
-// 
-// If intervals are not available, only time zone rules from `TZ`
-// environment variable or other means, then they will be computed
-// from year 1900 to 2037.  If the maximum year for the rules is
-// available and it is greater than 2037, then it will followed
-// instead.
-// 
-// See
-// [RFC3339 &#xA7;5.6](http://tools.ietf.org/html/rfc3339#section-5.6)
-// for a precise definition of valid RFC3339 time offsets
-// (the `time-offset` expansion) and ISO 8601 for the
-// full list of valid time offsets.  See
-// [The GNU C Library manual](http://www.gnu.org/s/libc/manual/html_node/TZ-Variable.html)
-// for an explanation of the possible
-// values of the `TZ` environment variable. See
-// [Microsoft Time Zone Index Values](http://msdn.microsoft.com/en-us/library/ms912391%28v=winembedded.11%29.aspx)
-// for the list of time zones on Windows.
-// 
-// You should release the return value by calling g_time_zone_unref()
-// when you are done with it.
 func NewTimeZoneIdentifier(identifier string) *TimeZone {
 	var carg1 *C.gchar     // in, none, string, nullable-string
 	var cret  *C.GTimeZone // return, full, converted, nullable
@@ -33604,19 +24796,8 @@ func NewTimeZoneIdentifier(identifier string) *TimeZone {
 
 // NewTimeZoneLocal wraps g_time_zone_new_local
 // 
-// The function returns the following values:
-// 
-// 	- goret *TimeZone 
+// see also https://docs.gtk.org/glib/func.g_time_zone_new_local.html
 //
-// Creates a #GTimeZone corresponding to local time.  The local time
-// zone may change between invocations to this function; for example,
-// if the system administrator changes it.
-// 
-// This is equivalent to calling g_time_zone_new() with the value of
-// the `TZ` environment variable (including the possibility of %NULL).
-// 
-// You should release the return value by calling g_time_zone_unref()
-// when you are done with it.
 func NewTimeZoneLocal() *TimeZone {
 	var cret *C.GTimeZone // return, full, converted
 
@@ -33631,24 +24812,8 @@ func NewTimeZoneLocal() *TimeZone {
 
 // NewTimeZoneOffset wraps g_time_zone_new_offset
 // 
-// The function takes the following parameters:
-// 
-// 	- seconds int32: offset to UTC, in seconds 
-// 
-// The function returns the following values:
-// 
-// 	- goret *TimeZone 
+// see also https://docs.gtk.org/glib/func.g_time_zone_new_offset.html
 //
-// Creates a #GTimeZone corresponding to the given constant offset from UTC,
-// in seconds.
-// 
-// This is equivalent to calling g_time_zone_new() with a string in the form
-// `[+|-]hh[:mm[:ss]]`.
-// 
-// It is possible for this function to fail if @seconds is too big (greater than
-// 24 hours), in which case this function will return the UTC timezone for
-// backwards compatibility. To detect failures like this, use
-// g_time_zone_new_identifier() directly.
 func NewTimeZoneOffset(seconds int32) *TimeZone {
 	var carg1 C.gint32     // in, none, casted
 	var cret  *C.GTimeZone // return, full, converted
@@ -33667,17 +24832,8 @@ func NewTimeZoneOffset(seconds int32) *TimeZone {
 
 // NewTimeZoneUtc wraps g_time_zone_new_utc
 // 
-// The function returns the following values:
-// 
-// 	- goret *TimeZone 
+// see also https://docs.gtk.org/glib/func.g_time_zone_new_utc.html
 //
-// Creates a #GTimeZone corresponding to UTC.
-// 
-// This is equivalent to calling g_time_zone_new() with a value like
-// "Z", "UTC", "+00", etc.
-// 
-// You should release the return value by calling g_time_zone_unref()
-// when you are done with it.
 func NewTimeZoneUtc() *TimeZone {
 	var cret *C.GTimeZone // return, full, converted
 
@@ -33692,33 +24848,8 @@ func NewTimeZoneUtc() *TimeZone {
 
 // FindInterval wraps g_time_zone_find_interval
 // 
-// The function takes the following parameters:
-// 
-// 	- typ TimeType: the #GTimeType of @time_ 
-// 	- time int64: a number of seconds since January 1, 1970 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_time_zone_find_interval.g_time_zone_find_interval.html
 //
-// Finds an interval within @tz that corresponds to the given @time_.
-// The meaning of @time_ depends on @type.
-// 
-// If @type is %G_TIME_TYPE_UNIVERSAL then this function will always
-// succeed (since universal time is monotonic and continuous).
-// 
-// Otherwise @time_ is treated as local time.  The distinction between
-// %G_TIME_TYPE_STANDARD and %G_TIME_TYPE_DAYLIGHT is ignored except in
-// the case that the given @time_ is ambiguous.  In Toronto, for example,
-// 01:30 on November 7th 2010 occurred twice (once inside of daylight
-// savings time and the next, an hour later, outside of daylight savings
-// time).  In this case, the different value of @type would result in a
-// different interval being returned.
-// 
-// It is still possible for this function to fail.  In Toronto, for
-// example, 02:00 on March 14th 2010 does not exist (due to the leap
-// forward to begin daylight savings time).  -1 is returned in that
-// case.
 func (tz *TimeZone) FindInterval(typ TimeType, time int64) int32 {
 	var carg0 *C.GTimeZone // in, none, converted
 	var carg1 C.GTimeType  // in, none, casted
@@ -33743,20 +24874,8 @@ func (tz *TimeZone) FindInterval(typ TimeType, time int64) int32 {
 
 // GetAbbreviation wraps g_time_zone_get_abbreviation
 // 
-// The function takes the following parameters:
-// 
-// 	- interval int32: an interval within the timezone 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_time_zone_get_abbreviation.g_time_zone_get_abbreviation.html
 //
-// Determines the time zone abbreviation to be used during a particular
-// @interval of time in the time zone @tz.
-// 
-// For example, in Toronto this is currently "EST" during the winter
-// months and "EDT" during the summer months when daylight savings time
-// is in effect.
 func (tz *TimeZone) GetAbbreviation(interval int32) string {
 	var carg0 *C.GTimeZone // in, none, converted
 	var carg1 C.gint       // in, none, casted
@@ -33778,18 +24897,8 @@ func (tz *TimeZone) GetAbbreviation(interval int32) string {
 
 // GetIdentifier wraps g_time_zone_get_identifier
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_time_zone_get_identifier.g_time_zone_get_identifier.html
 //
-// Get the identifier of this #GTimeZone, as passed to g_time_zone_new().
-// If the identifier passed at construction time was not recognised, `UTC` will
-// be returned. If it was %NULL, the identifier of the local timezone at
-// construction time will be returned.
-// 
-// The identifier will be returned in the same format as provided at
-// construction time: if provided as a time offset, that will be returned by
-// this function.
 func (tz *TimeZone) GetIdentifier() string {
 	var carg0 *C.GTimeZone // in, none, converted
 	var cret  *C.gchar     // return, none, string
@@ -33808,20 +24917,8 @@ func (tz *TimeZone) GetIdentifier() string {
 
 // GetOffset wraps g_time_zone_get_offset
 // 
-// The function takes the following parameters:
-// 
-// 	- interval int32: an interval within the timezone 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_time_zone_get_offset.g_time_zone_get_offset.html
 //
-// Determines the offset to UTC in effect during a particular @interval
-// of time in the time zone @tz.
-// 
-// The offset is the number of seconds that you add to UTC time to
-// arrive at local time for @tz (ie: negative numbers for time zones
-// west of GMT, positive numbers for east).
 func (tz *TimeZone) GetOffset(interval int32) int32 {
 	var carg0 *C.GTimeZone // in, none, converted
 	var carg1 C.gint       // in, none, casted
@@ -33843,16 +24940,8 @@ func (tz *TimeZone) GetOffset(interval int32) int32 {
 
 // IsDst wraps g_time_zone_is_dst
 // 
-// The function takes the following parameters:
-// 
-// 	- interval int32: an interval within the timezone 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_time_zone_is_dst.g_time_zone_is_dst.html
 //
-// Determines if daylight savings time is in effect during a particular
-// @interval of time in the time zone @tz.
 func (tz *TimeZone) IsDst(interval int32) bool {
 	var carg0 *C.GTimeZone // in, none, converted
 	var carg1 C.gint       // in, none, casted
@@ -33875,12 +24964,9 @@ func (tz *TimeZone) IsDst(interval int32) bool {
 }
 
 // Timer wraps GTimer
-//
-// `GTimer` records a start time, and counts microseconds elapsed since
-// that time.
 // 
-// This is done somewhat differently on different platforms, and can be
-// tricky to get exactly right, so `GTimer` provides a portable/convenient interface.
+// see also https://docs.gtk.org/glib/struct.Timer.html
+//
 type Timer struct {
 	*timer
 }
@@ -33960,10 +25046,9 @@ func UnsafeTimerToGlibFull(t *Timer) unsafe.Pointer {
 }
 
 // Continue wraps g_timer_continue
+// 
+// see also https://docs.gtk.org/glib/method.g_timer_continue.g_timer_continue.html
 //
-// Resumes a timer that has previously been stopped with
-// g_timer_stop(). g_timer_stop() must be called before using this
-// function.
 func (timer *Timer) Continue() {
 	var carg0 *C.GTimer // in, none, converted
 
@@ -33975,22 +25060,8 @@ func (timer *Timer) Continue() {
 
 // Elapsed wraps g_timer_elapsed
 // 
-// The function takes the following parameters:
-// 
-// 	- microseconds *uint32: return location for the fractional part of seconds
-//                elapsed, in microseconds (that is, the total number
-//                of microseconds elapsed, modulo 1000000), or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret float64 
+// see also https://docs.gtk.org/glib/method.g_timer_elapsed.g_timer_elapsed.html
 //
-// If @timer has been started but not stopped, obtains the time since
-// the timer was started. If @timer has been stopped, obtains the
-// elapsed time between the time it was started and the time it was
-// stopped. The return value is the number of seconds elapsed,
-// including any fractional part. The @microseconds out parameter is
-// essentially useless.
 func (timer *Timer) Elapsed(microseconds *uint32) float64 {
 	var carg0 *C.GTimer // in, none, converted
 	var carg1 *C.gulong // in, transfer: none, C Pointers: 1, Name: gulong
@@ -34014,11 +25085,8 @@ func (timer *Timer) Elapsed(microseconds *uint32) float64 {
 
 // IsActive wraps g_timer_is_active
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_timer_is_active.g_timer_is_active.html
 //
-// Exposes whether the timer is currently active.
 func (timer *Timer) IsActive() bool {
 	var carg0 *C.GTimer  // in, none, converted
 	var cret  C.gboolean // return
@@ -34038,10 +25106,9 @@ func (timer *Timer) IsActive() bool {
 }
 
 // Reset wraps g_timer_reset
+// 
+// see also https://docs.gtk.org/glib/method.g_timer_reset.g_timer_reset.html
 //
-// This function is useless; it's fine to call g_timer_start() on an
-// already-started timer to reset the start time, so g_timer_reset()
-// serves no purpose.
 func (timer *Timer) Reset() {
 	var carg0 *C.GTimer // in, none, converted
 
@@ -34052,11 +25119,9 @@ func (timer *Timer) Reset() {
 }
 
 // Start wraps g_timer_start
+// 
+// see also https://docs.gtk.org/glib/method.g_timer_start.g_timer_start.html
 //
-// Marks a start time, so that future calls to g_timer_elapsed() will
-// report the time since g_timer_start() was called. g_timer_new()
-// automatically marks the start time, so no need to call
-// g_timer_start() immediately after creating the timer.
 func (timer *Timer) Start() {
 	var carg0 *C.GTimer // in, none, converted
 
@@ -34067,9 +25132,9 @@ func (timer *Timer) Start() {
 }
 
 // Stop wraps g_timer_stop
+// 
+// see also https://docs.gtk.org/glib/method.g_timer_stop.g_timer_stop.html
 //
-// Marks an end time, so calls to g_timer_elapsed() will return the
-// difference between this end time and the start time.
 func (timer *Timer) Stop() {
 	var carg0 *C.GTimer // in, none, converted
 
@@ -34080,8 +25145,9 @@ func (timer *Timer) Stop() {
 }
 
 // TreeNode wraps GTreeNode
+// 
+// see also https://docs.gtk.org/glib/struct.TreeNode.html
 //
-// An opaque type which identifies a specific node in a #GTree.
 type TreeNode struct {
 	*treeNode
 }
@@ -34162,12 +25228,8 @@ func UnsafeTreeNodeToGlibFull(t *TreeNode) unsafe.Pointer {
 
 // Next wraps g_tree_node_next
 // 
-// The function returns the following values:
-// 
-// 	- goret *TreeNode (nullable) 
+// see also https://docs.gtk.org/glib/method.g_tree_node_next.g_tree_node_next.html
 //
-// Returns the next in-order node of the tree, or %NULL
-// if the passed node was already the last one.
 func (node *TreeNode) Next() *TreeNode {
 	var carg0 *C.GTreeNode // in, none, converted
 	var cret  *C.GTreeNode // return, none, converted, nullable
@@ -34188,12 +25250,8 @@ func (node *TreeNode) Next() *TreeNode {
 
 // Previous wraps g_tree_node_previous
 // 
-// The function returns the following values:
-// 
-// 	- goret *TreeNode (nullable) 
+// see also https://docs.gtk.org/glib/method.g_tree_node_previous.g_tree_node_previous.html
 //
-// Returns the previous in-order node of the tree, or %NULL
-// if the passed node was already the first one.
 func (node *TreeNode) Previous() *TreeNode {
 	var carg0 *C.GTreeNode // in, none, converted
 	var cret  *C.GTreeNode // return, none, converted, nullable
@@ -34213,168 +25271,9 @@ func (node *TreeNode) Previous() *TreeNode {
 }
 
 // Uri wraps GUri
+// 
+// see also https://docs.gtk.org/glib/struct.Uri.html
 //
-// The `GUri` type and related functions can be used to parse URIs into
-// their components, and build valid URIs from individual components.
-// 
-// Since `GUri` only represents absolute URIs, all `GUri`s will have a
-// URI scheme, so [method@GLib.Uri.get_scheme] will always return a non-`NULL`
-// answer. Likewise, by definition, all URIs have a path component, so
-// [method@GLib.Uri.get_path] will always return a non-`NULL` string (which may
-// be empty).
-// 
-// If the URI string has an
-// [&#x2018;authority&#x2019; component](https://tools.ietf.org/html/rfc3986#section-3) (that
-// is, if the scheme is followed by `://` rather than just `:`), then the
-// `GUri` will contain a hostname, and possibly a port and &#x2018;userinfo&#x2019;.
-// Additionally, depending on how the `GUri` was constructed/parsed (for example,
-// using the `G_URI_FLAGS_HAS_PASSWORD` and `G_URI_FLAGS_HAS_AUTH_PARAMS` flags),
-// the userinfo may be split out into a username, password, and
-// additional authorization-related parameters.
-// 
-// Normally, the components of a `GUri` will have all `%`-encoded
-// characters decoded. However, if you construct/parse a `GUri` with
-// `G_URI_FLAGS_ENCODED`, then the `%`-encoding will be preserved instead in
-// the userinfo, path, and query fields (and in the host field if also
-// created with `G_URI_FLAGS_NON_DNS`). In particular, this is necessary if
-// the URI may contain binary data or non-UTF-8 text, or if decoding
-// the components might change the interpretation of the URI.
-// 
-// For example, with the encoded flag:
-// 
-// ```c
-// g_autoptr(GUri) uri = g_uri_parse ("http://host/path?query=http%3A%2F%2Fhost%2Fpath%3Fparam%3Dvalue", G_URI_FLAGS_ENCODED, &amp;err);
-// g_assert_cmpstr (g_uri_get_query (uri), ==, "query=http%3A%2F%2Fhost%2Fpath%3Fparam%3Dvalue");
-// ```
-// 
-// While the default `%`-decoding behaviour would give:
-// 
-// ```c
-// g_autoptr(GUri) uri = g_uri_parse ("http://host/path?query=http%3A%2F%2Fhost%2Fpath%3Fparam%3Dvalue", G_URI_FLAGS_NONE, &amp;err);
-// g_assert_cmpstr (g_uri_get_query (uri), ==, "query=http://host/path?param=value");
-// ```
-// 
-// During decoding, if an invalid UTF-8 string is encountered, parsing will fail
-// with an error indicating the bad string location:
-// 
-// ```c
-// g_autoptr(GUri) uri = g_uri_parse ("http://host/path?query=http%3A%2F%2Fhost%2Fpath%3Fbad%3D%00alue", G_URI_FLAGS_NONE, &amp;err);
-// g_assert_error (err, G_URI_ERROR, G_URI_ERROR_BAD_QUERY);
-// ```
-// 
-// You should pass `G_URI_FLAGS_ENCODED` or `G_URI_FLAGS_ENCODED_QUERY` if you
-// need to handle that case manually. In particular, if the query string
-// contains `=` characters that are `%`-encoded, you should let
-// [func@GLib.Uri.parse_params] do the decoding once of the query.
-// 
-// `GUri` is immutable once constructed, and can safely be accessed from
-// multiple threads. Its reference counting is atomic.
-// 
-// Note that the scope of `GUri` is to help manipulate URIs in various applications,
-// following [RFC 3986](https://tools.ietf.org/html/rfc3986). In particular,
-// it doesn't intend to cover web browser needs, and doesn&#x2019;t implement the
-// [WHATWG URL](https://url.spec.whatwg.org/) standard. No APIs are provided to
-// help prevent
-// [homograph attacks](https://en.wikipedia.org/wiki/IDN_homograph_attack), so
-// `GUri` is not suitable for formatting URIs for display to the user for making
-// security-sensitive decisions.
-// 
-// ## Relative and absolute URIs
-// 
-// As defined in [RFC 3986](https://tools.ietf.org/html/rfc3986#section-4), the
-// hierarchical nature of URIs means that they can either be &#x2018;relative
-// references&#x2019; (sometimes referred to as &#x2018;relative URIs&#x2019;) or &#x2018;URIs&#x2019; (for
-// clarity, &#x2018;URIs&#x2019; are referred to in this documentation as
-// &#x2018;absolute URIs&#x2019; &#x2014; although
-// [in contrast to RFC 3986](https://tools.ietf.org/html/rfc3986#section-4.3),
-// fragment identifiers are always allowed).
-// 
-// Relative references have one or more components of the URI missing. In
-// particular, they have no scheme. Any other component, such as hostname,
-// query, etc. may be missing, apart from a path, which has to be specified (but
-// may be empty). The path may be relative, starting with `./` rather than `/`.
-// 
-// For example, a valid relative reference is `./path?query`,
-// `/?query#fragment` or `//example.com`.
-// 
-// Absolute URIs have a scheme specified. Any other components of the URI which
-// are missing are specified as explicitly unset in the URI, rather than being
-// resolved relative to a base URI using [method@GLib.Uri.parse_relative].
-// 
-// For example, a valid absolute URI is `file:///home/bob` or
-// `https://search.com?query=string`.
-// 
-// A `GUri` instance is always an absolute URI. A string may be an absolute URI
-// or a relative reference; see the documentation for individual functions as to
-// what forms they accept.
-// 
-// ## Parsing URIs
-// 
-// The most minimalist APIs for parsing URIs are [func@GLib.Uri.split] and
-// [func@GLib.Uri.split_with_user]. These split a URI into its component
-// parts, and return the parts; the difference between the two is that
-// [func@GLib.Uri.split] treats the &#x2018;userinfo&#x2019; component of the URI as a
-// single element, while [func@GLib.Uri.split_with_user] can (depending on the
-// [flags@GLib.UriFlags] you pass) treat it as containing a username, password,
-// and authentication parameters. Alternatively, [func@GLib.Uri.split_network]
-// can be used when you are only interested in the components that are
-// needed to initiate a network connection to the service (scheme,
-// host, and port).
-// 
-// [func@GLib.Uri.parse] is similar to [func@GLib.Uri.split], but instead of
-// returning individual strings, it returns a `GUri` structure (and it requires
-// that the URI be an absolute URI).
-// 
-// [func@GLib.Uri.resolve_relative] and [method@GLib.Uri.parse_relative] allow
-// you to resolve a relative URI relative to a base URI.
-// [func@GLib.Uri.resolve_relative] takes two strings and returns a string,
-// and [method@GLib.Uri.parse_relative] takes a `GUri` and a string and returns a
-// `GUri`.
-// 
-// All of the parsing functions take a [flags@GLib.UriFlags] argument describing
-// exactly how to parse the URI; see the documentation for that type
-// for more details on the specific flags that you can pass. If you
-// need to choose different flags based on the type of URI, you can
-// use [func@GLib.Uri.peek_scheme] on the URI string to check the scheme
-// first, and use that to decide what flags to parse it with.
-// 
-// For example, you might want to use `G_URI_PARAMS_WWW_FORM` when parsing the
-// params for a web URI, so compare the result of [func@GLib.Uri.peek_scheme]
-// against `http` and `https`.
-// 
-// ## Building URIs
-// 
-// [func@GLib.Uri.join] and [func@GLib.Uri.join_with_user] can be used to construct
-// valid URI strings from a set of component strings. They are the
-// inverse of [func@GLib.Uri.split] and [func@GLib.Uri.split_with_user].
-// 
-// Similarly, [func@GLib.Uri.build] and [func@GLib.Uri.build_with_user] can be
-// used to construct a `GUri` from a set of component strings.
-// 
-// As with the parsing functions, the building functions take a
-// [flags@GLib.UriFlags] argument. In particular, it is important to keep in mind
-// whether the URI components you are using are already `%`-encoded. If so,
-// you must pass the `G_URI_FLAGS_ENCODED` flag.
-// 
-// ## `file://` URIs
-// 
-// Note that Windows and Unix both define special rules for parsing
-// `file://` URIs (involving non-UTF-8 character sets on Unix, and the
-// interpretation of path separators on Windows). `GUri` does not
-// implement these rules. Use [func@GLib.filename_from_uri] and
-// [func@GLib.filename_to_uri] if you want to properly convert between
-// `file://` URIs and local filenames.
-// 
-// ## URI Equality
-// 
-// Note that there is no `g_uri_equal ()` function, because comparing
-// URIs usefully requires scheme-specific knowledge that `GUri` does
-// not have. `GUri` can help with normalization if you use the various
-// encoded [flags@GLib.UriFlags] as well as `G_URI_FLAGS_SCHEME_NORMALIZE`
-// however it is not comprehensive.
-// For example, `data:,foo` and `data:;base64,Zm9v` resolve to the same
-// thing according to the `data:` URI specification which GLib does not
-// handle.
 type Uri struct {
 	*uri
 }
@@ -34436,7 +25335,7 @@ func UnsafeUriFromGlibFull(p unsafe.Pointer) *Uri {
 // 
 // When this is called without an associated call to [Uri.UnsafeUriUnref], then [Uri] will leak memory.
 func UnsafeUriRef(u *Uri) {
-	C.g_uri_ref(u.native)
+	C.g_uri_ref((*C.GUri)(u.native))
 }
 
 // UnsafeUriUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -34468,25 +25367,8 @@ func UnsafeUriToGlibFull(u *Uri) unsafe.Pointer {
 
 // UriBuild wraps g_uri_build
 // 
-// The function takes the following parameters:
-// 
-// 	- flags UriFlags: flags describing how to build the #GUri 
-// 	- scheme string: the URI scheme 
-// 	- userinfo string (nullable): the userinfo component, or %NULL 
-// 	- host string (nullable): the host component, or %NULL 
-// 	- port int32: the port, or `-1` 
-// 	- path string: the path component 
-// 	- query string (nullable): the query component, or %NULL 
-// 	- fragment string (nullable): the fragment, or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Uri 
+// see also https://docs.gtk.org/glib/func.g_uri_build.html
 //
-// Creates a new #GUri from the given components according to @flags.
-// 
-// See also g_uri_build_with_user(), which allows specifying the
-// components of the "userinfo" separately.
 func UriBuild(flags UriFlags, scheme string, userinfo string, host string, port int32, path string, query string, fragment string) *Uri {
 	var carg1 C.GUriFlags // in, none, casted
 	var carg2 *C.gchar    // in, none, string
@@ -34540,31 +25422,8 @@ func UriBuild(flags UriFlags, scheme string, userinfo string, host string, port 
 
 // UriBuildWithUser wraps g_uri_build_with_user
 // 
-// The function takes the following parameters:
-// 
-// 	- flags UriFlags: flags describing how to build the #GUri 
-// 	- scheme string: the URI scheme 
-// 	- user string (nullable): the user component of the userinfo, or %NULL 
-// 	- password string (nullable): the password component of the userinfo, or %NULL 
-// 	- authParams string (nullable): the auth params of the userinfo, or %NULL 
-// 	- host string (nullable): the host component, or %NULL 
-// 	- port int32: the port, or `-1` 
-// 	- path string: the path component 
-// 	- query string (nullable): the query component, or %NULL 
-// 	- fragment string (nullable): the fragment, or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Uri 
+// see also https://docs.gtk.org/glib/func.g_uri_build_with_user.html
 //
-// Creates a new #GUri from the given components according to @flags
-// (%G_URI_FLAGS_HAS_PASSWORD is added unconditionally). The @flags must be
-// coherent with the passed values, in particular use `%`-encoded values with
-// %G_URI_FLAGS_ENCODED.
-// 
-// In contrast to g_uri_build(), this allows specifying the components
-// of the &#x2018;userinfo&#x2019; field separately. Note that @user must be non-%NULL
-// if either @password or @auth_params is non-%NULL.
 func UriBuildWithUser(flags UriFlags, scheme string, user string, password string, authParams string, host string, port int32, path string, query string, fragment string) *Uri {
 	var carg1  C.GUriFlags // in, none, casted
 	var carg2  *C.gchar    // in, none, string
@@ -34630,9 +25489,7 @@ func UriBuildWithUser(flags UriFlags, scheme string, user string, password strin
 
 // UriErrorQuark wraps g_uri_error_quark
 // 
-// The function returns the following values:
-// 
-// 	- goret Quark 
+// see also https://docs.gtk.org/glib/func.g_uri_error_quark.html
 func UriErrorQuark() Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -34647,27 +25504,8 @@ func UriErrorQuark() Quark {
 
 // UriEscapeBytes wraps g_uri_escape_bytes
 // 
-// The function takes the following parameters:
-// 
-// 	- unescaped []uint8: the unescaped input data. 
-// 	- reservedCharsAllowed string (nullable): a string of reserved
-//   characters that are allowed to be used, or %NULL. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_uri_escape_bytes.html
 //
-// Escapes arbitrary data for use in a URI.
-// 
-// Normally all characters that are not &#x2018;unreserved&#x2019; (i.e. ASCII
-// alphanumerical characters plus dash, dot, underscore and tilde) are
-// escaped. But if you specify characters in @reserved_chars_allowed
-// they are not escaped. This is useful for the &#x2018;reserved&#x2019; characters
-// in the URI specification, since those are allowed unescaped in some
-// portions of a URI.
-// 
-// Though technically incorrect, this will also allow escaping nul
-// bytes as `%``00`.
 func UriEscapeBytes(unescaped []uint8, reservedCharsAllowed string) string {
 	var carg1 *C.guint8 // in, transfer: none, C Pointers: 1, Name: array[guint8], array (inner guint8 (*typesystem.CastablePrimitive), length-by: carg2)
 	var carg2 C.gsize   // implicit
@@ -34697,25 +25535,8 @@ func UriEscapeBytes(unescaped []uint8, reservedCharsAllowed string) string {
 
 // UriEscapeString wraps g_uri_escape_string
 // 
-// The function takes the following parameters:
-// 
-// 	- unescaped string: the unescaped input string. 
-// 	- reservedCharsAllowed string (nullable): a string of reserved
-//   characters that are allowed to be used, or %NULL. 
-// 	- allowUtf8 bool: %TRUE if the result can include UTF-8 characters. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_uri_escape_string.html
 //
-// Escapes a string for use in a URI.
-// 
-// Normally all characters that are not "unreserved" (i.e. ASCII
-// alphanumerical characters plus dash, dot, underscore and tilde) are
-// escaped. But if you specify characters in @reserved_chars_allowed
-// they are not escaped. This is useful for the "reserved" characters
-// in the URI specification, since those are allowed unescaped in some
-// portions of a URI.
 func UriEscapeString(unescaped string, reservedCharsAllowed string, allowUtf8 bool) string {
 	var carg1 *C.char    // in, none, string
 	var carg2 *C.char    // in, none, string, nullable-string
@@ -34747,24 +25568,8 @@ func UriEscapeString(unescaped string, reservedCharsAllowed string, allowUtf8 bo
 
 // UriIsValid wraps g_uri_is_valid
 // 
-// The function takes the following parameters:
-// 
-// 	- uriString string: a string containing an absolute URI 
-// 	- flags UriFlags: flags for parsing @uri_string 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_uri_is_valid.html
 //
-// Parses @uri_string according to @flags, to determine whether it is a valid
-// [absolute URI](#relative-and-absolute-uris), i.e. it does not need to be resolved
-// relative to another URI using g_uri_parse_relative().
-// 
-// If it&#x2019;s not a valid URI, an error is returned explaining how it&#x2019;s invalid.
-// 
-// See g_uri_split(), and the definition of #GUriFlags, for more
-// information on the effect of @flags.
 func UriIsValid(uriString string, flags UriFlags) (bool, error) {
 	var carg1 *C.gchar    // in, none, string
 	var carg2 C.GUriFlags // in, none, casted
@@ -34794,35 +25599,8 @@ func UriIsValid(uriString string, flags UriFlags) (bool, error) {
 
 // UriJoin wraps g_uri_join
 // 
-// The function takes the following parameters:
-// 
-// 	- flags UriFlags: flags describing how to build the URI string 
-// 	- scheme string (nullable): the URI scheme, or %NULL 
-// 	- userinfo string (nullable): the userinfo component, or %NULL 
-// 	- host string (nullable): the host component, or %NULL 
-// 	- port int32: the port, or `-1` 
-// 	- path string: the path component 
-// 	- query string (nullable): the query component, or %NULL 
-// 	- fragment string (nullable): the fragment, or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_uri_join.html
 //
-// Joins the given components together according to @flags to create
-// an absolute URI string. @path may not be %NULL (though it may be the empty
-// string).
-// 
-// When @host is present, @path must either be empty or begin with a slash (`/`)
-// character. When @host is not present, @path cannot begin with two slash
-// characters (`//`). See
-// [RFC 3986, section 3](https://tools.ietf.org/html/rfc3986#section-3).
-// 
-// See also g_uri_join_with_user(), which allows specifying the
-// components of the &#x2018;userinfo&#x2019; separately.
-// 
-// %G_URI_FLAGS_HAS_PASSWORD and %G_URI_FLAGS_HAS_AUTH_PARAMS are ignored if set
-// in @flags.
 func UriJoin(flags UriFlags, scheme string, userinfo string, host string, port int32, path string, query string, fragment string) string {
 	var carg1 C.GUriFlags // in, none, casted
 	var carg2 *C.gchar    // in, none, string, nullable-string
@@ -34879,34 +25657,8 @@ func UriJoin(flags UriFlags, scheme string, userinfo string, host string, port i
 
 // UriJoinWithUser wraps g_uri_join_with_user
 // 
-// The function takes the following parameters:
-// 
-// 	- flags UriFlags: flags describing how to build the URI string 
-// 	- scheme string (nullable): the URI scheme, or %NULL 
-// 	- user string (nullable): the user component of the userinfo, or %NULL 
-// 	- password string (nullable): the password component of the userinfo, or
-//   %NULL 
-// 	- authParams string (nullable): the auth params of the userinfo, or
-//   %NULL 
-// 	- host string (nullable): the host component, or %NULL 
-// 	- port int32: the port, or `-1` 
-// 	- path string: the path component 
-// 	- query string (nullable): the query component, or %NULL 
-// 	- fragment string (nullable): the fragment, or %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/func.g_uri_join_with_user.html
 //
-// Joins the given components together according to @flags to create
-// an absolute URI string. @path may not be %NULL (though it may be the empty
-// string).
-// 
-// In contrast to g_uri_join(), this allows specifying the components
-// of the &#x2018;userinfo&#x2019; separately. It otherwise behaves the same.
-// 
-// %G_URI_FLAGS_HAS_PASSWORD and %G_URI_FLAGS_HAS_AUTH_PARAMS are ignored if set
-// in @flags.
 func UriJoinWithUser(flags UriFlags, scheme string, user string, password string, authParams string, host string, port int32, path string, query string, fragment string) string {
 	var carg1  C.GUriFlags // in, none, casted
 	var carg2  *C.gchar    // in, none, string, nullable-string
@@ -34975,17 +25727,8 @@ func UriJoinWithUser(flags UriFlags, scheme string, user string, password string
 
 // UriListExtractUris wraps g_uri_list_extract_uris
 // 
-// The function takes the following parameters:
-// 
-// 	- uriList string: an URI list 
-// 
-// The function returns the following values:
-// 
-// 	- goret []string 
+// see also https://docs.gtk.org/glib/func.g_uri_list_extract_uris.html
 //
-// Splits an URI list conforming to the text/uri-list
-// mime type defined in RFC 2483 into individual URIs,
-// discarding any comments. The URIs are not validated.
 func UriListExtractUris(uriList string) []string {
 	var carg1 *C.gchar  // in, none, string
 	var cret  **C.gchar // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -35007,19 +25750,8 @@ func UriListExtractUris(uriList string) []string {
 
 // UriParse wraps g_uri_parse
 // 
-// The function takes the following parameters:
-// 
-// 	- uriString string: a string representing an absolute URI 
-// 	- flags UriFlags: flags describing how to parse @uri_string 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Uri 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_uri_parse.html
 //
-// Parses @uri_string according to @flags. If the result is not a
-// valid [absolute URI](#relative-and-absolute-uris), it will be discarded, and an
-// error returned.
 func UriParse(uriString string, flags UriFlags) (*Uri, error) {
 	var carg1 *C.gchar    // in, none, string
 	var carg2 C.GUriFlags // in, none, casted
@@ -35047,21 +25779,8 @@ func UriParse(uriString string, flags UriFlags) (*Uri, error) {
 
 // UriParseScheme wraps g_uri_parse_scheme
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_uri_parse_scheme.html
 //
-// Gets the scheme portion of a URI string.
-// [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3) decodes the scheme
-// as:
-// |[
-// URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]
-// ]|
-// Common schemes include `file`, `https`, `svn+ssh`, etc.
 func UriParseScheme(uri string) string {
 	var carg1 *C.char // in, none, string
 	var cret  *C.char // return, full, string, nullable-string
@@ -35084,24 +25803,8 @@ func UriParseScheme(uri string) string {
 
 // UriPeekScheme wraps g_uri_peek_scheme
 // 
-// The function takes the following parameters:
-// 
-// 	- uri string: a valid URI. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_uri_peek_scheme.html
 //
-// Gets the scheme portion of a URI string.
-// [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3) decodes the scheme
-// as:
-// |[
-// URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]
-// ]|
-// Common schemes include `file`, `https`, `svn+ssh`, etc.
-// 
-// Unlike g_uri_parse_scheme(), the returned scheme is normalized to
-// all-lowercase and does not need to be freed.
 func UriPeekScheme(uri string) string {
 	var carg1 *C.char // in, none, string
 	var cret  *C.char // return, none, string, nullable-string
@@ -35123,24 +25826,8 @@ func UriPeekScheme(uri string) string {
 
 // UriResolveRelative wraps g_uri_resolve_relative
 // 
-// The function takes the following parameters:
-// 
-// 	- baseUriString string (nullable): a string representing a base URI 
-// 	- uriRef string: a string representing a relative or absolute URI 
-// 	- flags UriFlags: flags describing how to parse @uri_ref 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_uri_resolve_relative.html
 //
-// Parses @uri_ref according to @flags and, if it is a
-// [relative URI](#relative-and-absolute-uris), resolves it relative to
-// @base_uri_string. If the result is not a valid absolute URI, it will be
-// discarded, and an error returned.
-// 
-// (If @base_uri_string is %NULL, this just returns @uri_ref, or
-// %NULL if @uri_ref is invalid or not absolute.)
 func UriResolveRelative(baseUriString string, uriRef string, flags UriFlags) (string, error) {
 	var carg1 *C.gchar    // in, none, string, nullable-string
 	var carg2 *C.gchar    // in, none, string
@@ -35175,46 +25862,8 @@ func UriResolveRelative(baseUriString string, uriRef string, flags UriFlags) (st
 
 // UriSplit wraps g_uri_split
 // 
-// The function takes the following parameters:
-// 
-// 	- uriRef string: a string containing a relative or absolute URI 
-// 	- flags UriFlags: flags for parsing @uri_ref 
-// 
-// The function returns the following values:
-// 
-// 	- scheme string (nullable): on return, contains
-//    the scheme (converted to lowercase), or %NULL 
-// 	- userinfo string (nullable): on return, contains
-//    the userinfo, or %NULL 
-// 	- host string (nullable): on return, contains the
-//    host, or %NULL 
-// 	- port int32: on return, contains the
-//    port, or `-1` 
-// 	- path string: on return, contains the
-//    path 
-// 	- query string (nullable): on return, contains the
-//    query, or %NULL 
-// 	- fragment string (nullable): on return, contains
-//    the fragment, or %NULL 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_uri_split.html
 //
-// Parses @uri_ref (which can be an
-// [absolute or relative URI](#relative-and-absolute-uris)) according to @flags, and
-// returns the pieces. Any component that doesn't appear in @uri_ref will be
-// returned as %NULL (but note that all URIs always have a path component,
-// though it may be the empty string).
-// 
-// If @flags contains %G_URI_FLAGS_ENCODED, then `%`-encoded characters in
-// @uri_ref will remain encoded in the output strings. (If not,
-// then all such characters will be decoded.) Note that decoding will
-// only work if the URI components are ASCII or UTF-8, so you will
-// need to use %G_URI_FLAGS_ENCODED if they are not.
-// 
-// Note that the %G_URI_FLAGS_HAS_PASSWORD and
-// %G_URI_FLAGS_HAS_AUTH_PARAMS @flags are ignored by g_uri_split(),
-// since it always returns only the full userinfo; use
-// g_uri_split_with_user() if you want it split up.
 func UriSplit(uriRef string, flags UriFlags) (string, string, string, int32, string, string, string, bool, error) {
 	var carg1 *C.gchar    // in, none, string
 	var carg2 C.GUriFlags // in, none, casted
@@ -35281,28 +25930,8 @@ func UriSplit(uriRef string, flags UriFlags) (string, string, string, int32, str
 
 // UriSplitNetwork wraps g_uri_split_network
 // 
-// The function takes the following parameters:
-// 
-// 	- uriString string: a string containing an absolute URI 
-// 	- flags UriFlags: flags for parsing @uri_string 
-// 
-// The function returns the following values:
-// 
-// 	- scheme string (nullable): on return, contains
-//    the scheme (converted to lowercase), or %NULL 
-// 	- host string (nullable): on return, contains the
-//    host, or %NULL 
-// 	- port int32: on return, contains the
-//    port, or `-1` 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_uri_split_network.html
 //
-// Parses @uri_string (which must be an [absolute URI](#relative-and-absolute-uris))
-// according to @flags, and returns the pieces relevant to connecting to a host.
-// See the documentation for g_uri_split() for more details; this is
-// mostly a wrapper around that function with simpler arguments.
-// However, it will return an error if @uri_string is a relative URI,
-// or does not contain a hostname component.
 func UriSplitNetwork(uriString string, flags UriFlags) (string, string, int32, bool, error) {
 	var carg1 *C.gchar    // in, none, string
 	var carg2 C.GUriFlags // in, none, casted
@@ -35347,45 +25976,8 @@ func UriSplitNetwork(uriString string, flags UriFlags) (string, string, int32, b
 
 // UriSplitWithUser wraps g_uri_split_with_user
 // 
-// The function takes the following parameters:
-// 
-// 	- uriRef string: a string containing a relative or absolute URI 
-// 	- flags UriFlags: flags for parsing @uri_ref 
-// 
-// The function returns the following values:
-// 
-// 	- scheme string (nullable): on return, contains
-//    the scheme (converted to lowercase), or %NULL 
-// 	- user string (nullable): on return, contains
-//    the user, or %NULL 
-// 	- password string (nullable): on return, contains
-//    the password, or %NULL 
-// 	- authParams string (nullable): on return, contains
-//    the auth_params, or %NULL 
-// 	- host string (nullable): on return, contains the
-//    host, or %NULL 
-// 	- port int32: on return, contains the
-//    port, or `-1` 
-// 	- path string: on return, contains the
-//    path 
-// 	- query string (nullable): on return, contains the
-//    query, or %NULL 
-// 	- fragment string (nullable): on return, contains
-//    the fragment, or %NULL 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_uri_split_with_user.html
 //
-// Parses @uri_ref (which can be an
-// [absolute or relative URI](#relative-and-absolute-uris)) according to @flags, and
-// returns the pieces. Any component that doesn't appear in @uri_ref will be
-// returned as %NULL (but note that all URIs always have a path component,
-// though it may be the empty string).
-// 
-// See g_uri_split(), and the definition of #GUriFlags, for more
-// information on the effect of @flags. Note that @password will only
-// be parsed out if @flags contains %G_URI_FLAGS_HAS_PASSWORD, and
-// @auth_params will only be parsed out if @flags contains
-// %G_URI_FLAGS_HAS_AUTH_PARAMS.
 func UriSplitWithUser(uriRef string, flags UriFlags) (string, string, string, string, string, int32, string, string, string, bool, error) {
 	var carg1  *C.gchar    // in, none, string
 	var carg2  C.GUriFlags // in, none, casted
@@ -35464,29 +26056,8 @@ func UriSplitWithUser(uriRef string, flags UriFlags) (string, string, string, st
 
 // UriUnescapeBytes wraps g_uri_unescape_bytes
 // 
-// The function takes the following parameters:
-// 
-// 	- escapedString string: A URI-escaped string 
-// 	- length int: the length (in bytes) of @escaped_string to escape, or `-1` if it
-//   is nul-terminated. 
-// 	- illegalCharacters string (nullable): a string of illegal characters
-//   not to be allowed, or %NULL. 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Bytes 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/func.g_uri_unescape_bytes.html
 //
-// Unescapes a segment of an escaped string as binary data.
-// 
-// Note that in contrast to g_uri_unescape_string(), this does allow
-// nul bytes to appear in the output.
-// 
-// If any of the characters in @illegal_characters appears as an escaped
-// character in @escaped_string, then that is an error and %NULL will be
-// returned. This is useful if you want to avoid for instance having a slash
-// being expanded in an escaped path element, which might confuse pathname
-// handling.
 func UriUnescapeBytes(escapedString string, length int, illegalCharacters string) (*Bytes, error) {
 	var carg1 *C.char   // in, none, string
 	var carg2 C.gssize  // in, none, casted
@@ -35520,28 +26091,8 @@ func UriUnescapeBytes(escapedString string, length int, illegalCharacters string
 
 // UriUnescapeSegment wraps g_uri_unescape_segment
 // 
-// The function takes the following parameters:
-// 
-// 	- escapedString string (nullable): A string, may be %NULL 
-// 	- escapedStringEnd string (nullable): Pointer to end of @escaped_string,
-//   may be %NULL 
-// 	- illegalCharacters string (nullable): An optional string of illegal
-//   characters not to be allowed, may be %NULL 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_uri_unescape_segment.html
 //
-// Unescapes a segment of an escaped string.
-// 
-// If any of the characters in @illegal_characters or the NUL
-// character appears as an escaped character in @escaped_string, then
-// that is an error and %NULL will be returned. This is useful if you
-// want to avoid for instance having a slash being expanded in an
-// escaped path element, which might confuse pathname handling.
-// 
-// Note: `NUL` byte is not accepted in the output, in contrast to
-// g_uri_unescape_bytes().
 func UriUnescapeSegment(escapedString string, escapedStringEnd string, illegalCharacters string) string {
 	var carg1 *C.char // in, none, string, nullable-string
 	var carg2 *C.char // in, none, string, nullable-string
@@ -35578,23 +26129,8 @@ func UriUnescapeSegment(escapedString string, escapedStringEnd string, illegalCh
 
 // UriUnescapeString wraps g_uri_unescape_string
 // 
-// The function takes the following parameters:
-// 
-// 	- escapedString string: an escaped string to be unescaped. 
-// 	- illegalCharacters string (nullable): a string of illegal characters
-//   not to be allowed, or %NULL. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/func.g_uri_unescape_string.html
 //
-// Unescapes a whole escaped string.
-// 
-// If any of the characters in @illegal_characters or the NUL
-// character appears as an escaped character in @escaped_string, then
-// that is an error and %NULL will be returned. This is useful if you
-// want to avoid for instance having a slash being expanded in an
-// escaped path element, which might confuse pathname handling.
 func UriUnescapeString(escapedString string, illegalCharacters string) string {
 	var carg1 *C.char // in, none, string
 	var carg2 *C.char // in, none, string, nullable-string
@@ -35623,17 +26159,8 @@ func UriUnescapeString(escapedString string, illegalCharacters string) string {
 
 // GetAuthParams wraps g_uri_get_auth_params
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_uri_get_auth_params.g_uri_get_auth_params.html
 //
-// Gets @uri's authentication parameters, which may contain
-// `%`-encoding, depending on the flags with which @uri was created.
-// (If @uri was not created with %G_URI_FLAGS_HAS_AUTH_PARAMS then this will
-// be %NULL.)
-// 
-// Depending on the URI scheme, g_uri_parse_params() may be useful for
-// further parsing this information.
 func (uri *Uri) GetAuthParams() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -35654,11 +26181,8 @@ func (uri *Uri) GetAuthParams() string {
 
 // GetFlags wraps g_uri_get_flags
 // 
-// The function returns the following values:
-// 
-// 	- goret UriFlags 
+// see also https://docs.gtk.org/glib/method.g_uri_get_flags.g_uri_get_flags.html
 //
-// Gets @uri's flags set upon construction.
 func (uri *Uri) GetFlags() UriFlags {
 	var carg0 *C.GUri     // in, none, converted
 	var cret  C.GUriFlags // return, none, casted
@@ -35677,12 +26201,8 @@ func (uri *Uri) GetFlags() UriFlags {
 
 // GetFragment wraps g_uri_get_fragment
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_uri_get_fragment.g_uri_get_fragment.html
 //
-// Gets @uri's fragment, which may contain `%`-encoding, depending on
-// the flags with which @uri was created.
 func (uri *Uri) GetFragment() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -35703,19 +26223,8 @@ func (uri *Uri) GetFragment() string {
 
 // GetHost wraps g_uri_get_host
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_uri_get_host.g_uri_get_host.html
 //
-// Gets @uri's host. This will never have `%`-encoded characters,
-// unless it is non-UTF-8 (which can only be the case if @uri was
-// created with %G_URI_FLAGS_NON_DNS).
-// 
-// If @uri contained an IPv6 address literal, this value will be just
-// that address, without the brackets around it that are necessary in
-// the string form of the URI. Note that in this case there may also
-// be a scope ID attached to the address. Eg, `fe80::1234%``em1` (or
-// `fe80::1234%``25em1` if the string is still encoded).
 func (uri *Uri) GetHost() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -35736,13 +26245,8 @@ func (uri *Uri) GetHost() string {
 
 // GetPassword wraps g_uri_get_password
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_uri_get_password.g_uri_get_password.html
 //
-// Gets @uri's password, which may contain `%`-encoding, depending on
-// the flags with which @uri was created. (If @uri was not created
-// with %G_URI_FLAGS_HAS_PASSWORD then this will be %NULL.)
 func (uri *Uri) GetPassword() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -35763,12 +26267,8 @@ func (uri *Uri) GetPassword() string {
 
 // GetPath wraps g_uri_get_path
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_uri_get_path.g_uri_get_path.html
 //
-// Gets @uri's path, which may contain `%`-encoding, depending on the
-// flags with which @uri was created.
 func (uri *Uri) GetPath() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string
@@ -35787,11 +26287,8 @@ func (uri *Uri) GetPath() string {
 
 // GetPort wraps g_uri_get_port
 // 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/glib/method.g_uri_get_port.g_uri_get_port.html
 //
-// Gets @uri's port.
 func (uri *Uri) GetPort() int32 {
 	var carg0 *C.GUri // in, none, converted
 	var cret  C.gint  // return, none, casted
@@ -35810,15 +26307,8 @@ func (uri *Uri) GetPort() int32 {
 
 // GetQuery wraps g_uri_get_query
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_uri_get_query.g_uri_get_query.html
 //
-// Gets @uri's query, which may contain `%`-encoding, depending on the
-// flags with which @uri was created.
-// 
-// For queries consisting of a series of `name=value` parameters,
-// #GUriParamsIter or g_uri_parse_params() may be useful.
 func (uri *Uri) GetQuery() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -35839,12 +26329,8 @@ func (uri *Uri) GetQuery() string {
 
 // GetScheme wraps g_uri_get_scheme
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_uri_get_scheme.g_uri_get_scheme.html
 //
-// Gets @uri's scheme. Note that this will always be all-lowercase,
-// regardless of the string or strings that @uri was created from.
 func (uri *Uri) GetScheme() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string
@@ -35863,14 +26349,8 @@ func (uri *Uri) GetScheme() string {
 
 // GetUser wraps g_uri_get_user
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_uri_get_user.g_uri_get_user.html
 //
-// Gets the &#x2018;username&#x2019; component of @uri's userinfo, which may contain
-// `%`-encoding, depending on the flags with which @uri was created.
-// If @uri was not created with %G_URI_FLAGS_HAS_PASSWORD or
-// %G_URI_FLAGS_HAS_AUTH_PARAMS, this is the same as g_uri_get_userinfo().
 func (uri *Uri) GetUser() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -35891,12 +26371,8 @@ func (uri *Uri) GetUser() string {
 
 // GetUserinfo wraps g_uri_get_userinfo
 // 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/glib/method.g_uri_get_userinfo.g_uri_get_userinfo.html
 //
-// Gets @uri's userinfo, which may contain `%`-encoding, depending on
-// the flags with which @uri was created.
 func (uri *Uri) GetUserinfo() string {
 	var carg0 *C.GUri  // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -35917,20 +26393,8 @@ func (uri *Uri) GetUserinfo() string {
 
 // ParseRelative wraps g_uri_parse_relative
 // 
-// The function takes the following parameters:
-// 
-// 	- uriRef string: a string representing a relative or absolute URI 
-// 	- flags UriFlags: flags describing how to parse @uri_ref 
-// 
-// The function returns the following values:
-// 
-// 	- goret *Uri 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_uri_parse_relative.g_uri_parse_relative.html
 //
-// Parses @uri_ref according to @flags and, if it is a
-// [relative URI](#relative-and-absolute-uris), resolves it relative to @base_uri.
-// If the result is not a valid absolute URI, it will be discarded, and an error
-// returned.
 func (baseUri *Uri) ParseRelative(uriRef string, flags UriFlags) (*Uri, error) {
 	var carg0 *C.GUri     // in, none, converted
 	var carg1 *C.gchar    // in, none, string
@@ -35961,22 +26425,8 @@ func (baseUri *Uri) ParseRelative(uriRef string, flags UriFlags) (*Uri, error) {
 
 // String wraps g_uri_to_string
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_uri_to_string.g_uri_to_string.html
 //
-// Returns a string representing @uri.
-// 
-// This is not guaranteed to return a string which is identical to the
-// string that @uri was parsed from. However, if the source URI was
-// syntactically correct (according to RFC 3986), and it was parsed
-// with %G_URI_FLAGS_ENCODED, then g_uri_to_string() is guaranteed to return
-// a string which is at least semantically equivalent to the source
-// URI (according to RFC 3986).
-// 
-// If @uri might contain sensitive details, such as authentication parameters,
-// or private data in its query string, and the returned string is going to be
-// logged, then consider using g_uri_to_string_partial() to redact parts.
 func (uri *Uri) String() string {
 	var carg0 *C.GUri // in, none, converted
 	var cret  *C.char // return, full, string
@@ -35996,16 +26446,8 @@ func (uri *Uri) String() string {
 
 // ToStringPartial wraps g_uri_to_string_partial
 // 
-// The function takes the following parameters:
-// 
-// 	- flags UriHideFlags: flags describing what parts of @uri to hide 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_uri_to_string_partial.g_uri_to_string_partial.html
 //
-// Returns a string representing @uri, subject to the options in
-// @flags. See g_uri_to_string() and #GUriHideFlags for more details.
 func (uri *Uri) ToStringPartial(flags UriHideFlags) string {
 	var carg0 *C.GUri         // in, none, converted
 	var carg1 C.GUriHideFlags // in, none, casted
@@ -36027,16 +26469,9 @@ func (uri *Uri) ToStringPartial(flags UriHideFlags) string {
 }
 
 // UriParamsIter wraps GUriParamsIter
-//
-// Many URI schemes include one or more attribute/value pairs as part of the URI
-// value. For example `scheme://server/path?query=string&amp;is=there` has two
-// attributes &#x2013; `query=string` and `is=there` &#x2013; in its query part.
 // 
-// A #GUriParamsIter structure represents an iterator that can be used to
-// iterate over the attribute/value pairs of a URI query string. #GUriParamsIter
-// structures are typically allocated on the stack and then initialized with
-// g_uri_params_iter_init(). See the documentation for g_uri_params_iter_init()
-// for a usage example.
+// see also https://docs.gtk.org/glib/struct.UriParamsIter.html
+//
 type UriParamsIter struct {
 	*uriParamsIter
 }
@@ -36117,51 +26552,8 @@ func UnsafeUriParamsIterToGlibFull(u *UriParamsIter) unsafe.Pointer {
 
 // Init wraps g_uri_params_iter_init
 // 
-// The function takes the following parameters:
-// 
-// 	- params string: a `%`-encoded string containing `attribute=value`
-//   parameters 
-// 	- length int: the length of @params, or `-1` if it is nul-terminated 
-// 	- separators string: the separator byte character set between parameters. (usually
-//   `&amp;`, but sometimes `;` or both `&amp;;`). Note that this function works on
-//   bytes not characters, so it can't be used to delimit UTF-8 strings for
-//   anything but ASCII characters. You may pass an empty set, in which case
-//   no splitting will occur. 
-// 	- flags UriParamsFlags: flags to modify the way the parameters are handled. 
+// see also https://docs.gtk.org/glib/method.g_uri_params_iter_init.g_uri_params_iter_init.html
 //
-// Initializes an attribute/value pair iterator.
-// 
-// The iterator keeps pointers to the @params and @separators arguments, those
-// variables must thus outlive the iterator and not be modified during the
-// iteration.
-// 
-// If %G_URI_PARAMS_WWW_FORM is passed in @flags, `+` characters in the param
-// string will be replaced with spaces in the output. For example, `foo=bar+baz`
-// will give attribute `foo` with value `bar baz`. This is commonly used on the
-// web (the `https` and `http` schemes only), but is deprecated in favour of
-// the equivalent of encoding spaces as `%20`.
-// 
-// Unlike with g_uri_parse_params(), %G_URI_PARAMS_CASE_INSENSITIVE has no
-// effect if passed to @flags for g_uri_params_iter_init(). The caller is
-// responsible for doing their own case-insensitive comparisons.
-// 
-// |[&lt;!-- language="C" --&gt;
-// GUriParamsIter iter;
-// GError *error = NULL;
-// gchar *unowned_attr, *unowned_value;
-// 
-// g_uri_params_iter_init (&amp;iter, "foo=bar&amp;baz=bar&amp;Foo=frob&amp;baz=bar2", -1, "&amp;", G_URI_PARAMS_NONE);
-// while (g_uri_params_iter_next (&amp;iter, &amp;unowned_attr, &amp;unowned_value, &amp;error))
-//   {
-//     g_autofree gchar *attr = g_steal_pointer (&amp;unowned_attr);
-//     g_autofree gchar *value = g_steal_pointer (&amp;unowned_value);
-//     // do something with attr and value; this code will be called 4 times
-//     // for the params string in this example: once with attr=foo and value=bar,
-//     // then with baz/bar, then Foo/frob, then baz/bar2.
-//   }
-// if (error)
-//   // handle parsing error
-// ]|
 func (iter *UriParamsIter) Init(params string, length int, separators string, flags UriParamsFlags) {
 	var carg0 *C.GUriParamsIter // in, none, converted
 	var carg1 *C.gchar          // in, none, string
@@ -36187,24 +26579,8 @@ func (iter *UriParamsIter) Init(params string, length int, separators string, fl
 
 // Next wraps g_uri_params_iter_next
 // 
-// The function returns the following values:
-// 
-// 	- attribute string (nullable): on return, contains
-//     the attribute, or %NULL. 
-// 	- value string (nullable): on return, contains
-//     the value, or %NULL. 
-// 	- goret bool 
-// 	- _goerr error (nullable): an error 
+// see also https://docs.gtk.org/glib/method.g_uri_params_iter_next.g_uri_params_iter_next.html
 //
-// Advances @iter and retrieves the next attribute/value. %FALSE is returned if
-// an error has occurred (in which case @error is set), or if the end of the
-// iteration is reached (in which case @attribute and @value are set to %NULL
-// and the iterator becomes invalid). If %TRUE is returned,
-// g_uri_params_iter_next() may be called again to receive another
-// attribute/value pair.
-// 
-// Note that the same @attribute may be returned multiple times, since URIs
-// allow repeated attributes.
 func (iter *UriParamsIter) Next() (string, string, bool, error) {
 	var carg0 *C.GUriParamsIter // in, none, converted
 	var carg1 *C.gchar          // out, full, string, nullable-string
@@ -36241,14 +26617,9 @@ func (iter *UriParamsIter) Next() (string, string, bool, error) {
 }
 
 // VariantBuilder wraps GVariantBuilder
+// 
+// see also https://docs.gtk.org/glib/struct.VariantBuilder.html
 //
-// A utility type for constructing container-type #GVariant instances.
-// 
-// This is an opaque structure and may only be accessed using the
-// following functions.
-// 
-// #GVariantBuilder is not threadsafe in any way.  Do not attempt to
-// access it from more than one thread.
 type VariantBuilder struct {
 	*variantBuilder
 }
@@ -36310,7 +26681,7 @@ func UnsafeVariantBuilderFromGlibFull(p unsafe.Pointer) *VariantBuilder {
 // 
 // When this is called without an associated call to [VariantBuilder.UnsafeVariantBuilderUnref], then [VariantBuilder] will leak memory.
 func UnsafeVariantBuilderRef(v *VariantBuilder) {
-	C.g_variant_builder_ref(v.native)
+	C.g_variant_builder_ref((*C.GVariantBuilder)(v.native))
 }
 
 // UnsafeVariantBuilderUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -36342,23 +26713,8 @@ func UnsafeVariantBuilderToGlibFull(v *VariantBuilder) unsafe.Pointer {
 
 // NewVariantBuilder wraps g_variant_builder_new
 // 
-// The function takes the following parameters:
-// 
-// 	- typ *VariantType: a container type 
-// 
-// The function returns the following values:
-// 
-// 	- goret *VariantBuilder 
+// see also https://docs.gtk.org/glib/func.g_variant_builder_new.html
 //
-// Allocates and initialises a new #GVariantBuilder.
-// 
-// You should call g_variant_builder_unref() on the return value when it
-// is no longer needed.  The memory will not be automatically freed by
-// any other call.
-// 
-// In most cases it is easier to place a #GVariantBuilder directly on
-// the stack of the calling function and initialise it with
-// g_variant_builder_init_static().
 func NewVariantBuilder(typ *VariantType) *VariantBuilder {
 	var carg1 *C.GVariantType    // in, none, converted
 	var cret  *C.GVariantBuilder // return, full, converted
@@ -36376,13 +26732,9 @@ func NewVariantBuilder(typ *VariantType) *VariantBuilder {
 }
 
 // Close wraps g_variant_builder_close
-//
-// Closes the subcontainer inside the given @builder that was opened by
-// the most recent call to g_variant_builder_open().
 // 
-// It is an error to call this function in any way that would create an
-// inconsistent value to be constructed (ie: too few values added to the
-// subcontainer).
+// see also https://docs.gtk.org/glib/method.g_variant_builder_close.g_variant_builder_close.html
+//
 func (builder *VariantBuilder) Close() {
 	var carg0 *C.GVariantBuilder // in, none, converted
 
@@ -36394,46 +26746,8 @@ func (builder *VariantBuilder) Close() {
 
 // Open wraps g_variant_builder_open
 // 
-// The function takes the following parameters:
-// 
-// 	- typ *VariantType: the #GVariantType of the container 
+// see also https://docs.gtk.org/glib/method.g_variant_builder_open.g_variant_builder_open.html
 //
-// Opens a subcontainer inside the given @builder.  When done adding
-// items to the subcontainer, g_variant_builder_close() must be called. @type
-// is the type of the container: so to build a tuple of several values, @type
-// must include the tuple itself.
-// 
-// It is an error to call this function in any way that would cause an
-// inconsistent value to be constructed (ie: adding too many values or
-// a value of an incorrect type).
-// 
-// Example of building a nested variant:
-// |[&lt;!-- language="C" --&gt;
-// GVariantBuilder builder;
-// guint32 some_number = get_number ();
-// g_autoptr (GHashTable) some_dict = get_dict ();
-// GHashTableIter iter;
-// const gchar *key;
-// const GVariant *value;
-// g_autoptr (GVariant) output = NULL;
-// 
-// g_variant_builder_init (&amp;builder, G_VARIANT_TYPE ("(ua{sv})"));
-// g_variant_builder_add (&amp;builder, "u", some_number);
-// g_variant_builder_open (&amp;builder, G_VARIANT_TYPE ("a{sv}"));
-// 
-// g_hash_table_iter_init (&amp;iter, some_dict);
-// while (g_hash_table_iter_next (&amp;iter, (gpointer *) &amp;key, (gpointer *) &amp;value))
-//   {
-//     g_variant_builder_open (&amp;builder, G_VARIANT_TYPE ("{sv}"));
-//     g_variant_builder_add (&amp;builder, "s", key);
-//     g_variant_builder_add (&amp;builder, "v", value);
-//     g_variant_builder_close (&amp;builder);
-//   }
-// 
-// g_variant_builder_close (&amp;builder);
-// 
-// output = g_variant_builder_end (&amp;builder);
-// ]|
 func (builder *VariantBuilder) Open(typ *VariantType) {
 	var carg0 *C.GVariantBuilder // in, none, converted
 	var carg1 *C.GVariantType    // in, none, converted
@@ -36447,96 +26761,9 @@ func (builder *VariantBuilder) Open(typ *VariantType) {
 }
 
 // VariantDict wraps GVariantDict
+// 
+// see also https://docs.gtk.org/glib/struct.VariantDict.html
 //
-// #GVariantDict is a mutable interface to #GVariant dictionaries.
-// 
-// It can be used for doing a sequence of dictionary lookups in an
-// efficient way on an existing #GVariant dictionary or it can be used
-// to construct new dictionaries with a hashtable-like interface.  It
-// can also be used for taking existing dictionaries and modifying them
-// in order to create new ones.
-// 
-// #GVariantDict can only be used with %G_VARIANT_TYPE_VARDICT
-// dictionaries.
-// 
-// It is possible to use #GVariantDict allocated on the stack or on the
-// heap.  When using a stack-allocated #GVariantDict, you begin with a
-// call to g_variant_dict_init() and free the resources with a call to
-// g_variant_dict_clear().
-// 
-// Heap-allocated #GVariantDict follows normal refcounting rules: you
-// allocate it with g_variant_dict_new() and use g_variant_dict_ref()
-// and g_variant_dict_unref().
-// 
-// g_variant_dict_end() is used to convert the #GVariantDict back into a
-// dictionary-type #GVariant.  When used with stack-allocated instances,
-// this also implicitly frees all associated memory, but for
-// heap-allocated instances, you must still call g_variant_dict_unref()
-// afterwards.
-// 
-// You will typically want to use a heap-allocated #GVariantDict when
-// you expose it as part of an API.  For most other uses, the
-// stack-allocated form will be more convenient.
-// 
-// Consider the following two examples that do the same thing in each
-// style: take an existing dictionary and look up the "count" uint32
-// key, adding 1 to it if it is found, or returning an error if the
-// key is not found.  Each returns the new dictionary as a floating
-// #GVariant.
-// 
-// ## Using a stack-allocated GVariantDict
-// 
-// |[&lt;!-- language="C" --&gt;
-//   GVariant *
-//   add_to_count (GVariant  *orig,
-//                 GError   **error)
-//   {
-//     GVariantDict dict;
-//     guint32 count;
-// 
-//     g_variant_dict_init (&amp;dict, orig);
-//     if (!g_variant_dict_lookup (&amp;dict, "count", "u", &amp;count))
-//       {
-//         g_set_error (...);
-//         g_variant_dict_clear (&amp;dict);
-//         return NULL;
-//       }
-// 
-//     g_variant_dict_insert (&amp;dict, "count", "u", count + 1);
-// 
-//     return g_variant_dict_end (&amp;dict);
-//   }
-// ]|
-// 
-// ## Using heap-allocated GVariantDict
-// 
-// |[&lt;!-- language="C" --&gt;
-//   GVariant *
-//   add_to_count (GVariant  *orig,
-//                 GError   **error)
-//   {
-//     GVariantDict *dict;
-//     GVariant *result;
-//     guint32 count;
-// 
-//     dict = g_variant_dict_new (orig);
-// 
-//     if (g_variant_dict_lookup (dict, "count", "u", &amp;count))
-//       {
-//         g_variant_dict_insert (dict, "count", "u", count + 1);
-//         result = g_variant_dict_end (dict);
-//       }
-//     else
-//       {
-//         g_set_error (...);
-//         result = NULL;
-//       }
-// 
-//     g_variant_dict_unref (dict);
-// 
-//     return result;
-//   }
-// ]|
 type VariantDict struct {
 	*variantDict
 }
@@ -36598,7 +26825,7 @@ func UnsafeVariantDictFromGlibFull(p unsafe.Pointer) *VariantDict {
 // 
 // When this is called without an associated call to [VariantDict.UnsafeVariantDictUnref], then [VariantDict] will leak memory.
 func UnsafeVariantDictRef(v *VariantDict) {
-	C.g_variant_dict_ref(v.native)
+	C.g_variant_dict_ref((*C.GVariantDict)(v.native))
 }
 
 // UnsafeVariantDictUnref unrefs/frees the underlying resource. This is used by the bindings internally.
@@ -36629,21 +26856,9 @@ func UnsafeVariantDictToGlibFull(v *VariantDict) unsafe.Pointer {
 }
 
 // Clear wraps g_variant_dict_clear
+// 
+// see also https://docs.gtk.org/glib/method.g_variant_dict_clear.g_variant_dict_clear.html
 //
-// Releases all memory associated with a #GVariantDict without freeing
-// the #GVariantDict structure itself.
-// 
-// It typically only makes sense to do this on a stack-allocated
-// #GVariantDict if you want to abort building the value part-way
-// through.  This function need not be called if you call
-// g_variant_dict_end() and it also doesn't need to be called on dicts
-// allocated with g_variant_dict_new (see g_variant_dict_unref() for
-// that).
-// 
-// It is valid to call this function on either an initialised
-// #GVariantDict or one that was previously cleared by an earlier call
-// to g_variant_dict_clear() but it is not valid to call this function
-// on uninitialised memory.
 func (dict *VariantDict) Clear() {
 	var carg0 *C.GVariantDict // in, none, converted
 
@@ -36655,15 +26870,8 @@ func (dict *VariantDict) Clear() {
 
 // Contains wraps g_variant_dict_contains
 // 
-// The function takes the following parameters:
-// 
-// 	- key string: the key to look up in the dictionary 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_dict_contains.g_variant_dict_contains.html
 //
-// Checks if @key exists in @dict.
 func (dict *VariantDict) Contains(key string) bool {
 	var carg0 *C.GVariantDict // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -36688,15 +26896,8 @@ func (dict *VariantDict) Contains(key string) bool {
 
 // Remove wraps g_variant_dict_remove
 // 
-// The function takes the following parameters:
-// 
-// 	- key string: the key to remove 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_dict_remove.g_variant_dict_remove.html
 //
-// Removes a key and its associated value from a #GVariantDict.
 func (dict *VariantDict) Remove(key string) bool {
 	var carg0 *C.GVariantDict // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -36720,171 +26921,9 @@ func (dict *VariantDict) Remove(key string) bool {
 }
 
 // VariantType wraps GVariantType
+// 
+// see also https://docs.gtk.org/glib/struct.VariantType.html
 //
-// A type in the [type@GLib.Variant] type system.
-// 
-// [type@GLib.Variant] types are represented as strings, but have a strict
-// syntax described below. All [type@GLib.VariantType]s passed to GLib must be
-// valid, and they are typically expected to be static (i.e. not provided by
-// user input) as they determine how binary [type@GLib.Variant] data is
-// interpreted.
-// 
-// To convert a static string to a [type@GLib.VariantType] in C, use the
-// [func@GLib.VARIANT_TYPE] casting macro. When GLib is compiled with checks
-// enabled, it will validate the type. To check if an arbitrary string is a
-// valid [type@GLib.VariantType], use [func@GLib.VariantType.string_is_valid].
-// 
-// ## GVariant Type System
-// 
-// This section introduces the [type@GLib.Variant] type system. It is based, in
-// large part, on the D-Bus type system, with two major changes and
-// some minor lifting of restrictions. The
-// [D-Bus specification](http://dbus.freedesktop.org/doc/dbus-specification.html),
-// therefore, provides a significant amount of
-// information that is useful when working with [type@GLib.Variant].
-// 
-// The first major change with respect to the D-Bus type system is the
-// introduction of maybe (or &#x2018;nullable&#x2019;) types.  Any type in [type@GLib.Variant]
-// can be converted to a maybe type, in which case, `nothing` (or `null`)
-// becomes a valid value.  Maybe types have been added by introducing the
-// character `m` to type strings.
-// 
-// The second major change is that the [type@GLib.Variant] type system supports
-// the concept of &#x2018;indefinite types&#x2019; &#x2014; types that are less specific than
-// the normal types found in D-Bus.  For example, it is possible to speak
-// of &#x2018;an array of any type&#x2019; in [type@GLib.Variant], where the D-Bus type system
-// would require you to speak of &#x2018;an array of integers&#x2019; or &#x2018;an array of
-// strings&#x2019;.  Indefinite types have been added by introducing the
-// characters `*`, `?` and `r` to type strings.
-// 
-// Finally, all arbitrary restrictions relating to the complexity of
-// types are lifted along with the restriction that dictionary entries
-// may only appear nested inside of arrays.
-// 
-// Just as in D-Bus, [type@GLib.Variant] types are described with strings (&#x2018;type
-// strings&#x2019;).  Subject to the differences mentioned above, these strings
-// are of the same form as those found in D-Bus.  Note, however: D-Bus
-// always works in terms of messages and therefore individual type
-// strings appear nowhere in its interface.  Instead, &#x2018;signatures&#x2019;
-// are a concatenation of the strings of the type of each argument in a
-// message.  [type@GLib.Variant] deals with single values directly so
-// [type@GLib.Variant] type strings always describe the type of exactly one
-// value.  This means that a D-Bus signature string is generally not a valid
-// [type@GLib.Variant] type string &#x2014; except in the case that it is the signature
-// of a message containing exactly one argument.
-// 
-// An indefinite type is similar in spirit to what may be called an
-// abstract type in other type systems.  No value can exist that has an
-// indefinite type as its type, but values can exist that have types
-// that are subtypes of indefinite types.  That is to say,
-// [method@GLib.Variant.get_type] will never return an indefinite type, but
-// calling [method@GLib.Variant.is_of_type] with an indefinite type may return
-// true.  For example, you cannot have a value that represents &#x2018;an
-// array of no particular type&#x2019;, but you can have an &#x2018;array of integers&#x2019;
-// which certainly matches the type of &#x2018;an array of no particular type&#x2019;,
-// since &#x2018;array of integers&#x2019; is a subtype of &#x2018;array of no particular
-// type&#x2019;.
-// 
-// This is similar to how instances of abstract classes may not
-// directly exist in other type systems, but instances of their
-// non-abstract subtypes may.  For example, in GTK, no object that has
-// the type of [`GtkWidget`](https://docs.gtk.org/gtk4/class.Widget.html) can
-// exist (since `GtkWidget` is an abstract class), but a [`GtkWindow`](https://docs.gtk.org/gtk4/class.Window.html)
-// can certainly be instantiated, and you would say that a `GtkWindow` is a
-// `GtkWidget` (since `GtkWindow` is a subclass of `GtkWidget`).
-// 
-// Two types may not be compared by value; use [method@GLib.VariantType.equal]
-// or [method@GLib.VariantType.is_subtype_of]  May be copied using
-// [method@GLib.VariantType.copy] and freed using [method@GLib.VariantType.free].
-// 
-// ## GVariant Type Strings
-// 
-// A [type@GLib.Variant] type string can be any of the following:
-// 
-// - any basic type string (listed below)
-// - `v`, `r` or `*`
-// - one of the characters `a` or `m`, followed by another type string
-// - the character `(`, followed by a concatenation of zero or more other
-//   type strings, followed by the character `)`
-// - the character `{`, followed by a basic type string (see below),
-//   followed by another type string, followed by the character `}`
-// 
-// A basic type string describes a basic type (as per
-// [method@GLib.VariantType.is_basic]) and is always a single character in
-// length. The valid basic type strings are `b`, `y`, `n`, `q`, `i`, `u`, `x`,
-// `t`, `h`, `d`, `s`, `o`, `g` and `?`.
-// 
-// The above definition is recursive to arbitrary depth. `aaaaai` and
-// `(ui(nq((y)))s)` are both valid type strings, as is
-// `a(aa(ui)(qna{ya(yd)}))`. In order to not hit memory limits,
-// [type@GLib.Variant] imposes a limit on recursion depth of 65 nested
-// containers. This is the limit in the D-Bus specification (64) plus one to
-// allow a [`GDBusMessage`](../gio/class.DBusMessage.html) to be nested in
-// a top-level tuple.
-// 
-// The meaning of each of the characters is as follows:
-// 
-// - `b`: the type string of `G_VARIANT_TYPE_BOOLEAN`; a boolean value.
-// - `y`: the type string of `G_VARIANT_TYPE_BYTE`; a byte.
-// - `n`: the type string of `G_VARIANT_TYPE_INT16`; a signed 16 bit integer.
-// - `q`: the type string of `G_VARIANT_TYPE_UINT16`; an unsigned 16 bit integer.
-// - `i`: the type string of `G_VARIANT_TYPE_INT32`; a signed 32 bit integer.
-// - `u`: the type string of `G_VARIANT_TYPE_UINT32`; an unsigned 32 bit integer.
-// - `x`: the type string of `G_VARIANT_TYPE_INT64`; a signed 64 bit integer.
-// - `t`: the type string of `G_VARIANT_TYPE_UINT64`; an unsigned 64 bit integer.
-// - `h`: the type string of `G_VARIANT_TYPE_HANDLE`; a signed 32 bit value
-//   that, by convention, is used as an index into an array of file
-//   descriptors that are sent alongside a D-Bus message.
-// - `d`: the type string of `G_VARIANT_TYPE_DOUBLE`; a double precision
-//   floating point value.
-// - `s`: the type string of `G_VARIANT_TYPE_STRING`; a string.
-// - `o`: the type string of `G_VARIANT_TYPE_OBJECT_PATH`; a string in the form
-//   of a D-Bus object path.
-// - `g`: the type string of `G_VARIANT_TYPE_SIGNATURE`; a string in the form of
-//   a D-Bus type signature.
-// - `?`: the type string of `G_VARIANT_TYPE_BASIC`; an indefinite type that
-//   is a supertype of any of the basic types.
-// - `v`: the type string of `G_VARIANT_TYPE_VARIANT`; a container type that
-//   contain any other type of value.
-// - `a`: used as a prefix on another type string to mean an array of that
-//   type; the type string `ai`, for example, is the type of an array of
-//   signed 32-bit integers.
-// - `m`: used as a prefix on another type string to mean a &#x2018;maybe&#x2019;, or
-//   &#x2018;nullable&#x2019;, version of that type; the type string `ms`, for example,
-//   is the type of a value that maybe contains a string, or maybe contains
-//   nothing.
-// - `()`: used to enclose zero or more other concatenated type strings to
-//   create a tuple type; the type string `(is)`, for example, is the type of
-//   a pair of an integer and a string.
-// - `r`: the type string of `G_VARIANT_TYPE_TUPLE`; an indefinite type that is
-//   a supertype of any tuple type, regardless of the number of items.
-// - `{}`: used to enclose a basic type string concatenated with another type
-//   string to create a dictionary entry type, which usually appears inside of
-//   an array to form a dictionary; the type string `a{sd}`, for example, is
-//   the type of a dictionary that maps strings to double precision floating
-//   point values.
-// 
-//   The first type (the basic type) is the key type and the second type is
-//   the value type. The reason that the first type is restricted to being a
-//   basic type is so that it can easily be hashed.
-// - `*`: the type string of `G_VARIANT_TYPE_ANY`; the indefinite type that is
-//   a supertype of all types.  Note that, as with all type strings, this
-//   character represents exactly one type. It cannot be used inside of tuples
-//   to mean &#x2018;any number of items&#x2019;.
-// 
-// Any type string of a container that contains an indefinite type is,
-// itself, an indefinite type. For example, the type string `a*`
-// (corresponding to `G_VARIANT_TYPE_ARRAY`) is an indefinite type
-// that is a supertype of every array type. `(*s)` is a supertype
-// of all tuples that contain exactly two items where the second
-// item is a string.
-// 
-// `a{?*}` is an indefinite type that is a supertype of all arrays
-// containing dictionary entries where the key is any basic type and
-// the value is any type at all.  This is, by definition, a dictionary,
-// so this type string corresponds to `G_VARIANT_TYPE_DICTIONARY`. Note
-// that, due to the restriction that the key of a dictionary entry must
-// be a basic type, `{**}` is not a valid type string.
 type VariantType struct {
 	*variantType
 }
@@ -36965,21 +27004,8 @@ func UnsafeVariantTypeToGlibFull(v *VariantType) unsafe.Pointer {
 
 // NewVariantType wraps g_variant_type_new
 // 
-// The function takes the following parameters:
-// 
-// 	- typeString string: a valid [GVariant type string](./struct.VariantType.html#gvariant-type-strings) 
-// 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/func.g_variant_type_new.html
 //
-// Creates a new [type@GLib.VariantType] corresponding to the type string given
-// by @type_string.
-// 
-// It is appropriate to call [method@GLib.VariantType.free] on the return value.
-// 
-// It is a programmer error to call this function with an invalid type
-// string.  Use [func@GLib.VariantType.string_is_valid] if you are unsure.
 func NewVariantType(typeString string) *VariantType {
 	var carg1 *C.gchar        // in, none, string
 	var cret  *C.GVariantType // return, full, converted
@@ -36999,18 +27025,8 @@ func NewVariantType(typeString string) *VariantType {
 
 // NewVariantTypeArray wraps g_variant_type_new_array
 // 
-// The function takes the following parameters:
-// 
-// 	- element *VariantType: an element type 
-// 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/func.g_variant_type_new_array.html
 //
-// Constructs the type corresponding to an array of elements of the
-// type @type.
-// 
-// It is appropriate to call [method@GLib.VariantType.first] on the return value.
 func NewVariantTypeArray(element *VariantType) *VariantType {
 	var carg1 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, full, converted
@@ -37029,19 +27045,8 @@ func NewVariantTypeArray(element *VariantType) *VariantType {
 
 // NewVariantTypeDictEntry wraps g_variant_type_new_dict_entry
 // 
-// The function takes the following parameters:
-// 
-// 	- key *VariantType: a basic type to use for the key 
-// 	- value *VariantType: a type to use for the value 
-// 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/func.g_variant_type_new_dict_entry.html
 //
-// Constructs the type corresponding to a dictionary entry with a key
-// of type @key and a value of type @value.
-// 
-// It is appropriate to call [method@GLib.VariantType.free] on the return value.
 func NewVariantTypeDictEntry(key *VariantType, value *VariantType) *VariantType {
 	var carg1 *C.GVariantType // in, none, converted
 	var carg2 *C.GVariantType // in, none, converted
@@ -37063,18 +27068,8 @@ func NewVariantTypeDictEntry(key *VariantType, value *VariantType) *VariantType 
 
 // NewVariantTypeMaybe wraps g_variant_type_new_maybe
 // 
-// The function takes the following parameters:
-// 
-// 	- element *VariantType: an element type 
-// 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/func.g_variant_type_new_maybe.html
 //
-// Constructs the type corresponding to a &#x2018;maybe&#x2019; instance containing
-// type @type or `Nothing`.
-// 
-// It is appropriate to call [method@GLib.VariantType.free] on the return value.
 func NewVariantTypeMaybe(element *VariantType) *VariantType {
 	var carg1 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, full, converted
@@ -37093,20 +27088,8 @@ func NewVariantTypeMaybe(element *VariantType) *VariantType {
 
 // NewVariantTypeTuple wraps g_variant_type_new_tuple
 // 
-// The function takes the following parameters:
-// 
-// 	- items []*VariantType: an array of types, one for each item 
-// 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/func.g_variant_type_new_tuple.html
 //
-// Constructs a new tuple type, from @items.
-// 
-// @length is the number of items in @items, or `-1` to indicate that
-// @items is `NULL`-terminated.
-// 
-// It is appropriate to call [method@GLib.VariantType.free] on the return value.
 func NewVariantTypeTuple(items []*VariantType) *VariantType {
 	var carg1 **C.GVariantType // in, transfer: none, C Pointers: 2, Name: array[VariantType], array (inner GVariantType* (*typesystem.Record), length-by: carg2)
 	var carg2 C.gint           // implicit
@@ -37129,13 +27112,7 @@ func NewVariantTypeTuple(items []*VariantType) *VariantType {
 
 // VariantTypeChecked wraps g_variant_type_checked_
 // 
-// The function takes the following parameters:
-// 
-// 	- typeString string 
-// 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/func.g_variant_type_checked_.html
 func VariantTypeChecked(typeString string) *VariantType {
 	var carg1 *C.gchar        // in, none, string
 	var cret  *C.GVariantType // return, none, converted
@@ -37155,13 +27132,7 @@ func VariantTypeChecked(typeString string) *VariantType {
 
 // VariantTypeStringGetDepth wraps g_variant_type_string_get_depth_
 // 
-// The function takes the following parameters:
-// 
-// 	- typeString string 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/func.g_variant_type_string_get_depth_.html
 func VariantTypeStringGetDepth(typeString string) uint {
 	var carg1 *C.gchar // in, none, string
 	var cret  C.gsize  // return, none, casted
@@ -37181,19 +27152,8 @@ func VariantTypeStringGetDepth(typeString string) uint {
 
 // VariantTypeStringIsValid wraps g_variant_type_string_is_valid
 // 
-// The function takes the following parameters:
-// 
-// 	- typeString string: a pointer to any string 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_variant_type_string_is_valid.html
 //
-// Checks if @type_string is a valid
-// [GVariant type string](./struct.VariantType.html#gvariant-type-strings).
-// 
-// This call is equivalent to calling [func@GLib.VariantType.string_scan] and
-// confirming that the following character is a nul terminator.
 func VariantTypeStringIsValid(typeString string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -37215,30 +27175,8 @@ func VariantTypeStringIsValid(typeString string) bool {
 
 // VariantTypeStringScan wraps g_variant_type_string_scan
 // 
-// The function takes the following parameters:
-// 
-// 	- str string: a pointer to any string 
-// 	- limit string (nullable): the end of @string 
-// 
-// The function returns the following values:
-// 
-// 	- endptr string: location to store the end pointer 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/func.g_variant_type_string_scan.html
 //
-// Scan for a single complete and valid GVariant type string in @string.
-// 
-// The memory pointed to by @limit (or bytes beyond it) is never
-// accessed.
-// 
-// If a valid type string is found, @endptr is updated to point to the
-// first character past the end of the string that was found and %TRUE
-// is returned.
-// 
-// If there is no valid type string starting at @string, or if the type
-// string does not end before @limit then %FALSE is returned.
-// 
-// For the simple case of checking if a string is a valid type string,
-// see [func@GLib.VariantType.string_is_valid].
 func VariantTypeStringScan(str string, limit string) (string, bool) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string, nullable-string
@@ -37270,14 +27208,8 @@ func VariantTypeStringScan(str string, limit string) (string, bool) {
 
 // Copy wraps g_variant_type_copy
 // 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/method.g_variant_type_copy.g_variant_type_copy.html
 //
-// Makes a copy of a [type@GLib.VariantType].
-// 
-// It is appropriate to call [method@GLib.VariantType.free] on the return value.
-// @type may not be `NULL`.
 func (typ *VariantType) Copy() *VariantType {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, full, converted
@@ -37296,14 +27228,8 @@ func (typ *VariantType) Copy() *VariantType {
 
 // DupString wraps g_variant_type_dup_string
 // 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/glib/method.g_variant_type_dup_string.g_variant_type_dup_string.html
 //
-// Returns a newly-allocated copy of the type string corresponding to @type.
-// 
-// The returned string is nul-terminated.  It is appropriate to call
-// [func@GLib.free] on the return value.
 func (typ *VariantType) DupString() string {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  *C.gchar        // return, full, string
@@ -37323,13 +27249,8 @@ func (typ *VariantType) DupString() string {
 
 // Element wraps g_variant_type_element
 // 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/method.g_variant_type_element.g_variant_type_element.html
 //
-// Determines the element type of an array or &#x2018;maybe&#x2019; type.
-// 
-// This function may only be used with array or &#x2018;maybe&#x2019; types.
 func (typ *VariantType) Element() *VariantType {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, none, converted
@@ -37348,24 +27269,8 @@ func (typ *VariantType) Element() *VariantType {
 
 // First wraps g_variant_type_first
 // 
-// The function returns the following values:
-// 
-// 	- goret *VariantType (nullable) 
+// see also https://docs.gtk.org/glib/method.g_variant_type_first.g_variant_type_first.html
 //
-// Determines the first item type of a tuple or dictionary entry
-// type.
-// 
-// This function may only be used with tuple or dictionary entry types,
-// but must not be used with the generic tuple type
-// `G_VARIANT_TYPE_TUPLE`.
-// 
-// In the case of a dictionary entry type, this returns the type of
-// the key.
-// 
-// `NULL` is returned in case of @type being `G_VARIANT_TYPE_UNIT`.
-// 
-// This call, together with [method@GLib.VariantType.next] provides an iterator
-// interface over tuple and dictionary entry types.
 func (typ *VariantType) First() *VariantType {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, none, converted, nullable
@@ -37386,14 +27291,8 @@ func (typ *VariantType) First() *VariantType {
 
 // GetStringLength wraps g_variant_type_get_string_length
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_variant_type_get_string_length.g_variant_type_get_string_length.html
 //
-// Returns the length of the type string corresponding to the given @type.
-// 
-// This function must be used to determine the valid extent of
-// the memory region returned by [method@GLib.VariantType.peek_string].
 func (typ *VariantType) GetStringLength() uint {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gsize         // return, none, casted
@@ -37412,17 +27311,8 @@ func (typ *VariantType) GetStringLength() uint {
 
 // IsArray wraps g_variant_type_is_array
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_array.g_variant_type_is_array.html
 //
-// Determines if the given @type is an array type.
-// 
-// This is true if the type string for @type starts with an `a`.
-// 
-// This function returns true for any indefinite type for which every
-// definite subtype is an array type &#x2014; `G_VARIANT_TYPE_ARRAY`, for
-// example.
 func (typ *VariantType) IsArray() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37443,19 +27333,8 @@ func (typ *VariantType) IsArray() bool {
 
 // IsBasic wraps g_variant_type_is_basic
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_basic.g_variant_type_is_basic.html
 //
-// Determines if the given @type is a basic type.
-// 
-// Basic types are booleans, bytes, integers, doubles, strings, object
-// paths and signatures.
-// 
-// Only a basic type may be used as the key of a dictionary entry.
-// 
-// This function returns `FALSE` for all indefinite types except
-// `G_VARIANT_TYPE_BASIC`.
 func (typ *VariantType) IsBasic() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37476,18 +27355,8 @@ func (typ *VariantType) IsBasic() bool {
 
 // IsContainer wraps g_variant_type_is_container
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_container.g_variant_type_is_container.html
 //
-// Determines if the given @type is a container type.
-// 
-// Container types are any array, maybe, tuple, or dictionary
-// entry types plus the variant type.
-// 
-// This function returns true for any indefinite type for which every
-// definite subtype is a container &#x2014; `G_VARIANT_TYPE_ARRAY`, for
-// example.
 func (typ *VariantType) IsContainer() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37508,20 +27377,8 @@ func (typ *VariantType) IsContainer() bool {
 
 // IsDefinite wraps g_variant_type_is_definite
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_definite.g_variant_type_is_definite.html
 //
-// Determines if the given @type is definite (ie: not indefinite).
-// 
-// A type is definite if its type string does not contain any indefinite
-// type characters (`*`, `?`, or `r`).
-// 
-// A [type@GLib.Variant] instance may not have an indefinite type, so calling
-// this function on the result of [method@GLib.Variant.get_type] will always
-// result in true being returned.  Calling this function on an
-// indefinite type like `G_VARIANT_TYPE_ARRAY`, however, will result in
-// `FALSE` being returned.
 func (typ *VariantType) IsDefinite() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37542,17 +27399,8 @@ func (typ *VariantType) IsDefinite() bool {
 
 // IsDictEntry wraps g_variant_type_is_dict_entry
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_dict_entry.g_variant_type_is_dict_entry.html
 //
-// Determines if the given @type is a dictionary entry type.
-// 
-// This is true if the type string for @type starts with a `{`.
-// 
-// This function returns true for any indefinite type for which every
-// definite subtype is a dictionary entry type &#x2014;
-// `G_VARIANT_TYPE_DICT_ENTRY`, for example.
 func (typ *VariantType) IsDictEntry() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37573,17 +27421,8 @@ func (typ *VariantType) IsDictEntry() bool {
 
 // IsMaybe wraps g_variant_type_is_maybe
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_maybe.g_variant_type_is_maybe.html
 //
-// Determines if the given @type is a &#x2018;maybe&#x2019; type.
-// 
-// This is true if the type string for @type starts with an `m`.
-// 
-// This function returns true for any indefinite type for which every
-// definite subtype is a &#x2018;maybe&#x2019; type &#x2014; `G_VARIANT_TYPE_MAYBE`, for
-// example.
 func (typ *VariantType) IsMaybe() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37604,19 +27443,8 @@ func (typ *VariantType) IsMaybe() bool {
 
 // IsSubtypeOf wraps g_variant_type_is_subtype_of
 // 
-// The function takes the following parameters:
-// 
-// 	- supertype *VariantType: type of potential supertype 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_subtype_of.g_variant_type_is_subtype_of.html
 //
-// Checks if @type is a subtype of @supertype.
-// 
-// This function returns true if @type is a subtype of @supertype.  All
-// types are considered to be subtypes of themselves.  Aside from that,
-// only indefinite types can have subtypes.
 func (typ *VariantType) IsSubtypeOf(supertype *VariantType) bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var carg1 *C.GVariantType // in, none, converted
@@ -37640,18 +27468,8 @@ func (typ *VariantType) IsSubtypeOf(supertype *VariantType) bool {
 
 // IsTuple wraps g_variant_type_is_tuple
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_tuple.g_variant_type_is_tuple.html
 //
-// Determines if the given @type is a tuple type.
-// 
-// This is true if the type string for @type starts with a `(` or if @type is
-// `G_VARIANT_TYPE_TUPLE`.
-// 
-// This function returns true for any indefinite type for which every
-// definite subtype is a tuple type &#x2014; `G_VARIANT_TYPE_TUPLE`, for
-// example.
 func (typ *VariantType) IsTuple() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37672,11 +27490,8 @@ func (typ *VariantType) IsTuple() bool {
 
 // IsVariant wraps g_variant_type_is_variant
 // 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/glib/method.g_variant_type_is_variant.g_variant_type_is_variant.html
 //
-// Determines if the given @type is the variant type.
 func (typ *VariantType) IsVariant() bool {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gboolean      // return
@@ -37697,15 +27512,8 @@ func (typ *VariantType) IsVariant() bool {
 
 // Key wraps g_variant_type_key
 // 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/method.g_variant_type_key.g_variant_type_key.html
 //
-// Determines the key type of a dictionary entry type.
-// 
-// This function may only be used with a dictionary entry type.  Other
-// than the additional restriction, this call is equivalent to
-// [method@GLib.VariantType.first].
 func (typ *VariantType) Key() *VariantType {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, none, converted
@@ -37724,19 +27532,8 @@ func (typ *VariantType) Key() *VariantType {
 
 // NItems wraps g_variant_type_n_items
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/glib/method.g_variant_type_n_items.g_variant_type_n_items.html
 //
-// Determines the number of items contained in a tuple or
-// dictionary entry type.
-// 
-// This function may only be used with tuple or dictionary entry types,
-// but must not be used with the generic tuple type
-// `G_VARIANT_TYPE_TUPLE`.
-// 
-// In the case of a dictionary entry type, this function will always
-// return `2`.
 func (typ *VariantType) NItems() uint {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  C.gsize         // return, none, casted
@@ -37755,21 +27552,8 @@ func (typ *VariantType) NItems() uint {
 
 // Next wraps g_variant_type_next
 // 
-// The function returns the following values:
-// 
-// 	- goret *VariantType (nullable) 
+// see also https://docs.gtk.org/glib/method.g_variant_type_next.g_variant_type_next.html
 //
-// Determines the next item type of a tuple or dictionary entry
-// type.
-// 
-// @type must be the result of a previous call to
-// [method@GLib.VariantType.first] or [method@GLib.VariantType.next].
-// 
-// If called on the key type of a dictionary entry then this call
-// returns the value type.  If called on the value type of a dictionary
-// entry then this call returns `NULL`.
-// 
-// For tuples, `NULL` is returned when @type is the last item in the tuple.
 func (typ *VariantType) Next() *VariantType {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, none, converted, nullable
@@ -37790,13 +27574,8 @@ func (typ *VariantType) Next() *VariantType {
 
 // Value wraps g_variant_type_value
 // 
-// The function returns the following values:
-// 
-// 	- goret *VariantType 
+// see also https://docs.gtk.org/glib/method.g_variant_type_value.g_variant_type_value.html
 //
-// Determines the value type of a dictionary entry type.
-// 
-// This function may only be used with a dictionary entry type.
 func (typ *VariantType) Value() *VariantType {
 	var carg0 *C.GVariantType // in, none, converted
 	var cret  *C.GVariantType // return, none, converted

@@ -143,13 +143,13 @@ func (c *CallbackGenerator) generateExport(pkg *file.Package) {
 	fmt.Fprintln(w.Go())
 }
 
-func NewCallbackGenerator(cb *typesystem.Callback) *CallbackGenerator {
+func NewCallbackGenerator(cfg *Config, cb *typesystem.Callback) *CallbackGenerator {
 	if cb.InstanceParam != nil {
 		panic("callback with instance param unimplemented")
 	}
 
 	g := &CallbackGenerator{
-		Doc:      NewGoDocGenerator(cb),
+		Doc:      cfg.DocGenerator(cb),
 		Callback: cb,
 	}
 

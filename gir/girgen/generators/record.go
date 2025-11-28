@@ -111,7 +111,9 @@ func (g *RecordGenerator) Generate(w *file.Package) {
 		fmt.Fprintf(w.Go(), "// \n")
 		fmt.Fprintf(w.Go(), "// When this is called without an associated call to [%s.%s], then [%s] will leak memory.\n", g.GoType(0), g.GoUnsafeUnrefFunction, g.GoType(0))
 		fmt.Fprintf(w.Go(), "func %s(%s *%s) {\n", g.GoUnsafeRefFunction, g.ReceiverName, g.GoType(0))
-		fmt.Fprintf(w.Go(), "\t%s(%s.native)\n", g.CgoRefFunction, g.ReceiverName)
+		w.Go().Indent()
+		g.refCall(w.Go(), fmt.Sprintf("%s.native", g.ReceiverName))
+		w.Go().Unindent()
 		fmt.Fprintf(w.Go(), "}\n\n")
 	}
 
@@ -185,7 +187,7 @@ func (g *RecordGenerator) transferNoneFunction(w *file.Package) {
 	w.Go().Indent()
 	if g.CgoRefFunction != "" {
 		// from none only refs if reffing is possible: TODO: this can produce bugs because we are borrowing otherwise
-		fmt.Fprintf(w.Go(), "%s((*%s)(p))\n", g.CgoRefFunction, g.CGoType(0))
+		g.refCall(w.Go(), "p")
 	}
 
 	fmt.Fprintf(w.Go(), "wrapped := %s(p)\n", g.GoUnsafeFromGlibBorrowFunction())
@@ -209,6 +211,15 @@ func (g *RecordGenerator) transferNoneFunction(w *file.Package) {
 	fmt.Fprintf(w.Go(), "}\n\n")
 }
 
+// refCall writes the ref call, variable is the unsafe pointer of the incoming record
+func (g *RecordGenerator) refCall(w file.CodeWriter, variable string) {
+	if g.CgoRefNeedsUnsafePointer {
+		fmt.Fprintf(w, "%s(unsafe.Pointer(%s))\n", g.CgoRefFunction, variable)
+	} else {
+		fmt.Fprintf(w, "%s((*%s)(%s))\n", g.CgoRefFunction, g.CGoType(0), variable)
+	}
+}
+
 func (g *RecordGenerator) unrefCall(w file.CodeWriter, variable string) {
 	if g.CgoUnrefNeedsUnsafeCast {
 		// unsafe already imported above
@@ -218,9 +229,9 @@ func (g *RecordGenerator) unrefCall(w file.CodeWriter, variable string) {
 	}
 }
 
-func NewRecordGenerator(r *typesystem.Record) *RecordGenerator {
+func NewRecordGenerator(cfg *Config, r *typesystem.Record) *RecordGenerator {
 	g := &RecordGenerator{
-		Doc:               NewGoDocGenerator(r),
+		Doc:               cfg.DocGenerator(r),
 		Record:            r,
 		GenerateMarshaler: r.GLibGetType() != "",
 
@@ -228,19 +239,19 @@ func NewRecordGenerator(r *typesystem.Record) *RecordGenerator {
 	}
 
 	for _, constructor := range r.Constructors {
-		if constGen := NewCallableGenerator(constructor); constGen != nil {
+		if constGen := NewCallableGenerator(cfg, constructor); constGen != nil {
 			g.SubGenerators = append(g.SubGenerators, constGen)
 		}
 	}
 
 	for _, method := range r.Functions {
-		if methGen := NewCallableGenerator(method); methGen != nil {
+		if methGen := NewCallableGenerator(cfg, method); methGen != nil {
 			g.SubGenerators = append(g.SubGenerators, methGen)
 		}
 	}
 
 	for _, method := range r.Methods {
-		if methGen := NewCallableGenerator(method); methGen != nil {
+		if methGen := NewCallableGenerator(cfg, method); methGen != nil {
 			g.SubGenerators = append(g.SubGenerators, methGen)
 		}
 	}

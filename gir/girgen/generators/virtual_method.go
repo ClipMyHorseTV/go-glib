@@ -448,8 +448,8 @@ func (v *VirtualMethodGenerator) GenerateInterfaceSignature(w file.File) {
 	fmt.Fprintf(w.Go(), "%s(%s)%s\n", v.ParentName, v.GoParameters.GoDeclarations(), ret)
 }
 
-func NewVirtualMethodGenerator(vfunc *typesystem.VirtualMethod) *VirtualMethodGenerator {
-	doc := NewGoDocGenerator(vfunc)
+func NewVirtualMethodGenerator(cfg *Config, vfunc *typesystem.VirtualMethod) *VirtualMethodGenerator {
+	doc := cfg.DocGenerator(vfunc)
 	g := &VirtualMethodGenerator{
 		Doc: doc.WithPrependParagraphs(
 			fmt.Sprintf("// %s allows you to override the implementation of the virtual method %s.\n", vfunc.GoName, vfunc.Invoker.CIndentifier()),

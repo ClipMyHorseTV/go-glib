@@ -6,11 +6,15 @@ type Documented interface {
 	Documentation() Doc
 }
 
+// Doc holds documentation and deprecation info extracted from GIR. Using this text in the
+// generated code may be risky because of license issues.
 type Doc struct {
 	Doc               string
 	DocDeprecated     string
 	DeprecatedVersion string
 	Deprecated        bool
+
+	Filename string
 }
 
 func (d Doc) Documentation() Doc {
@@ -34,6 +38,7 @@ func NewDoc(attrs *gir.InfoAttrs, elements *gir.InfoElements) Doc {
 	var docDeprecated string
 	var deprecated bool
 	var deprecatedVersion string
+	var filename string
 
 	if attrs != nil {
 		deprecated = attrs.Deprecated
@@ -49,6 +54,10 @@ func NewDoc(attrs *gir.InfoAttrs, elements *gir.InfoElements) Doc {
 		doc = elements.Doc.String
 	}
 
+	if elements != nil && elements.SourcePosition != nil {
+		filename = elements.SourcePosition.Filename
+	}
+
 	if elements != nil && elements.DocDeprecated != nil {
 		docDeprecated = elements.DocDeprecated.String
 	}
@@ -58,6 +67,7 @@ func NewDoc(attrs *gir.InfoAttrs, elements *gir.InfoElements) Doc {
 		DocDeprecated:     docDeprecated,
 		Deprecated:        deprecated,
 		DeprecatedVersion: deprecatedVersion,
+		Filename:          filename,
 	}
 }
 

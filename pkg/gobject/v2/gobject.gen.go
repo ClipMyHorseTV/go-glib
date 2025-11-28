@@ -34,116 +34,106 @@ func init() {
 }
 
 // PARAM_MASK wraps G_PARAM_MASK
+// 
+// see also https://docs.gtk.org/gobject/const.PARAM_MASK.html
 //
-// Mask containing the bits of #GParamSpec.flags which are reserved for GLib.
 const PARAM_MASK = 255
 // PARAM_STATIC_STRINGS wraps G_PARAM_STATIC_STRINGS
+// 
+// see also https://docs.gtk.org/gobject/const.PARAM_STATIC_STRINGS.html
 //
-// #GParamFlags value alias for %G_PARAM_STATIC_NAME | %G_PARAM_STATIC_NICK | %G_PARAM_STATIC_BLURB.
-// 
-// It is recommended to use this for all properties by default, as it allows for
-// internal performance improvements in GObject.
-// 
-// It is very rare that a property would have a dynamically constructed name,
-// nickname or blurb.
-// 
-// Since 2.13.0
 const PARAM_STATIC_STRINGS = 224
 // PARAM_USER_SHIFT wraps G_PARAM_USER_SHIFT
+// 
+// see also https://docs.gtk.org/gobject/const.PARAM_USER_SHIFT.html
 //
-// Minimum shift count to be used for user defined flags, to be stored in
-// #GParamSpec.flags. The maximum allowed is 10.
 const PARAM_USER_SHIFT = 8
 // SIGNAL_FLAGS_MASK wraps G_SIGNAL_FLAGS_MASK
+// 
+// see also https://docs.gtk.org/gobject/const.SIGNAL_FLAGS_MASK.html
 //
-// A mask for all #GSignalFlags bits.
 const SIGNAL_FLAGS_MASK = 511
 // SIGNAL_MATCH_MASK wraps G_SIGNAL_MATCH_MASK
+// 
+// see also https://docs.gtk.org/gobject/const.SIGNAL_MATCH_MASK.html
 //
-// A mask for all #GSignalMatchType bits.
 const SIGNAL_MATCH_MASK = 63
 // TYPE_FUNDAMENTAL_MAX wraps G_TYPE_FUNDAMENTAL_MAX
+// 
+// see also https://docs.gtk.org/gobject/const.TYPE_FUNDAMENTAL_MAX.html
 //
-// An integer constant that represents the number of identifiers reserved
-// for types that are assigned at compile-time.
 const TYPE_FUNDAMENTAL_MAX = 1020
 // TYPE_FUNDAMENTAL_SHIFT wraps G_TYPE_FUNDAMENTAL_SHIFT
+// 
+// see also https://docs.gtk.org/gobject/const.TYPE_FUNDAMENTAL_SHIFT.html
 //
-// Shift value used in converting numbers to type IDs.
 const TYPE_FUNDAMENTAL_SHIFT = 2
 // TYPE_RESERVED_BSE_FIRST wraps G_TYPE_RESERVED_BSE_FIRST
+// 
+// see also https://docs.gtk.org/gobject/const.TYPE_RESERVED_BSE_FIRST.html
 //
-// First fundamental type number to create a new fundamental type id with
-// G_TYPE_MAKE_FUNDAMENTAL() reserved for BSE.
 const TYPE_RESERVED_BSE_FIRST = 32
 // TYPE_RESERVED_BSE_LAST wraps G_TYPE_RESERVED_BSE_LAST
+// 
+// see also https://docs.gtk.org/gobject/const.TYPE_RESERVED_BSE_LAST.html
 //
-// Last fundamental type number reserved for BSE.
 const TYPE_RESERVED_BSE_LAST = 48
 // TYPE_RESERVED_GLIB_FIRST wraps G_TYPE_RESERVED_GLIB_FIRST
+// 
+// see also https://docs.gtk.org/gobject/const.TYPE_RESERVED_GLIB_FIRST.html
 //
-// First fundamental type number to create a new fundamental type id with
-// G_TYPE_MAKE_FUNDAMENTAL() reserved for GLib.
 const TYPE_RESERVED_GLIB_FIRST = 22
 // TYPE_RESERVED_GLIB_LAST wraps G_TYPE_RESERVED_GLIB_LAST
+// 
+// see also https://docs.gtk.org/gobject/const.TYPE_RESERVED_GLIB_LAST.html
 //
-// Last fundamental type number reserved for GLib.
 const TYPE_RESERVED_GLIB_LAST = 31
 // TYPE_RESERVED_USER_FIRST wraps G_TYPE_RESERVED_USER_FIRST
+// 
+// see also https://docs.gtk.org/gobject/const.TYPE_RESERVED_USER_FIRST.html
 //
-// First available fundamental type number to create new fundamental
-// type id with G_TYPE_MAKE_FUNDAMENTAL().
 const TYPE_RESERVED_USER_FIRST = 49
 // VALUE_COLLECT_FORMAT_MAX_LENGTH wraps G_VALUE_COLLECT_FORMAT_MAX_LENGTH
+// 
+// see also https://docs.gtk.org/gobject/const.VALUE_COLLECT_FORMAT_MAX_LENGTH.html
 //
-// The maximal number of #GTypeCValues which can be collected for a
-// single #GValue.
 const VALUE_COLLECT_FORMAT_MAX_LENGTH = 8
 // VALUE_INTERNED_STRING wraps G_VALUE_INTERNED_STRING
+// 
+// see also https://docs.gtk.org/gobject/const.VALUE_INTERNED_STRING.html
 //
-// For string values, indicates that the string contained is canonical and will
-// exist for the duration of the process. See g_value_set_interned_string().
 const VALUE_INTERNED_STRING = 268435456
 // VALUE_NOCOPY_CONTENTS wraps G_VALUE_NOCOPY_CONTENTS
+// 
+// see also https://docs.gtk.org/gobject/const.VALUE_NOCOPY_CONTENTS.html
 //
-// If passed to G_VALUE_COLLECT(), allocated data won't be copied
-// but used verbatim. This does not affect ref-counted types like
-// objects. This does not affect usage of g_value_copy(), the data will
-// be copied if it is not ref-counted.
 const VALUE_NOCOPY_CONTENTS = 134217728
 // BindingFlags wraps GBindingFlags
-//
-// Flags to be passed to g_object_bind_property() or
-// g_object_bind_property_full().
 // 
-// This enumeration can be extended at later date.
+// see also https://docs.gtk.org/gobject/flags.BindingFlags.html
+//
 type BindingFlags C.gint
 
 const (
 	// BindingDefault wraps G_BINDING_DEFAULT
+	// 
+	// see also https://docs.gtk.org/gobject/flags.BindingFlags.html#default
 	//
-	// The default binding; if the source property
-	//   changes, the target property is updated with its value.
 	BindingDefault BindingFlags = 0
 	// BindingBidirectional wraps G_BINDING_BIDIRECTIONAL
+	// 
+	// see also https://docs.gtk.org/gobject/flags.BindingFlags.html#bidirectional
 	//
-	// Bidirectional binding; if either the
-	//   property of the source or the property of the target changes,
-	//   the other is updated.
 	BindingBidirectional BindingFlags = 1
 	// BindingSyncCreate wraps G_BINDING_SYNC_CREATE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.BindingFlags.html#sync_create
 	//
-	// Synchronize the values of the source and
-	//   target properties when creating the binding; the direction of
-	//   the synchronization is always from the source to the target.
 	BindingSyncCreate BindingFlags = 2
 	// BindingInvertBoolean wraps G_BINDING_INVERT_BOOLEAN
+	// 
+	// see also https://docs.gtk.org/gobject/flags.BindingFlags.html#invert_boolean
 	//
-	// If the two properties being bound are
-	//   booleans, setting one to %TRUE will result in the other being
-	//   set to %FALSE and vice versa. This flag will only work for
-	//   boolean properties, and cannot be used when passing custom
-	//   transformation functions to g_object_bind_property_full().
 	BindingInvertBoolean BindingFlags = 4
 )
 
@@ -187,26 +177,26 @@ func (f BindingFlags) String() string {
 }
 
 // ConnectFlags wraps GConnectFlags
+// 
+// see also https://docs.gtk.org/gobject/flags.ConnectFlags.html
 //
-// The connection flags are used to specify the behaviour of a signal's
-// connection.
 type ConnectFlags C.gint
 
 const (
 	// ConnectDefault wraps G_CONNECT_DEFAULT
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ConnectFlags.html#default
 	//
-	// Default behaviour (no special flags). Since: 2.74
 	ConnectDefault ConnectFlags = 0
 	// ConnectAfter wraps G_CONNECT_AFTER
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ConnectFlags.html#after
 	//
-	// If set, the handler should be called after the
-	//  default handler of the signal. Normally, the handler is called before
-	//  the default handler.
 	ConnectAfter ConnectFlags = 1
 	// ConnectSwapped wraps G_CONNECT_SWAPPED
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ConnectFlags.html#swapped
 	//
-	// If set, the instance and data should be swapped when
-	//  calling the handler; see g_signal_connect_swapped() for an example.
 	ConnectSwapped ConnectFlags = 2
 )
 
@@ -234,20 +224,34 @@ func (f ConnectFlags) String() string {
 }
 
 // IOCondition wraps GIOCondition
+// 
+// see also https://docs.gtk.org/gobject/flags.IOCondition.html
 type IOCondition C.gint
 
 const (
 	// IOIn wraps G_IO_IN
+	// 
+	// see also https://docs.gtk.org/gobject/flags.IOCondition.html#in
 	IOIn IOCondition = 1
 	// IOOut wraps G_IO_OUT
+	// 
+	// see also https://docs.gtk.org/gobject/flags.IOCondition.html#out
 	IOOut IOCondition = 4
 	// IOPri wraps G_IO_PRI
+	// 
+	// see also https://docs.gtk.org/gobject/flags.IOCondition.html#pri
 	IOPri IOCondition = 2
 	// IOErr wraps G_IO_ERR
+	// 
+	// see also https://docs.gtk.org/gobject/flags.IOCondition.html#err
 	IOErr IOCondition = 8
 	// IOHup wraps G_IO_HUP
+	// 
+	// see also https://docs.gtk.org/gobject/flags.IOCondition.html#hup
 	IOHup IOCondition = 16
 	// IONval wraps G_IO_NVAL
+	// 
+	// see also https://docs.gtk.org/gobject/flags.IOCondition.html#nval
 	IONval IOCondition = 32
 )
 
@@ -297,79 +301,71 @@ func (f IOCondition) String() string {
 }
 
 // ParamFlags wraps GParamFlags
-//
-// Through the #GParamFlags flag values, certain aspects of parameters
-// can be configured.
 // 
-// See also: %G_PARAM_STATIC_STRINGS
+// see also https://docs.gtk.org/gobject/flags.ParamFlags.html
+//
 type ParamFlags C.gint
 
 const (
 	// ParamReadable wraps G_PARAM_READABLE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#readable
 	//
-	// the parameter is readable
 	ParamReadable ParamFlags = 1
 	// ParamWritable wraps G_PARAM_WRITABLE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#writable
 	//
-	// the parameter is writable
 	ParamWritable ParamFlags = 2
 	// ParamReadwrite wraps G_PARAM_READWRITE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#readwrite
 	//
-	// alias for %G_PARAM_READABLE | %G_PARAM_WRITABLE
 	ParamReadwrite ParamFlags = 3
 	// ParamConstruct wraps G_PARAM_CONSTRUCT
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#construct
 	//
-	// the parameter will be set upon object construction.
-	//   See [vfunc@Object.constructed] for more details
 	ParamConstruct ParamFlags = 4
 	// ParamConstructOnly wraps G_PARAM_CONSTRUCT_ONLY
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#construct_only
 	//
-	// the parameter can only be set upon object construction.
-	//   See [vfunc@Object.constructed] for more details
 	ParamConstructOnly ParamFlags = 8
 	// ParamLaxValidation wraps G_PARAM_LAX_VALIDATION
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#lax_validation
 	//
-	// upon parameter conversion (see g_param_value_convert())
-	//  strict validation is not required
 	ParamLaxValidation ParamFlags = 16
 	// ParamStaticName wraps G_PARAM_STATIC_NAME
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#static_name
 	//
-	// the string used as name when constructing the
-	//  parameter is guaranteed to remain valid and
-	//  unmodified for the lifetime of the parameter.
-	//  Since 2.8
 	ParamStaticName ParamFlags = 32
 	// ParamPrivate wraps G_PARAM_PRIVATE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#private
 	//
-	// internal
 	ParamPrivate ParamFlags = 32
 	// ParamStaticNick wraps G_PARAM_STATIC_NICK
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#static_nick
 	//
-	// the string used as nick when constructing the
-	//  parameter is guaranteed to remain valid and
-	//  unmmodified for the lifetime of the parameter.
-	//  Since 2.8
 	ParamStaticNick ParamFlags = 64
 	// ParamStaticBlurb wraps G_PARAM_STATIC_BLURB
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#static_blurb
 	//
-	// the string used as blurb when constructing the
-	//  parameter is guaranteed to remain valid and
-	//  unmodified for the lifetime of the parameter.
-	//  Since 2.8
 	ParamStaticBlurb ParamFlags = 128
 	// ParamExplicitNotify wraps G_PARAM_EXPLICIT_NOTIFY
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#explicit_notify
 	//
-	// calls to g_object_set_property() for this
-	//   property will not automatically result in a "notify" signal being
-	//   emitted: the implementation must call g_object_notify() themselves
-	//   in case the property actually changes.  Since: 2.42.
 	ParamExplicitNotify ParamFlags = 1073741824
 	// ParamDeprecated wraps G_PARAM_DEPRECATED
+	// 
+	// see also https://docs.gtk.org/gobject/flags.ParamFlags.html#deprecated
 	//
-	// the parameter is deprecated and will be removed
-	//  in a future version. A warning will be generated if it is used
-	//  while running with G_ENABLE_DIAGNOSTIC=1.
-	//  Since 2.26
 	ParamDeprecated ParamFlags = -2147483648
 )
 
@@ -424,66 +420,61 @@ func (f ParamFlags) String() string {
 }
 
 // SignalFlags wraps GSignalFlags
+// 
+// see also https://docs.gtk.org/gobject/flags.SignalFlags.html
 //
-// The signal flags are used to specify a signal's behaviour.
 type SignalFlags C.gint
 
 const (
 	// SignalRunFirst wraps G_SIGNAL_RUN_FIRST
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#run_first
 	//
-	// Invoke the object method handler in the first emission stage.
 	SignalRunFirst SignalFlags = 1
 	// SignalRunLast wraps G_SIGNAL_RUN_LAST
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#run_last
 	//
-	// Invoke the object method handler in the third emission stage.
 	SignalRunLast SignalFlags = 2
 	// SignalRunCleanup wraps G_SIGNAL_RUN_CLEANUP
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#run_cleanup
 	//
-	// Invoke the object method handler in the last emission stage.
 	SignalRunCleanup SignalFlags = 4
 	// SignalNoRecurse wraps G_SIGNAL_NO_RECURSE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#no_recurse
 	//
-	// Signals being emitted for an object while currently being in
-	//  emission for this very object will not be emitted recursively,
-	//  but instead cause the first emission to be restarted.
 	SignalNoRecurse SignalFlags = 8
 	// SignalDetailed wraps G_SIGNAL_DETAILED
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#detailed
 	//
-	// This signal supports "::detail" appendices to the signal name
-	//  upon handler connections and emissions.
 	SignalDetailed SignalFlags = 16
 	// SignalAction wraps G_SIGNAL_ACTION
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#action
 	//
-	// Action signals are signals that may freely be emitted on alive
-	//  objects from user code via g_signal_emit() and friends, without
-	//  the need of being embedded into extra code that performs pre or
-	//  post emission adjustments on the object. They can also be thought
-	//  of as object methods which can be called generically by
-	//  third-party code.
 	SignalAction SignalFlags = 32
 	// SignalNoHooks wraps G_SIGNAL_NO_HOOKS
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#no_hooks
 	//
-	// No emissions hooks are supported for this signal.
 	SignalNoHooks SignalFlags = 64
 	// SignalMustCollect wraps G_SIGNAL_MUST_COLLECT
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#must_collect
 	//
-	// Varargs signal emission will always collect the arguments, even if there
-	// are no signal handlers connected.
 	SignalMustCollect SignalFlags = 128
 	// SignalDeprecated wraps G_SIGNAL_DEPRECATED
-	//
-	// The signal is deprecated and will be removed in a future version.
 	// 
-	// A warning will be generated if it is connected while running with
-	// `G_ENABLE_DIAGNOSTIC=1`.
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#deprecated
+	//
 	SignalDeprecated SignalFlags = 256
 	// SignalAccumulatorFirstRun wraps G_SIGNAL_ACCUMULATOR_FIRST_RUN
-	//
-	// The signal accumulator was invoked for the first time.
 	// 
-	// This flag is only used in [callback@GObject.SignalAccumulator][accumulator functions]
-	// for the `run_type` field of the [struct@GObject.SignalInvocationHint], to
-	// mark the first call to the accumulator function for a signal emission.
+	// see also https://docs.gtk.org/gobject/flags.SignalFlags.html#accumulator_first_run
+	//
 	SignalAccumulatorFirstRun SignalFlags = 131072
 )
 
@@ -532,36 +523,41 @@ func (f SignalFlags) String() string {
 }
 
 // SignalMatchType wraps GSignalMatchType
+// 
+// see also https://docs.gtk.org/gobject/flags.SignalMatchType.html
 //
-// The match types specify what g_signal_handlers_block_matched(),
-// g_signal_handlers_unblock_matched() and g_signal_handlers_disconnect_matched()
-// match signals by.
 type SignalMatchType C.gint
 
 const (
 	// SignalMatchID wraps G_SIGNAL_MATCH_ID
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalMatchType.html#id
 	//
-	// The signal id must be equal.
 	SignalMatchID SignalMatchType = 1
 	// SignalMatchDetail wraps G_SIGNAL_MATCH_DETAIL
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalMatchType.html#detail
 	//
-	// The signal detail must be equal.
 	SignalMatchDetail SignalMatchType = 2
 	// SignalMatchClosure wraps G_SIGNAL_MATCH_CLOSURE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalMatchType.html#closure
 	//
-	// The closure must be the same.
 	SignalMatchClosure SignalMatchType = 4
 	// SignalMatchFunc wraps G_SIGNAL_MATCH_FUNC
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalMatchType.html#func
 	//
-	// The C closure callback must be the same.
 	SignalMatchFunc SignalMatchType = 8
 	// SignalMatchData wraps G_SIGNAL_MATCH_DATA
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalMatchType.html#data
 	//
-	// The closure data must be the same.
 	SignalMatchData SignalMatchType = 16
 	// SignalMatchUnblocked wraps G_SIGNAL_MATCH_UNBLOCKED
+	// 
+	// see also https://docs.gtk.org/gobject/flags.SignalMatchType.html#unblocked
 	//
-	// Only unblocked signals may be matched.
 	SignalMatchUnblocked SignalMatchType = 32
 )
 
@@ -598,36 +594,36 @@ func (f SignalMatchType) String() string {
 }
 
 // TypeFlags wraps GTypeFlags
+// 
+// see also https://docs.gtk.org/gobject/flags.TypeFlags.html
 //
-// Bit masks used to check or determine characteristics of a type.
 type TypeFlags C.gint
 
 const (
 	// TypeFlagNone wraps G_TYPE_FLAG_NONE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFlags.html#none
 	//
-	// No special flags. Since: 2.74
 	TypeFlagNone TypeFlags = 0
 	// TypeFlagAbstract wraps G_TYPE_FLAG_ABSTRACT
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFlags.html#abstract
 	//
-	// Indicates an abstract type. No instances can be
-	//  created for an abstract type
 	TypeFlagAbstract TypeFlags = 16
 	// TypeFlagValueAbstract wraps G_TYPE_FLAG_VALUE_ABSTRACT
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFlags.html#value_abstract
 	//
-	// Indicates an abstract value type, i.e. a type
-	//  that introduces a value table, but can't be used for
-	//  g_value_init()
 	TypeFlagValueAbstract TypeFlags = 32
 	// TypeFlagFinal wraps G_TYPE_FLAG_FINAL
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFlags.html#final
 	//
-	// Indicates a final type. A final type is a non-derivable
-	//  leaf node in a deep derivable type hierarchy tree. Since: 2.70
 	TypeFlagFinal TypeFlags = 64
 	// TypeFlagDeprecated wraps G_TYPE_FLAG_DEPRECATED
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFlags.html#deprecated
 	//
-	// The type is deprecated and may be removed in a
-	//  future version. A warning will be emitted if it is instantiated while
-	//  running with `G_ENABLE_DIAGNOSTIC=1`. Since 2.76
 	TypeFlagDeprecated TypeFlags = 128
 )
 
@@ -661,27 +657,31 @@ func (f TypeFlags) String() string {
 }
 
 // TypeFundamentalFlags wraps GTypeFundamentalFlags
+// 
+// see also https://docs.gtk.org/gobject/flags.TypeFundamentalFlags.html
 //
-// Bit masks used to check or determine specific characteristics of a
-// fundamental type.
 type TypeFundamentalFlags C.gint
 
 const (
 	// TypeFlagClassed wraps G_TYPE_FLAG_CLASSED
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFundamentalFlags.html#classed
 	//
-	// Indicates a classed type
 	TypeFlagClassed TypeFundamentalFlags = 1
 	// TypeFlagInstantiatable wraps G_TYPE_FLAG_INSTANTIATABLE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFundamentalFlags.html#instantiatable
 	//
-	// Indicates an instantiatable type (implies classed)
 	TypeFlagInstantiatable TypeFundamentalFlags = 2
 	// TypeFlagDerivable wraps G_TYPE_FLAG_DERIVABLE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFundamentalFlags.html#derivable
 	//
-	// Indicates a flat derivable type
 	TypeFlagDerivable TypeFundamentalFlags = 4
 	// TypeFlagDeepDerivable wraps G_TYPE_FLAG_DEEP_DERIVABLE
+	// 
+	// see also https://docs.gtk.org/gobject/flags.TypeFundamentalFlags.html#deep_derivable
 	//
-	// Indicates a deep derivable type (implies derivable)
 	TypeFlagDeepDerivable TypeFundamentalFlags = 8
 )
 
@@ -713,37 +713,8 @@ func (f TypeFundamentalFlags) String() string {
 
 // EnumCompleteTypeInfo wraps g_enum_complete_type_info
 // 
-// The function takes the following parameters:
-// 
-// 	- gEnumType Type: the type identifier of the type being completed 
-// 	- constValues []EnumValue: An array of #GEnumValue
-//  structs for the possible enumeration values. The array is terminated
-//  by a struct with all members being 0. 
-// 
-// The function returns the following values:
-// 
-// 	- info TypeInfo: the #GTypeInfo struct to be filled in 
+// see also https://docs.gtk.org/gobject/func.g_enum_complete_type_info.html
 //
-// This function is meant to be called from the `complete_type_info`
-// function of a #GTypePlugin implementation, as in the following
-// example:
-// 
-// |[&lt;!-- language="C" --&gt;
-// static void
-// my_enum_complete_type_info (GTypePlugin     *plugin,
-//                             GType            g_type,
-//                             GTypeInfo       *info,
-//                             GTypeValueTable *value_table)
-// {
-//   static const GEnumValue values[] = {
-//     { MY_ENUM_FOO, "MY_ENUM_FOO", "foo" },
-//     { MY_ENUM_BAR, "MY_ENUM_BAR", "bar" },
-//     { 0, NULL, NULL }
-//   };
-// 
-//   g_enum_complete_type_info (type, info, values);
-// }
-// ]|
 func EnumCompleteTypeInfo(gEnumType Type, constValues []EnumValue) TypeInfo {
 	var carg1 C.GType       // in, none, casted, alias
 	var carg3 *C.GEnumValue // in, transfer: none, C Pointers: 1, Name: array[EnumValue], array (inner GEnumValue (*typesystem.Record), zero-terminated)
@@ -769,16 +740,8 @@ func EnumCompleteTypeInfo(gEnumType Type, constValues []EnumValue) TypeInfo {
 
 // EnumGetValue wraps g_enum_get_value
 // 
-// The function takes the following parameters:
-// 
-// 	- enumClass *EnumClass: a #GEnumClass 
-// 	- value int32: the value to look up 
-// 
-// The function returns the following values:
-// 
-// 	- goret *EnumValue (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_enum_get_value.html
 //
-// Returns the #GEnumValue for a value.
 func EnumGetValue(enumClass *EnumClass, value int32) *EnumValue {
 	var carg1 *C.GEnumClass // in, none, converted
 	var carg2 C.gint        // in, none, casted
@@ -802,16 +765,8 @@ func EnumGetValue(enumClass *EnumClass, value int32) *EnumValue {
 
 // EnumGetValueByName wraps g_enum_get_value_by_name
 // 
-// The function takes the following parameters:
-// 
-// 	- enumClass *EnumClass: a #GEnumClass 
-// 	- name string: the name to look up 
-// 
-// The function returns the following values:
-// 
-// 	- goret *EnumValue (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_enum_get_value_by_name.html
 //
-// Looks up a #GEnumValue by name.
 func EnumGetValueByName(enumClass *EnumClass, name string) *EnumValue {
 	var carg1 *C.GEnumClass // in, none, converted
 	var carg2 *C.gchar      // in, none, string
@@ -836,16 +791,8 @@ func EnumGetValueByName(enumClass *EnumClass, name string) *EnumValue {
 
 // EnumGetValueByNick wraps g_enum_get_value_by_nick
 // 
-// The function takes the following parameters:
-// 
-// 	- enumClass *EnumClass: a #GEnumClass 
-// 	- nick string: the nickname to look up 
-// 
-// The function returns the following values:
-// 
-// 	- goret *EnumValue (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_enum_get_value_by_nick.html
 //
-// Looks up a #GEnumValue by nickname.
 func EnumGetValueByNick(enumClass *EnumClass, nick string) *EnumValue {
 	var carg1 *C.GEnumClass // in, none, converted
 	var carg2 *C.gchar      // in, none, string
@@ -870,23 +817,8 @@ func EnumGetValueByNick(enumClass *EnumClass, nick string) *EnumValue {
 
 // EnumRegisterStatic wraps g_enum_register_static
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: A nul-terminated string used as the name of the new type. 
-// 	- constStaticValues []EnumValue: An array of
-//  #GEnumValue structs for the possible enumeration values. The array is
-//  terminated by a struct with all members being 0. GObject keeps a
-//  reference to the data, so it cannot be stack-allocated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_enum_register_static.html
 //
-// Registers a new static enumeration type with the name @name.
-// 
-// It is normally more convenient to let [glib-mkenums][glib-mkenums],
-// generate a my_enum_get_type() function from a usual C enumeration
-// definition  than to write one yourself using g_enum_register_static().
 func EnumRegisterStatic(name string, constStaticValues []EnumValue) Type {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.GEnumValue // in, transfer: none, C Pointers: 1, Name: array[EnumValue], array (inner GEnumValue (*typesystem.Record), zero-terminated)
@@ -911,19 +843,8 @@ func EnumRegisterStatic(name string, constStaticValues []EnumValue) Type {
 
 // EnumToString wraps g_enum_to_string
 // 
-// The function takes the following parameters:
-// 
-// 	- gEnumType Type: the type identifier of a #GEnumClass type 
-// 	- value int32: the value 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/gobject/func.g_enum_to_string.html
 //
-// Pretty-prints @value in the form of the enum&#x2019;s name.
-// 
-// This is intended to be used for debugging purposes. The format of the output
-// may change in the future.
 func EnumToString(gEnumType Type, value int32) string {
 	var carg1 C.GType  // in, none, casted, alias
 	var carg2 C.gint   // in, none, casted
@@ -946,20 +867,8 @@ func EnumToString(gEnumType Type, value int32) string {
 
 // FlagsCompleteTypeInfo wraps g_flags_complete_type_info
 // 
-// The function takes the following parameters:
-// 
-// 	- gFlagsType Type: the type identifier of the type being completed 
-// 	- constValues []FlagsValue: An array of #GFlagsValue
-//  structs for the possible enumeration values. The array is terminated
-//  by a struct with all members being 0. 
-// 
-// The function returns the following values:
-// 
-// 	- info TypeInfo: the #GTypeInfo struct to be filled in 
+// see also https://docs.gtk.org/gobject/func.g_flags_complete_type_info.html
 //
-// This function is meant to be called from the complete_type_info()
-// function of a #GTypePlugin implementation, see the example for
-// g_enum_complete_type_info() above.
 func FlagsCompleteTypeInfo(gFlagsType Type, constValues []FlagsValue) TypeInfo {
 	var carg1 C.GType        // in, none, casted, alias
 	var carg3 *C.GFlagsValue // in, transfer: none, C Pointers: 1, Name: array[FlagsValue], array (inner GFlagsValue (*typesystem.Record), zero-terminated)
@@ -985,16 +894,8 @@ func FlagsCompleteTypeInfo(gFlagsType Type, constValues []FlagsValue) TypeInfo {
 
 // FlagsGetFirstValue wraps g_flags_get_first_value
 // 
-// The function takes the following parameters:
-// 
-// 	- flagsClass *FlagsClass: a #GFlagsClass 
-// 	- value uint: the value 
-// 
-// The function returns the following values:
-// 
-// 	- goret *FlagsValue (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_flags_get_first_value.html
 //
-// Returns the first #GFlagsValue which is set in @value.
 func FlagsGetFirstValue(flagsClass *FlagsClass, value uint) *FlagsValue {
 	var carg1 *C.GFlagsClass // in, none, converted
 	var carg2 C.guint        // in, none, casted
@@ -1018,16 +919,8 @@ func FlagsGetFirstValue(flagsClass *FlagsClass, value uint) *FlagsValue {
 
 // FlagsGetValueByName wraps g_flags_get_value_by_name
 // 
-// The function takes the following parameters:
-// 
-// 	- flagsClass *FlagsClass: a #GFlagsClass 
-// 	- name string: the name to look up 
-// 
-// The function returns the following values:
-// 
-// 	- goret *FlagsValue (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_flags_get_value_by_name.html
 //
-// Looks up a #GFlagsValue by name.
 func FlagsGetValueByName(flagsClass *FlagsClass, name string) *FlagsValue {
 	var carg1 *C.GFlagsClass // in, none, converted
 	var carg2 *C.gchar       // in, none, string
@@ -1052,16 +945,8 @@ func FlagsGetValueByName(flagsClass *FlagsClass, name string) *FlagsValue {
 
 // FlagsGetValueByNick wraps g_flags_get_value_by_nick
 // 
-// The function takes the following parameters:
-// 
-// 	- flagsClass *FlagsClass: a #GFlagsClass 
-// 	- nick string: the nickname to look up 
-// 
-// The function returns the following values:
-// 
-// 	- goret *FlagsValue (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_flags_get_value_by_nick.html
 //
-// Looks up a #GFlagsValue by nickname.
 func FlagsGetValueByNick(flagsClass *FlagsClass, nick string) *FlagsValue {
 	var carg1 *C.GFlagsClass // in, none, converted
 	var carg2 *C.gchar       // in, none, string
@@ -1086,23 +971,8 @@ func FlagsGetValueByNick(flagsClass *FlagsClass, nick string) *FlagsValue {
 
 // FlagsRegisterStatic wraps g_flags_register_static
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: A nul-terminated string used as the name of the new type. 
-// 	- constStaticValues []FlagsValue: An array of
-//  #GFlagsValue structs for the possible flags values. The array is
-//  terminated by a struct with all members being 0. GObject keeps a
-//  reference to the data, so it cannot be stack-allocated. 
-// 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_flags_register_static.html
 //
-// Registers a new static flags type with the name @name.
-// 
-// It is normally more convenient to let [glib-mkenums][glib-mkenums]
-// generate a my_flags_get_type() function from a usual C enumeration
-// definition than to write one yourself using g_flags_register_static().
 func FlagsRegisterStatic(name string, constStaticValues []FlagsValue) Type {
 	var carg1 *C.gchar       // in, none, string
 	var carg2 *C.GFlagsValue // in, transfer: none, C Pointers: 1, Name: array[FlagsValue], array (inner GFlagsValue (*typesystem.Record), zero-terminated)
@@ -1127,20 +997,8 @@ func FlagsRegisterStatic(name string, constStaticValues []FlagsValue) Type {
 
 // FlagsToString wraps g_flags_to_string
 // 
-// The function takes the following parameters:
-// 
-// 	- flagsType Type: the type identifier of a #GFlagsClass type 
-// 	- value uint: the value 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/gobject/func.g_flags_to_string.html
 //
-// Pretty-prints @value in the form of the flag names separated by ` | ` and
-// sorted. Any extra bits will be shown at the end as a hexadecimal number.
-// 
-// This is intended to be used for debugging purposes. The format of the output
-// may change in the future.
 func FlagsToString(flagsType Type, value uint) string {
 	var carg1 C.GType  // in, none, casted, alias
 	var carg2 C.guint  // in, none, casted
@@ -1163,9 +1021,7 @@ func FlagsToString(flagsType Type, value uint) string {
 
 // GTypeGetType wraps g_gtype_get_type
 // 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_gtype_get_type.html
 func GTypeGetType() Type {
 	var cret C.GType // return, none, casted, alias
 
@@ -1180,25 +1036,8 @@ func GTypeGetType() Type {
 
 // ParamSpecBoolean wraps g_param_spec_boolean
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- defaultValue bool: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_boolean.html
 //
-// Creates a new #GParamSpecBoolean instance specifying a %G_TYPE_BOOLEAN
-// property. In many cases, it may be more appropriate to use an enum with
-// g_param_spec_enum(), both to improve code clarity by using explicitly named
-// values, and to allow for more values to be added in future without breaking
-// API.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecBoolean(name string, nick string, blurb string, defaultValue bool, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1238,22 +1077,8 @@ func ParamSpecBoolean(name string, nick string, blurb string, defaultValue bool,
 
 // ParamSpecBoxed wraps g_param_spec_boxed
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- boxedType Type: %G_TYPE_BOXED derived type of this property 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_boxed.html
 //
-// Creates a new #GParamSpecBoxed instance specifying a %G_TYPE_BOXED
-// derived property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecBoxed(name string, nick string, blurb string, boxedType Type, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1291,21 +1116,8 @@ func ParamSpecBoxed(name string, nick string, blurb string, boxedType Type, flag
 
 // ParamSpecChar wraps g_param_spec_char
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum int8: minimum value for the property specified 
-// 	- maximum int8: maximum value for the property specified 
-// 	- defaultValue int8: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_char.html
 //
-// Creates a new #GParamSpecChar instance specifying a %G_TYPE_CHAR property.
 func ParamSpecChar(name string, nick string, blurb string, minimum int8, maximum int8, defaultValue int8, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1349,24 +1161,8 @@ func ParamSpecChar(name string, nick string, blurb string, minimum int8, maximum
 
 // ParamSpecDouble wraps g_param_spec_double
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum float64: minimum value for the property specified 
-// 	- maximum float64: maximum value for the property specified 
-// 	- defaultValue float64: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_double.html
 //
-// Creates a new #GParamSpecDouble instance specifying a %G_TYPE_DOUBLE
-// property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecDouble(name string, nick string, blurb string, minimum float64, maximum float64, defaultValue float64, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1410,23 +1206,8 @@ func ParamSpecDouble(name string, nick string, blurb string, minimum float64, ma
 
 // ParamSpecEnum wraps g_param_spec_enum
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- enumType Type: a #GType derived from %G_TYPE_ENUM 
-// 	- defaultValue int32: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_enum.html
 //
-// Creates a new #GParamSpecEnum instance specifying a %G_TYPE_ENUM
-// property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecEnum(name string, nick string, blurb string, enumType Type, defaultValue int32, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1467,23 +1248,8 @@ func ParamSpecEnum(name string, nick string, blurb string, enumType Type, defaul
 
 // ParamSpecFlags wraps g_param_spec_flags
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- flagsType Type: a #GType derived from %G_TYPE_FLAGS 
-// 	- defaultValue uint: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_flags.html
 //
-// Creates a new #GParamSpecFlags instance specifying a %G_TYPE_FLAGS
-// property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecFlags(name string, nick string, blurb string, flagsType Type, defaultValue uint, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1524,23 +1290,8 @@ func ParamSpecFlags(name string, nick string, blurb string, flagsType Type, defa
 
 // ParamSpecFloat wraps g_param_spec_float
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum float32: minimum value for the property specified 
-// 	- maximum float32: maximum value for the property specified 
-// 	- defaultValue float32: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_float.html
 //
-// Creates a new #GParamSpecFloat instance specifying a %G_TYPE_FLOAT property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecFloat(name string, nick string, blurb string, minimum float32, maximum float32, defaultValue float32, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1584,23 +1335,8 @@ func ParamSpecFloat(name string, nick string, blurb string, minimum float32, max
 
 // ParamSpecGType wraps g_param_spec_gtype
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- isAType Type: a #GType whose subtypes are allowed as values
-//  of the property (use %G_TYPE_NONE for any type) 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_gtype.html
 //
-// Creates a new #GParamSpecGType instance specifying a
-// %G_TYPE_GTYPE property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecGType(name string, nick string, blurb string, isAType Type, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1638,23 +1374,8 @@ func ParamSpecGType(name string, nick string, blurb string, isAType Type, flags 
 
 // ParamSpecInt32 wraps g_param_spec_int
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum int32: minimum value for the property specified 
-// 	- maximum int32: maximum value for the property specified 
-// 	- defaultValue int32: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_int.html
 //
-// Creates a new #GParamSpecInt instance specifying a %G_TYPE_INT property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecInt32(name string, nick string, blurb string, minimum int32, maximum int32, defaultValue int32, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1698,23 +1419,8 @@ func ParamSpecInt32(name string, nick string, blurb string, minimum int32, maxim
 
 // ParamSpecInt64 wraps g_param_spec_int64
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum int64: minimum value for the property specified 
-// 	- maximum int64: maximum value for the property specified 
-// 	- defaultValue int64: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_int64.html
 //
-// Creates a new #GParamSpecInt64 instance specifying a %G_TYPE_INT64 property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecInt64(name string, nick string, blurb string, minimum int64, maximum int64, defaultValue int64, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1758,23 +1464,8 @@ func ParamSpecInt64(name string, nick string, blurb string, minimum int64, maxim
 
 // ParamSpecLong wraps g_param_spec_long
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum int32: minimum value for the property specified 
-// 	- maximum int32: maximum value for the property specified 
-// 	- defaultValue int32: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_long.html
 //
-// Creates a new #GParamSpecLong instance specifying a %G_TYPE_LONG property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecLong(name string, nick string, blurb string, minimum int32, maximum int32, defaultValue int32, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1818,22 +1509,8 @@ func ParamSpecLong(name string, nick string, blurb string, minimum int32, maximu
 
 // ParamSpecObject wraps g_param_spec_object
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- objectType Type: %G_TYPE_OBJECT derived type of this property 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_object.html
 //
-// Creates a new #GParamSpecBoxed instance specifying a %G_TYPE_OBJECT
-// derived property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecObject(name string, nick string, blurb string, objectType Type, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1871,22 +1548,8 @@ func ParamSpecObject(name string, nick string, blurb string, objectType Type, fl
 
 // ParamSpecParam wraps g_param_spec_param
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- paramType Type: a #GType derived from %G_TYPE_PARAM 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_param.html
 //
-// Creates a new #GParamSpecParam instance specifying a %G_TYPE_PARAM
-// property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecParam(name string, nick string, blurb string, paramType Type, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1924,22 +1587,8 @@ func ParamSpecParam(name string, nick string, blurb string, paramType Type, flag
 
 // ParamSpecPointer wraps g_param_spec_pointer
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_pointer.html
 //
-// Creates a new #GParamSpecPointer instance specifying a pointer property.
-// Where possible, it is better to use g_param_spec_object() or
-// g_param_spec_boxed() to expose memory management information.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecPointer(name string, nick string, blurb string, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -1974,21 +1623,8 @@ func ParamSpecPointer(name string, nick string, blurb string, flags ParamFlags) 
 
 // ParamSpecString wraps g_param_spec_string
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- defaultValue string (nullable): default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_string.html
 //
-// Creates a new #GParamSpecString instance.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecString(name string, nick string, blurb string, defaultValue string, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -2029,21 +1665,8 @@ func ParamSpecString(name string, nick string, blurb string, defaultValue string
 
 // ParamSpecUchar wraps g_param_spec_uchar
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum uint8: minimum value for the property specified 
-// 	- maximum uint8: maximum value for the property specified 
-// 	- defaultValue uint8: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_uchar.html
 //
-// Creates a new #GParamSpecUChar instance specifying a %G_TYPE_UCHAR property.
 func ParamSpecUchar(name string, nick string, blurb string, minimum uint8, maximum uint8, defaultValue uint8, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -2087,23 +1710,8 @@ func ParamSpecUchar(name string, nick string, blurb string, minimum uint8, maxim
 
 // ParamSpecUint wraps g_param_spec_uint
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum uint: minimum value for the property specified 
-// 	- maximum uint: maximum value for the property specified 
-// 	- defaultValue uint: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_uint.html
 //
-// Creates a new #GParamSpecUInt instance specifying a %G_TYPE_UINT property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecUint(name string, nick string, blurb string, minimum uint, maximum uint, defaultValue uint, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -2147,24 +1755,8 @@ func ParamSpecUint(name string, nick string, blurb string, minimum uint, maximum
 
 // ParamSpecUint64 wraps g_param_spec_uint64
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum uint64: minimum value for the property specified 
-// 	- maximum uint64: maximum value for the property specified 
-// 	- defaultValue uint64: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_uint64.html
 //
-// Creates a new #GParamSpecUInt64 instance specifying a %G_TYPE_UINT64
-// property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecUint64(name string, nick string, blurb string, minimum uint64, maximum uint64, defaultValue uint64, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -2208,24 +1800,8 @@ func ParamSpecUint64(name string, nick string, blurb string, minimum uint64, max
 
 // ParamSpecUlong wraps g_param_spec_ulong
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- minimum uint32: minimum value for the property specified 
-// 	- maximum uint32: maximum value for the property specified 
-// 	- defaultValue uint32: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_ulong.html
 //
-// Creates a new #GParamSpecULong instance specifying a %G_TYPE_ULONG
-// property.
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecUlong(name string, nick string, blurb string, minimum uint32, maximum uint32, defaultValue uint32, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -2269,23 +1845,8 @@ func ParamSpecUlong(name string, nick string, blurb string, minimum uint32, maxi
 
 // ParamSpecUnichar wraps g_param_spec_unichar
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: canonical name of the property specified 
-// 	- nick string (nullable): nick name for the property specified 
-// 	- blurb string (nullable): description of the property specified 
-// 	- defaultValue uint32: default value for the property specified 
-// 	- flags ParamFlags: flags for the property specified 
-// 
-// The function returns the following values:
-// 
-// 	- goret *ParamSpec 
+// see also https://docs.gtk.org/gobject/func.g_param_spec_unichar.html
 //
-// Creates a new #GParamSpecUnichar instance specifying a %G_TYPE_UINT
-// property. #GValue structures for this property can be accessed with
-// g_value_set_uint() and g_value_get_uint().
-// 
-// See g_param_spec_internal() for details on property names.
 func ParamSpecUnichar(name string, nick string, blurb string, defaultValue uint32, flags ParamFlags) *ParamSpec {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 *C.gchar      // in, none, string, nullable-string
@@ -2323,25 +1884,8 @@ func ParamSpecUnichar(name string, nick string, blurb string, defaultValue uint3
 
 // ParamValueConvert wraps g_param_value_convert
 // 
-// The function takes the following parameters:
-// 
-// 	- pspec *ParamSpec: a valid #GParamSpec 
-// 	- srcValue *Value: source #GValue 
-// 	- destValue *Value: destination #GValue of correct type for @pspec 
-// 	- strictValidation bool: %TRUE requires @dest_value to conform to @pspec
-// without modifications 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_param_value_convert.html
 //
-// Transforms @src_value into @dest_value if possible, and then
-// validates @dest_value, in order for it to conform to @pspec.  If
-// @strict_validation is %TRUE this function will only succeed if the
-// transformed @dest_value complied to @pspec without modifications.
-// 
-// See also g_value_type_transformable(), g_value_transform() and
-// g_param_value_validate().
 func ParamValueConvert(pspec *ParamSpec, srcValue *Value, destValue *Value, strictValidation bool) bool {
 	var carg1 *C.GParamSpec // in, none, converted
 	var carg2 *C.GValue     // in, none, converted
@@ -2373,16 +1917,8 @@ func ParamValueConvert(pspec *ParamSpec, srcValue *Value, destValue *Value, stri
 
 // ParamValueDefaults wraps g_param_value_defaults
 // 
-// The function takes the following parameters:
-// 
-// 	- pspec *ParamSpec: a valid #GParamSpec 
-// 	- value *Value: a #GValue of correct type for @pspec 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_param_value_defaults.html
 //
-// Checks whether @value contains the default value as specified in @pspec.
 func ParamValueDefaults(pspec *ParamSpec, value *Value) bool {
 	var carg1 *C.GParamSpec // in, none, converted
 	var carg2 *C.GValue     // in, none, converted
@@ -2406,17 +1942,8 @@ func ParamValueDefaults(pspec *ParamSpec, value *Value) bool {
 
 // ParamValueIsValid wraps g_param_value_is_valid
 // 
-// The function takes the following parameters:
-// 
-// 	- pspec *ParamSpec: a valid #GParamSpec 
-// 	- value *Value: a #GValue of correct type for @pspec 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_param_value_is_valid.html
 //
-// Return whether the contents of @value comply with the specifications
-// set out by @pspec.
 func ParamValueIsValid(pspec *ParamSpec, value *Value) bool {
 	var carg1 *C.GParamSpec // in, none, converted
 	var carg2 *C.GValue     // in, none, converted
@@ -2440,13 +1967,8 @@ func ParamValueIsValid(pspec *ParamSpec, value *Value) bool {
 
 // ParamValueSetDefault wraps g_param_value_set_default
 // 
-// The function takes the following parameters:
-// 
-// 	- pspec *ParamSpec: a valid #GParamSpec 
-// 	- value *Value: a #GValue of correct type for @pspec; since 2.64, you
-//   can also pass an empty #GValue, initialized with %G_VALUE_INIT 
+// see also https://docs.gtk.org/gobject/func.g_param_value_set_default.html
 //
-// Sets @value to its default value as specified in @pspec.
 func ParamValueSetDefault(pspec *ParamSpec, value *Value) {
 	var carg1 *C.GParamSpec // in, none, converted
 	var carg2 *C.GValue     // in, none, converted
@@ -2461,21 +1983,8 @@ func ParamValueSetDefault(pspec *ParamSpec, value *Value) {
 
 // ParamValueValidate wraps g_param_value_validate
 // 
-// The function takes the following parameters:
-// 
-// 	- pspec *ParamSpec: a valid #GParamSpec 
-// 	- value *Value: a #GValue of correct type for @pspec 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_param_value_validate.html
 //
-// Ensures that the contents of @value comply with the specifications
-// set out by @pspec. For example, a #GParamSpecInt might require
-// that integers stored in @value may not be smaller than -42 and not be
-// greater than +42. If @value contains an integer outside of this range,
-// it is modified accordingly, so the resulting value will fit into the
-// range -42 .. +42.
 func ParamValueValidate(pspec *ParamSpec, value *Value) bool {
 	var carg1 *C.GParamSpec // in, none, converted
 	var carg2 *C.GValue     // in, none, converted
@@ -2499,19 +2008,8 @@ func ParamValueValidate(pspec *ParamSpec, value *Value) bool {
 
 // ParamValuesCmp wraps g_param_values_cmp
 // 
-// The function takes the following parameters:
-// 
-// 	- pspec *ParamSpec: a valid #GParamSpec 
-// 	- value1 *Value: a #GValue of correct type for @pspec 
-// 	- value2 *Value: a #GValue of correct type for @pspec 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/gobject/func.g_param_values_cmp.html
 //
-// Compares @value1 with @value2 according to @pspec, and return -1, 0 or +1,
-// if @value1 is found to be less than, equal to or greater than @value2,
-// respectively.
 func ParamValuesCmp(pspec *ParamSpec, value1 *Value, value2 *Value) int32 {
 	var carg1 *C.GParamSpec // in, none, converted
 	var carg2 *C.GValue     // in, none, converted
@@ -2536,16 +2034,8 @@ func ParamValuesCmp(pspec *ParamSpec, value1 *Value, value2 *Value) int32 {
 
 // PointerTypeRegisterStatic wraps g_pointer_type_register_static
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: the name of the new pointer type. 
-// 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_pointer_type_register_static.html
 //
-// Creates a new %G_TYPE_POINTER derived type id for a new
-// pointer type with name @name.
 func PointerTypeRegisterStatic(name string) Type {
 	var carg1 *C.gchar // in, none, string
 	var cret  C.GType  // return, none, casted, alias
@@ -2565,19 +2055,8 @@ func PointerTypeRegisterStatic(name string) Type {
 
 // SignalIsValidName wraps g_signal_is_valid_name
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: the canonical name of the signal 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_signal_is_valid_name.html
 //
-// Validate a signal name. This can be useful for dynamically-generated signals
-// which need to be validated at run-time before actually trying to create them.
-// 
-// See [func@GObject.signal_new] for details of the rules for valid names.
-// The rules for signal names are the same as those for property names.
 func SignalIsValidName(name string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -2599,18 +2078,8 @@ func SignalIsValidName(name string) bool {
 
 // SignalListIDs wraps g_signal_list_ids
 // 
-// The function takes the following parameters:
-// 
-// 	- itype Type: Instance or interface type. 
-// 
-// The function returns the following values:
-// 
-// 	- nIds uint: Location to store the number of signal ids for @itype. 
-// 	- goret []uint 
+// see also https://docs.gtk.org/gobject/func.g_signal_list_ids.html
 //
-// Lists the signals by id that a certain instance or interface type
-// created. Further information about the signals can be acquired through
-// g_signal_query().
 func SignalListIDs(itype Type) (uint, []uint) {
 	var carg1 C.GType  // in, none, casted, alias
 	var carg2 C.guint  // out, full, casted
@@ -2634,26 +2103,8 @@ func SignalListIDs(itype Type) (uint, []uint) {
 
 // SignalLookup wraps g_signal_lookup
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: the signal's name. 
-// 	- itype Type: the type that the signal operates on. 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/gobject/func.g_signal_lookup.html
 //
-// Given the name of the signal and the type of object it connects to, gets
-// the signal's identifying integer. Emitting the signal by number is
-// somewhat faster than using the name each time.
-// 
-// Also tries the ancestors of the given type.
-// 
-// The type class passed as @itype must already have been instantiated (for
-// example, using g_type_class_ref()) for this function to work, as signals are
-// always installed during class initialization.
-// 
-// See g_signal_new() for details on allowed signal names.
 func SignalLookup(name string, itype Type) uint {
 	var carg1 *C.gchar // in, none, string
 	var carg2 C.GType  // in, none, casted, alias
@@ -2676,17 +2127,8 @@ func SignalLookup(name string, itype Type) uint {
 
 // SignalName wraps g_signal_name
 // 
-// The function takes the following parameters:
-// 
-// 	- signalId uint: the signal's identifying number. 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_signal_name.html
 //
-// Given the signal's identifier, finds its name.
-// 
-// Two different signals may have the same name, if they have differing types.
 func SignalName(signalId uint) string {
 	var carg1 C.guint  // in, none, casted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -2707,20 +2149,8 @@ func SignalName(signalId uint) string {
 
 // SignalParseName wraps g_signal_parse_name
 // 
-// The function takes the following parameters:
-// 
-// 	- detailedSignal string: a string of the form "signal-name::detail". 
-// 	- itype Type: The interface/instance type that introduced "signal-name". 
-// 	- forceDetailQuark bool: %TRUE forces creation of a #GQuark for the detail. 
-// 
-// The function returns the following values:
-// 
-// 	- signalIdP uint: Location to store the signal id. 
-// 	- detailP glib.Quark: Location to store the detail quark. 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_signal_parse_name.html
 //
-// Internal function to parse a signal name into its @signal_id
-// and @detail quark.
 func SignalParseName(detailedSignal string, itype Type, forceDetailQuark bool) (uint, glib.Quark, bool) {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 C.GType    // in, none, casted, alias
@@ -2756,13 +2186,8 @@ func SignalParseName(detailedSignal string, itype Type, forceDetailQuark bool) (
 
 // SignalRemoveEmissionHook wraps g_signal_remove_emission_hook
 // 
-// The function takes the following parameters:
-// 
-// 	- signalId uint: the id of the signal 
-// 	- hookId uint32: the id of the emission hook, as returned by
-//  g_signal_add_emission_hook() 
+// see also https://docs.gtk.org/gobject/func.g_signal_remove_emission_hook.html
 //
-// Deletes an emission hook.
 func SignalRemoveEmissionHook(signalId uint, hookId uint32) {
 	var carg1 C.guint  // in, none, casted
 	var carg2 C.gulong // in, none, casted
@@ -2777,21 +2202,8 @@ func SignalRemoveEmissionHook(signalId uint, hookId uint32) {
 
 // TypeAddClassPrivate wraps g_type_add_class_private
 // 
-// The function takes the following parameters:
-// 
-// 	- classType Type: GType of a classed type 
-// 	- privateSize uint: size of private structure 
+// see also https://docs.gtk.org/gobject/func.g_type_add_class_private.html
 //
-// Registers a private class structure for a classed type;
-// when the class is allocated, the private structures for
-// the class and all of its parent types are allocated
-// sequentially in the same memory block as the public
-// structures, and are zero-filled.
-// 
-// This function should be called in the
-// type's get_type() function after the type is registered.
-// The private structure can be retrieved using the
-// G_TYPE_CLASS_GET_PRIVATE() macro.
 func TypeAddClassPrivate(classType Type, privateSize uint) {
 	var carg1 C.GType // in, none, casted, alias
 	var carg2 C.gsize // in, none, casted
@@ -2806,14 +2218,7 @@ func TypeAddClassPrivate(classType Type, privateSize uint) {
 
 // TypeAddInstancePrivate wraps g_type_add_instance_private
 // 
-// The function takes the following parameters:
-// 
-// 	- classType Type 
-// 	- privateSize uint 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/gobject/func.g_type_add_instance_private.html
 func TypeAddInstancePrivate(classType Type, privateSize uint) int32 {
 	var carg1 C.GType // in, none, casted, alias
 	var carg2 C.gsize // in, none, casted
@@ -2835,16 +2240,8 @@ func TypeAddInstancePrivate(classType Type, privateSize uint) int32 {
 
 // TypeAddInterfaceStatic wraps g_type_add_interface_static
 // 
-// The function takes the following parameters:
-// 
-// 	- instanceType Type: #GType value of an instantiatable type 
-// 	- interfaceType Type: #GType value of an interface type 
-// 	- info *InterfaceInfo: #GInterfaceInfo structure for this
-//        (@instance_type, @interface_type) combination 
+// see also https://docs.gtk.org/gobject/func.g_type_add_interface_static.html
 //
-// Adds @interface_type to the static @instance_type.
-// The information contained in the #GInterfaceInfo structure
-// pointed to by @info is used to manage the relationship.
 func TypeAddInterfaceStatic(instanceType Type, interfaceType Type, info *InterfaceInfo) {
 	var carg1 C.GType           // in, none, casted, alias
 	var carg2 C.GType           // in, none, casted, alias
@@ -2862,16 +2259,8 @@ func TypeAddInterfaceStatic(instanceType Type, interfaceType Type, info *Interfa
 
 // TypeCheckInstance wraps g_type_check_instance
 // 
-// The function takes the following parameters:
-// 
-// 	- instance *TypeInstance: a valid #GTypeInstance structure 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_type_check_instance.html
 //
-// Private helper function to aid implementation of the
-// G_TYPE_CHECK_INSTANCE() macro.
 func TypeCheckInstance(instance *TypeInstance) bool {
 	var carg1 *C.GTypeInstance // in, none, converted
 	var cret  C.gboolean       // return
@@ -2892,14 +2281,7 @@ func TypeCheckInstance(instance *TypeInstance) bool {
 
 // TypeCheckInstanceIsA wraps g_type_check_instance_is_a
 // 
-// The function takes the following parameters:
-// 
-// 	- instance *TypeInstance 
-// 	- ifaceType Type 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_type_check_instance_is_a.html
 func TypeCheckInstanceIsA(instance *TypeInstance, ifaceType Type) bool {
 	var carg1 *C.GTypeInstance // in, none, converted
 	var carg2 C.GType          // in, none, casted, alias
@@ -2923,14 +2305,7 @@ func TypeCheckInstanceIsA(instance *TypeInstance, ifaceType Type) bool {
 
 // TypeCheckInstanceIsFundamentallyA wraps g_type_check_instance_is_fundamentally_a
 // 
-// The function takes the following parameters:
-// 
-// 	- instance *TypeInstance 
-// 	- fundamentalType Type 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_type_check_instance_is_fundamentally_a.html
 func TypeCheckInstanceIsFundamentallyA(instance *TypeInstance, fundamentalType Type) bool {
 	var carg1 *C.GTypeInstance // in, none, converted
 	var carg2 C.GType          // in, none, casted, alias
@@ -2954,13 +2329,7 @@ func TypeCheckInstanceIsFundamentallyA(instance *TypeInstance, fundamentalType T
 
 // TypeCheckIsValueType wraps g_type_check_is_value_type
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_type_check_is_value_type.html
 func TypeCheckIsValueType(typ Type) bool {
 	var carg1 C.GType    // in, none, casted, alias
 	var cret  C.gboolean // return
@@ -2981,18 +2350,8 @@ func TypeCheckIsValueType(typ Type) bool {
 
 // TypeChildren wraps g_type_children
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: the parent type 
-// 
-// The function returns the following values:
-// 
-// 	- nChildren uint: location to store the length of
-//     the returned array, or %NULL 
-// 	- goret []Type 
+// see also https://docs.gtk.org/gobject/func.g_type_children.html
 //
-// Return a newly allocated and 0-terminated array of type IDs, listing
-// the child types of @type.
 func TypeChildren(typ Type) (uint, []Type) {
 	var carg1 C.GType  // in, none, casted, alias
 	var carg2 C.guint  // out, full, casted
@@ -3016,16 +2375,8 @@ func TypeChildren(typ Type) (uint, []Type) {
 
 // TypeDepth wraps g_type_depth
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: a #GType 
-// 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/gobject/func.g_type_depth.html
 //
-// Returns the length of the ancestry of the passed in type. This
-// includes the type itself, so that e.g. a fundamental type has depth 1.
 func TypeDepth(typ Type) uint {
 	var carg1 C.GType // in, none, casted, alias
 	var cret  C.guint // return, none, casted
@@ -3044,22 +2395,8 @@ func TypeDepth(typ Type) uint {
 
 // TypeEnsure wraps g_type_ensure
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: a #GType 
+// see also https://docs.gtk.org/gobject/func.g_type_ensure.html
 //
-// Ensures that the indicated @type has been registered with the
-// type system, and its _class_init() method has been run.
-// 
-// In theory, simply calling the type's _get_type() method (or using
-// the corresponding macro) is supposed take care of this. However,
-// _get_type() methods are often marked %G_GNUC_CONST for performance
-// reasons, even though this is technically incorrect (since
-// %G_GNUC_CONST requires that the function not have side effects,
-// which _get_type() methods do on the first call). As a result, if
-// you write a bare call to a _get_type() macro, it may get optimized
-// out by the compiler. Using g_type_ensure() guarantees that the
-// type's _get_type() method is called.
 func TypeEnsure(typ Type) {
 	var carg1 C.GType // in, none, casted, alias
 
@@ -3071,15 +2408,8 @@ func TypeEnsure(typ Type) {
 
 // TypeFreeInstance wraps g_type_free_instance
 // 
-// The function takes the following parameters:
-// 
-// 	- instance *TypeInstance: an instance of a type 
+// see also https://docs.gtk.org/gobject/func.g_type_free_instance.html
 //
-// Frees an instance of a type, returning it to the instance pool for
-// the type, if there is one.
-// 
-// Like g_type_create_instance(), this function is reserved for
-// implementors of fundamental types.
 func TypeFreeInstance(instance *TypeInstance) {
 	var carg1 *C.GTypeInstance // in, none, converted
 
@@ -3091,18 +2421,8 @@ func TypeFreeInstance(instance *TypeInstance) {
 
 // TypeFromName wraps g_type_from_name
 // 
-// The function takes the following parameters:
-// 
-// 	- name string: type name to look up 
-// 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_type_from_name.html
 //
-// Look up the type ID from a given type name, returning 0 if no type
-// has been registered under this name (this is the preferred method
-// to find out by name whether a specific type has been registered
-// yet).
 func TypeFromName(name string) Type {
 	var carg1 *C.gchar // in, none, string
 	var cret  C.GType  // return, none, casted, alias
@@ -3122,16 +2442,8 @@ func TypeFromName(name string) Type {
 
 // TypeFundamental wraps g_type_fundamental
 // 
-// The function takes the following parameters:
-// 
-// 	- typeId Type: valid type ID 
-// 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_type_fundamental.html
 //
-// Internal function, used to extract the fundamental type ID portion.
-// Use G_TYPE_FUNDAMENTAL() instead.
 func TypeFundamental(typeId Type) Type {
 	var carg1 C.GType // in, none, casted, alias
 	var cret  C.GType // return, none, casted, alias
@@ -3150,14 +2462,8 @@ func TypeFundamental(typeId Type) Type {
 
 // TypeFundamentalNext wraps g_type_fundamental_next
 // 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_type_fundamental_next.html
 //
-// Returns the next free fundamental type id which can be used to
-// register a new fundamental type with g_type_register_fundamental().
-// The returned type ID represents the highest currently registered
-// fundamental type identifier.
 func TypeFundamentalNext() Type {
 	var cret C.GType // return, none, casted, alias
 
@@ -3172,18 +2478,8 @@ func TypeFundamentalNext() Type {
 
 // TypeGetInstanceCount wraps g_type_get_instance_count
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: a #GType 
-// 
-// The function returns the following values:
-// 
-// 	- goret int32 
+// see also https://docs.gtk.org/gobject/func.g_type_get_instance_count.html
 //
-// Returns the number of instances allocated of the particular type;
-// this is only available if GLib is built with debugging support and
-// the `instance-count` debug flag is set (by setting the `GOBJECT_DEBUG`
-// variable to include `instance-count`).
 func TypeGetInstanceCount(typ Type) int32 {
 	var carg1 C.GType // in, none, casted, alias
 	var cret  C.int   // return, none, casted
@@ -3202,15 +2498,8 @@ func TypeGetInstanceCount(typ Type) int32 {
 
 // TypeGetTypeRegistrationSerial wraps g_type_get_type_registration_serial
 // 
-// The function returns the following values:
-// 
-// 	- goret uint 
+// see also https://docs.gtk.org/gobject/func.g_type_get_type_registration_serial.html
 //
-// Returns an opaque serial number that represents the state of the set
-// of registered types. Any time a type is registered this serial changes,
-// which means you can cache information based on type lookups (such as
-// g_type_from_name()) and know if the cache is still valid at a later
-// time by comparing the current serial with the one at the type lookup.
 func TypeGetTypeRegistrationSerial() uint {
 	var cret C.guint // return, none, casted
 
@@ -3225,18 +2514,8 @@ func TypeGetTypeRegistrationSerial() uint {
 
 // TypeInterfaces wraps g_type_interfaces
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: the type to list interface types for 
-// 
-// The function returns the following values:
-// 
-// 	- nInterfaces uint: location to store the length of
-//     the returned array, or %NULL 
-// 	- goret []Type 
+// see also https://docs.gtk.org/gobject/func.g_type_interfaces.html
 //
-// Return a newly allocated and 0-terminated array of type IDs, listing
-// the interface types that @type conforms to.
 func TypeInterfaces(typ Type) (uint, []Type) {
 	var carg1 C.GType  // in, none, casted, alias
 	var carg2 C.guint  // out, full, casted
@@ -3260,19 +2539,8 @@ func TypeInterfaces(typ Type) (uint, []Type) {
 
 // TypeIsA wraps g_type_is_a
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: type to check ancestry for 
-// 	- isAType Type: possible ancestor of @type or interface that @type
-//     could conform to 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_type_is_a.html
 //
-// If @is_a_type is a derivable type, check whether @type is a
-// descendant of @is_a_type. If @is_a_type is an interface, check
-// whether @type conforms to it.
 func TypeIsA(typ Type, isAType Type) bool {
 	var carg1 C.GType    // in, none, casted, alias
 	var carg2 C.GType    // in, none, casted, alias
@@ -3296,20 +2564,8 @@ func TypeIsA(typ Type, isAType Type) bool {
 
 // TypeName wraps g_type_name
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: type to return name for 
-// 
-// The function returns the following values:
-// 
-// 	- goret string (nullable) 
+// see also https://docs.gtk.org/gobject/func.g_type_name.html
 //
-// Get the unique name that is assigned to a type ID.
-// 
-// Note that this function (like all other GType API) cannot cope with
-// invalid type IDs. %G_TYPE_INVALID may be passed to this function, as
-// may be any other validly registered type ID, but randomized type IDs
-// should not be passed in and will most likely lead to a crash.
 func TypeName(typ Type) string {
 	var carg1 C.GType  // in, none, casted, alias
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -3330,13 +2586,7 @@ func TypeName(typ Type) string {
 
 // TypeNameFromInstance wraps g_type_name_from_instance
 // 
-// The function takes the following parameters:
-// 
-// 	- instance *TypeInstance 
-// 
-// The function returns the following values:
-// 
-// 	- goret string 
+// see also https://docs.gtk.org/gobject/func.g_type_name_from_instance.html
 func TypeNameFromInstance(instance *TypeInstance) string {
 	var carg1 *C.GTypeInstance // in, none, converted
 	var cret  *C.gchar         // return, none, string
@@ -3355,22 +2605,8 @@ func TypeNameFromInstance(instance *TypeInstance) string {
 
 // TypeNextBase wraps g_type_next_base
 // 
-// The function takes the following parameters:
-// 
-// 	- leafType Type: descendant of @root_type and the type to be returned 
-// 	- rootType Type: immediate parent of the returned type 
-// 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_type_next_base.html
 //
-// Given a @leaf_type and a @root_type which is contained in its
-// ancestry, return the type that @root_type is the immediate parent
-// of. In other words, this function determines the type that is
-// derived directly from @root_type which is also a base class of
-// @leaf_type.  Given a root type and a leaf type, this function can
-// be used to determine the types and order in which the leaf type is
-// descended from the root type.
 func TypeNextBase(leafType Type, rootType Type) Type {
 	var carg1 C.GType // in, none, casted, alias
 	var carg2 C.GType // in, none, casted, alias
@@ -3392,16 +2628,8 @@ func TypeNextBase(leafType Type, rootType Type) Type {
 
 // TypeParent wraps g_type_parent
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: the derived type 
-// 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_type_parent.html
 //
-// Return the direct parent type of the passed in type. If the passed
-// in type has no parent, i.e. is a fundamental type, 0 is returned.
 func TypeParent(typ Type) Type {
 	var carg1 C.GType // in, none, casted, alias
 	var cret  C.GType // return, none, casted, alias
@@ -3420,15 +2648,8 @@ func TypeParent(typ Type) Type {
 
 // TypeQname wraps g_type_qname
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type: type to return quark of type name for 
-// 
-// The function returns the following values:
-// 
-// 	- goret glib.Quark 
+// see also https://docs.gtk.org/gobject/func.g_type_qname.html
 //
-// Get the corresponding quark of the type IDs name.
 func TypeQname(typ Type) glib.Quark {
 	var carg1 C.GType  // in, none, casted, alias
 	var cret  C.GQuark // return, none, casted, alias
@@ -3447,14 +2668,7 @@ func TypeQname(typ Type) glib.Quark {
 
 // TypeTestFlags wraps g_type_test_flags
 // 
-// The function takes the following parameters:
-// 
-// 	- typ Type 
-// 	- flags uint 
-// 
-// The function returns the following values:
-// 
-// 	- goret bool 
+// see also https://docs.gtk.org/gobject/func.g_type_test_flags.html
 func TypeTestFlags(typ Type, flags uint) bool {
 	var carg1 C.GType    // in, none, casted, alias
 	var carg2 C.guint    // in, none, casted
@@ -3478,9 +2692,7 @@ func TypeTestFlags(typ Type, flags uint) bool {
 
 // VariantGetGType wraps g_variant_get_gtype
 // 
-// The function returns the following values:
-// 
-// 	- goret Type 
+// see also https://docs.gtk.org/gobject/func.g_variant_get_gtype.html
 func VariantGetGType() Type {
 	var cret C.GType // return, none, casted, alias
 
@@ -3502,14 +2714,9 @@ type BindingGroupInstance struct {
 var _ BindingGroup = (*BindingGroupInstance)(nil)
 
 // BindingGroup wraps GBindingGroup
-//
-// `GBindingGroup` can be used to bind multiple properties
-// from an object collectively.
 // 
-// Use the various methods to bind properties from a single source
-// object to multiple destination objects. Properties can be bound
-// bidirectionally and are connected when the source object is set
-// with [method@GObject.BindingGroup.set_source].
+// see also https://docs.gtk.org/gobject/class.BindingGroup.html
+//
 type BindingGroup interface {
 	Object
 	upcastToGBindingGroup() *BindingGroupInstance
@@ -3565,11 +2772,8 @@ func UnsafeBindingGroupToGlibFull(c BindingGroup) unsafe.Pointer {
 
 // NewBindingGroup wraps g_binding_group_new
 // 
-// The function returns the following values:
-// 
-// 	- goret BindingGroup 
+// see also https://docs.gtk.org/gobject/func.g_binding_group_new.html
 //
-// Creates a new #GBindingGroup.
 func NewBindingGroup() BindingGroup {
 	var cret *C.GBindingGroup // return, full, converted
 
@@ -3591,11 +2795,9 @@ type InitiallyUnownedInstance struct {
 var _ InitiallyUnowned = (*InitiallyUnownedInstance)(nil)
 
 // InitiallyUnowned wraps GInitiallyUnowned
-//
-// A type for objects that have an initially floating reference.
 // 
-// All the fields in the `GInitiallyUnowned` structure are private to the
-// implementation and should never be accessed directly.
+// see also https://docs.gtk.org/gobject/class.InitiallyUnowned.html
+//
 type InitiallyUnowned interface {
 	Object
 	upcastToGInitiallyUnowned() *InitiallyUnownedInstance
@@ -3692,8 +2894,9 @@ func RegisterInitiallyUnownedSubClass[InstanceT InitiallyUnowned](
 }
 
 // CClosure wraps GCClosure
+// 
+// see also https://docs.gtk.org/gobject/struct.CClosure.html
 //
-// A #GCClosure is a specialization of #GClosure for C function callbacks.
 type CClosure struct {
 	*cClosure
 }
@@ -3773,6 +2976,8 @@ func UnsafeCClosureToGlibFull(c *CClosure) unsafe.Pointer {
 }
 
 // ClosureNotifyData wraps GClosureNotifyData
+// 
+// see also https://docs.gtk.org/gobject/struct.ClosureNotifyData.html
 type ClosureNotifyData struct {
 	*closureNotifyData
 }
@@ -3852,9 +3057,9 @@ func UnsafeClosureNotifyDataToGlibFull(c *ClosureNotifyData) unsafe.Pointer {
 }
 
 // EnumClass wraps GEnumClass
+// 
+// see also https://docs.gtk.org/gobject/struct.EnumClass.html
 //
-// The class of an enumeration type holds information about its
-// possible values.
 type EnumClass struct {
 	*enumClass
 }
@@ -3934,9 +3139,9 @@ func UnsafeEnumClassToGlibFull(e *EnumClass) unsafe.Pointer {
 }
 
 // EnumValue wraps GEnumValue
+// 
+// see also https://docs.gtk.org/gobject/struct.EnumValue.html
 //
-// A structure which contains a single enum value, its name, and its
-// nickname.
 type EnumValue struct {
 	*enumValue
 }
@@ -4016,9 +3221,9 @@ func UnsafeEnumValueToGlibFull(e *EnumValue) unsafe.Pointer {
 }
 
 // FlagsClass wraps GFlagsClass
+// 
+// see also https://docs.gtk.org/gobject/struct.FlagsClass.html
 //
-// The class of a flags type holds information about its
-// possible values.
 type FlagsClass struct {
 	*flagsClass
 }
@@ -4098,9 +3303,9 @@ func UnsafeFlagsClassToGlibFull(f *FlagsClass) unsafe.Pointer {
 }
 
 // FlagsValue wraps GFlagsValue
+// 
+// see also https://docs.gtk.org/gobject/struct.FlagsValue.html
 //
-// A structure which contains a single flags value, its name, and its
-// nickname.
 type FlagsValue struct {
 	*flagsValue
 }
@@ -4180,8 +3385,9 @@ func UnsafeFlagsValueToGlibFull(f *FlagsValue) unsafe.Pointer {
 }
 
 // InitiallyUnownedClass wraps GInitiallyUnownedClass
+// 
+// see also https://docs.gtk.org/gobject/struct.InitiallyUnownedClass.html
 //
-// The class structure for the GInitiallyUnowned type.
 // 
 // InitiallyUnownedClass is the type struct for [InitiallyUnowned]
 type InitiallyUnownedClass struct {
@@ -4234,9 +3440,9 @@ func (i *InitiallyUnownedClass) ParentClass() *ObjectClass {
 }
 
 // InterfaceInfo wraps GInterfaceInfo
+// 
+// see also https://docs.gtk.org/gobject/struct.InterfaceInfo.html
 //
-// A structure that provides information to the type system which is
-// used specifically for managing interface types.
 type InterfaceInfo struct {
 	*interfaceInfo
 }
@@ -4316,9 +3522,9 @@ func UnsafeInterfaceInfoToGlibFull(i *InterfaceInfo) unsafe.Pointer {
 }
 
 // ObjectConstructParam wraps GObjectConstructParam
+// 
+// see also https://docs.gtk.org/gobject/struct.ObjectConstructParam.html
 //
-// The GObjectConstructParam struct is an auxiliary structure used to hand
-// #GParamSpec/#GValue pairs to the @constructor of a #GObjectClass.
 type ObjectConstructParam struct {
 	*objectConstructParam
 }
@@ -4398,9 +3604,9 @@ func UnsafeObjectConstructParamToGlibFull(o *ObjectConstructParam) unsafe.Pointe
 }
 
 // SignalInvocationHint wraps GSignalInvocationHint
+// 
+// see also https://docs.gtk.org/gobject/struct.SignalInvocationHint.html
 //
-// The #GSignalInvocationHint structure is used to pass on additional information
-// to callbacks during a signal emission.
 type SignalInvocationHint struct {
 	*signalInvocationHint
 }
@@ -4480,9 +3686,9 @@ func UnsafeSignalInvocationHintToGlibFull(s *SignalInvocationHint) unsafe.Pointe
 }
 
 // TypeFundamentalInfo wraps GTypeFundamentalInfo
+// 
+// see also https://docs.gtk.org/gobject/struct.TypeFundamentalInfo.html
 //
-// A structure that provides information to the type system which is
-// used specifically for managing fundamental types.
 type TypeFundamentalInfo struct {
 	*typeFundamentalInfo
 }
@@ -4562,16 +3768,9 @@ func UnsafeTypeFundamentalInfoToGlibFull(t *TypeFundamentalInfo) unsafe.Pointer 
 }
 
 // TypeInfo wraps GTypeInfo
-//
-// This structure is used to provide the type system with the information
-// required to initialize and destruct (finalize) a type's class and
-// its instances.
 // 
-// The initialized structure is passed to the g_type_register_static() function
-// (or is copied into the provided #GTypeInfo structure in the
-// g_type_plugin_complete_type_info()). The type system will perform a deep
-// copy of this structure, so its memory does not need to be persistent
-// across invocation of g_type_register_static().
+// see also https://docs.gtk.org/gobject/struct.TypeInfo.html
+//
 type TypeInfo struct {
 	*typeInfo
 }
@@ -4651,8 +3850,9 @@ func UnsafeTypeInfoToGlibFull(t *TypeInfo) unsafe.Pointer {
 }
 
 // TypeInstance wraps GTypeInstance
+// 
+// see also https://docs.gtk.org/gobject/struct.TypeInstance.html
 //
-// An opaque structure used as the base of all type instances.
 type TypeInstance struct {
 	*typeInstance
 }
@@ -4732,18 +3932,9 @@ func UnsafeTypeInstanceToGlibFull(t *TypeInstance) unsafe.Pointer {
 }
 
 // TypeValueTable wraps GTypeValueTable
-//
-// - `'i'`: Integers, passed as `collect_values[].v_int`
-//   - `'l'`: Longs, passed as `collect_values[].v_long`
-//   - `'d'`: Doubles, passed as `collect_values[].v_double`
-//   - `'p'`: Pointers, passed as `collect_values[].v_pointer`
 // 
-//   It should be noted that for variable argument list construction,
-//   ANSI C promotes every type smaller than an integer to an int, and
-//   floats to doubles. So for collection of short int or char, `'i'`
-//   needs to be used, and for collection of floats `'d'`.
-// The #GTypeValueTable provides the functions required by the #GValue
-// implementation, to serve as a container for values of a type.
+// see also https://docs.gtk.org/gobject/struct.TypeValueTable.html
+//
 type TypeValueTable struct {
 	*typeValueTable
 }
@@ -4823,31 +4014,9 @@ func UnsafeTypeValueTableToGlibFull(t *TypeValueTable) unsafe.Pointer {
 }
 
 // WeakRef wraps GWeakRef
+// 
+// see also https://docs.gtk.org/gobject/struct.WeakRef.html
 //
-// A structure containing a weak reference to a #GObject.
-// 
-// A `GWeakRef` can either be empty (i.e. point to %NULL), or point to an
-// object for as long as at least one "strong" reference to that object
-// exists. Before the object's #GObjectClass.dispose method is called,
-// every #GWeakRef associated with becomes empty (i.e. points to %NULL).
-// 
-// Like #GValue, #GWeakRef can be statically allocated, stack- or
-// heap-allocated, or embedded in larger structures.
-// 
-// Unlike g_object_weak_ref() and g_object_add_weak_pointer(), this weak
-// reference is thread-safe: converting a weak pointer to a reference is
-// atomic with respect to invalidation of weak pointers to destroyed
-// objects.
-// 
-// If the object's #GObjectClass.dispose method results in additional
-// references to the object being held (&#x2018;re-referencing&#x2019;), any #GWeakRefs taken
-// before it was disposed will continue to point to %NULL.  Any #GWeakRefs taken
-// during disposal and after re-referencing, or after disposal has returned due
-// to the re-referencing, will continue to point to the object until its refcount
-// goes back to zero, at which point they too will be invalidated.
-// 
-// It is invalid to take a #GWeakRef on an object during #GObjectClass.dispose
-// without first having or creating a strong reference to the object.
 type WeakRef struct {
 	*weakRef
 }

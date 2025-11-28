@@ -85,12 +85,12 @@ func (g *EnumGenerator) Generate(w *file.Package) {
 	g.SubGenerators.Generate(w)
 }
 
-func NewEnumGenerator(enum *typesystem.Enum) *EnumGenerator {
+func NewEnumGenerator(cfg *Config, enum *typesystem.Enum) *EnumGenerator {
 	members := make([]EnumMember, 0, len(enum.Members))
 
 	for _, member := range enum.Members {
 		members = append(members, EnumMember{
-			Doc: NewGoDocGenerator(member),
+			Doc: cfg.DocGenerator(member),
 
 			Member: member,
 		})
@@ -103,14 +103,14 @@ func NewEnumGenerator(enum *typesystem.Enum) *EnumGenerator {
 	}
 
 	gen := &EnumGenerator{
-		Doc:       NewGoDocGenerator(enum),
+		Doc:       cfg.DocGenerator(enum),
 		Enum:      enum,
 		Members:   members,
 		Marshaler: marshalGen,
 	}
 
 	for _, f := range enum.Functions {
-		gen.SubGenerators = append(gen.SubGenerators, NewCallableGenerator(f))
+		gen.SubGenerators = append(gen.SubGenerators, NewCallableGenerator(cfg, f))
 	}
 
 	return gen

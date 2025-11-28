@@ -104,7 +104,7 @@ func (g *GoOverridesGenerator) Generate(w *file.Package) {
 
 var _ Generator = (*GoOverridesGenerator)(nil)
 
-func NewGoOverridesGenerator(parent typesystem.Type) *GoOverridesGenerator {
+func NewGoOverridesGenerator(cfg *Config, parent typesystem.Type) *GoOverridesGenerator {
 	var virtuals []*typesystem.VirtualMethod
 
 	switch t := parent.(type) {
@@ -121,7 +121,7 @@ func NewGoOverridesGenerator(parent typesystem.Type) *GoOverridesGenerator {
 	}
 
 	for _, v := range virtuals {
-		gen.VirtualMethods = append(gen.VirtualMethods, NewVirtualMethodGenerator(v))
+		gen.VirtualMethods = append(gen.VirtualMethods, NewVirtualMethodGenerator(cfg, v))
 	}
 
 	return gen

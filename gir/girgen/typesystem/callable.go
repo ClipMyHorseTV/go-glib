@@ -12,12 +12,20 @@ var specialCallableNames = map[string]string{
 	"to_string": "String",
 }
 
+type CallableType string
+
+const (
+	CallableTypeFunction CallableType = "function"
+	CallableTypeMethod   CallableType = "method"
+)
+
 // CallableIdentifier is an identifier that prefixes the parent type, so that renaming the
 // parent struct reflects to renaming the constructors / methods. It has a special case for
 // constructors, which are prefixed with "New" and the parent type name.
 type CallableIdentifier struct {
 	Parent         Type
 	Girname        string
+	Girtype        CallableType
 	GirCIdentifier string
 }
 
@@ -73,7 +81,7 @@ func (c *CallableIdentifier) GoIndentifier() string {
 var _ Identifier = &CallableIdentifier{}
 
 type CallableSignature struct {
-	Identifier
+	*CallableIdentifier
 	*Parameters
 }
 
@@ -106,9 +114,10 @@ func DeclareFunction(e *env, v *gir.CallableAttrs) *CallableSignature {
 	}
 
 	return &CallableSignature{
-		Identifier: &CallableIdentifier{
+		CallableIdentifier: &CallableIdentifier{
 			Parent:         nil,
 			Girname:        v.Name,
+			Girtype:        CallableTypeFunction,
 			GirCIdentifier: v.CIdentifier,
 		},
 		Parameters: params,
@@ -144,9 +153,10 @@ func DeclarePrefixedFunction(e *env, parent Type, v *gir.CallableAttrs) *Callabl
 	}
 
 	return &CallableSignature{
-		Identifier: &CallableIdentifier{
+		CallableIdentifier: &CallableIdentifier{
 			Parent:         parent,
 			Girname:        v.Name,
+			Girtype:        CallableTypeFunction,
 			GirCIdentifier: v.CIdentifier,
 		},
 		Parameters: params,
@@ -182,10 +192,11 @@ func DeclareMethod(e *env, parent Type, v *gir.Method) *CallableSignature {
 	}
 
 	return &CallableSignature{
-		Identifier: &CallableIdentifier{
+		CallableIdentifier: &CallableIdentifier{
 			// Methods are scoped to the parent, so we don't need a parent prefix
 			Parent:         nil,
 			Girname:        v.Name,
+			Girtype:        CallableTypeMethod,
 			GirCIdentifier: v.CIdentifier,
 		},
 		Parameters: params,

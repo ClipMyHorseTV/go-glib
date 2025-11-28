@@ -66,9 +66,9 @@ func (s *SignalEmitGenerator) GenerateInterfaceSignature(w file.File) {
 	fmt.Fprintf(w.Go(), "%s(%s)%s\n", s.GoName, s.Parameters().GoTypes(), ret)
 }
 
-func NewSignalEmitGenerator(sig *typesystem.Signal) *SignalEmitGenerator {
+func NewSignalEmitGenerator(cfg *Config, sig *typesystem.Signal) *SignalEmitGenerator {
 	return &SignalEmitGenerator{
-		Doc:    NewGoDocGenerator(sig),
+		Doc:    cfg.DocGenerator(sig),
 		Signal: sig,
 	}
 }

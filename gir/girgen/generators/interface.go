@@ -145,7 +145,7 @@ func (g *InterfaceGenerator) Generate(w *file.Package) {
 	)
 }
 
-func NewInterfaceGenerator(c *typesystem.Interface) *InterfaceGenerator {
+func NewInterfaceGenerator(cfg *Config, c *typesystem.Interface) *InterfaceGenerator {
 	var marshaler Generator
 
 	if c.GLibGetType() != "" {
@@ -153,7 +153,7 @@ func NewInterfaceGenerator(c *typesystem.Interface) *InterfaceGenerator {
 	}
 
 	g := &InterfaceGenerator{
-		Doc:       NewGoDocGenerator(c),
+		Doc:       cfg.DocGenerator(c),
 		Interface: c,
 		Marshaler: marshaler,
 
@@ -161,13 +161,13 @@ func NewInterfaceGenerator(c *typesystem.Interface) *InterfaceGenerator {
 	}
 
 	for _, fn := range c.Functions {
-		if fGen := NewCallableGenerator(fn); fGen != nil {
+		if fGen := NewCallableGenerator(cfg, fn); fGen != nil {
 			g.SubGenerators = append(g.SubGenerators, fGen)
 		}
 	}
 
 	for _, method := range c.Methods {
-		if methGen := NewCallableGenerator(method); methGen != nil {
+		if methGen := NewCallableGenerator(cfg, method); methGen != nil {
 			g.Methods = append(g.Methods, methGen)
 		}
 	}
@@ -175,9 +175,9 @@ func NewInterfaceGenerator(c *typesystem.Interface) *InterfaceGenerator {
 	for _, sig := range c.Signals {
 		if sig.Action {
 			// action signals are only emitted:
-			g.Methods = append(g.Methods, NewSignalEmitGenerator(sig))
+			g.Methods = append(g.Methods, NewSignalEmitGenerator(cfg, sig))
 		} else {
-			g.Methods = append(g.Methods, NewSignalConnectGenerator(sig))
+			g.Methods = append(g.Methods, NewSignalConnectGenerator(cfg, sig))
 		}
 	}
 

@@ -7,6 +7,7 @@ import (
 
 	"github.com/go-gst/go-glib/gir"
 	"github.com/go-gst/go-glib/gir/cmd/gir-generate/genmain"
+	"github.com/go-gst/go-glib/gir/girgen/generators"
 	"github.com/go-gst/go-glib/gir/girgen/typesystem"
 	girfiles_goglib "github.com/go-gst/go-glib/girs"
 )
@@ -17,6 +18,8 @@ var Main = genmain.Data{
 	Module:        Module,
 	GirFiles:      girfiles_goglib.GirFiles,
 	Preprocessors: Preprocessors,
+
+	Documentation: generators.NewGtkGodocGenerator,
 
 	Config: typesystem.Config{
 		GIRReplacements: map[string]string{

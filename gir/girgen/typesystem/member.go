@@ -14,7 +14,9 @@ import (
 type Member struct {
 	Doc
 	Identifier
-	Value string
+	GirName string
+	Parent  Type
+	Value   string
 }
 
 func GetMembers(e *env, parent Type, ms []*gir.Member) []*Member {
@@ -39,7 +41,9 @@ func NewMember(e *env, parent Type, m *gir.Member) *Member {
 	}
 
 	return &Member{
-		Doc: NewDoc(&m.InfoAttrs, &m.InfoElements),
+		Doc:     NewDoc(&m.InfoAttrs, &m.InfoElements),
+		Parent:  parent,
+		GirName: m.Name(),
 		Identifier: &baseIdentifier{
 			cIndentifier: m.CIdentifier,
 			//

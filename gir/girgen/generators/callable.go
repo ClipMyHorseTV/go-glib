@@ -144,9 +144,9 @@ func (m *CallableGenerator) Generate(w *file.Package) {
 	fmt.Fprintf(w.Go(), "}\n\n")
 }
 
-func NewCallableGenerator(f *typesystem.CallableSignature) *CallableGenerator {
+func NewCallableGenerator(cfg *Config, f *typesystem.CallableSignature) *CallableGenerator {
 	gen := &CallableGenerator{
-		Doc:              NewGoDocGenerator(f),
+		Doc:              cfg.DocGenerator(f),
 		Signature:        f,
 		ParamConverters:  nil,
 		ReturnConverters: nil,

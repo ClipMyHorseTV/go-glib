@@ -21,9 +21,9 @@ func (g *AliasGenerator) Generate(w *file.Package) {
 	fmt.Fprintf(w.Go(), "type %s = %s\n", g.GoType(0), g.AliasedType.NamespacedGoType(0))
 }
 
-func NewAliasGenerator(alias *typesystem.Alias) *AliasGenerator {
+func NewAliasGenerator(cfg *Config, alias *typesystem.Alias) *AliasGenerator {
 	return &AliasGenerator{
-		Doc:   NewGoDocGenerator(alias),
+		Doc:   cfg.DocGenerator(alias),
 		Alias: alias,
 	}
 }
