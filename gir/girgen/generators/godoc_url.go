@@ -3,6 +3,8 @@ package generators
 import (
 	"bufio"
 	"fmt"
+	"net/url"
+	"path/filepath"
 	"strings"
 
 	"github.com/go-gst/go-glib/gir/girgen/file"
@@ -44,30 +46,19 @@ func (g *UrlGodocGenerator) Generate(w file.CodeWriter) {
 		return
 	}
 
-	w.Write([]byte("//\n"))
-
 	// must not write the main doc, only deprecation info
 
-	if g.GIRDoc.Deprecated {
-		w.Write([]byte("//\n"))
-		w.Write([]byte("// Deprecated: "))
-		if g.GIRDoc.DeprecatedVersion != "" {
-			fmt.Fprintf(w, "(since %s) ", g.GIRDoc.DeprecatedVersion)
-		}
-
-		r := strings.NewReader(g.GIRDoc.DocDeprecated)
-		scanner := bufio.NewScanner(r) // scan lines
-
-		scanner.Scan() // initial deprecated line is already prefied
-
-		fmt.Fprintf(w, "%s\n", scanner.Bytes())
-
-		for scanner.Scan() {
-			w.Write([]byte("// "))
-			w.Write(scanner.Bytes())
-			w.Write([]byte("\n"))
-		}
+	if !g.GIRDoc.Deprecated {
+		return
 	}
+
+	w.Write([]byte("//\n"))
+	w.Write([]byte("// Deprecated: "))
+	if g.GIRDoc.DeprecatedVersion != "" {
+		fmt.Fprintf(w, "(since %s) ", g.GIRDoc.DeprecatedVersion)
+	}
+
+	w.Write([]byte("see the provided link for the reason\n"))
 }
 
 // Copy creates a deep copy of the doc generator.
@@ -100,11 +91,11 @@ func NewGtkGodocGenerator(namespace *typesystem.Namespace, documented typesystem
 }
 
 // NewHotDocGodocGeneratorFactory creates a DocGeneratorFactory that generates GTK documentation links.
-func NewHotDocGodocGeneratorFactory(baseUrl string) DocGeneratorFactory {
+func NewHotDocGodocGeneratorFactory(baseUrl string, namemap func(string) string) DocGeneratorFactory {
 	return func(namespace *typesystem.Namespace, documented typesystem.Documented) DocGenerator {
 
 		var urlFunc MkDocUrlFunc = func(namespace *typesystem.Namespace, documented typesystem.Documented) string {
-			return mkHotDocURL(baseUrl, namespace, documented)
+			return mkHotDocURL(baseUrl, namespace, documented, namemap)
 		}
 
 		return NewUrlGodocGenerator(urlFunc, namespace, documented)
@@ -188,17 +179,64 @@ func mkGtkDocURL(namespace *typesystem.Namespace, documented typesystem.Document
 }
 
 // mkHotDocURL creates a URL to the hotdoc documentation for the given documented element.
-func mkHotDocURL(baseUrl string, namespace *typesystem.Namespace, documented typesystem.Documented) string {
-	nsName := namespace.GoName
+func mkHotDocURL(baseUrl string, namespace *typesystem.Namespace, documented typesystem.Documented, namemap func(string) string) string {
+	nsName := namemap(namespace.Name)
 
-	doc := documented.Documentation()
+	docURL, err := url.Parse(baseUrl)
 
-	if doc.Filename == "" {
-		return "No documentation available"
+	if err != nil {
+		panic("could not parse given base URL")
 	}
 
-	// construct URL
-	url := fmt.Sprintf("%s/%s/%s", baseUrl, nsName, doc.Filename)
+	docURL.Path, _ = url.JoinPath(docURL.Path, nsName)
 
-	return url
+	// if the type is a method, then it will be on the same page as the parent definition. Otherwise it has its own page
+	switch t := documented.(type) {
+	case *typesystem.CallableSignature:
+		if parent, ok := t.Parent.(typesystem.Documented); ok {
+			file := getHotdocFilename(parent.Documentation())
+
+			docURL.Path, _ = url.JoinPath(docURL.Path, file)
+
+			docURL.Fragment = t.CIndentifier()
+		}
+
+	case *typesystem.VirtualMethod:
+		if parent, ok := t.Parent.(typesystem.Documented); ok {
+			file := getHotdocFilename(parent.Documentation())
+
+			docURL.Path, _ = url.JoinPath(docURL.Path, file)
+
+			docURL.Fragment = t.Invoker.CIndentifier()
+		}
+	case typesystem.Identifier:
+		file := getHotdocFilename(documented.Documentation())
+		docURL.Path, _ = url.JoinPath(docURL.Path, file)
+
+		docURL.Fragment = t.CIndentifier()
+	case typesystem.Type:
+		file := getHotdocFilename(documented.Documentation())
+		docURL.Path, _ = url.JoinPath(docURL.Path, file)
+
+		docURL.Fragment = t.CType(0)
+	default:
+		file := getHotdocFilename(documented.Documentation())
+		docURL.Path, _ = url.JoinPath(docURL.Path, file)
+	}
+
+	return docURL.String()
+}
+
+// getHotdocFilename returns the filename from the documentation that hotdoc uses the filename for the url, e.g.:
+// ../subprojects/gstreamer/gst/gstbin.h -> gstbin.html
+func getHotdocFilename(doc typesystem.Doc) string {
+	if doc.Filename == "" {
+		return ""
+	}
+
+	// derive hotdoc html filename from header path
+	fn := filepath.Base(doc.Filename) // e.g. gstbin.h
+	ext := filepath.Ext(fn)           // e.g. .h
+
+	return strings.TrimSuffix(fn, ext) + ".html"
 }

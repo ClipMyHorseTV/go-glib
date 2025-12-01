@@ -23,10 +23,10 @@ const (
 // parent struct reflects to renaming the constructors / methods. It has a special case for
 // constructors, which are prefixed with "New" and the parent type name.
 type CallableIdentifier struct {
-	Parent         Type
-	Girname        string
-	Girtype        CallableType
-	GirCIdentifier string
+	ParentForPrefix Type
+	Girname         string
+	Girtype         CallableType
+	GirCIdentifier  string
 }
 
 // CGoIndentifier implements Identifier.
@@ -56,18 +56,18 @@ func (c *CallableIdentifier) GoIndentifier() string {
 
 	var parentTypeName string
 
-	if c.Parent != nil {
-		if c.Parent.CType(0) == "GstAudioFormatInfo" {
+	if c.ParentForPrefix != nil {
+		if c.ParentForPrefix.CType(0) == "GstAudioFormatInfo" {
 			println("foo")
 		}
 
-		switch p := c.Parent.(type) {
+		switch p := c.ParentForPrefix.(type) {
 		case *Class:
 			parentTypeName = p.GoInterfaceName
 		case *Interface:
 			parentTypeName = p.GoInterfaceName
 		default:
-			parentTypeName = c.Parent.GoType(0)
+			parentTypeName = c.ParentForPrefix.GoType(0)
 		}
 	}
 
@@ -83,6 +83,9 @@ var _ Identifier = &CallableIdentifier{}
 type CallableSignature struct {
 	*CallableIdentifier
 	*Parameters
+
+	// Parent is the parent type
+	Parent Type
 }
 
 func DeclareFunction(e *env, v *gir.CallableAttrs) *CallableSignature {
@@ -115,10 +118,10 @@ func DeclareFunction(e *env, v *gir.CallableAttrs) *CallableSignature {
 
 	return &CallableSignature{
 		CallableIdentifier: &CallableIdentifier{
-			Parent:         nil,
-			Girname:        v.Name,
-			Girtype:        CallableTypeFunction,
-			GirCIdentifier: v.CIdentifier,
+			ParentForPrefix: nil,
+			Girname:         v.Name,
+			Girtype:         CallableTypeFunction,
+			GirCIdentifier:  v.CIdentifier,
 		},
 		Parameters: params,
 	}
@@ -154,12 +157,13 @@ func DeclarePrefixedFunction(e *env, parent Type, v *gir.CallableAttrs) *Callabl
 
 	return &CallableSignature{
 		CallableIdentifier: &CallableIdentifier{
-			Parent:         parent,
-			Girname:        v.Name,
-			Girtype:        CallableTypeFunction,
-			GirCIdentifier: v.CIdentifier,
+			ParentForPrefix: parent,
+			Girname:         v.Name,
+			Girtype:         CallableTypeFunction,
+			GirCIdentifier:  v.CIdentifier,
 		},
 		Parameters: params,
+		Parent:     parent,
 	}
 }
 
@@ -194,11 +198,12 @@ func DeclareMethod(e *env, parent Type, v *gir.Method) *CallableSignature {
 	return &CallableSignature{
 		CallableIdentifier: &CallableIdentifier{
 			// Methods are scoped to the parent, so we don't need a parent prefix
-			Parent:         nil,
-			Girname:        v.Name,
-			Girtype:        CallableTypeMethod,
-			GirCIdentifier: v.CIdentifier,
+			ParentForPrefix: nil,
+			Girname:         v.Name,
+			Girtype:         CallableTypeMethod,
+			GirCIdentifier:  v.CIdentifier,
 		},
 		Parameters: params,
+		Parent:     parent,
 	}
 }

@@ -16,6 +16,9 @@ type Namespace struct {
 	GoName  string
 	Version gir.Version
 
+	CIndentifierPrefixes []string
+	CSymbolPrefixes      []string
+
 	Packages  []string
 	CIncludes []string
 
@@ -41,12 +44,16 @@ type Namespace struct {
 
 func (reg *Registry) newNamespace(cfg Config, ns *namespaceWithIncludes) *Namespace {
 
+	cident, csymb := ns.Prefixes()
+
 	namespace := &Namespace{
-		v:        ns.versionedName,
-		Name:     ns.Name,
-		GoName:   goPackageName(ns.Name),
-		Version:  ns.versionedName.version,
-		Included: make(map[string]*Namespace, len(ns.includes)),
+		v:                    ns.versionedName,
+		Name:                 ns.Name,
+		CSymbolPrefixes:      csymb,
+		CIndentifierPrefixes: cident,
+		GoName:               goPackageName(ns.Name),
+		Version:              ns.versionedName.version,
+		Included:             make(map[string]*Namespace, len(ns.includes)),
 	}
 
 	for ident, incl := range ns.includes {
