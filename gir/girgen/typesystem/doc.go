@@ -58,6 +58,10 @@ func NewDoc(attrs *gir.InfoAttrs, elements *gir.InfoElements) Doc {
 		filename = elements.SourcePosition.Filename
 	}
 
+	if filename == "" && elements.Doc != nil && elements.Doc.Filename != "" {
+		filename = elements.Doc.Filename
+	}
+
 	if elements != nil && elements.DocDeprecated != nil {
 		docDeprecated = elements.DocDeprecated.String
 	}
