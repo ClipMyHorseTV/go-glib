@@ -1000,34 +1000,28 @@ func init() {
 // MENU_EXPORTER_MAX_SECTION_SIZE wraps G_MENU_EXPORTER_MAX_SECTION_SIZE
 // 
 // see also https://docs.gtk.org/gio/const.MENU_EXPORTER_MAX_SECTION_SIZE.html
-//
 const MENU_EXPORTER_MAX_SECTION_SIZE = 1000
 // BusType wraps GBusType
 // 
 // see also https://docs.gtk.org/gio/enum.BusType.html
-//
 type BusType C.int
 
 const (
 	// BusTypeStarter wraps G_BUS_TYPE_STARTER
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusType.html#starter
-	//
 	BusTypeStarter BusType = -1
 	// BusTypeNone wraps G_BUS_TYPE_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusType.html#none
-	//
 	BusTypeNone BusType = 0
 	// BusTypeSystem wraps G_BUS_TYPE_SYSTEM
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusType.html#system
-	//
 	BusTypeSystem BusType = 1
 	// BusTypeSession wraps G_BUS_TYPE_SESSION
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusType.html#session
-	//
 	BusTypeSession BusType = 2
 )
 
@@ -1058,29 +1052,24 @@ func (e BusType) String() string {
 // ConverterResult wraps GConverterResult
 // 
 // see also https://docs.gtk.org/gio/enum.ConverterResult.html
-//
 type ConverterResult C.int
 
 const (
 	// ConverterError wraps G_CONVERTER_ERROR
 	// 
 	// see also https://docs.gtk.org/gio/flags.ConverterResult.html#error
-	//
 	ConverterError ConverterResult = 0
 	// ConverterConverted wraps G_CONVERTER_CONVERTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.ConverterResult.html#converted
-	//
 	ConverterConverted ConverterResult = 1
 	// ConverterFinished wraps G_CONVERTER_FINISHED
 	// 
 	// see also https://docs.gtk.org/gio/flags.ConverterResult.html#finished
-	//
 	ConverterFinished ConverterResult = 2
 	// ConverterFlushed wraps G_CONVERTER_FLUSHED
 	// 
 	// see also https://docs.gtk.org/gio/flags.ConverterResult.html#flushed
-	//
 	ConverterFlushed ConverterResult = 3
 )
 
@@ -1111,49 +1100,40 @@ func (e ConverterResult) String() string {
 // CredentialsType wraps GCredentialsType
 // 
 // see also https://docs.gtk.org/gio/enum.CredentialsType.html
-//
 type CredentialsType C.int
 
 const (
 	// CredentialsTypeInvalid wraps G_CREDENTIALS_TYPE_INVALID
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#invalid
-	//
 	CredentialsTypeInvalid CredentialsType = 0
 	// CredentialsTypeLinuxUcred wraps G_CREDENTIALS_TYPE_LINUX_UCRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#linux_ucred
-	//
 	CredentialsTypeLinuxUcred CredentialsType = 1
 	// CredentialsTypeFreebsdCmsgcred wraps G_CREDENTIALS_TYPE_FREEBSD_CMSGCRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#freebsd_cmsgcred
-	//
 	CredentialsTypeFreebsdCmsgcred CredentialsType = 2
 	// CredentialsTypeOpenbsdSockpeercred wraps G_CREDENTIALS_TYPE_OPENBSD_SOCKPEERCRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#openbsd_sockpeercred
-	//
 	CredentialsTypeOpenbsdSockpeercred CredentialsType = 3
 	// CredentialsTypeSolarisUcred wraps G_CREDENTIALS_TYPE_SOLARIS_UCRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#solaris_ucred
-	//
 	CredentialsTypeSolarisUcred CredentialsType = 4
 	// CredentialsTypeNetbsdUnpcbid wraps G_CREDENTIALS_TYPE_NETBSD_UNPCBID
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#netbsd_unpcbid
-	//
 	CredentialsTypeNetbsdUnpcbid CredentialsType = 5
 	// CredentialsTypeAppleXucred wraps G_CREDENTIALS_TYPE_APPLE_XUCRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#apple_xucred
-	//
 	CredentialsTypeAppleXucred CredentialsType = 6
 	// CredentialsTypeWin32Pid wraps G_CREDENTIALS_TYPE_WIN32_PID
 	// 
 	// see also https://docs.gtk.org/gio/flags.CredentialsType.html#win32_pid
-	//
 	CredentialsTypeWin32Pid CredentialsType = 7
 )
 
@@ -1188,24 +1168,20 @@ func (e CredentialsType) String() string {
 // DataStreamByteOrder wraps GDataStreamByteOrder
 // 
 // see also https://docs.gtk.org/gio/enum.DataStreamByteOrder.html
-//
 type DataStreamByteOrder C.int
 
 const (
 	// DataStreamByteOrderBigEndian wraps G_DATA_STREAM_BYTE_ORDER_BIG_ENDIAN
 	// 
 	// see also https://docs.gtk.org/gio/flags.DataStreamByteOrder.html#big_endian
-	//
 	DataStreamByteOrderBigEndian DataStreamByteOrder = 0
 	// DataStreamByteOrderLittleEndian wraps G_DATA_STREAM_BYTE_ORDER_LITTLE_ENDIAN
 	// 
 	// see also https://docs.gtk.org/gio/flags.DataStreamByteOrder.html#little_endian
-	//
 	DataStreamByteOrderLittleEndian DataStreamByteOrder = 1
 	// DataStreamByteOrderHostEndian wraps G_DATA_STREAM_BYTE_ORDER_HOST_ENDIAN
 	// 
 	// see also https://docs.gtk.org/gio/flags.DataStreamByteOrder.html#host_endian
-	//
 	DataStreamByteOrderHostEndian DataStreamByteOrder = 2
 )
 
@@ -1235,29 +1211,24 @@ func (e DataStreamByteOrder) String() string {
 // DataStreamNewlineType wraps GDataStreamNewlineType
 // 
 // see also https://docs.gtk.org/gio/enum.DataStreamNewlineType.html
-//
 type DataStreamNewlineType C.int
 
 const (
 	// DataStreamNewlineTypeLf wraps G_DATA_STREAM_NEWLINE_TYPE_LF
 	// 
 	// see also https://docs.gtk.org/gio/flags.DataStreamNewlineType.html#lf
-	//
 	DataStreamNewlineTypeLf DataStreamNewlineType = 0
 	// DataStreamNewlineTypeCr wraps G_DATA_STREAM_NEWLINE_TYPE_CR
 	// 
 	// see also https://docs.gtk.org/gio/flags.DataStreamNewlineType.html#cr
-	//
 	DataStreamNewlineTypeCr DataStreamNewlineType = 1
 	// DataStreamNewlineTypeCrLf wraps G_DATA_STREAM_NEWLINE_TYPE_CR_LF
 	// 
 	// see also https://docs.gtk.org/gio/flags.DataStreamNewlineType.html#cr_lf
-	//
 	DataStreamNewlineTypeCrLf DataStreamNewlineType = 2
 	// DataStreamNewlineTypeAny wraps G_DATA_STREAM_NEWLINE_TYPE_ANY
 	// 
 	// see also https://docs.gtk.org/gio/flags.DataStreamNewlineType.html#any
-	//
 	DataStreamNewlineTypeAny DataStreamNewlineType = 3
 )
 
@@ -1288,34 +1259,28 @@ func (e DataStreamNewlineType) String() string {
 // DriveStartStopType wraps GDriveStartStopType
 // 
 // see also https://docs.gtk.org/gio/enum.DriveStartStopType.html
-//
 type DriveStartStopType C.int
 
 const (
 	// DriveStartStopTypeUnknown wraps G_DRIVE_START_STOP_TYPE_UNKNOWN
 	// 
 	// see also https://docs.gtk.org/gio/flags.DriveStartStopType.html#unknown
-	//
 	DriveStartStopTypeUnknown DriveStartStopType = 0
 	// DriveStartStopTypeShutdown wraps G_DRIVE_START_STOP_TYPE_SHUTDOWN
 	// 
 	// see also https://docs.gtk.org/gio/flags.DriveStartStopType.html#shutdown
-	//
 	DriveStartStopTypeShutdown DriveStartStopType = 1
 	// DriveStartStopTypeNetwork wraps G_DRIVE_START_STOP_TYPE_NETWORK
 	// 
 	// see also https://docs.gtk.org/gio/flags.DriveStartStopType.html#network
-	//
 	DriveStartStopTypeNetwork DriveStartStopType = 2
 	// DriveStartStopTypeMultidisk wraps G_DRIVE_START_STOP_TYPE_MULTIDISK
 	// 
 	// see also https://docs.gtk.org/gio/flags.DriveStartStopType.html#multidisk
-	//
 	DriveStartStopTypeMultidisk DriveStartStopType = 3
 	// DriveStartStopTypePassword wraps G_DRIVE_START_STOP_TYPE_PASSWORD
 	// 
 	// see also https://docs.gtk.org/gio/flags.DriveStartStopType.html#password
-	//
 	DriveStartStopTypePassword DriveStartStopType = 4
 )
 
@@ -1347,29 +1312,24 @@ func (e DriveStartStopType) String() string {
 // EmblemOrigin wraps GEmblemOrigin
 // 
 // see also https://docs.gtk.org/gio/enum.EmblemOrigin.html
-//
 type EmblemOrigin C.int
 
 const (
 	// EmblemOriginUnknown wraps G_EMBLEM_ORIGIN_UNKNOWN
 	// 
 	// see also https://docs.gtk.org/gio/flags.EmblemOrigin.html#unknown
-	//
 	EmblemOriginUnknown EmblemOrigin = 0
 	// EmblemOriginDevice wraps G_EMBLEM_ORIGIN_DEVICE
 	// 
 	// see also https://docs.gtk.org/gio/flags.EmblemOrigin.html#device
-	//
 	EmblemOriginDevice EmblemOrigin = 1
 	// EmblemOriginLivemetadata wraps G_EMBLEM_ORIGIN_LIVEMETADATA
 	// 
 	// see also https://docs.gtk.org/gio/flags.EmblemOrigin.html#livemetadata
-	//
 	EmblemOriginLivemetadata EmblemOrigin = 2
 	// EmblemOriginTag wraps G_EMBLEM_ORIGIN_TAG
 	// 
 	// see also https://docs.gtk.org/gio/flags.EmblemOrigin.html#tag
-	//
 	EmblemOriginTag EmblemOrigin = 3
 )
 
@@ -1400,24 +1360,20 @@ func (e EmblemOrigin) String() string {
 // FileAttributeStatus wraps GFileAttributeStatus
 // 
 // see also https://docs.gtk.org/gio/enum.FileAttributeStatus.html
-//
 type FileAttributeStatus C.int
 
 const (
 	// FileAttributeStatusUnset wraps G_FILE_ATTRIBUTE_STATUS_UNSET
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeStatus.html#unset
-	//
 	FileAttributeStatusUnset FileAttributeStatus = 0
 	// FileAttributeStatusSet wraps G_FILE_ATTRIBUTE_STATUS_SET
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeStatus.html#set
-	//
 	FileAttributeStatusSet FileAttributeStatus = 1
 	// FileAttributeStatusErrorSetting wraps G_FILE_ATTRIBUTE_STATUS_ERROR_SETTING
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeStatus.html#error_setting
-	//
 	FileAttributeStatusErrorSetting FileAttributeStatus = 2
 )
 
@@ -1447,59 +1403,48 @@ func (e FileAttributeStatus) String() string {
 // FileAttributeType wraps GFileAttributeType
 // 
 // see also https://docs.gtk.org/gio/enum.FileAttributeType.html
-//
 type FileAttributeType C.int
 
 const (
 	// FileAttributeTypeInvalid wraps G_FILE_ATTRIBUTE_TYPE_INVALID
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#invalid
-	//
 	FileAttributeTypeInvalid FileAttributeType = 0
 	// FileAttributeTypeString wraps G_FILE_ATTRIBUTE_TYPE_STRING
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#string
-	//
 	FileAttributeTypeString FileAttributeType = 1
 	// FileAttributeTypeByteString wraps G_FILE_ATTRIBUTE_TYPE_BYTE_STRING
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#byte_string
-	//
 	FileAttributeTypeByteString FileAttributeType = 2
 	// FileAttributeTypeBoolean wraps G_FILE_ATTRIBUTE_TYPE_BOOLEAN
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#boolean
-	//
 	FileAttributeTypeBoolean FileAttributeType = 3
 	// FileAttributeTypeUint32 wraps G_FILE_ATTRIBUTE_TYPE_UINT32
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#uint32
-	//
 	FileAttributeTypeUint32 FileAttributeType = 4
 	// FileAttributeTypeInt32 wraps G_FILE_ATTRIBUTE_TYPE_INT32
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#int32
-	//
 	FileAttributeTypeInt32 FileAttributeType = 5
 	// FileAttributeTypeUint64 wraps G_FILE_ATTRIBUTE_TYPE_UINT64
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#uint64
-	//
 	FileAttributeTypeUint64 FileAttributeType = 6
 	// FileAttributeTypeInt64 wraps G_FILE_ATTRIBUTE_TYPE_INT64
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#int64
-	//
 	FileAttributeTypeInt64 FileAttributeType = 7
 	// FileAttributeTypeObject wraps G_FILE_ATTRIBUTE_TYPE_OBJECT
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#object
-	//
 	FileAttributeTypeObject FileAttributeType = 8
 	// FileAttributeTypeStringv wraps G_FILE_ATTRIBUTE_TYPE_STRINGV
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeType.html#stringv
-	//
 	FileAttributeTypeStringv FileAttributeType = 9
 )
 
@@ -1536,64 +1481,52 @@ func (e FileAttributeType) String() string {
 // FileMonitorEvent wraps GFileMonitorEvent
 // 
 // see also https://docs.gtk.org/gio/enum.FileMonitorEvent.html
-//
 type FileMonitorEvent C.int
 
 const (
 	// FileMonitorEventChanged wraps G_FILE_MONITOR_EVENT_CHANGED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#changed
-	//
 	FileMonitorEventChanged FileMonitorEvent = 0
 	// FileMonitorEventChangesDoneHint wraps G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#changes_done_hint
-	//
 	FileMonitorEventChangesDoneHint FileMonitorEvent = 1
 	// FileMonitorEventDeleted wraps G_FILE_MONITOR_EVENT_DELETED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#deleted
-	//
 	FileMonitorEventDeleted FileMonitorEvent = 2
 	// FileMonitorEventCreated wraps G_FILE_MONITOR_EVENT_CREATED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#created
-	//
 	FileMonitorEventCreated FileMonitorEvent = 3
 	// FileMonitorEventAttributeChanged wraps G_FILE_MONITOR_EVENT_ATTRIBUTE_CHANGED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#attribute_changed
-	//
 	FileMonitorEventAttributeChanged FileMonitorEvent = 4
 	// FileMonitorEventPreUnmount wraps G_FILE_MONITOR_EVENT_PRE_UNMOUNT
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#pre_unmount
-	//
 	FileMonitorEventPreUnmount FileMonitorEvent = 5
 	// FileMonitorEventUnmounted wraps G_FILE_MONITOR_EVENT_UNMOUNTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#unmounted
-	//
 	FileMonitorEventUnmounted FileMonitorEvent = 6
 	// FileMonitorEventMoved wraps G_FILE_MONITOR_EVENT_MOVED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#moved
-	//
 	FileMonitorEventMoved FileMonitorEvent = 7
 	// FileMonitorEventRenamed wraps G_FILE_MONITOR_EVENT_RENAMED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#renamed
-	//
 	FileMonitorEventRenamed FileMonitorEvent = 8
 	// FileMonitorEventMovedIn wraps G_FILE_MONITOR_EVENT_MOVED_IN
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#moved_in
-	//
 	FileMonitorEventMovedIn FileMonitorEvent = 9
 	// FileMonitorEventMovedOut wraps G_FILE_MONITOR_EVENT_MOVED_OUT
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorEvent.html#moved_out
-	//
 	FileMonitorEventMovedOut FileMonitorEvent = 10
 )
 
@@ -1631,44 +1564,36 @@ func (e FileMonitorEvent) String() string {
 // FileType wraps GFileType
 // 
 // see also https://docs.gtk.org/gio/enum.FileType.html
-//
 type FileType C.int
 
 const (
 	// FileTypeUnknown wraps G_FILE_TYPE_UNKNOWN
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileType.html#unknown
-	//
 	FileTypeUnknown FileType = 0
 	// FileTypeRegular wraps G_FILE_TYPE_REGULAR
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileType.html#regular
-	//
 	FileTypeRegular FileType = 1
 	// FileTypeDirectory wraps G_FILE_TYPE_DIRECTORY
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileType.html#directory
-	//
 	FileTypeDirectory FileType = 2
 	// FileTypeSymbolicLink wraps G_FILE_TYPE_SYMBOLIC_LINK
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileType.html#symbolic_link
-	//
 	FileTypeSymbolicLink FileType = 3
 	// FileTypeSpecial wraps G_FILE_TYPE_SPECIAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileType.html#special
-	//
 	FileTypeSpecial FileType = 4
 	// FileTypeShortcut wraps G_FILE_TYPE_SHORTCUT
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileType.html#shortcut
-	//
 	FileTypeShortcut FileType = 5
 	// FileTypeMountable wraps G_FILE_TYPE_MOUNTABLE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileType.html#mountable
-	//
 	FileTypeMountable FileType = 6
 )
 
@@ -1702,24 +1627,20 @@ func (e FileType) String() string {
 // FilesystemPreviewType wraps GFilesystemPreviewType
 // 
 // see also https://docs.gtk.org/gio/enum.FilesystemPreviewType.html
-//
 type FilesystemPreviewType C.int
 
 const (
 	// FilesystemPreviewTypeIfAlways wraps G_FILESYSTEM_PREVIEW_TYPE_IF_ALWAYS
 	// 
 	// see also https://docs.gtk.org/gio/flags.FilesystemPreviewType.html#if_always
-	//
 	FilesystemPreviewTypeIfAlways FilesystemPreviewType = 0
 	// FilesystemPreviewTypeIfLocal wraps G_FILESYSTEM_PREVIEW_TYPE_IF_LOCAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.FilesystemPreviewType.html#if_local
-	//
 	FilesystemPreviewTypeIfLocal FilesystemPreviewType = 1
 	// FilesystemPreviewTypeNever wraps G_FILESYSTEM_PREVIEW_TYPE_NEVER
 	// 
 	// see also https://docs.gtk.org/gio/flags.FilesystemPreviewType.html#never
-	//
 	FilesystemPreviewTypeNever FilesystemPreviewType = 2
 )
 
@@ -1749,259 +1670,208 @@ func (e FilesystemPreviewType) String() string {
 // IOErrorEnum wraps GIOErrorEnum
 // 
 // see also https://docs.gtk.org/gio/enum.IOErrorEnum.html
-//
 type IOErrorEnum C.int
 
 const (
 	// IOErrorFailed wraps G_IO_ERROR_FAILED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#failed
-	//
 	IOErrorFailed IOErrorEnum = 0
 	// IOErrorNotFound wraps G_IO_ERROR_NOT_FOUND
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_found
-	//
 	IOErrorNotFound IOErrorEnum = 1
 	// IOErrorExists wraps G_IO_ERROR_EXISTS
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#exists
-	//
 	IOErrorExists IOErrorEnum = 2
 	// IOErrorIsDirectory wraps G_IO_ERROR_IS_DIRECTORY
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#is_directory
-	//
 	IOErrorIsDirectory IOErrorEnum = 3
 	// IOErrorNotDirectory wraps G_IO_ERROR_NOT_DIRECTORY
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_directory
-	//
 	IOErrorNotDirectory IOErrorEnum = 4
 	// IOErrorNotEmpty wraps G_IO_ERROR_NOT_EMPTY
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_empty
-	//
 	IOErrorNotEmpty IOErrorEnum = 5
 	// IOErrorNotRegularFile wraps G_IO_ERROR_NOT_REGULAR_FILE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_regular_file
-	//
 	IOErrorNotRegularFile IOErrorEnum = 6
 	// IOErrorNotSymbolicLink wraps G_IO_ERROR_NOT_SYMBOLIC_LINK
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_symbolic_link
-	//
 	IOErrorNotSymbolicLink IOErrorEnum = 7
 	// IOErrorNotMountableFile wraps G_IO_ERROR_NOT_MOUNTABLE_FILE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_mountable_file
-	//
 	IOErrorNotMountableFile IOErrorEnum = 8
 	// IOErrorFilenameTooLong wraps G_IO_ERROR_FILENAME_TOO_LONG
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#filename_too_long
-	//
 	IOErrorFilenameTooLong IOErrorEnum = 9
 	// IOErrorInvalidFilename wraps G_IO_ERROR_INVALID_FILENAME
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#invalid_filename
-	//
 	IOErrorInvalidFilename IOErrorEnum = 10
 	// IOErrorTooManyLinks wraps G_IO_ERROR_TOO_MANY_LINKS
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#too_many_links
-	//
 	IOErrorTooManyLinks IOErrorEnum = 11
 	// IOErrorNoSpace wraps G_IO_ERROR_NO_SPACE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#no_space
-	//
 	IOErrorNoSpace IOErrorEnum = 12
 	// IOErrorInvalidArgument wraps G_IO_ERROR_INVALID_ARGUMENT
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#invalid_argument
-	//
 	IOErrorInvalidArgument IOErrorEnum = 13
 	// IOErrorPermissionDenied wraps G_IO_ERROR_PERMISSION_DENIED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#permission_denied
-	//
 	IOErrorPermissionDenied IOErrorEnum = 14
 	// IOErrorNotSupported wraps G_IO_ERROR_NOT_SUPPORTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_supported
-	//
 	IOErrorNotSupported IOErrorEnum = 15
 	// IOErrorNotMounted wraps G_IO_ERROR_NOT_MOUNTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_mounted
-	//
 	IOErrorNotMounted IOErrorEnum = 16
 	// IOErrorAlreadyMounted wraps G_IO_ERROR_ALREADY_MOUNTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#already_mounted
-	//
 	IOErrorAlreadyMounted IOErrorEnum = 17
 	// IOErrorClosed wraps G_IO_ERROR_CLOSED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#closed
-	//
 	IOErrorClosed IOErrorEnum = 18
 	// IOErrorCancelled wraps G_IO_ERROR_CANCELLED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#cancelled
-	//
 	IOErrorCancelled IOErrorEnum = 19
 	// IOErrorPending wraps G_IO_ERROR_PENDING
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#pending
-	//
 	IOErrorPending IOErrorEnum = 20
 	// IOErrorReadOnly wraps G_IO_ERROR_READ_ONLY
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#read_only
-	//
 	IOErrorReadOnly IOErrorEnum = 21
 	// IOErrorCantCreateBackup wraps G_IO_ERROR_CANT_CREATE_BACKUP
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#cant_create_backup
-	//
 	IOErrorCantCreateBackup IOErrorEnum = 22
 	// IOErrorWrongEtag wraps G_IO_ERROR_WRONG_ETAG
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#wrong_etag
-	//
 	IOErrorWrongEtag IOErrorEnum = 23
 	// IOErrorTimedOut wraps G_IO_ERROR_TIMED_OUT
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#timed_out
-	//
 	IOErrorTimedOut IOErrorEnum = 24
 	// IOErrorWouldRecurse wraps G_IO_ERROR_WOULD_RECURSE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#would_recurse
-	//
 	IOErrorWouldRecurse IOErrorEnum = 25
 	// IOErrorBusy wraps G_IO_ERROR_BUSY
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#busy
-	//
 	IOErrorBusy IOErrorEnum = 26
 	// IOErrorWouldBlock wraps G_IO_ERROR_WOULD_BLOCK
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#would_block
-	//
 	IOErrorWouldBlock IOErrorEnum = 27
 	// IOErrorHostNotFound wraps G_IO_ERROR_HOST_NOT_FOUND
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#host_not_found
-	//
 	IOErrorHostNotFound IOErrorEnum = 28
 	// IOErrorWouldMerge wraps G_IO_ERROR_WOULD_MERGE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#would_merge
-	//
 	IOErrorWouldMerge IOErrorEnum = 29
 	// IOErrorFailedHandled wraps G_IO_ERROR_FAILED_HANDLED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#failed_handled
-	//
 	IOErrorFailedHandled IOErrorEnum = 30
 	// IOErrorTooManyOpenFiles wraps G_IO_ERROR_TOO_MANY_OPEN_FILES
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#too_many_open_files
-	//
 	IOErrorTooManyOpenFiles IOErrorEnum = 31
 	// IOErrorNotInitialized wraps G_IO_ERROR_NOT_INITIALIZED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_initialized
-	//
 	IOErrorNotInitialized IOErrorEnum = 32
 	// IOErrorAddressInUse wraps G_IO_ERROR_ADDRESS_IN_USE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#address_in_use
-	//
 	IOErrorAddressInUse IOErrorEnum = 33
 	// IOErrorPartialInput wraps G_IO_ERROR_PARTIAL_INPUT
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#partial_input
-	//
 	IOErrorPartialInput IOErrorEnum = 34
 	// IOErrorInvalidData wraps G_IO_ERROR_INVALID_DATA
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#invalid_data
-	//
 	IOErrorInvalidData IOErrorEnum = 35
 	// IOErrorDBusError wraps G_IO_ERROR_DBUS_ERROR
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#dbus_error
-	//
 	IOErrorDBusError IOErrorEnum = 36
 	// IOErrorHostUnreachable wraps G_IO_ERROR_HOST_UNREACHABLE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#host_unreachable
-	//
 	IOErrorHostUnreachable IOErrorEnum = 37
 	// IOErrorNetworkUnreachable wraps G_IO_ERROR_NETWORK_UNREACHABLE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#network_unreachable
-	//
 	IOErrorNetworkUnreachable IOErrorEnum = 38
 	// IOErrorConnectionRefused wraps G_IO_ERROR_CONNECTION_REFUSED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#connection_refused
-	//
 	IOErrorConnectionRefused IOErrorEnum = 39
 	// IOErrorProxyFailed wraps G_IO_ERROR_PROXY_FAILED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#proxy_failed
-	//
 	IOErrorProxyFailed IOErrorEnum = 40
 	// IOErrorProxyAuthFailed wraps G_IO_ERROR_PROXY_AUTH_FAILED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#proxy_auth_failed
-	//
 	IOErrorProxyAuthFailed IOErrorEnum = 41
 	// IOErrorProxyNeedAuth wraps G_IO_ERROR_PROXY_NEED_AUTH
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#proxy_need_auth
-	//
 	IOErrorProxyNeedAuth IOErrorEnum = 42
 	// IOErrorProxyNotAllowed wraps G_IO_ERROR_PROXY_NOT_ALLOWED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#proxy_not_allowed
-	//
 	IOErrorProxyNotAllowed IOErrorEnum = 43
 	// IOErrorBrokenPipe wraps G_IO_ERROR_BROKEN_PIPE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#broken_pipe
-	//
 	IOErrorBrokenPipe IOErrorEnum = 44
 	// IOErrorConnectionClosed wraps G_IO_ERROR_CONNECTION_CLOSED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#connection_closed
-	//
 	IOErrorConnectionClosed IOErrorEnum = 44
 	// IOErrorNotConnected wraps G_IO_ERROR_NOT_CONNECTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#not_connected
-	//
 	IOErrorNotConnected IOErrorEnum = 45
 	// IOErrorMessageTooLarge wraps G_IO_ERROR_MESSAGE_TOO_LARGE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#message_too_large
-	//
 	IOErrorMessageTooLarge IOErrorEnum = 46
 	// IOErrorNoSuchDevice wraps G_IO_ERROR_NO_SUCH_DEVICE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#no_such_device
-	//
 	IOErrorNoSuchDevice IOErrorEnum = 47
 	// IOErrorDestinationUnset wraps G_IO_ERROR_DESTINATION_UNSET
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOErrorEnum.html#destination_unset
-	//
 	IOErrorDestinationUnset IOErrorEnum = 48
 )
 
@@ -2077,19 +1947,16 @@ func (e IOErrorEnum) String() string {
 // IOModuleScopeFlags wraps GIOModuleScopeFlags
 // 
 // see also https://docs.gtk.org/gio/enum.IOModuleScopeFlags.html
-//
 type IOModuleScopeFlags C.int
 
 const (
 	// IOModuleScopeNone wraps G_IO_MODULE_SCOPE_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOModuleScopeFlags.html#none
-	//
 	IOModuleScopeNone IOModuleScopeFlags = 0
 	// IOModuleScopeBlockDuplicates wraps G_IO_MODULE_SCOPE_BLOCK_DUPLICATES
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOModuleScopeFlags.html#block_duplicates
-	//
 	IOModuleScopeBlockDuplicates IOModuleScopeFlags = 1
 )
 
@@ -2118,24 +1985,20 @@ func (e IOModuleScopeFlags) String() string {
 // MemoryMonitorWarningLevel wraps GMemoryMonitorWarningLevel
 // 
 // see also https://docs.gtk.org/gio/enum.MemoryMonitorWarningLevel.html
-//
 type MemoryMonitorWarningLevel C.int
 
 const (
 	// MemoryMonitorWarningLevelLow wraps G_MEMORY_MONITOR_WARNING_LEVEL_LOW
 	// 
 	// see also https://docs.gtk.org/gio/flags.MemoryMonitorWarningLevel.html#low
-	//
 	MemoryMonitorWarningLevelLow MemoryMonitorWarningLevel = 50
 	// MemoryMonitorWarningLevelMedium wraps G_MEMORY_MONITOR_WARNING_LEVEL_MEDIUM
 	// 
 	// see also https://docs.gtk.org/gio/flags.MemoryMonitorWarningLevel.html#medium
-	//
 	MemoryMonitorWarningLevelMedium MemoryMonitorWarningLevel = 100
 	// MemoryMonitorWarningLevelCritical wraps G_MEMORY_MONITOR_WARNING_LEVEL_CRITICAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.MemoryMonitorWarningLevel.html#critical
-	//
 	MemoryMonitorWarningLevelCritical MemoryMonitorWarningLevel = 255
 )
 
@@ -2165,24 +2028,20 @@ func (e MemoryMonitorWarningLevel) String() string {
 // MountOperationResult wraps GMountOperationResult
 // 
 // see also https://docs.gtk.org/gio/enum.MountOperationResult.html
-//
 type MountOperationResult C.int
 
 const (
 	// MountOperationHandled wraps G_MOUNT_OPERATION_HANDLED
 	// 
 	// see also https://docs.gtk.org/gio/flags.MountOperationResult.html#handled
-	//
 	MountOperationHandled MountOperationResult = 0
 	// MountOperationAborted wraps G_MOUNT_OPERATION_ABORTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.MountOperationResult.html#aborted
-	//
 	MountOperationAborted MountOperationResult = 1
 	// MountOperationUnhandled wraps G_MOUNT_OPERATION_UNHANDLED
 	// 
 	// see also https://docs.gtk.org/gio/flags.MountOperationResult.html#unhandled
-	//
 	MountOperationUnhandled MountOperationResult = 2
 )
 
@@ -2212,29 +2071,24 @@ func (e MountOperationResult) String() string {
 // NetworkConnectivity wraps GNetworkConnectivity
 // 
 // see also https://docs.gtk.org/gio/enum.NetworkConnectivity.html
-//
 type NetworkConnectivity C.int
 
 const (
 	// NetworkConnectivityLocal wraps G_NETWORK_CONNECTIVITY_LOCAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.NetworkConnectivity.html#local
-	//
 	NetworkConnectivityLocal NetworkConnectivity = 1
 	// NetworkConnectivityLimited wraps G_NETWORK_CONNECTIVITY_LIMITED
 	// 
 	// see also https://docs.gtk.org/gio/flags.NetworkConnectivity.html#limited
-	//
 	NetworkConnectivityLimited NetworkConnectivity = 2
 	// NetworkConnectivityPortal wraps G_NETWORK_CONNECTIVITY_PORTAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.NetworkConnectivity.html#portal
-	//
 	NetworkConnectivityPortal NetworkConnectivity = 3
 	// NetworkConnectivityFull wraps G_NETWORK_CONNECTIVITY_FULL
 	// 
 	// see also https://docs.gtk.org/gio/flags.NetworkConnectivity.html#full
-	//
 	NetworkConnectivityFull NetworkConnectivity = 4
 )
 
@@ -2265,29 +2119,24 @@ func (e NetworkConnectivity) String() string {
 // NotificationPriority wraps GNotificationPriority
 // 
 // see also https://docs.gtk.org/gio/enum.NotificationPriority.html
-//
 type NotificationPriority C.int
 
 const (
 	// NotificationPriorityNormal wraps G_NOTIFICATION_PRIORITY_NORMAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.NotificationPriority.html#normal
-	//
 	NotificationPriorityNormal NotificationPriority = 0
 	// NotificationPriorityLow wraps G_NOTIFICATION_PRIORITY_LOW
 	// 
 	// see also https://docs.gtk.org/gio/flags.NotificationPriority.html#low
-	//
 	NotificationPriorityLow NotificationPriority = 1
 	// NotificationPriorityHigh wraps G_NOTIFICATION_PRIORITY_HIGH
 	// 
 	// see also https://docs.gtk.org/gio/flags.NotificationPriority.html#high
-	//
 	NotificationPriorityHigh NotificationPriority = 2
 	// NotificationPriorityUrgent wraps G_NOTIFICATION_PRIORITY_URGENT
 	// 
 	// see also https://docs.gtk.org/gio/flags.NotificationPriority.html#urgent
-	//
 	NotificationPriorityUrgent NotificationPriority = 3
 )
 
@@ -2318,24 +2167,20 @@ func (e NotificationPriority) String() string {
 // PasswordSave wraps GPasswordSave
 // 
 // see also https://docs.gtk.org/gio/enum.PasswordSave.html
-//
 type PasswordSave C.int
 
 const (
 	// PasswordSaveNever wraps G_PASSWORD_SAVE_NEVER
 	// 
 	// see also https://docs.gtk.org/gio/flags.PasswordSave.html#never
-	//
 	PasswordSaveNever PasswordSave = 0
 	// PasswordSaveForSession wraps G_PASSWORD_SAVE_FOR_SESSION
 	// 
 	// see also https://docs.gtk.org/gio/flags.PasswordSave.html#for_session
-	//
 	PasswordSaveForSession PasswordSave = 1
 	// PasswordSavePermanently wraps G_PASSWORD_SAVE_PERMANENTLY
 	// 
 	// see also https://docs.gtk.org/gio/flags.PasswordSave.html#permanently
-	//
 	PasswordSavePermanently PasswordSave = 2
 )
 
@@ -2365,24 +2210,20 @@ func (e PasswordSave) String() string {
 // PollableReturn wraps GPollableReturn
 // 
 // see also https://docs.gtk.org/gio/enum.PollableReturn.html
-//
 type PollableReturn C.int
 
 const (
 	// PollableReturnFailed wraps G_POLLABLE_RETURN_FAILED
 	// 
 	// see also https://docs.gtk.org/gio/flags.PollableReturn.html#failed
-	//
 	PollableReturnFailed PollableReturn = 0
 	// PollableReturnOK wraps G_POLLABLE_RETURN_OK
 	// 
 	// see also https://docs.gtk.org/gio/flags.PollableReturn.html#ok
-	//
 	PollableReturnOK PollableReturn = 1
 	// PollableReturnWouldBlock wraps G_POLLABLE_RETURN_WOULD_BLOCK
 	// 
 	// see also https://docs.gtk.org/gio/flags.PollableReturn.html#would_block
-	//
 	PollableReturnWouldBlock PollableReturn = -27
 )
 
@@ -2412,24 +2253,20 @@ func (e PollableReturn) String() string {
 // ResolverError wraps GResolverError
 // 
 // see also https://docs.gtk.org/gio/enum.ResolverError.html
-//
 type ResolverError C.int
 
 const (
 	// ResolverErrorNotFound wraps G_RESOLVER_ERROR_NOT_FOUND
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverError.html#not_found
-	//
 	ResolverErrorNotFound ResolverError = 0
 	// ResolverErrorTemporaryFailure wraps G_RESOLVER_ERROR_TEMPORARY_FAILURE
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverError.html#temporary_failure
-	//
 	ResolverErrorTemporaryFailure ResolverError = 1
 	// ResolverErrorInternal wraps G_RESOLVER_ERROR_INTERNAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverError.html#internal
-	//
 	ResolverErrorInternal ResolverError = 2
 )
 
@@ -2459,7 +2296,6 @@ func (e ResolverError) String() string {
 // ResolverErrorQuark wraps g_resolver_error_quark
 // 
 // see also https://docs.gtk.org/gio/func.g_resolver_error_quark.html
-//
 func ResolverErrorQuark() glib.Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -2475,34 +2311,28 @@ func ResolverErrorQuark() glib.Quark {
 // ResolverRecordType wraps GResolverRecordType
 // 
 // see also https://docs.gtk.org/gio/enum.ResolverRecordType.html
-//
 type ResolverRecordType C.int
 
 const (
 	// ResolverRecordSrv wraps G_RESOLVER_RECORD_SRV
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverRecordType.html#srv
-	//
 	ResolverRecordSrv ResolverRecordType = 1
 	// ResolverRecordMx wraps G_RESOLVER_RECORD_MX
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverRecordType.html#mx
-	//
 	ResolverRecordMx ResolverRecordType = 2
 	// ResolverRecordTxt wraps G_RESOLVER_RECORD_TXT
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverRecordType.html#txt
-	//
 	ResolverRecordTxt ResolverRecordType = 3
 	// ResolverRecordSoa wraps G_RESOLVER_RECORD_SOA
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverRecordType.html#soa
-	//
 	ResolverRecordSoa ResolverRecordType = 4
 	// ResolverRecordNs wraps G_RESOLVER_RECORD_NS
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverRecordType.html#ns
-	//
 	ResolverRecordNs ResolverRecordType = 5
 )
 
@@ -2534,19 +2364,16 @@ func (e ResolverRecordType) String() string {
 // ResourceError wraps GResourceError
 // 
 // see also https://docs.gtk.org/gio/enum.ResourceError.html
-//
 type ResourceError C.int
 
 const (
 	// ResourceErrorNotFound wraps G_RESOURCE_ERROR_NOT_FOUND
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResourceError.html#not_found
-	//
 	ResourceErrorNotFound ResourceError = 0
 	// ResourceErrorInternal wraps G_RESOURCE_ERROR_INTERNAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResourceError.html#internal
-	//
 	ResourceErrorInternal ResourceError = 1
 )
 
@@ -2575,7 +2402,6 @@ func (e ResourceError) String() string {
 // ResourceErrorQuark wraps g_resource_error_quark
 // 
 // see also https://docs.gtk.org/gio/func.g_resource_error_quark.html
-//
 func ResourceErrorQuark() glib.Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -2591,54 +2417,44 @@ func ResourceErrorQuark() glib.Quark {
 // SocketClientEvent wraps GSocketClientEvent
 // 
 // see also https://docs.gtk.org/gio/enum.SocketClientEvent.html
-//
 type SocketClientEvent C.int
 
 const (
 	// SocketClientResolving wraps G_SOCKET_CLIENT_RESOLVING
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#resolving
-	//
 	SocketClientResolving SocketClientEvent = 0
 	// SocketClientResolved wraps G_SOCKET_CLIENT_RESOLVED
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#resolved
-	//
 	SocketClientResolved SocketClientEvent = 1
 	// SocketClientConnecting wraps G_SOCKET_CLIENT_CONNECTING
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#connecting
-	//
 	SocketClientConnecting SocketClientEvent = 2
 	// SocketClientConnected wraps G_SOCKET_CLIENT_CONNECTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#connected
-	//
 	SocketClientConnected SocketClientEvent = 3
 	// SocketClientProxyNegotiating wraps G_SOCKET_CLIENT_PROXY_NEGOTIATING
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#proxy_negotiating
-	//
 	SocketClientProxyNegotiating SocketClientEvent = 4
 	// SocketClientProxyNegotiated wraps G_SOCKET_CLIENT_PROXY_NEGOTIATED
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#proxy_negotiated
-	//
 	SocketClientProxyNegotiated SocketClientEvent = 5
 	// SocketClientTlsHandshaking wraps G_SOCKET_CLIENT_TLS_HANDSHAKING
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#tls_handshaking
-	//
 	SocketClientTlsHandshaking SocketClientEvent = 6
 	// SocketClientTlsHandshaked wraps G_SOCKET_CLIENT_TLS_HANDSHAKED
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#tls_handshaked
-	//
 	SocketClientTlsHandshaked SocketClientEvent = 7
 	// SocketClientComplete wraps G_SOCKET_CLIENT_COMPLETE
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketClientEvent.html#complete
-	//
 	SocketClientComplete SocketClientEvent = 8
 )
 
@@ -2674,24 +2490,20 @@ func (e SocketClientEvent) String() string {
 // SocketFamily wraps GSocketFamily
 // 
 // see also https://docs.gtk.org/gio/enum.SocketFamily.html
-//
 type SocketFamily C.int
 
 const (
 	// SocketFamilyInvalid wraps G_SOCKET_FAMILY_INVALID
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketFamily.html#invalid
-	//
 	SocketFamilyInvalid SocketFamily = 0
 	// SocketFamilyIpv4 wraps G_SOCKET_FAMILY_IPV4
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketFamily.html#ipv4
-	//
 	SocketFamilyIpv4 SocketFamily = 2
 	// SocketFamilyIpv6 wraps G_SOCKET_FAMILY_IPV6
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketFamily.html#ipv6
-	//
 	SocketFamilyIpv6 SocketFamily = 10
 )
 
@@ -2721,29 +2533,24 @@ func (e SocketFamily) String() string {
 // SocketListenerEvent wraps GSocketListenerEvent
 // 
 // see also https://docs.gtk.org/gio/enum.SocketListenerEvent.html
-//
 type SocketListenerEvent C.int
 
 const (
 	// SocketListenerBinding wraps G_SOCKET_LISTENER_BINDING
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketListenerEvent.html#binding
-	//
 	SocketListenerBinding SocketListenerEvent = 0
 	// SocketListenerBound wraps G_SOCKET_LISTENER_BOUND
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketListenerEvent.html#bound
-	//
 	SocketListenerBound SocketListenerEvent = 1
 	// SocketListenerListening wraps G_SOCKET_LISTENER_LISTENING
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketListenerEvent.html#listening
-	//
 	SocketListenerListening SocketListenerEvent = 2
 	// SocketListenerListened wraps G_SOCKET_LISTENER_LISTENED
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketListenerEvent.html#listened
-	//
 	SocketListenerListened SocketListenerEvent = 3
 )
 
@@ -2774,34 +2581,28 @@ func (e SocketListenerEvent) String() string {
 // SocketProtocol wraps GSocketProtocol
 // 
 // see also https://docs.gtk.org/gio/enum.SocketProtocol.html
-//
 type SocketProtocol C.int
 
 const (
 	// SocketProtocolUnknown wraps G_SOCKET_PROTOCOL_UNKNOWN
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketProtocol.html#unknown
-	//
 	SocketProtocolUnknown SocketProtocol = -1
 	// SocketProtocolDefault wraps G_SOCKET_PROTOCOL_DEFAULT
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketProtocol.html#default
-	//
 	SocketProtocolDefault SocketProtocol = 0
 	// SocketProtocolTcp wraps G_SOCKET_PROTOCOL_TCP
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketProtocol.html#tcp
-	//
 	SocketProtocolTcp SocketProtocol = 6
 	// SocketProtocolUdp wraps G_SOCKET_PROTOCOL_UDP
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketProtocol.html#udp
-	//
 	SocketProtocolUdp SocketProtocol = 17
 	// SocketProtocolSctp wraps G_SOCKET_PROTOCOL_SCTP
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketProtocol.html#sctp
-	//
 	SocketProtocolSctp SocketProtocol = 132
 )
 
@@ -2833,29 +2634,24 @@ func (e SocketProtocol) String() string {
 // SocketType wraps GSocketType
 // 
 // see also https://docs.gtk.org/gio/enum.SocketType.html
-//
 type SocketType C.int
 
 const (
 	// SocketTypeInvalid wraps G_SOCKET_TYPE_INVALID
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketType.html#invalid
-	//
 	SocketTypeInvalid SocketType = 0
 	// SocketTypeStream wraps G_SOCKET_TYPE_STREAM
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketType.html#stream
-	//
 	SocketTypeStream SocketType = 1
 	// SocketTypeDatagram wraps G_SOCKET_TYPE_DATAGRAM
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketType.html#datagram
-	//
 	SocketTypeDatagram SocketType = 2
 	// SocketTypeSeqpacket wraps G_SOCKET_TYPE_SEQPACKET
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketType.html#seqpacket
-	//
 	SocketTypeSeqpacket SocketType = 3
 )
 
@@ -2886,24 +2682,20 @@ func (e SocketType) String() string {
 // TlsAuthenticationMode wraps GTlsAuthenticationMode
 // 
 // see also https://docs.gtk.org/gio/enum.TlsAuthenticationMode.html
-//
 type TlsAuthenticationMode C.int
 
 const (
 	// TlsAuthenticationNone wraps G_TLS_AUTHENTICATION_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsAuthenticationMode.html#none
-	//
 	TlsAuthenticationNone TlsAuthenticationMode = 0
 	// TlsAuthenticationRequested wraps G_TLS_AUTHENTICATION_REQUESTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsAuthenticationMode.html#requested
-	//
 	TlsAuthenticationRequested TlsAuthenticationMode = 1
 	// TlsAuthenticationRequired wraps G_TLS_AUTHENTICATION_REQUIRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsAuthenticationMode.html#required
-	//
 	TlsAuthenticationRequired TlsAuthenticationMode = 2
 )
 
@@ -2933,14 +2725,12 @@ func (e TlsAuthenticationMode) String() string {
 // TlsCertificateRequestFlags wraps GTlsCertificateRequestFlags
 // 
 // see also https://docs.gtk.org/gio/enum.TlsCertificateRequestFlags.html
-//
 type TlsCertificateRequestFlags C.int
 
 const (
 	// TlsCertificateRequestNone wraps G_TLS_CERTIFICATE_REQUEST_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateRequestFlags.html#none
-	//
 	TlsCertificateRequestNone TlsCertificateRequestFlags = 0
 )
 
@@ -2968,34 +2758,28 @@ func (e TlsCertificateRequestFlags) String() string {
 // TlsChannelBindingError wraps GTlsChannelBindingError
 // 
 // see also https://docs.gtk.org/gio/enum.TlsChannelBindingError.html
-//
 type TlsChannelBindingError C.int
 
 const (
 	// TlsChannelBindingErrorNotImplemented wraps G_TLS_CHANNEL_BINDING_ERROR_NOT_IMPLEMENTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingError.html#not_implemented
-	//
 	TlsChannelBindingErrorNotImplemented TlsChannelBindingError = 0
 	// TlsChannelBindingErrorInvalidState wraps G_TLS_CHANNEL_BINDING_ERROR_INVALID_STATE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingError.html#invalid_state
-	//
 	TlsChannelBindingErrorInvalidState TlsChannelBindingError = 1
 	// TlsChannelBindingErrorNotAvailable wraps G_TLS_CHANNEL_BINDING_ERROR_NOT_AVAILABLE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingError.html#not_available
-	//
 	TlsChannelBindingErrorNotAvailable TlsChannelBindingError = 2
 	// TlsChannelBindingErrorNotSupported wraps G_TLS_CHANNEL_BINDING_ERROR_NOT_SUPPORTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingError.html#not_supported
-	//
 	TlsChannelBindingErrorNotSupported TlsChannelBindingError = 3
 	// TlsChannelBindingErrorGeneralError wraps G_TLS_CHANNEL_BINDING_ERROR_GENERAL_ERROR
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingError.html#general_error
-	//
 	TlsChannelBindingErrorGeneralError TlsChannelBindingError = 4
 )
 
@@ -3027,7 +2811,6 @@ func (e TlsChannelBindingError) String() string {
 // TlsChannelBindingErrorQuark wraps g_tls_channel_binding_error_quark
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_channel_binding_error_quark.html
-//
 func TlsChannelBindingErrorQuark() glib.Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -3043,24 +2826,20 @@ func TlsChannelBindingErrorQuark() glib.Quark {
 // TlsChannelBindingType wraps GTlsChannelBindingType
 // 
 // see also https://docs.gtk.org/gio/enum.TlsChannelBindingType.html
-//
 type TlsChannelBindingType C.int
 
 const (
 	// TlsChannelBindingTlsUnique wraps G_TLS_CHANNEL_BINDING_TLS_UNIQUE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingType.html#unique
-	//
 	TlsChannelBindingTlsUnique TlsChannelBindingType = 0
 	// TlsChannelBindingTlsServerEndPoint wraps G_TLS_CHANNEL_BINDING_TLS_SERVER_END_POINT
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingType.html#server_end_point
-	//
 	TlsChannelBindingTlsServerEndPoint TlsChannelBindingType = 1
 	// TlsChannelBindingTlsExporter wraps G_TLS_CHANNEL_BINDING_TLS_EXPORTER
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsChannelBindingType.html#exporter
-	//
 	TlsChannelBindingTlsExporter TlsChannelBindingType = 2
 )
 
@@ -3090,19 +2869,16 @@ func (e TlsChannelBindingType) String() string {
 // TlsDatabaseLookupFlags wraps GTlsDatabaseLookupFlags
 // 
 // see also https://docs.gtk.org/gio/enum.TlsDatabaseLookupFlags.html
-//
 type TlsDatabaseLookupFlags C.int
 
 const (
 	// TlsDatabaseLookupNone wraps G_TLS_DATABASE_LOOKUP_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsDatabaseLookupFlags.html#none
-	//
 	TlsDatabaseLookupNone TlsDatabaseLookupFlags = 0
 	// TlsDatabaseLookupKeypair wraps G_TLS_DATABASE_LOOKUP_KEYPAIR
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsDatabaseLookupFlags.html#keypair
-	//
 	TlsDatabaseLookupKeypair TlsDatabaseLookupFlags = 1
 )
 
@@ -3131,54 +2907,44 @@ func (e TlsDatabaseLookupFlags) String() string {
 // TlsError wraps GTlsError
 // 
 // see also https://docs.gtk.org/gio/enum.TlsError.html
-//
 type TlsError C.int
 
 const (
 	// TlsErrorUnavailable wraps G_TLS_ERROR_UNAVAILABLE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#unavailable
-	//
 	TlsErrorUnavailable TlsError = 0
 	// TlsErrorMisc wraps G_TLS_ERROR_MISC
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#misc
-	//
 	TlsErrorMisc TlsError = 1
 	// TlsErrorBadCertificate wraps G_TLS_ERROR_BAD_CERTIFICATE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#bad_certificate
-	//
 	TlsErrorBadCertificate TlsError = 2
 	// TlsErrorNotTls wraps G_TLS_ERROR_NOT_TLS
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#not_tls
-	//
 	TlsErrorNotTls TlsError = 3
 	// TlsErrorHandshake wraps G_TLS_ERROR_HANDSHAKE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#handshake
-	//
 	TlsErrorHandshake TlsError = 4
 	// TlsErrorCertificateRequired wraps G_TLS_ERROR_CERTIFICATE_REQUIRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#certificate_required
-	//
 	TlsErrorCertificateRequired TlsError = 5
 	// TlsErrorEOF wraps G_TLS_ERROR_EOF
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#eof
-	//
 	TlsErrorEOF TlsError = 6
 	// TlsErrorInappropriateFallback wraps G_TLS_ERROR_INAPPROPRIATE_FALLBACK
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#inappropriate_fallback
-	//
 	TlsErrorInappropriateFallback TlsError = 7
 	// TlsErrorBadCertificatePassword wraps G_TLS_ERROR_BAD_CERTIFICATE_PASSWORD
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsError.html#bad_certificate_password
-	//
 	TlsErrorBadCertificatePassword TlsError = 8
 )
 
@@ -3214,7 +2980,6 @@ func (e TlsError) String() string {
 // TlsErrorQuark wraps g_tls_error_quark
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_error_quark.html
-//
 func TlsErrorQuark() glib.Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -3230,24 +2995,20 @@ func TlsErrorQuark() glib.Quark {
 // TlsInteractionResult wraps GTlsInteractionResult
 // 
 // see also https://docs.gtk.org/gio/enum.TlsInteractionResult.html
-//
 type TlsInteractionResult C.int
 
 const (
 	// TlsInteractionUnhandled wraps G_TLS_INTERACTION_UNHANDLED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsInteractionResult.html#unhandled
-	//
 	TlsInteractionUnhandled TlsInteractionResult = 0
 	// TlsInteractionHandled wraps G_TLS_INTERACTION_HANDLED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsInteractionResult.html#handled
-	//
 	TlsInteractionHandled TlsInteractionResult = 1
 	// TlsInteractionFailed wraps G_TLS_INTERACTION_FAILED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsInteractionResult.html#failed
-	//
 	TlsInteractionFailed TlsInteractionResult = 2
 )
 
@@ -3277,49 +3038,40 @@ func (e TlsInteractionResult) String() string {
 // TlsProtocolVersion wraps GTlsProtocolVersion
 // 
 // see also https://docs.gtk.org/gio/enum.TlsProtocolVersion.html
-//
 type TlsProtocolVersion C.int
 
 const (
 	// TlsProtocolVersionUnknown wraps G_TLS_PROTOCOL_VERSION_UNKNOWN
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#unknown
-	//
 	TlsProtocolVersionUnknown TlsProtocolVersion = 0
 	// TlsProtocolVersionSsl30 wraps G_TLS_PROTOCOL_VERSION_SSL_3_0
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#ssl_3_0
-	//
 	TlsProtocolVersionSsl30 TlsProtocolVersion = 1
 	// TlsProtocolVersionTls10 wraps G_TLS_PROTOCOL_VERSION_TLS_1_0
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#tls_1_0
-	//
 	TlsProtocolVersionTls10 TlsProtocolVersion = 2
 	// TlsProtocolVersionTls11 wraps G_TLS_PROTOCOL_VERSION_TLS_1_1
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#tls_1_1
-	//
 	TlsProtocolVersionTls11 TlsProtocolVersion = 3
 	// TlsProtocolVersionTls12 wraps G_TLS_PROTOCOL_VERSION_TLS_1_2
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#tls_1_2
-	//
 	TlsProtocolVersionTls12 TlsProtocolVersion = 4
 	// TlsProtocolVersionTls13 wraps G_TLS_PROTOCOL_VERSION_TLS_1_3
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#tls_1_3
-	//
 	TlsProtocolVersionTls13 TlsProtocolVersion = 5
 	// TlsProtocolVersionDtls10 wraps G_TLS_PROTOCOL_VERSION_DTLS_1_0
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#dtls_1_0
-	//
 	TlsProtocolVersionDtls10 TlsProtocolVersion = 201
 	// TlsProtocolVersionDtls12 wraps G_TLS_PROTOCOL_VERSION_DTLS_1_2
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsProtocolVersion.html#dtls_1_2
-	//
 	TlsProtocolVersionDtls12 TlsProtocolVersion = 202
 )
 
@@ -3355,27 +3107,21 @@ func (e TlsProtocolVersion) String() string {
 // 
 // see also https://docs.gtk.org/gio/enum.TlsRehandshakeMode.html
 //
-//
-// Deprecated: (since 2.60.0) Changing the rehandshake mode is no longer
-//   required for compatibility. Also, rehandshaking has been removed
-//   from the TLS protocol in TLS 1.3.
+// Deprecated: (since 2.60.0) see the provided link for the reason
 type TlsRehandshakeMode C.int
 
 const (
 	// TlsRehandshakeNever wraps G_TLS_REHANDSHAKE_NEVER
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsRehandshakeMode.html#never
-	//
 	TlsRehandshakeNever TlsRehandshakeMode = 0
 	// TlsRehandshakeSafely wraps G_TLS_REHANDSHAKE_SAFELY
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsRehandshakeMode.html#safely
-	//
 	TlsRehandshakeSafely TlsRehandshakeMode = 1
 	// TlsRehandshakeUnsafely wraps G_TLS_REHANDSHAKE_UNSAFELY
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsRehandshakeMode.html#unsafely
-	//
 	TlsRehandshakeUnsafely TlsRehandshakeMode = 2
 )
 
@@ -3405,24 +3151,20 @@ func (e TlsRehandshakeMode) String() string {
 // ZlibCompressorFormat wraps GZlibCompressorFormat
 // 
 // see also https://docs.gtk.org/gio/enum.ZlibCompressorFormat.html
-//
 type ZlibCompressorFormat C.int
 
 const (
 	// ZlibCompressorFormatZlib wraps G_ZLIB_COMPRESSOR_FORMAT_ZLIB
 	// 
 	// see also https://docs.gtk.org/gio/flags.ZlibCompressorFormat.html#zlib
-	//
 	ZlibCompressorFormatZlib ZlibCompressorFormat = 0
 	// ZlibCompressorFormatGzip wraps G_ZLIB_COMPRESSOR_FORMAT_GZIP
 	// 
 	// see also https://docs.gtk.org/gio/flags.ZlibCompressorFormat.html#gzip
-	//
 	ZlibCompressorFormatGzip ZlibCompressorFormat = 1
 	// ZlibCompressorFormatRaw wraps G_ZLIB_COMPRESSOR_FORMAT_RAW
 	// 
 	// see also https://docs.gtk.org/gio/flags.ZlibCompressorFormat.html#raw
-	//
 	ZlibCompressorFormatRaw ZlibCompressorFormat = 2
 )
 
@@ -3452,29 +3194,24 @@ func (e ZlibCompressorFormat) String() string {
 // AppInfoCreateFlags wraps GAppInfoCreateFlags
 // 
 // see also https://docs.gtk.org/gio/flags.AppInfoCreateFlags.html
-//
 type AppInfoCreateFlags C.gint
 
 const (
 	// AppInfoCreateNone wraps G_APP_INFO_CREATE_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.AppInfoCreateFlags.html#none
-	//
 	AppInfoCreateNone AppInfoCreateFlags = 0
 	// AppInfoCreateNeedsTerminal wraps G_APP_INFO_CREATE_NEEDS_TERMINAL
 	// 
 	// see also https://docs.gtk.org/gio/flags.AppInfoCreateFlags.html#needs_terminal
-	//
 	AppInfoCreateNeedsTerminal AppInfoCreateFlags = 1
 	// AppInfoCreateSupportsUris wraps G_APP_INFO_CREATE_SUPPORTS_URIS
 	// 
 	// see also https://docs.gtk.org/gio/flags.AppInfoCreateFlags.html#supports_uris
-	//
 	AppInfoCreateSupportsUris AppInfoCreateFlags = 2
 	// AppInfoCreateSupportsStartupNotification wraps G_APP_INFO_CREATE_SUPPORTS_STARTUP_NOTIFICATION
 	// 
 	// see also https://docs.gtk.org/gio/flags.AppInfoCreateFlags.html#supports_startup_notification
-	//
 	AppInfoCreateSupportsStartupNotification AppInfoCreateFlags = 4
 )
 
@@ -3520,7 +3257,6 @@ func (f AppInfoCreateFlags) String() string {
 // ApplicationFlags wraps GApplicationFlags
 // 
 // see also https://docs.gtk.org/gio/flags.ApplicationFlags.html
-//
 type ApplicationFlags C.gint
 
 const (
@@ -3528,58 +3264,47 @@ const (
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#flags_none
 	//
-	//
-	// Deprecated: (since 2.74.0) Use [flags@Gio.ApplicationFlags.DEFAULT_FLAGS].
+	// Deprecated: (since 2.74.0) see the provided link for the reason
 	ApplicationFlagsNone ApplicationFlags = 0
 	// ApplicationDefaultFlags wraps G_APPLICATION_DEFAULT_FLAGS
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#default_flags
-	//
 	ApplicationDefaultFlags ApplicationFlags = 0
 	// ApplicationIsService wraps G_APPLICATION_IS_SERVICE
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#is_service
-	//
 	ApplicationIsService ApplicationFlags = 1
 	// ApplicationIsLauncher wraps G_APPLICATION_IS_LAUNCHER
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#is_launcher
-	//
 	ApplicationIsLauncher ApplicationFlags = 2
 	// ApplicationHandlesOpen wraps G_APPLICATION_HANDLES_OPEN
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#handles_open
-	//
 	ApplicationHandlesOpen ApplicationFlags = 4
 	// ApplicationHandlesCommandLine wraps G_APPLICATION_HANDLES_COMMAND_LINE
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#handles_command_line
-	//
 	ApplicationHandlesCommandLine ApplicationFlags = 8
 	// ApplicationSendEnvironment wraps G_APPLICATION_SEND_ENVIRONMENT
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#send_environment
-	//
 	ApplicationSendEnvironment ApplicationFlags = 16
 	// ApplicationNonUnique wraps G_APPLICATION_NON_UNIQUE
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#non_unique
-	//
 	ApplicationNonUnique ApplicationFlags = 32
 	// ApplicationCanOverrideAppID wraps G_APPLICATION_CAN_OVERRIDE_APP_ID
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#can_override_app_id
-	//
 	ApplicationCanOverrideAppID ApplicationFlags = 64
 	// ApplicationAllowReplacement wraps G_APPLICATION_ALLOW_REPLACEMENT
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#allow_replacement
-	//
 	ApplicationAllowReplacement ApplicationFlags = 128
 	// ApplicationReplace wraps G_APPLICATION_REPLACE
 	// 
 	// see also https://docs.gtk.org/gio/flags.ApplicationFlags.html#replace
-	//
 	ApplicationReplace ApplicationFlags = 256
 )
 
@@ -3646,39 +3371,32 @@ func (f ApplicationFlags) String() string {
 // AskPasswordFlags wraps GAskPasswordFlags
 // 
 // see also https://docs.gtk.org/gio/flags.AskPasswordFlags.html
-//
 type AskPasswordFlags C.gint
 
 const (
 	// AskPasswordNeedPassword wraps G_ASK_PASSWORD_NEED_PASSWORD
 	// 
 	// see also https://docs.gtk.org/gio/flags.AskPasswordFlags.html#need_password
-	//
 	AskPasswordNeedPassword AskPasswordFlags = 1
 	// AskPasswordNeedUsername wraps G_ASK_PASSWORD_NEED_USERNAME
 	// 
 	// see also https://docs.gtk.org/gio/flags.AskPasswordFlags.html#need_username
-	//
 	AskPasswordNeedUsername AskPasswordFlags = 2
 	// AskPasswordNeedDomain wraps G_ASK_PASSWORD_NEED_DOMAIN
 	// 
 	// see also https://docs.gtk.org/gio/flags.AskPasswordFlags.html#need_domain
-	//
 	AskPasswordNeedDomain AskPasswordFlags = 4
 	// AskPasswordSavingSupported wraps G_ASK_PASSWORD_SAVING_SUPPORTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.AskPasswordFlags.html#saving_supported
-	//
 	AskPasswordSavingSupported AskPasswordFlags = 8
 	// AskPasswordAnonymousSupported wraps G_ASK_PASSWORD_ANONYMOUS_SUPPORTED
 	// 
 	// see also https://docs.gtk.org/gio/flags.AskPasswordFlags.html#anonymous_supported
-	//
 	AskPasswordAnonymousSupported AskPasswordFlags = 16
 	// AskPasswordTcrypt wraps G_ASK_PASSWORD_TCRYPT
 	// 
 	// see also https://docs.gtk.org/gio/flags.AskPasswordFlags.html#tcrypt
-	//
 	AskPasswordTcrypt AskPasswordFlags = 32
 )
 
@@ -3730,29 +3448,24 @@ func (f AskPasswordFlags) String() string {
 // BusNameOwnerFlags wraps GBusNameOwnerFlags
 // 
 // see also https://docs.gtk.org/gio/flags.BusNameOwnerFlags.html
-//
 type BusNameOwnerFlags C.gint
 
 const (
 	// BusNameOwnerFlagsNone wraps G_BUS_NAME_OWNER_FLAGS_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusNameOwnerFlags.html#none
-	//
 	BusNameOwnerFlagsNone BusNameOwnerFlags = 0
 	// BusNameOwnerFlagsAllowReplacement wraps G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusNameOwnerFlags.html#allow_replacement
-	//
 	BusNameOwnerFlagsAllowReplacement BusNameOwnerFlags = 1
 	// BusNameOwnerFlagsReplace wraps G_BUS_NAME_OWNER_FLAGS_REPLACE
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusNameOwnerFlags.html#replace
-	//
 	BusNameOwnerFlagsReplace BusNameOwnerFlags = 2
 	// BusNameOwnerFlagsDoNotQueue wraps G_BUS_NAME_OWNER_FLAGS_DO_NOT_QUEUE
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusNameOwnerFlags.html#do_not_queue
-	//
 	BusNameOwnerFlagsDoNotQueue BusNameOwnerFlags = 4
 )
 
@@ -3798,19 +3511,16 @@ func (f BusNameOwnerFlags) String() string {
 // BusNameWatcherFlags wraps GBusNameWatcherFlags
 // 
 // see also https://docs.gtk.org/gio/flags.BusNameWatcherFlags.html
-//
 type BusNameWatcherFlags C.gint
 
 const (
 	// BusNameWatcherFlagsNone wraps G_BUS_NAME_WATCHER_FLAGS_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusNameWatcherFlags.html#none
-	//
 	BusNameWatcherFlagsNone BusNameWatcherFlags = 0
 	// BusNameWatcherFlagsAutoStart wraps G_BUS_NAME_WATCHER_FLAGS_AUTO_START
 	// 
 	// see also https://docs.gtk.org/gio/flags.BusNameWatcherFlags.html#auto_start
-	//
 	BusNameWatcherFlagsAutoStart BusNameWatcherFlags = 1
 )
 
@@ -3850,24 +3560,20 @@ func (f BusNameWatcherFlags) String() string {
 // ConverterFlags wraps GConverterFlags
 // 
 // see also https://docs.gtk.org/gio/flags.ConverterFlags.html
-//
 type ConverterFlags C.gint
 
 const (
 	// ConverterNoFlags wraps G_CONVERTER_NO_FLAGS
 	// 
 	// see also https://docs.gtk.org/gio/flags.ConverterFlags.html#none
-	//
 	ConverterNoFlags ConverterFlags = 0
 	// ConverterInputAtEnd wraps G_CONVERTER_INPUT_AT_END
 	// 
 	// see also https://docs.gtk.org/gio/flags.ConverterFlags.html#input_at_end
-	//
 	ConverterInputAtEnd ConverterFlags = 1
 	// ConverterFlush wraps G_CONVERTER_FLUSH
 	// 
 	// see also https://docs.gtk.org/gio/flags.ConverterFlags.html#flush
-	//
 	ConverterFlush ConverterFlags = 2
 )
 
@@ -3910,14 +3616,12 @@ func (f ConverterFlags) String() string {
 // DriveStartFlags wraps GDriveStartFlags
 // 
 // see also https://docs.gtk.org/gio/flags.DriveStartFlags.html
-//
 type DriveStartFlags C.gint
 
 const (
 	// DriveStartNone wraps G_DRIVE_START_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.DriveStartFlags.html#none
-	//
 	DriveStartNone DriveStartFlags = 0
 )
 
@@ -3954,24 +3658,20 @@ func (f DriveStartFlags) String() string {
 // FileAttributeInfoFlags wraps GFileAttributeInfoFlags
 // 
 // see also https://docs.gtk.org/gio/flags.FileAttributeInfoFlags.html
-//
 type FileAttributeInfoFlags C.gint
 
 const (
 	// FileAttributeInfoNone wraps G_FILE_ATTRIBUTE_INFO_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeInfoFlags.html#none
-	//
 	FileAttributeInfoNone FileAttributeInfoFlags = 0
 	// FileAttributeInfoCopyWithFile wraps G_FILE_ATTRIBUTE_INFO_COPY_WITH_FILE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeInfoFlags.html#copy_with_file
-	//
 	FileAttributeInfoCopyWithFile FileAttributeInfoFlags = 1
 	// FileAttributeInfoCopyWhenMoved wraps G_FILE_ATTRIBUTE_INFO_COPY_WHEN_MOVED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileAttributeInfoFlags.html#copy_when_moved
-	//
 	FileAttributeInfoCopyWhenMoved FileAttributeInfoFlags = 2
 )
 
@@ -4014,49 +3714,40 @@ func (f FileAttributeInfoFlags) String() string {
 // FileCopyFlags wraps GFileCopyFlags
 // 
 // see also https://docs.gtk.org/gio/flags.FileCopyFlags.html
-//
 type FileCopyFlags C.gint
 
 const (
 	// FileCopyNone wraps G_FILE_COPY_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#none
-	//
 	FileCopyNone FileCopyFlags = 0
 	// FileCopyOverwrite wraps G_FILE_COPY_OVERWRITE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#overwrite
-	//
 	FileCopyOverwrite FileCopyFlags = 1
 	// FileCopyBackup wraps G_FILE_COPY_BACKUP
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#backup
-	//
 	FileCopyBackup FileCopyFlags = 2
 	// FileCopyNofollowSymlinks wraps G_FILE_COPY_NOFOLLOW_SYMLINKS
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#nofollow_symlinks
-	//
 	FileCopyNofollowSymlinks FileCopyFlags = 4
 	// FileCopyAllMetadata wraps G_FILE_COPY_ALL_METADATA
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#all_metadata
-	//
 	FileCopyAllMetadata FileCopyFlags = 8
 	// FileCopyNoFallbackForMove wraps G_FILE_COPY_NO_FALLBACK_FOR_MOVE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#no_fallback_for_move
-	//
 	FileCopyNoFallbackForMove FileCopyFlags = 16
 	// FileCopyTargetDefaultPerms wraps G_FILE_COPY_TARGET_DEFAULT_PERMS
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#target_default_perms
-	//
 	FileCopyTargetDefaultPerms FileCopyFlags = 32
 	// FileCopyTargetDefaultModifiedTime wraps G_FILE_COPY_TARGET_DEFAULT_MODIFIED_TIME
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCopyFlags.html#target_default_modified_time
-	//
 	FileCopyTargetDefaultModifiedTime FileCopyFlags = 64
 )
 
@@ -4114,24 +3805,20 @@ func (f FileCopyFlags) String() string {
 // FileCreateFlags wraps GFileCreateFlags
 // 
 // see also https://docs.gtk.org/gio/flags.FileCreateFlags.html
-//
 type FileCreateFlags C.gint
 
 const (
 	// FileCreateNone wraps G_FILE_CREATE_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCreateFlags.html#none
-	//
 	FileCreateNone FileCreateFlags = 0
 	// FileCreatePrivate wraps G_FILE_CREATE_PRIVATE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCreateFlags.html#private
-	//
 	FileCreatePrivate FileCreateFlags = 1
 	// FileCreateReplaceDestination wraps G_FILE_CREATE_REPLACE_DESTINATION
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileCreateFlags.html#replace_destination
-	//
 	FileCreateReplaceDestination FileCreateFlags = 2
 )
 
@@ -4174,29 +3861,24 @@ func (f FileCreateFlags) String() string {
 // FileMeasureFlags wraps GFileMeasureFlags
 // 
 // see also https://docs.gtk.org/gio/flags.FileMeasureFlags.html
-//
 type FileMeasureFlags C.gint
 
 const (
 	// FileMeasureNone wraps G_FILE_MEASURE_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMeasureFlags.html#none
-	//
 	FileMeasureNone FileMeasureFlags = 0
 	// FileMeasureReportAnyError wraps G_FILE_MEASURE_REPORT_ANY_ERROR
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMeasureFlags.html#report_any_error
-	//
 	FileMeasureReportAnyError FileMeasureFlags = 2
 	// FileMeasureApparentSize wraps G_FILE_MEASURE_APPARENT_SIZE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMeasureFlags.html#apparent_size
-	//
 	FileMeasureApparentSize FileMeasureFlags = 4
 	// FileMeasureNoXdev wraps G_FILE_MEASURE_NO_XDEV
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMeasureFlags.html#no_xdev
-	//
 	FileMeasureNoXdev FileMeasureFlags = 8
 )
 
@@ -4242,34 +3924,28 @@ func (f FileMeasureFlags) String() string {
 // FileMonitorFlags wraps GFileMonitorFlags
 // 
 // see also https://docs.gtk.org/gio/flags.FileMonitorFlags.html
-//
 type FileMonitorFlags C.gint
 
 const (
 	// FileMonitorNone wraps G_FILE_MONITOR_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorFlags.html#none
-	//
 	FileMonitorNone FileMonitorFlags = 0
 	// FileMonitorWatchMounts wraps G_FILE_MONITOR_WATCH_MOUNTS
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorFlags.html#watch_mounts
-	//
 	FileMonitorWatchMounts FileMonitorFlags = 1
 	// FileMonitorSendMoved wraps G_FILE_MONITOR_SEND_MOVED
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorFlags.html#send_moved
-	//
 	FileMonitorSendMoved FileMonitorFlags = 2
 	// FileMonitorWatchHardLinks wraps G_FILE_MONITOR_WATCH_HARD_LINKS
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorFlags.html#watch_hard_links
-	//
 	FileMonitorWatchHardLinks FileMonitorFlags = 4
 	// FileMonitorWatchMoves wraps G_FILE_MONITOR_WATCH_MOVES
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileMonitorFlags.html#watch_moves
-	//
 	FileMonitorWatchMoves FileMonitorFlags = 8
 )
 
@@ -4318,19 +3994,16 @@ func (f FileMonitorFlags) String() string {
 // FileQueryInfoFlags wraps GFileQueryInfoFlags
 // 
 // see also https://docs.gtk.org/gio/flags.FileQueryInfoFlags.html
-//
 type FileQueryInfoFlags C.gint
 
 const (
 	// FileQueryInfoNone wraps G_FILE_QUERY_INFO_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileQueryInfoFlags.html#none
-	//
 	FileQueryInfoNone FileQueryInfoFlags = 0
 	// FileQueryInfoNofollowSymlinks wraps G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS
 	// 
 	// see also https://docs.gtk.org/gio/flags.FileQueryInfoFlags.html#nofollow_symlinks
-	//
 	FileQueryInfoNofollowSymlinks FileQueryInfoFlags = 1
 )
 
@@ -4370,29 +4043,24 @@ func (f FileQueryInfoFlags) String() string {
 // IOStreamSpliceFlags wraps GIOStreamSpliceFlags
 // 
 // see also https://docs.gtk.org/gio/flags.IOStreamSpliceFlags.html
-//
 type IOStreamSpliceFlags C.gint
 
 const (
 	// IOStreamSpliceNone wraps G_IO_STREAM_SPLICE_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOStreamSpliceFlags.html#none
-	//
 	IOStreamSpliceNone IOStreamSpliceFlags = 0
 	// IOStreamSpliceCloseStream1 wraps G_IO_STREAM_SPLICE_CLOSE_STREAM1
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOStreamSpliceFlags.html#close_stream1
-	//
 	IOStreamSpliceCloseStream1 IOStreamSpliceFlags = 1
 	// IOStreamSpliceCloseStream2 wraps G_IO_STREAM_SPLICE_CLOSE_STREAM2
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOStreamSpliceFlags.html#close_stream2
-	//
 	IOStreamSpliceCloseStream2 IOStreamSpliceFlags = 2
 	// IOStreamSpliceWaitForBoth wraps G_IO_STREAM_SPLICE_WAIT_FOR_BOTH
 	// 
 	// see also https://docs.gtk.org/gio/flags.IOStreamSpliceFlags.html#wait_for_both
-	//
 	IOStreamSpliceWaitForBoth IOStreamSpliceFlags = 4
 )
 
@@ -4438,14 +4106,12 @@ func (f IOStreamSpliceFlags) String() string {
 // MountMountFlags wraps GMountMountFlags
 // 
 // see also https://docs.gtk.org/gio/flags.MountMountFlags.html
-//
 type MountMountFlags C.gint
 
 const (
 	// MountMountNone wraps G_MOUNT_MOUNT_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.MountMountFlags.html#none
-	//
 	MountMountNone MountMountFlags = 0
 )
 
@@ -4482,19 +4148,16 @@ func (f MountMountFlags) String() string {
 // MountUnmountFlags wraps GMountUnmountFlags
 // 
 // see also https://docs.gtk.org/gio/flags.MountUnmountFlags.html
-//
 type MountUnmountFlags C.gint
 
 const (
 	// MountUnmountNone wraps G_MOUNT_UNMOUNT_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.MountUnmountFlags.html#none
-	//
 	MountUnmountNone MountUnmountFlags = 0
 	// MountUnmountForce wraps G_MOUNT_UNMOUNT_FORCE
 	// 
 	// see also https://docs.gtk.org/gio/flags.MountUnmountFlags.html#force
-	//
 	MountUnmountForce MountUnmountFlags = 1
 )
 
@@ -4534,24 +4197,20 @@ func (f MountUnmountFlags) String() string {
 // OutputStreamSpliceFlags wraps GOutputStreamSpliceFlags
 // 
 // see also https://docs.gtk.org/gio/flags.OutputStreamSpliceFlags.html
-//
 type OutputStreamSpliceFlags C.gint
 
 const (
 	// OutputStreamSpliceNone wraps G_OUTPUT_STREAM_SPLICE_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.OutputStreamSpliceFlags.html#none
-	//
 	OutputStreamSpliceNone OutputStreamSpliceFlags = 0
 	// OutputStreamSpliceCloseSource wraps G_OUTPUT_STREAM_SPLICE_CLOSE_SOURCE
 	// 
 	// see also https://docs.gtk.org/gio/flags.OutputStreamSpliceFlags.html#close_source
-	//
 	OutputStreamSpliceCloseSource OutputStreamSpliceFlags = 1
 	// OutputStreamSpliceCloseTarget wraps G_OUTPUT_STREAM_SPLICE_CLOSE_TARGET
 	// 
 	// see also https://docs.gtk.org/gio/flags.OutputStreamSpliceFlags.html#close_target
-	//
 	OutputStreamSpliceCloseTarget OutputStreamSpliceFlags = 2
 )
 
@@ -4594,24 +4253,20 @@ func (f OutputStreamSpliceFlags) String() string {
 // ResolverNameLookupFlags wraps GResolverNameLookupFlags
 // 
 // see also https://docs.gtk.org/gio/flags.ResolverNameLookupFlags.html
-//
 type ResolverNameLookupFlags C.gint
 
 const (
 	// ResolverNameLookupFlagsDefault wraps G_RESOLVER_NAME_LOOKUP_FLAGS_DEFAULT
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverNameLookupFlags.html#default
-	//
 	ResolverNameLookupFlagsDefault ResolverNameLookupFlags = 0
 	// ResolverNameLookupFlagsIpv4Only wraps G_RESOLVER_NAME_LOOKUP_FLAGS_IPV4_ONLY
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverNameLookupFlags.html#ipv4_only
-	//
 	ResolverNameLookupFlagsIpv4Only ResolverNameLookupFlags = 1
 	// ResolverNameLookupFlagsIpv6Only wraps G_RESOLVER_NAME_LOOKUP_FLAGS_IPV6_ONLY
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResolverNameLookupFlags.html#ipv6_only
-	//
 	ResolverNameLookupFlagsIpv6Only ResolverNameLookupFlags = 2
 )
 
@@ -4654,19 +4309,16 @@ func (f ResolverNameLookupFlags) String() string {
 // ResourceFlags wraps GResourceFlags
 // 
 // see also https://docs.gtk.org/gio/flags.ResourceFlags.html
-//
 type ResourceFlags C.gint
 
 const (
 	// ResourceFlagsNone wraps G_RESOURCE_FLAGS_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResourceFlags.html#none
-	//
 	ResourceFlagsNone ResourceFlags = 0
 	// ResourceFlagsCompressed wraps G_RESOURCE_FLAGS_COMPRESSED
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResourceFlags.html#compressed
-	//
 	ResourceFlagsCompressed ResourceFlags = 1
 )
 
@@ -4706,14 +4358,12 @@ func (f ResourceFlags) String() string {
 // ResourceLookupFlags wraps GResourceLookupFlags
 // 
 // see also https://docs.gtk.org/gio/flags.ResourceLookupFlags.html
-//
 type ResourceLookupFlags C.gint
 
 const (
 	// ResourceLookupFlagsNone wraps G_RESOURCE_LOOKUP_FLAGS_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.ResourceLookupFlags.html#none
-	//
 	ResourceLookupFlagsNone ResourceLookupFlags = 0
 )
 
@@ -4750,39 +4400,32 @@ func (f ResourceLookupFlags) String() string {
 // SettingsBindFlags wraps GSettingsBindFlags
 // 
 // see also https://docs.gtk.org/gio/flags.SettingsBindFlags.html
-//
 type SettingsBindFlags C.gint
 
 const (
 	// SettingsBindDefault wraps G_SETTINGS_BIND_DEFAULT
 	// 
 	// see also https://docs.gtk.org/gio/flags.SettingsBindFlags.html#default
-	//
 	SettingsBindDefault SettingsBindFlags = 0
 	// SettingsBindGet wraps G_SETTINGS_BIND_GET
 	// 
 	// see also https://docs.gtk.org/gio/flags.SettingsBindFlags.html#get
-	//
 	SettingsBindGet SettingsBindFlags = 1
 	// SettingsBindSet wraps G_SETTINGS_BIND_SET
 	// 
 	// see also https://docs.gtk.org/gio/flags.SettingsBindFlags.html#set
-	//
 	SettingsBindSet SettingsBindFlags = 2
 	// SettingsBindNoSensitivity wraps G_SETTINGS_BIND_NO_SENSITIVITY
 	// 
 	// see also https://docs.gtk.org/gio/flags.SettingsBindFlags.html#no_sensitivity
-	//
 	SettingsBindNoSensitivity SettingsBindFlags = 4
 	// SettingsBindGetNoChanges wraps G_SETTINGS_BIND_GET_NO_CHANGES
 	// 
 	// see also https://docs.gtk.org/gio/flags.SettingsBindFlags.html#get_no_changes
-	//
 	SettingsBindGetNoChanges SettingsBindFlags = 8
 	// SettingsBindInvertBoolean wraps G_SETTINGS_BIND_INVERT_BOOLEAN
 	// 
 	// see also https://docs.gtk.org/gio/flags.SettingsBindFlags.html#invert_boolean
-	//
 	SettingsBindInvertBoolean SettingsBindFlags = 16
 )
 
@@ -4834,29 +4477,24 @@ func (f SettingsBindFlags) String() string {
 // SocketMsgFlags wraps GSocketMsgFlags
 // 
 // see also https://docs.gtk.org/gio/flags.SocketMsgFlags.html
-//
 type SocketMsgFlags C.gint
 
 const (
 	// SocketMsgNone wraps G_SOCKET_MSG_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketMsgFlags.html#none
-	//
 	SocketMsgNone SocketMsgFlags = 0
 	// SocketMsgOob wraps G_SOCKET_MSG_OOB
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketMsgFlags.html#oob
-	//
 	SocketMsgOob SocketMsgFlags = 1
 	// SocketMsgPeek wraps G_SOCKET_MSG_PEEK
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketMsgFlags.html#peek
-	//
 	SocketMsgPeek SocketMsgFlags = 2
 	// SocketMsgDontroute wraps G_SOCKET_MSG_DONTROUTE
 	// 
 	// see also https://docs.gtk.org/gio/flags.SocketMsgFlags.html#dontroute
-	//
 	SocketMsgDontroute SocketMsgFlags = 4
 )
 
@@ -4902,54 +4540,44 @@ func (f SocketMsgFlags) String() string {
 // TlsCertificateFlags wraps GTlsCertificateFlags
 // 
 // see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html
-//
 type TlsCertificateFlags C.gint
 
 const (
 	// TlsCertificateNoFlags wraps G_TLS_CERTIFICATE_NO_FLAGS
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#no_flags
-	//
 	TlsCertificateNoFlags TlsCertificateFlags = 0
 	// TlsCertificateUnknownCa wraps G_TLS_CERTIFICATE_UNKNOWN_CA
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#unknown_ca
-	//
 	TlsCertificateUnknownCa TlsCertificateFlags = 1
 	// TlsCertificateBadIdentity wraps G_TLS_CERTIFICATE_BAD_IDENTITY
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#bad_identity
-	//
 	TlsCertificateBadIdentity TlsCertificateFlags = 2
 	// TlsCertificateNotActivated wraps G_TLS_CERTIFICATE_NOT_ACTIVATED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#not_activated
-	//
 	TlsCertificateNotActivated TlsCertificateFlags = 4
 	// TlsCertificateExpired wraps G_TLS_CERTIFICATE_EXPIRED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#expired
-	//
 	TlsCertificateExpired TlsCertificateFlags = 8
 	// TlsCertificateRevoked wraps G_TLS_CERTIFICATE_REVOKED
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#revoked
-	//
 	TlsCertificateRevoked TlsCertificateFlags = 16
 	// TlsCertificateInsecure wraps G_TLS_CERTIFICATE_INSECURE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#insecure
-	//
 	TlsCertificateInsecure TlsCertificateFlags = 32
 	// TlsCertificateGenericError wraps G_TLS_CERTIFICATE_GENERIC_ERROR
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#generic_error
-	//
 	TlsCertificateGenericError TlsCertificateFlags = 64
 	// TlsCertificateValidateAll wraps G_TLS_CERTIFICATE_VALIDATE_ALL
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsCertificateFlags.html#validate_all
-	//
 	TlsCertificateValidateAll TlsCertificateFlags = 127
 )
 
@@ -5010,14 +4638,12 @@ func (f TlsCertificateFlags) String() string {
 // TlsDatabaseVerifyFlags wraps GTlsDatabaseVerifyFlags
 // 
 // see also https://docs.gtk.org/gio/flags.TlsDatabaseVerifyFlags.html
-//
 type TlsDatabaseVerifyFlags C.gint
 
 const (
 	// TlsDatabaseVerifyNone wraps G_TLS_DATABASE_VERIFY_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsDatabaseVerifyFlags.html#none
-	//
 	TlsDatabaseVerifyNone TlsDatabaseVerifyFlags = 0
 )
 
@@ -5054,44 +4680,36 @@ func (f TlsDatabaseVerifyFlags) String() string {
 // TlsPasswordFlags wraps GTlsPasswordFlags
 // 
 // see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html
-//
 type TlsPasswordFlags C.gint
 
 const (
 	// TlsPasswordNone wraps G_TLS_PASSWORD_NONE
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html#none
-	//
 	TlsPasswordNone TlsPasswordFlags = 0
 	// TlsPasswordRetry wraps G_TLS_PASSWORD_RETRY
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html#retry
-	//
 	TlsPasswordRetry TlsPasswordFlags = 2
 	// TlsPasswordManyTries wraps G_TLS_PASSWORD_MANY_TRIES
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html#many_tries
-	//
 	TlsPasswordManyTries TlsPasswordFlags = 4
 	// TlsPasswordFinalTry wraps G_TLS_PASSWORD_FINAL_TRY
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html#final_try
-	//
 	TlsPasswordFinalTry TlsPasswordFlags = 8
 	// TlsPasswordPkcs11User wraps G_TLS_PASSWORD_PKCS11_USER
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html#pkcs11_user
-	//
 	TlsPasswordPkcs11User TlsPasswordFlags = 16
 	// TlsPasswordPkcs11SecurityOfficer wraps G_TLS_PASSWORD_PKCS11_SECURITY_OFFICER
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html#pkcs11_security_officer
-	//
 	TlsPasswordPkcs11SecurityOfficer TlsPasswordFlags = 32
 	// TlsPasswordPkcs11ContextSpecific wraps G_TLS_PASSWORD_PKCS11_CONTEXT_SPECIFIC
 	// 
 	// see also https://docs.gtk.org/gio/flags.TlsPasswordFlags.html#pkcs11_context_specific
-	//
 	TlsPasswordPkcs11ContextSpecific TlsPasswordFlags = 64
 )
 
@@ -5146,19 +4764,16 @@ func (f TlsPasswordFlags) String() string {
 // AsyncReadyCallback wraps GAsyncReadyCallback
 // 
 // see also https://docs.gtk.org/gio/callback.AsyncReadyCallback.html
-//
 type AsyncReadyCallback func(sourceObject gobject.Object, res AsyncResult)
 
 // VfsFileLookupFunc wraps GVfsFileLookupFunc
 // 
 // see also https://docs.gtk.org/gio/callback.VfsFileLookupFunc.html
-//
 type VfsFileLookupFunc func(vfs Vfs, identifier string) (goret File)
 
 // BusGet wraps g_bus_get
 // 
 // see also https://docs.gtk.org/gio/func.g_bus_get.html
-//
 func BusGet(busType BusType, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg1 C.GBusType            // in, none, casted
 	var carg2 *C.GCancellable       // in, none, converted, nullable
@@ -5183,7 +4798,6 @@ func BusGet(busType BusType, cancellable Cancellable, callback AsyncReadyCallbac
 // BusUnownName wraps g_bus_unown_name
 // 
 // see also https://docs.gtk.org/gio/func.g_bus_unown_name.html
-//
 func BusUnownName(ownerId uint) {
 	var carg1 C.guint // in, none, casted
 
@@ -5196,7 +4810,6 @@ func BusUnownName(ownerId uint) {
 // BusUnwatchName wraps g_bus_unwatch_name
 // 
 // see also https://docs.gtk.org/gio/func.g_bus_unwatch_name.html
-//
 func BusUnwatchName(watcherId uint) {
 	var carg1 C.guint // in, none, casted
 
@@ -5209,7 +4822,6 @@ func BusUnwatchName(watcherId uint) {
 // ContentTypeCanBeExecutable wraps g_content_type_can_be_executable
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_can_be_executable.html
-//
 func ContentTypeCanBeExecutable(typ string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5232,7 +4844,6 @@ func ContentTypeCanBeExecutable(typ string) bool {
 // ContentTypeEquals wraps g_content_type_equals
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_equals.html
-//
 func ContentTypeEquals(type1 string, type2 string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -5259,7 +4870,6 @@ func ContentTypeEquals(type1 string, type2 string) bool {
 // ContentTypeFromMimeType wraps g_content_type_from_mime_type
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_from_mime_type.html
-//
 func ContentTypeFromMimeType(mimeType string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -5283,7 +4893,6 @@ func ContentTypeFromMimeType(mimeType string) string {
 // ContentTypeGetDescription wraps g_content_type_get_description
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_get_description.html
-//
 func ContentTypeGetDescription(typ string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -5305,7 +4914,6 @@ func ContentTypeGetDescription(typ string) string {
 // ContentTypeGetGenericIconName wraps g_content_type_get_generic_icon_name
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_get_generic_icon_name.html
-//
 func ContentTypeGetGenericIconName(typ string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -5329,7 +4937,6 @@ func ContentTypeGetGenericIconName(typ string) string {
 // ContentTypeGetIcon wraps g_content_type_get_icon
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_get_icon.html
-//
 func ContentTypeGetIcon(typ string) Icon {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.GIcon // return, full, converted
@@ -5350,7 +4957,6 @@ func ContentTypeGetIcon(typ string) Icon {
 // ContentTypeGetMimeDirs wraps g_content_type_get_mime_dirs
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_get_mime_dirs.html
-//
 func ContentTypeGetMimeDirs() []string {
 	var cret **C.gchar // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -5368,7 +4974,6 @@ func ContentTypeGetMimeDirs() []string {
 // ContentTypeGetMimeType wraps g_content_type_get_mime_type
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_get_mime_type.html
-//
 func ContentTypeGetMimeType(typ string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -5392,7 +4997,6 @@ func ContentTypeGetMimeType(typ string) string {
 // ContentTypeGetSymbolicIcon wraps g_content_type_get_symbolic_icon
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_get_symbolic_icon.html
-//
 func ContentTypeGetSymbolicIcon(typ string) Icon {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.GIcon // return, full, converted
@@ -5413,7 +5017,6 @@ func ContentTypeGetSymbolicIcon(typ string) Icon {
 // ContentTypeGuess wraps g_content_type_guess
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_guess.html
-//
 func ContentTypeGuess(filename string, data []byte) (bool, string) {
 	var carg1 *C.gchar   // in, none, string, nullable-string
 	var carg2 *C.guchar  // in, transfer: none, C Pointers: 1, Name: array[guchar], nullable, array (inner guchar (*typesystem.CastablePrimitive), length-by: carg3)
@@ -5449,7 +5052,6 @@ func ContentTypeGuess(filename string, data []byte) (bool, string) {
 // ContentTypeGuessForTree wraps g_content_type_guess_for_tree
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_guess_for_tree.html
-//
 func ContentTypeGuessForTree(root File) []string {
 	var carg1 *C.GFile  // in, none, converted
 	var cret  **C.gchar // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -5471,7 +5073,6 @@ func ContentTypeGuessForTree(root File) []string {
 // ContentTypeIsA wraps g_content_type_is_a
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_is_a.html
-//
 func ContentTypeIsA(typ string, supertype string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -5498,7 +5099,6 @@ func ContentTypeIsA(typ string, supertype string) bool {
 // ContentTypeIsMimeType wraps g_content_type_is_mime_type
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_is_mime_type.html
-//
 func ContentTypeIsMimeType(typ string, mimeType string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var carg2 *C.gchar   // in, none, string
@@ -5525,7 +5125,6 @@ func ContentTypeIsMimeType(typ string, mimeType string) bool {
 // ContentTypeIsUnknown wraps g_content_type_is_unknown
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_is_unknown.html
-//
 func ContentTypeIsUnknown(typ string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5548,7 +5147,6 @@ func ContentTypeIsUnknown(typ string) bool {
 // ContentTypeSetMimeDirs wraps g_content_type_set_mime_dirs
 // 
 // see also https://docs.gtk.org/gio/func.g_content_type_set_mime_dirs.html
-//
 func ContentTypeSetMimeDirs(dirs []string) {
 	var carg1 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[utf8], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -5563,7 +5161,6 @@ func ContentTypeSetMimeDirs(dirs []string) {
 // ContentTypesGetRegistered wraps g_content_types_get_registered
 // 
 // see also https://docs.gtk.org/gio/func.g_content_types_get_registered.html
-//
 func ContentTypesGetRegistered() []string {
 	var cret *C.GList // container, transfer: full
 
@@ -5587,7 +5184,6 @@ func ContentTypesGetRegistered() []string {
 // DBusAddressEscapeValue wraps g_dbus_address_escape_value
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_address_escape_value.html
-//
 func DBusAddressEscapeValue(str string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -5609,7 +5205,6 @@ func DBusAddressEscapeValue(str string) string {
 // DBusAddressGetForBusSync wraps g_dbus_address_get_for_bus_sync
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_address_get_for_bus_sync.html
-//
 func DBusAddressGetForBusSync(busType BusType, cancellable Cancellable) (string, error) {
 	var carg1 C.GBusType      // in, none, casted
 	var carg2 *C.GCancellable // in, none, converted, nullable
@@ -5640,7 +5235,6 @@ func DBusAddressGetForBusSync(busType BusType, cancellable Cancellable) (string,
 // DBusAddressGetStream wraps g_dbus_address_get_stream
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_address_get_stream.html
-//
 func DBusAddressGetStream(address string, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg1 *C.gchar              // in, none, string
 	var carg2 *C.GCancellable       // in, none, converted, nullable
@@ -5666,7 +5260,6 @@ func DBusAddressGetStream(address string, cancellable Cancellable, callback Asyn
 // DBusAddressGetStreamFinish wraps g_dbus_address_get_stream_finish
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_address_get_stream_finish.html
-//
 func DBusAddressGetStreamFinish(res AsyncResult) (string, IOStream, error) {
 	var carg1 *C.GAsyncResult // in, none, converted
 	var carg2 *C.gchar        // out, full, string, nullable-string
@@ -5697,7 +5290,6 @@ func DBusAddressGetStreamFinish(res AsyncResult) (string, IOStream, error) {
 // DBusAddressGetStreamSync wraps g_dbus_address_get_stream_sync
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_address_get_stream_sync.html
-//
 func DBusAddressGetStreamSync(address string, cancellable Cancellable) (string, IOStream, error) {
 	var carg1 *C.gchar        // in, none, string
 	var carg3 *C.GCancellable // in, none, converted, nullable
@@ -5734,7 +5326,6 @@ func DBusAddressGetStreamSync(address string, cancellable Cancellable) (string, 
 // DBusEscapeObjectPath wraps g_dbus_escape_object_path
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_escape_object_path.html
-//
 func DBusEscapeObjectPath(s string) string {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.gchar // return, full, string
@@ -5756,7 +5347,6 @@ func DBusEscapeObjectPath(s string) string {
 // DBusEscapeObjectPathBytestring wraps g_dbus_escape_object_path_bytestring
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_escape_object_path_bytestring.html
-//
 func DBusEscapeObjectPathBytestring(bytes []uint8) string {
 	var carg1 *C.guint8 // in, transfer: none, C Pointers: 1, Name: array[guint8], array (inner guint8 (*typesystem.CastablePrimitive), zero-terminated)
 	var cret  *C.gchar  // return, full, string
@@ -5779,7 +5369,6 @@ func DBusEscapeObjectPathBytestring(bytes []uint8) string {
 // DBusGenerateGuid wraps g_dbus_generate_guid
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_generate_guid.html
-//
 func DBusGenerateGuid() string {
 	var cret *C.gchar // return, full, string
 
@@ -5796,7 +5385,6 @@ func DBusGenerateGuid() string {
 // DBusIsAddress wraps g_dbus_is_address
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_address.html
-//
 func DBusIsAddress(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5819,7 +5407,6 @@ func DBusIsAddress(str string) bool {
 // DBusIsErrorName wraps g_dbus_is_error_name
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_error_name.html
-//
 func DBusIsErrorName(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5842,7 +5429,6 @@ func DBusIsErrorName(str string) bool {
 // DBusIsGuid wraps g_dbus_is_guid
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_guid.html
-//
 func DBusIsGuid(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5865,7 +5451,6 @@ func DBusIsGuid(str string) bool {
 // DBusIsInterfaceName wraps g_dbus_is_interface_name
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_interface_name.html
-//
 func DBusIsInterfaceName(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5888,7 +5473,6 @@ func DBusIsInterfaceName(str string) bool {
 // DBusIsMemberName wraps g_dbus_is_member_name
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_member_name.html
-//
 func DBusIsMemberName(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5911,7 +5495,6 @@ func DBusIsMemberName(str string) bool {
 // DBusIsName wraps g_dbus_is_name
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_name.html
-//
 func DBusIsName(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5934,7 +5517,6 @@ func DBusIsName(str string) bool {
 // DBusIsSupportedAddress wraps g_dbus_is_supported_address
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_supported_address.html
-//
 func DBusIsSupportedAddress(str string) (bool, error) {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5962,7 +5544,6 @@ func DBusIsSupportedAddress(str string) (bool, error) {
 // DBusIsUniqueName wraps g_dbus_is_unique_name
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_is_unique_name.html
-//
 func DBusIsUniqueName(str string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -5985,7 +5566,6 @@ func DBusIsUniqueName(str string) bool {
 // DBusUnescapeObjectPath wraps g_dbus_unescape_object_path
 // 
 // see also https://docs.gtk.org/gio/func.g_dbus_unescape_object_path.html
-//
 func DBusUnescapeObjectPath(s string) []uint8 {
 	var carg1 *C.gchar  // in, none, string
 	var cret  *C.guint8 // return, transfer: none, C Pointers: 1, Name: array[guint8], scope: , nullable, array (inner guint8 (*typesystem.CastablePrimitive), zero-terminated)
@@ -6008,7 +5588,6 @@ func DBusUnescapeObjectPath(s string) []uint8 {
 // IOErrorFromErrno wraps g_io_error_from_errno
 // 
 // see also https://docs.gtk.org/gio/func.g_io_error_from_errno.html
-//
 func IOErrorFromErrno(errNo int32) IOErrorEnum {
 	var carg1 C.gint         // in, none, casted
 	var cret  C.GIOErrorEnum // return, none, casted
@@ -6028,7 +5607,6 @@ func IOErrorFromErrno(errNo int32) IOErrorEnum {
 // IOErrorFromFileError wraps g_io_error_from_file_error
 // 
 // see also https://docs.gtk.org/gio/func.g_io_error_from_file_error.html
-//
 func IOErrorFromFileError(fileError glib.FileError) IOErrorEnum {
 	var carg1 C.GFileError   // in, none, casted
 	var cret  C.GIOErrorEnum // return, none, casted
@@ -6048,7 +5626,6 @@ func IOErrorFromFileError(fileError glib.FileError) IOErrorEnum {
 // IOErrorQuark wraps g_io_error_quark
 // 
 // see also https://docs.gtk.org/gio/func.g_io_error_quark.html
-//
 func IOErrorQuark() glib.Quark {
 	var cret C.GQuark // return, none, casted, alias
 
@@ -6064,7 +5641,6 @@ func IOErrorQuark() glib.Quark {
 // IOModulesScanAllInDirectory wraps g_io_modules_scan_all_in_directory
 // 
 // see also https://docs.gtk.org/gio/func.g_io_modules_scan_all_in_directory.html
-//
 func IOModulesScanAllInDirectory(dirname string) {
 	var carg1 *C.char // in, none, string
 
@@ -6078,7 +5654,6 @@ func IOModulesScanAllInDirectory(dirname string) {
 // IOModulesScanAllInDirectoryWithScope wraps g_io_modules_scan_all_in_directory_with_scope
 // 
 // see also https://docs.gtk.org/gio/func.g_io_modules_scan_all_in_directory_with_scope.html
-//
 func IOModulesScanAllInDirectoryWithScope(dirname string, scope *IOModuleScope) {
 	var carg1 *C.gchar          // in, none, string
 	var carg2 *C.GIOModuleScope // in, none, converted
@@ -6096,10 +5671,7 @@ func IOModulesScanAllInDirectoryWithScope(dirname string, scope *IOModuleScope) 
 // 
 // see also https://docs.gtk.org/gio/func.g_io_scheduler_cancel_all_jobs.html
 //
-//
-// Deprecated: (since 2.36.0) You should never call this function, since you don't
-// know how other libraries in your program might be making use of
-// gioscheduler.
+// Deprecated: (since 2.36.0) see the provided link for the reason
 func IOSchedulerCancelAllJobs() {
 
 	C.g_io_scheduler_cancel_all_jobs()
@@ -6108,7 +5680,6 @@ func IOSchedulerCancelAllJobs() {
 // PollableStreamRead wraps g_pollable_stream_read
 // 
 // see also https://docs.gtk.org/gio/func.g_pollable_stream_read.html
-//
 func PollableStreamRead(stream InputStream, buffer []byte, blocking bool, cancellable Cancellable) (int, error) {
 	var carg1 *C.GInputStream // in, none, converted
 	var carg2 unsafe.Pointer  // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg3)
@@ -6150,7 +5721,6 @@ func PollableStreamRead(stream InputStream, buffer []byte, blocking bool, cancel
 // PollableStreamWrite wraps g_pollable_stream_write
 // 
 // see also https://docs.gtk.org/gio/func.g_pollable_stream_write.html
-//
 func PollableStreamWrite(stream OutputStream, buffer []byte, blocking bool, cancellable Cancellable) (int, error) {
 	var carg1 *C.GOutputStream // in, none, converted
 	var carg2 unsafe.Pointer   // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg3)
@@ -6192,7 +5762,6 @@ func PollableStreamWrite(stream OutputStream, buffer []byte, blocking bool, canc
 // PollableStreamWriteAll wraps g_pollable_stream_write_all
 // 
 // see also https://docs.gtk.org/gio/func.g_pollable_stream_write_all.html
-//
 func PollableStreamWriteAll(stream OutputStream, buffer []byte, blocking bool, cancellable Cancellable) (uint, bool, error) {
 	var carg1 *C.GOutputStream // in, none, converted
 	var carg2 unsafe.Pointer   // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg3)
@@ -6239,7 +5808,6 @@ func PollableStreamWriteAll(stream OutputStream, buffer []byte, blocking bool, c
 // ResourcesEnumerateChildren wraps g_resources_enumerate_children
 // 
 // see also https://docs.gtk.org/gio/func.g_resources_enumerate_children.html
-//
 func ResourcesEnumerateChildren(path string, lookupFlags ResourceLookupFlags) ([]string, error) {
 	var carg1 *C.char                // in, none, string
 	var carg2 C.GResourceLookupFlags // in, none, casted
@@ -6270,7 +5838,6 @@ func ResourcesEnumerateChildren(path string, lookupFlags ResourceLookupFlags) ([
 // ResourcesGetInfo wraps g_resources_get_info
 // 
 // see also https://docs.gtk.org/gio/func.g_resources_get_info.html
-//
 func ResourcesGetInfo(path string, lookupFlags ResourceLookupFlags) (uint, uint32, bool, error) {
 	var carg1 *C.char                // in, none, string
 	var carg2 C.GResourceLookupFlags // in, none, casted
@@ -6307,7 +5874,6 @@ func ResourcesGetInfo(path string, lookupFlags ResourceLookupFlags) (uint, uint3
 // ResourcesLookupData wraps g_resources_lookup_data
 // 
 // see also https://docs.gtk.org/gio/func.g_resources_lookup_data.html
-//
 func ResourcesLookupData(path string, lookupFlags ResourceLookupFlags) (*glib.Bytes, error) {
 	var carg1 *C.char                // in, none, string
 	var carg2 C.GResourceLookupFlags // in, none, casted
@@ -6336,7 +5902,6 @@ func ResourcesLookupData(path string, lookupFlags ResourceLookupFlags) (*glib.By
 // ResourcesOpenStream wraps g_resources_open_stream
 // 
 // see also https://docs.gtk.org/gio/func.g_resources_open_stream.html
-//
 func ResourcesOpenStream(path string, lookupFlags ResourceLookupFlags) (InputStream, error) {
 	var carg1 *C.char                // in, none, string
 	var carg2 C.GResourceLookupFlags // in, none, casted
@@ -6373,29 +5938,24 @@ var _ Action = (*ActionInstance)(nil)
 // Action wraps GAction
 // 
 // see also https://docs.gtk.org/gio/interface.Action.html
-//
 type Action interface {
 	upcastToGAction() *ActionInstance
 
 	// GetEnabled wraps g_action_get_enabled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_get_enabled.g_action_get_enabled.html
-	//
 	GetEnabled() bool
 	// GetName wraps g_action_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_get_name.g_action_get_name.html
-	//
 	GetName() string
 	// GetParameterType wraps g_action_get_parameter_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_get_parameter_type.g_action_get_parameter_type.html
-	//
 	GetParameterType() *glib.VariantType
 	// GetStateType wraps g_action_get_state_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_get_state_type.g_action_get_state_type.html
-	//
 	GetStateType() *glib.VariantType
 }
 
@@ -6445,7 +6005,6 @@ func UnsafeActionToGlibFull(c Action) unsafe.Pointer {
 // ActionNameIsValid wraps g_action_name_is_valid
 // 
 // see also https://docs.gtk.org/gio/func.g_action_name_is_valid.html
-//
 func ActionNameIsValid(actionName string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -6468,7 +6027,6 @@ func ActionNameIsValid(actionName string) bool {
 // GetEnabled wraps g_action_get_enabled
 // 
 // see also https://docs.gtk.org/gio/method.g_action_get_enabled.g_action_get_enabled.html
-//
 func (action *ActionInstance) GetEnabled() bool {
 	var carg0 *C.GAction // in, none, converted
 	var cret  C.gboolean // return
@@ -6490,7 +6048,6 @@ func (action *ActionInstance) GetEnabled() bool {
 // GetName wraps g_action_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_action_get_name.g_action_get_name.html
-//
 func (action *ActionInstance) GetName() string {
 	var carg0 *C.GAction // in, none, converted
 	var cret  *C.gchar   // return, none, string
@@ -6510,7 +6067,6 @@ func (action *ActionInstance) GetName() string {
 // GetParameterType wraps g_action_get_parameter_type
 // 
 // see also https://docs.gtk.org/gio/method.g_action_get_parameter_type.g_action_get_parameter_type.html
-//
 func (action *ActionInstance) GetParameterType() *glib.VariantType {
 	var carg0 *C.GAction      // in, none, converted
 	var cret  *C.GVariantType // return, none, converted, nullable
@@ -6532,7 +6088,6 @@ func (action *ActionInstance) GetParameterType() *glib.VariantType {
 // GetStateType wraps g_action_get_state_type
 // 
 // see also https://docs.gtk.org/gio/method.g_action_get_state_type.g_action_get_state_type.html
-//
 func (action *ActionInstance) GetStateType() *glib.VariantType {
 	var carg0 *C.GAction      // in, none, converted
 	var cret  *C.GVariantType // return, none, converted, nullable
@@ -6562,64 +6117,52 @@ var _ ActionGroup = (*ActionGroupInstance)(nil)
 // ActionGroup wraps GActionGroup
 // 
 // see also https://docs.gtk.org/gio/interface.ActionGroup.html
-//
 type ActionGroup interface {
 	upcastToGActionGroup() *ActionGroupInstance
 
 	// ActionAdded wraps g_action_group_action_added
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_action_added.g_action_group_action_added.html
-	//
 	ActionAdded(string)
 	// ActionEnabledChanged wraps g_action_group_action_enabled_changed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_action_enabled_changed.g_action_group_action_enabled_changed.html
-	//
 	ActionEnabledChanged(string, bool)
 	// ActionRemoved wraps g_action_group_action_removed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_action_removed.g_action_group_action_removed.html
-	//
 	ActionRemoved(string)
 	// GetActionEnabled wraps g_action_group_get_action_enabled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_get_action_enabled.g_action_group_get_action_enabled.html
-	//
 	GetActionEnabled(string) bool
 	// GetActionParameterType wraps g_action_group_get_action_parameter_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_get_action_parameter_type.g_action_group_get_action_parameter_type.html
-	//
 	GetActionParameterType(string) *glib.VariantType
 	// GetActionStateType wraps g_action_group_get_action_state_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_get_action_state_type.g_action_group_get_action_state_type.html
-	//
 	GetActionStateType(string) *glib.VariantType
 	// HasAction wraps g_action_group_has_action
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_has_action.g_action_group_has_action.html
-	//
 	HasAction(string) bool
 	// ListActions wraps g_action_group_list_actions
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_group_list_actions.g_action_group_list_actions.html
-	//
 	ListActions() []string
 	// ConnectActionAdded connects the provided callback to the "action-added" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.ActionGroup.action-added.html
-	//
 	ConnectActionAdded(func(ActionGroup, string)) gobject.SignalHandle
 	// ConnectActionEnabledChanged connects the provided callback to the "action-enabled-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.ActionGroup.action-enabled-changed.html
-	//
 	ConnectActionEnabledChanged(func(ActionGroup, string, bool)) gobject.SignalHandle
 	// ConnectActionRemoved connects the provided callback to the "action-removed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.ActionGroup.action-removed.html
-	//
 	ConnectActionRemoved(func(ActionGroup, string)) gobject.SignalHandle
 }
 
@@ -6669,7 +6212,6 @@ func UnsafeActionGroupToGlibFull(c ActionGroup) unsafe.Pointer {
 // ActionAdded wraps g_action_group_action_added
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_action_added.g_action_group_action_added.html
-//
 func (actionGroup *ActionGroupInstance) ActionAdded(actionName string) {
 	var carg0 *C.GActionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -6686,7 +6228,6 @@ func (actionGroup *ActionGroupInstance) ActionAdded(actionName string) {
 // ActionEnabledChanged wraps g_action_group_action_enabled_changed
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_action_enabled_changed.g_action_group_action_enabled_changed.html
-//
 func (actionGroup *ActionGroupInstance) ActionEnabledChanged(actionName string, enabled bool) {
 	var carg0 *C.GActionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -6708,7 +6249,6 @@ func (actionGroup *ActionGroupInstance) ActionEnabledChanged(actionName string, 
 // ActionRemoved wraps g_action_group_action_removed
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_action_removed.g_action_group_action_removed.html
-//
 func (actionGroup *ActionGroupInstance) ActionRemoved(actionName string) {
 	var carg0 *C.GActionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -6725,7 +6265,6 @@ func (actionGroup *ActionGroupInstance) ActionRemoved(actionName string) {
 // GetActionEnabled wraps g_action_group_get_action_enabled
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_get_action_enabled.g_action_group_get_action_enabled.html
-//
 func (actionGroup *ActionGroupInstance) GetActionEnabled(actionName string) bool {
 	var carg0 *C.GActionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -6751,7 +6290,6 @@ func (actionGroup *ActionGroupInstance) GetActionEnabled(actionName string) bool
 // GetActionParameterType wraps g_action_group_get_action_parameter_type
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_get_action_parameter_type.g_action_group_get_action_parameter_type.html
-//
 func (actionGroup *ActionGroupInstance) GetActionParameterType(actionName string) *glib.VariantType {
 	var carg0 *C.GActionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -6777,7 +6315,6 @@ func (actionGroup *ActionGroupInstance) GetActionParameterType(actionName string
 // GetActionStateType wraps g_action_group_get_action_state_type
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_get_action_state_type.g_action_group_get_action_state_type.html
-//
 func (actionGroup *ActionGroupInstance) GetActionStateType(actionName string) *glib.VariantType {
 	var carg0 *C.GActionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -6803,7 +6340,6 @@ func (actionGroup *ActionGroupInstance) GetActionStateType(actionName string) *g
 // HasAction wraps g_action_group_has_action
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_has_action.g_action_group_has_action.html
-//
 func (actionGroup *ActionGroupInstance) HasAction(actionName string) bool {
 	var carg0 *C.GActionGroup // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -6829,7 +6365,6 @@ func (actionGroup *ActionGroupInstance) HasAction(actionName string) bool {
 // ListActions wraps g_action_group_list_actions
 // 
 // see also https://docs.gtk.org/gio/method.g_action_group_list_actions.g_action_group_list_actions.html
-//
 func (actionGroup *ActionGroupInstance) ListActions() []string {
 	var carg0 *C.GActionGroup // in, none, converted
 	var cret  **C.gchar       // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -6851,7 +6386,6 @@ func (actionGroup *ActionGroupInstance) ListActions() []string {
 // ConnectActionAdded connects the provided callback to the "action-added" signal
 // 
 // see also https://docs.gtk.org/gio/signal.ActionGroup.action-added.html
-//
 func (o *ActionGroupInstance) ConnectActionAdded(fn func(ActionGroup, string)) gobject.SignalHandle {
 	return o.Instance.Connect("action-added", fn)
 }
@@ -6859,7 +6393,6 @@ func (o *ActionGroupInstance) ConnectActionAdded(fn func(ActionGroup, string)) g
 // ConnectActionEnabledChanged connects the provided callback to the "action-enabled-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.ActionGroup.action-enabled-changed.html
-//
 func (o *ActionGroupInstance) ConnectActionEnabledChanged(fn func(ActionGroup, string, bool)) gobject.SignalHandle {
 	return o.Instance.Connect("action-enabled-changed", fn)
 }
@@ -6867,7 +6400,6 @@ func (o *ActionGroupInstance) ConnectActionEnabledChanged(fn func(ActionGroup, s
 // ConnectActionRemoved connects the provided callback to the "action-removed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.ActionGroup.action-removed.html
-//
 func (o *ActionGroupInstance) ConnectActionRemoved(fn func(ActionGroup, string)) gobject.SignalHandle {
 	return o.Instance.Connect("action-removed", fn)
 }
@@ -6883,29 +6415,24 @@ var _ ActionMap = (*ActionMapInstance)(nil)
 // ActionMap wraps GActionMap
 // 
 // see also https://docs.gtk.org/gio/interface.ActionMap.html
-//
 type ActionMap interface {
 	upcastToGActionMap() *ActionMapInstance
 
 	// AddAction wraps g_action_map_add_action
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_map_add_action.g_action_map_add_action.html
-	//
 	AddAction(Action)
 	// LookupAction wraps g_action_map_lookup_action
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_map_lookup_action.g_action_map_lookup_action.html
-	//
 	LookupAction(string) Action
 	// RemoveAction wraps g_action_map_remove_action
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_map_remove_action.g_action_map_remove_action.html
-	//
 	RemoveAction(string)
 	// RemoveActionEntries wraps g_action_map_remove_action_entries
 	// 
 	// see also https://docs.gtk.org/gio/method.g_action_map_remove_action_entries.g_action_map_remove_action_entries.html
-	//
 	RemoveActionEntries([]ActionEntry)
 }
 
@@ -6955,7 +6482,6 @@ func UnsafeActionMapToGlibFull(c ActionMap) unsafe.Pointer {
 // AddAction wraps g_action_map_add_action
 // 
 // see also https://docs.gtk.org/gio/method.g_action_map_add_action.g_action_map_add_action.html
-//
 func (actionMap *ActionMapInstance) AddAction(action Action) {
 	var carg0 *C.GActionMap // in, none, converted
 	var carg1 *C.GAction    // in, none, converted
@@ -6971,7 +6497,6 @@ func (actionMap *ActionMapInstance) AddAction(action Action) {
 // LookupAction wraps g_action_map_lookup_action
 // 
 // see also https://docs.gtk.org/gio/method.g_action_map_lookup_action.g_action_map_lookup_action.html
-//
 func (actionMap *ActionMapInstance) LookupAction(actionName string) Action {
 	var carg0 *C.GActionMap // in, none, converted
 	var carg1 *C.gchar      // in, none, string
@@ -6997,7 +6522,6 @@ func (actionMap *ActionMapInstance) LookupAction(actionName string) Action {
 // RemoveAction wraps g_action_map_remove_action
 // 
 // see also https://docs.gtk.org/gio/method.g_action_map_remove_action.g_action_map_remove_action.html
-//
 func (actionMap *ActionMapInstance) RemoveAction(actionName string) {
 	var carg0 *C.GActionMap // in, none, converted
 	var carg1 *C.gchar      // in, none, string
@@ -7014,7 +6538,6 @@ func (actionMap *ActionMapInstance) RemoveAction(actionName string) {
 // RemoveActionEntries wraps g_action_map_remove_action_entries
 // 
 // see also https://docs.gtk.org/gio/method.g_action_map_remove_action_entries.g_action_map_remove_action_entries.html
-//
 func (actionMap *ActionMapInstance) RemoveActionEntries(entries []ActionEntry) {
 	var carg0 *C.GActionMap   // in, none, converted
 	var carg1 *C.GActionEntry // in, transfer: none, C Pointers: 1, Name: array[ActionEntry], array (inner GActionEntry (*typesystem.Record), length-by: carg2)
@@ -7042,119 +6565,96 @@ var _ AppInfo = (*AppInfoInstance)(nil)
 // AppInfo wraps GAppInfo
 // 
 // see also https://docs.gtk.org/gio/interface.AppInfo.html
-//
 type AppInfo interface {
 	upcastToGAppInfo() *AppInfoInstance
 
 	// AddSupportsType wraps g_app_info_add_supports_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_add_supports_type.g_app_info_add_supports_type.html
-	//
 	AddSupportsType(string) (bool, error)
 	// CanDelete wraps g_app_info_can_delete
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_can_delete.g_app_info_can_delete.html
-	//
 	CanDelete() bool
 	// CanRemoveSupportsType wraps g_app_info_can_remove_supports_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_can_remove_supports_type.g_app_info_can_remove_supports_type.html
-	//
 	CanRemoveSupportsType() bool
 	// Delete wraps g_app_info_delete
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_delete.g_app_info_delete.html
-	//
 	Delete() bool
 	// Dup wraps g_app_info_dup
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_dup.g_app_info_dup.html
-	//
 	Dup() AppInfo
 	// Equal wraps g_app_info_equal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_equal.g_app_info_equal.html
-	//
 	Equal(AppInfo) bool
 	// GetCommandline wraps g_app_info_get_commandline
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_commandline.g_app_info_get_commandline.html
-	//
 	GetCommandline() string
 	// GetDescription wraps g_app_info_get_description
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_description.g_app_info_get_description.html
-	//
 	GetDescription() string
 	// GetDisplayName wraps g_app_info_get_display_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_display_name.g_app_info_get_display_name.html
-	//
 	GetDisplayName() string
 	// GetExecutable wraps g_app_info_get_executable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_executable.g_app_info_get_executable.html
-	//
 	GetExecutable() string
 	// GetIcon wraps g_app_info_get_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_icon.g_app_info_get_icon.html
-	//
 	GetIcon() Icon
 	// GetID wraps g_app_info_get_id
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_id.g_app_info_get_id.html
-	//
 	GetID() string
 	// GetName wraps g_app_info_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_name.g_app_info_get_name.html
-	//
 	GetName() string
 	// GetSupportedTypes wraps g_app_info_get_supported_types
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_get_supported_types.g_app_info_get_supported_types.html
-	//
 	GetSupportedTypes() []string
 	// LaunchUrisFinish wraps g_app_info_launch_uris_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_launch_uris_finish.g_app_info_launch_uris_finish.html
-	//
 	LaunchUrisFinish(AsyncResult) (bool, error)
 	// RemoveSupportsType wraps g_app_info_remove_supports_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_remove_supports_type.g_app_info_remove_supports_type.html
-	//
 	RemoveSupportsType(string) (bool, error)
 	// SetAsDefaultForExtension wraps g_app_info_set_as_default_for_extension
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_set_as_default_for_extension.g_app_info_set_as_default_for_extension.html
-	//
 	SetAsDefaultForExtension(string) (bool, error)
 	// SetAsDefaultForType wraps g_app_info_set_as_default_for_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_set_as_default_for_type.g_app_info_set_as_default_for_type.html
-	//
 	SetAsDefaultForType(string) (bool, error)
 	// SetAsLastUsedForType wraps g_app_info_set_as_last_used_for_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_set_as_last_used_for_type.g_app_info_set_as_last_used_for_type.html
-	//
 	SetAsLastUsedForType(string) (bool, error)
 	// ShouldShow wraps g_app_info_should_show
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_should_show.g_app_info_should_show.html
-	//
 	ShouldShow() bool
 	// SupportsFiles wraps g_app_info_supports_files
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_supports_files.g_app_info_supports_files.html
-	//
 	SupportsFiles() bool
 	// SupportsUris wraps g_app_info_supports_uris
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_info_supports_uris.g_app_info_supports_uris.html
-	//
 	SupportsUris() bool
 }
 
@@ -7204,7 +6704,6 @@ func UnsafeAppInfoToGlibFull(c AppInfo) unsafe.Pointer {
 // AppInfoCreateFromCommandline wraps g_app_info_create_from_commandline
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_create_from_commandline.html
-//
 func AppInfoCreateFromCommandline(commandline string, applicationName string, flags AppInfoCreateFlags) (AppInfo, error) {
 	var carg1 *C.char               // in, none, string
 	var carg2 *C.char               // in, none, string, nullable-string
@@ -7239,7 +6738,6 @@ func AppInfoCreateFromCommandline(commandline string, applicationName string, fl
 // AppInfoGetAll wraps g_app_info_get_all
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_all.html
-//
 func AppInfoGetAll() []AppInfo {
 	var cret *C.GList // container, transfer: full
 
@@ -7262,7 +6760,6 @@ func AppInfoGetAll() []AppInfo {
 // AppInfoGetAllForType wraps g_app_info_get_all_for_type
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_all_for_type.html
-//
 func AppInfoGetAllForType(contentType string) []AppInfo {
 	var carg1 *C.char  // in, none, string
 	var cret  *C.GList // container, transfer: full
@@ -7290,7 +6787,6 @@ func AppInfoGetAllForType(contentType string) []AppInfo {
 // AppInfoGetDefaultForType wraps g_app_info_get_default_for_type
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_default_for_type.html
-//
 func AppInfoGetDefaultForType(contentType string, mustSupportUris bool) AppInfo {
 	var carg1 *C.char     // in, none, string
 	var carg2 C.gboolean  // in
@@ -7318,7 +6814,6 @@ func AppInfoGetDefaultForType(contentType string, mustSupportUris bool) AppInfo 
 // AppInfoGetDefaultForTypeAsync wraps g_app_info_get_default_for_type_async
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_default_for_type_async.html
-//
 func AppInfoGetDefaultForTypeAsync(contentType string, mustSupportUris bool, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg1 *C.char               // in, none, string
 	var carg2 C.gboolean            // in
@@ -7349,7 +6844,6 @@ func AppInfoGetDefaultForTypeAsync(contentType string, mustSupportUris bool, can
 // AppInfoGetDefaultForTypeFinish wraps g_app_info_get_default_for_type_finish
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_default_for_type_finish.html
-//
 func AppInfoGetDefaultForTypeFinish(result AsyncResult) (AppInfo, error) {
 	var carg1 *C.GAsyncResult // in, none, converted
 	var cret  *C.GAppInfo     // return, full, converted
@@ -7374,7 +6868,6 @@ func AppInfoGetDefaultForTypeFinish(result AsyncResult) (AppInfo, error) {
 // AppInfoGetDefaultForURIScheme wraps g_app_info_get_default_for_uri_scheme
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_default_for_uri_scheme.html
-//
 func AppInfoGetDefaultForURIScheme(uriScheme string) AppInfo {
 	var carg1 *C.char     // in, none, string
 	var cret  *C.GAppInfo // return, full, converted, nullable
@@ -7397,7 +6890,6 @@ func AppInfoGetDefaultForURIScheme(uriScheme string) AppInfo {
 // AppInfoGetDefaultForURISchemeAsync wraps g_app_info_get_default_for_uri_scheme_async
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_default_for_uri_scheme_async.html
-//
 func AppInfoGetDefaultForURISchemeAsync(uriScheme string, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg1 *C.char               // in, none, string
 	var carg2 *C.GCancellable       // in, none, converted, nullable
@@ -7423,7 +6915,6 @@ func AppInfoGetDefaultForURISchemeAsync(uriScheme string, cancellable Cancellabl
 // AppInfoGetDefaultForURISchemeFinish wraps g_app_info_get_default_for_uri_scheme_finish
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_default_for_uri_scheme_finish.html
-//
 func AppInfoGetDefaultForURISchemeFinish(result AsyncResult) (AppInfo, error) {
 	var carg1 *C.GAsyncResult // in, none, converted
 	var cret  *C.GAppInfo     // return, full, converted
@@ -7448,7 +6939,6 @@ func AppInfoGetDefaultForURISchemeFinish(result AsyncResult) (AppInfo, error) {
 // AppInfoGetFallbackForType wraps g_app_info_get_fallback_for_type
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_fallback_for_type.html
-//
 func AppInfoGetFallbackForType(contentType string) []AppInfo {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.GList // container, transfer: full
@@ -7476,7 +6966,6 @@ func AppInfoGetFallbackForType(contentType string) []AppInfo {
 // AppInfoGetRecommendedForType wraps g_app_info_get_recommended_for_type
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_get_recommended_for_type.html
-//
 func AppInfoGetRecommendedForType(contentType string) []AppInfo {
 	var carg1 *C.gchar // in, none, string
 	var cret  *C.GList // container, transfer: full
@@ -7504,7 +6993,6 @@ func AppInfoGetRecommendedForType(contentType string) []AppInfo {
 // AppInfoLaunchDefaultForURI wraps g_app_info_launch_default_for_uri
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_launch_default_for_uri.html
-//
 func AppInfoLaunchDefaultForURI(uri string, _context AppLaunchContext) (bool, error) {
 	var carg1 *C.char              // in, none, string
 	var carg2 *C.GAppLaunchContext // in, none, converted, nullable
@@ -7537,7 +7025,6 @@ func AppInfoLaunchDefaultForURI(uri string, _context AppLaunchContext) (bool, er
 // AppInfoLaunchDefaultForURIAsync wraps g_app_info_launch_default_for_uri_async
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_launch_default_for_uri_async.html
-//
 func AppInfoLaunchDefaultForURIAsync(uri string, _context AppLaunchContext, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg1 *C.char               // in, none, string
 	var carg2 *C.GAppLaunchContext  // in, none, converted, nullable
@@ -7568,7 +7055,6 @@ func AppInfoLaunchDefaultForURIAsync(uri string, _context AppLaunchContext, canc
 // AppInfoLaunchDefaultForURIFinish wraps g_app_info_launch_default_for_uri_finish
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_launch_default_for_uri_finish.html
-//
 func AppInfoLaunchDefaultForURIFinish(result AsyncResult) (bool, error) {
 	var carg1 *C.GAsyncResult // in, none, converted
 	var cret  C.gboolean      // return
@@ -7595,7 +7081,6 @@ func AppInfoLaunchDefaultForURIFinish(result AsyncResult) (bool, error) {
 // AppInfoResetTypeAssociations wraps g_app_info_reset_type_associations
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_reset_type_associations.html
-//
 func AppInfoResetTypeAssociations(contentType string) {
 	var carg1 *C.char // in, none, string
 
@@ -7609,7 +7094,6 @@ func AppInfoResetTypeAssociations(contentType string) {
 // AddSupportsType wraps g_app_info_add_supports_type
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_add_supports_type.g_app_info_add_supports_type.html
-//
 func (appinfo *AppInfoInstance) AddSupportsType(contentType string) (bool, error) {
 	var carg0 *C.GAppInfo // in, none, converted
 	var carg1 *C.char     // in, none, string
@@ -7640,7 +7124,6 @@ func (appinfo *AppInfoInstance) AddSupportsType(contentType string) (bool, error
 // CanDelete wraps g_app_info_can_delete
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_can_delete.g_app_info_can_delete.html
-//
 func (appinfo *AppInfoInstance) CanDelete() bool {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  C.gboolean  // return
@@ -7662,7 +7145,6 @@ func (appinfo *AppInfoInstance) CanDelete() bool {
 // CanRemoveSupportsType wraps g_app_info_can_remove_supports_type
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_can_remove_supports_type.g_app_info_can_remove_supports_type.html
-//
 func (appinfo *AppInfoInstance) CanRemoveSupportsType() bool {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  C.gboolean  // return
@@ -7684,7 +7166,6 @@ func (appinfo *AppInfoInstance) CanRemoveSupportsType() bool {
 // Delete wraps g_app_info_delete
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_delete.g_app_info_delete.html
-//
 func (appinfo *AppInfoInstance) Delete() bool {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  C.gboolean  // return
@@ -7706,7 +7187,6 @@ func (appinfo *AppInfoInstance) Delete() bool {
 // Dup wraps g_app_info_dup
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_dup.g_app_info_dup.html
-//
 func (appinfo *AppInfoInstance) Dup() AppInfo {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.GAppInfo // return, full, converted
@@ -7726,7 +7206,6 @@ func (appinfo *AppInfoInstance) Dup() AppInfo {
 // Equal wraps g_app_info_equal
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_equal.g_app_info_equal.html
-//
 func (appinfo1 *AppInfoInstance) Equal(appinfo2 AppInfo) bool {
 	var carg0 *C.GAppInfo // in, none, converted
 	var carg1 *C.GAppInfo // in, none, converted
@@ -7751,7 +7230,6 @@ func (appinfo1 *AppInfoInstance) Equal(appinfo2 AppInfo) bool {
 // GetCommandline wraps g_app_info_get_commandline
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_commandline.g_app_info_get_commandline.html
-//
 func (appinfo *AppInfoInstance) GetCommandline() string {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.char     // return, none, string, nullable
@@ -7773,7 +7251,6 @@ func (appinfo *AppInfoInstance) GetCommandline() string {
 // GetDescription wraps g_app_info_get_description
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_description.g_app_info_get_description.html
-//
 func (appinfo *AppInfoInstance) GetDescription() string {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.char     // return, none, string, nullable-string
@@ -7795,7 +7272,6 @@ func (appinfo *AppInfoInstance) GetDescription() string {
 // GetDisplayName wraps g_app_info_get_display_name
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_display_name.g_app_info_get_display_name.html
-//
 func (appinfo *AppInfoInstance) GetDisplayName() string {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.char     // return, none, string
@@ -7815,7 +7291,6 @@ func (appinfo *AppInfoInstance) GetDisplayName() string {
 // GetExecutable wraps g_app_info_get_executable
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_executable.g_app_info_get_executable.html
-//
 func (appinfo *AppInfoInstance) GetExecutable() string {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.char     // return, none, string
@@ -7835,7 +7310,6 @@ func (appinfo *AppInfoInstance) GetExecutable() string {
 // GetIcon wraps g_app_info_get_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_icon.g_app_info_get_icon.html
-//
 func (appinfo *AppInfoInstance) GetIcon() Icon {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.GIcon    // return, none, converted, nullable
@@ -7857,7 +7331,6 @@ func (appinfo *AppInfoInstance) GetIcon() Icon {
 // GetID wraps g_app_info_get_id
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_id.g_app_info_get_id.html
-//
 func (appinfo *AppInfoInstance) GetID() string {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.char     // return, none, string, nullable-string
@@ -7879,7 +7352,6 @@ func (appinfo *AppInfoInstance) GetID() string {
 // GetName wraps g_app_info_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_name.g_app_info_get_name.html
-//
 func (appinfo *AppInfoInstance) GetName() string {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  *C.char     // return, none, string
@@ -7899,7 +7371,6 @@ func (appinfo *AppInfoInstance) GetName() string {
 // GetSupportedTypes wraps g_app_info_get_supported_types
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_get_supported_types.g_app_info_get_supported_types.html
-//
 func (appinfo *AppInfoInstance) GetSupportedTypes() []string {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  **C.char    // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -7921,7 +7392,6 @@ func (appinfo *AppInfoInstance) GetSupportedTypes() []string {
 // LaunchUrisFinish wraps g_app_info_launch_uris_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_launch_uris_finish.g_app_info_launch_uris_finish.html
-//
 func (appinfo *AppInfoInstance) LaunchUrisFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GAppInfo     // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -7951,7 +7421,6 @@ func (appinfo *AppInfoInstance) LaunchUrisFinish(result AsyncResult) (bool, erro
 // RemoveSupportsType wraps g_app_info_remove_supports_type
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_remove_supports_type.g_app_info_remove_supports_type.html
-//
 func (appinfo *AppInfoInstance) RemoveSupportsType(contentType string) (bool, error) {
 	var carg0 *C.GAppInfo // in, none, converted
 	var carg1 *C.char     // in, none, string
@@ -7982,7 +7451,6 @@ func (appinfo *AppInfoInstance) RemoveSupportsType(contentType string) (bool, er
 // SetAsDefaultForExtension wraps g_app_info_set_as_default_for_extension
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_set_as_default_for_extension.g_app_info_set_as_default_for_extension.html
-//
 func (appinfo *AppInfoInstance) SetAsDefaultForExtension(extension string) (bool, error) {
 	var carg0 *C.GAppInfo // in, none, converted
 	var carg1 *C.char     // in, none, string
@@ -8013,7 +7481,6 @@ func (appinfo *AppInfoInstance) SetAsDefaultForExtension(extension string) (bool
 // SetAsDefaultForType wraps g_app_info_set_as_default_for_type
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_set_as_default_for_type.g_app_info_set_as_default_for_type.html
-//
 func (appinfo *AppInfoInstance) SetAsDefaultForType(contentType string) (bool, error) {
 	var carg0 *C.GAppInfo // in, none, converted
 	var carg1 *C.char     // in, none, string
@@ -8044,7 +7511,6 @@ func (appinfo *AppInfoInstance) SetAsDefaultForType(contentType string) (bool, e
 // SetAsLastUsedForType wraps g_app_info_set_as_last_used_for_type
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_set_as_last_used_for_type.g_app_info_set_as_last_used_for_type.html
-//
 func (appinfo *AppInfoInstance) SetAsLastUsedForType(contentType string) (bool, error) {
 	var carg0 *C.GAppInfo // in, none, converted
 	var carg1 *C.char     // in, none, string
@@ -8075,7 +7541,6 @@ func (appinfo *AppInfoInstance) SetAsLastUsedForType(contentType string) (bool, 
 // ShouldShow wraps g_app_info_should_show
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_should_show.g_app_info_should_show.html
-//
 func (appinfo *AppInfoInstance) ShouldShow() bool {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  C.gboolean  // return
@@ -8097,7 +7562,6 @@ func (appinfo *AppInfoInstance) ShouldShow() bool {
 // SupportsFiles wraps g_app_info_supports_files
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_supports_files.g_app_info_supports_files.html
-//
 func (appinfo *AppInfoInstance) SupportsFiles() bool {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  C.gboolean  // return
@@ -8119,7 +7583,6 @@ func (appinfo *AppInfoInstance) SupportsFiles() bool {
 // SupportsUris wraps g_app_info_supports_uris
 // 
 // see also https://docs.gtk.org/gio/method.g_app_info_supports_uris.g_app_info_supports_uris.html
-//
 func (appinfo *AppInfoInstance) SupportsUris() bool {
 	var carg0 *C.GAppInfo // in, none, converted
 	var cret  C.gboolean  // return
@@ -8149,24 +7612,20 @@ var _ AsyncInitable = (*AsyncInitableInstance)(nil)
 // AsyncInitable wraps GAsyncInitable
 // 
 // see also https://docs.gtk.org/gio/interface.AsyncInitable.html
-//
 type AsyncInitable interface {
 	upcastToGAsyncInitable() *AsyncInitableInstance
 
 	// InitAsync wraps g_async_initable_init_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_async_initable_init_async.g_async_initable_init_async.html
-	//
 	InitAsync(int32, Cancellable, AsyncReadyCallback)
 	// InitFinish wraps g_async_initable_init_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_async_initable_init_finish.g_async_initable_init_finish.html
-	//
 	InitFinish(AsyncResult) (bool, error)
 	// NewFinish wraps g_async_initable_new_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_async_initable_new_finish.g_async_initable_new_finish.html
-	//
 	NewFinish(AsyncResult) (gobject.Object, error)
 }
 
@@ -8216,7 +7675,6 @@ func UnsafeAsyncInitableToGlibFull(c AsyncInitable) unsafe.Pointer {
 // InitAsync wraps g_async_initable_init_async
 // 
 // see also https://docs.gtk.org/gio/method.g_async_initable_init_async.g_async_initable_init_async.html
-//
 func (initable *AsyncInitableInstance) InitAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GAsyncInitable     // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -8244,7 +7702,6 @@ func (initable *AsyncInitableInstance) InitAsync(ioPriority int32, cancellable C
 // InitFinish wraps g_async_initable_init_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_async_initable_init_finish.g_async_initable_init_finish.html
-//
 func (initable *AsyncInitableInstance) InitFinish(res AsyncResult) (bool, error) {
 	var carg0 *C.GAsyncInitable // in, none, converted
 	var carg1 *C.GAsyncResult   // in, none, converted
@@ -8274,7 +7731,6 @@ func (initable *AsyncInitableInstance) InitFinish(res AsyncResult) (bool, error)
 // NewFinish wraps g_async_initable_new_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_async_initable_new_finish.g_async_initable_new_finish.html
-//
 func (initable *AsyncInitableInstance) NewFinish(res AsyncResult) (gobject.Object, error) {
 	var carg0 *C.GAsyncInitable // in, none, converted
 	var carg1 *C.GAsyncResult   // in, none, converted
@@ -8310,19 +7766,16 @@ var _ AsyncResult = (*AsyncResultInstance)(nil)
 // AsyncResult wraps GAsyncResult
 // 
 // see also https://docs.gtk.org/gio/interface.AsyncResult.html
-//
 type AsyncResult interface {
 	upcastToGAsyncResult() *AsyncResultInstance
 
 	// GetSourceObject wraps g_async_result_get_source_object
 	// 
 	// see also https://docs.gtk.org/gio/method.g_async_result_get_source_object.g_async_result_get_source_object.html
-	//
 	GetSourceObject() gobject.Object
 	// LegacyPropagateError wraps g_async_result_legacy_propagate_error
 	// 
 	// see also https://docs.gtk.org/gio/method.g_async_result_legacy_propagate_error.g_async_result_legacy_propagate_error.html
-	//
 	LegacyPropagateError() (bool, error)
 }
 
@@ -8372,7 +7825,6 @@ func UnsafeAsyncResultToGlibFull(c AsyncResult) unsafe.Pointer {
 // GetSourceObject wraps g_async_result_get_source_object
 // 
 // see also https://docs.gtk.org/gio/method.g_async_result_get_source_object.g_async_result_get_source_object.html
-//
 func (res *AsyncResultInstance) GetSourceObject() gobject.Object {
 	var carg0 *C.GAsyncResult // in, none, converted
 	var cret  *C.GObject      // return, full, converted, nullable
@@ -8394,7 +7846,6 @@ func (res *AsyncResultInstance) GetSourceObject() gobject.Object {
 // LegacyPropagateError wraps g_async_result_legacy_propagate_error
 // 
 // see also https://docs.gtk.org/gio/method.g_async_result_legacy_propagate_error.g_async_result_legacy_propagate_error.html
-//
 func (res *AsyncResultInstance) LegacyPropagateError() (bool, error) {
 	var carg0 *C.GAsyncResult // in, none, converted
 	var cret  C.gboolean      // return
@@ -8429,24 +7880,20 @@ var _ Converter = (*ConverterInstance)(nil)
 // Converter wraps GConverter
 // 
 // see also https://docs.gtk.org/gio/interface.Converter.html
-//
 type Converter interface {
 	upcastToGConverter() *ConverterInstance
 
 	// Convert wraps g_converter_convert
 	// 
 	// see also https://docs.gtk.org/gio/method.g_converter_convert.g_converter_convert.html
-	//
 	Convert([]byte, []byte, ConverterFlags) (uint, uint, ConverterResult, error)
 	// ConvertBytes wraps g_converter_convert_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_converter_convert_bytes.g_converter_convert_bytes.html
-	//
 	ConvertBytes(*glib.Bytes) (*glib.Bytes, error)
 	// Reset wraps g_converter_reset
 	// 
 	// see also https://docs.gtk.org/gio/method.g_converter_reset.g_converter_reset.html
-	//
 	Reset()
 }
 
@@ -8496,7 +7943,6 @@ func UnsafeConverterToGlibFull(c Converter) unsafe.Pointer {
 // Convert wraps g_converter_convert
 // 
 // see also https://docs.gtk.org/gio/method.g_converter_convert.g_converter_convert.html
-//
 func (converter *ConverterInstance) Convert(inbuf []byte, outbuf []byte, flags ConverterFlags) (uint, uint, ConverterResult, error) {
 	var carg0 *C.GConverter      // in, none, converted
 	var carg1 unsafe.Pointer     // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -8544,7 +7990,6 @@ func (converter *ConverterInstance) Convert(inbuf []byte, outbuf []byte, flags C
 // ConvertBytes wraps g_converter_convert_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_converter_convert_bytes.g_converter_convert_bytes.html
-//
 func (converter *ConverterInstance) ConvertBytes(bytes *glib.Bytes) (*glib.Bytes, error) {
 	var carg0 *C.GConverter // in, none, converted
 	var carg1 *C.GBytes     // in, none, converted
@@ -8572,7 +8017,6 @@ func (converter *ConverterInstance) ConvertBytes(bytes *glib.Bytes) (*glib.Bytes
 // Reset wraps g_converter_reset
 // 
 // see also https://docs.gtk.org/gio/method.g_converter_reset.g_converter_reset.html
-//
 func (converter *ConverterInstance) Reset() {
 	var carg0 *C.GConverter // in, none, converted
 
@@ -8593,29 +8037,24 @@ var _ DatagramBased = (*DatagramBasedInstance)(nil)
 // DatagramBased wraps GDatagramBased
 // 
 // see also https://docs.gtk.org/gio/interface.DatagramBased.html
-//
 type DatagramBased interface {
 	upcastToGDatagramBased() *DatagramBasedInstance
 
 	// ConditionCheck wraps g_datagram_based_condition_check
 	// 
 	// see also https://docs.gtk.org/gio/method.g_datagram_based_condition_check.g_datagram_based_condition_check.html
-	//
 	ConditionCheck(glib.IOCondition) glib.IOCondition
 	// ConditionWait wraps g_datagram_based_condition_wait
 	// 
 	// see also https://docs.gtk.org/gio/method.g_datagram_based_condition_wait.g_datagram_based_condition_wait.html
-	//
 	ConditionWait(glib.IOCondition, int64, Cancellable) (bool, error)
 	// ReceiveMessages wraps g_datagram_based_receive_messages
 	// 
 	// see also https://docs.gtk.org/gio/method.g_datagram_based_receive_messages.g_datagram_based_receive_messages.html
-	//
 	ReceiveMessages([]InputMessage, int32, int64, Cancellable) (int32, error)
 	// SendMessages wraps g_datagram_based_send_messages
 	// 
 	// see also https://docs.gtk.org/gio/method.g_datagram_based_send_messages.g_datagram_based_send_messages.html
-	//
 	SendMessages([]OutputMessage, int32, int64, Cancellable) (int32, error)
 }
 
@@ -8665,7 +8104,6 @@ func UnsafeDatagramBasedToGlibFull(c DatagramBased) unsafe.Pointer {
 // ConditionCheck wraps g_datagram_based_condition_check
 // 
 // see also https://docs.gtk.org/gio/method.g_datagram_based_condition_check.g_datagram_based_condition_check.html
-//
 func (datagramBased *DatagramBasedInstance) ConditionCheck(condition glib.IOCondition) glib.IOCondition {
 	var carg0 *C.GDatagramBased // in, none, converted
 	var carg1 C.GIOCondition    // in, none, casted
@@ -8688,7 +8126,6 @@ func (datagramBased *DatagramBasedInstance) ConditionCheck(condition glib.IOCond
 // ConditionWait wraps g_datagram_based_condition_wait
 // 
 // see also https://docs.gtk.org/gio/method.g_datagram_based_condition_wait.g_datagram_based_condition_wait.html
-//
 func (datagramBased *DatagramBasedInstance) ConditionWait(condition glib.IOCondition, timeout int64, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDatagramBased // in, none, converted
 	var carg1 C.GIOCondition    // in, none, casted
@@ -8726,7 +8163,6 @@ func (datagramBased *DatagramBasedInstance) ConditionWait(condition glib.IOCondi
 // ReceiveMessages wraps g_datagram_based_receive_messages
 // 
 // see also https://docs.gtk.org/gio/method.g_datagram_based_receive_messages.g_datagram_based_receive_messages.html
-//
 func (datagramBased *DatagramBasedInstance) ReceiveMessages(messages []InputMessage, flags int32, timeout int64, cancellable Cancellable) (int32, error) {
 	var carg0 *C.GDatagramBased // in, none, converted
 	var carg1 *C.GInputMessage  // in, transfer: none, C Pointers: 1, Name: array[InputMessage], array (inner GInputMessage (*typesystem.Record), length-by: carg2)
@@ -8769,7 +8205,6 @@ func (datagramBased *DatagramBasedInstance) ReceiveMessages(messages []InputMess
 // SendMessages wraps g_datagram_based_send_messages
 // 
 // see also https://docs.gtk.org/gio/method.g_datagram_based_send_messages.g_datagram_based_send_messages.html
-//
 func (datagramBased *DatagramBasedInstance) SendMessages(messages []OutputMessage, flags int32, timeout int64, cancellable Cancellable) (int32, error) {
 	var carg0 *C.GDatagramBased // in, none, converted
 	var carg1 *C.GOutputMessage // in, transfer: none, C Pointers: 1, Name: array[OutputMessage], array (inner GOutputMessage (*typesystem.Record), length-by: carg2)
@@ -8820,173 +8255,140 @@ var _ Drive = (*DriveInstance)(nil)
 // Drive wraps GDrive
 // 
 // see also https://docs.gtk.org/gio/interface.Drive.html
-//
 type Drive interface {
 	upcastToGDrive() *DriveInstance
 
 	// CanEject wraps g_drive_can_eject
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_can_eject.g_drive_can_eject.html
-	//
 	CanEject() bool
 	// CanPollForMedia wraps g_drive_can_poll_for_media
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_can_poll_for_media.g_drive_can_poll_for_media.html
-	//
 	CanPollForMedia() bool
 	// CanStart wraps g_drive_can_start
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_can_start.g_drive_can_start.html
-	//
 	CanStart() bool
 	// CanStartDegraded wraps g_drive_can_start_degraded
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_can_start_degraded.g_drive_can_start_degraded.html
-	//
 	CanStartDegraded() bool
 	// CanStop wraps g_drive_can_stop
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_can_stop.g_drive_can_stop.html
-	//
 	CanStop() bool
 	// Eject wraps g_drive_eject
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_eject.g_drive_eject.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_drive_eject_with_operation() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	Eject(MountUnmountFlags, Cancellable, AsyncReadyCallback)
 	// EjectFinish wraps g_drive_eject_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_eject_finish.g_drive_eject_finish.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_drive_eject_with_operation_finish() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	EjectFinish(AsyncResult) (bool, error)
 	// EjectWithOperation wraps g_drive_eject_with_operation
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_eject_with_operation.g_drive_eject_with_operation.html
-	//
 	EjectWithOperation(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// EjectWithOperationFinish wraps g_drive_eject_with_operation_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_eject_with_operation_finish.g_drive_eject_with_operation_finish.html
-	//
 	EjectWithOperationFinish(AsyncResult) (bool, error)
 	// EnumerateIdentifiers wraps g_drive_enumerate_identifiers
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_enumerate_identifiers.g_drive_enumerate_identifiers.html
-	//
 	EnumerateIdentifiers() []string
 	// GetIcon wraps g_drive_get_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_get_icon.g_drive_get_icon.html
-	//
 	GetIcon() Icon
 	// GetIdentifier wraps g_drive_get_identifier
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_get_identifier.g_drive_get_identifier.html
-	//
 	GetIdentifier(string) string
 	// GetName wraps g_drive_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_get_name.g_drive_get_name.html
-	//
 	GetName() string
 	// GetSortKey wraps g_drive_get_sort_key
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_get_sort_key.g_drive_get_sort_key.html
-	//
 	GetSortKey() string
 	// GetStartStopType wraps g_drive_get_start_stop_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_get_start_stop_type.g_drive_get_start_stop_type.html
-	//
 	GetStartStopType() DriveStartStopType
 	// GetSymbolicIcon wraps g_drive_get_symbolic_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_get_symbolic_icon.g_drive_get_symbolic_icon.html
-	//
 	GetSymbolicIcon() Icon
 	// GetVolumes wraps g_drive_get_volumes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_get_volumes.g_drive_get_volumes.html
-	//
 	GetVolumes() []Volume
 	// HasMedia wraps g_drive_has_media
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_has_media.g_drive_has_media.html
-	//
 	HasMedia() bool
 	// HasVolumes wraps g_drive_has_volumes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_has_volumes.g_drive_has_volumes.html
-	//
 	HasVolumes() bool
 	// IsMediaCheckAutomatic wraps g_drive_is_media_check_automatic
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_is_media_check_automatic.g_drive_is_media_check_automatic.html
-	//
 	IsMediaCheckAutomatic() bool
 	// IsMediaRemovable wraps g_drive_is_media_removable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_is_media_removable.g_drive_is_media_removable.html
-	//
 	IsMediaRemovable() bool
 	// IsRemovable wraps g_drive_is_removable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_is_removable.g_drive_is_removable.html
-	//
 	IsRemovable() bool
 	// PollForMedia wraps g_drive_poll_for_media
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_poll_for_media.g_drive_poll_for_media.html
-	//
 	PollForMedia(Cancellable, AsyncReadyCallback)
 	// PollForMediaFinish wraps g_drive_poll_for_media_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_poll_for_media_finish.g_drive_poll_for_media_finish.html
-	//
 	PollForMediaFinish(AsyncResult) (bool, error)
 	// Start wraps g_drive_start
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_start.g_drive_start.html
-	//
 	Start(DriveStartFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// StartFinish wraps g_drive_start_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_start_finish.g_drive_start_finish.html
-	//
 	StartFinish(AsyncResult) (bool, error)
 	// Stop wraps g_drive_stop
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_stop.g_drive_stop.html
-	//
 	Stop(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// StopFinish wraps g_drive_stop_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_drive_stop_finish.g_drive_stop_finish.html
-	//
 	StopFinish(AsyncResult) (bool, error)
 	// ConnectChanged connects the provided callback to the "changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Drive.changed.html
-	//
 	ConnectChanged(func(Drive)) gobject.SignalHandle
 	// ConnectDisconnected connects the provided callback to the "disconnected" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Drive.disconnected.html
-	//
 	ConnectDisconnected(func(Drive)) gobject.SignalHandle
 	// ConnectEjectButton connects the provided callback to the "eject-button" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Drive.eject-button.html
-	//
 	ConnectEjectButton(func(Drive)) gobject.SignalHandle
 	// ConnectStopButton connects the provided callback to the "stop-button" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Drive.stop-button.html
-	//
 	ConnectStopButton(func(Drive)) gobject.SignalHandle
 }
 
@@ -9036,7 +8438,6 @@ func UnsafeDriveToGlibFull(c Drive) unsafe.Pointer {
 // CanEject wraps g_drive_can_eject
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_can_eject.g_drive_can_eject.html
-//
 func (drive *DriveInstance) CanEject() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9058,7 +8459,6 @@ func (drive *DriveInstance) CanEject() bool {
 // CanPollForMedia wraps g_drive_can_poll_for_media
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_can_poll_for_media.g_drive_can_poll_for_media.html
-//
 func (drive *DriveInstance) CanPollForMedia() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9080,7 +8480,6 @@ func (drive *DriveInstance) CanPollForMedia() bool {
 // CanStart wraps g_drive_can_start
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_can_start.g_drive_can_start.html
-//
 func (drive *DriveInstance) CanStart() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9102,7 +8501,6 @@ func (drive *DriveInstance) CanStart() bool {
 // CanStartDegraded wraps g_drive_can_start_degraded
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_can_start_degraded.g_drive_can_start_degraded.html
-//
 func (drive *DriveInstance) CanStartDegraded() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9124,7 +8522,6 @@ func (drive *DriveInstance) CanStartDegraded() bool {
 // CanStop wraps g_drive_can_stop
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_can_stop.g_drive_can_stop.html
-//
 func (drive *DriveInstance) CanStop() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9147,8 +8544,7 @@ func (drive *DriveInstance) CanStop() bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_eject.g_drive_eject.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_drive_eject_with_operation() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (drive *DriveInstance) Eject(flags MountUnmountFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDrive             // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -9177,8 +8573,7 @@ func (drive *DriveInstance) Eject(flags MountUnmountFlags, cancellable Cancellab
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_eject_finish.g_drive_eject_finish.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_drive_eject_with_operation_finish() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (drive *DriveInstance) EjectFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDrive       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -9208,7 +8603,6 @@ func (drive *DriveInstance) EjectFinish(result AsyncResult) (bool, error) {
 // EjectWithOperation wraps g_drive_eject_with_operation
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_eject_with_operation.g_drive_eject_with_operation.html
-//
 func (drive *DriveInstance) EjectWithOperation(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDrive             // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -9241,7 +8635,6 @@ func (drive *DriveInstance) EjectWithOperation(flags MountUnmountFlags, mountOpe
 // EjectWithOperationFinish wraps g_drive_eject_with_operation_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_eject_with_operation_finish.g_drive_eject_with_operation_finish.html
-//
 func (drive *DriveInstance) EjectWithOperationFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDrive       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -9271,7 +8664,6 @@ func (drive *DriveInstance) EjectWithOperationFinish(result AsyncResult) (bool, 
 // EnumerateIdentifiers wraps g_drive_enumerate_identifiers
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_enumerate_identifiers.g_drive_enumerate_identifiers.html
-//
 func (drive *DriveInstance) EnumerateIdentifiers() []string {
 	var carg0 *C.GDrive // in, none, converted
 	var cret  **C.char  // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -9293,7 +8685,6 @@ func (drive *DriveInstance) EnumerateIdentifiers() []string {
 // GetIcon wraps g_drive_get_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_get_icon.g_drive_get_icon.html
-//
 func (drive *DriveInstance) GetIcon() Icon {
 	var carg0 *C.GDrive // in, none, converted
 	var cret  *C.GIcon  // return, full, converted
@@ -9313,7 +8704,6 @@ func (drive *DriveInstance) GetIcon() Icon {
 // GetIdentifier wraps g_drive_get_identifier
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_get_identifier.g_drive_get_identifier.html
-//
 func (drive *DriveInstance) GetIdentifier(kind string) string {
 	var carg0 *C.GDrive // in, none, converted
 	var carg1 *C.char   // in, none, string
@@ -9340,7 +8730,6 @@ func (drive *DriveInstance) GetIdentifier(kind string) string {
 // GetName wraps g_drive_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_get_name.g_drive_get_name.html
-//
 func (drive *DriveInstance) GetName() string {
 	var carg0 *C.GDrive // in, none, converted
 	var cret  *C.char   // return, full, string
@@ -9361,7 +8750,6 @@ func (drive *DriveInstance) GetName() string {
 // GetSortKey wraps g_drive_get_sort_key
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_get_sort_key.g_drive_get_sort_key.html
-//
 func (drive *DriveInstance) GetSortKey() string {
 	var carg0 *C.GDrive // in, none, converted
 	var cret  *C.gchar  // return, none, string, nullable-string
@@ -9383,7 +8771,6 @@ func (drive *DriveInstance) GetSortKey() string {
 // GetStartStopType wraps g_drive_get_start_stop_type
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_get_start_stop_type.g_drive_get_start_stop_type.html
-//
 func (drive *DriveInstance) GetStartStopType() DriveStartStopType {
 	var carg0 *C.GDrive             // in, none, converted
 	var cret  C.GDriveStartStopType // return, none, casted
@@ -9403,7 +8790,6 @@ func (drive *DriveInstance) GetStartStopType() DriveStartStopType {
 // GetSymbolicIcon wraps g_drive_get_symbolic_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_get_symbolic_icon.g_drive_get_symbolic_icon.html
-//
 func (drive *DriveInstance) GetSymbolicIcon() Icon {
 	var carg0 *C.GDrive // in, none, converted
 	var cret  *C.GIcon  // return, full, converted
@@ -9423,7 +8809,6 @@ func (drive *DriveInstance) GetSymbolicIcon() Icon {
 // GetVolumes wraps g_drive_get_volumes
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_get_volumes.g_drive_get_volumes.html
-//
 func (drive *DriveInstance) GetVolumes() []Volume {
 	var carg0 *C.GDrive // in, none, converted
 	var cret  *C.GList  // container, transfer: full
@@ -9450,7 +8835,6 @@ func (drive *DriveInstance) GetVolumes() []Volume {
 // HasMedia wraps g_drive_has_media
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_has_media.g_drive_has_media.html
-//
 func (drive *DriveInstance) HasMedia() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9472,7 +8856,6 @@ func (drive *DriveInstance) HasMedia() bool {
 // HasVolumes wraps g_drive_has_volumes
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_has_volumes.g_drive_has_volumes.html
-//
 func (drive *DriveInstance) HasVolumes() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9494,7 +8877,6 @@ func (drive *DriveInstance) HasVolumes() bool {
 // IsMediaCheckAutomatic wraps g_drive_is_media_check_automatic
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_is_media_check_automatic.g_drive_is_media_check_automatic.html
-//
 func (drive *DriveInstance) IsMediaCheckAutomatic() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9516,7 +8898,6 @@ func (drive *DriveInstance) IsMediaCheckAutomatic() bool {
 // IsMediaRemovable wraps g_drive_is_media_removable
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_is_media_removable.g_drive_is_media_removable.html
-//
 func (drive *DriveInstance) IsMediaRemovable() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9538,7 +8919,6 @@ func (drive *DriveInstance) IsMediaRemovable() bool {
 // IsRemovable wraps g_drive_is_removable
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_is_removable.g_drive_is_removable.html
-//
 func (drive *DriveInstance) IsRemovable() bool {
 	var carg0 *C.GDrive  // in, none, converted
 	var cret  C.gboolean // return
@@ -9560,7 +8940,6 @@ func (drive *DriveInstance) IsRemovable() bool {
 // PollForMedia wraps g_drive_poll_for_media
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_poll_for_media.g_drive_poll_for_media.html
-//
 func (drive *DriveInstance) PollForMedia(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDrive             // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -9585,7 +8964,6 @@ func (drive *DriveInstance) PollForMedia(cancellable Cancellable, callback Async
 // PollForMediaFinish wraps g_drive_poll_for_media_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_poll_for_media_finish.g_drive_poll_for_media_finish.html
-//
 func (drive *DriveInstance) PollForMediaFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDrive       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -9615,7 +8993,6 @@ func (drive *DriveInstance) PollForMediaFinish(result AsyncResult) (bool, error)
 // Start wraps g_drive_start
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_start.g_drive_start.html
-//
 func (drive *DriveInstance) Start(flags DriveStartFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDrive             // in, none, converted
 	var carg1 C.GDriveStartFlags    // in, none, casted
@@ -9648,7 +9025,6 @@ func (drive *DriveInstance) Start(flags DriveStartFlags, mountOperation MountOpe
 // StartFinish wraps g_drive_start_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_start_finish.g_drive_start_finish.html
-//
 func (drive *DriveInstance) StartFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDrive       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -9678,7 +9054,6 @@ func (drive *DriveInstance) StartFinish(result AsyncResult) (bool, error) {
 // Stop wraps g_drive_stop
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_stop.g_drive_stop.html
-//
 func (drive *DriveInstance) Stop(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDrive             // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -9711,7 +9086,6 @@ func (drive *DriveInstance) Stop(flags MountUnmountFlags, mountOperation MountOp
 // StopFinish wraps g_drive_stop_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_drive_stop_finish.g_drive_stop_finish.html
-//
 func (drive *DriveInstance) StopFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDrive       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -9741,7 +9115,6 @@ func (drive *DriveInstance) StopFinish(result AsyncResult) (bool, error) {
 // ConnectChanged connects the provided callback to the "changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Drive.changed.html
-//
 func (o *DriveInstance) ConnectChanged(fn func(Drive)) gobject.SignalHandle {
 	return o.Instance.Connect("changed", fn)
 }
@@ -9749,7 +9122,6 @@ func (o *DriveInstance) ConnectChanged(fn func(Drive)) gobject.SignalHandle {
 // ConnectDisconnected connects the provided callback to the "disconnected" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Drive.disconnected.html
-//
 func (o *DriveInstance) ConnectDisconnected(fn func(Drive)) gobject.SignalHandle {
 	return o.Instance.Connect("disconnected", fn)
 }
@@ -9757,7 +9129,6 @@ func (o *DriveInstance) ConnectDisconnected(fn func(Drive)) gobject.SignalHandle
 // ConnectEjectButton connects the provided callback to the "eject-button" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Drive.eject-button.html
-//
 func (o *DriveInstance) ConnectEjectButton(fn func(Drive)) gobject.SignalHandle {
 	return o.Instance.Connect("eject-button", fn)
 }
@@ -9765,7 +9136,6 @@ func (o *DriveInstance) ConnectEjectButton(fn func(Drive)) gobject.SignalHandle 
 // ConnectStopButton connects the provided callback to the "stop-button" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Drive.stop-button.html
-//
 func (o *DriveInstance) ConnectStopButton(fn func(Drive)) gobject.SignalHandle {
 	return o.Instance.Connect("stop-button", fn)
 }
@@ -9781,152 +9151,120 @@ var _ DtlsConnection = (*DtlsConnectionInstance)(nil)
 // DtlsConnection wraps GDtlsConnection
 // 
 // see also https://docs.gtk.org/gio/interface.DtlsConnection.html
-//
 type DtlsConnection interface {
 	upcastToGDtlsConnection() *DtlsConnectionInstance
 
 	// Close wraps g_dtls_connection_close
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_close.g_dtls_connection_close.html
-	//
 	Close(Cancellable) (bool, error)
 	// CloseAsync wraps g_dtls_connection_close_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_close_async.g_dtls_connection_close_async.html
-	//
 	CloseAsync(int32, Cancellable, AsyncReadyCallback)
 	// CloseFinish wraps g_dtls_connection_close_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_close_finish.g_dtls_connection_close_finish.html
-	//
 	CloseFinish(AsyncResult) (bool, error)
 	// EmitAcceptCertificate wraps g_dtls_connection_emit_accept_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_emit_accept_certificate.g_dtls_connection_emit_accept_certificate.html
-	//
 	EmitAcceptCertificate(TlsCertificate, TlsCertificateFlags) bool
 	// GetCertificate wraps g_dtls_connection_get_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_certificate.g_dtls_connection_get_certificate.html
-	//
 	GetCertificate() TlsCertificate
 	// GetCiphersuiteName wraps g_dtls_connection_get_ciphersuite_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_ciphersuite_name.g_dtls_connection_get_ciphersuite_name.html
-	//
 	GetCiphersuiteName() string
 	// GetDatabase wraps g_dtls_connection_get_database
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_database.g_dtls_connection_get_database.html
-	//
 	GetDatabase() TlsDatabase
 	// GetInteraction wraps g_dtls_connection_get_interaction
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_interaction.g_dtls_connection_get_interaction.html
-	//
 	GetInteraction() TlsInteraction
 	// GetNegotiatedProtocol wraps g_dtls_connection_get_negotiated_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_negotiated_protocol.g_dtls_connection_get_negotiated_protocol.html
-	//
 	GetNegotiatedProtocol() string
 	// GetPeerCertificate wraps g_dtls_connection_get_peer_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_peer_certificate.g_dtls_connection_get_peer_certificate.html
-	//
 	GetPeerCertificate() TlsCertificate
 	// GetPeerCertificateErrors wraps g_dtls_connection_get_peer_certificate_errors
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_peer_certificate_errors.g_dtls_connection_get_peer_certificate_errors.html
-	//
 	GetPeerCertificateErrors() TlsCertificateFlags
 	// GetProtocolVersion wraps g_dtls_connection_get_protocol_version
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_protocol_version.g_dtls_connection_get_protocol_version.html
-	//
 	GetProtocolVersion() TlsProtocolVersion
 	// GetRehandshakeMode wraps g_dtls_connection_get_rehandshake_mode
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_rehandshake_mode.g_dtls_connection_get_rehandshake_mode.html
 	//
-	//
-	// Deprecated: (since 2.64.0) Changing the rehandshake mode is no longer
-	//   required for compatibility. Also, rehandshaking has been removed
-	//   from the TLS protocol in TLS 1.3.
+	// Deprecated: (since 2.64.0) see the provided link for the reason
 	GetRehandshakeMode() TlsRehandshakeMode
 	// GetRequireCloseNotify wraps g_dtls_connection_get_require_close_notify
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_get_require_close_notify.g_dtls_connection_get_require_close_notify.html
-	//
 	GetRequireCloseNotify() bool
 	// Handshake wraps g_dtls_connection_handshake
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_handshake.g_dtls_connection_handshake.html
-	//
 	Handshake(Cancellable) (bool, error)
 	// HandshakeAsync wraps g_dtls_connection_handshake_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_handshake_async.g_dtls_connection_handshake_async.html
-	//
 	HandshakeAsync(int32, Cancellable, AsyncReadyCallback)
 	// HandshakeFinish wraps g_dtls_connection_handshake_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_handshake_finish.g_dtls_connection_handshake_finish.html
-	//
 	HandshakeFinish(AsyncResult) (bool, error)
 	// SetAdvertisedProtocols wraps g_dtls_connection_set_advertised_protocols
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_set_advertised_protocols.g_dtls_connection_set_advertised_protocols.html
-	//
 	SetAdvertisedProtocols([]string)
 	// SetCertificate wraps g_dtls_connection_set_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_set_certificate.g_dtls_connection_set_certificate.html
-	//
 	SetCertificate(TlsCertificate)
 	// SetDatabase wraps g_dtls_connection_set_database
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_set_database.g_dtls_connection_set_database.html
-	//
 	SetDatabase(TlsDatabase)
 	// SetInteraction wraps g_dtls_connection_set_interaction
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_set_interaction.g_dtls_connection_set_interaction.html
-	//
 	SetInteraction(TlsInteraction)
 	// SetRehandshakeMode wraps g_dtls_connection_set_rehandshake_mode
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_set_rehandshake_mode.g_dtls_connection_set_rehandshake_mode.html
 	//
-	//
-	// Deprecated: (since 2.60.0) Changing the rehandshake mode is no longer
-	//   required for compatibility. Also, rehandshaking has been removed
-	//   from the TLS protocol in TLS 1.3.
+	// Deprecated: (since 2.60.0) see the provided link for the reason
 	SetRehandshakeMode(TlsRehandshakeMode)
 	// SetRequireCloseNotify wraps g_dtls_connection_set_require_close_notify
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_set_require_close_notify.g_dtls_connection_set_require_close_notify.html
-	//
 	SetRequireCloseNotify(bool)
 	// Shutdown wraps g_dtls_connection_shutdown
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_shutdown.g_dtls_connection_shutdown.html
-	//
 	Shutdown(bool, bool, Cancellable) (bool, error)
 	// ShutdownAsync wraps g_dtls_connection_shutdown_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_shutdown_async.g_dtls_connection_shutdown_async.html
-	//
 	ShutdownAsync(bool, bool, int32, Cancellable, AsyncReadyCallback)
 	// ShutdownFinish wraps g_dtls_connection_shutdown_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_connection_shutdown_finish.g_dtls_connection_shutdown_finish.html
-	//
 	ShutdownFinish(AsyncResult) (bool, error)
 	// ConnectAcceptCertificate connects the provided callback to the "accept-certificate" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.DtlsConnection.accept-certificate.html
-	//
 	ConnectAcceptCertificate(func(DtlsConnection, TlsCertificate, TlsCertificateFlags) bool) gobject.SignalHandle
 }
 
@@ -9976,7 +9314,6 @@ func UnsafeDtlsConnectionToGlibFull(c DtlsConnection) unsafe.Pointer {
 // Close wraps g_dtls_connection_close
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_close.g_dtls_connection_close.html
-//
 func (conn *DtlsConnectionInstance) Close(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GCancellable    // in, none, converted, nullable
@@ -10008,7 +9345,6 @@ func (conn *DtlsConnectionInstance) Close(cancellable Cancellable) (bool, error)
 // CloseAsync wraps g_dtls_connection_close_async
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_close_async.g_dtls_connection_close_async.html
-//
 func (conn *DtlsConnectionInstance) CloseAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDtlsConnection    // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -10036,7 +9372,6 @@ func (conn *DtlsConnectionInstance) CloseAsync(ioPriority int32, cancellable Can
 // CloseFinish wraps g_dtls_connection_close_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_close_finish.g_dtls_connection_close_finish.html
-//
 func (conn *DtlsConnectionInstance) CloseFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -10066,7 +9401,6 @@ func (conn *DtlsConnectionInstance) CloseFinish(result AsyncResult) (bool, error
 // EmitAcceptCertificate wraps g_dtls_connection_emit_accept_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_emit_accept_certificate.g_dtls_connection_emit_accept_certificate.html
-//
 func (conn *DtlsConnectionInstance) EmitAcceptCertificate(peerCert TlsCertificate, errors TlsCertificateFlags) bool {
 	var carg0 *C.GDtlsConnection     // in, none, converted
 	var carg1 *C.GTlsCertificate     // in, none, converted
@@ -10094,7 +9428,6 @@ func (conn *DtlsConnectionInstance) EmitAcceptCertificate(peerCert TlsCertificat
 // GetCertificate wraps g_dtls_connection_get_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_certificate.g_dtls_connection_get_certificate.html
-//
 func (conn *DtlsConnectionInstance) GetCertificate() TlsCertificate {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var cret  *C.GTlsCertificate // return, none, converted, nullable
@@ -10116,7 +9449,6 @@ func (conn *DtlsConnectionInstance) GetCertificate() TlsCertificate {
 // GetCiphersuiteName wraps g_dtls_connection_get_ciphersuite_name
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_ciphersuite_name.g_dtls_connection_get_ciphersuite_name.html
-//
 func (conn *DtlsConnectionInstance) GetCiphersuiteName() string {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var cret  *C.gchar           // return, full, string, nullable-string
@@ -10139,7 +9471,6 @@ func (conn *DtlsConnectionInstance) GetCiphersuiteName() string {
 // GetDatabase wraps g_dtls_connection_get_database
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_database.g_dtls_connection_get_database.html
-//
 func (conn *DtlsConnectionInstance) GetDatabase() TlsDatabase {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var cret  *C.GTlsDatabase    // return, none, converted, nullable
@@ -10161,7 +9492,6 @@ func (conn *DtlsConnectionInstance) GetDatabase() TlsDatabase {
 // GetInteraction wraps g_dtls_connection_get_interaction
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_interaction.g_dtls_connection_get_interaction.html
-//
 func (conn *DtlsConnectionInstance) GetInteraction() TlsInteraction {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var cret  *C.GTlsInteraction // return, none, converted, nullable
@@ -10183,7 +9513,6 @@ func (conn *DtlsConnectionInstance) GetInteraction() TlsInteraction {
 // GetNegotiatedProtocol wraps g_dtls_connection_get_negotiated_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_negotiated_protocol.g_dtls_connection_get_negotiated_protocol.html
-//
 func (conn *DtlsConnectionInstance) GetNegotiatedProtocol() string {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var cret  *C.gchar           // return, none, string, nullable-string
@@ -10205,7 +9534,6 @@ func (conn *DtlsConnectionInstance) GetNegotiatedProtocol() string {
 // GetPeerCertificate wraps g_dtls_connection_get_peer_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_peer_certificate.g_dtls_connection_get_peer_certificate.html
-//
 func (conn *DtlsConnectionInstance) GetPeerCertificate() TlsCertificate {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var cret  *C.GTlsCertificate // return, none, converted, nullable
@@ -10227,7 +9555,6 @@ func (conn *DtlsConnectionInstance) GetPeerCertificate() TlsCertificate {
 // GetPeerCertificateErrors wraps g_dtls_connection_get_peer_certificate_errors
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_peer_certificate_errors.g_dtls_connection_get_peer_certificate_errors.html
-//
 func (conn *DtlsConnectionInstance) GetPeerCertificateErrors() TlsCertificateFlags {
 	var carg0 *C.GDtlsConnection     // in, none, converted
 	var cret  C.GTlsCertificateFlags // return, none, casted
@@ -10247,7 +9574,6 @@ func (conn *DtlsConnectionInstance) GetPeerCertificateErrors() TlsCertificateFla
 // GetProtocolVersion wraps g_dtls_connection_get_protocol_version
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_protocol_version.g_dtls_connection_get_protocol_version.html
-//
 func (conn *DtlsConnectionInstance) GetProtocolVersion() TlsProtocolVersion {
 	var carg0 *C.GDtlsConnection    // in, none, converted
 	var cret  C.GTlsProtocolVersion // return, none, casted
@@ -10268,10 +9594,7 @@ func (conn *DtlsConnectionInstance) GetProtocolVersion() TlsProtocolVersion {
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_rehandshake_mode.g_dtls_connection_get_rehandshake_mode.html
 //
-//
-// Deprecated: (since 2.64.0) Changing the rehandshake mode is no longer
-//   required for compatibility. Also, rehandshaking has been removed
-//   from the TLS protocol in TLS 1.3.
+// Deprecated: (since 2.64.0) see the provided link for the reason
 func (conn *DtlsConnectionInstance) GetRehandshakeMode() TlsRehandshakeMode {
 	var carg0 *C.GDtlsConnection    // in, none, converted
 	var cret  C.GTlsRehandshakeMode // return, none, casted
@@ -10291,7 +9614,6 @@ func (conn *DtlsConnectionInstance) GetRehandshakeMode() TlsRehandshakeMode {
 // GetRequireCloseNotify wraps g_dtls_connection_get_require_close_notify
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_get_require_close_notify.g_dtls_connection_get_require_close_notify.html
-//
 func (conn *DtlsConnectionInstance) GetRequireCloseNotify() bool {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var cret  C.gboolean         // return
@@ -10313,7 +9635,6 @@ func (conn *DtlsConnectionInstance) GetRequireCloseNotify() bool {
 // Handshake wraps g_dtls_connection_handshake
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_handshake.g_dtls_connection_handshake.html
-//
 func (conn *DtlsConnectionInstance) Handshake(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GCancellable    // in, none, converted, nullable
@@ -10345,7 +9666,6 @@ func (conn *DtlsConnectionInstance) Handshake(cancellable Cancellable) (bool, er
 // HandshakeAsync wraps g_dtls_connection_handshake_async
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_handshake_async.g_dtls_connection_handshake_async.html
-//
 func (conn *DtlsConnectionInstance) HandshakeAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDtlsConnection    // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -10373,7 +9693,6 @@ func (conn *DtlsConnectionInstance) HandshakeAsync(ioPriority int32, cancellable
 // HandshakeFinish wraps g_dtls_connection_handshake_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_handshake_finish.g_dtls_connection_handshake_finish.html
-//
 func (conn *DtlsConnectionInstance) HandshakeFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -10403,7 +9722,6 @@ func (conn *DtlsConnectionInstance) HandshakeFinish(result AsyncResult) (bool, e
 // SetAdvertisedProtocols wraps g_dtls_connection_set_advertised_protocols
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_set_advertised_protocols.g_dtls_connection_set_advertised_protocols.html
-//
 func (conn *DtlsConnectionInstance) SetAdvertisedProtocols(protocols []string) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 **C.gchar          // in, transfer: none, C Pointers: 2, Name: array[utf8], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -10421,7 +9739,6 @@ func (conn *DtlsConnectionInstance) SetAdvertisedProtocols(protocols []string) {
 // SetCertificate wraps g_dtls_connection_set_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_set_certificate.g_dtls_connection_set_certificate.html
-//
 func (conn *DtlsConnectionInstance) SetCertificate(certificate TlsCertificate) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GTlsCertificate // in, none, converted
@@ -10437,7 +9754,6 @@ func (conn *DtlsConnectionInstance) SetCertificate(certificate TlsCertificate) {
 // SetDatabase wraps g_dtls_connection_set_database
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_set_database.g_dtls_connection_set_database.html
-//
 func (conn *DtlsConnectionInstance) SetDatabase(database TlsDatabase) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GTlsDatabase    // in, none, converted, nullable
@@ -10455,7 +9771,6 @@ func (conn *DtlsConnectionInstance) SetDatabase(database TlsDatabase) {
 // SetInteraction wraps g_dtls_connection_set_interaction
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_set_interaction.g_dtls_connection_set_interaction.html
-//
 func (conn *DtlsConnectionInstance) SetInteraction(interaction TlsInteraction) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GTlsInteraction // in, none, converted, nullable
@@ -10474,10 +9789,7 @@ func (conn *DtlsConnectionInstance) SetInteraction(interaction TlsInteraction) {
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_set_rehandshake_mode.g_dtls_connection_set_rehandshake_mode.html
 //
-//
-// Deprecated: (since 2.60.0) Changing the rehandshake mode is no longer
-//   required for compatibility. Also, rehandshaking has been removed
-//   from the TLS protocol in TLS 1.3.
+// Deprecated: (since 2.60.0) see the provided link for the reason
 func (conn *DtlsConnectionInstance) SetRehandshakeMode(mode TlsRehandshakeMode) {
 	var carg0 *C.GDtlsConnection    // in, none, converted
 	var carg1 C.GTlsRehandshakeMode // in, none, casted
@@ -10493,7 +9805,6 @@ func (conn *DtlsConnectionInstance) SetRehandshakeMode(mode TlsRehandshakeMode) 
 // SetRequireCloseNotify wraps g_dtls_connection_set_require_close_notify
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_set_require_close_notify.g_dtls_connection_set_require_close_notify.html
-//
 func (conn *DtlsConnectionInstance) SetRequireCloseNotify(requireCloseNotify bool) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 C.gboolean         // in
@@ -10511,7 +9822,6 @@ func (conn *DtlsConnectionInstance) SetRequireCloseNotify(requireCloseNotify boo
 // Shutdown wraps g_dtls_connection_shutdown
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_shutdown.g_dtls_connection_shutdown.html
-//
 func (conn *DtlsConnectionInstance) Shutdown(shutdownRead bool, shutdownWrite bool, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 C.gboolean         // in
@@ -10553,7 +9863,6 @@ func (conn *DtlsConnectionInstance) Shutdown(shutdownRead bool, shutdownWrite bo
 // ShutdownAsync wraps g_dtls_connection_shutdown_async
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_shutdown_async.g_dtls_connection_shutdown_async.html
-//
 func (conn *DtlsConnectionInstance) ShutdownAsync(shutdownRead bool, shutdownWrite bool, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDtlsConnection    // in, none, converted
 	var carg1 C.gboolean            // in
@@ -10591,7 +9900,6 @@ func (conn *DtlsConnectionInstance) ShutdownAsync(shutdownRead bool, shutdownWri
 // ShutdownFinish wraps g_dtls_connection_shutdown_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_connection_shutdown_finish.g_dtls_connection_shutdown_finish.html
-//
 func (conn *DtlsConnectionInstance) ShutdownFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GDtlsConnection // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -10621,7 +9929,6 @@ func (conn *DtlsConnectionInstance) ShutdownFinish(result AsyncResult) (bool, er
 // ConnectAcceptCertificate connects the provided callback to the "accept-certificate" signal
 // 
 // see also https://docs.gtk.org/gio/signal.DtlsConnection.accept-certificate.html
-//
 func (o *DtlsConnectionInstance) ConnectAcceptCertificate(fn func(DtlsConnection, TlsCertificate, TlsCertificateFlags) bool) gobject.SignalHandle {
 	return o.Instance.Connect("accept-certificate", fn)
 }
@@ -10637,7 +9944,6 @@ var _ DtlsServerConnection = (*DtlsServerConnectionInstance)(nil)
 // DtlsServerConnection wraps GDtlsServerConnection
 // 
 // see also https://docs.gtk.org/gio/interface.DtlsServerConnection.html
-//
 type DtlsServerConnection interface {
 	upcastToGDtlsServerConnection() *DtlsServerConnectionInstance
 }
@@ -10688,7 +9994,6 @@ func UnsafeDtlsServerConnectionToGlibFull(c DtlsServerConnection) unsafe.Pointer
 // NewDtlsServerConnection wraps g_dtls_server_connection_new
 // 
 // see also https://docs.gtk.org/gio/func.g_dtls_server_connection_new.html
-//
 func NewDtlsServerConnection(baseSocket DatagramBased, certificate TlsCertificate) (DtlsServerConnection, error) {
 	var carg1 *C.GDatagramBased  // in, none, converted
 	var carg2 *C.GTlsCertificate // in, none, converted, nullable
@@ -10726,619 +10031,496 @@ var _ File = (*FileInstance)(nil)
 // File wraps GFile
 // 
 // see also https://docs.gtk.org/gio/interface.File.html
-//
 type File interface {
 	upcastToGFile() *FileInstance
 
 	// AppendTo wraps g_file_append_to
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_append_to.g_file_append_to.html
-	//
 	AppendTo(FileCreateFlags, Cancellable) (FileOutputStream, error)
 	// AppendToAsync wraps g_file_append_to_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_append_to_async.g_file_append_to_async.html
-	//
 	AppendToAsync(FileCreateFlags, int32, Cancellable, AsyncReadyCallback)
 	// AppendToFinish wraps g_file_append_to_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_append_to_finish.g_file_append_to_finish.html
-	//
 	AppendToFinish(AsyncResult) (FileOutputStream, error)
 	// BuildAttributeListForCopy wraps g_file_build_attribute_list_for_copy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_build_attribute_list_for_copy.g_file_build_attribute_list_for_copy.html
-	//
 	BuildAttributeListForCopy(FileCopyFlags, Cancellable) (string, error)
 	// CopyAttributes wraps g_file_copy_attributes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_copy_attributes.g_file_copy_attributes.html
-	//
 	CopyAttributes(File, FileCopyFlags, Cancellable) (bool, error)
 	// CopyFinish wraps g_file_copy_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_copy_finish.g_file_copy_finish.html
-	//
 	CopyFinish(AsyncResult) (bool, error)
 	// Create wraps g_file_create
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_create.g_file_create.html
-	//
 	Create(FileCreateFlags, Cancellable) (FileOutputStream, error)
 	// CreateAsync wraps g_file_create_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_create_async.g_file_create_async.html
-	//
 	CreateAsync(FileCreateFlags, int32, Cancellable, AsyncReadyCallback)
 	// CreateFinish wraps g_file_create_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_create_finish.g_file_create_finish.html
-	//
 	CreateFinish(AsyncResult) (FileOutputStream, error)
 	// CreateReadwrite wraps g_file_create_readwrite
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_create_readwrite.g_file_create_readwrite.html
-	//
 	CreateReadwrite(FileCreateFlags, Cancellable) (FileIOStream, error)
 	// CreateReadwriteAsync wraps g_file_create_readwrite_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_create_readwrite_async.g_file_create_readwrite_async.html
-	//
 	CreateReadwriteAsync(FileCreateFlags, int32, Cancellable, AsyncReadyCallback)
 	// CreateReadwriteFinish wraps g_file_create_readwrite_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_create_readwrite_finish.g_file_create_readwrite_finish.html
-	//
 	CreateReadwriteFinish(AsyncResult) (FileIOStream, error)
 	// Delete wraps g_file_delete
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_delete.g_file_delete.html
-	//
 	Delete(Cancellable) (bool, error)
 	// DeleteAsync wraps g_file_delete_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_delete_async.g_file_delete_async.html
-	//
 	DeleteAsync(int32, Cancellable, AsyncReadyCallback)
 	// DeleteFinish wraps g_file_delete_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_delete_finish.g_file_delete_finish.html
-	//
 	DeleteFinish(AsyncResult) (bool, error)
 	// Dup wraps g_file_dup
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_dup.g_file_dup.html
-	//
 	Dup() File
 	// EjectMountable wraps g_file_eject_mountable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_eject_mountable.g_file_eject_mountable.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_file_eject_mountable_with_operation() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	EjectMountable(MountUnmountFlags, Cancellable, AsyncReadyCallback)
 	// EjectMountableFinish wraps g_file_eject_mountable_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_eject_mountable_finish.g_file_eject_mountable_finish.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_file_eject_mountable_with_operation_finish()
-	//   instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	EjectMountableFinish(AsyncResult) (bool, error)
 	// EjectMountableWithOperation wraps g_file_eject_mountable_with_operation
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_eject_mountable_with_operation.g_file_eject_mountable_with_operation.html
-	//
 	EjectMountableWithOperation(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// EjectMountableWithOperationFinish wraps g_file_eject_mountable_with_operation_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_eject_mountable_with_operation_finish.g_file_eject_mountable_with_operation_finish.html
-	//
 	EjectMountableWithOperationFinish(AsyncResult) (bool, error)
 	// EnumerateChildren wraps g_file_enumerate_children
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerate_children.g_file_enumerate_children.html
-	//
 	EnumerateChildren(string, FileQueryInfoFlags, Cancellable) (FileEnumerator, error)
 	// EnumerateChildrenAsync wraps g_file_enumerate_children_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerate_children_async.g_file_enumerate_children_async.html
-	//
 	EnumerateChildrenAsync(string, FileQueryInfoFlags, int32, Cancellable, AsyncReadyCallback)
 	// EnumerateChildrenFinish wraps g_file_enumerate_children_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerate_children_finish.g_file_enumerate_children_finish.html
-	//
 	EnumerateChildrenFinish(AsyncResult) (FileEnumerator, error)
 	// Equal wraps g_file_equal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_equal.g_file_equal.html
-	//
 	Equal(File) bool
 	// FindEnclosingMount wraps g_file_find_enclosing_mount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_find_enclosing_mount.g_file_find_enclosing_mount.html
-	//
 	FindEnclosingMount(Cancellable) (Mount, error)
 	// FindEnclosingMountAsync wraps g_file_find_enclosing_mount_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_find_enclosing_mount_async.g_file_find_enclosing_mount_async.html
-	//
 	FindEnclosingMountAsync(int32, Cancellable, AsyncReadyCallback)
 	// FindEnclosingMountFinish wraps g_file_find_enclosing_mount_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_find_enclosing_mount_finish.g_file_find_enclosing_mount_finish.html
-	//
 	FindEnclosingMountFinish(AsyncResult) (Mount, error)
 	// GetBasename wraps g_file_get_basename
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_basename.g_file_get_basename.html
-	//
 	GetBasename() string
 	// GetChild wraps g_file_get_child
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_child.g_file_get_child.html
-	//
 	GetChild(string) File
 	// GetChildForDisplayName wraps g_file_get_child_for_display_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_child_for_display_name.g_file_get_child_for_display_name.html
-	//
 	GetChildForDisplayName(string) (File, error)
 	// GetParent wraps g_file_get_parent
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_parent.g_file_get_parent.html
-	//
 	GetParent() File
 	// GetParseName wraps g_file_get_parse_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_parse_name.g_file_get_parse_name.html
-	//
 	GetParseName() string
 	// GetPath wraps g_file_get_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_path.g_file_get_path.html
-	//
 	GetPath() string
 	// GetRelativePath wraps g_file_get_relative_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_relative_path.g_file_get_relative_path.html
-	//
 	GetRelativePath(File) string
 	// GetURI wraps g_file_get_uri
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_uri.g_file_get_uri.html
-	//
 	GetURI() string
 	// GetURIScheme wraps g_file_get_uri_scheme
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_get_uri_scheme.g_file_get_uri_scheme.html
-	//
 	GetURIScheme() string
 	// HasParent wraps g_file_has_parent
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_has_parent.g_file_has_parent.html
-	//
 	HasParent(File) bool
 	// HasPrefix wraps g_file_has_prefix
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_has_prefix.g_file_has_prefix.html
-	//
 	HasPrefix(File) bool
 	// HasURIScheme wraps g_file_has_uri_scheme
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_has_uri_scheme.g_file_has_uri_scheme.html
-	//
 	HasURIScheme(string) bool
 	// IsNative wraps g_file_is_native
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_is_native.g_file_is_native.html
-	//
 	IsNative() bool
 	// LoadBytes wraps g_file_load_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_load_bytes.g_file_load_bytes.html
-	//
 	LoadBytes(Cancellable) (string, *glib.Bytes, error)
 	// LoadBytesAsync wraps g_file_load_bytes_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_load_bytes_async.g_file_load_bytes_async.html
-	//
 	LoadBytesAsync(Cancellable, AsyncReadyCallback)
 	// LoadBytesFinish wraps g_file_load_bytes_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_load_bytes_finish.g_file_load_bytes_finish.html
-	//
 	LoadBytesFinish(AsyncResult) (string, *glib.Bytes, error)
 	// LoadContents wraps g_file_load_contents
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_load_contents.g_file_load_contents.html
-	//
 	LoadContents(Cancellable) (string, string, bool, error)
 	// LoadContentsAsync wraps g_file_load_contents_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_load_contents_async.g_file_load_contents_async.html
-	//
 	LoadContentsAsync(Cancellable, AsyncReadyCallback)
 	// LoadContentsFinish wraps g_file_load_contents_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_load_contents_finish.g_file_load_contents_finish.html
-	//
 	LoadContentsFinish(AsyncResult) (string, string, bool, error)
 	// LoadPartialContentsFinish wraps g_file_load_partial_contents_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_load_partial_contents_finish.g_file_load_partial_contents_finish.html
-	//
 	LoadPartialContentsFinish(AsyncResult) (string, string, bool, error)
 	// MakeDirectory wraps g_file_make_directory
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_make_directory.g_file_make_directory.html
-	//
 	MakeDirectory(Cancellable) (bool, error)
 	// MakeDirectoryAsync wraps g_file_make_directory_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_make_directory_async.g_file_make_directory_async.html
-	//
 	MakeDirectoryAsync(int32, Cancellable, AsyncReadyCallback)
 	// MakeDirectoryFinish wraps g_file_make_directory_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_make_directory_finish.g_file_make_directory_finish.html
-	//
 	MakeDirectoryFinish(AsyncResult) (bool, error)
 	// MakeDirectoryWithParents wraps g_file_make_directory_with_parents
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_make_directory_with_parents.g_file_make_directory_with_parents.html
-	//
 	MakeDirectoryWithParents(Cancellable) (bool, error)
 	// MakeSymbolicLink wraps g_file_make_symbolic_link
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_make_symbolic_link.g_file_make_symbolic_link.html
-	//
 	MakeSymbolicLink(string, Cancellable) (bool, error)
 	// MakeSymbolicLinkAsync wraps g_file_make_symbolic_link_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_make_symbolic_link_async.g_file_make_symbolic_link_async.html
-	//
 	MakeSymbolicLinkAsync(string, int32, Cancellable, AsyncReadyCallback)
 	// MakeSymbolicLinkFinish wraps g_file_make_symbolic_link_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_make_symbolic_link_finish.g_file_make_symbolic_link_finish.html
-	//
 	MakeSymbolicLinkFinish(AsyncResult) (bool, error)
 	// MeasureDiskUsageFinish wraps g_file_measure_disk_usage_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_measure_disk_usage_finish.g_file_measure_disk_usage_finish.html
-	//
 	MeasureDiskUsageFinish(AsyncResult) (uint64, uint64, uint64, bool, error)
 	// Monitor wraps g_file_monitor
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_monitor.g_file_monitor.html
-	//
 	Monitor(FileMonitorFlags, Cancellable) (FileMonitor, error)
 	// MonitorDirectory wraps g_file_monitor_directory
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_monitor_directory.g_file_monitor_directory.html
-	//
 	MonitorDirectory(FileMonitorFlags, Cancellable) (FileMonitor, error)
 	// MonitorFile wraps g_file_monitor_file
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_monitor_file.g_file_monitor_file.html
-	//
 	MonitorFile(FileMonitorFlags, Cancellable) (FileMonitor, error)
 	// MountEnclosingVolume wraps g_file_mount_enclosing_volume
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_mount_enclosing_volume.g_file_mount_enclosing_volume.html
-	//
 	MountEnclosingVolume(MountMountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// MountEnclosingVolumeFinish wraps g_file_mount_enclosing_volume_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_mount_enclosing_volume_finish.g_file_mount_enclosing_volume_finish.html
-	//
 	MountEnclosingVolumeFinish(AsyncResult) (bool, error)
 	// MountMountable wraps g_file_mount_mountable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_mount_mountable.g_file_mount_mountable.html
-	//
 	MountMountable(MountMountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// MountMountableFinish wraps g_file_mount_mountable_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_mount_mountable_finish.g_file_mount_mountable_finish.html
-	//
 	MountMountableFinish(AsyncResult) (File, error)
 	// MoveFinish wraps g_file_move_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_move_finish.g_file_move_finish.html
-	//
 	MoveFinish(AsyncResult) (bool, error)
 	// OpenReadwrite wraps g_file_open_readwrite
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_open_readwrite.g_file_open_readwrite.html
-	//
 	OpenReadwrite(Cancellable) (FileIOStream, error)
 	// OpenReadwriteAsync wraps g_file_open_readwrite_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_open_readwrite_async.g_file_open_readwrite_async.html
-	//
 	OpenReadwriteAsync(int32, Cancellable, AsyncReadyCallback)
 	// OpenReadwriteFinish wraps g_file_open_readwrite_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_open_readwrite_finish.g_file_open_readwrite_finish.html
-	//
 	OpenReadwriteFinish(AsyncResult) (FileIOStream, error)
 	// PeekPath wraps g_file_peek_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_peek_path.g_file_peek_path.html
-	//
 	PeekPath() string
 	// PollMountable wraps g_file_poll_mountable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_poll_mountable.g_file_poll_mountable.html
-	//
 	PollMountable(Cancellable, AsyncReadyCallback)
 	// PollMountableFinish wraps g_file_poll_mountable_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_poll_mountable_finish.g_file_poll_mountable_finish.html
-	//
 	PollMountableFinish(AsyncResult) (bool, error)
 	// QueryDefaultHandler wraps g_file_query_default_handler
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_default_handler.g_file_query_default_handler.html
-	//
 	QueryDefaultHandler(Cancellable) (AppInfo, error)
 	// QueryDefaultHandlerAsync wraps g_file_query_default_handler_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_default_handler_async.g_file_query_default_handler_async.html
-	//
 	QueryDefaultHandlerAsync(int32, Cancellable, AsyncReadyCallback)
 	// QueryDefaultHandlerFinish wraps g_file_query_default_handler_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_default_handler_finish.g_file_query_default_handler_finish.html
-	//
 	QueryDefaultHandlerFinish(AsyncResult) (AppInfo, error)
 	// QueryExists wraps g_file_query_exists
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_exists.g_file_query_exists.html
-	//
 	QueryExists(Cancellable) bool
 	// QueryFileType wraps g_file_query_file_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_file_type.g_file_query_file_type.html
-	//
 	QueryFileType(FileQueryInfoFlags, Cancellable) FileType
 	// QueryFilesystemInfo wraps g_file_query_filesystem_info
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_filesystem_info.g_file_query_filesystem_info.html
-	//
 	QueryFilesystemInfo(string, Cancellable) (FileInfo, error)
 	// QueryFilesystemInfoAsync wraps g_file_query_filesystem_info_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_filesystem_info_async.g_file_query_filesystem_info_async.html
-	//
 	QueryFilesystemInfoAsync(string, int32, Cancellable, AsyncReadyCallback)
 	// QueryFilesystemInfoFinish wraps g_file_query_filesystem_info_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_filesystem_info_finish.g_file_query_filesystem_info_finish.html
-	//
 	QueryFilesystemInfoFinish(AsyncResult) (FileInfo, error)
 	// QueryInfo wraps g_file_query_info
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_info.g_file_query_info.html
-	//
 	QueryInfo(string, FileQueryInfoFlags, Cancellable) (FileInfo, error)
 	// QueryInfoAsync wraps g_file_query_info_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_info_async.g_file_query_info_async.html
-	//
 	QueryInfoAsync(string, FileQueryInfoFlags, int32, Cancellable, AsyncReadyCallback)
 	// QueryInfoFinish wraps g_file_query_info_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_info_finish.g_file_query_info_finish.html
-	//
 	QueryInfoFinish(AsyncResult) (FileInfo, error)
 	// QuerySettableAttributes wraps g_file_query_settable_attributes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_settable_attributes.g_file_query_settable_attributes.html
-	//
 	QuerySettableAttributes(Cancellable) (*FileAttributeInfoList, error)
 	// QueryWritableNamespaces wraps g_file_query_writable_namespaces
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_query_writable_namespaces.g_file_query_writable_namespaces.html
-	//
 	QueryWritableNamespaces(Cancellable) (*FileAttributeInfoList, error)
 	// Read wraps g_file_read
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_read.g_file_read.html
-	//
 	Read(Cancellable) (FileInputStream, error)
 	// ReadAsync wraps g_file_read_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_read_async.g_file_read_async.html
-	//
 	ReadAsync(int32, Cancellable, AsyncReadyCallback)
 	// ReadFinish wraps g_file_read_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_read_finish.g_file_read_finish.html
-	//
 	ReadFinish(AsyncResult) (FileInputStream, error)
 	// Replace wraps g_file_replace
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace.g_file_replace.html
-	//
 	Replace(string, bool, FileCreateFlags, Cancellable) (FileOutputStream, error)
 	// ReplaceAsync wraps g_file_replace_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_async.g_file_replace_async.html
-	//
 	ReplaceAsync(string, bool, FileCreateFlags, int32, Cancellable, AsyncReadyCallback)
 	// ReplaceContents wraps g_file_replace_contents
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_contents.g_file_replace_contents.html
-	//
 	ReplaceContents(string, string, bool, FileCreateFlags, Cancellable) (string, bool, error)
 	// ReplaceContentsAsync wraps g_file_replace_contents_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_contents_async.g_file_replace_contents_async.html
-	//
 	ReplaceContentsAsync(string, string, bool, FileCreateFlags, Cancellable, AsyncReadyCallback)
 	// ReplaceContentsBytesAsync wraps g_file_replace_contents_bytes_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_contents_bytes_async.g_file_replace_contents_bytes_async.html
-	//
 	ReplaceContentsBytesAsync(*glib.Bytes, string, bool, FileCreateFlags, Cancellable, AsyncReadyCallback)
 	// ReplaceContentsFinish wraps g_file_replace_contents_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_contents_finish.g_file_replace_contents_finish.html
-	//
 	ReplaceContentsFinish(AsyncResult) (string, bool, error)
 	// ReplaceFinish wraps g_file_replace_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_finish.g_file_replace_finish.html
-	//
 	ReplaceFinish(AsyncResult) (FileOutputStream, error)
 	// ReplaceReadwrite wraps g_file_replace_readwrite
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_readwrite.g_file_replace_readwrite.html
-	//
 	ReplaceReadwrite(string, bool, FileCreateFlags, Cancellable) (FileIOStream, error)
 	// ReplaceReadwriteAsync wraps g_file_replace_readwrite_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_readwrite_async.g_file_replace_readwrite_async.html
-	//
 	ReplaceReadwriteAsync(string, bool, FileCreateFlags, int32, Cancellable, AsyncReadyCallback)
 	// ReplaceReadwriteFinish wraps g_file_replace_readwrite_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_replace_readwrite_finish.g_file_replace_readwrite_finish.html
-	//
 	ReplaceReadwriteFinish(AsyncResult) (FileIOStream, error)
 	// ResolveRelativePath wraps g_file_resolve_relative_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_resolve_relative_path.g_file_resolve_relative_path.html
-	//
 	ResolveRelativePath(string) File
 	// SetAttributeByteString wraps g_file_set_attribute_byte_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attribute_byte_string.g_file_set_attribute_byte_string.html
-	//
 	SetAttributeByteString(string, string, FileQueryInfoFlags, Cancellable) (bool, error)
 	// SetAttributeInt32 wraps g_file_set_attribute_int32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attribute_int32.g_file_set_attribute_int32.html
-	//
 	SetAttributeInt32(string, int32, FileQueryInfoFlags, Cancellable) (bool, error)
 	// SetAttributeInt64 wraps g_file_set_attribute_int64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attribute_int64.g_file_set_attribute_int64.html
-	//
 	SetAttributeInt64(string, int64, FileQueryInfoFlags, Cancellable) (bool, error)
 	// SetAttributeString wraps g_file_set_attribute_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attribute_string.g_file_set_attribute_string.html
-	//
 	SetAttributeString(string, string, FileQueryInfoFlags, Cancellable) (bool, error)
 	// SetAttributeUint32 wraps g_file_set_attribute_uint32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attribute_uint32.g_file_set_attribute_uint32.html
-	//
 	SetAttributeUint32(string, uint32, FileQueryInfoFlags, Cancellable) (bool, error)
 	// SetAttributeUint64 wraps g_file_set_attribute_uint64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attribute_uint64.g_file_set_attribute_uint64.html
-	//
 	SetAttributeUint64(string, uint64, FileQueryInfoFlags, Cancellable) (bool, error)
 	// SetAttributesAsync wraps g_file_set_attributes_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attributes_async.g_file_set_attributes_async.html
-	//
 	SetAttributesAsync(FileInfo, FileQueryInfoFlags, int32, Cancellable, AsyncReadyCallback)
 	// SetAttributesFinish wraps g_file_set_attributes_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attributes_finish.g_file_set_attributes_finish.html
-	//
 	SetAttributesFinish(AsyncResult) (FileInfo, bool, error)
 	// SetAttributesFromInfo wraps g_file_set_attributes_from_info
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_attributes_from_info.g_file_set_attributes_from_info.html
-	//
 	SetAttributesFromInfo(FileInfo, FileQueryInfoFlags, Cancellable) (bool, error)
 	// SetDisplayName wraps g_file_set_display_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_display_name.g_file_set_display_name.html
-	//
 	SetDisplayName(string, Cancellable) (File, error)
 	// SetDisplayNameAsync wraps g_file_set_display_name_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_display_name_async.g_file_set_display_name_async.html
-	//
 	SetDisplayNameAsync(string, int32, Cancellable, AsyncReadyCallback)
 	// SetDisplayNameFinish wraps g_file_set_display_name_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_set_display_name_finish.g_file_set_display_name_finish.html
-	//
 	SetDisplayNameFinish(AsyncResult) (File, error)
 	// StartMountable wraps g_file_start_mountable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_start_mountable.g_file_start_mountable.html
-	//
 	StartMountable(DriveStartFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// StartMountableFinish wraps g_file_start_mountable_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_start_mountable_finish.g_file_start_mountable_finish.html
-	//
 	StartMountableFinish(AsyncResult) (bool, error)
 	// StopMountable wraps g_file_stop_mountable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_stop_mountable.g_file_stop_mountable.html
-	//
 	StopMountable(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// StopMountableFinish wraps g_file_stop_mountable_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_stop_mountable_finish.g_file_stop_mountable_finish.html
-	//
 	StopMountableFinish(AsyncResult) (bool, error)
 	// SupportsThreadContexts wraps g_file_supports_thread_contexts
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_supports_thread_contexts.g_file_supports_thread_contexts.html
-	//
 	SupportsThreadContexts() bool
 	// Trash wraps g_file_trash
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_trash.g_file_trash.html
-	//
 	Trash(Cancellable) (bool, error)
 	// TrashAsync wraps g_file_trash_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_trash_async.g_file_trash_async.html
-	//
 	TrashAsync(int32, Cancellable, AsyncReadyCallback)
 	// TrashFinish wraps g_file_trash_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_trash_finish.g_file_trash_finish.html
-	//
 	TrashFinish(AsyncResult) (bool, error)
 	// UnmountMountable wraps g_file_unmount_mountable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_unmount_mountable.g_file_unmount_mountable.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_file_unmount_mountable_with_operation() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	UnmountMountable(MountUnmountFlags, Cancellable, AsyncReadyCallback)
 	// UnmountMountableFinish wraps g_file_unmount_mountable_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_unmount_mountable_finish.g_file_unmount_mountable_finish.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_file_unmount_mountable_with_operation_finish()
-	//   instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	UnmountMountableFinish(AsyncResult) (bool, error)
 	// UnmountMountableWithOperation wraps g_file_unmount_mountable_with_operation
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_unmount_mountable_with_operation.g_file_unmount_mountable_with_operation.html
-	//
 	UnmountMountableWithOperation(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// UnmountMountableWithOperationFinish wraps g_file_unmount_mountable_with_operation_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_unmount_mountable_with_operation_finish.g_file_unmount_mountable_with_operation_finish.html
-	//
 	UnmountMountableWithOperationFinish(AsyncResult) (bool, error)
 }
 
@@ -11388,7 +10570,6 @@ func UnsafeFileToGlibFull(c File) unsafe.Pointer {
 // NewFileBuildFilenamev wraps g_file_new_build_filenamev
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_build_filenamev.html
-//
 func NewFileBuildFilenamev(args []string) File {
 	var carg1 **C.gchar // in, transfer: none, C Pointers: 2, Name: array[filename], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 	var cret  *C.GFile  // return, full, converted
@@ -11410,7 +10591,6 @@ func NewFileBuildFilenamev(args []string) File {
 // NewFileForCommandlineArg wraps g_file_new_for_commandline_arg
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_for_commandline_arg.html
-//
 func NewFileForCommandlineArg(arg string) File {
 	var carg1 *C.char  // in, none, string
 	var cret  *C.GFile // return, full, converted
@@ -11431,7 +10611,6 @@ func NewFileForCommandlineArg(arg string) File {
 // NewFileForCommandlineArgAndCwd wraps g_file_new_for_commandline_arg_and_cwd
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_for_commandline_arg_and_cwd.html
-//
 func NewFileForCommandlineArgAndCwd(arg string, cwd string) File {
 	var carg1 *C.gchar // in, none, string
 	var carg2 *C.gchar // in, none, string
@@ -11456,7 +10635,6 @@ func NewFileForCommandlineArgAndCwd(arg string, cwd string) File {
 // NewFileForPath wraps g_file_new_for_path
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_for_path.html
-//
 func NewFileForPath(path string) File {
 	var carg1 *C.char  // in, none, string
 	var cret  *C.GFile // return, full, converted
@@ -11477,7 +10655,6 @@ func NewFileForPath(path string) File {
 // NewFileForURI wraps g_file_new_for_uri
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_for_uri.html
-//
 func NewFileForURI(uri string) File {
 	var carg1 *C.char  // in, none, string
 	var cret  *C.GFile // return, full, converted
@@ -11498,7 +10675,6 @@ func NewFileForURI(uri string) File {
 // NewFileTmp wraps g_file_new_tmp
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_tmp.html
-//
 func NewFileTmp(tmpl string) (FileIOStream, File, error) {
 	var carg1 *C.char          // in, none, string, nullable-string
 	var carg2 *C.GFileIOStream // out, full, converted
@@ -11529,7 +10705,6 @@ func NewFileTmp(tmpl string) (FileIOStream, File, error) {
 // NewFileTmpAsync wraps g_file_new_tmp_async
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_tmp_async.html
-//
 func NewFileTmpAsync(tmpl string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg1 *C.char               // in, none, string, nullable-string
 	var carg2 C.int                 // in, none, casted
@@ -11560,7 +10735,6 @@ func NewFileTmpAsync(tmpl string, ioPriority int32, cancellable Cancellable, cal
 // NewFileTmpDirAsync wraps g_file_new_tmp_dir_async
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_tmp_dir_async.html
-//
 func NewFileTmpDirAsync(tmpl string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg1 *C.char               // in, none, string, nullable-string
 	var carg2 C.int                 // in, none, casted
@@ -11591,7 +10765,6 @@ func NewFileTmpDirAsync(tmpl string, ioPriority int32, cancellable Cancellable, 
 // NewFileTmpDirFinish wraps g_file_new_tmp_dir_finish
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_tmp_dir_finish.html
-//
 func NewFileTmpDirFinish(result AsyncResult) (File, error) {
 	var carg1 *C.GAsyncResult // in, none, converted
 	var cret  *C.GFile        // return, full, converted
@@ -11616,7 +10789,6 @@ func NewFileTmpDirFinish(result AsyncResult) (File, error) {
 // NewFileTmpFinish wraps g_file_new_tmp_finish
 // 
 // see also https://docs.gtk.org/gio/func.g_file_new_tmp_finish.html
-//
 func NewFileTmpFinish(result AsyncResult) (FileIOStream, File, error) {
 	var carg1 *C.GAsyncResult  // in, none, converted
 	var carg2 *C.GFileIOStream // out, full, converted
@@ -11644,7 +10816,6 @@ func NewFileTmpFinish(result AsyncResult) (FileIOStream, File, error) {
 // FileParseName wraps g_file_parse_name
 // 
 // see also https://docs.gtk.org/gio/func.g_file_parse_name.html
-//
 func FileParseName(parseName string) File {
 	var carg1 *C.char  // in, none, string
 	var cret  *C.GFile // return, full, converted
@@ -11665,7 +10836,6 @@ func FileParseName(parseName string) File {
 // AppendTo wraps g_file_append_to
 // 
 // see also https://docs.gtk.org/gio/method.g_file_append_to.g_file_append_to.html
-//
 func (file *FileInstance) AppendTo(flags FileCreateFlags, cancellable Cancellable) (FileOutputStream, error) {
 	var carg0 *C.GFile             // in, none, converted
 	var carg1 C.GFileCreateFlags   // in, none, casted
@@ -11698,7 +10868,6 @@ func (file *FileInstance) AppendTo(flags FileCreateFlags, cancellable Cancellabl
 // AppendToAsync wraps g_file_append_to_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_append_to_async.g_file_append_to_async.html
-//
 func (file *FileInstance) AppendToAsync(flags FileCreateFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GFileCreateFlags    // in, none, casted
@@ -11729,7 +10898,6 @@ func (file *FileInstance) AppendToAsync(flags FileCreateFlags, ioPriority int32,
 // AppendToFinish wraps g_file_append_to_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_append_to_finish.g_file_append_to_finish.html
-//
 func (file *FileInstance) AppendToFinish(res AsyncResult) (FileOutputStream, error) {
 	var carg0 *C.GFile             // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -11757,7 +10925,6 @@ func (file *FileInstance) AppendToFinish(res AsyncResult) (FileOutputStream, err
 // BuildAttributeListForCopy wraps g_file_build_attribute_list_for_copy
 // 
 // see also https://docs.gtk.org/gio/method.g_file_build_attribute_list_for_copy.g_file_build_attribute_list_for_copy.html
-//
 func (file *FileInstance) BuildAttributeListForCopy(flags FileCopyFlags, cancellable Cancellable) (string, error) {
 	var carg0 *C.GFile         // in, none, converted
 	var carg1 C.GFileCopyFlags // in, none, casted
@@ -11791,7 +10958,6 @@ func (file *FileInstance) BuildAttributeListForCopy(flags FileCopyFlags, cancell
 // CopyAttributes wraps g_file_copy_attributes
 // 
 // see also https://docs.gtk.org/gio/method.g_file_copy_attributes.g_file_copy_attributes.html
-//
 func (source *FileInstance) CopyAttributes(destination File, flags FileCopyFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile         // in, none, converted
 	var carg1 *C.GFile         // in, none, converted
@@ -11829,7 +10995,6 @@ func (source *FileInstance) CopyAttributes(destination File, flags FileCopyFlags
 // CopyFinish wraps g_file_copy_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_copy_finish.g_file_copy_finish.html
-//
 func (file *FileInstance) CopyFinish(res AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -11859,7 +11024,6 @@ func (file *FileInstance) CopyFinish(res AsyncResult) (bool, error) {
 // Create wraps g_file_create
 // 
 // see also https://docs.gtk.org/gio/method.g_file_create.g_file_create.html
-//
 func (file *FileInstance) Create(flags FileCreateFlags, cancellable Cancellable) (FileOutputStream, error) {
 	var carg0 *C.GFile             // in, none, converted
 	var carg1 C.GFileCreateFlags   // in, none, casted
@@ -11892,7 +11056,6 @@ func (file *FileInstance) Create(flags FileCreateFlags, cancellable Cancellable)
 // CreateAsync wraps g_file_create_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_create_async.g_file_create_async.html
-//
 func (file *FileInstance) CreateAsync(flags FileCreateFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GFileCreateFlags    // in, none, casted
@@ -11923,7 +11086,6 @@ func (file *FileInstance) CreateAsync(flags FileCreateFlags, ioPriority int32, c
 // CreateFinish wraps g_file_create_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_create_finish.g_file_create_finish.html
-//
 func (file *FileInstance) CreateFinish(res AsyncResult) (FileOutputStream, error) {
 	var carg0 *C.GFile             // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -11951,7 +11113,6 @@ func (file *FileInstance) CreateFinish(res AsyncResult) (FileOutputStream, error
 // CreateReadwrite wraps g_file_create_readwrite
 // 
 // see also https://docs.gtk.org/gio/method.g_file_create_readwrite.g_file_create_readwrite.html
-//
 func (file *FileInstance) CreateReadwrite(flags FileCreateFlags, cancellable Cancellable) (FileIOStream, error) {
 	var carg0 *C.GFile           // in, none, converted
 	var carg1 C.GFileCreateFlags // in, none, casted
@@ -11984,7 +11145,6 @@ func (file *FileInstance) CreateReadwrite(flags FileCreateFlags, cancellable Can
 // CreateReadwriteAsync wraps g_file_create_readwrite_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_create_readwrite_async.g_file_create_readwrite_async.html
-//
 func (file *FileInstance) CreateReadwriteAsync(flags FileCreateFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GFileCreateFlags    // in, none, casted
@@ -12015,7 +11175,6 @@ func (file *FileInstance) CreateReadwriteAsync(flags FileCreateFlags, ioPriority
 // CreateReadwriteFinish wraps g_file_create_readwrite_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_create_readwrite_finish.g_file_create_readwrite_finish.html
-//
 func (file *FileInstance) CreateReadwriteFinish(res AsyncResult) (FileIOStream, error) {
 	var carg0 *C.GFile         // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -12043,7 +11202,6 @@ func (file *FileInstance) CreateReadwriteFinish(res AsyncResult) (FileIOStream, 
 // Delete wraps g_file_delete
 // 
 // see also https://docs.gtk.org/gio/method.g_file_delete.g_file_delete.html
-//
 func (file *FileInstance) Delete(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -12075,7 +11233,6 @@ func (file *FileInstance) Delete(cancellable Cancellable) (bool, error) {
 // DeleteAsync wraps g_file_delete_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_delete_async.g_file_delete_async.html
-//
 func (file *FileInstance) DeleteAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -12103,7 +11260,6 @@ func (file *FileInstance) DeleteAsync(ioPriority int32, cancellable Cancellable,
 // DeleteFinish wraps g_file_delete_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_delete_finish.g_file_delete_finish.html
-//
 func (file *FileInstance) DeleteFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -12133,7 +11289,6 @@ func (file *FileInstance) DeleteFinish(result AsyncResult) (bool, error) {
 // Dup wraps g_file_dup
 // 
 // see also https://docs.gtk.org/gio/method.g_file_dup.g_file_dup.html
-//
 func (file *FileInstance) Dup() File {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.GFile // return, full, converted
@@ -12154,8 +11309,7 @@ func (file *FileInstance) Dup() File {
 // 
 // see also https://docs.gtk.org/gio/method.g_file_eject_mountable.g_file_eject_mountable.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_file_eject_mountable_with_operation() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (file *FileInstance) EjectMountable(flags MountUnmountFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -12184,9 +11338,7 @@ func (file *FileInstance) EjectMountable(flags MountUnmountFlags, cancellable Ca
 // 
 // see also https://docs.gtk.org/gio/method.g_file_eject_mountable_finish.g_file_eject_mountable_finish.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_file_eject_mountable_with_operation_finish()
-//   instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (file *FileInstance) EjectMountableFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -12216,7 +11368,6 @@ func (file *FileInstance) EjectMountableFinish(result AsyncResult) (bool, error)
 // EjectMountableWithOperation wraps g_file_eject_mountable_with_operation
 // 
 // see also https://docs.gtk.org/gio/method.g_file_eject_mountable_with_operation.g_file_eject_mountable_with_operation.html
-//
 func (file *FileInstance) EjectMountableWithOperation(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -12249,7 +11400,6 @@ func (file *FileInstance) EjectMountableWithOperation(flags MountUnmountFlags, m
 // EjectMountableWithOperationFinish wraps g_file_eject_mountable_with_operation_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_eject_mountable_with_operation_finish.g_file_eject_mountable_with_operation_finish.html
-//
 func (file *FileInstance) EjectMountableWithOperationFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -12279,7 +11429,6 @@ func (file *FileInstance) EjectMountableWithOperationFinish(result AsyncResult) 
 // EnumerateChildren wraps g_file_enumerate_children
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerate_children.g_file_enumerate_children.html
-//
 func (file *FileInstance) EnumerateChildren(attributes string, flags FileQueryInfoFlags, cancellable Cancellable) (FileEnumerator, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -12316,7 +11465,6 @@ func (file *FileInstance) EnumerateChildren(attributes string, flags FileQueryIn
 // EnumerateChildrenAsync wraps g_file_enumerate_children_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerate_children_async.g_file_enumerate_children_async.html
-//
 func (file *FileInstance) EnumerateChildrenAsync(attributes string, flags FileQueryInfoFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -12351,7 +11499,6 @@ func (file *FileInstance) EnumerateChildrenAsync(attributes string, flags FileQu
 // EnumerateChildrenFinish wraps g_file_enumerate_children_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerate_children_finish.g_file_enumerate_children_finish.html
-//
 func (file *FileInstance) EnumerateChildrenFinish(res AsyncResult) (FileEnumerator, error) {
 	var carg0 *C.GFile           // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -12379,7 +11526,6 @@ func (file *FileInstance) EnumerateChildrenFinish(res AsyncResult) (FileEnumerat
 // Equal wraps g_file_equal
 // 
 // see also https://docs.gtk.org/gio/method.g_file_equal.g_file_equal.html
-//
 func (file1 *FileInstance) Equal(file2 File) bool {
 	var carg0 *C.GFile   // in, none, converted
 	var carg1 *C.GFile   // in, none, converted
@@ -12404,7 +11550,6 @@ func (file1 *FileInstance) Equal(file2 File) bool {
 // FindEnclosingMount wraps g_file_find_enclosing_mount
 // 
 // see also https://docs.gtk.org/gio/method.g_file_find_enclosing_mount.g_file_find_enclosing_mount.html
-//
 func (file *FileInstance) FindEnclosingMount(cancellable Cancellable) (Mount, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -12434,7 +11579,6 @@ func (file *FileInstance) FindEnclosingMount(cancellable Cancellable) (Mount, er
 // FindEnclosingMountAsync wraps g_file_find_enclosing_mount_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_find_enclosing_mount_async.g_file_find_enclosing_mount_async.html
-//
 func (file *FileInstance) FindEnclosingMountAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -12462,7 +11606,6 @@ func (file *FileInstance) FindEnclosingMountAsync(ioPriority int32, cancellable 
 // FindEnclosingMountFinish wraps g_file_find_enclosing_mount_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_find_enclosing_mount_finish.g_file_find_enclosing_mount_finish.html
-//
 func (file *FileInstance) FindEnclosingMountFinish(res AsyncResult) (Mount, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -12490,7 +11633,6 @@ func (file *FileInstance) FindEnclosingMountFinish(res AsyncResult) (Mount, erro
 // GetBasename wraps g_file_get_basename
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_basename.g_file_get_basename.html
-//
 func (file *FileInstance) GetBasename() string {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.char  // return, full, string, nullable
@@ -12513,7 +11655,6 @@ func (file *FileInstance) GetBasename() string {
 // GetChild wraps g_file_get_child
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_child.g_file_get_child.html
-//
 func (file *FileInstance) GetChild(name string) File {
 	var carg0 *C.GFile // in, none, converted
 	var carg1 *C.char  // in, none, string
@@ -12537,7 +11678,6 @@ func (file *FileInstance) GetChild(name string) File {
 // GetChildForDisplayName wraps g_file_get_child_for_display_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_child_for_display_name.g_file_get_child_for_display_name.html
-//
 func (file *FileInstance) GetChildForDisplayName(displayName string) (File, error) {
 	var carg0 *C.GFile  // in, none, converted
 	var carg1 *C.char   // in, none, string
@@ -12566,7 +11706,6 @@ func (file *FileInstance) GetChildForDisplayName(displayName string) (File, erro
 // GetParent wraps g_file_get_parent
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_parent.g_file_get_parent.html
-//
 func (file *FileInstance) GetParent() File {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.GFile // return, full, converted, nullable
@@ -12588,7 +11727,6 @@ func (file *FileInstance) GetParent() File {
 // GetParseName wraps g_file_get_parse_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_parse_name.g_file_get_parse_name.html
-//
 func (file *FileInstance) GetParseName() string {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.char  // return, full, string
@@ -12609,7 +11747,6 @@ func (file *FileInstance) GetParseName() string {
 // GetPath wraps g_file_get_path
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_path.g_file_get_path.html
-//
 func (file *FileInstance) GetPath() string {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.char  // return, full, string, nullable
@@ -12632,7 +11769,6 @@ func (file *FileInstance) GetPath() string {
 // GetRelativePath wraps g_file_get_relative_path
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_relative_path.g_file_get_relative_path.html
-//
 func (parent *FileInstance) GetRelativePath(descendant File) string {
 	var carg0 *C.GFile // in, none, converted
 	var carg1 *C.GFile // in, none, converted
@@ -12658,7 +11794,6 @@ func (parent *FileInstance) GetRelativePath(descendant File) string {
 // GetURI wraps g_file_get_uri
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_uri.g_file_get_uri.html
-//
 func (file *FileInstance) GetURI() string {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.char  // return, full, string
@@ -12679,7 +11814,6 @@ func (file *FileInstance) GetURI() string {
 // GetURIScheme wraps g_file_get_uri_scheme
 // 
 // see also https://docs.gtk.org/gio/method.g_file_get_uri_scheme.g_file_get_uri_scheme.html
-//
 func (file *FileInstance) GetURIScheme() string {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.char  // return, full, string, nullable-string
@@ -12702,7 +11836,6 @@ func (file *FileInstance) GetURIScheme() string {
 // HasParent wraps g_file_has_parent
 // 
 // see also https://docs.gtk.org/gio/method.g_file_has_parent.g_file_has_parent.html
-//
 func (file *FileInstance) HasParent(parent File) bool {
 	var carg0 *C.GFile   // in, none, converted
 	var carg1 *C.GFile   // in, none, converted, nullable
@@ -12729,7 +11862,6 @@ func (file *FileInstance) HasParent(parent File) bool {
 // HasPrefix wraps g_file_has_prefix
 // 
 // see also https://docs.gtk.org/gio/method.g_file_has_prefix.g_file_has_prefix.html
-//
 func (file *FileInstance) HasPrefix(prefix File) bool {
 	var carg0 *C.GFile   // in, none, converted
 	var carg1 *C.GFile   // in, none, converted
@@ -12754,7 +11886,6 @@ func (file *FileInstance) HasPrefix(prefix File) bool {
 // HasURIScheme wraps g_file_has_uri_scheme
 // 
 // see also https://docs.gtk.org/gio/method.g_file_has_uri_scheme.g_file_has_uri_scheme.html
-//
 func (file *FileInstance) HasURIScheme(uriScheme string) bool {
 	var carg0 *C.GFile   // in, none, converted
 	var carg1 *C.char    // in, none, string
@@ -12780,7 +11911,6 @@ func (file *FileInstance) HasURIScheme(uriScheme string) bool {
 // IsNative wraps g_file_is_native
 // 
 // see also https://docs.gtk.org/gio/method.g_file_is_native.g_file_is_native.html
-//
 func (file *FileInstance) IsNative() bool {
 	var carg0 *C.GFile   // in, none, converted
 	var cret  C.gboolean // return
@@ -12802,7 +11932,6 @@ func (file *FileInstance) IsNative() bool {
 // LoadBytes wraps g_file_load_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_file_load_bytes.g_file_load_bytes.html
-//
 func (file *FileInstance) LoadBytes(cancellable Cancellable) (string, *glib.Bytes, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -12838,7 +11967,6 @@ func (file *FileInstance) LoadBytes(cancellable Cancellable) (string, *glib.Byte
 // LoadBytesAsync wraps g_file_load_bytes_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_load_bytes_async.g_file_load_bytes_async.html
-//
 func (file *FileInstance) LoadBytesAsync(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -12863,7 +11991,6 @@ func (file *FileInstance) LoadBytesAsync(cancellable Cancellable, callback Async
 // LoadBytesFinish wraps g_file_load_bytes_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_load_bytes_finish.g_file_load_bytes_finish.html
-//
 func (file *FileInstance) LoadBytesFinish(result AsyncResult) (string, *glib.Bytes, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -12897,7 +12024,6 @@ func (file *FileInstance) LoadBytesFinish(result AsyncResult) (string, *glib.Byt
 // LoadContents wraps g_file_load_contents
 // 
 // see also https://docs.gtk.org/gio/method.g_file_load_contents.g_file_load_contents.html
-//
 func (file *FileInstance) LoadContents(cancellable Cancellable) (string, string, bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -12942,7 +12068,6 @@ func (file *FileInstance) LoadContents(cancellable Cancellable) (string, string,
 // LoadContentsAsync wraps g_file_load_contents_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_load_contents_async.g_file_load_contents_async.html
-//
 func (file *FileInstance) LoadContentsAsync(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -12967,7 +12092,6 @@ func (file *FileInstance) LoadContentsAsync(cancellable Cancellable, callback As
 // LoadContentsFinish wraps g_file_load_contents_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_load_contents_finish.g_file_load_contents_finish.html
-//
 func (file *FileInstance) LoadContentsFinish(res AsyncResult) (string, string, bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13010,7 +12134,6 @@ func (file *FileInstance) LoadContentsFinish(res AsyncResult) (string, string, b
 // LoadPartialContentsFinish wraps g_file_load_partial_contents_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_load_partial_contents_finish.g_file_load_partial_contents_finish.html
-//
 func (file *FileInstance) LoadPartialContentsFinish(res AsyncResult) (string, string, bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13053,7 +12176,6 @@ func (file *FileInstance) LoadPartialContentsFinish(res AsyncResult) (string, st
 // MakeDirectory wraps g_file_make_directory
 // 
 // see also https://docs.gtk.org/gio/method.g_file_make_directory.g_file_make_directory.html
-//
 func (file *FileInstance) MakeDirectory(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -13085,7 +12207,6 @@ func (file *FileInstance) MakeDirectory(cancellable Cancellable) (bool, error) {
 // MakeDirectoryAsync wraps g_file_make_directory_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_make_directory_async.g_file_make_directory_async.html
-//
 func (file *FileInstance) MakeDirectoryAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -13113,7 +12234,6 @@ func (file *FileInstance) MakeDirectoryAsync(ioPriority int32, cancellable Cance
 // MakeDirectoryFinish wraps g_file_make_directory_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_make_directory_finish.g_file_make_directory_finish.html
-//
 func (file *FileInstance) MakeDirectoryFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13143,7 +12263,6 @@ func (file *FileInstance) MakeDirectoryFinish(result AsyncResult) (bool, error) 
 // MakeDirectoryWithParents wraps g_file_make_directory_with_parents
 // 
 // see also https://docs.gtk.org/gio/method.g_file_make_directory_with_parents.g_file_make_directory_with_parents.html
-//
 func (file *FileInstance) MakeDirectoryWithParents(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -13175,7 +12294,6 @@ func (file *FileInstance) MakeDirectoryWithParents(cancellable Cancellable) (boo
 // MakeSymbolicLink wraps g_file_make_symbolic_link
 // 
 // see also https://docs.gtk.org/gio/method.g_file_make_symbolic_link.g_file_make_symbolic_link.html
-//
 func (file *FileInstance) MakeSymbolicLink(symlinkValue string, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.char         // in, none, string
@@ -13211,7 +12329,6 @@ func (file *FileInstance) MakeSymbolicLink(symlinkValue string, cancellable Canc
 // MakeSymbolicLinkAsync wraps g_file_make_symbolic_link_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_make_symbolic_link_async.g_file_make_symbolic_link_async.html
-//
 func (file *FileInstance) MakeSymbolicLinkAsync(symlinkValue string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -13243,7 +12360,6 @@ func (file *FileInstance) MakeSymbolicLinkAsync(symlinkValue string, ioPriority 
 // MakeSymbolicLinkFinish wraps g_file_make_symbolic_link_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_make_symbolic_link_finish.g_file_make_symbolic_link_finish.html
-//
 func (file *FileInstance) MakeSymbolicLinkFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13273,7 +12389,6 @@ func (file *FileInstance) MakeSymbolicLinkFinish(result AsyncResult) (bool, erro
 // MeasureDiskUsageFinish wraps g_file_measure_disk_usage_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_measure_disk_usage_finish.g_file_measure_disk_usage_finish.html
-//
 func (file *FileInstance) MeasureDiskUsageFinish(result AsyncResult) (uint64, uint64, uint64, bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13312,7 +12427,6 @@ func (file *FileInstance) MeasureDiskUsageFinish(result AsyncResult) (uint64, ui
 // Monitor wraps g_file_monitor
 // 
 // see also https://docs.gtk.org/gio/method.g_file_monitor.g_file_monitor.html
-//
 func (file *FileInstance) Monitor(flags FileMonitorFlags, cancellable Cancellable) (FileMonitor, error) {
 	var carg0 *C.GFile            // in, none, converted
 	var carg1 C.GFileMonitorFlags // in, none, casted
@@ -13345,7 +12459,6 @@ func (file *FileInstance) Monitor(flags FileMonitorFlags, cancellable Cancellabl
 // MonitorDirectory wraps g_file_monitor_directory
 // 
 // see also https://docs.gtk.org/gio/method.g_file_monitor_directory.g_file_monitor_directory.html
-//
 func (file *FileInstance) MonitorDirectory(flags FileMonitorFlags, cancellable Cancellable) (FileMonitor, error) {
 	var carg0 *C.GFile            // in, none, converted
 	var carg1 C.GFileMonitorFlags // in, none, casted
@@ -13378,7 +12491,6 @@ func (file *FileInstance) MonitorDirectory(flags FileMonitorFlags, cancellable C
 // MonitorFile wraps g_file_monitor_file
 // 
 // see also https://docs.gtk.org/gio/method.g_file_monitor_file.g_file_monitor_file.html
-//
 func (file *FileInstance) MonitorFile(flags FileMonitorFlags, cancellable Cancellable) (FileMonitor, error) {
 	var carg0 *C.GFile            // in, none, converted
 	var carg1 C.GFileMonitorFlags // in, none, casted
@@ -13411,7 +12523,6 @@ func (file *FileInstance) MonitorFile(flags FileMonitorFlags, cancellable Cancel
 // MountEnclosingVolume wraps g_file_mount_enclosing_volume
 // 
 // see also https://docs.gtk.org/gio/method.g_file_mount_enclosing_volume.g_file_mount_enclosing_volume.html
-//
 func (location *FileInstance) MountEnclosingVolume(flags MountMountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GMountMountFlags    // in, none, casted
@@ -13444,7 +12555,6 @@ func (location *FileInstance) MountEnclosingVolume(flags MountMountFlags, mountO
 // MountEnclosingVolumeFinish wraps g_file_mount_enclosing_volume_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_mount_enclosing_volume_finish.g_file_mount_enclosing_volume_finish.html
-//
 func (location *FileInstance) MountEnclosingVolumeFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13474,7 +12584,6 @@ func (location *FileInstance) MountEnclosingVolumeFinish(result AsyncResult) (bo
 // MountMountable wraps g_file_mount_mountable
 // 
 // see also https://docs.gtk.org/gio/method.g_file_mount_mountable.g_file_mount_mountable.html
-//
 func (file *FileInstance) MountMountable(flags MountMountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GMountMountFlags    // in, none, casted
@@ -13507,7 +12616,6 @@ func (file *FileInstance) MountMountable(flags MountMountFlags, mountOperation M
 // MountMountableFinish wraps g_file_mount_mountable_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_mount_mountable_finish.g_file_mount_mountable_finish.html
-//
 func (file *FileInstance) MountMountableFinish(result AsyncResult) (File, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13535,7 +12643,6 @@ func (file *FileInstance) MountMountableFinish(result AsyncResult) (File, error)
 // MoveFinish wraps g_file_move_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_move_finish.g_file_move_finish.html
-//
 func (file *FileInstance) MoveFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13565,7 +12672,6 @@ func (file *FileInstance) MoveFinish(result AsyncResult) (bool, error) {
 // OpenReadwrite wraps g_file_open_readwrite
 // 
 // see also https://docs.gtk.org/gio/method.g_file_open_readwrite.g_file_open_readwrite.html
-//
 func (file *FileInstance) OpenReadwrite(cancellable Cancellable) (FileIOStream, error) {
 	var carg0 *C.GFile         // in, none, converted
 	var carg1 *C.GCancellable  // in, none, converted, nullable
@@ -13595,7 +12701,6 @@ func (file *FileInstance) OpenReadwrite(cancellable Cancellable) (FileIOStream, 
 // OpenReadwriteAsync wraps g_file_open_readwrite_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_open_readwrite_async.g_file_open_readwrite_async.html
-//
 func (file *FileInstance) OpenReadwriteAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -13623,7 +12728,6 @@ func (file *FileInstance) OpenReadwriteAsync(ioPriority int32, cancellable Cance
 // OpenReadwriteFinish wraps g_file_open_readwrite_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_open_readwrite_finish.g_file_open_readwrite_finish.html
-//
 func (file *FileInstance) OpenReadwriteFinish(res AsyncResult) (FileIOStream, error) {
 	var carg0 *C.GFile         // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -13651,7 +12755,6 @@ func (file *FileInstance) OpenReadwriteFinish(res AsyncResult) (FileIOStream, er
 // PeekPath wraps g_file_peek_path
 // 
 // see also https://docs.gtk.org/gio/method.g_file_peek_path.g_file_peek_path.html
-//
 func (file *FileInstance) PeekPath() string {
 	var carg0 *C.GFile // in, none, converted
 	var cret  *C.char  // return, none, string, nullable
@@ -13673,7 +12776,6 @@ func (file *FileInstance) PeekPath() string {
 // PollMountable wraps g_file_poll_mountable
 // 
 // see also https://docs.gtk.org/gio/method.g_file_poll_mountable.g_file_poll_mountable.html
-//
 func (file *FileInstance) PollMountable(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -13698,7 +12800,6 @@ func (file *FileInstance) PollMountable(cancellable Cancellable, callback AsyncR
 // PollMountableFinish wraps g_file_poll_mountable_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_poll_mountable_finish.g_file_poll_mountable_finish.html
-//
 func (file *FileInstance) PollMountableFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13728,7 +12829,6 @@ func (file *FileInstance) PollMountableFinish(result AsyncResult) (bool, error) 
 // QueryDefaultHandler wraps g_file_query_default_handler
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_default_handler.g_file_query_default_handler.html
-//
 func (file *FileInstance) QueryDefaultHandler(cancellable Cancellable) (AppInfo, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -13758,7 +12858,6 @@ func (file *FileInstance) QueryDefaultHandler(cancellable Cancellable) (AppInfo,
 // QueryDefaultHandlerAsync wraps g_file_query_default_handler_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_default_handler_async.g_file_query_default_handler_async.html
-//
 func (file *FileInstance) QueryDefaultHandlerAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -13786,7 +12885,6 @@ func (file *FileInstance) QueryDefaultHandlerAsync(ioPriority int32, cancellable
 // QueryDefaultHandlerFinish wraps g_file_query_default_handler_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_default_handler_finish.g_file_query_default_handler_finish.html
-//
 func (file *FileInstance) QueryDefaultHandlerFinish(result AsyncResult) (AppInfo, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13814,7 +12912,6 @@ func (file *FileInstance) QueryDefaultHandlerFinish(result AsyncResult) (AppInfo
 // QueryExists wraps g_file_query_exists
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_exists.g_file_query_exists.html
-//
 func (file *FileInstance) QueryExists(cancellable Cancellable) bool {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -13841,7 +12938,6 @@ func (file *FileInstance) QueryExists(cancellable Cancellable) bool {
 // QueryFileType wraps g_file_query_file_type
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_file_type.g_file_query_file_type.html
-//
 func (file *FileInstance) QueryFileType(flags FileQueryInfoFlags, cancellable Cancellable) FileType {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GFileQueryInfoFlags // in, none, casted
@@ -13869,7 +12965,6 @@ func (file *FileInstance) QueryFileType(flags FileQueryInfoFlags, cancellable Ca
 // QueryFilesystemInfo wraps g_file_query_filesystem_info
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_filesystem_info.g_file_query_filesystem_info.html
-//
 func (file *FileInstance) QueryFilesystemInfo(attributes string, cancellable Cancellable) (FileInfo, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.char         // in, none, string
@@ -13903,7 +12998,6 @@ func (file *FileInstance) QueryFilesystemInfo(attributes string, cancellable Can
 // QueryFilesystemInfoAsync wraps g_file_query_filesystem_info_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_filesystem_info_async.g_file_query_filesystem_info_async.html
-//
 func (file *FileInstance) QueryFilesystemInfoAsync(attributes string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -13935,7 +13029,6 @@ func (file *FileInstance) QueryFilesystemInfoAsync(attributes string, ioPriority
 // QueryFilesystemInfoFinish wraps g_file_query_filesystem_info_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_filesystem_info_finish.g_file_query_filesystem_info_finish.html
-//
 func (file *FileInstance) QueryFilesystemInfoFinish(res AsyncResult) (FileInfo, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -13963,7 +13056,6 @@ func (file *FileInstance) QueryFilesystemInfoFinish(res AsyncResult) (FileInfo, 
 // QueryInfo wraps g_file_query_info
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_info.g_file_query_info.html
-//
 func (file *FileInstance) QueryInfo(attributes string, flags FileQueryInfoFlags, cancellable Cancellable) (FileInfo, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14000,7 +13092,6 @@ func (file *FileInstance) QueryInfo(attributes string, flags FileQueryInfoFlags,
 // QueryInfoAsync wraps g_file_query_info_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_info_async.g_file_query_info_async.html
-//
 func (file *FileInstance) QueryInfoAsync(attributes string, flags FileQueryInfoFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14035,7 +13126,6 @@ func (file *FileInstance) QueryInfoAsync(attributes string, flags FileQueryInfoF
 // QueryInfoFinish wraps g_file_query_info_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_info_finish.g_file_query_info_finish.html
-//
 func (file *FileInstance) QueryInfoFinish(res AsyncResult) (FileInfo, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -14063,7 +13153,6 @@ func (file *FileInstance) QueryInfoFinish(res AsyncResult) (FileInfo, error) {
 // QuerySettableAttributes wraps g_file_query_settable_attributes
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_settable_attributes.g_file_query_settable_attributes.html
-//
 func (file *FileInstance) QuerySettableAttributes(cancellable Cancellable) (*FileAttributeInfoList, error) {
 	var carg0 *C.GFile                  // in, none, converted
 	var carg1 *C.GCancellable           // in, none, converted, nullable
@@ -14093,7 +13182,6 @@ func (file *FileInstance) QuerySettableAttributes(cancellable Cancellable) (*Fil
 // QueryWritableNamespaces wraps g_file_query_writable_namespaces
 // 
 // see also https://docs.gtk.org/gio/method.g_file_query_writable_namespaces.g_file_query_writable_namespaces.html
-//
 func (file *FileInstance) QueryWritableNamespaces(cancellable Cancellable) (*FileAttributeInfoList, error) {
 	var carg0 *C.GFile                  // in, none, converted
 	var carg1 *C.GCancellable           // in, none, converted, nullable
@@ -14123,7 +13211,6 @@ func (file *FileInstance) QueryWritableNamespaces(cancellable Cancellable) (*Fil
 // Read wraps g_file_read
 // 
 // see also https://docs.gtk.org/gio/method.g_file_read.g_file_read.html
-//
 func (file *FileInstance) Read(cancellable Cancellable) (FileInputStream, error) {
 	var carg0 *C.GFile            // in, none, converted
 	var carg1 *C.GCancellable     // in, none, converted, nullable
@@ -14153,7 +13240,6 @@ func (file *FileInstance) Read(cancellable Cancellable) (FileInputStream, error)
 // ReadAsync wraps g_file_read_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_read_async.g_file_read_async.html
-//
 func (file *FileInstance) ReadAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -14181,7 +13267,6 @@ func (file *FileInstance) ReadAsync(ioPriority int32, cancellable Cancellable, c
 // ReadFinish wraps g_file_read_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_read_finish.g_file_read_finish.html
-//
 func (file *FileInstance) ReadFinish(res AsyncResult) (FileInputStream, error) {
 	var carg0 *C.GFile            // in, none, converted
 	var carg1 *C.GAsyncResult     // in, none, converted
@@ -14209,7 +13294,6 @@ func (file *FileInstance) ReadFinish(res AsyncResult) (FileInputStream, error) {
 // Replace wraps g_file_replace
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace.g_file_replace.html
-//
 func (file *FileInstance) Replace(etag string, makeBackup bool, flags FileCreateFlags, cancellable Cancellable) (FileOutputStream, error) {
 	var carg0 *C.GFile             // in, none, converted
 	var carg1 *C.char              // in, none, string, nullable-string
@@ -14253,7 +13337,6 @@ func (file *FileInstance) Replace(etag string, makeBackup bool, flags FileCreate
 // ReplaceAsync wraps g_file_replace_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_async.g_file_replace_async.html
-//
 func (file *FileInstance) ReplaceAsync(etag string, makeBackup bool, flags FileCreateFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string, nullable-string
@@ -14295,7 +13378,6 @@ func (file *FileInstance) ReplaceAsync(etag string, makeBackup bool, flags FileC
 // ReplaceContents wraps g_file_replace_contents
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_contents.g_file_replace_contents.html
-//
 func (file *FileInstance) ReplaceContents(contents string, etag string, makeBackup bool, flags FileCreateFlags, cancellable Cancellable) (string, bool, error) {
 	var carg0 *C.GFile           // in, none, converted
 	var carg1 *C.char            // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -14354,7 +13436,6 @@ func (file *FileInstance) ReplaceContents(contents string, etag string, makeBack
 // ReplaceContentsAsync wraps g_file_replace_contents_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_contents_async.g_file_replace_contents_async.html
-//
 func (file *FileInstance) ReplaceContentsAsync(contents string, etag string, makeBackup bool, flags FileCreateFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -14400,7 +13481,6 @@ func (file *FileInstance) ReplaceContentsAsync(contents string, etag string, mak
 // ReplaceContentsBytesAsync wraps g_file_replace_contents_bytes_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_contents_bytes_async.g_file_replace_contents_bytes_async.html
-//
 func (file *FileInstance) ReplaceContentsBytesAsync(contents *glib.Bytes, etag string, makeBackup bool, flags FileCreateFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.GBytes             // in, none, converted
@@ -14442,7 +13522,6 @@ func (file *FileInstance) ReplaceContentsBytesAsync(contents *glib.Bytes, etag s
 // ReplaceContentsFinish wraps g_file_replace_contents_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_contents_finish.g_file_replace_contents_finish.html
-//
 func (file *FileInstance) ReplaceContentsFinish(res AsyncResult) (string, bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -14478,7 +13557,6 @@ func (file *FileInstance) ReplaceContentsFinish(res AsyncResult) (string, bool, 
 // ReplaceFinish wraps g_file_replace_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_finish.g_file_replace_finish.html
-//
 func (file *FileInstance) ReplaceFinish(res AsyncResult) (FileOutputStream, error) {
 	var carg0 *C.GFile             // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -14506,7 +13584,6 @@ func (file *FileInstance) ReplaceFinish(res AsyncResult) (FileOutputStream, erro
 // ReplaceReadwrite wraps g_file_replace_readwrite
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_readwrite.g_file_replace_readwrite.html
-//
 func (file *FileInstance) ReplaceReadwrite(etag string, makeBackup bool, flags FileCreateFlags, cancellable Cancellable) (FileIOStream, error) {
 	var carg0 *C.GFile           // in, none, converted
 	var carg1 *C.char            // in, none, string, nullable-string
@@ -14550,7 +13627,6 @@ func (file *FileInstance) ReplaceReadwrite(etag string, makeBackup bool, flags F
 // ReplaceReadwriteAsync wraps g_file_replace_readwrite_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_readwrite_async.g_file_replace_readwrite_async.html
-//
 func (file *FileInstance) ReplaceReadwriteAsync(etag string, makeBackup bool, flags FileCreateFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string, nullable-string
@@ -14592,7 +13668,6 @@ func (file *FileInstance) ReplaceReadwriteAsync(etag string, makeBackup bool, fl
 // ReplaceReadwriteFinish wraps g_file_replace_readwrite_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_replace_readwrite_finish.g_file_replace_readwrite_finish.html
-//
 func (file *FileInstance) ReplaceReadwriteFinish(res AsyncResult) (FileIOStream, error) {
 	var carg0 *C.GFile         // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -14620,7 +13695,6 @@ func (file *FileInstance) ReplaceReadwriteFinish(res AsyncResult) (FileIOStream,
 // ResolveRelativePath wraps g_file_resolve_relative_path
 // 
 // see also https://docs.gtk.org/gio/method.g_file_resolve_relative_path.g_file_resolve_relative_path.html
-//
 func (file *FileInstance) ResolveRelativePath(relativePath string) File {
 	var carg0 *C.GFile // in, none, converted
 	var carg1 *C.char  // in, none, string
@@ -14644,7 +13718,6 @@ func (file *FileInstance) ResolveRelativePath(relativePath string) File {
 // SetAttributeByteString wraps g_file_set_attribute_byte_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attribute_byte_string.g_file_set_attribute_byte_string.html
-//
 func (file *FileInstance) SetAttributeByteString(attribute string, value string, flags FileQueryInfoFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14687,7 +13760,6 @@ func (file *FileInstance) SetAttributeByteString(attribute string, value string,
 // SetAttributeInt32 wraps g_file_set_attribute_int32
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attribute_int32.g_file_set_attribute_int32.html
-//
 func (file *FileInstance) SetAttributeInt32(attribute string, value int32, flags FileQueryInfoFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14729,7 +13801,6 @@ func (file *FileInstance) SetAttributeInt32(attribute string, value int32, flags
 // SetAttributeInt64 wraps g_file_set_attribute_int64
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attribute_int64.g_file_set_attribute_int64.html
-//
 func (file *FileInstance) SetAttributeInt64(attribute string, value int64, flags FileQueryInfoFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14771,7 +13842,6 @@ func (file *FileInstance) SetAttributeInt64(attribute string, value int64, flags
 // SetAttributeString wraps g_file_set_attribute_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attribute_string.g_file_set_attribute_string.html
-//
 func (file *FileInstance) SetAttributeString(attribute string, value string, flags FileQueryInfoFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14814,7 +13884,6 @@ func (file *FileInstance) SetAttributeString(attribute string, value string, fla
 // SetAttributeUint32 wraps g_file_set_attribute_uint32
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attribute_uint32.g_file_set_attribute_uint32.html
-//
 func (file *FileInstance) SetAttributeUint32(attribute string, value uint32, flags FileQueryInfoFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14856,7 +13925,6 @@ func (file *FileInstance) SetAttributeUint32(attribute string, value uint32, fla
 // SetAttributeUint64 wraps g_file_set_attribute_uint64
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attribute_uint64.g_file_set_attribute_uint64.html
-//
 func (file *FileInstance) SetAttributeUint64(attribute string, value uint64, flags FileQueryInfoFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -14898,7 +13966,6 @@ func (file *FileInstance) SetAttributeUint64(attribute string, value uint64, fla
 // SetAttributesAsync wraps g_file_set_attributes_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attributes_async.g_file_set_attributes_async.html
-//
 func (file *FileInstance) SetAttributesAsync(info FileInfo, flags FileQueryInfoFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.GFileInfo          // in, none, converted
@@ -14932,7 +13999,6 @@ func (file *FileInstance) SetAttributesAsync(info FileInfo, flags FileQueryInfoF
 // SetAttributesFinish wraps g_file_set_attributes_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attributes_finish.g_file_set_attributes_finish.html
-//
 func (file *FileInstance) SetAttributesFinish(result AsyncResult) (FileInfo, bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -14965,7 +14031,6 @@ func (file *FileInstance) SetAttributesFinish(result AsyncResult) (FileInfo, boo
 // SetAttributesFromInfo wraps g_file_set_attributes_from_info
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_attributes_from_info.g_file_set_attributes_from_info.html
-//
 func (file *FileInstance) SetAttributesFromInfo(info FileInfo, flags FileQueryInfoFlags, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.GFileInfo          // in, none, converted
@@ -15003,7 +14068,6 @@ func (file *FileInstance) SetAttributesFromInfo(info FileInfo, flags FileQueryIn
 // SetDisplayName wraps g_file_set_display_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_display_name.g_file_set_display_name.html
-//
 func (file *FileInstance) SetDisplayName(displayName string, cancellable Cancellable) (File, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.char         // in, none, string
@@ -15037,7 +14101,6 @@ func (file *FileInstance) SetDisplayName(displayName string, cancellable Cancell
 // SetDisplayNameAsync wraps g_file_set_display_name_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_display_name_async.g_file_set_display_name_async.html
-//
 func (file *FileInstance) SetDisplayNameAsync(displayName string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -15069,7 +14132,6 @@ func (file *FileInstance) SetDisplayNameAsync(displayName string, ioPriority int
 // SetDisplayNameFinish wraps g_file_set_display_name_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_set_display_name_finish.g_file_set_display_name_finish.html
-//
 func (file *FileInstance) SetDisplayNameFinish(res AsyncResult) (File, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -15097,7 +14159,6 @@ func (file *FileInstance) SetDisplayNameFinish(res AsyncResult) (File, error) {
 // StartMountable wraps g_file_start_mountable
 // 
 // see also https://docs.gtk.org/gio/method.g_file_start_mountable.g_file_start_mountable.html
-//
 func (file *FileInstance) StartMountable(flags DriveStartFlags, startOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GDriveStartFlags    // in, none, casted
@@ -15130,7 +14191,6 @@ func (file *FileInstance) StartMountable(flags DriveStartFlags, startOperation M
 // StartMountableFinish wraps g_file_start_mountable_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_start_mountable_finish.g_file_start_mountable_finish.html
-//
 func (file *FileInstance) StartMountableFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -15160,7 +14220,6 @@ func (file *FileInstance) StartMountableFinish(result AsyncResult) (bool, error)
 // StopMountable wraps g_file_stop_mountable
 // 
 // see also https://docs.gtk.org/gio/method.g_file_stop_mountable.g_file_stop_mountable.html
-//
 func (file *FileInstance) StopMountable(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -15193,7 +14252,6 @@ func (file *FileInstance) StopMountable(flags MountUnmountFlags, mountOperation 
 // StopMountableFinish wraps g_file_stop_mountable_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_stop_mountable_finish.g_file_stop_mountable_finish.html
-//
 func (file *FileInstance) StopMountableFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -15223,7 +14281,6 @@ func (file *FileInstance) StopMountableFinish(result AsyncResult) (bool, error) 
 // SupportsThreadContexts wraps g_file_supports_thread_contexts
 // 
 // see also https://docs.gtk.org/gio/method.g_file_supports_thread_contexts.g_file_supports_thread_contexts.html
-//
 func (file *FileInstance) SupportsThreadContexts() bool {
 	var carg0 *C.GFile   // in, none, converted
 	var cret  C.gboolean // return
@@ -15245,7 +14302,6 @@ func (file *FileInstance) SupportsThreadContexts() bool {
 // Trash wraps g_file_trash
 // 
 // see also https://docs.gtk.org/gio/method.g_file_trash.g_file_trash.html
-//
 func (file *FileInstance) Trash(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -15277,7 +14333,6 @@ func (file *FileInstance) Trash(cancellable Cancellable) (bool, error) {
 // TrashAsync wraps g_file_trash_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_trash_async.g_file_trash_async.html
-//
 func (file *FileInstance) TrashAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -15305,7 +14360,6 @@ func (file *FileInstance) TrashAsync(ioPriority int32, cancellable Cancellable, 
 // TrashFinish wraps g_file_trash_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_trash_finish.g_file_trash_finish.html
-//
 func (file *FileInstance) TrashFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -15336,8 +14390,7 @@ func (file *FileInstance) TrashFinish(result AsyncResult) (bool, error) {
 // 
 // see also https://docs.gtk.org/gio/method.g_file_unmount_mountable.g_file_unmount_mountable.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_file_unmount_mountable_with_operation() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (file *FileInstance) UnmountMountable(flags MountUnmountFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -15366,9 +14419,7 @@ func (file *FileInstance) UnmountMountable(flags MountUnmountFlags, cancellable 
 // 
 // see also https://docs.gtk.org/gio/method.g_file_unmount_mountable_finish.g_file_unmount_mountable_finish.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_file_unmount_mountable_with_operation_finish()
-//   instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (file *FileInstance) UnmountMountableFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -15398,7 +14449,6 @@ func (file *FileInstance) UnmountMountableFinish(result AsyncResult) (bool, erro
 // UnmountMountableWithOperation wraps g_file_unmount_mountable_with_operation
 // 
 // see also https://docs.gtk.org/gio/method.g_file_unmount_mountable_with_operation.g_file_unmount_mountable_with_operation.html
-//
 func (file *FileInstance) UnmountMountableWithOperation(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFile              // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -15431,7 +14481,6 @@ func (file *FileInstance) UnmountMountableWithOperation(flags MountUnmountFlags,
 // UnmountMountableWithOperationFinish wraps g_file_unmount_mountable_with_operation_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_unmount_mountable_with_operation_finish.g_file_unmount_mountable_with_operation_finish.html
-//
 func (file *FileInstance) UnmountMountableWithOperationFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFile        // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -15469,19 +14518,16 @@ var _ Icon = (*IconInstance)(nil)
 // Icon wraps GIcon
 // 
 // see also https://docs.gtk.org/gio/interface.Icon.html
-//
 type Icon interface {
 	upcastToGIcon() *IconInstance
 
 	// Equal wraps g_icon_equal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_icon_equal.g_icon_equal.html
-	//
 	Equal(Icon) bool
 	// String wraps g_icon_to_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_icon_to_string.g_icon_to_string.html
-	//
 	String() string
 }
 
@@ -15531,7 +14577,6 @@ func UnsafeIconToGlibFull(c Icon) unsafe.Pointer {
 // NewIconForString wraps g_icon_new_for_string
 // 
 // see also https://docs.gtk.org/gio/func.g_icon_new_for_string.html
-//
 func NewIconForString(str string) (Icon, error) {
 	var carg1 *C.gchar  // in, none, string
 	var cret  *C.GIcon  // return, full, converted
@@ -15557,7 +14602,6 @@ func NewIconForString(str string) (Icon, error) {
 // Equal wraps g_icon_equal
 // 
 // see also https://docs.gtk.org/gio/method.g_icon_equal.g_icon_equal.html
-//
 func (icon1 *IconInstance) Equal(icon2 Icon) bool {
 	var carg0 *C.GIcon   // in, none, converted
 	var carg1 *C.GIcon   // in, none, converted, nullable
@@ -15584,7 +14628,6 @@ func (icon1 *IconInstance) Equal(icon2 Icon) bool {
 // String wraps g_icon_to_string
 // 
 // see also https://docs.gtk.org/gio/method.g_icon_to_string.g_icon_to_string.html
-//
 func (icon *IconInstance) String() string {
 	var carg0 *C.GIcon // in, none, converted
 	var cret  *C.gchar // return, full, string, nullable-string
@@ -15615,14 +14658,12 @@ var _ Initable = (*InitableInstance)(nil)
 // Initable wraps GInitable
 // 
 // see also https://docs.gtk.org/gio/interface.Initable.html
-//
 type Initable interface {
 	upcastToGInitable() *InitableInstance
 
 	// Init wraps g_initable_init
 	// 
 	// see also https://docs.gtk.org/gio/method.g_initable_init.g_initable_init.html
-	//
 	Init(Cancellable) (bool, error)
 }
 
@@ -15672,7 +14713,6 @@ func UnsafeInitableToGlibFull(c Initable) unsafe.Pointer {
 // Init wraps g_initable_init
 // 
 // see also https://docs.gtk.org/gio/method.g_initable_init.g_initable_init.html
-//
 func (initable *InitableInstance) Init(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GInitable    // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -15712,34 +14752,28 @@ var _ ListModel = (*ListModelInstance)(nil)
 // ListModel wraps GListModel
 // 
 // see also https://docs.gtk.org/gio/interface.ListModel.html
-//
 type ListModel interface {
 	upcastToGListModel() *ListModelInstance
 
 	// GetItemType wraps g_list_model_get_item_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_list_model_get_item_type.g_list_model_get_item_type.html
-	//
 	GetItemType() gobject.Type
 	// GetNItems wraps g_list_model_get_n_items
 	// 
 	// see also https://docs.gtk.org/gio/method.g_list_model_get_n_items.g_list_model_get_n_items.html
-	//
 	GetNItems() uint
 	// GetObject wraps g_list_model_get_object
 	// 
 	// see also https://docs.gtk.org/gio/method.g_list_model_get_object.g_list_model_get_object.html
-	//
 	GetObject(uint) gobject.Object
 	// ItemsChanged wraps g_list_model_items_changed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_list_model_items_changed.g_list_model_items_changed.html
-	//
 	ItemsChanged(uint, uint, uint)
 	// ConnectItemsChanged connects the provided callback to the "items-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.ListModel.items-changed.html
-	//
 	ConnectItemsChanged(func(ListModel, uint, uint, uint)) gobject.SignalHandle
 }
 
@@ -15789,7 +14823,6 @@ func UnsafeListModelToGlibFull(c ListModel) unsafe.Pointer {
 // GetItemType wraps g_list_model_get_item_type
 // 
 // see also https://docs.gtk.org/gio/method.g_list_model_get_item_type.g_list_model_get_item_type.html
-//
 func (list *ListModelInstance) GetItemType() gobject.Type {
 	var carg0 *C.GListModel // in, none, converted
 	var cret  C.GType       // return, none, casted, alias
@@ -15809,7 +14842,6 @@ func (list *ListModelInstance) GetItemType() gobject.Type {
 // GetNItems wraps g_list_model_get_n_items
 // 
 // see also https://docs.gtk.org/gio/method.g_list_model_get_n_items.g_list_model_get_n_items.html
-//
 func (list *ListModelInstance) GetNItems() uint {
 	var carg0 *C.GListModel // in, none, converted
 	var cret  C.guint       // return, none, casted
@@ -15829,7 +14861,6 @@ func (list *ListModelInstance) GetNItems() uint {
 // GetObject wraps g_list_model_get_object
 // 
 // see also https://docs.gtk.org/gio/method.g_list_model_get_object.g_list_model_get_object.html
-//
 func (list *ListModelInstance) GetObject(position uint) gobject.Object {
 	var carg0 *C.GListModel // in, none, converted
 	var carg1 C.guint       // in, none, casted
@@ -15854,7 +14885,6 @@ func (list *ListModelInstance) GetObject(position uint) gobject.Object {
 // ItemsChanged wraps g_list_model_items_changed
 // 
 // see also https://docs.gtk.org/gio/method.g_list_model_items_changed.g_list_model_items_changed.html
-//
 func (list *ListModelInstance) ItemsChanged(position uint, removed uint, added uint) {
 	var carg0 *C.GListModel // in, none, converted
 	var carg1 C.guint       // in, none, casted
@@ -15876,7 +14906,6 @@ func (list *ListModelInstance) ItemsChanged(position uint, removed uint, added u
 // ConnectItemsChanged connects the provided callback to the "items-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.ListModel.items-changed.html
-//
 func (o *ListModelInstance) ConnectItemsChanged(fn func(ListModel, uint, uint, uint)) gobject.SignalHandle {
 	return o.Instance.Connect("items-changed", fn)
 }
@@ -15892,24 +14921,20 @@ var _ LoadableIcon = (*LoadableIconInstance)(nil)
 // LoadableIcon wraps GLoadableIcon
 // 
 // see also https://docs.gtk.org/gio/interface.LoadableIcon.html
-//
 type LoadableIcon interface {
 	upcastToGLoadableIcon() *LoadableIconInstance
 
 	// Load wraps g_loadable_icon_load
 	// 
 	// see also https://docs.gtk.org/gio/method.g_loadable_icon_load.g_loadable_icon_load.html
-	//
 	Load(int32, Cancellable) (string, InputStream, error)
 	// LoadAsync wraps g_loadable_icon_load_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_loadable_icon_load_async.g_loadable_icon_load_async.html
-	//
 	LoadAsync(int32, Cancellable, AsyncReadyCallback)
 	// LoadFinish wraps g_loadable_icon_load_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_loadable_icon_load_finish.g_loadable_icon_load_finish.html
-	//
 	LoadFinish(AsyncResult) (string, InputStream, error)
 }
 
@@ -15959,7 +14984,6 @@ func UnsafeLoadableIconToGlibFull(c LoadableIcon) unsafe.Pointer {
 // Load wraps g_loadable_icon_load
 // 
 // see also https://docs.gtk.org/gio/method.g_loadable_icon_load.g_loadable_icon_load.html
-//
 func (icon *LoadableIconInstance) Load(size int32, cancellable Cancellable) (string, InputStream, error) {
 	var carg0 *C.GLoadableIcon // in, none, converted
 	var carg1 C.int            // in, none, casted
@@ -15996,7 +15020,6 @@ func (icon *LoadableIconInstance) Load(size int32, cancellable Cancellable) (str
 // LoadAsync wraps g_loadable_icon_load_async
 // 
 // see also https://docs.gtk.org/gio/method.g_loadable_icon_load_async.g_loadable_icon_load_async.html
-//
 func (icon *LoadableIconInstance) LoadAsync(size int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GLoadableIcon      // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -16024,7 +15047,6 @@ func (icon *LoadableIconInstance) LoadAsync(size int32, cancellable Cancellable,
 // LoadFinish wraps g_loadable_icon_load_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_loadable_icon_load_finish.g_loadable_icon_load_finish.html
-//
 func (icon *LoadableIconInstance) LoadFinish(res AsyncResult) (string, InputStream, error) {
 	var carg0 *C.GLoadableIcon // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -16064,14 +15086,12 @@ var _ MemoryMonitor = (*MemoryMonitorInstance)(nil)
 // MemoryMonitor wraps GMemoryMonitor
 // 
 // see also https://docs.gtk.org/gio/interface.MemoryMonitor.html
-//
 type MemoryMonitor interface {
 	upcastToGMemoryMonitor() *MemoryMonitorInstance
 
 	// ConnectLowMemoryWarning connects the provided callback to the "low-memory-warning" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.MemoryMonitor.low-memory-warning.html
-	//
 	ConnectLowMemoryWarning(func(MemoryMonitor, MemoryMonitorWarningLevel)) gobject.SignalHandle
 }
 
@@ -16121,7 +15141,6 @@ func UnsafeMemoryMonitorToGlibFull(c MemoryMonitor) unsafe.Pointer {
 // MemoryMonitorDupDefault wraps g_memory_monitor_dup_default
 // 
 // see also https://docs.gtk.org/gio/func.g_memory_monitor_dup_default.html
-//
 func MemoryMonitorDupDefault() MemoryMonitor {
 	var cret *C.GMemoryMonitor // return, full, converted
 
@@ -16137,7 +15156,6 @@ func MemoryMonitorDupDefault() MemoryMonitor {
 // ConnectLowMemoryWarning connects the provided callback to the "low-memory-warning" signal
 // 
 // see also https://docs.gtk.org/gio/signal.MemoryMonitor.low-memory-warning.html
-//
 func (o *MemoryMonitorInstance) ConnectLowMemoryWarning(fn func(MemoryMonitor, MemoryMonitorWarningLevel)) gobject.SignalHandle {
 	return o.Instance.Connect("low-memory-warning", fn)
 }
@@ -16153,167 +15171,136 @@ var _ Mount = (*MountInstance)(nil)
 // Mount wraps GMount
 // 
 // see also https://docs.gtk.org/gio/interface.Mount.html
-//
 type Mount interface {
 	upcastToGMount() *MountInstance
 
 	// CanEject wraps g_mount_can_eject
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_can_eject.g_mount_can_eject.html
-	//
 	CanEject() bool
 	// CanUnmount wraps g_mount_can_unmount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_can_unmount.g_mount_can_unmount.html
-	//
 	CanUnmount() bool
 	// Eject wraps g_mount_eject
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_eject.g_mount_eject.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_mount_eject_with_operation() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	Eject(MountUnmountFlags, Cancellable, AsyncReadyCallback)
 	// EjectFinish wraps g_mount_eject_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_eject_finish.g_mount_eject_finish.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_mount_eject_with_operation_finish() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	EjectFinish(AsyncResult) (bool, error)
 	// EjectWithOperation wraps g_mount_eject_with_operation
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_eject_with_operation.g_mount_eject_with_operation.html
-	//
 	EjectWithOperation(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// EjectWithOperationFinish wraps g_mount_eject_with_operation_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_eject_with_operation_finish.g_mount_eject_with_operation_finish.html
-	//
 	EjectWithOperationFinish(AsyncResult) (bool, error)
 	// GetDefaultLocation wraps g_mount_get_default_location
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_default_location.g_mount_get_default_location.html
-	//
 	GetDefaultLocation() File
 	// GetDrive wraps g_mount_get_drive
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_drive.g_mount_get_drive.html
-	//
 	GetDrive() Drive
 	// GetIcon wraps g_mount_get_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_icon.g_mount_get_icon.html
-	//
 	GetIcon() Icon
 	// GetName wraps g_mount_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_name.g_mount_get_name.html
-	//
 	GetName() string
 	// GetRoot wraps g_mount_get_root
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_root.g_mount_get_root.html
-	//
 	GetRoot() File
 	// GetSortKey wraps g_mount_get_sort_key
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_sort_key.g_mount_get_sort_key.html
-	//
 	GetSortKey() string
 	// GetSymbolicIcon wraps g_mount_get_symbolic_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_symbolic_icon.g_mount_get_symbolic_icon.html
-	//
 	GetSymbolicIcon() Icon
 	// GetUuid wraps g_mount_get_uuid
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_uuid.g_mount_get_uuid.html
-	//
 	GetUuid() string
 	// GetVolume wraps g_mount_get_volume
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_get_volume.g_mount_get_volume.html
-	//
 	GetVolume() Volume
 	// GuessContentType wraps g_mount_guess_content_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_guess_content_type.g_mount_guess_content_type.html
-	//
 	GuessContentType(bool, Cancellable, AsyncReadyCallback)
 	// GuessContentTypeFinish wraps g_mount_guess_content_type_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_guess_content_type_finish.g_mount_guess_content_type_finish.html
-	//
 	GuessContentTypeFinish(AsyncResult) ([]string, error)
 	// GuessContentTypeSync wraps g_mount_guess_content_type_sync
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_guess_content_type_sync.g_mount_guess_content_type_sync.html
-	//
 	GuessContentTypeSync(bool, Cancellable) ([]string, error)
 	// IsShadowed wraps g_mount_is_shadowed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_is_shadowed.g_mount_is_shadowed.html
-	//
 	IsShadowed() bool
 	// Remount wraps g_mount_remount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_remount.g_mount_remount.html
-	//
 	Remount(MountMountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// RemountFinish wraps g_mount_remount_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_remount_finish.g_mount_remount_finish.html
-	//
 	RemountFinish(AsyncResult) (bool, error)
 	// Shadow wraps g_mount_shadow
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_shadow.g_mount_shadow.html
-	//
 	Shadow()
 	// Unmount wraps g_mount_unmount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_unmount.g_mount_unmount.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_mount_unmount_with_operation() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	Unmount(MountUnmountFlags, Cancellable, AsyncReadyCallback)
 	// UnmountFinish wraps g_mount_unmount_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_unmount_finish.g_mount_unmount_finish.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_mount_unmount_with_operation_finish() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	UnmountFinish(AsyncResult) (bool, error)
 	// UnmountWithOperation wraps g_mount_unmount_with_operation
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_unmount_with_operation.g_mount_unmount_with_operation.html
-	//
 	UnmountWithOperation(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// UnmountWithOperationFinish wraps g_mount_unmount_with_operation_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_unmount_with_operation_finish.g_mount_unmount_with_operation_finish.html
-	//
 	UnmountWithOperationFinish(AsyncResult) (bool, error)
 	// Unshadow wraps g_mount_unshadow
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_unshadow.g_mount_unshadow.html
-	//
 	Unshadow()
 	// ConnectChanged connects the provided callback to the "changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Mount.changed.html
-	//
 	ConnectChanged(func(Mount)) gobject.SignalHandle
 	// ConnectPreUnmount connects the provided callback to the "pre-unmount" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Mount.pre-unmount.html
-	//
 	ConnectPreUnmount(func(Mount)) gobject.SignalHandle
 	// ConnectUnmounted connects the provided callback to the "unmounted" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Mount.unmounted.html
-	//
 	ConnectUnmounted(func(Mount)) gobject.SignalHandle
 }
 
@@ -16363,7 +15350,6 @@ func UnsafeMountToGlibFull(c Mount) unsafe.Pointer {
 // CanEject wraps g_mount_can_eject
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_can_eject.g_mount_can_eject.html
-//
 func (mount *MountInstance) CanEject() bool {
 	var carg0 *C.GMount  // in, none, converted
 	var cret  C.gboolean // return
@@ -16385,7 +15371,6 @@ func (mount *MountInstance) CanEject() bool {
 // CanUnmount wraps g_mount_can_unmount
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_can_unmount.g_mount_can_unmount.html
-//
 func (mount *MountInstance) CanUnmount() bool {
 	var carg0 *C.GMount  // in, none, converted
 	var cret  C.gboolean // return
@@ -16408,8 +15393,7 @@ func (mount *MountInstance) CanUnmount() bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_eject.g_mount_eject.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_mount_eject_with_operation() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (mount *MountInstance) Eject(flags MountUnmountFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GMount             // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -16438,8 +15422,7 @@ func (mount *MountInstance) Eject(flags MountUnmountFlags, cancellable Cancellab
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_eject_finish.g_mount_eject_finish.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_mount_eject_with_operation_finish() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (mount *MountInstance) EjectFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GMount       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -16469,7 +15452,6 @@ func (mount *MountInstance) EjectFinish(result AsyncResult) (bool, error) {
 // EjectWithOperation wraps g_mount_eject_with_operation
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_eject_with_operation.g_mount_eject_with_operation.html
-//
 func (mount *MountInstance) EjectWithOperation(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GMount             // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -16502,7 +15484,6 @@ func (mount *MountInstance) EjectWithOperation(flags MountUnmountFlags, mountOpe
 // EjectWithOperationFinish wraps g_mount_eject_with_operation_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_eject_with_operation_finish.g_mount_eject_with_operation_finish.html
-//
 func (mount *MountInstance) EjectWithOperationFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GMount       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -16532,7 +15513,6 @@ func (mount *MountInstance) EjectWithOperationFinish(result AsyncResult) (bool, 
 // GetDefaultLocation wraps g_mount_get_default_location
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_default_location.g_mount_get_default_location.html
-//
 func (mount *MountInstance) GetDefaultLocation() File {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.GFile  // return, full, converted
@@ -16552,7 +15532,6 @@ func (mount *MountInstance) GetDefaultLocation() File {
 // GetDrive wraps g_mount_get_drive
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_drive.g_mount_get_drive.html
-//
 func (mount *MountInstance) GetDrive() Drive {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.GDrive // return, full, converted, nullable
@@ -16574,7 +15553,6 @@ func (mount *MountInstance) GetDrive() Drive {
 // GetIcon wraps g_mount_get_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_icon.g_mount_get_icon.html
-//
 func (mount *MountInstance) GetIcon() Icon {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.GIcon  // return, full, converted
@@ -16594,7 +15572,6 @@ func (mount *MountInstance) GetIcon() Icon {
 // GetName wraps g_mount_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_name.g_mount_get_name.html
-//
 func (mount *MountInstance) GetName() string {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.char   // return, full, string
@@ -16615,7 +15592,6 @@ func (mount *MountInstance) GetName() string {
 // GetRoot wraps g_mount_get_root
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_root.g_mount_get_root.html
-//
 func (mount *MountInstance) GetRoot() File {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.GFile  // return, full, converted
@@ -16635,7 +15611,6 @@ func (mount *MountInstance) GetRoot() File {
 // GetSortKey wraps g_mount_get_sort_key
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_sort_key.g_mount_get_sort_key.html
-//
 func (mount *MountInstance) GetSortKey() string {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.gchar  // return, none, string, nullable-string
@@ -16657,7 +15632,6 @@ func (mount *MountInstance) GetSortKey() string {
 // GetSymbolicIcon wraps g_mount_get_symbolic_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_symbolic_icon.g_mount_get_symbolic_icon.html
-//
 func (mount *MountInstance) GetSymbolicIcon() Icon {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.GIcon  // return, full, converted
@@ -16677,7 +15651,6 @@ func (mount *MountInstance) GetSymbolicIcon() Icon {
 // GetUuid wraps g_mount_get_uuid
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_uuid.g_mount_get_uuid.html
-//
 func (mount *MountInstance) GetUuid() string {
 	var carg0 *C.GMount // in, none, converted
 	var cret  *C.char   // return, full, string, nullable-string
@@ -16700,7 +15673,6 @@ func (mount *MountInstance) GetUuid() string {
 // GetVolume wraps g_mount_get_volume
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_get_volume.g_mount_get_volume.html
-//
 func (mount *MountInstance) GetVolume() Volume {
 	var carg0 *C.GMount  // in, none, converted
 	var cret  *C.GVolume // return, full, converted, nullable
@@ -16722,7 +15694,6 @@ func (mount *MountInstance) GetVolume() Volume {
 // GuessContentType wraps g_mount_guess_content_type
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_guess_content_type.g_mount_guess_content_type.html
-//
 func (mount *MountInstance) GuessContentType(forceRescan bool, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GMount             // in, none, converted
 	var carg1 C.gboolean            // in
@@ -16752,7 +15723,6 @@ func (mount *MountInstance) GuessContentType(forceRescan bool, cancellable Cance
 // GuessContentTypeFinish wraps g_mount_guess_content_type_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_guess_content_type_finish.g_mount_guess_content_type_finish.html
-//
 func (mount *MountInstance) GuessContentTypeFinish(result AsyncResult) ([]string, error) {
 	var carg0 *C.GMount       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -16782,7 +15752,6 @@ func (mount *MountInstance) GuessContentTypeFinish(result AsyncResult) ([]string
 // GuessContentTypeSync wraps g_mount_guess_content_type_sync
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_guess_content_type_sync.g_mount_guess_content_type_sync.html
-//
 func (mount *MountInstance) GuessContentTypeSync(forceRescan bool, cancellable Cancellable) ([]string, error) {
 	var carg0 *C.GMount       // in, none, converted
 	var carg1 C.gboolean      // in
@@ -16819,7 +15788,6 @@ func (mount *MountInstance) GuessContentTypeSync(forceRescan bool, cancellable C
 // IsShadowed wraps g_mount_is_shadowed
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_is_shadowed.g_mount_is_shadowed.html
-//
 func (mount *MountInstance) IsShadowed() bool {
 	var carg0 *C.GMount  // in, none, converted
 	var cret  C.gboolean // return
@@ -16841,7 +15809,6 @@ func (mount *MountInstance) IsShadowed() bool {
 // Remount wraps g_mount_remount
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_remount.g_mount_remount.html
-//
 func (mount *MountInstance) Remount(flags MountMountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GMount             // in, none, converted
 	var carg1 C.GMountMountFlags    // in, none, casted
@@ -16874,7 +15841,6 @@ func (mount *MountInstance) Remount(flags MountMountFlags, mountOperation MountO
 // RemountFinish wraps g_mount_remount_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_remount_finish.g_mount_remount_finish.html
-//
 func (mount *MountInstance) RemountFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GMount       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -16904,7 +15870,6 @@ func (mount *MountInstance) RemountFinish(result AsyncResult) (bool, error) {
 // Shadow wraps g_mount_shadow
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_shadow.g_mount_shadow.html
-//
 func (mount *MountInstance) Shadow() {
 	var carg0 *C.GMount // in, none, converted
 
@@ -16918,8 +15883,7 @@ func (mount *MountInstance) Shadow() {
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_unmount.g_mount_unmount.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_mount_unmount_with_operation() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (mount *MountInstance) Unmount(flags MountUnmountFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GMount             // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -16948,8 +15912,7 @@ func (mount *MountInstance) Unmount(flags MountUnmountFlags, cancellable Cancell
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_unmount_finish.g_mount_unmount_finish.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_mount_unmount_with_operation_finish() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (mount *MountInstance) UnmountFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GMount       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -16979,7 +15942,6 @@ func (mount *MountInstance) UnmountFinish(result AsyncResult) (bool, error) {
 // UnmountWithOperation wraps g_mount_unmount_with_operation
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_unmount_with_operation.g_mount_unmount_with_operation.html
-//
 func (mount *MountInstance) UnmountWithOperation(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GMount             // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -17012,7 +15974,6 @@ func (mount *MountInstance) UnmountWithOperation(flags MountUnmountFlags, mountO
 // UnmountWithOperationFinish wraps g_mount_unmount_with_operation_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_unmount_with_operation_finish.g_mount_unmount_with_operation_finish.html
-//
 func (mount *MountInstance) UnmountWithOperationFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GMount       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -17042,7 +16003,6 @@ func (mount *MountInstance) UnmountWithOperationFinish(result AsyncResult) (bool
 // Unshadow wraps g_mount_unshadow
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_unshadow.g_mount_unshadow.html
-//
 func (mount *MountInstance) Unshadow() {
 	var carg0 *C.GMount // in, none, converted
 
@@ -17055,7 +16015,6 @@ func (mount *MountInstance) Unshadow() {
 // ConnectChanged connects the provided callback to the "changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Mount.changed.html
-//
 func (o *MountInstance) ConnectChanged(fn func(Mount)) gobject.SignalHandle {
 	return o.Instance.Connect("changed", fn)
 }
@@ -17063,7 +16022,6 @@ func (o *MountInstance) ConnectChanged(fn func(Mount)) gobject.SignalHandle {
 // ConnectPreUnmount connects the provided callback to the "pre-unmount" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Mount.pre-unmount.html
-//
 func (o *MountInstance) ConnectPreUnmount(fn func(Mount)) gobject.SignalHandle {
 	return o.Instance.Connect("pre-unmount", fn)
 }
@@ -17071,7 +16029,6 @@ func (o *MountInstance) ConnectPreUnmount(fn func(Mount)) gobject.SignalHandle {
 // ConnectUnmounted connects the provided callback to the "unmounted" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Mount.unmounted.html
-//
 func (o *MountInstance) ConnectUnmounted(fn func(Mount)) gobject.SignalHandle {
 	return o.Instance.Connect("unmounted", fn)
 }
@@ -17087,44 +16044,36 @@ var _ NetworkMonitor = (*NetworkMonitorInstance)(nil)
 // NetworkMonitor wraps GNetworkMonitor
 // 
 // see also https://docs.gtk.org/gio/interface.NetworkMonitor.html
-//
 type NetworkMonitor interface {
 	upcastToGNetworkMonitor() *NetworkMonitorInstance
 
 	// CanReach wraps g_network_monitor_can_reach
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_monitor_can_reach.g_network_monitor_can_reach.html
-	//
 	CanReach(SocketConnectable, Cancellable) (bool, error)
 	// CanReachAsync wraps g_network_monitor_can_reach_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_monitor_can_reach_async.g_network_monitor_can_reach_async.html
-	//
 	CanReachAsync(SocketConnectable, Cancellable, AsyncReadyCallback)
 	// CanReachFinish wraps g_network_monitor_can_reach_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_monitor_can_reach_finish.g_network_monitor_can_reach_finish.html
-	//
 	CanReachFinish(AsyncResult) (bool, error)
 	// GetConnectivity wraps g_network_monitor_get_connectivity
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_monitor_get_connectivity.g_network_monitor_get_connectivity.html
-	//
 	GetConnectivity() NetworkConnectivity
 	// GetNetworkAvailable wraps g_network_monitor_get_network_available
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_monitor_get_network_available.g_network_monitor_get_network_available.html
-	//
 	GetNetworkAvailable() bool
 	// GetNetworkMetered wraps g_network_monitor_get_network_metered
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_monitor_get_network_metered.g_network_monitor_get_network_metered.html
-	//
 	GetNetworkMetered() bool
 	// ConnectNetworkChanged connects the provided callback to the "network-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.NetworkMonitor.network-changed.html
-	//
 	ConnectNetworkChanged(func(NetworkMonitor, bool)) gobject.SignalHandle
 }
 
@@ -17174,7 +16123,6 @@ func UnsafeNetworkMonitorToGlibFull(c NetworkMonitor) unsafe.Pointer {
 // NetworkMonitorGetDefault wraps g_network_monitor_get_default
 // 
 // see also https://docs.gtk.org/gio/func.g_network_monitor_get_default.html
-//
 func NetworkMonitorGetDefault() NetworkMonitor {
 	var cret *C.GNetworkMonitor // return, none, converted
 
@@ -17190,7 +16138,6 @@ func NetworkMonitorGetDefault() NetworkMonitor {
 // CanReach wraps g_network_monitor_can_reach
 // 
 // see also https://docs.gtk.org/gio/method.g_network_monitor_can_reach.g_network_monitor_can_reach.html
-//
 func (monitor *NetworkMonitorInstance) CanReach(connectable SocketConnectable, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GNetworkMonitor    // in, none, converted
 	var carg1 *C.GSocketConnectable // in, none, converted
@@ -17225,7 +16172,6 @@ func (monitor *NetworkMonitorInstance) CanReach(connectable SocketConnectable, c
 // CanReachAsync wraps g_network_monitor_can_reach_async
 // 
 // see also https://docs.gtk.org/gio/method.g_network_monitor_can_reach_async.g_network_monitor_can_reach_async.html
-//
 func (monitor *NetworkMonitorInstance) CanReachAsync(connectable SocketConnectable, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GNetworkMonitor    // in, none, converted
 	var carg1 *C.GSocketConnectable // in, none, converted
@@ -17253,7 +16199,6 @@ func (monitor *NetworkMonitorInstance) CanReachAsync(connectable SocketConnectab
 // CanReachFinish wraps g_network_monitor_can_reach_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_network_monitor_can_reach_finish.g_network_monitor_can_reach_finish.html
-//
 func (monitor *NetworkMonitorInstance) CanReachFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GNetworkMonitor // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -17283,7 +16228,6 @@ func (monitor *NetworkMonitorInstance) CanReachFinish(result AsyncResult) (bool,
 // GetConnectivity wraps g_network_monitor_get_connectivity
 // 
 // see also https://docs.gtk.org/gio/method.g_network_monitor_get_connectivity.g_network_monitor_get_connectivity.html
-//
 func (monitor *NetworkMonitorInstance) GetConnectivity() NetworkConnectivity {
 	var carg0 *C.GNetworkMonitor     // in, none, converted
 	var cret  C.GNetworkConnectivity // return, none, casted
@@ -17303,7 +16247,6 @@ func (monitor *NetworkMonitorInstance) GetConnectivity() NetworkConnectivity {
 // GetNetworkAvailable wraps g_network_monitor_get_network_available
 // 
 // see also https://docs.gtk.org/gio/method.g_network_monitor_get_network_available.g_network_monitor_get_network_available.html
-//
 func (monitor *NetworkMonitorInstance) GetNetworkAvailable() bool {
 	var carg0 *C.GNetworkMonitor // in, none, converted
 	var cret  C.gboolean         // return
@@ -17325,7 +16268,6 @@ func (monitor *NetworkMonitorInstance) GetNetworkAvailable() bool {
 // GetNetworkMetered wraps g_network_monitor_get_network_metered
 // 
 // see also https://docs.gtk.org/gio/method.g_network_monitor_get_network_metered.g_network_monitor_get_network_metered.html
-//
 func (monitor *NetworkMonitorInstance) GetNetworkMetered() bool {
 	var carg0 *C.GNetworkMonitor // in, none, converted
 	var cret  C.gboolean         // return
@@ -17347,7 +16289,6 @@ func (monitor *NetworkMonitorInstance) GetNetworkMetered() bool {
 // ConnectNetworkChanged connects the provided callback to the "network-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.NetworkMonitor.network-changed.html
-//
 func (o *NetworkMonitorInstance) ConnectNetworkChanged(fn func(NetworkMonitor, bool)) gobject.SignalHandle {
 	return o.Instance.Connect("network-changed", fn)
 }
@@ -17363,19 +16304,16 @@ var _ PollableInputStream = (*PollableInputStreamInstance)(nil)
 // PollableInputStream wraps GPollableInputStream
 // 
 // see also https://docs.gtk.org/gio/interface.PollableInputStream.html
-//
 type PollableInputStream interface {
 	upcastToGPollableInputStream() *PollableInputStreamInstance
 
 	// CanPoll wraps g_pollable_input_stream_can_poll
 	// 
 	// see also https://docs.gtk.org/gio/method.g_pollable_input_stream_can_poll.g_pollable_input_stream_can_poll.html
-	//
 	CanPoll() bool
 	// IsReadable wraps g_pollable_input_stream_is_readable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_pollable_input_stream_is_readable.g_pollable_input_stream_is_readable.html
-	//
 	IsReadable() bool
 }
 
@@ -17425,7 +16363,6 @@ func UnsafePollableInputStreamToGlibFull(c PollableInputStream) unsafe.Pointer {
 // CanPoll wraps g_pollable_input_stream_can_poll
 // 
 // see also https://docs.gtk.org/gio/method.g_pollable_input_stream_can_poll.g_pollable_input_stream_can_poll.html
-//
 func (stream *PollableInputStreamInstance) CanPoll() bool {
 	var carg0 *C.GPollableInputStream // in, none, converted
 	var cret  C.gboolean              // return
@@ -17447,7 +16384,6 @@ func (stream *PollableInputStreamInstance) CanPoll() bool {
 // IsReadable wraps g_pollable_input_stream_is_readable
 // 
 // see also https://docs.gtk.org/gio/method.g_pollable_input_stream_is_readable.g_pollable_input_stream_is_readable.html
-//
 func (stream *PollableInputStreamInstance) IsReadable() bool {
 	var carg0 *C.GPollableInputStream // in, none, converted
 	var cret  C.gboolean              // return
@@ -17477,29 +16413,24 @@ var _ PollableOutputStream = (*PollableOutputStreamInstance)(nil)
 // PollableOutputStream wraps GPollableOutputStream
 // 
 // see also https://docs.gtk.org/gio/interface.PollableOutputStream.html
-//
 type PollableOutputStream interface {
 	upcastToGPollableOutputStream() *PollableOutputStreamInstance
 
 	// CanPoll wraps g_pollable_output_stream_can_poll
 	// 
 	// see also https://docs.gtk.org/gio/method.g_pollable_output_stream_can_poll.g_pollable_output_stream_can_poll.html
-	//
 	CanPoll() bool
 	// IsWritable wraps g_pollable_output_stream_is_writable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_pollable_output_stream_is_writable.g_pollable_output_stream_is_writable.html
-	//
 	IsWritable() bool
 	// WriteNonblocking wraps g_pollable_output_stream_write_nonblocking
 	// 
 	// see also https://docs.gtk.org/gio/method.g_pollable_output_stream_write_nonblocking.g_pollable_output_stream_write_nonblocking.html
-	//
 	WriteNonblocking([]byte, Cancellable) (int, error)
 	// WritevNonblocking wraps g_pollable_output_stream_writev_nonblocking
 	// 
 	// see also https://docs.gtk.org/gio/method.g_pollable_output_stream_writev_nonblocking.g_pollable_output_stream_writev_nonblocking.html
-	//
 	WritevNonblocking([]OutputVector, Cancellable) (uint, PollableReturn, error)
 }
 
@@ -17549,7 +16480,6 @@ func UnsafePollableOutputStreamToGlibFull(c PollableOutputStream) unsafe.Pointer
 // CanPoll wraps g_pollable_output_stream_can_poll
 // 
 // see also https://docs.gtk.org/gio/method.g_pollable_output_stream_can_poll.g_pollable_output_stream_can_poll.html
-//
 func (stream *PollableOutputStreamInstance) CanPoll() bool {
 	var carg0 *C.GPollableOutputStream // in, none, converted
 	var cret  C.gboolean               // return
@@ -17571,7 +16501,6 @@ func (stream *PollableOutputStreamInstance) CanPoll() bool {
 // IsWritable wraps g_pollable_output_stream_is_writable
 // 
 // see also https://docs.gtk.org/gio/method.g_pollable_output_stream_is_writable.g_pollable_output_stream_is_writable.html
-//
 func (stream *PollableOutputStreamInstance) IsWritable() bool {
 	var carg0 *C.GPollableOutputStream // in, none, converted
 	var cret  C.gboolean               // return
@@ -17593,7 +16522,6 @@ func (stream *PollableOutputStreamInstance) IsWritable() bool {
 // WriteNonblocking wraps g_pollable_output_stream_write_nonblocking
 // 
 // see also https://docs.gtk.org/gio/method.g_pollable_output_stream_write_nonblocking.g_pollable_output_stream_write_nonblocking.html
-//
 func (stream *PollableOutputStreamInstance) WriteNonblocking(buffer []byte, cancellable Cancellable) (int, error) {
 	var carg0 *C.GPollableOutputStream // in, none, converted
 	var carg1 unsafe.Pointer           // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -17630,7 +16558,6 @@ func (stream *PollableOutputStreamInstance) WriteNonblocking(buffer []byte, canc
 // WritevNonblocking wraps g_pollable_output_stream_writev_nonblocking
 // 
 // see also https://docs.gtk.org/gio/method.g_pollable_output_stream_writev_nonblocking.g_pollable_output_stream_writev_nonblocking.html
-//
 func (stream *PollableOutputStreamInstance) WritevNonblocking(vectors []OutputVector, cancellable Cancellable) (uint, PollableReturn, error) {
 	var carg0 *C.GPollableOutputStream // in, none, converted
 	var carg1 *C.GOutputVector         // in, transfer: none, C Pointers: 1, Name: array[OutputVector], array (inner GOutputVector (*typesystem.Record), length-by: carg2)
@@ -17678,14 +16605,12 @@ var _ PowerProfileMonitor = (*PowerProfileMonitorInstance)(nil)
 // PowerProfileMonitor wraps GPowerProfileMonitor
 // 
 // see also https://docs.gtk.org/gio/interface.PowerProfileMonitor.html
-//
 type PowerProfileMonitor interface {
 	upcastToGPowerProfileMonitor() *PowerProfileMonitorInstance
 
 	// GetPowerSaverEnabled wraps g_power_profile_monitor_get_power_saver_enabled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_power_profile_monitor_get_power_saver_enabled.g_power_profile_monitor_get_power_saver_enabled.html
-	//
 	GetPowerSaverEnabled() bool
 }
 
@@ -17735,7 +16660,6 @@ func UnsafePowerProfileMonitorToGlibFull(c PowerProfileMonitor) unsafe.Pointer {
 // PowerProfileMonitorDupDefault wraps g_power_profile_monitor_dup_default
 // 
 // see also https://docs.gtk.org/gio/func.g_power_profile_monitor_dup_default.html
-//
 func PowerProfileMonitorDupDefault() PowerProfileMonitor {
 	var cret *C.GPowerProfileMonitor // return, full, converted
 
@@ -17751,7 +16675,6 @@ func PowerProfileMonitorDupDefault() PowerProfileMonitor {
 // GetPowerSaverEnabled wraps g_power_profile_monitor_get_power_saver_enabled
 // 
 // see also https://docs.gtk.org/gio/method.g_power_profile_monitor_get_power_saver_enabled.g_power_profile_monitor_get_power_saver_enabled.html
-//
 func (monitor *PowerProfileMonitorInstance) GetPowerSaverEnabled() bool {
 	var carg0 *C.GPowerProfileMonitor // in, none, converted
 	var cret  C.gboolean              // return
@@ -17781,29 +16704,24 @@ var _ Proxy = (*ProxyInstance)(nil)
 // Proxy wraps GProxy
 // 
 // see also https://docs.gtk.org/gio/interface.Proxy.html
-//
 type Proxy interface {
 	upcastToGProxy() *ProxyInstance
 
 	// ConnectProxy wraps g_proxy_connect
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_connect.g_proxy_connect.html
-	//
 	ConnectProxy(IOStream, ProxyAddress, Cancellable) (IOStream, error)
 	// ConnectAsync wraps g_proxy_connect_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_connect_async.g_proxy_connect_async.html
-	//
 	ConnectAsync(IOStream, ProxyAddress, Cancellable, AsyncReadyCallback)
 	// ConnectFinish wraps g_proxy_connect_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_connect_finish.g_proxy_connect_finish.html
-	//
 	ConnectFinish(AsyncResult) (IOStream, error)
 	// SupportsHostname wraps g_proxy_supports_hostname
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_supports_hostname.g_proxy_supports_hostname.html
-	//
 	SupportsHostname() bool
 }
 
@@ -17853,7 +16771,6 @@ func UnsafeProxyToGlibFull(c Proxy) unsafe.Pointer {
 // ProxyGetDefaultForProtocol wraps g_proxy_get_default_for_protocol
 // 
 // see also https://docs.gtk.org/gio/func.g_proxy_get_default_for_protocol.html
-//
 func ProxyGetDefaultForProtocol(protocol string) Proxy {
 	var carg1 *C.gchar  // in, none, string
 	var cret  *C.GProxy // return, full, converted, nullable
@@ -17876,7 +16793,6 @@ func ProxyGetDefaultForProtocol(protocol string) Proxy {
 // ConnectProxy wraps g_proxy_connect
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_connect.g_proxy_connect.html
-//
 func (proxy *ProxyInstance) ConnectProxy(connection IOStream, proxyAddress ProxyAddress, cancellable Cancellable) (IOStream, error) {
 	var carg0 *C.GProxy        // in, none, converted
 	var carg1 *C.GIOStream     // in, none, converted
@@ -17912,7 +16828,6 @@ func (proxy *ProxyInstance) ConnectProxy(connection IOStream, proxyAddress Proxy
 // ConnectAsync wraps g_proxy_connect_async
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_connect_async.g_proxy_connect_async.html
-//
 func (proxy *ProxyInstance) ConnectAsync(connection IOStream, proxyAddress ProxyAddress, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GProxy             // in, none, converted
 	var carg1 *C.GIOStream          // in, none, converted
@@ -17943,7 +16858,6 @@ func (proxy *ProxyInstance) ConnectAsync(connection IOStream, proxyAddress Proxy
 // ConnectFinish wraps g_proxy_connect_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_connect_finish.g_proxy_connect_finish.html
-//
 func (proxy *ProxyInstance) ConnectFinish(result AsyncResult) (IOStream, error) {
 	var carg0 *C.GProxy       // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -17971,7 +16885,6 @@ func (proxy *ProxyInstance) ConnectFinish(result AsyncResult) (IOStream, error) 
 // SupportsHostname wraps g_proxy_supports_hostname
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_supports_hostname.g_proxy_supports_hostname.html
-//
 func (proxy *ProxyInstance) SupportsHostname() bool {
 	var carg0 *C.GProxy  // in, none, converted
 	var cret  C.gboolean // return
@@ -18001,29 +16914,24 @@ var _ ProxyResolver = (*ProxyResolverInstance)(nil)
 // ProxyResolver wraps GProxyResolver
 // 
 // see also https://docs.gtk.org/gio/interface.ProxyResolver.html
-//
 type ProxyResolver interface {
 	upcastToGProxyResolver() *ProxyResolverInstance
 
 	// IsSupported wraps g_proxy_resolver_is_supported
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_resolver_is_supported.g_proxy_resolver_is_supported.html
-	//
 	IsSupported() bool
 	// Lookup wraps g_proxy_resolver_lookup
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_resolver_lookup.g_proxy_resolver_lookup.html
-	//
 	Lookup(string, Cancellable) ([]string, error)
 	// LookupAsync wraps g_proxy_resolver_lookup_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_resolver_lookup_async.g_proxy_resolver_lookup_async.html
-	//
 	LookupAsync(string, Cancellable, AsyncReadyCallback)
 	// LookupFinish wraps g_proxy_resolver_lookup_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_resolver_lookup_finish.g_proxy_resolver_lookup_finish.html
-	//
 	LookupFinish(AsyncResult) ([]string, error)
 }
 
@@ -18073,7 +16981,6 @@ func UnsafeProxyResolverToGlibFull(c ProxyResolver) unsafe.Pointer {
 // ProxyResolverGetDefault wraps g_proxy_resolver_get_default
 // 
 // see also https://docs.gtk.org/gio/func.g_proxy_resolver_get_default.html
-//
 func ProxyResolverGetDefault() ProxyResolver {
 	var cret *C.GProxyResolver // return, none, converted
 
@@ -18089,7 +16996,6 @@ func ProxyResolverGetDefault() ProxyResolver {
 // IsSupported wraps g_proxy_resolver_is_supported
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_resolver_is_supported.g_proxy_resolver_is_supported.html
-//
 func (resolver *ProxyResolverInstance) IsSupported() bool {
 	var carg0 *C.GProxyResolver // in, none, converted
 	var cret  C.gboolean        // return
@@ -18111,7 +17017,6 @@ func (resolver *ProxyResolverInstance) IsSupported() bool {
 // Lookup wraps g_proxy_resolver_lookup
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_resolver_lookup.g_proxy_resolver_lookup.html
-//
 func (resolver *ProxyResolverInstance) Lookup(uri string, cancellable Cancellable) ([]string, error) {
 	var carg0 *C.GProxyResolver // in, none, converted
 	var carg1 *C.gchar          // in, none, string
@@ -18147,7 +17052,6 @@ func (resolver *ProxyResolverInstance) Lookup(uri string, cancellable Cancellabl
 // LookupAsync wraps g_proxy_resolver_lookup_async
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_resolver_lookup_async.g_proxy_resolver_lookup_async.html
-//
 func (resolver *ProxyResolverInstance) LookupAsync(uri string, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GProxyResolver     // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -18176,7 +17080,6 @@ func (resolver *ProxyResolverInstance) LookupAsync(uri string, cancellable Cance
 // LookupFinish wraps g_proxy_resolver_lookup_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_resolver_lookup_finish.g_proxy_resolver_lookup_finish.html
-//
 func (resolver *ProxyResolverInstance) LookupFinish(result AsyncResult) ([]string, error) {
 	var carg0 *C.GProxyResolver // in, none, converted
 	var carg1 *C.GAsyncResult   // in, none, converted
@@ -18214,7 +17117,6 @@ var _ RemoteActionGroup = (*RemoteActionGroupInstance)(nil)
 // RemoteActionGroup wraps GRemoteActionGroup
 // 
 // see also https://docs.gtk.org/gio/interface.RemoteActionGroup.html
-//
 type RemoteActionGroup interface {
 	upcastToGRemoteActionGroup() *RemoteActionGroupInstance
 }
@@ -18273,34 +17175,28 @@ var _ Seekable = (*SeekableInstance)(nil)
 // Seekable wraps GSeekable
 // 
 // see also https://docs.gtk.org/gio/interface.Seekable.html
-//
 type Seekable interface {
 	upcastToGSeekable() *SeekableInstance
 
 	// CanSeek wraps g_seekable_can_seek
 	// 
 	// see also https://docs.gtk.org/gio/method.g_seekable_can_seek.g_seekable_can_seek.html
-	//
 	CanSeek() bool
 	// CanTruncate wraps g_seekable_can_truncate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_seekable_can_truncate.g_seekable_can_truncate.html
-	//
 	CanTruncate() bool
 	// Seek wraps g_seekable_seek
 	// 
 	// see also https://docs.gtk.org/gio/method.g_seekable_seek.g_seekable_seek.html
-	//
 	Seek(int64, glib.SeekType, Cancellable) (bool, error)
 	// Tell wraps g_seekable_tell
 	// 
 	// see also https://docs.gtk.org/gio/method.g_seekable_tell.g_seekable_tell.html
-	//
 	Tell() int64
 	// Truncate wraps g_seekable_truncate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_seekable_truncate.g_seekable_truncate.html
-	//
 	Truncate(int64, Cancellable) (bool, error)
 }
 
@@ -18350,7 +17246,6 @@ func UnsafeSeekableToGlibFull(c Seekable) unsafe.Pointer {
 // CanSeek wraps g_seekable_can_seek
 // 
 // see also https://docs.gtk.org/gio/method.g_seekable_can_seek.g_seekable_can_seek.html
-//
 func (seekable *SeekableInstance) CanSeek() bool {
 	var carg0 *C.GSeekable // in, none, converted
 	var cret  C.gboolean   // return
@@ -18372,7 +17267,6 @@ func (seekable *SeekableInstance) CanSeek() bool {
 // CanTruncate wraps g_seekable_can_truncate
 // 
 // see also https://docs.gtk.org/gio/method.g_seekable_can_truncate.g_seekable_can_truncate.html
-//
 func (seekable *SeekableInstance) CanTruncate() bool {
 	var carg0 *C.GSeekable // in, none, converted
 	var cret  C.gboolean   // return
@@ -18394,7 +17288,6 @@ func (seekable *SeekableInstance) CanTruncate() bool {
 // Seek wraps g_seekable_seek
 // 
 // see also https://docs.gtk.org/gio/method.g_seekable_seek.g_seekable_seek.html
-//
 func (seekable *SeekableInstance) Seek(offset int64, typ glib.SeekType, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GSeekable    // in, none, converted
 	var carg1 C.goffset       // in, none, casted
@@ -18432,7 +17325,6 @@ func (seekable *SeekableInstance) Seek(offset int64, typ glib.SeekType, cancella
 // Tell wraps g_seekable_tell
 // 
 // see also https://docs.gtk.org/gio/method.g_seekable_tell.g_seekable_tell.html
-//
 func (seekable *SeekableInstance) Tell() int64 {
 	var carg0 *C.GSeekable // in, none, converted
 	var cret  C.goffset    // return, none, casted
@@ -18452,7 +17344,6 @@ func (seekable *SeekableInstance) Tell() int64 {
 // Truncate wraps g_seekable_truncate
 // 
 // see also https://docs.gtk.org/gio/method.g_seekable_truncate.g_seekable_truncate.html
-//
 func (seekable *SeekableInstance) Truncate(offset int64, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GSeekable    // in, none, converted
 	var carg1 C.goffset       // in, none, casted
@@ -18495,24 +17386,20 @@ var _ SocketConnectable = (*SocketConnectableInstance)(nil)
 // SocketConnectable wraps GSocketConnectable
 // 
 // see also https://docs.gtk.org/gio/interface.SocketConnectable.html
-//
 type SocketConnectable interface {
 	upcastToGSocketConnectable() *SocketConnectableInstance
 
 	// Enumerate wraps g_socket_connectable_enumerate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connectable_enumerate.g_socket_connectable_enumerate.html
-	//
 	Enumerate() SocketAddressEnumerator
 	// ProxyEnumerate wraps g_socket_connectable_proxy_enumerate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connectable_proxy_enumerate.g_socket_connectable_proxy_enumerate.html
-	//
 	ProxyEnumerate() SocketAddressEnumerator
 	// String wraps g_socket_connectable_to_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connectable_to_string.g_socket_connectable_to_string.html
-	//
 	String() string
 }
 
@@ -18562,7 +17449,6 @@ func UnsafeSocketConnectableToGlibFull(c SocketConnectable) unsafe.Pointer {
 // Enumerate wraps g_socket_connectable_enumerate
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connectable_enumerate.g_socket_connectable_enumerate.html
-//
 func (connectable *SocketConnectableInstance) Enumerate() SocketAddressEnumerator {
 	var carg0 *C.GSocketConnectable       // in, none, converted
 	var cret  *C.GSocketAddressEnumerator // return, full, converted
@@ -18582,7 +17468,6 @@ func (connectable *SocketConnectableInstance) Enumerate() SocketAddressEnumerato
 // ProxyEnumerate wraps g_socket_connectable_proxy_enumerate
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connectable_proxy_enumerate.g_socket_connectable_proxy_enumerate.html
-//
 func (connectable *SocketConnectableInstance) ProxyEnumerate() SocketAddressEnumerator {
 	var carg0 *C.GSocketConnectable       // in, none, converted
 	var cret  *C.GSocketAddressEnumerator // return, full, converted
@@ -18602,7 +17487,6 @@ func (connectable *SocketConnectableInstance) ProxyEnumerate() SocketAddressEnum
 // String wraps g_socket_connectable_to_string
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connectable_to_string.g_socket_connectable_to_string.html
-//
 func (connectable *SocketConnectableInstance) String() string {
 	var carg0 *C.GSocketConnectable // in, none, converted
 	var cret  *C.gchar              // return, full, string
@@ -18631,59 +17515,48 @@ var _ TlsBackend = (*TlsBackendInstance)(nil)
 // TlsBackend wraps GTlsBackend
 // 
 // see also https://docs.gtk.org/gio/interface.TlsBackend.html
-//
 type TlsBackend interface {
 	upcastToGTlsBackend() *TlsBackendInstance
 
 	// GetCertificateType wraps g_tls_backend_get_certificate_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_get_certificate_type.g_tls_backend_get_certificate_type.html
-	//
 	GetCertificateType() gobject.Type
 	// GetClientConnectionType wraps g_tls_backend_get_client_connection_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_get_client_connection_type.g_tls_backend_get_client_connection_type.html
-	//
 	GetClientConnectionType() gobject.Type
 	// GetDefaultDatabase wraps g_tls_backend_get_default_database
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_get_default_database.g_tls_backend_get_default_database.html
-	//
 	GetDefaultDatabase() TlsDatabase
 	// GetDtlsClientConnectionType wraps g_tls_backend_get_dtls_client_connection_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_get_dtls_client_connection_type.g_tls_backend_get_dtls_client_connection_type.html
-	//
 	GetDtlsClientConnectionType() gobject.Type
 	// GetDtlsServerConnectionType wraps g_tls_backend_get_dtls_server_connection_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_get_dtls_server_connection_type.g_tls_backend_get_dtls_server_connection_type.html
-	//
 	GetDtlsServerConnectionType() gobject.Type
 	// GetFileDatabaseType wraps g_tls_backend_get_file_database_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_get_file_database_type.g_tls_backend_get_file_database_type.html
-	//
 	GetFileDatabaseType() gobject.Type
 	// GetServerConnectionType wraps g_tls_backend_get_server_connection_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_get_server_connection_type.g_tls_backend_get_server_connection_type.html
-	//
 	GetServerConnectionType() gobject.Type
 	// SetDefaultDatabase wraps g_tls_backend_set_default_database
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_set_default_database.g_tls_backend_set_default_database.html
-	//
 	SetDefaultDatabase(TlsDatabase)
 	// SupportsDtls wraps g_tls_backend_supports_dtls
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_supports_dtls.g_tls_backend_supports_dtls.html
-	//
 	SupportsDtls() bool
 	// SupportsTls wraps g_tls_backend_supports_tls
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_backend_supports_tls.g_tls_backend_supports_tls.html
-	//
 	SupportsTls() bool
 }
 
@@ -18733,7 +17606,6 @@ func UnsafeTlsBackendToGlibFull(c TlsBackend) unsafe.Pointer {
 // TlsBackendGetDefault wraps g_tls_backend_get_default
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_backend_get_default.html
-//
 func TlsBackendGetDefault() TlsBackend {
 	var cret *C.GTlsBackend // return, none, converted
 
@@ -18749,7 +17621,6 @@ func TlsBackendGetDefault() TlsBackend {
 // GetCertificateType wraps g_tls_backend_get_certificate_type
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_get_certificate_type.g_tls_backend_get_certificate_type.html
-//
 func (backend *TlsBackendInstance) GetCertificateType() gobject.Type {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.GType        // return, none, casted, alias
@@ -18769,7 +17640,6 @@ func (backend *TlsBackendInstance) GetCertificateType() gobject.Type {
 // GetClientConnectionType wraps g_tls_backend_get_client_connection_type
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_get_client_connection_type.g_tls_backend_get_client_connection_type.html
-//
 func (backend *TlsBackendInstance) GetClientConnectionType() gobject.Type {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.GType        // return, none, casted, alias
@@ -18789,7 +17659,6 @@ func (backend *TlsBackendInstance) GetClientConnectionType() gobject.Type {
 // GetDefaultDatabase wraps g_tls_backend_get_default_database
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_get_default_database.g_tls_backend_get_default_database.html
-//
 func (backend *TlsBackendInstance) GetDefaultDatabase() TlsDatabase {
 	var carg0 *C.GTlsBackend  // in, none, converted
 	var cret  *C.GTlsDatabase // return, full, converted
@@ -18809,7 +17678,6 @@ func (backend *TlsBackendInstance) GetDefaultDatabase() TlsDatabase {
 // GetDtlsClientConnectionType wraps g_tls_backend_get_dtls_client_connection_type
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_get_dtls_client_connection_type.g_tls_backend_get_dtls_client_connection_type.html
-//
 func (backend *TlsBackendInstance) GetDtlsClientConnectionType() gobject.Type {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.GType        // return, none, casted, alias
@@ -18829,7 +17697,6 @@ func (backend *TlsBackendInstance) GetDtlsClientConnectionType() gobject.Type {
 // GetDtlsServerConnectionType wraps g_tls_backend_get_dtls_server_connection_type
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_get_dtls_server_connection_type.g_tls_backend_get_dtls_server_connection_type.html
-//
 func (backend *TlsBackendInstance) GetDtlsServerConnectionType() gobject.Type {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.GType        // return, none, casted, alias
@@ -18849,7 +17716,6 @@ func (backend *TlsBackendInstance) GetDtlsServerConnectionType() gobject.Type {
 // GetFileDatabaseType wraps g_tls_backend_get_file_database_type
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_get_file_database_type.g_tls_backend_get_file_database_type.html
-//
 func (backend *TlsBackendInstance) GetFileDatabaseType() gobject.Type {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.GType        // return, none, casted, alias
@@ -18869,7 +17735,6 @@ func (backend *TlsBackendInstance) GetFileDatabaseType() gobject.Type {
 // GetServerConnectionType wraps g_tls_backend_get_server_connection_type
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_get_server_connection_type.g_tls_backend_get_server_connection_type.html
-//
 func (backend *TlsBackendInstance) GetServerConnectionType() gobject.Type {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.GType        // return, none, casted, alias
@@ -18889,7 +17754,6 @@ func (backend *TlsBackendInstance) GetServerConnectionType() gobject.Type {
 // SetDefaultDatabase wraps g_tls_backend_set_default_database
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_set_default_database.g_tls_backend_set_default_database.html
-//
 func (backend *TlsBackendInstance) SetDefaultDatabase(database TlsDatabase) {
 	var carg0 *C.GTlsBackend  // in, none, converted
 	var carg1 *C.GTlsDatabase // in, none, converted, nullable
@@ -18907,7 +17771,6 @@ func (backend *TlsBackendInstance) SetDefaultDatabase(database TlsDatabase) {
 // SupportsDtls wraps g_tls_backend_supports_dtls
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_supports_dtls.g_tls_backend_supports_dtls.html
-//
 func (backend *TlsBackendInstance) SupportsDtls() bool {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.gboolean     // return
@@ -18929,7 +17792,6 @@ func (backend *TlsBackendInstance) SupportsDtls() bool {
 // SupportsTls wraps g_tls_backend_supports_tls
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_backend_supports_tls.g_tls_backend_supports_tls.html
-//
 func (backend *TlsBackendInstance) SupportsTls() bool {
 	var carg0 *C.GTlsBackend // in, none, converted
 	var cret  C.gboolean     // return
@@ -18959,52 +17821,44 @@ var _ TlsClientConnection = (*TlsClientConnectionInstance)(nil)
 // TlsClientConnection wraps GTlsClientConnection
 // 
 // see also https://docs.gtk.org/gio/interface.TlsClientConnection.html
-//
 type TlsClientConnection interface {
 	upcastToGTlsClientConnection() *TlsClientConnectionInstance
 
 	// CopySessionState wraps g_tls_client_connection_copy_session_state
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_client_connection_copy_session_state.g_tls_client_connection_copy_session_state.html
-	//
 	CopySessionState(TlsClientConnection)
 	// GetServerIdentity wraps g_tls_client_connection_get_server_identity
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_client_connection_get_server_identity.g_tls_client_connection_get_server_identity.html
-	//
 	GetServerIdentity() SocketConnectable
 	// GetUseSsl3 wraps g_tls_client_connection_get_use_ssl3
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_client_connection_get_use_ssl3.g_tls_client_connection_get_use_ssl3.html
 	//
-	//
-	// Deprecated: (since 2.56.0) SSL 3.0 is insecure.
+	// Deprecated: (since 2.56.0) see the provided link for the reason
 	GetUseSsl3() bool
 	// GetValidationFlags wraps g_tls_client_connection_get_validation_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_client_connection_get_validation_flags.g_tls_client_connection_get_validation_flags.html
 	//
-	//
-	// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+	// Deprecated: (since 2.72.0) see the provided link for the reason
 	GetValidationFlags() TlsCertificateFlags
 	// SetServerIdentity wraps g_tls_client_connection_set_server_identity
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_client_connection_set_server_identity.g_tls_client_connection_set_server_identity.html
-	//
 	SetServerIdentity(SocketConnectable)
 	// SetUseSsl3 wraps g_tls_client_connection_set_use_ssl3
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_client_connection_set_use_ssl3.g_tls_client_connection_set_use_ssl3.html
 	//
-	//
-	// Deprecated: (since 2.56.0) SSL 3.0 is insecure.
+	// Deprecated: (since 2.56.0) see the provided link for the reason
 	SetUseSsl3(bool)
 	// SetValidationFlags wraps g_tls_client_connection_set_validation_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_client_connection_set_validation_flags.g_tls_client_connection_set_validation_flags.html
 	//
-	//
-	// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+	// Deprecated: (since 2.72.0) see the provided link for the reason
 	SetValidationFlags(TlsCertificateFlags)
 }
 
@@ -19054,7 +17908,6 @@ func UnsafeTlsClientConnectionToGlibFull(c TlsClientConnection) unsafe.Pointer {
 // NewTlsClientConnection wraps g_tls_client_connection_new
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_client_connection_new.html
-//
 func NewTlsClientConnection(baseIoStream IOStream, serverIdentity SocketConnectable) (TlsClientConnection, error) {
 	var carg1 *C.GIOStream          // in, none, converted
 	var carg2 *C.GSocketConnectable // in, none, converted, nullable
@@ -19084,7 +17937,6 @@ func NewTlsClientConnection(baseIoStream IOStream, serverIdentity SocketConnecta
 // CopySessionState wraps g_tls_client_connection_copy_session_state
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_client_connection_copy_session_state.g_tls_client_connection_copy_session_state.html
-//
 func (conn *TlsClientConnectionInstance) CopySessionState(source TlsClientConnection) {
 	var carg0 *C.GTlsClientConnection // in, none, converted
 	var carg1 *C.GTlsClientConnection // in, none, converted
@@ -19100,7 +17952,6 @@ func (conn *TlsClientConnectionInstance) CopySessionState(source TlsClientConnec
 // GetServerIdentity wraps g_tls_client_connection_get_server_identity
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_client_connection_get_server_identity.g_tls_client_connection_get_server_identity.html
-//
 func (conn *TlsClientConnectionInstance) GetServerIdentity() SocketConnectable {
 	var carg0 *C.GTlsClientConnection // in, none, converted
 	var cret  *C.GSocketConnectable   // return, none, converted, nullable
@@ -19123,8 +17974,7 @@ func (conn *TlsClientConnectionInstance) GetServerIdentity() SocketConnectable {
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_client_connection_get_use_ssl3.g_tls_client_connection_get_use_ssl3.html
 //
-//
-// Deprecated: (since 2.56.0) SSL 3.0 is insecure.
+// Deprecated: (since 2.56.0) see the provided link for the reason
 func (conn *TlsClientConnectionInstance) GetUseSsl3() bool {
 	var carg0 *C.GTlsClientConnection // in, none, converted
 	var cret  C.gboolean              // return
@@ -19147,8 +17997,7 @@ func (conn *TlsClientConnectionInstance) GetUseSsl3() bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_client_connection_get_validation_flags.g_tls_client_connection_get_validation_flags.html
 //
-//
-// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+// Deprecated: (since 2.72.0) see the provided link for the reason
 func (conn *TlsClientConnectionInstance) GetValidationFlags() TlsCertificateFlags {
 	var carg0 *C.GTlsClientConnection // in, none, converted
 	var cret  C.GTlsCertificateFlags  // return, none, casted
@@ -19168,7 +18017,6 @@ func (conn *TlsClientConnectionInstance) GetValidationFlags() TlsCertificateFlag
 // SetServerIdentity wraps g_tls_client_connection_set_server_identity
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_client_connection_set_server_identity.g_tls_client_connection_set_server_identity.html
-//
 func (conn *TlsClientConnectionInstance) SetServerIdentity(identity SocketConnectable) {
 	var carg0 *C.GTlsClientConnection // in, none, converted
 	var carg1 *C.GSocketConnectable   // in, none, converted
@@ -19185,8 +18033,7 @@ func (conn *TlsClientConnectionInstance) SetServerIdentity(identity SocketConnec
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_client_connection_set_use_ssl3.g_tls_client_connection_set_use_ssl3.html
 //
-//
-// Deprecated: (since 2.56.0) SSL 3.0 is insecure.
+// Deprecated: (since 2.56.0) see the provided link for the reason
 func (conn *TlsClientConnectionInstance) SetUseSsl3(useSsl3 bool) {
 	var carg0 *C.GTlsClientConnection // in, none, converted
 	var carg1 C.gboolean              // in
@@ -19205,8 +18052,7 @@ func (conn *TlsClientConnectionInstance) SetUseSsl3(useSsl3 bool) {
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_client_connection_set_validation_flags.g_tls_client_connection_set_validation_flags.html
 //
-//
-// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+// Deprecated: (since 2.72.0) see the provided link for the reason
 func (conn *TlsClientConnectionInstance) SetValidationFlags(flags TlsCertificateFlags) {
 	var carg0 *C.GTlsClientConnection // in, none, converted
 	var carg1 C.GTlsCertificateFlags  // in, none, casted
@@ -19230,7 +18076,6 @@ var _ TlsFileDatabase = (*TlsFileDatabaseInstance)(nil)
 // TlsFileDatabase wraps GTlsFileDatabase
 // 
 // see also https://docs.gtk.org/gio/interface.TlsFileDatabase.html
-//
 type TlsFileDatabase interface {
 	upcastToGTlsFileDatabase() *TlsFileDatabaseInstance
 }
@@ -19281,7 +18126,6 @@ func UnsafeTlsFileDatabaseToGlibFull(c TlsFileDatabase) unsafe.Pointer {
 // NewTlsFileDatabase wraps g_tls_file_database_new
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_file_database_new.html
-//
 func NewTlsFileDatabase(anchors string) (TlsFileDatabase, error) {
 	var carg1 *C.gchar        // in, none, string
 	var cret  *C.GTlsDatabase // return, full, converted
@@ -19315,7 +18159,6 @@ var _ TlsServerConnection = (*TlsServerConnectionInstance)(nil)
 // TlsServerConnection wraps GTlsServerConnection
 // 
 // see also https://docs.gtk.org/gio/interface.TlsServerConnection.html
-//
 type TlsServerConnection interface {
 	upcastToGTlsServerConnection() *TlsServerConnectionInstance
 }
@@ -19366,7 +18209,6 @@ func UnsafeTlsServerConnectionToGlibFull(c TlsServerConnection) unsafe.Pointer {
 // NewTlsServerConnection wraps g_tls_server_connection_new
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_server_connection_new.html
-//
 func NewTlsServerConnection(baseIoStream IOStream, certificate TlsCertificate) (TlsServerConnection, error) {
 	var carg1 *C.GIOStream       // in, none, converted
 	var carg2 *C.GTlsCertificate // in, none, converted, nullable
@@ -19404,118 +18246,96 @@ var _ Volume = (*VolumeInstance)(nil)
 // Volume wraps GVolume
 // 
 // see also https://docs.gtk.org/gio/interface.Volume.html
-//
 type Volume interface {
 	upcastToGVolume() *VolumeInstance
 
 	// CanEject wraps g_volume_can_eject
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_can_eject.g_volume_can_eject.html
-	//
 	CanEject() bool
 	// CanMount wraps g_volume_can_mount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_can_mount.g_volume_can_mount.html
-	//
 	CanMount() bool
 	// Eject wraps g_volume_eject
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_eject.g_volume_eject.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_volume_eject_with_operation() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	Eject(MountUnmountFlags, Cancellable, AsyncReadyCallback)
 	// EjectFinish wraps g_volume_eject_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_eject_finish.g_volume_eject_finish.html
 	//
-	//
-	// Deprecated: (since 2.22.0) Use g_volume_eject_with_operation_finish() instead.
+	// Deprecated: (since 2.22.0) see the provided link for the reason
 	EjectFinish(AsyncResult) (bool, error)
 	// EjectWithOperation wraps g_volume_eject_with_operation
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_eject_with_operation.g_volume_eject_with_operation.html
-	//
 	EjectWithOperation(MountUnmountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// EjectWithOperationFinish wraps g_volume_eject_with_operation_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_eject_with_operation_finish.g_volume_eject_with_operation_finish.html
-	//
 	EjectWithOperationFinish(AsyncResult) (bool, error)
 	// EnumerateIdentifiers wraps g_volume_enumerate_identifiers
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_enumerate_identifiers.g_volume_enumerate_identifiers.html
-	//
 	EnumerateIdentifiers() []string
 	// GetActivationRoot wraps g_volume_get_activation_root
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_activation_root.g_volume_get_activation_root.html
-	//
 	GetActivationRoot() File
 	// GetDrive wraps g_volume_get_drive
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_drive.g_volume_get_drive.html
-	//
 	GetDrive() Drive
 	// GetIcon wraps g_volume_get_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_icon.g_volume_get_icon.html
-	//
 	GetIcon() Icon
 	// GetIdentifier wraps g_volume_get_identifier
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_identifier.g_volume_get_identifier.html
-	//
 	GetIdentifier(string) string
 	// GetMount wraps g_volume_get_mount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_mount.g_volume_get_mount.html
-	//
 	GetMount() Mount
 	// GetName wraps g_volume_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_name.g_volume_get_name.html
-	//
 	GetName() string
 	// GetSortKey wraps g_volume_get_sort_key
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_sort_key.g_volume_get_sort_key.html
-	//
 	GetSortKey() string
 	// GetSymbolicIcon wraps g_volume_get_symbolic_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_symbolic_icon.g_volume_get_symbolic_icon.html
-	//
 	GetSymbolicIcon() Icon
 	// GetUuid wraps g_volume_get_uuid
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_get_uuid.g_volume_get_uuid.html
-	//
 	GetUuid() string
 	// Mount wraps g_volume_mount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_mount.g_volume_mount.html
-	//
 	Mount(MountMountFlags, MountOperation, Cancellable, AsyncReadyCallback)
 	// MountFinish wraps g_volume_mount_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_mount_finish.g_volume_mount_finish.html
-	//
 	MountFinish(AsyncResult) (bool, error)
 	// ShouldAutomount wraps g_volume_should_automount
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_should_automount.g_volume_should_automount.html
-	//
 	ShouldAutomount() bool
 	// ConnectChanged connects the provided callback to the "changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Volume.changed.html
-	//
 	ConnectChanged(func(Volume)) gobject.SignalHandle
 	// ConnectRemoved connects the provided callback to the "removed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Volume.removed.html
-	//
 	ConnectRemoved(func(Volume)) gobject.SignalHandle
 }
 
@@ -19565,7 +18385,6 @@ func UnsafeVolumeToGlibFull(c Volume) unsafe.Pointer {
 // CanEject wraps g_volume_can_eject
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_can_eject.g_volume_can_eject.html
-//
 func (volume *VolumeInstance) CanEject() bool {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  C.gboolean // return
@@ -19587,7 +18406,6 @@ func (volume *VolumeInstance) CanEject() bool {
 // CanMount wraps g_volume_can_mount
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_can_mount.g_volume_can_mount.html
-//
 func (volume *VolumeInstance) CanMount() bool {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  C.gboolean // return
@@ -19610,8 +18428,7 @@ func (volume *VolumeInstance) CanMount() bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_eject.g_volume_eject.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_volume_eject_with_operation() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (volume *VolumeInstance) Eject(flags MountUnmountFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GVolume            // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -19640,8 +18457,7 @@ func (volume *VolumeInstance) Eject(flags MountUnmountFlags, cancellable Cancell
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_eject_finish.g_volume_eject_finish.html
 //
-//
-// Deprecated: (since 2.22.0) Use g_volume_eject_with_operation_finish() instead.
+// Deprecated: (since 2.22.0) see the provided link for the reason
 func (volume *VolumeInstance) EjectFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GVolume      // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -19671,7 +18487,6 @@ func (volume *VolumeInstance) EjectFinish(result AsyncResult) (bool, error) {
 // EjectWithOperation wraps g_volume_eject_with_operation
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_eject_with_operation.g_volume_eject_with_operation.html
-//
 func (volume *VolumeInstance) EjectWithOperation(flags MountUnmountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GVolume            // in, none, converted
 	var carg1 C.GMountUnmountFlags  // in, none, casted
@@ -19704,7 +18519,6 @@ func (volume *VolumeInstance) EjectWithOperation(flags MountUnmountFlags, mountO
 // EjectWithOperationFinish wraps g_volume_eject_with_operation_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_eject_with_operation_finish.g_volume_eject_with_operation_finish.html
-//
 func (volume *VolumeInstance) EjectWithOperationFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GVolume      // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -19734,7 +18548,6 @@ func (volume *VolumeInstance) EjectWithOperationFinish(result AsyncResult) (bool
 // EnumerateIdentifiers wraps g_volume_enumerate_identifiers
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_enumerate_identifiers.g_volume_enumerate_identifiers.html
-//
 func (volume *VolumeInstance) EnumerateIdentifiers() []string {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  **C.char   // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -19756,7 +18569,6 @@ func (volume *VolumeInstance) EnumerateIdentifiers() []string {
 // GetActivationRoot wraps g_volume_get_activation_root
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_activation_root.g_volume_get_activation_root.html
-//
 func (volume *VolumeInstance) GetActivationRoot() File {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.GFile   // return, full, converted, nullable
@@ -19778,7 +18590,6 @@ func (volume *VolumeInstance) GetActivationRoot() File {
 // GetDrive wraps g_volume_get_drive
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_drive.g_volume_get_drive.html
-//
 func (volume *VolumeInstance) GetDrive() Drive {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.GDrive  // return, full, converted, nullable
@@ -19800,7 +18611,6 @@ func (volume *VolumeInstance) GetDrive() Drive {
 // GetIcon wraps g_volume_get_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_icon.g_volume_get_icon.html
-//
 func (volume *VolumeInstance) GetIcon() Icon {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.GIcon   // return, full, converted
@@ -19820,7 +18630,6 @@ func (volume *VolumeInstance) GetIcon() Icon {
 // GetIdentifier wraps g_volume_get_identifier
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_identifier.g_volume_get_identifier.html
-//
 func (volume *VolumeInstance) GetIdentifier(kind string) string {
 	var carg0 *C.GVolume // in, none, converted
 	var carg1 *C.char    // in, none, string
@@ -19847,7 +18656,6 @@ func (volume *VolumeInstance) GetIdentifier(kind string) string {
 // GetMount wraps g_volume_get_mount
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_mount.g_volume_get_mount.html
-//
 func (volume *VolumeInstance) GetMount() Mount {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.GMount  // return, full, converted, nullable
@@ -19869,7 +18677,6 @@ func (volume *VolumeInstance) GetMount() Mount {
 // GetName wraps g_volume_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_name.g_volume_get_name.html
-//
 func (volume *VolumeInstance) GetName() string {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.char    // return, full, string
@@ -19890,7 +18697,6 @@ func (volume *VolumeInstance) GetName() string {
 // GetSortKey wraps g_volume_get_sort_key
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_sort_key.g_volume_get_sort_key.html
-//
 func (volume *VolumeInstance) GetSortKey() string {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.gchar   // return, none, string, nullable-string
@@ -19912,7 +18718,6 @@ func (volume *VolumeInstance) GetSortKey() string {
 // GetSymbolicIcon wraps g_volume_get_symbolic_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_symbolic_icon.g_volume_get_symbolic_icon.html
-//
 func (volume *VolumeInstance) GetSymbolicIcon() Icon {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.GIcon   // return, full, converted
@@ -19932,7 +18737,6 @@ func (volume *VolumeInstance) GetSymbolicIcon() Icon {
 // GetUuid wraps g_volume_get_uuid
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_get_uuid.g_volume_get_uuid.html
-//
 func (volume *VolumeInstance) GetUuid() string {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  *C.char    // return, full, string, nullable-string
@@ -19955,7 +18759,6 @@ func (volume *VolumeInstance) GetUuid() string {
 // Mount wraps g_volume_mount
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_mount.g_volume_mount.html
-//
 func (volume *VolumeInstance) Mount(flags MountMountFlags, mountOperation MountOperation, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GVolume            // in, none, converted
 	var carg1 C.GMountMountFlags    // in, none, casted
@@ -19988,7 +18791,6 @@ func (volume *VolumeInstance) Mount(flags MountMountFlags, mountOperation MountO
 // MountFinish wraps g_volume_mount_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_mount_finish.g_volume_mount_finish.html
-//
 func (volume *VolumeInstance) MountFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GVolume      // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -20018,7 +18820,6 @@ func (volume *VolumeInstance) MountFinish(result AsyncResult) (bool, error) {
 // ShouldAutomount wraps g_volume_should_automount
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_should_automount.g_volume_should_automount.html
-//
 func (volume *VolumeInstance) ShouldAutomount() bool {
 	var carg0 *C.GVolume // in, none, converted
 	var cret  C.gboolean // return
@@ -20040,7 +18841,6 @@ func (volume *VolumeInstance) ShouldAutomount() bool {
 // ConnectChanged connects the provided callback to the "changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Volume.changed.html
-//
 func (o *VolumeInstance) ConnectChanged(fn func(Volume)) gobject.SignalHandle {
 	return o.Instance.Connect("changed", fn)
 }
@@ -20048,7 +18848,6 @@ func (o *VolumeInstance) ConnectChanged(fn func(Volume)) gobject.SignalHandle {
 // ConnectRemoved connects the provided callback to the "removed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Volume.removed.html
-//
 func (o *VolumeInstance) ConnectRemoved(fn func(Volume)) gobject.SignalHandle {
 	return o.Instance.Connect("removed", fn)
 }
@@ -20064,19 +18863,16 @@ var _ DebugController = (*DebugControllerInstance)(nil)
 // DebugController wraps GDebugController
 // 
 // see also https://docs.gtk.org/gio/interface.DebugController.html
-//
 type DebugController interface {
 	upcastToGDebugController() *DebugControllerInstance
 
 	// GetDebugEnabled wraps g_debug_controller_get_debug_enabled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_debug_controller_get_debug_enabled.g_debug_controller_get_debug_enabled.html
-	//
 	GetDebugEnabled() bool
 	// SetDebugEnabled wraps g_debug_controller_set_debug_enabled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_debug_controller_set_debug_enabled.g_debug_controller_set_debug_enabled.html
-	//
 	SetDebugEnabled(bool)
 }
 
@@ -20126,7 +18922,6 @@ func UnsafeDebugControllerToGlibFull(c DebugController) unsafe.Pointer {
 // GetDebugEnabled wraps g_debug_controller_get_debug_enabled
 // 
 // see also https://docs.gtk.org/gio/method.g_debug_controller_get_debug_enabled.g_debug_controller_get_debug_enabled.html
-//
 func (self *DebugControllerInstance) GetDebugEnabled() bool {
 	var carg0 *C.GDebugController // in, none, converted
 	var cret  C.gboolean          // return
@@ -20148,7 +18943,6 @@ func (self *DebugControllerInstance) GetDebugEnabled() bool {
 // SetDebugEnabled wraps g_debug_controller_set_debug_enabled
 // 
 // see also https://docs.gtk.org/gio/method.g_debug_controller_set_debug_enabled.g_debug_controller_set_debug_enabled.html
-//
 func (self *DebugControllerInstance) SetDebugEnabled(debugEnabled bool) {
 	var carg0 *C.GDebugController // in, none, converted
 	var carg1 C.gboolean          // in
@@ -20174,33 +18968,28 @@ var _ DtlsClientConnection = (*DtlsClientConnectionInstance)(nil)
 // DtlsClientConnection wraps GDtlsClientConnection
 // 
 // see also https://docs.gtk.org/gio/interface.DtlsClientConnection.html
-//
 type DtlsClientConnection interface {
 	upcastToGDtlsClientConnection() *DtlsClientConnectionInstance
 
 	// GetServerIdentity wraps g_dtls_client_connection_get_server_identity
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_client_connection_get_server_identity.g_dtls_client_connection_get_server_identity.html
-	//
 	GetServerIdentity() SocketConnectable
 	// GetValidationFlags wraps g_dtls_client_connection_get_validation_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_client_connection_get_validation_flags.g_dtls_client_connection_get_validation_flags.html
 	//
-	//
-	// Deprecated: (since 2.74.0) Do not attempt to ignore validation errors.
+	// Deprecated: (since 2.74.0) see the provided link for the reason
 	GetValidationFlags() TlsCertificateFlags
 	// SetServerIdentity wraps g_dtls_client_connection_set_server_identity
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_client_connection_set_server_identity.g_dtls_client_connection_set_server_identity.html
-	//
 	SetServerIdentity(SocketConnectable)
 	// SetValidationFlags wraps g_dtls_client_connection_set_validation_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_dtls_client_connection_set_validation_flags.g_dtls_client_connection_set_validation_flags.html
 	//
-	//
-	// Deprecated: (since 2.74.0) Do not attempt to ignore validation errors.
+	// Deprecated: (since 2.74.0) see the provided link for the reason
 	SetValidationFlags(TlsCertificateFlags)
 }
 
@@ -20250,7 +19039,6 @@ func UnsafeDtlsClientConnectionToGlibFull(c DtlsClientConnection) unsafe.Pointer
 // NewDtlsClientConnection wraps g_dtls_client_connection_new
 // 
 // see also https://docs.gtk.org/gio/func.g_dtls_client_connection_new.html
-//
 func NewDtlsClientConnection(baseSocket DatagramBased, serverIdentity SocketConnectable) (DtlsClientConnection, error) {
 	var carg1 *C.GDatagramBased     // in, none, converted
 	var carg2 *C.GSocketConnectable // in, none, converted, nullable
@@ -20280,7 +19068,6 @@ func NewDtlsClientConnection(baseSocket DatagramBased, serverIdentity SocketConn
 // GetServerIdentity wraps g_dtls_client_connection_get_server_identity
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_client_connection_get_server_identity.g_dtls_client_connection_get_server_identity.html
-//
 func (conn *DtlsClientConnectionInstance) GetServerIdentity() SocketConnectable {
 	var carg0 *C.GDtlsClientConnection // in, none, converted
 	var cret  *C.GSocketConnectable    // return, none, converted
@@ -20301,8 +19088,7 @@ func (conn *DtlsClientConnectionInstance) GetServerIdentity() SocketConnectable 
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_client_connection_get_validation_flags.g_dtls_client_connection_get_validation_flags.html
 //
-//
-// Deprecated: (since 2.74.0) Do not attempt to ignore validation errors.
+// Deprecated: (since 2.74.0) see the provided link for the reason
 func (conn *DtlsClientConnectionInstance) GetValidationFlags() TlsCertificateFlags {
 	var carg0 *C.GDtlsClientConnection // in, none, converted
 	var cret  C.GTlsCertificateFlags   // return, none, casted
@@ -20322,7 +19108,6 @@ func (conn *DtlsClientConnectionInstance) GetValidationFlags() TlsCertificateFla
 // SetServerIdentity wraps g_dtls_client_connection_set_server_identity
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_client_connection_set_server_identity.g_dtls_client_connection_set_server_identity.html
-//
 func (conn *DtlsClientConnectionInstance) SetServerIdentity(identity SocketConnectable) {
 	var carg0 *C.GDtlsClientConnection // in, none, converted
 	var carg1 *C.GSocketConnectable    // in, none, converted
@@ -20339,8 +19124,7 @@ func (conn *DtlsClientConnectionInstance) SetServerIdentity(identity SocketConne
 // 
 // see also https://docs.gtk.org/gio/method.g_dtls_client_connection_set_validation_flags.g_dtls_client_connection_set_validation_flags.html
 //
-//
-// Deprecated: (since 2.74.0) Do not attempt to ignore validation errors.
+// Deprecated: (since 2.74.0) see the provided link for the reason
 func (conn *DtlsClientConnectionInstance) SetValidationFlags(flags TlsCertificateFlags) {
 	var carg0 *C.GDtlsClientConnection // in, none, converted
 	var carg1 C.GTlsCertificateFlags   // in, none, casted
@@ -20364,7 +19148,6 @@ var _ AppInfoMonitor = (*AppInfoMonitorInstance)(nil)
 // AppInfoMonitor wraps GAppInfoMonitor
 // 
 // see also https://docs.gtk.org/gio/class.AppInfoMonitor.html
-//
 type AppInfoMonitor interface {
 	gobject.Object
 	upcastToGAppInfoMonitor() *AppInfoMonitorInstance
@@ -20372,7 +19155,6 @@ type AppInfoMonitor interface {
 	// ConnectChanged connects the provided callback to the "changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.AppInfoMonitor.changed.html
-	//
 	ConnectChanged(func(AppInfoMonitor)) gobject.SignalHandle
 }
 
@@ -20427,7 +19209,6 @@ func UnsafeAppInfoMonitorToGlibFull(c AppInfoMonitor) unsafe.Pointer {
 // AppInfoMonitorGet wraps g_app_info_monitor_get
 // 
 // see also https://docs.gtk.org/gio/func.g_app_info_monitor_get.html
-//
 func AppInfoMonitorGet() AppInfoMonitor {
 	var cret *C.GAppInfoMonitor // return, full, converted
 
@@ -20443,7 +19224,6 @@ func AppInfoMonitorGet() AppInfoMonitor {
 // ConnectChanged connects the provided callback to the "changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.AppInfoMonitor.changed.html
-//
 func (o *AppInfoMonitorInstance) ConnectChanged(fn func(AppInfoMonitor)) gobject.SignalHandle {
 	return o.Connect("changed", fn)
 }
@@ -20459,7 +19239,6 @@ var _ AppLaunchContext = (*AppLaunchContextInstance)(nil)
 // AppLaunchContext wraps GAppLaunchContext
 // 
 // see also https://docs.gtk.org/gio/class.AppLaunchContext.html
-//
 type AppLaunchContext interface {
 	gobject.Object
 	upcastToGAppLaunchContext() *AppLaunchContextInstance
@@ -20467,27 +19246,22 @@ type AppLaunchContext interface {
 	// GetEnvironment wraps g_app_launch_context_get_environment
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_launch_context_get_environment.g_app_launch_context_get_environment.html
-	//
 	GetEnvironment() []string
 	// LaunchFailed wraps g_app_launch_context_launch_failed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_launch_context_launch_failed.g_app_launch_context_launch_failed.html
-	//
 	LaunchFailed(string)
 	// Setenv wraps g_app_launch_context_setenv
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_launch_context_setenv.g_app_launch_context_setenv.html
-	//
 	Setenv(string, string)
 	// Unsetenv wraps g_app_launch_context_unsetenv
 	// 
 	// see also https://docs.gtk.org/gio/method.g_app_launch_context_unsetenv.g_app_launch_context_unsetenv.html
-	//
 	Unsetenv(string)
 	// ConnectLaunchFailed connects the provided callback to the "launch-failed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.AppLaunchContext.launch-failed.html
-	//
 	ConnectLaunchFailed(func(AppLaunchContext, string)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -20550,7 +19324,6 @@ func UnsafeAppLaunchContextToGlibFull(c AppLaunchContext) unsafe.Pointer {
 // NewAppLaunchContext wraps g_app_launch_context_new
 // 
 // see also https://docs.gtk.org/gio/func.g_app_launch_context_new.html
-//
 func NewAppLaunchContext() AppLaunchContext {
 	var cret *C.GAppLaunchContext // return, full, converted
 
@@ -20566,7 +19339,6 @@ func NewAppLaunchContext() AppLaunchContext {
 // GetEnvironment wraps g_app_launch_context_get_environment
 // 
 // see also https://docs.gtk.org/gio/method.g_app_launch_context_get_environment.g_app_launch_context_get_environment.html
-//
 func (_context *AppLaunchContextInstance) GetEnvironment() []string {
 	var carg0 *C.GAppLaunchContext // in, none, converted
 	var cret  **C.char             // return, transfer: full, C Pointers: 2, Name: array[filename], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -20588,7 +19360,6 @@ func (_context *AppLaunchContextInstance) GetEnvironment() []string {
 // LaunchFailed wraps g_app_launch_context_launch_failed
 // 
 // see also https://docs.gtk.org/gio/method.g_app_launch_context_launch_failed.g_app_launch_context_launch_failed.html
-//
 func (_context *AppLaunchContextInstance) LaunchFailed(startupNotifyId string) {
 	var carg0 *C.GAppLaunchContext // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -20605,7 +19376,6 @@ func (_context *AppLaunchContextInstance) LaunchFailed(startupNotifyId string) {
 // Setenv wraps g_app_launch_context_setenv
 // 
 // see also https://docs.gtk.org/gio/method.g_app_launch_context_setenv.g_app_launch_context_setenv.html
-//
 func (_context *AppLaunchContextInstance) Setenv(variable string, value string) {
 	var carg0 *C.GAppLaunchContext // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -20626,7 +19396,6 @@ func (_context *AppLaunchContextInstance) Setenv(variable string, value string) 
 // Unsetenv wraps g_app_launch_context_unsetenv
 // 
 // see also https://docs.gtk.org/gio/method.g_app_launch_context_unsetenv.g_app_launch_context_unsetenv.html
-//
 func (_context *AppLaunchContextInstance) Unsetenv(variable string) {
 	var carg0 *C.GAppLaunchContext // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -20643,7 +19412,6 @@ func (_context *AppLaunchContextInstance) Unsetenv(variable string) {
 // ConnectLaunchFailed connects the provided callback to the "launch-failed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.AppLaunchContext.launch-failed.html
-//
 func (o *AppLaunchContextInstance) ConnectLaunchFailed(fn func(AppLaunchContext, string)) gobject.SignalHandle {
 	return o.Connect("launch-failed", fn)
 }
@@ -20741,7 +19509,6 @@ var _ Application = (*ApplicationInstance)(nil)
 // Application wraps GApplication
 // 
 // see also https://docs.gtk.org/gio/class.Application.html
-//
 type Application interface {
 	gobject.Object
 	upcastToGApplication() *ApplicationInstance
@@ -20749,208 +19516,164 @@ type Application interface {
 	// Activate wraps g_application_activate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_activate.g_application_activate.html
-	//
 	Activate()
 	// AddMainOption wraps g_application_add_main_option
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_add_main_option.g_application_add_main_option.html
-	//
 	AddMainOption(string, byte, glib.OptionFlags, glib.OptionArg, string, string)
 	// AddMainOptionEntries wraps g_application_add_main_option_entries
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_add_main_option_entries.g_application_add_main_option_entries.html
-	//
 	AddMainOptionEntries([]glib.OptionEntry)
 	// AddOptionGroup wraps g_application_add_option_group
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_add_option_group.g_application_add_option_group.html
-	//
 	AddOptionGroup(*glib.OptionGroup)
 	// GetApplicationID wraps g_application_get_application_id
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_application_id.g_application_get_application_id.html
-	//
 	GetApplicationID() string
 	// GetDBusObjectPath wraps g_application_get_dbus_object_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_dbus_object_path.g_application_get_dbus_object_path.html
-	//
 	GetDBusObjectPath() string
 	// GetFlags wraps g_application_get_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_flags.g_application_get_flags.html
-	//
 	GetFlags() ApplicationFlags
 	// GetInactivityTimeout wraps g_application_get_inactivity_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_inactivity_timeout.g_application_get_inactivity_timeout.html
-	//
 	GetInactivityTimeout() uint
 	// GetIsBusy wraps g_application_get_is_busy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_is_busy.g_application_get_is_busy.html
-	//
 	GetIsBusy() bool
 	// GetIsRegistered wraps g_application_get_is_registered
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_is_registered.g_application_get_is_registered.html
-	//
 	GetIsRegistered() bool
 	// GetIsRemote wraps g_application_get_is_remote
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_is_remote.g_application_get_is_remote.html
-	//
 	GetIsRemote() bool
 	// GetResourceBasePath wraps g_application_get_resource_base_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_resource_base_path.g_application_get_resource_base_path.html
-	//
 	GetResourceBasePath() string
 	// GetVersion wraps g_application_get_version
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_get_version.g_application_get_version.html
-	//
 	GetVersion() string
 	// Hold wraps g_application_hold
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_hold.g_application_hold.html
-	//
 	Hold()
 	// MarkBusy wraps g_application_mark_busy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_mark_busy.g_application_mark_busy.html
-	//
 	MarkBusy()
 	// Open wraps g_application_open
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_open.g_application_open.html
-	//
 	Open([]File, string)
 	// Quit wraps g_application_quit
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_quit.g_application_quit.html
-	//
 	Quit()
 	// Register wraps g_application_register
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_register.g_application_register.html
-	//
 	Register(Cancellable) (bool, error)
 	// Release wraps g_application_release
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_release.g_application_release.html
-	//
 	Release()
 	// Run wraps g_application_run
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_run.g_application_run.html
-	//
 	Run([]string) int32
 	// SendNotification wraps g_application_send_notification
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_send_notification.g_application_send_notification.html
-	//
 	SendNotification(string, Notification)
 	// SetActionGroup wraps g_application_set_action_group
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_action_group.g_application_set_action_group.html
 	//
-	//
-	// Deprecated: (since 2.32.0) Use the #GActionMap interface instead.  Never ever
-	// mix use of this API with use of #GActionMap on the same @application
-	// or things will go very badly wrong.  This function is known to
-	// introduce buggy behaviour (ie: signals not emitted on changes to the
-	// action group), so you should really use #GActionMap instead.
+	// Deprecated: (since 2.32.0) see the provided link for the reason
 	SetActionGroup(ActionGroup)
 	// SetApplicationID wraps g_application_set_application_id
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_application_id.g_application_set_application_id.html
-	//
 	SetApplicationID(string)
 	// SetDefault wraps g_application_set_default
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_default.g_application_set_default.html
-	//
 	SetDefault()
 	// SetFlags wraps g_application_set_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_flags.g_application_set_flags.html
-	//
 	SetFlags(ApplicationFlags)
 	// SetInactivityTimeout wraps g_application_set_inactivity_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_inactivity_timeout.g_application_set_inactivity_timeout.html
-	//
 	SetInactivityTimeout(uint)
 	// SetOptionContextDescription wraps g_application_set_option_context_description
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_option_context_description.g_application_set_option_context_description.html
-	//
 	SetOptionContextDescription(string)
 	// SetOptionContextParameterString wraps g_application_set_option_context_parameter_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_option_context_parameter_string.g_application_set_option_context_parameter_string.html
-	//
 	SetOptionContextParameterString(string)
 	// SetOptionContextSummary wraps g_application_set_option_context_summary
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_option_context_summary.g_application_set_option_context_summary.html
-	//
 	SetOptionContextSummary(string)
 	// SetResourceBasePath wraps g_application_set_resource_base_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_resource_base_path.g_application_set_resource_base_path.html
-	//
 	SetResourceBasePath(string)
 	// SetVersion wraps g_application_set_version
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_set_version.g_application_set_version.html
-	//
 	SetVersion(string)
 	// UnmarkBusy wraps g_application_unmark_busy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_unmark_busy.g_application_unmark_busy.html
-	//
 	UnmarkBusy()
 	// WithdrawNotification wraps g_application_withdraw_notification
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_withdraw_notification.g_application_withdraw_notification.html
-	//
 	WithdrawNotification(string)
 	// ConnectActivate connects the provided callback to the "activate" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Application.activate.html
-	//
 	ConnectActivate(func(Application)) gobject.SignalHandle
 	// ConnectCommandLine connects the provided callback to the "command-line" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Application.command-line.html
-	//
 	ConnectCommandLine(func(Application, ApplicationCommandLine) int32) gobject.SignalHandle
 	// ConnectHandleLocalOptions connects the provided callback to the "handle-local-options" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Application.handle-local-options.html
-	//
 	ConnectHandleLocalOptions(func(Application, glib.VariantDict) int32) gobject.SignalHandle
 	// ConnectNameLost connects the provided callback to the "name-lost" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Application.name-lost.html
-	//
 	ConnectNameLost(func(Application) bool) gobject.SignalHandle
 	// ConnectOpen connects the provided callback to the "open" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Application.open.html
-	//
 	ConnectOpen(func(Application, []byte, int32, string)) gobject.SignalHandle
 	// ConnectShutdown connects the provided callback to the "shutdown" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Application.shutdown.html
-	//
 	ConnectShutdown(func(Application)) gobject.SignalHandle
 	// ConnectStartup connects the provided callback to the "startup" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Application.startup.html
-	//
 	ConnectStartup(func(Application)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -21058,7 +19781,6 @@ func UnsafeApplicationToGlibFull(c Application) unsafe.Pointer {
 // NewApplication wraps g_application_new
 // 
 // see also https://docs.gtk.org/gio/func.g_application_new.html
-//
 func NewApplication(applicationId string, flags ApplicationFlags) Application {
 	var carg1 *C.gchar            // in, none, string, nullable-string
 	var carg2 C.GApplicationFlags // in, none, casted
@@ -21084,7 +19806,6 @@ func NewApplication(applicationId string, flags ApplicationFlags) Application {
 // ApplicationGetDefault wraps g_application_get_default
 // 
 // see also https://docs.gtk.org/gio/func.g_application_get_default.html
-//
 func ApplicationGetDefault() Application {
 	var cret *C.GApplication // return, none, converted, nullable
 
@@ -21102,7 +19823,6 @@ func ApplicationGetDefault() Application {
 // ApplicationIDIsValid wraps g_application_id_is_valid
 // 
 // see also https://docs.gtk.org/gio/func.g_application_id_is_valid.html
-//
 func ApplicationIDIsValid(applicationId string) bool {
 	var carg1 *C.gchar   // in, none, string
 	var cret  C.gboolean // return
@@ -21125,7 +19845,6 @@ func ApplicationIDIsValid(applicationId string) bool {
 // Activate wraps g_application_activate
 // 
 // see also https://docs.gtk.org/gio/method.g_application_activate.g_application_activate.html
-//
 func (application *ApplicationInstance) Activate() {
 	var carg0 *C.GApplication // in, none, converted
 
@@ -21138,7 +19857,6 @@ func (application *ApplicationInstance) Activate() {
 // AddMainOption wraps g_application_add_main_option
 // 
 // see also https://docs.gtk.org/gio/method.g_application_add_main_option.g_application_add_main_option.html
-//
 func (application *ApplicationInstance) AddMainOption(longName string, shortName byte, flags glib.OptionFlags, arg glib.OptionArg, description string, argDescription string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.char         // in, none, string
@@ -21174,7 +19892,6 @@ func (application *ApplicationInstance) AddMainOption(longName string, shortName
 // AddMainOptionEntries wraps g_application_add_main_option_entries
 // 
 // see also https://docs.gtk.org/gio/method.g_application_add_main_option_entries.g_application_add_main_option_entries.html
-//
 func (application *ApplicationInstance) AddMainOptionEntries(entries []glib.OptionEntry) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.GOptionEntry // in, transfer: none, C Pointers: 1, Name: array[OptionEntry], array (inner GOptionEntry (*typesystem.Record), zero-terminated)
@@ -21192,7 +19909,6 @@ func (application *ApplicationInstance) AddMainOptionEntries(entries []glib.Opti
 // AddOptionGroup wraps g_application_add_option_group
 // 
 // see also https://docs.gtk.org/gio/method.g_application_add_option_group.g_application_add_option_group.html
-//
 func (application *ApplicationInstance) AddOptionGroup(group *glib.OptionGroup) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.GOptionGroup // in, full, converted
@@ -21208,7 +19924,6 @@ func (application *ApplicationInstance) AddOptionGroup(group *glib.OptionGroup) 
 // GetApplicationID wraps g_application_get_application_id
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_application_id.g_application_get_application_id.html
-//
 func (application *ApplicationInstance) GetApplicationID() string {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  *C.gchar        // return, none, string, nullable-string
@@ -21230,7 +19945,6 @@ func (application *ApplicationInstance) GetApplicationID() string {
 // GetDBusObjectPath wraps g_application_get_dbus_object_path
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_dbus_object_path.g_application_get_dbus_object_path.html
-//
 func (application *ApplicationInstance) GetDBusObjectPath() string {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  *C.gchar        // return, none, string, nullable-string
@@ -21252,7 +19966,6 @@ func (application *ApplicationInstance) GetDBusObjectPath() string {
 // GetFlags wraps g_application_get_flags
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_flags.g_application_get_flags.html
-//
 func (application *ApplicationInstance) GetFlags() ApplicationFlags {
 	var carg0 *C.GApplication     // in, none, converted
 	var cret  C.GApplicationFlags // return, none, casted
@@ -21272,7 +19985,6 @@ func (application *ApplicationInstance) GetFlags() ApplicationFlags {
 // GetInactivityTimeout wraps g_application_get_inactivity_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_inactivity_timeout.g_application_get_inactivity_timeout.html
-//
 func (application *ApplicationInstance) GetInactivityTimeout() uint {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  C.guint         // return, none, casted
@@ -21292,7 +20004,6 @@ func (application *ApplicationInstance) GetInactivityTimeout() uint {
 // GetIsBusy wraps g_application_get_is_busy
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_is_busy.g_application_get_is_busy.html
-//
 func (application *ApplicationInstance) GetIsBusy() bool {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  C.gboolean      // return
@@ -21314,7 +20025,6 @@ func (application *ApplicationInstance) GetIsBusy() bool {
 // GetIsRegistered wraps g_application_get_is_registered
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_is_registered.g_application_get_is_registered.html
-//
 func (application *ApplicationInstance) GetIsRegistered() bool {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  C.gboolean      // return
@@ -21336,7 +20046,6 @@ func (application *ApplicationInstance) GetIsRegistered() bool {
 // GetIsRemote wraps g_application_get_is_remote
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_is_remote.g_application_get_is_remote.html
-//
 func (application *ApplicationInstance) GetIsRemote() bool {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  C.gboolean      // return
@@ -21358,7 +20067,6 @@ func (application *ApplicationInstance) GetIsRemote() bool {
 // GetResourceBasePath wraps g_application_get_resource_base_path
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_resource_base_path.g_application_get_resource_base_path.html
-//
 func (application *ApplicationInstance) GetResourceBasePath() string {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  *C.gchar        // return, none, string, nullable-string
@@ -21380,7 +20088,6 @@ func (application *ApplicationInstance) GetResourceBasePath() string {
 // GetVersion wraps g_application_get_version
 // 
 // see also https://docs.gtk.org/gio/method.g_application_get_version.g_application_get_version.html
-//
 func (application *ApplicationInstance) GetVersion() string {
 	var carg0 *C.GApplication // in, none, converted
 	var cret  *C.gchar        // return, none, string, nullable-string
@@ -21402,7 +20109,6 @@ func (application *ApplicationInstance) GetVersion() string {
 // Hold wraps g_application_hold
 // 
 // see also https://docs.gtk.org/gio/method.g_application_hold.g_application_hold.html
-//
 func (application *ApplicationInstance) Hold() {
 	var carg0 *C.GApplication // in, none, converted
 
@@ -21415,7 +20121,6 @@ func (application *ApplicationInstance) Hold() {
 // MarkBusy wraps g_application_mark_busy
 // 
 // see also https://docs.gtk.org/gio/method.g_application_mark_busy.g_application_mark_busy.html
-//
 func (application *ApplicationInstance) MarkBusy() {
 	var carg0 *C.GApplication // in, none, converted
 
@@ -21428,7 +20133,6 @@ func (application *ApplicationInstance) MarkBusy() {
 // Open wraps g_application_open
 // 
 // see also https://docs.gtk.org/gio/method.g_application_open.g_application_open.html
-//
 func (application *ApplicationInstance) Open(files []File, hint string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 **C.GFile       // in, transfer: none, C Pointers: 2, Name: array[File], array (inner GFile* (*typesystem.Interface), length-by: carg2)
@@ -21452,7 +20156,6 @@ func (application *ApplicationInstance) Open(files []File, hint string) {
 // Quit wraps g_application_quit
 // 
 // see also https://docs.gtk.org/gio/method.g_application_quit.g_application_quit.html
-//
 func (application *ApplicationInstance) Quit() {
 	var carg0 *C.GApplication // in, none, converted
 
@@ -21465,7 +20168,6 @@ func (application *ApplicationInstance) Quit() {
 // Register wraps g_application_register
 // 
 // see also https://docs.gtk.org/gio/method.g_application_register.g_application_register.html
-//
 func (application *ApplicationInstance) Register(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -21497,7 +20199,6 @@ func (application *ApplicationInstance) Register(cancellable Cancellable) (bool,
 // Release wraps g_application_release
 // 
 // see also https://docs.gtk.org/gio/method.g_application_release.g_application_release.html
-//
 func (application *ApplicationInstance) Release() {
 	var carg0 *C.GApplication // in, none, converted
 
@@ -21510,7 +20211,6 @@ func (application *ApplicationInstance) Release() {
 // Run wraps g_application_run
 // 
 // see also https://docs.gtk.org/gio/method.g_application_run.g_application_run.html
-//
 func (application *ApplicationInstance) Run(argv []string) int32 {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 C.int           // implicit
@@ -21537,7 +20237,6 @@ func (application *ApplicationInstance) Run(argv []string) int32 {
 // SendNotification wraps g_application_send_notification
 // 
 // see also https://docs.gtk.org/gio/method.g_application_send_notification.g_application_send_notification.html
-//
 func (application *ApplicationInstance) SendNotification(id string, notification Notification) {
 	var carg0 *C.GApplication  // in, none, converted
 	var carg1 *C.gchar         // in, none, string, nullable-string
@@ -21560,12 +20259,7 @@ func (application *ApplicationInstance) SendNotification(id string, notification
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_action_group.g_application_set_action_group.html
 //
-//
-// Deprecated: (since 2.32.0) Use the #GActionMap interface instead.  Never ever
-// mix use of this API with use of #GActionMap on the same @application
-// or things will go very badly wrong.  This function is known to
-// introduce buggy behaviour (ie: signals not emitted on changes to the
-// action group), so you should really use #GActionMap instead.
+// Deprecated: (since 2.32.0) see the provided link for the reason
 func (application *ApplicationInstance) SetActionGroup(actionGroup ActionGroup) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.GActionGroup // in, none, converted, nullable
@@ -21583,7 +20277,6 @@ func (application *ApplicationInstance) SetActionGroup(actionGroup ActionGroup) 
 // SetApplicationID wraps g_application_set_application_id
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_application_id.g_application_set_application_id.html
-//
 func (application *ApplicationInstance) SetApplicationID(applicationId string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.gchar        // in, none, string, nullable-string
@@ -21602,7 +20295,6 @@ func (application *ApplicationInstance) SetApplicationID(applicationId string) {
 // SetDefault wraps g_application_set_default
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_default.g_application_set_default.html
-//
 func (application *ApplicationInstance) SetDefault() {
 	var carg0 *C.GApplication // in, none, converted
 
@@ -21615,7 +20307,6 @@ func (application *ApplicationInstance) SetDefault() {
 // SetFlags wraps g_application_set_flags
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_flags.g_application_set_flags.html
-//
 func (application *ApplicationInstance) SetFlags(flags ApplicationFlags) {
 	var carg0 *C.GApplication     // in, none, converted
 	var carg1 C.GApplicationFlags // in, none, casted
@@ -21631,7 +20322,6 @@ func (application *ApplicationInstance) SetFlags(flags ApplicationFlags) {
 // SetInactivityTimeout wraps g_application_set_inactivity_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_inactivity_timeout.g_application_set_inactivity_timeout.html
-//
 func (application *ApplicationInstance) SetInactivityTimeout(inactivityTimeout uint) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 C.guint         // in, none, casted
@@ -21647,7 +20337,6 @@ func (application *ApplicationInstance) SetInactivityTimeout(inactivityTimeout u
 // SetOptionContextDescription wraps g_application_set_option_context_description
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_option_context_description.g_application_set_option_context_description.html
-//
 func (application *ApplicationInstance) SetOptionContextDescription(description string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.gchar        // in, none, string, nullable-string
@@ -21666,7 +20355,6 @@ func (application *ApplicationInstance) SetOptionContextDescription(description 
 // SetOptionContextParameterString wraps g_application_set_option_context_parameter_string
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_option_context_parameter_string.g_application_set_option_context_parameter_string.html
-//
 func (application *ApplicationInstance) SetOptionContextParameterString(parameterString string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.gchar        // in, none, string, nullable-string
@@ -21685,7 +20373,6 @@ func (application *ApplicationInstance) SetOptionContextParameterString(paramete
 // SetOptionContextSummary wraps g_application_set_option_context_summary
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_option_context_summary.g_application_set_option_context_summary.html
-//
 func (application *ApplicationInstance) SetOptionContextSummary(summary string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.gchar        // in, none, string, nullable-string
@@ -21704,7 +20391,6 @@ func (application *ApplicationInstance) SetOptionContextSummary(summary string) 
 // SetResourceBasePath wraps g_application_set_resource_base_path
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_resource_base_path.g_application_set_resource_base_path.html
-//
 func (application *ApplicationInstance) SetResourceBasePath(resourcePath string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.gchar        // in, none, string, nullable-string
@@ -21723,7 +20409,6 @@ func (application *ApplicationInstance) SetResourceBasePath(resourcePath string)
 // SetVersion wraps g_application_set_version
 // 
 // see also https://docs.gtk.org/gio/method.g_application_set_version.g_application_set_version.html
-//
 func (application *ApplicationInstance) SetVersion(version string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -21740,7 +20425,6 @@ func (application *ApplicationInstance) SetVersion(version string) {
 // UnmarkBusy wraps g_application_unmark_busy
 // 
 // see also https://docs.gtk.org/gio/method.g_application_unmark_busy.g_application_unmark_busy.html
-//
 func (application *ApplicationInstance) UnmarkBusy() {
 	var carg0 *C.GApplication // in, none, converted
 
@@ -21753,7 +20437,6 @@ func (application *ApplicationInstance) UnmarkBusy() {
 // WithdrawNotification wraps g_application_withdraw_notification
 // 
 // see also https://docs.gtk.org/gio/method.g_application_withdraw_notification.g_application_withdraw_notification.html
-//
 func (application *ApplicationInstance) WithdrawNotification(id string) {
 	var carg0 *C.GApplication // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -21770,7 +20453,6 @@ func (application *ApplicationInstance) WithdrawNotification(id string) {
 // ConnectActivate connects the provided callback to the "activate" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Application.activate.html
-//
 func (o *ApplicationInstance) ConnectActivate(fn func(Application)) gobject.SignalHandle {
 	return o.Connect("activate", fn)
 }
@@ -21778,7 +20460,6 @@ func (o *ApplicationInstance) ConnectActivate(fn func(Application)) gobject.Sign
 // ConnectCommandLine connects the provided callback to the "command-line" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Application.command-line.html
-//
 func (o *ApplicationInstance) ConnectCommandLine(fn func(Application, ApplicationCommandLine) int32) gobject.SignalHandle {
 	return o.Connect("command-line", fn)
 }
@@ -21786,7 +20467,6 @@ func (o *ApplicationInstance) ConnectCommandLine(fn func(Application, Applicatio
 // ConnectHandleLocalOptions connects the provided callback to the "handle-local-options" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Application.handle-local-options.html
-//
 func (o *ApplicationInstance) ConnectHandleLocalOptions(fn func(Application, glib.VariantDict) int32) gobject.SignalHandle {
 	return o.Connect("handle-local-options", fn)
 }
@@ -21794,7 +20474,6 @@ func (o *ApplicationInstance) ConnectHandleLocalOptions(fn func(Application, gli
 // ConnectNameLost connects the provided callback to the "name-lost" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Application.name-lost.html
-//
 func (o *ApplicationInstance) ConnectNameLost(fn func(Application) bool) gobject.SignalHandle {
 	return o.Connect("name-lost", fn)
 }
@@ -21802,7 +20481,6 @@ func (o *ApplicationInstance) ConnectNameLost(fn func(Application) bool) gobject
 // ConnectOpen connects the provided callback to the "open" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Application.open.html
-//
 func (o *ApplicationInstance) ConnectOpen(fn func(Application, []byte, int32, string)) gobject.SignalHandle {
 	return o.Connect("open", fn)
 }
@@ -21810,7 +20488,6 @@ func (o *ApplicationInstance) ConnectOpen(fn func(Application, []byte, int32, st
 // ConnectShutdown connects the provided callback to the "shutdown" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Application.shutdown.html
-//
 func (o *ApplicationInstance) ConnectShutdown(fn func(Application)) gobject.SignalHandle {
 	return o.Connect("shutdown", fn)
 }
@@ -21818,7 +20495,6 @@ func (o *ApplicationInstance) ConnectShutdown(fn func(Application)) gobject.Sign
 // ConnectStartup connects the provided callback to the "startup" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Application.startup.html
-//
 func (o *ApplicationInstance) ConnectStartup(fn func(Application)) gobject.SignalHandle {
 	return o.Connect("startup", fn)
 }
@@ -22289,7 +20965,6 @@ var _ ApplicationCommandLine = (*ApplicationCommandLineInstance)(nil)
 // ApplicationCommandLine wraps GApplicationCommandLine
 // 
 // see also https://docs.gtk.org/gio/class.ApplicationCommandLine.html
-//
 type ApplicationCommandLine interface {
 	gobject.Object
 	upcastToGApplicationCommandLine() *ApplicationCommandLineInstance
@@ -22297,67 +20972,54 @@ type ApplicationCommandLine interface {
 	// CreateFileForArg wraps g_application_command_line_create_file_for_arg
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_create_file_for_arg.g_application_command_line_create_file_for_arg.html
-	//
 	CreateFileForArg(string) File
 	// Done wraps g_application_command_line_done
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_done.g_application_command_line_done.html
-	//
 	Done()
 	// GetArguments wraps g_application_command_line_get_arguments
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_get_arguments.g_application_command_line_get_arguments.html
-	//
 	GetArguments() (int32, []string)
 	// GetCwd wraps g_application_command_line_get_cwd
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_get_cwd.g_application_command_line_get_cwd.html
-	//
 	GetCwd() string
 	// GetEnviron wraps g_application_command_line_get_environ
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_get_environ.g_application_command_line_get_environ.html
-	//
 	GetEnviron() []string
 	// GetExitStatus wraps g_application_command_line_get_exit_status
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_get_exit_status.g_application_command_line_get_exit_status.html
-	//
 	GetExitStatus() int32
 	// GetIsRemote wraps g_application_command_line_get_is_remote
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_get_is_remote.g_application_command_line_get_is_remote.html
-	//
 	GetIsRemote() bool
 	// GetOptionsDict wraps g_application_command_line_get_options_dict
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_get_options_dict.g_application_command_line_get_options_dict.html
-	//
 	GetOptionsDict() *glib.VariantDict
 	// GetStdin wraps g_application_command_line_get_stdin
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_get_stdin.g_application_command_line_get_stdin.html
-	//
 	GetStdin() InputStream
 	// Getenv wraps g_application_command_line_getenv
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_getenv.g_application_command_line_getenv.html
-	//
 	Getenv(string) string
 	// PrintLiteral wraps g_application_command_line_print_literal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_print_literal.g_application_command_line_print_literal.html
-	//
 	PrintLiteral(string)
 	// PrinterrLiteral wraps g_application_command_line_printerr_literal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_printerr_literal.g_application_command_line_printerr_literal.html
-	//
 	PrinterrLiteral(string)
 	// SetExitStatus wraps g_application_command_line_set_exit_status
 	// 
 	// see also https://docs.gtk.org/gio/method.g_application_command_line_set_exit_status.g_application_command_line_set_exit_status.html
-	//
 	SetExitStatus(int32)
 
 	// chain up virtual methods:
@@ -22435,7 +21097,6 @@ func UnsafeApplicationCommandLineToGlibFull(c ApplicationCommandLine) unsafe.Poi
 // CreateFileForArg wraps g_application_command_line_create_file_for_arg
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_create_file_for_arg.g_application_command_line_create_file_for_arg.html
-//
 func (cmdline *ApplicationCommandLineInstance) CreateFileForArg(arg string) File {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var carg1 *C.gchar                   // in, none, string
@@ -22459,7 +21120,6 @@ func (cmdline *ApplicationCommandLineInstance) CreateFileForArg(arg string) File
 // Done wraps g_application_command_line_done
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_done.g_application_command_line_done.html
-//
 func (cmdline *ApplicationCommandLineInstance) Done() {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 
@@ -22472,7 +21132,6 @@ func (cmdline *ApplicationCommandLineInstance) Done() {
 // GetArguments wraps g_application_command_line_get_arguments
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_get_arguments.g_application_command_line_get_arguments.html
-//
 func (cmdline *ApplicationCommandLineInstance) GetArguments() (int32, []string) {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var carg1 C.int                      // out, full, casted
@@ -22497,7 +21156,6 @@ func (cmdline *ApplicationCommandLineInstance) GetArguments() (int32, []string) 
 // GetCwd wraps g_application_command_line_get_cwd
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_get_cwd.g_application_command_line_get_cwd.html
-//
 func (cmdline *ApplicationCommandLineInstance) GetCwd() string {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var cret  *C.gchar                   // return, none, string, nullable
@@ -22519,7 +21177,6 @@ func (cmdline *ApplicationCommandLineInstance) GetCwd() string {
 // GetEnviron wraps g_application_command_line_get_environ
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_get_environ.g_application_command_line_get_environ.html
-//
 func (cmdline *ApplicationCommandLineInstance) GetEnviron() []string {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var cret  **C.gchar                  // return, transfer: none, C Pointers: 2, Name: array[filename], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -22541,7 +21198,6 @@ func (cmdline *ApplicationCommandLineInstance) GetEnviron() []string {
 // GetExitStatus wraps g_application_command_line_get_exit_status
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_get_exit_status.g_application_command_line_get_exit_status.html
-//
 func (cmdline *ApplicationCommandLineInstance) GetExitStatus() int32 {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var cret  C.int                      // return, none, casted
@@ -22561,7 +21217,6 @@ func (cmdline *ApplicationCommandLineInstance) GetExitStatus() int32 {
 // GetIsRemote wraps g_application_command_line_get_is_remote
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_get_is_remote.g_application_command_line_get_is_remote.html
-//
 func (cmdline *ApplicationCommandLineInstance) GetIsRemote() bool {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var cret  C.gboolean                 // return
@@ -22583,7 +21238,6 @@ func (cmdline *ApplicationCommandLineInstance) GetIsRemote() bool {
 // GetOptionsDict wraps g_application_command_line_get_options_dict
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_get_options_dict.g_application_command_line_get_options_dict.html
-//
 func (cmdline *ApplicationCommandLineInstance) GetOptionsDict() *glib.VariantDict {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var cret  *C.GVariantDict            // return, none, converted
@@ -22603,7 +21257,6 @@ func (cmdline *ApplicationCommandLineInstance) GetOptionsDict() *glib.VariantDic
 // GetStdin wraps g_application_command_line_get_stdin
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_get_stdin.g_application_command_line_get_stdin.html
-//
 func (cmdline *ApplicationCommandLineInstance) GetStdin() InputStream {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var cret  *C.GInputStream            // return, full, converted, nullable
@@ -22625,7 +21278,6 @@ func (cmdline *ApplicationCommandLineInstance) GetStdin() InputStream {
 // Getenv wraps g_application_command_line_getenv
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_getenv.g_application_command_line_getenv.html
-//
 func (cmdline *ApplicationCommandLineInstance) Getenv(name string) string {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var carg1 *C.gchar                   // in, none, string
@@ -22651,7 +21303,6 @@ func (cmdline *ApplicationCommandLineInstance) Getenv(name string) string {
 // PrintLiteral wraps g_application_command_line_print_literal
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_print_literal.g_application_command_line_print_literal.html
-//
 func (cmdline *ApplicationCommandLineInstance) PrintLiteral(message string) {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var carg1 *C.gchar                   // in, none, string
@@ -22668,7 +21319,6 @@ func (cmdline *ApplicationCommandLineInstance) PrintLiteral(message string) {
 // PrinterrLiteral wraps g_application_command_line_printerr_literal
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_printerr_literal.g_application_command_line_printerr_literal.html
-//
 func (cmdline *ApplicationCommandLineInstance) PrinterrLiteral(message string) {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var carg1 *C.gchar                   // in, none, string
@@ -22685,7 +21335,6 @@ func (cmdline *ApplicationCommandLineInstance) PrinterrLiteral(message string) {
 // SetExitStatus wraps g_application_command_line_set_exit_status
 // 
 // see also https://docs.gtk.org/gio/method.g_application_command_line_set_exit_status.g_application_command_line_set_exit_status.html
-//
 func (cmdline *ApplicationCommandLineInstance) SetExitStatus(exitStatus int32) {
 	var carg0 *C.GApplicationCommandLine // in, none, converted
 	var carg1 C.int                      // in, none, casted
@@ -22915,7 +21564,6 @@ var _ BytesIcon = (*BytesIconInstance)(nil)
 // BytesIcon wraps GBytesIcon
 // 
 // see also https://docs.gtk.org/gio/class.BytesIcon.html
-//
 type BytesIcon interface {
 	gobject.Object
 	upcastToGBytesIcon() *BytesIconInstance
@@ -22923,7 +21571,6 @@ type BytesIcon interface {
 	// GetBytes wraps g_bytes_icon_get_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_bytes_icon_get_bytes.g_bytes_icon_get_bytes.html
-	//
 	GetBytes() *glib.Bytes
 }
 
@@ -22978,7 +21625,6 @@ func UnsafeBytesIconToGlibFull(c BytesIcon) unsafe.Pointer {
 // NewBytesIcon wraps g_bytes_icon_new
 // 
 // see also https://docs.gtk.org/gio/func.g_bytes_icon_new.html
-//
 func NewBytesIcon(bytes *glib.Bytes) BytesIcon {
 	var carg1 *C.GBytes // in, none, converted
 	var cret  *C.GIcon  // return, full, converted
@@ -22998,7 +21644,6 @@ func NewBytesIcon(bytes *glib.Bytes) BytesIcon {
 // GetBytes wraps g_bytes_icon_get_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_bytes_icon_get_bytes.g_bytes_icon_get_bytes.html
-//
 func (icon *BytesIconInstance) GetBytes() *glib.Bytes {
 	var carg0 *C.GBytesIcon // in, none, converted
 	var cret  *C.GBytes     // return, none, converted
@@ -23026,7 +21671,6 @@ var _ Cancellable = (*CancellableInstance)(nil)
 // Cancellable wraps GCancellable
 // 
 // see also https://docs.gtk.org/gio/class.Cancellable.html
-//
 type Cancellable interface {
 	gobject.Object
 	upcastToGCancellable() *CancellableInstance
@@ -23034,57 +21678,46 @@ type Cancellable interface {
 	// Cancel wraps g_cancellable_cancel
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_cancel.g_cancellable_cancel.html
-	//
 	Cancel()
 	// Disconnect wraps g_cancellable_disconnect
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_disconnect.g_cancellable_disconnect.html
-	//
 	Disconnect(uint32)
 	// GetFd wraps g_cancellable_get_fd
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_get_fd.g_cancellable_get_fd.html
-	//
 	GetFd() int32
 	// IsCancelled wraps g_cancellable_is_cancelled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_is_cancelled.g_cancellable_is_cancelled.html
-	//
 	IsCancelled() bool
 	// MakePollfd wraps g_cancellable_make_pollfd
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_make_pollfd.g_cancellable_make_pollfd.html
-	//
 	MakePollfd(*glib.PollFD) bool
 	// PopCurrent wraps g_cancellable_pop_current
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_pop_current.g_cancellable_pop_current.html
-	//
 	PopCurrent()
 	// PushCurrent wraps g_cancellable_push_current
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_push_current.g_cancellable_push_current.html
-	//
 	PushCurrent()
 	// ReleaseFd wraps g_cancellable_release_fd
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_release_fd.g_cancellable_release_fd.html
-	//
 	ReleaseFd()
 	// Reset wraps g_cancellable_reset
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_reset.g_cancellable_reset.html
-	//
 	Reset()
 	// SetErrorIfCancelled wraps g_cancellable_set_error_if_cancelled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_cancellable_set_error_if_cancelled.g_cancellable_set_error_if_cancelled.html
-	//
 	SetErrorIfCancelled() (bool, error)
 	// ConnectCancelled connects the provided callback to the "cancelled" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Cancellable.cancelled.html
-	//
 	ConnectCancelled(func(Cancellable)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -23147,7 +21780,6 @@ func UnsafeCancellableToGlibFull(c Cancellable) unsafe.Pointer {
 // NewCancellable wraps g_cancellable_new
 // 
 // see also https://docs.gtk.org/gio/func.g_cancellable_new.html
-//
 func NewCancellable() Cancellable {
 	var cret *C.GCancellable // return, full, converted
 
@@ -23163,7 +21795,6 @@ func NewCancellable() Cancellable {
 // CancellableGetCurrent wraps g_cancellable_get_current
 // 
 // see also https://docs.gtk.org/gio/func.g_cancellable_get_current.html
-//
 func CancellableGetCurrent() Cancellable {
 	var cret *C.GCancellable // return, none, converted, nullable
 
@@ -23181,7 +21812,6 @@ func CancellableGetCurrent() Cancellable {
 // Cancel wraps g_cancellable_cancel
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_cancel.g_cancellable_cancel.html
-//
 func (cancellable *CancellableInstance) Cancel() {
 	var carg0 *C.GCancellable // in, none, converted
 
@@ -23194,7 +21824,6 @@ func (cancellable *CancellableInstance) Cancel() {
 // Disconnect wraps g_cancellable_disconnect
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_disconnect.g_cancellable_disconnect.html
-//
 func (cancellable *CancellableInstance) Disconnect(handlerId uint32) {
 	var carg0 *C.GCancellable // in, none, converted
 	var carg1 C.gulong        // in, none, casted
@@ -23210,7 +21839,6 @@ func (cancellable *CancellableInstance) Disconnect(handlerId uint32) {
 // GetFd wraps g_cancellable_get_fd
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_get_fd.g_cancellable_get_fd.html
-//
 func (cancellable *CancellableInstance) GetFd() int32 {
 	var carg0 *C.GCancellable // in, none, converted
 	var cret  C.int           // return, none, casted
@@ -23230,7 +21858,6 @@ func (cancellable *CancellableInstance) GetFd() int32 {
 // IsCancelled wraps g_cancellable_is_cancelled
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_is_cancelled.g_cancellable_is_cancelled.html
-//
 func (cancellable *CancellableInstance) IsCancelled() bool {
 	var carg0 *C.GCancellable // in, none, converted
 	var cret  C.gboolean      // return
@@ -23252,7 +21879,6 @@ func (cancellable *CancellableInstance) IsCancelled() bool {
 // MakePollfd wraps g_cancellable_make_pollfd
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_make_pollfd.g_cancellable_make_pollfd.html
-//
 func (cancellable *CancellableInstance) MakePollfd(pollfd *glib.PollFD) bool {
 	var carg0 *C.GCancellable // in, none, converted
 	var carg1 *C.GPollFD      // in, none, converted
@@ -23277,7 +21903,6 @@ func (cancellable *CancellableInstance) MakePollfd(pollfd *glib.PollFD) bool {
 // PopCurrent wraps g_cancellable_pop_current
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_pop_current.g_cancellable_pop_current.html
-//
 func (cancellable *CancellableInstance) PopCurrent() {
 	var carg0 *C.GCancellable // in, none, converted
 
@@ -23290,7 +21915,6 @@ func (cancellable *CancellableInstance) PopCurrent() {
 // PushCurrent wraps g_cancellable_push_current
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_push_current.g_cancellable_push_current.html
-//
 func (cancellable *CancellableInstance) PushCurrent() {
 	var carg0 *C.GCancellable // in, none, converted
 
@@ -23303,7 +21927,6 @@ func (cancellable *CancellableInstance) PushCurrent() {
 // ReleaseFd wraps g_cancellable_release_fd
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_release_fd.g_cancellable_release_fd.html
-//
 func (cancellable *CancellableInstance) ReleaseFd() {
 	var carg0 *C.GCancellable // in, none, converted
 
@@ -23316,7 +21939,6 @@ func (cancellable *CancellableInstance) ReleaseFd() {
 // Reset wraps g_cancellable_reset
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_reset.g_cancellable_reset.html
-//
 func (cancellable *CancellableInstance) Reset() {
 	var carg0 *C.GCancellable // in, none, converted
 
@@ -23329,7 +21951,6 @@ func (cancellable *CancellableInstance) Reset() {
 // SetErrorIfCancelled wraps g_cancellable_set_error_if_cancelled
 // 
 // see also https://docs.gtk.org/gio/method.g_cancellable_set_error_if_cancelled.g_cancellable_set_error_if_cancelled.html
-//
 func (cancellable *CancellableInstance) SetErrorIfCancelled() (bool, error) {
 	var carg0 *C.GCancellable // in, none, converted
 	var cret  C.gboolean      // return
@@ -23356,7 +21977,6 @@ func (cancellable *CancellableInstance) SetErrorIfCancelled() (bool, error) {
 // ConnectCancelled connects the provided callback to the "cancelled" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Cancellable.cancelled.html
-//
 func (o *CancellableInstance) ConnectCancelled(fn func(Cancellable)) gobject.SignalHandle {
 	return o.Connect("cancelled", fn)
 }
@@ -23448,7 +22068,6 @@ var _ CharsetConverter = (*CharsetConverterInstance)(nil)
 // CharsetConverter wraps GCharsetConverter
 // 
 // see also https://docs.gtk.org/gio/class.CharsetConverter.html
-//
 type CharsetConverter interface {
 	gobject.Object
 	upcastToGCharsetConverter() *CharsetConverterInstance
@@ -23456,17 +22075,14 @@ type CharsetConverter interface {
 	// GetNumFallbacks wraps g_charset_converter_get_num_fallbacks
 	// 
 	// see also https://docs.gtk.org/gio/method.g_charset_converter_get_num_fallbacks.g_charset_converter_get_num_fallbacks.html
-	//
 	GetNumFallbacks() uint
 	// GetUseFallback wraps g_charset_converter_get_use_fallback
 	// 
 	// see also https://docs.gtk.org/gio/method.g_charset_converter_get_use_fallback.g_charset_converter_get_use_fallback.html
-	//
 	GetUseFallback() bool
 	// SetUseFallback wraps g_charset_converter_set_use_fallback
 	// 
 	// see also https://docs.gtk.org/gio/method.g_charset_converter_set_use_fallback.g_charset_converter_set_use_fallback.html
-	//
 	SetUseFallback(bool)
 
 	// chain up virtual methods:
@@ -23523,7 +22139,6 @@ func UnsafeCharsetConverterToGlibFull(c CharsetConverter) unsafe.Pointer {
 // NewCharsetConverter wraps g_charset_converter_new
 // 
 // see also https://docs.gtk.org/gio/func.g_charset_converter_new.html
-//
 func NewCharsetConverter(toCharset string, fromCharset string) (CharsetConverter, error) {
 	var carg1 *C.gchar             // in, none, string
 	var carg2 *C.gchar             // in, none, string
@@ -23553,7 +22168,6 @@ func NewCharsetConverter(toCharset string, fromCharset string) (CharsetConverter
 // GetNumFallbacks wraps g_charset_converter_get_num_fallbacks
 // 
 // see also https://docs.gtk.org/gio/method.g_charset_converter_get_num_fallbacks.g_charset_converter_get_num_fallbacks.html
-//
 func (converter *CharsetConverterInstance) GetNumFallbacks() uint {
 	var carg0 *C.GCharsetConverter // in, none, converted
 	var cret  C.guint              // return, none, casted
@@ -23573,7 +22187,6 @@ func (converter *CharsetConverterInstance) GetNumFallbacks() uint {
 // GetUseFallback wraps g_charset_converter_get_use_fallback
 // 
 // see also https://docs.gtk.org/gio/method.g_charset_converter_get_use_fallback.g_charset_converter_get_use_fallback.html
-//
 func (converter *CharsetConverterInstance) GetUseFallback() bool {
 	var carg0 *C.GCharsetConverter // in, none, converted
 	var cret  C.gboolean           // return
@@ -23595,7 +22208,6 @@ func (converter *CharsetConverterInstance) GetUseFallback() bool {
 // SetUseFallback wraps g_charset_converter_set_use_fallback
 // 
 // see also https://docs.gtk.org/gio/method.g_charset_converter_set_use_fallback.g_charset_converter_set_use_fallback.html
-//
 func (converter *CharsetConverterInstance) SetUseFallback(useFallback bool) {
 	var carg0 *C.GCharsetConverter // in, none, converted
 	var carg1 C.gboolean           // in
@@ -23661,7 +22273,6 @@ var _ Credentials = (*CredentialsInstance)(nil)
 // Credentials wraps GCredentials
 // 
 // see also https://docs.gtk.org/gio/class.Credentials.html
-//
 type Credentials interface {
 	gobject.Object
 	upcastToGCredentials() *CredentialsInstance
@@ -23669,12 +22280,10 @@ type Credentials interface {
 	// IsSameUser wraps g_credentials_is_same_user
 	// 
 	// see also https://docs.gtk.org/gio/method.g_credentials_is_same_user.g_credentials_is_same_user.html
-	//
 	IsSameUser(Credentials) (bool, error)
 	// String wraps g_credentials_to_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_credentials_to_string.g_credentials_to_string.html
-	//
 	String() string
 }
 
@@ -23729,7 +22338,6 @@ func UnsafeCredentialsToGlibFull(c Credentials) unsafe.Pointer {
 // NewCredentials wraps g_credentials_new
 // 
 // see also https://docs.gtk.org/gio/func.g_credentials_new.html
-//
 func NewCredentials() Credentials {
 	var cret *C.GCredentials // return, full, converted
 
@@ -23745,7 +22353,6 @@ func NewCredentials() Credentials {
 // IsSameUser wraps g_credentials_is_same_user
 // 
 // see also https://docs.gtk.org/gio/method.g_credentials_is_same_user.g_credentials_is_same_user.html
-//
 func (credentials *CredentialsInstance) IsSameUser(otherCredentials Credentials) (bool, error) {
 	var carg0 *C.GCredentials // in, none, converted
 	var carg1 *C.GCredentials // in, none, converted
@@ -23775,7 +22382,6 @@ func (credentials *CredentialsInstance) IsSameUser(otherCredentials Credentials)
 // String wraps g_credentials_to_string
 // 
 // see also https://docs.gtk.org/gio/method.g_credentials_to_string.g_credentials_to_string.html
-//
 func (credentials *CredentialsInstance) String() string {
 	var carg0 *C.GCredentials // in, none, converted
 	var cret  *C.gchar        // return, full, string
@@ -23804,7 +22410,6 @@ var _ Emblem = (*EmblemInstance)(nil)
 // Emblem wraps GEmblem
 // 
 // see also https://docs.gtk.org/gio/class.Emblem.html
-//
 type Emblem interface {
 	gobject.Object
 	upcastToGEmblem() *EmblemInstance
@@ -23812,12 +22417,10 @@ type Emblem interface {
 	// GetIcon wraps g_emblem_get_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_emblem_get_icon.g_emblem_get_icon.html
-	//
 	GetIcon() Icon
 	// GetOrigin wraps g_emblem_get_origin
 	// 
 	// see also https://docs.gtk.org/gio/method.g_emblem_get_origin.g_emblem_get_origin.html
-	//
 	GetOrigin() EmblemOrigin
 }
 
@@ -23872,7 +22475,6 @@ func UnsafeEmblemToGlibFull(c Emblem) unsafe.Pointer {
 // NewEmblem wraps g_emblem_new
 // 
 // see also https://docs.gtk.org/gio/func.g_emblem_new.html
-//
 func NewEmblem(icon Icon) Emblem {
 	var carg1 *C.GIcon   // in, none, converted
 	var cret  *C.GEmblem // return, full, converted
@@ -23892,7 +22494,6 @@ func NewEmblem(icon Icon) Emblem {
 // NewEmblemWithOrigin wraps g_emblem_new_with_origin
 // 
 // see also https://docs.gtk.org/gio/func.g_emblem_new_with_origin.html
-//
 func NewEmblemWithOrigin(icon Icon, origin EmblemOrigin) Emblem {
 	var carg1 *C.GIcon        // in, none, converted
 	var carg2 C.GEmblemOrigin // in, none, casted
@@ -23915,7 +22516,6 @@ func NewEmblemWithOrigin(icon Icon, origin EmblemOrigin) Emblem {
 // GetIcon wraps g_emblem_get_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_emblem_get_icon.g_emblem_get_icon.html
-//
 func (emblem *EmblemInstance) GetIcon() Icon {
 	var carg0 *C.GEmblem // in, none, converted
 	var cret  *C.GIcon   // return, none, converted
@@ -23935,7 +22535,6 @@ func (emblem *EmblemInstance) GetIcon() Icon {
 // GetOrigin wraps g_emblem_get_origin
 // 
 // see also https://docs.gtk.org/gio/method.g_emblem_get_origin.g_emblem_get_origin.html
-//
 func (emblem *EmblemInstance) GetOrigin() EmblemOrigin {
 	var carg0 *C.GEmblem      // in, none, converted
 	var cret  C.GEmblemOrigin // return, none, casted
@@ -23963,7 +22562,6 @@ var _ EmblemedIcon = (*EmblemedIconInstance)(nil)
 // EmblemedIcon wraps GEmblemedIcon
 // 
 // see also https://docs.gtk.org/gio/class.EmblemedIcon.html
-//
 type EmblemedIcon interface {
 	gobject.Object
 	upcastToGEmblemedIcon() *EmblemedIconInstance
@@ -23971,22 +22569,18 @@ type EmblemedIcon interface {
 	// AddEmblem wraps g_emblemed_icon_add_emblem
 	// 
 	// see also https://docs.gtk.org/gio/method.g_emblemed_icon_add_emblem.g_emblemed_icon_add_emblem.html
-	//
 	AddEmblem(Emblem)
 	// ClearEmblems wraps g_emblemed_icon_clear_emblems
 	// 
 	// see also https://docs.gtk.org/gio/method.g_emblemed_icon_clear_emblems.g_emblemed_icon_clear_emblems.html
-	//
 	ClearEmblems()
 	// GetEmblems wraps g_emblemed_icon_get_emblems
 	// 
 	// see also https://docs.gtk.org/gio/method.g_emblemed_icon_get_emblems.g_emblemed_icon_get_emblems.html
-	//
 	GetEmblems() []Emblem
 	// GetIcon wraps g_emblemed_icon_get_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_emblemed_icon_get_icon.g_emblemed_icon_get_icon.html
-	//
 	GetIcon() Icon
 
 	// chain up virtual methods:
@@ -24043,7 +22637,6 @@ func UnsafeEmblemedIconToGlibFull(c EmblemedIcon) unsafe.Pointer {
 // NewEmblemedIcon wraps g_emblemed_icon_new
 // 
 // see also https://docs.gtk.org/gio/func.g_emblemed_icon_new.html
-//
 func NewEmblemedIcon(icon Icon, emblem Emblem) EmblemedIcon {
 	var carg1 *C.GIcon   // in, none, converted
 	var carg2 *C.GEmblem // in, none, converted, nullable
@@ -24068,7 +22661,6 @@ func NewEmblemedIcon(icon Icon, emblem Emblem) EmblemedIcon {
 // AddEmblem wraps g_emblemed_icon_add_emblem
 // 
 // see also https://docs.gtk.org/gio/method.g_emblemed_icon_add_emblem.g_emblemed_icon_add_emblem.html
-//
 func (emblemed *EmblemedIconInstance) AddEmblem(emblem Emblem) {
 	var carg0 *C.GEmblemedIcon // in, none, converted
 	var carg1 *C.GEmblem       // in, none, converted
@@ -24084,7 +22676,6 @@ func (emblemed *EmblemedIconInstance) AddEmblem(emblem Emblem) {
 // ClearEmblems wraps g_emblemed_icon_clear_emblems
 // 
 // see also https://docs.gtk.org/gio/method.g_emblemed_icon_clear_emblems.g_emblemed_icon_clear_emblems.html
-//
 func (emblemed *EmblemedIconInstance) ClearEmblems() {
 	var carg0 *C.GEmblemedIcon // in, none, converted
 
@@ -24097,7 +22688,6 @@ func (emblemed *EmblemedIconInstance) ClearEmblems() {
 // GetEmblems wraps g_emblemed_icon_get_emblems
 // 
 // see also https://docs.gtk.org/gio/method.g_emblemed_icon_get_emblems.g_emblemed_icon_get_emblems.html
-//
 func (emblemed *EmblemedIconInstance) GetEmblems() []Emblem {
 	var carg0 *C.GEmblemedIcon // in, none, converted
 	var cret  *C.GList         // container, transfer: none
@@ -24124,7 +22714,6 @@ func (emblemed *EmblemedIconInstance) GetEmblems() []Emblem {
 // GetIcon wraps g_emblemed_icon_get_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_emblemed_icon_get_icon.g_emblemed_icon_get_icon.html
-//
 func (emblemed *EmblemedIconInstance) GetIcon() Icon {
 	var carg0 *C.GEmblemedIcon // in, none, converted
 	var cret  *C.GIcon         // return, none, converted
@@ -24192,7 +22781,6 @@ var _ FileEnumerator = (*FileEnumeratorInstance)(nil)
 // FileEnumerator wraps GFileEnumerator
 // 
 // see also https://docs.gtk.org/gio/class.FileEnumerator.html
-//
 type FileEnumerator interface {
 	gobject.Object
 	upcastToGFileEnumerator() *FileEnumeratorInstance
@@ -24200,62 +22788,50 @@ type FileEnumerator interface {
 	// Close wraps g_file_enumerator_close
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_close.g_file_enumerator_close.html
-	//
 	Close(Cancellable) (bool, error)
 	// CloseAsync wraps g_file_enumerator_close_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_close_async.g_file_enumerator_close_async.html
-	//
 	CloseAsync(int32, Cancellable, AsyncReadyCallback)
 	// CloseFinish wraps g_file_enumerator_close_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_close_finish.g_file_enumerator_close_finish.html
-	//
 	CloseFinish(AsyncResult) (bool, error)
 	// GetChild wraps g_file_enumerator_get_child
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_get_child.g_file_enumerator_get_child.html
-	//
 	GetChild(FileInfo) File
 	// GetContainer wraps g_file_enumerator_get_container
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_get_container.g_file_enumerator_get_container.html
-	//
 	GetContainer() File
 	// HasPending wraps g_file_enumerator_has_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_has_pending.g_file_enumerator_has_pending.html
-	//
 	HasPending() bool
 	// IsClosed wraps g_file_enumerator_is_closed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_is_closed.g_file_enumerator_is_closed.html
-	//
 	IsClosed() bool
 	// Iterate wraps g_file_enumerator_iterate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_iterate.g_file_enumerator_iterate.html
-	//
 	Iterate(Cancellable) (FileInfo, File, bool, error)
 	// NextFile wraps g_file_enumerator_next_file
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_next_file.g_file_enumerator_next_file.html
-	//
 	NextFile(Cancellable) (FileInfo, error)
 	// NextFilesAsync wraps g_file_enumerator_next_files_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_next_files_async.g_file_enumerator_next_files_async.html
-	//
 	NextFilesAsync(int32, int32, Cancellable, AsyncReadyCallback)
 	// NextFilesFinish wraps g_file_enumerator_next_files_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_next_files_finish.g_file_enumerator_next_files_finish.html
-	//
 	NextFilesFinish(AsyncResult) ([]FileInfo, error)
 	// SetPending wraps g_file_enumerator_set_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_enumerator_set_pending.g_file_enumerator_set_pending.html
-	//
 	SetPending(bool)
 
 	// chain up virtual methods:
@@ -24333,7 +22909,6 @@ func UnsafeFileEnumeratorToGlibFull(c FileEnumerator) unsafe.Pointer {
 // Close wraps g_file_enumerator_close
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_close.g_file_enumerator_close.html
-//
 func (enumerator *FileEnumeratorInstance) Close(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var carg1 *C.GCancellable    // in, none, converted, nullable
@@ -24365,7 +22940,6 @@ func (enumerator *FileEnumeratorInstance) Close(cancellable Cancellable) (bool, 
 // CloseAsync wraps g_file_enumerator_close_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_close_async.g_file_enumerator_close_async.html
-//
 func (enumerator *FileEnumeratorInstance) CloseAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFileEnumerator    // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -24393,7 +22967,6 @@ func (enumerator *FileEnumeratorInstance) CloseAsync(ioPriority int32, cancellab
 // CloseFinish wraps g_file_enumerator_close_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_close_finish.g_file_enumerator_close_finish.html
-//
 func (enumerator *FileEnumeratorInstance) CloseFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -24423,7 +22996,6 @@ func (enumerator *FileEnumeratorInstance) CloseFinish(result AsyncResult) (bool,
 // GetChild wraps g_file_enumerator_get_child
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_get_child.g_file_enumerator_get_child.html
-//
 func (enumerator *FileEnumeratorInstance) GetChild(info FileInfo) File {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var carg1 *C.GFileInfo       // in, none, converted
@@ -24446,7 +23018,6 @@ func (enumerator *FileEnumeratorInstance) GetChild(info FileInfo) File {
 // GetContainer wraps g_file_enumerator_get_container
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_get_container.g_file_enumerator_get_container.html
-//
 func (enumerator *FileEnumeratorInstance) GetContainer() File {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var cret  *C.GFile           // return, none, converted
@@ -24466,7 +23037,6 @@ func (enumerator *FileEnumeratorInstance) GetContainer() File {
 // HasPending wraps g_file_enumerator_has_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_has_pending.g_file_enumerator_has_pending.html
-//
 func (enumerator *FileEnumeratorInstance) HasPending() bool {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var cret  C.gboolean         // return
@@ -24488,7 +23058,6 @@ func (enumerator *FileEnumeratorInstance) HasPending() bool {
 // IsClosed wraps g_file_enumerator_is_closed
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_is_closed.g_file_enumerator_is_closed.html
-//
 func (enumerator *FileEnumeratorInstance) IsClosed() bool {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var cret  C.gboolean         // return
@@ -24510,7 +23079,6 @@ func (enumerator *FileEnumeratorInstance) IsClosed() bool {
 // Iterate wraps g_file_enumerator_iterate
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_iterate.g_file_enumerator_iterate.html
-//
 func (direnum *FileEnumeratorInstance) Iterate(cancellable Cancellable) (FileInfo, File, bool, error) {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var carg3 *C.GCancellable    // in, none, converted, nullable
@@ -24548,7 +23116,6 @@ func (direnum *FileEnumeratorInstance) Iterate(cancellable Cancellable) (FileInf
 // NextFile wraps g_file_enumerator_next_file
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_next_file.g_file_enumerator_next_file.html
-//
 func (enumerator *FileEnumeratorInstance) NextFile(cancellable Cancellable) (FileInfo, error) {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var carg1 *C.GCancellable    // in, none, converted, nullable
@@ -24580,7 +23147,6 @@ func (enumerator *FileEnumeratorInstance) NextFile(cancellable Cancellable) (Fil
 // NextFilesAsync wraps g_file_enumerator_next_files_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_next_files_async.g_file_enumerator_next_files_async.html
-//
 func (enumerator *FileEnumeratorInstance) NextFilesAsync(numFiles int32, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFileEnumerator    // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -24611,7 +23177,6 @@ func (enumerator *FileEnumeratorInstance) NextFilesAsync(numFiles int32, ioPrior
 // NextFilesFinish wraps g_file_enumerator_next_files_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_next_files_finish.g_file_enumerator_next_files_finish.html
-//
 func (enumerator *FileEnumeratorInstance) NextFilesFinish(result AsyncResult) ([]FileInfo, error) {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -24646,7 +23211,6 @@ func (enumerator *FileEnumeratorInstance) NextFilesFinish(result AsyncResult) ([
 // SetPending wraps g_file_enumerator_set_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_file_enumerator_set_pending.g_file_enumerator_set_pending.html
-//
 func (enumerator *FileEnumeratorInstance) SetPending(pending bool) {
 	var carg0 *C.GFileEnumerator // in, none, converted
 	var carg1 C.gboolean         // in
@@ -24975,7 +23539,6 @@ var _ FileIcon = (*FileIconInstance)(nil)
 // FileIcon wraps GFileIcon
 // 
 // see also https://docs.gtk.org/gio/class.FileIcon.html
-//
 type FileIcon interface {
 	gobject.Object
 	upcastToGFileIcon() *FileIconInstance
@@ -24983,7 +23546,6 @@ type FileIcon interface {
 	// GetFile wraps g_file_icon_get_file
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_icon_get_file.g_file_icon_get_file.html
-	//
 	GetFile() File
 }
 
@@ -25038,7 +23600,6 @@ func UnsafeFileIconToGlibFull(c FileIcon) unsafe.Pointer {
 // NewFileIcon wraps g_file_icon_new
 // 
 // see also https://docs.gtk.org/gio/func.g_file_icon_new.html
-//
 func NewFileIcon(file File) FileIcon {
 	var carg1 *C.GFile // in, none, converted
 	var cret  *C.GIcon // return, full, converted
@@ -25058,7 +23619,6 @@ func NewFileIcon(file File) FileIcon {
 // GetFile wraps g_file_icon_get_file
 // 
 // see also https://docs.gtk.org/gio/method.g_file_icon_get_file.g_file_icon_get_file.html
-//
 func (icon *FileIconInstance) GetFile() File {
 	var carg0 *C.GFileIcon // in, none, converted
 	var cret  *C.GFile     // return, none, converted
@@ -25086,7 +23646,6 @@ var _ FileInfo = (*FileInfoInstance)(nil)
 // FileInfo wraps GFileInfo
 // 
 // see also https://docs.gtk.org/gio/class.FileInfo.html
-//
 type FileInfo interface {
 	gobject.Object
 	upcastToGFileInfo() *FileInfoInstance
@@ -25094,297 +23653,238 @@ type FileInfo interface {
 	// ClearStatus wraps g_file_info_clear_status
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_clear_status.g_file_info_clear_status.html
-	//
 	ClearStatus()
 	// CopyInto wraps g_file_info_copy_into
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_copy_into.g_file_info_copy_into.html
-	//
 	CopyInto(FileInfo)
 	// Dup wraps g_file_info_dup
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_dup.g_file_info_dup.html
-	//
 	Dup() FileInfo
 	// GetAttributeAsString wraps g_file_info_get_attribute_as_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_as_string.g_file_info_get_attribute_as_string.html
-	//
 	GetAttributeAsString(string) string
 	// GetAttributeBoolean wraps g_file_info_get_attribute_boolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_boolean.g_file_info_get_attribute_boolean.html
-	//
 	GetAttributeBoolean(string) bool
 	// GetAttributeByteString wraps g_file_info_get_attribute_byte_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_byte_string.g_file_info_get_attribute_byte_string.html
-	//
 	GetAttributeByteString(string) string
 	// GetAttributeFilePath wraps g_file_info_get_attribute_file_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_file_path.g_file_info_get_attribute_file_path.html
-	//
 	GetAttributeFilePath(string) string
 	// GetAttributeInt32 wraps g_file_info_get_attribute_int32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_int32.g_file_info_get_attribute_int32.html
-	//
 	GetAttributeInt32(string) int32
 	// GetAttributeInt64 wraps g_file_info_get_attribute_int64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_int64.g_file_info_get_attribute_int64.html
-	//
 	GetAttributeInt64(string) int64
 	// GetAttributeObject wraps g_file_info_get_attribute_object
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_object.g_file_info_get_attribute_object.html
-	//
 	GetAttributeObject(string) gobject.Object
 	// GetAttributeStatus wraps g_file_info_get_attribute_status
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_status.g_file_info_get_attribute_status.html
-	//
 	GetAttributeStatus(string) FileAttributeStatus
 	// GetAttributeString wraps g_file_info_get_attribute_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_string.g_file_info_get_attribute_string.html
-	//
 	GetAttributeString(string) string
 	// GetAttributeStringv wraps g_file_info_get_attribute_stringv
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_stringv.g_file_info_get_attribute_stringv.html
-	//
 	GetAttributeStringv(string) []string
 	// GetAttributeType wraps g_file_info_get_attribute_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_type.g_file_info_get_attribute_type.html
-	//
 	GetAttributeType(string) FileAttributeType
 	// GetAttributeUint32 wraps g_file_info_get_attribute_uint32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_uint32.g_file_info_get_attribute_uint32.html
-	//
 	GetAttributeUint32(string) uint32
 	// GetAttributeUint64 wraps g_file_info_get_attribute_uint64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_uint64.g_file_info_get_attribute_uint64.html
-	//
 	GetAttributeUint64(string) uint64
 	// GetContentType wraps g_file_info_get_content_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_content_type.g_file_info_get_content_type.html
-	//
 	GetContentType() string
 	// GetDisplayName wraps g_file_info_get_display_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_display_name.g_file_info_get_display_name.html
-	//
 	GetDisplayName() string
 	// GetEditName wraps g_file_info_get_edit_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_edit_name.g_file_info_get_edit_name.html
-	//
 	GetEditName() string
 	// GetEtag wraps g_file_info_get_etag
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_etag.g_file_info_get_etag.html
-	//
 	GetEtag() string
 	// GetFileType wraps g_file_info_get_file_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_file_type.g_file_info_get_file_type.html
-	//
 	GetFileType() FileType
 	// GetIcon wraps g_file_info_get_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_icon.g_file_info_get_icon.html
-	//
 	GetIcon() Icon
 	// GetIsBackup wraps g_file_info_get_is_backup
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_is_backup.g_file_info_get_is_backup.html
-	//
 	GetIsBackup() bool
 	// GetIsHidden wraps g_file_info_get_is_hidden
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_is_hidden.g_file_info_get_is_hidden.html
-	//
 	GetIsHidden() bool
 	// GetIsSymlink wraps g_file_info_get_is_symlink
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_is_symlink.g_file_info_get_is_symlink.html
-	//
 	GetIsSymlink() bool
 	// GetName wraps g_file_info_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_name.g_file_info_get_name.html
-	//
 	GetName() string
 	// GetSize wraps g_file_info_get_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_size.g_file_info_get_size.html
-	//
 	GetSize() int64
 	// GetSortOrder wraps g_file_info_get_sort_order
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_sort_order.g_file_info_get_sort_order.html
-	//
 	GetSortOrder() int32
 	// GetSymbolicIcon wraps g_file_info_get_symbolic_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_symbolic_icon.g_file_info_get_symbolic_icon.html
-	//
 	GetSymbolicIcon() Icon
 	// GetSymlinkTarget wraps g_file_info_get_symlink_target
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_get_symlink_target.g_file_info_get_symlink_target.html
-	//
 	GetSymlinkTarget() string
 	// HasAttribute wraps g_file_info_has_attribute
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_has_attribute.g_file_info_has_attribute.html
-	//
 	HasAttribute(string) bool
 	// HasNamespace wraps g_file_info_has_namespace
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_has_namespace.g_file_info_has_namespace.html
-	//
 	HasNamespace(string) bool
 	// ListAttributes wraps g_file_info_list_attributes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_list_attributes.g_file_info_list_attributes.html
-	//
 	ListAttributes(string) []string
 	// RemoveAttribute wraps g_file_info_remove_attribute
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_remove_attribute.g_file_info_remove_attribute.html
-	//
 	RemoveAttribute(string)
 	// SetAttributeBoolean wraps g_file_info_set_attribute_boolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_boolean.g_file_info_set_attribute_boolean.html
-	//
 	SetAttributeBoolean(string, bool)
 	// SetAttributeByteString wraps g_file_info_set_attribute_byte_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_byte_string.g_file_info_set_attribute_byte_string.html
-	//
 	SetAttributeByteString(string, string)
 	// SetAttributeFilePath wraps g_file_info_set_attribute_file_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_file_path.g_file_info_set_attribute_file_path.html
-	//
 	SetAttributeFilePath(string, string)
 	// SetAttributeInt32 wraps g_file_info_set_attribute_int32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_int32.g_file_info_set_attribute_int32.html
-	//
 	SetAttributeInt32(string, int32)
 	// SetAttributeInt64 wraps g_file_info_set_attribute_int64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_int64.g_file_info_set_attribute_int64.html
-	//
 	SetAttributeInt64(string, int64)
 	// SetAttributeMask wraps g_file_info_set_attribute_mask
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_mask.g_file_info_set_attribute_mask.html
-	//
 	SetAttributeMask(*FileAttributeMatcher)
 	// SetAttributeObject wraps g_file_info_set_attribute_object
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_object.g_file_info_set_attribute_object.html
-	//
 	SetAttributeObject(string, gobject.Object)
 	// SetAttributeStatus wraps g_file_info_set_attribute_status
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_status.g_file_info_set_attribute_status.html
-	//
 	SetAttributeStatus(string, FileAttributeStatus) bool
 	// SetAttributeString wraps g_file_info_set_attribute_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_string.g_file_info_set_attribute_string.html
-	//
 	SetAttributeString(string, string)
 	// SetAttributeStringv wraps g_file_info_set_attribute_stringv
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_stringv.g_file_info_set_attribute_stringv.html
-	//
 	SetAttributeStringv(string, []string)
 	// SetAttributeUint32 wraps g_file_info_set_attribute_uint32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_uint32.g_file_info_set_attribute_uint32.html
-	//
 	SetAttributeUint32(string, uint32)
 	// SetAttributeUint64 wraps g_file_info_set_attribute_uint64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_uint64.g_file_info_set_attribute_uint64.html
-	//
 	SetAttributeUint64(string, uint64)
 	// SetContentType wraps g_file_info_set_content_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_content_type.g_file_info_set_content_type.html
-	//
 	SetContentType(string)
 	// SetDisplayName wraps g_file_info_set_display_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_display_name.g_file_info_set_display_name.html
-	//
 	SetDisplayName(string)
 	// SetEditName wraps g_file_info_set_edit_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_edit_name.g_file_info_set_edit_name.html
-	//
 	SetEditName(string)
 	// SetFileType wraps g_file_info_set_file_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_file_type.g_file_info_set_file_type.html
-	//
 	SetFileType(FileType)
 	// SetIcon wraps g_file_info_set_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_icon.g_file_info_set_icon.html
-	//
 	SetIcon(Icon)
 	// SetIsHidden wraps g_file_info_set_is_hidden
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_is_hidden.g_file_info_set_is_hidden.html
-	//
 	SetIsHidden(bool)
 	// SetIsSymlink wraps g_file_info_set_is_symlink
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_is_symlink.g_file_info_set_is_symlink.html
-	//
 	SetIsSymlink(bool)
 	// SetName wraps g_file_info_set_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_name.g_file_info_set_name.html
-	//
 	SetName(string)
 	// SetSize wraps g_file_info_set_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_size.g_file_info_set_size.html
-	//
 	SetSize(int64)
 	// SetSortOrder wraps g_file_info_set_sort_order
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_sort_order.g_file_info_set_sort_order.html
-	//
 	SetSortOrder(int32)
 	// SetSymbolicIcon wraps g_file_info_set_symbolic_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_symbolic_icon.g_file_info_set_symbolic_icon.html
-	//
 	SetSymbolicIcon(Icon)
 	// SetSymlinkTarget wraps g_file_info_set_symlink_target
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_set_symlink_target.g_file_info_set_symlink_target.html
-	//
 	SetSymlinkTarget(string)
 	// UnsetAttributeMask wraps g_file_info_unset_attribute_mask
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_info_unset_attribute_mask.g_file_info_unset_attribute_mask.html
-	//
 	UnsetAttributeMask()
 }
 
@@ -25439,7 +23939,6 @@ func UnsafeFileInfoToGlibFull(c FileInfo) unsafe.Pointer {
 // NewFileInfo wraps g_file_info_new
 // 
 // see also https://docs.gtk.org/gio/func.g_file_info_new.html
-//
 func NewFileInfo() FileInfo {
 	var cret *C.GFileInfo // return, full, converted
 
@@ -25455,7 +23954,6 @@ func NewFileInfo() FileInfo {
 // ClearStatus wraps g_file_info_clear_status
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_clear_status.g_file_info_clear_status.html
-//
 func (info *FileInfoInstance) ClearStatus() {
 	var carg0 *C.GFileInfo // in, none, converted
 
@@ -25468,7 +23966,6 @@ func (info *FileInfoInstance) ClearStatus() {
 // CopyInto wraps g_file_info_copy_into
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_copy_into.g_file_info_copy_into.html
-//
 func (srcInfo *FileInfoInstance) CopyInto(destInfo FileInfo) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.GFileInfo // in, none, converted
@@ -25484,7 +23981,6 @@ func (srcInfo *FileInfoInstance) CopyInto(destInfo FileInfo) {
 // Dup wraps g_file_info_dup
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_dup.g_file_info_dup.html
-//
 func (other *FileInfoInstance) Dup() FileInfo {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.GFileInfo // return, full, converted
@@ -25504,7 +24000,6 @@ func (other *FileInfoInstance) Dup() FileInfo {
 // GetAttributeAsString wraps g_file_info_get_attribute_as_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_as_string.g_file_info_get_attribute_as_string.html
-//
 func (info *FileInfoInstance) GetAttributeAsString(attribute string) string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25531,7 +24026,6 @@ func (info *FileInfoInstance) GetAttributeAsString(attribute string) string {
 // GetAttributeBoolean wraps g_file_info_get_attribute_boolean
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_boolean.g_file_info_get_attribute_boolean.html
-//
 func (info *FileInfoInstance) GetAttributeBoolean(attribute string) bool {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25557,7 +24051,6 @@ func (info *FileInfoInstance) GetAttributeBoolean(attribute string) bool {
 // GetAttributeByteString wraps g_file_info_get_attribute_byte_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_byte_string.g_file_info_get_attribute_byte_string.html
-//
 func (info *FileInfoInstance) GetAttributeByteString(attribute string) string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25583,7 +24076,6 @@ func (info *FileInfoInstance) GetAttributeByteString(attribute string) string {
 // GetAttributeFilePath wraps g_file_info_get_attribute_file_path
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_file_path.g_file_info_get_attribute_file_path.html
-//
 func (info *FileInfoInstance) GetAttributeFilePath(attribute string) string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25609,7 +24101,6 @@ func (info *FileInfoInstance) GetAttributeFilePath(attribute string) string {
 // GetAttributeInt32 wraps g_file_info_get_attribute_int32
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_int32.g_file_info_get_attribute_int32.html
-//
 func (info *FileInfoInstance) GetAttributeInt32(attribute string) int32 {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25633,7 +24124,6 @@ func (info *FileInfoInstance) GetAttributeInt32(attribute string) int32 {
 // GetAttributeInt64 wraps g_file_info_get_attribute_int64
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_int64.g_file_info_get_attribute_int64.html
-//
 func (info *FileInfoInstance) GetAttributeInt64(attribute string) int64 {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25657,7 +24147,6 @@ func (info *FileInfoInstance) GetAttributeInt64(attribute string) int64 {
 // GetAttributeObject wraps g_file_info_get_attribute_object
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_object.g_file_info_get_attribute_object.html
-//
 func (info *FileInfoInstance) GetAttributeObject(attribute string) gobject.Object {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25683,7 +24172,6 @@ func (info *FileInfoInstance) GetAttributeObject(attribute string) gobject.Objec
 // GetAttributeStatus wraps g_file_info_get_attribute_status
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_status.g_file_info_get_attribute_status.html
-//
 func (info *FileInfoInstance) GetAttributeStatus(attribute string) FileAttributeStatus {
 	var carg0 *C.GFileInfo           // in, none, converted
 	var carg1 *C.char                // in, none, string
@@ -25707,7 +24195,6 @@ func (info *FileInfoInstance) GetAttributeStatus(attribute string) FileAttribute
 // GetAttributeString wraps g_file_info_get_attribute_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_string.g_file_info_get_attribute_string.html
-//
 func (info *FileInfoInstance) GetAttributeString(attribute string) string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25733,7 +24220,6 @@ func (info *FileInfoInstance) GetAttributeString(attribute string) string {
 // GetAttributeStringv wraps g_file_info_get_attribute_stringv
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_stringv.g_file_info_get_attribute_stringv.html
-//
 func (info *FileInfoInstance) GetAttributeStringv(attribute string) []string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25759,7 +24245,6 @@ func (info *FileInfoInstance) GetAttributeStringv(attribute string) []string {
 // GetAttributeType wraps g_file_info_get_attribute_type
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_type.g_file_info_get_attribute_type.html
-//
 func (info *FileInfoInstance) GetAttributeType(attribute string) FileAttributeType {
 	var carg0 *C.GFileInfo         // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -25783,7 +24268,6 @@ func (info *FileInfoInstance) GetAttributeType(attribute string) FileAttributeTy
 // GetAttributeUint32 wraps g_file_info_get_attribute_uint32
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_uint32.g_file_info_get_attribute_uint32.html
-//
 func (info *FileInfoInstance) GetAttributeUint32(attribute string) uint32 {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25807,7 +24291,6 @@ func (info *FileInfoInstance) GetAttributeUint32(attribute string) uint32 {
 // GetAttributeUint64 wraps g_file_info_get_attribute_uint64
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_attribute_uint64.g_file_info_get_attribute_uint64.html
-//
 func (info *FileInfoInstance) GetAttributeUint64(attribute string) uint64 {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -25831,7 +24314,6 @@ func (info *FileInfoInstance) GetAttributeUint64(attribute string) uint64 {
 // GetContentType wraps g_file_info_get_content_type
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_content_type.g_file_info_get_content_type.html
-//
 func (info *FileInfoInstance) GetContentType() string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.char      // return, none, string, nullable-string
@@ -25853,7 +24335,6 @@ func (info *FileInfoInstance) GetContentType() string {
 // GetDisplayName wraps g_file_info_get_display_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_display_name.g_file_info_get_display_name.html
-//
 func (info *FileInfoInstance) GetDisplayName() string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.char      // return, none, string
@@ -25873,7 +24354,6 @@ func (info *FileInfoInstance) GetDisplayName() string {
 // GetEditName wraps g_file_info_get_edit_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_edit_name.g_file_info_get_edit_name.html
-//
 func (info *FileInfoInstance) GetEditName() string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.char      // return, none, string
@@ -25893,7 +24373,6 @@ func (info *FileInfoInstance) GetEditName() string {
 // GetEtag wraps g_file_info_get_etag
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_etag.g_file_info_get_etag.html
-//
 func (info *FileInfoInstance) GetEtag() string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.char      // return, none, string, nullable-string
@@ -25915,7 +24394,6 @@ func (info *FileInfoInstance) GetEtag() string {
 // GetFileType wraps g_file_info_get_file_type
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_file_type.g_file_info_get_file_type.html
-//
 func (info *FileInfoInstance) GetFileType() FileType {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  C.GFileType  // return, none, casted
@@ -25935,7 +24413,6 @@ func (info *FileInfoInstance) GetFileType() FileType {
 // GetIcon wraps g_file_info_get_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_icon.g_file_info_get_icon.html
-//
 func (info *FileInfoInstance) GetIcon() Icon {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.GIcon     // return, none, converted, nullable
@@ -25957,7 +24434,6 @@ func (info *FileInfoInstance) GetIcon() Icon {
 // GetIsBackup wraps g_file_info_get_is_backup
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_is_backup.g_file_info_get_is_backup.html
-//
 func (info *FileInfoInstance) GetIsBackup() bool {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  C.gboolean   // return
@@ -25979,7 +24455,6 @@ func (info *FileInfoInstance) GetIsBackup() bool {
 // GetIsHidden wraps g_file_info_get_is_hidden
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_is_hidden.g_file_info_get_is_hidden.html
-//
 func (info *FileInfoInstance) GetIsHidden() bool {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  C.gboolean   // return
@@ -26001,7 +24476,6 @@ func (info *FileInfoInstance) GetIsHidden() bool {
 // GetIsSymlink wraps g_file_info_get_is_symlink
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_is_symlink.g_file_info_get_is_symlink.html
-//
 func (info *FileInfoInstance) GetIsSymlink() bool {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  C.gboolean   // return
@@ -26023,7 +24497,6 @@ func (info *FileInfoInstance) GetIsSymlink() bool {
 // GetName wraps g_file_info_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_name.g_file_info_get_name.html
-//
 func (info *FileInfoInstance) GetName() string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.char      // return, none, string
@@ -26043,7 +24516,6 @@ func (info *FileInfoInstance) GetName() string {
 // GetSize wraps g_file_info_get_size
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_size.g_file_info_get_size.html
-//
 func (info *FileInfoInstance) GetSize() int64 {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  C.goffset    // return, none, casted
@@ -26063,7 +24535,6 @@ func (info *FileInfoInstance) GetSize() int64 {
 // GetSortOrder wraps g_file_info_get_sort_order
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_sort_order.g_file_info_get_sort_order.html
-//
 func (info *FileInfoInstance) GetSortOrder() int32 {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  C.gint32     // return, none, casted
@@ -26083,7 +24554,6 @@ func (info *FileInfoInstance) GetSortOrder() int32 {
 // GetSymbolicIcon wraps g_file_info_get_symbolic_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_symbolic_icon.g_file_info_get_symbolic_icon.html
-//
 func (info *FileInfoInstance) GetSymbolicIcon() Icon {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.GIcon     // return, none, converted, nullable
@@ -26105,7 +24575,6 @@ func (info *FileInfoInstance) GetSymbolicIcon() Icon {
 // GetSymlinkTarget wraps g_file_info_get_symlink_target
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_get_symlink_target.g_file_info_get_symlink_target.html
-//
 func (info *FileInfoInstance) GetSymlinkTarget() string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var cret  *C.char      // return, none, string, nullable
@@ -26127,7 +24596,6 @@ func (info *FileInfoInstance) GetSymlinkTarget() string {
 // HasAttribute wraps g_file_info_has_attribute
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_has_attribute.g_file_info_has_attribute.html
-//
 func (info *FileInfoInstance) HasAttribute(attribute string) bool {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26153,7 +24621,6 @@ func (info *FileInfoInstance) HasAttribute(attribute string) bool {
 // HasNamespace wraps g_file_info_has_namespace
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_has_namespace.g_file_info_has_namespace.html
-//
 func (info *FileInfoInstance) HasNamespace(nameSpace string) bool {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26179,7 +24646,6 @@ func (info *FileInfoInstance) HasNamespace(nameSpace string) bool {
 // ListAttributes wraps g_file_info_list_attributes
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_list_attributes.g_file_info_list_attributes.html
-//
 func (info *FileInfoInstance) ListAttributes(nameSpace string) []string {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string, nullable-string
@@ -26207,7 +24673,6 @@ func (info *FileInfoInstance) ListAttributes(nameSpace string) []string {
 // RemoveAttribute wraps g_file_info_remove_attribute
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_remove_attribute.g_file_info_remove_attribute.html
-//
 func (info *FileInfoInstance) RemoveAttribute(attribute string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26224,7 +24689,6 @@ func (info *FileInfoInstance) RemoveAttribute(attribute string) {
 // SetAttributeBoolean wraps g_file_info_set_attribute_boolean
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_boolean.g_file_info_set_attribute_boolean.html
-//
 func (info *FileInfoInstance) SetAttributeBoolean(attribute string, attrValue bool) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26246,7 +24710,6 @@ func (info *FileInfoInstance) SetAttributeBoolean(attribute string, attrValue bo
 // SetAttributeByteString wraps g_file_info_set_attribute_byte_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_byte_string.g_file_info_set_attribute_byte_string.html
-//
 func (info *FileInfoInstance) SetAttributeByteString(attribute string, attrValue string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26267,7 +24730,6 @@ func (info *FileInfoInstance) SetAttributeByteString(attribute string, attrValue
 // SetAttributeFilePath wraps g_file_info_set_attribute_file_path
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_file_path.g_file_info_set_attribute_file_path.html
-//
 func (info *FileInfoInstance) SetAttributeFilePath(attribute string, attrValue string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26288,7 +24750,6 @@ func (info *FileInfoInstance) SetAttributeFilePath(attribute string, attrValue s
 // SetAttributeInt32 wraps g_file_info_set_attribute_int32
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_int32.g_file_info_set_attribute_int32.html
-//
 func (info *FileInfoInstance) SetAttributeInt32(attribute string, attrValue int32) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26308,7 +24769,6 @@ func (info *FileInfoInstance) SetAttributeInt32(attribute string, attrValue int3
 // SetAttributeInt64 wraps g_file_info_set_attribute_int64
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_int64.g_file_info_set_attribute_int64.html
-//
 func (info *FileInfoInstance) SetAttributeInt64(attribute string, attrValue int64) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26328,7 +24788,6 @@ func (info *FileInfoInstance) SetAttributeInt64(attribute string, attrValue int6
 // SetAttributeMask wraps g_file_info_set_attribute_mask
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_mask.g_file_info_set_attribute_mask.html
-//
 func (info *FileInfoInstance) SetAttributeMask(mask *FileAttributeMatcher) {
 	var carg0 *C.GFileInfo             // in, none, converted
 	var carg1 *C.GFileAttributeMatcher // in, none, converted
@@ -26344,7 +24803,6 @@ func (info *FileInfoInstance) SetAttributeMask(mask *FileAttributeMatcher) {
 // SetAttributeObject wraps g_file_info_set_attribute_object
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_object.g_file_info_set_attribute_object.html
-//
 func (info *FileInfoInstance) SetAttributeObject(attribute string, attrValue gobject.Object) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26364,7 +24822,6 @@ func (info *FileInfoInstance) SetAttributeObject(attribute string, attrValue gob
 // SetAttributeStatus wraps g_file_info_set_attribute_status
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_status.g_file_info_set_attribute_status.html
-//
 func (info *FileInfoInstance) SetAttributeStatus(attribute string, status FileAttributeStatus) bool {
 	var carg0 *C.GFileInfo           // in, none, converted
 	var carg1 *C.char                // in, none, string
@@ -26393,7 +24850,6 @@ func (info *FileInfoInstance) SetAttributeStatus(attribute string, status FileAt
 // SetAttributeString wraps g_file_info_set_attribute_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_string.g_file_info_set_attribute_string.html
-//
 func (info *FileInfoInstance) SetAttributeString(attribute string, attrValue string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26414,7 +24870,6 @@ func (info *FileInfoInstance) SetAttributeString(attribute string, attrValue str
 // SetAttributeStringv wraps g_file_info_set_attribute_stringv
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_stringv.g_file_info_set_attribute_stringv.html
-//
 func (info *FileInfoInstance) SetAttributeStringv(attribute string, attrValue []string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26436,7 +24891,6 @@ func (info *FileInfoInstance) SetAttributeStringv(attribute string, attrValue []
 // SetAttributeUint32 wraps g_file_info_set_attribute_uint32
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_uint32.g_file_info_set_attribute_uint32.html
-//
 func (info *FileInfoInstance) SetAttributeUint32(attribute string, attrValue uint32) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26456,7 +24910,6 @@ func (info *FileInfoInstance) SetAttributeUint32(attribute string, attrValue uin
 // SetAttributeUint64 wraps g_file_info_set_attribute_uint64
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_attribute_uint64.g_file_info_set_attribute_uint64.html
-//
 func (info *FileInfoInstance) SetAttributeUint64(attribute string, attrValue uint64) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26476,7 +24929,6 @@ func (info *FileInfoInstance) SetAttributeUint64(attribute string, attrValue uin
 // SetContentType wraps g_file_info_set_content_type
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_content_type.g_file_info_set_content_type.html
-//
 func (info *FileInfoInstance) SetContentType(contentType string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26493,7 +24945,6 @@ func (info *FileInfoInstance) SetContentType(contentType string) {
 // SetDisplayName wraps g_file_info_set_display_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_display_name.g_file_info_set_display_name.html
-//
 func (info *FileInfoInstance) SetDisplayName(displayName string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26510,7 +24961,6 @@ func (info *FileInfoInstance) SetDisplayName(displayName string) {
 // SetEditName wraps g_file_info_set_edit_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_edit_name.g_file_info_set_edit_name.html
-//
 func (info *FileInfoInstance) SetEditName(editName string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26527,7 +24977,6 @@ func (info *FileInfoInstance) SetEditName(editName string) {
 // SetFileType wraps g_file_info_set_file_type
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_file_type.g_file_info_set_file_type.html
-//
 func (info *FileInfoInstance) SetFileType(typ FileType) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 C.GFileType  // in, none, casted
@@ -26543,7 +24992,6 @@ func (info *FileInfoInstance) SetFileType(typ FileType) {
 // SetIcon wraps g_file_info_set_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_icon.g_file_info_set_icon.html
-//
 func (info *FileInfoInstance) SetIcon(icon Icon) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.GIcon     // in, none, converted
@@ -26559,7 +25007,6 @@ func (info *FileInfoInstance) SetIcon(icon Icon) {
 // SetIsHidden wraps g_file_info_set_is_hidden
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_is_hidden.g_file_info_set_is_hidden.html
-//
 func (info *FileInfoInstance) SetIsHidden(isHidden bool) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 C.gboolean   // in
@@ -26577,7 +25024,6 @@ func (info *FileInfoInstance) SetIsHidden(isHidden bool) {
 // SetIsSymlink wraps g_file_info_set_is_symlink
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_is_symlink.g_file_info_set_is_symlink.html
-//
 func (info *FileInfoInstance) SetIsSymlink(isSymlink bool) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 C.gboolean   // in
@@ -26595,7 +25041,6 @@ func (info *FileInfoInstance) SetIsSymlink(isSymlink bool) {
 // SetName wraps g_file_info_set_name
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_name.g_file_info_set_name.html
-//
 func (info *FileInfoInstance) SetName(name string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26612,7 +25057,6 @@ func (info *FileInfoInstance) SetName(name string) {
 // SetSize wraps g_file_info_set_size
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_size.g_file_info_set_size.html
-//
 func (info *FileInfoInstance) SetSize(size int64) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 C.goffset    // in, none, casted
@@ -26628,7 +25072,6 @@ func (info *FileInfoInstance) SetSize(size int64) {
 // SetSortOrder wraps g_file_info_set_sort_order
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_sort_order.g_file_info_set_sort_order.html
-//
 func (info *FileInfoInstance) SetSortOrder(sortOrder int32) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 C.gint32     // in, none, casted
@@ -26644,7 +25087,6 @@ func (info *FileInfoInstance) SetSortOrder(sortOrder int32) {
 // SetSymbolicIcon wraps g_file_info_set_symbolic_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_symbolic_icon.g_file_info_set_symbolic_icon.html
-//
 func (info *FileInfoInstance) SetSymbolicIcon(icon Icon) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.GIcon     // in, none, converted
@@ -26660,7 +25102,6 @@ func (info *FileInfoInstance) SetSymbolicIcon(icon Icon) {
 // SetSymlinkTarget wraps g_file_info_set_symlink_target
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_set_symlink_target.g_file_info_set_symlink_target.html
-//
 func (info *FileInfoInstance) SetSymlinkTarget(symlinkTarget string) {
 	var carg0 *C.GFileInfo // in, none, converted
 	var carg1 *C.char      // in, none, string
@@ -26677,7 +25118,6 @@ func (info *FileInfoInstance) SetSymlinkTarget(symlinkTarget string) {
 // UnsetAttributeMask wraps g_file_info_unset_attribute_mask
 // 
 // see also https://docs.gtk.org/gio/method.g_file_info_unset_attribute_mask.g_file_info_unset_attribute_mask.html
-//
 func (info *FileInfoInstance) UnsetAttributeMask() {
 	var carg0 *C.GFileInfo // in, none, converted
 
@@ -26698,7 +25138,6 @@ var _ FileMonitor = (*FileMonitorInstance)(nil)
 // FileMonitor wraps GFileMonitor
 // 
 // see also https://docs.gtk.org/gio/class.FileMonitor.html
-//
 type FileMonitor interface {
 	gobject.Object
 	upcastToGFileMonitor() *FileMonitorInstance
@@ -26706,27 +25145,22 @@ type FileMonitor interface {
 	// Cancel wraps g_file_monitor_cancel
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_monitor_cancel.g_file_monitor_cancel.html
-	//
 	Cancel() bool
 	// EmitEvent wraps g_file_monitor_emit_event
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_monitor_emit_event.g_file_monitor_emit_event.html
-	//
 	EmitEvent(File, File, FileMonitorEvent)
 	// IsCancelled wraps g_file_monitor_is_cancelled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_monitor_is_cancelled.g_file_monitor_is_cancelled.html
-	//
 	IsCancelled() bool
 	// SetRateLimit wraps g_file_monitor_set_rate_limit
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_monitor_set_rate_limit.g_file_monitor_set_rate_limit.html
-	//
 	SetRateLimit(int32)
 	// ConnectChanged connects the provided callback to the "changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.FileMonitor.changed.html
-	//
 	ConnectChanged(func(FileMonitor, File, File, FileMonitorEvent)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -26794,7 +25228,6 @@ func UnsafeFileMonitorToGlibFull(c FileMonitor) unsafe.Pointer {
 // Cancel wraps g_file_monitor_cancel
 // 
 // see also https://docs.gtk.org/gio/method.g_file_monitor_cancel.g_file_monitor_cancel.html
-//
 func (monitor *FileMonitorInstance) Cancel() bool {
 	var carg0 *C.GFileMonitor // in, none, converted
 	var cret  C.gboolean      // return
@@ -26816,7 +25249,6 @@ func (monitor *FileMonitorInstance) Cancel() bool {
 // EmitEvent wraps g_file_monitor_emit_event
 // 
 // see also https://docs.gtk.org/gio/method.g_file_monitor_emit_event.g_file_monitor_emit_event.html
-//
 func (monitor *FileMonitorInstance) EmitEvent(child File, otherFile File, eventType FileMonitorEvent) {
 	var carg0 *C.GFileMonitor     // in, none, converted
 	var carg1 *C.GFile            // in, none, converted
@@ -26840,7 +25272,6 @@ func (monitor *FileMonitorInstance) EmitEvent(child File, otherFile File, eventT
 // IsCancelled wraps g_file_monitor_is_cancelled
 // 
 // see also https://docs.gtk.org/gio/method.g_file_monitor_is_cancelled.g_file_monitor_is_cancelled.html
-//
 func (monitor *FileMonitorInstance) IsCancelled() bool {
 	var carg0 *C.GFileMonitor // in, none, converted
 	var cret  C.gboolean      // return
@@ -26862,7 +25293,6 @@ func (monitor *FileMonitorInstance) IsCancelled() bool {
 // SetRateLimit wraps g_file_monitor_set_rate_limit
 // 
 // see also https://docs.gtk.org/gio/method.g_file_monitor_set_rate_limit.g_file_monitor_set_rate_limit.html
-//
 func (monitor *FileMonitorInstance) SetRateLimit(limitMsecs int32) {
 	var carg0 *C.GFileMonitor // in, none, converted
 	var carg1 C.gint          // in, none, casted
@@ -26878,7 +25308,6 @@ func (monitor *FileMonitorInstance) SetRateLimit(limitMsecs int32) {
 // ConnectChanged connects the provided callback to the "changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.FileMonitor.changed.html
-//
 func (o *FileMonitorInstance) ConnectChanged(fn func(FileMonitor, File, File, FileMonitorEvent)) gobject.SignalHandle {
 	return o.Connect("changed", fn)
 }
@@ -27035,7 +25464,6 @@ var _ FilenameCompleter = (*FilenameCompleterInstance)(nil)
 // FilenameCompleter wraps GFilenameCompleter
 // 
 // see also https://docs.gtk.org/gio/class.FilenameCompleter.html
-//
 type FilenameCompleter interface {
 	gobject.Object
 	upcastToGFilenameCompleter() *FilenameCompleterInstance
@@ -27043,22 +25471,18 @@ type FilenameCompleter interface {
 	// GetCompletionSuffix wraps g_filename_completer_get_completion_suffix
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filename_completer_get_completion_suffix.g_filename_completer_get_completion_suffix.html
-	//
 	GetCompletionSuffix(string) string
 	// GetCompletions wraps g_filename_completer_get_completions
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filename_completer_get_completions.g_filename_completer_get_completions.html
-	//
 	GetCompletions(string) []string
 	// SetDirsOnly wraps g_filename_completer_set_dirs_only
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filename_completer_set_dirs_only.g_filename_completer_set_dirs_only.html
-	//
 	SetDirsOnly(bool)
 	// ConnectGotCompletionData connects the provided callback to the "got-completion-data" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.FilenameCompleter.got-completion-data.html
-	//
 	ConnectGotCompletionData(func(FilenameCompleter)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -27121,7 +25545,6 @@ func UnsafeFilenameCompleterToGlibFull(c FilenameCompleter) unsafe.Pointer {
 // NewFilenameCompleter wraps g_filename_completer_new
 // 
 // see also https://docs.gtk.org/gio/func.g_filename_completer_new.html
-//
 func NewFilenameCompleter() FilenameCompleter {
 	var cret *C.GFilenameCompleter // return, full, converted
 
@@ -27137,7 +25560,6 @@ func NewFilenameCompleter() FilenameCompleter {
 // GetCompletionSuffix wraps g_filename_completer_get_completion_suffix
 // 
 // see also https://docs.gtk.org/gio/method.g_filename_completer_get_completion_suffix.g_filename_completer_get_completion_suffix.html
-//
 func (completer *FilenameCompleterInstance) GetCompletionSuffix(initialText string) string {
 	var carg0 *C.GFilenameCompleter // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -27164,7 +25586,6 @@ func (completer *FilenameCompleterInstance) GetCompletionSuffix(initialText stri
 // GetCompletions wraps g_filename_completer_get_completions
 // 
 // see also https://docs.gtk.org/gio/method.g_filename_completer_get_completions.g_filename_completer_get_completions.html
-//
 func (completer *FilenameCompleterInstance) GetCompletions(initialText string) []string {
 	var carg0 *C.GFilenameCompleter // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -27190,7 +25611,6 @@ func (completer *FilenameCompleterInstance) GetCompletions(initialText string) [
 // SetDirsOnly wraps g_filename_completer_set_dirs_only
 // 
 // see also https://docs.gtk.org/gio/method.g_filename_completer_set_dirs_only.g_filename_completer_set_dirs_only.html
-//
 func (completer *FilenameCompleterInstance) SetDirsOnly(dirsOnly bool) {
 	var carg0 *C.GFilenameCompleter // in, none, converted
 	var carg1 C.gboolean            // in
@@ -27208,7 +25628,6 @@ func (completer *FilenameCompleterInstance) SetDirsOnly(dirsOnly bool) {
 // ConnectGotCompletionData connects the provided callback to the "got-completion-data" signal
 // 
 // see also https://docs.gtk.org/gio/signal.FilenameCompleter.got-completion-data.html
-//
 func (o *FilenameCompleterInstance) ConnectGotCompletionData(fn func(FilenameCompleter)) gobject.SignalHandle {
 	return o.Connect("got-completion-data", fn)
 }
@@ -27300,7 +25719,6 @@ var _ IOStream = (*IOStreamInstance)(nil)
 // IOStream wraps GIOStream
 // 
 // see also https://docs.gtk.org/gio/class.IOStream.html
-//
 type IOStream interface {
 	gobject.Object
 	upcastToGIOStream() *IOStreamInstance
@@ -27308,52 +25726,42 @@ type IOStream interface {
 	// ClearPending wraps g_io_stream_clear_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_clear_pending.g_io_stream_clear_pending.html
-	//
 	ClearPending()
 	// Close wraps g_io_stream_close
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_close.g_io_stream_close.html
-	//
 	Close(Cancellable) (bool, error)
 	// CloseAsync wraps g_io_stream_close_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_close_async.g_io_stream_close_async.html
-	//
 	CloseAsync(int32, Cancellable, AsyncReadyCallback)
 	// CloseFinish wraps g_io_stream_close_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_close_finish.g_io_stream_close_finish.html
-	//
 	CloseFinish(AsyncResult) (bool, error)
 	// GetInputStream wraps g_io_stream_get_input_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_get_input_stream.g_io_stream_get_input_stream.html
-	//
 	GetInputStream() InputStream
 	// GetOutputStream wraps g_io_stream_get_output_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_get_output_stream.g_io_stream_get_output_stream.html
-	//
 	GetOutputStream() OutputStream
 	// HasPending wraps g_io_stream_has_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_has_pending.g_io_stream_has_pending.html
-	//
 	HasPending() bool
 	// IsClosed wraps g_io_stream_is_closed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_is_closed.g_io_stream_is_closed.html
-	//
 	IsClosed() bool
 	// SetPending wraps g_io_stream_set_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_set_pending.g_io_stream_set_pending.html
-	//
 	SetPending() (bool, error)
 	// SpliceAsync wraps g_io_stream_splice_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_io_stream_splice_async.g_io_stream_splice_async.html
-	//
 	SpliceAsync(IOStream, IOStreamSpliceFlags, int32, Cancellable, AsyncReadyCallback)
 
 	// chain up virtual methods:
@@ -27431,7 +25839,6 @@ func UnsafeIOStreamToGlibFull(c IOStream) unsafe.Pointer {
 // IOStreamSpliceFinish wraps g_io_stream_splice_finish
 // 
 // see also https://docs.gtk.org/gio/func.g_io_stream_splice_finish.html
-//
 func IOStreamSpliceFinish(result AsyncResult) (bool, error) {
 	var carg1 *C.GAsyncResult // in, none, converted
 	var cret  C.gboolean      // return
@@ -27458,7 +25865,6 @@ func IOStreamSpliceFinish(result AsyncResult) (bool, error) {
 // ClearPending wraps g_io_stream_clear_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_clear_pending.g_io_stream_clear_pending.html
-//
 func (stream *IOStreamInstance) ClearPending() {
 	var carg0 *C.GIOStream // in, none, converted
 
@@ -27471,7 +25877,6 @@ func (stream *IOStreamInstance) ClearPending() {
 // Close wraps g_io_stream_close
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_close.g_io_stream_close.html
-//
 func (stream *IOStreamInstance) Close(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GIOStream    // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -27503,7 +25908,6 @@ func (stream *IOStreamInstance) Close(cancellable Cancellable) (bool, error) {
 // CloseAsync wraps g_io_stream_close_async
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_close_async.g_io_stream_close_async.html
-//
 func (stream *IOStreamInstance) CloseAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GIOStream          // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -27531,7 +25935,6 @@ func (stream *IOStreamInstance) CloseAsync(ioPriority int32, cancellable Cancell
 // CloseFinish wraps g_io_stream_close_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_close_finish.g_io_stream_close_finish.html
-//
 func (stream *IOStreamInstance) CloseFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GIOStream    // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -27561,7 +25964,6 @@ func (stream *IOStreamInstance) CloseFinish(result AsyncResult) (bool, error) {
 // GetInputStream wraps g_io_stream_get_input_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_get_input_stream.g_io_stream_get_input_stream.html
-//
 func (stream *IOStreamInstance) GetInputStream() InputStream {
 	var carg0 *C.GIOStream    // in, none, converted
 	var cret  *C.GInputStream // return, none, converted
@@ -27581,7 +25983,6 @@ func (stream *IOStreamInstance) GetInputStream() InputStream {
 // GetOutputStream wraps g_io_stream_get_output_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_get_output_stream.g_io_stream_get_output_stream.html
-//
 func (stream *IOStreamInstance) GetOutputStream() OutputStream {
 	var carg0 *C.GIOStream     // in, none, converted
 	var cret  *C.GOutputStream // return, none, converted
@@ -27601,7 +26002,6 @@ func (stream *IOStreamInstance) GetOutputStream() OutputStream {
 // HasPending wraps g_io_stream_has_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_has_pending.g_io_stream_has_pending.html
-//
 func (stream *IOStreamInstance) HasPending() bool {
 	var carg0 *C.GIOStream // in, none, converted
 	var cret  C.gboolean   // return
@@ -27623,7 +26023,6 @@ func (stream *IOStreamInstance) HasPending() bool {
 // IsClosed wraps g_io_stream_is_closed
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_is_closed.g_io_stream_is_closed.html
-//
 func (stream *IOStreamInstance) IsClosed() bool {
 	var carg0 *C.GIOStream // in, none, converted
 	var cret  C.gboolean   // return
@@ -27645,7 +26044,6 @@ func (stream *IOStreamInstance) IsClosed() bool {
 // SetPending wraps g_io_stream_set_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_set_pending.g_io_stream_set_pending.html
-//
 func (stream *IOStreamInstance) SetPending() (bool, error) {
 	var carg0 *C.GIOStream // in, none, converted
 	var cret  C.gboolean   // return
@@ -27672,7 +26070,6 @@ func (stream *IOStreamInstance) SetPending() (bool, error) {
 // SpliceAsync wraps g_io_stream_splice_async
 // 
 // see also https://docs.gtk.org/gio/method.g_io_stream_splice_async.g_io_stream_splice_async.html
-//
 func (stream1 *IOStreamInstance) SpliceAsync(stream2 IOStream, flags IOStreamSpliceFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GIOStream           // in, none, converted
 	var carg1 *C.GIOStream           // in, none, converted
@@ -27976,7 +26373,6 @@ var _ InetAddress = (*InetAddressInstance)(nil)
 // InetAddress wraps GInetAddress
 // 
 // see also https://docs.gtk.org/gio/class.InetAddress.html
-//
 type InetAddress interface {
 	gobject.Object
 	upcastToGInetAddress() *InetAddressInstance
@@ -27984,72 +26380,58 @@ type InetAddress interface {
 	// Equal wraps g_inet_address_equal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_equal.g_inet_address_equal.html
-	//
 	Equal(InetAddress) bool
 	// GetFamily wraps g_inet_address_get_family
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_family.g_inet_address_get_family.html
-	//
 	GetFamily() SocketFamily
 	// GetIsAny wraps g_inet_address_get_is_any
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_any.g_inet_address_get_is_any.html
-	//
 	GetIsAny() bool
 	// GetIsLinkLocal wraps g_inet_address_get_is_link_local
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_link_local.g_inet_address_get_is_link_local.html
-	//
 	GetIsLinkLocal() bool
 	// GetIsLoopback wraps g_inet_address_get_is_loopback
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_loopback.g_inet_address_get_is_loopback.html
-	//
 	GetIsLoopback() bool
 	// GetIsMcGlobal wraps g_inet_address_get_is_mc_global
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_global.g_inet_address_get_is_mc_global.html
-	//
 	GetIsMcGlobal() bool
 	// GetIsMcLinkLocal wraps g_inet_address_get_is_mc_link_local
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_link_local.g_inet_address_get_is_mc_link_local.html
-	//
 	GetIsMcLinkLocal() bool
 	// GetIsMcNodeLocal wraps g_inet_address_get_is_mc_node_local
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_node_local.g_inet_address_get_is_mc_node_local.html
-	//
 	GetIsMcNodeLocal() bool
 	// GetIsMcOrgLocal wraps g_inet_address_get_is_mc_org_local
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_org_local.g_inet_address_get_is_mc_org_local.html
-	//
 	GetIsMcOrgLocal() bool
 	// GetIsMcSiteLocal wraps g_inet_address_get_is_mc_site_local
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_site_local.g_inet_address_get_is_mc_site_local.html
-	//
 	GetIsMcSiteLocal() bool
 	// GetIsMulticast wraps g_inet_address_get_is_multicast
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_multicast.g_inet_address_get_is_multicast.html
-	//
 	GetIsMulticast() bool
 	// GetIsSiteLocal wraps g_inet_address_get_is_site_local
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_is_site_local.g_inet_address_get_is_site_local.html
-	//
 	GetIsSiteLocal() bool
 	// GetNativeSize wraps g_inet_address_get_native_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_get_native_size.g_inet_address_get_native_size.html
-	//
 	GetNativeSize() uint
 	// String wraps g_inet_address_to_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_to_string.g_inet_address_to_string.html
-	//
 	String() string
 
 	// chain up virtual methods:
@@ -28112,7 +26494,6 @@ func UnsafeInetAddressToGlibFull(c InetAddress) unsafe.Pointer {
 // NewInetAddressAny wraps g_inet_address_new_any
 // 
 // see also https://docs.gtk.org/gio/func.g_inet_address_new_any.html
-//
 func NewInetAddressAny(family SocketFamily) InetAddress {
 	var carg1 C.GSocketFamily // in, none, casted
 	var cret  *C.GInetAddress // return, full, converted
@@ -28132,7 +26513,6 @@ func NewInetAddressAny(family SocketFamily) InetAddress {
 // NewInetAddressFromString wraps g_inet_address_new_from_string
 // 
 // see also https://docs.gtk.org/gio/func.g_inet_address_new_from_string.html
-//
 func NewInetAddressFromString(str string) InetAddress {
 	var carg1 *C.gchar        // in, none, string
 	var cret  *C.GInetAddress // return, full, converted, nullable
@@ -28155,7 +26535,6 @@ func NewInetAddressFromString(str string) InetAddress {
 // NewInetAddressLoopback wraps g_inet_address_new_loopback
 // 
 // see also https://docs.gtk.org/gio/func.g_inet_address_new_loopback.html
-//
 func NewInetAddressLoopback(family SocketFamily) InetAddress {
 	var carg1 C.GSocketFamily // in, none, casted
 	var cret  *C.GInetAddress // return, full, converted
@@ -28175,7 +26554,6 @@ func NewInetAddressLoopback(family SocketFamily) InetAddress {
 // Equal wraps g_inet_address_equal
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_equal.g_inet_address_equal.html
-//
 func (address *InetAddressInstance) Equal(otherAddress InetAddress) bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var carg1 *C.GInetAddress // in, none, converted
@@ -28200,7 +26578,6 @@ func (address *InetAddressInstance) Equal(otherAddress InetAddress) bool {
 // GetFamily wraps g_inet_address_get_family
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_family.g_inet_address_get_family.html
-//
 func (address *InetAddressInstance) GetFamily() SocketFamily {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.GSocketFamily // return, none, casted
@@ -28220,7 +26597,6 @@ func (address *InetAddressInstance) GetFamily() SocketFamily {
 // GetIsAny wraps g_inet_address_get_is_any
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_any.g_inet_address_get_is_any.html
-//
 func (address *InetAddressInstance) GetIsAny() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28242,7 +26618,6 @@ func (address *InetAddressInstance) GetIsAny() bool {
 // GetIsLinkLocal wraps g_inet_address_get_is_link_local
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_link_local.g_inet_address_get_is_link_local.html
-//
 func (address *InetAddressInstance) GetIsLinkLocal() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28264,7 +26639,6 @@ func (address *InetAddressInstance) GetIsLinkLocal() bool {
 // GetIsLoopback wraps g_inet_address_get_is_loopback
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_loopback.g_inet_address_get_is_loopback.html
-//
 func (address *InetAddressInstance) GetIsLoopback() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28286,7 +26660,6 @@ func (address *InetAddressInstance) GetIsLoopback() bool {
 // GetIsMcGlobal wraps g_inet_address_get_is_mc_global
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_global.g_inet_address_get_is_mc_global.html
-//
 func (address *InetAddressInstance) GetIsMcGlobal() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28308,7 +26681,6 @@ func (address *InetAddressInstance) GetIsMcGlobal() bool {
 // GetIsMcLinkLocal wraps g_inet_address_get_is_mc_link_local
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_link_local.g_inet_address_get_is_mc_link_local.html
-//
 func (address *InetAddressInstance) GetIsMcLinkLocal() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28330,7 +26702,6 @@ func (address *InetAddressInstance) GetIsMcLinkLocal() bool {
 // GetIsMcNodeLocal wraps g_inet_address_get_is_mc_node_local
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_node_local.g_inet_address_get_is_mc_node_local.html
-//
 func (address *InetAddressInstance) GetIsMcNodeLocal() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28352,7 +26723,6 @@ func (address *InetAddressInstance) GetIsMcNodeLocal() bool {
 // GetIsMcOrgLocal wraps g_inet_address_get_is_mc_org_local
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_org_local.g_inet_address_get_is_mc_org_local.html
-//
 func (address *InetAddressInstance) GetIsMcOrgLocal() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28374,7 +26744,6 @@ func (address *InetAddressInstance) GetIsMcOrgLocal() bool {
 // GetIsMcSiteLocal wraps g_inet_address_get_is_mc_site_local
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_mc_site_local.g_inet_address_get_is_mc_site_local.html
-//
 func (address *InetAddressInstance) GetIsMcSiteLocal() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28396,7 +26765,6 @@ func (address *InetAddressInstance) GetIsMcSiteLocal() bool {
 // GetIsMulticast wraps g_inet_address_get_is_multicast
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_multicast.g_inet_address_get_is_multicast.html
-//
 func (address *InetAddressInstance) GetIsMulticast() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28418,7 +26786,6 @@ func (address *InetAddressInstance) GetIsMulticast() bool {
 // GetIsSiteLocal wraps g_inet_address_get_is_site_local
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_is_site_local.g_inet_address_get_is_site_local.html
-//
 func (address *InetAddressInstance) GetIsSiteLocal() bool {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gboolean      // return
@@ -28440,7 +26807,6 @@ func (address *InetAddressInstance) GetIsSiteLocal() bool {
 // GetNativeSize wraps g_inet_address_get_native_size
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_get_native_size.g_inet_address_get_native_size.html
-//
 func (address *InetAddressInstance) GetNativeSize() uint {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  C.gsize         // return, none, casted
@@ -28460,7 +26826,6 @@ func (address *InetAddressInstance) GetNativeSize() uint {
 // String wraps g_inet_address_to_string
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_to_string.g_inet_address_to_string.html
-//
 func (address *InetAddressInstance) String() string {
 	var carg0 *C.GInetAddress // in, none, converted
 	var cret  *C.gchar        // return, full, string
@@ -28578,7 +26943,6 @@ var _ InetAddressMask = (*InetAddressMaskInstance)(nil)
 // InetAddressMask wraps GInetAddressMask
 // 
 // see also https://docs.gtk.org/gio/class.InetAddressMask.html
-//
 type InetAddressMask interface {
 	gobject.Object
 	upcastToGInetAddressMask() *InetAddressMaskInstance
@@ -28586,32 +26950,26 @@ type InetAddressMask interface {
 	// Equal wraps g_inet_address_mask_equal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_mask_equal.g_inet_address_mask_equal.html
-	//
 	Equal(InetAddressMask) bool
 	// GetAddress wraps g_inet_address_mask_get_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_mask_get_address.g_inet_address_mask_get_address.html
-	//
 	GetAddress() InetAddress
 	// GetFamily wraps g_inet_address_mask_get_family
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_mask_get_family.g_inet_address_mask_get_family.html
-	//
 	GetFamily() SocketFamily
 	// GetLength wraps g_inet_address_mask_get_length
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_mask_get_length.g_inet_address_mask_get_length.html
-	//
 	GetLength() uint
 	// Matches wraps g_inet_address_mask_matches
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_mask_matches.g_inet_address_mask_matches.html
-	//
 	Matches(InetAddress) bool
 	// String wraps g_inet_address_mask_to_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_address_mask_to_string.g_inet_address_mask_to_string.html
-	//
 	String() string
 
 	// chain up virtual methods:
@@ -28668,7 +27026,6 @@ func UnsafeInetAddressMaskToGlibFull(c InetAddressMask) unsafe.Pointer {
 // NewInetAddressMask wraps g_inet_address_mask_new
 // 
 // see also https://docs.gtk.org/gio/func.g_inet_address_mask_new.html
-//
 func NewInetAddressMask(addr InetAddress, length uint) (InetAddressMask, error) {
 	var carg1 *C.GInetAddress     // in, none, converted
 	var carg2 C.guint             // in, none, casted
@@ -28696,7 +27053,6 @@ func NewInetAddressMask(addr InetAddress, length uint) (InetAddressMask, error) 
 // NewInetAddressMaskFromString wraps g_inet_address_mask_new_from_string
 // 
 // see also https://docs.gtk.org/gio/func.g_inet_address_mask_new_from_string.html
-//
 func NewInetAddressMaskFromString(maskString string) (InetAddressMask, error) {
 	var carg1 *C.gchar            // in, none, string
 	var cret  *C.GInetAddressMask // return, full, converted
@@ -28722,7 +27078,6 @@ func NewInetAddressMaskFromString(maskString string) (InetAddressMask, error) {
 // Equal wraps g_inet_address_mask_equal
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_mask_equal.g_inet_address_mask_equal.html
-//
 func (mask *InetAddressMaskInstance) Equal(mask2 InetAddressMask) bool {
 	var carg0 *C.GInetAddressMask // in, none, converted
 	var carg1 *C.GInetAddressMask // in, none, converted
@@ -28747,7 +27102,6 @@ func (mask *InetAddressMaskInstance) Equal(mask2 InetAddressMask) bool {
 // GetAddress wraps g_inet_address_mask_get_address
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_mask_get_address.g_inet_address_mask_get_address.html
-//
 func (mask *InetAddressMaskInstance) GetAddress() InetAddress {
 	var carg0 *C.GInetAddressMask // in, none, converted
 	var cret  *C.GInetAddress     // return, none, converted
@@ -28767,7 +27121,6 @@ func (mask *InetAddressMaskInstance) GetAddress() InetAddress {
 // GetFamily wraps g_inet_address_mask_get_family
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_mask_get_family.g_inet_address_mask_get_family.html
-//
 func (mask *InetAddressMaskInstance) GetFamily() SocketFamily {
 	var carg0 *C.GInetAddressMask // in, none, converted
 	var cret  C.GSocketFamily     // return, none, casted
@@ -28787,7 +27140,6 @@ func (mask *InetAddressMaskInstance) GetFamily() SocketFamily {
 // GetLength wraps g_inet_address_mask_get_length
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_mask_get_length.g_inet_address_mask_get_length.html
-//
 func (mask *InetAddressMaskInstance) GetLength() uint {
 	var carg0 *C.GInetAddressMask // in, none, converted
 	var cret  C.guint             // return, none, casted
@@ -28807,7 +27159,6 @@ func (mask *InetAddressMaskInstance) GetLength() uint {
 // Matches wraps g_inet_address_mask_matches
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_mask_matches.g_inet_address_mask_matches.html
-//
 func (mask *InetAddressMaskInstance) Matches(address InetAddress) bool {
 	var carg0 *C.GInetAddressMask // in, none, converted
 	var carg1 *C.GInetAddress     // in, none, converted
@@ -28832,7 +27183,6 @@ func (mask *InetAddressMaskInstance) Matches(address InetAddress) bool {
 // String wraps g_inet_address_mask_to_string
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_address_mask_to_string.g_inet_address_mask_to_string.html
-//
 func (mask *InetAddressMaskInstance) String() string {
 	var carg0 *C.GInetAddressMask // in, none, converted
 	var cret  *C.gchar            // return, full, string
@@ -28901,7 +27251,6 @@ var _ InputStream = (*InputStreamInstance)(nil)
 // InputStream wraps GInputStream
 // 
 // see also https://docs.gtk.org/gio/class.InputStream.html
-//
 type InputStream interface {
 	gobject.Object
 	upcastToGInputStream() *InputStreamInstance
@@ -28909,77 +27258,62 @@ type InputStream interface {
 	// ClearPending wraps g_input_stream_clear_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_clear_pending.g_input_stream_clear_pending.html
-	//
 	ClearPending()
 	// Close wraps g_input_stream_close
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_close.g_input_stream_close.html
-	//
 	Close(Cancellable) (bool, error)
 	// CloseAsync wraps g_input_stream_close_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_close_async.g_input_stream_close_async.html
-	//
 	CloseAsync(int32, Cancellable, AsyncReadyCallback)
 	// CloseFinish wraps g_input_stream_close_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_close_finish.g_input_stream_close_finish.html
-	//
 	CloseFinish(AsyncResult) (bool, error)
 	// HasPending wraps g_input_stream_has_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_has_pending.g_input_stream_has_pending.html
-	//
 	HasPending() bool
 	// IsClosed wraps g_input_stream_is_closed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_is_closed.g_input_stream_is_closed.html
-	//
 	IsClosed() bool
 	// ReadAllFinish wraps g_input_stream_read_all_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_read_all_finish.g_input_stream_read_all_finish.html
-	//
 	ReadAllFinish(AsyncResult) (uint, bool, error)
 	// ReadBytes wraps g_input_stream_read_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_read_bytes.g_input_stream_read_bytes.html
-	//
 	ReadBytes(uint, Cancellable) (*glib.Bytes, error)
 	// ReadBytesAsync wraps g_input_stream_read_bytes_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_read_bytes_async.g_input_stream_read_bytes_async.html
-	//
 	ReadBytesAsync(uint, int32, Cancellable, AsyncReadyCallback)
 	// ReadBytesFinish wraps g_input_stream_read_bytes_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_read_bytes_finish.g_input_stream_read_bytes_finish.html
-	//
 	ReadBytesFinish(AsyncResult) (*glib.Bytes, error)
 	// ReadFinish wraps g_input_stream_read_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_read_finish.g_input_stream_read_finish.html
-	//
 	ReadFinish(AsyncResult) (int, error)
 	// SetPending wraps g_input_stream_set_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_set_pending.g_input_stream_set_pending.html
-	//
 	SetPending() (bool, error)
 	// Skip wraps g_input_stream_skip
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_skip.g_input_stream_skip.html
-	//
 	Skip(uint, Cancellable) (int, error)
 	// SkipAsync wraps g_input_stream_skip_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_skip_async.g_input_stream_skip_async.html
-	//
 	SkipAsync(uint, int32, Cancellable, AsyncReadyCallback)
 	// SkipFinish wraps g_input_stream_skip_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_input_stream_skip_finish.g_input_stream_skip_finish.html
-	//
 	SkipFinish(AsyncResult) (int, error)
 
 	// chain up virtual methods:
@@ -29062,7 +27396,6 @@ func UnsafeInputStreamToGlibFull(c InputStream) unsafe.Pointer {
 // ClearPending wraps g_input_stream_clear_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_clear_pending.g_input_stream_clear_pending.html
-//
 func (stream *InputStreamInstance) ClearPending() {
 	var carg0 *C.GInputStream // in, none, converted
 
@@ -29075,7 +27408,6 @@ func (stream *InputStreamInstance) ClearPending() {
 // Close wraps g_input_stream_close
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_close.g_input_stream_close.html
-//
 func (stream *InputStreamInstance) Close(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -29107,7 +27439,6 @@ func (stream *InputStreamInstance) Close(cancellable Cancellable) (bool, error) 
 // CloseAsync wraps g_input_stream_close_async
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_close_async.g_input_stream_close_async.html
-//
 func (stream *InputStreamInstance) CloseAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GInputStream       // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -29135,7 +27466,6 @@ func (stream *InputStreamInstance) CloseAsync(ioPriority int32, cancellable Canc
 // CloseFinish wraps g_input_stream_close_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_close_finish.g_input_stream_close_finish.html
-//
 func (stream *InputStreamInstance) CloseFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -29165,7 +27495,6 @@ func (stream *InputStreamInstance) CloseFinish(result AsyncResult) (bool, error)
 // HasPending wraps g_input_stream_has_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_has_pending.g_input_stream_has_pending.html
-//
 func (stream *InputStreamInstance) HasPending() bool {
 	var carg0 *C.GInputStream // in, none, converted
 	var cret  C.gboolean      // return
@@ -29187,7 +27516,6 @@ func (stream *InputStreamInstance) HasPending() bool {
 // IsClosed wraps g_input_stream_is_closed
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_is_closed.g_input_stream_is_closed.html
-//
 func (stream *InputStreamInstance) IsClosed() bool {
 	var carg0 *C.GInputStream // in, none, converted
 	var cret  C.gboolean      // return
@@ -29209,7 +27537,6 @@ func (stream *InputStreamInstance) IsClosed() bool {
 // ReadAllFinish wraps g_input_stream_read_all_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_read_all_finish.g_input_stream_read_all_finish.html
-//
 func (stream *InputStreamInstance) ReadAllFinish(result AsyncResult) (uint, bool, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -29242,7 +27569,6 @@ func (stream *InputStreamInstance) ReadAllFinish(result AsyncResult) (uint, bool
 // ReadBytes wraps g_input_stream_read_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_read_bytes.g_input_stream_read_bytes.html
-//
 func (stream *InputStreamInstance) ReadBytes(count uint, cancellable Cancellable) (*glib.Bytes, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 C.gsize         // in, none, casted
@@ -29275,7 +27601,6 @@ func (stream *InputStreamInstance) ReadBytes(count uint, cancellable Cancellable
 // ReadBytesAsync wraps g_input_stream_read_bytes_async
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_read_bytes_async.g_input_stream_read_bytes_async.html
-//
 func (stream *InputStreamInstance) ReadBytesAsync(count uint, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GInputStream       // in, none, converted
 	var carg1 C.gsize               // in, none, casted
@@ -29306,7 +27631,6 @@ func (stream *InputStreamInstance) ReadBytesAsync(count uint, ioPriority int32, 
 // ReadBytesFinish wraps g_input_stream_read_bytes_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_read_bytes_finish.g_input_stream_read_bytes_finish.html
-//
 func (stream *InputStreamInstance) ReadBytesFinish(result AsyncResult) (*glib.Bytes, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -29334,7 +27658,6 @@ func (stream *InputStreamInstance) ReadBytesFinish(result AsyncResult) (*glib.By
 // ReadFinish wraps g_input_stream_read_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_read_finish.g_input_stream_read_finish.html
-//
 func (stream *InputStreamInstance) ReadFinish(result AsyncResult) (int, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -29362,7 +27685,6 @@ func (stream *InputStreamInstance) ReadFinish(result AsyncResult) (int, error) {
 // SetPending wraps g_input_stream_set_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_set_pending.g_input_stream_set_pending.html
-//
 func (stream *InputStreamInstance) SetPending() (bool, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var cret  C.gboolean      // return
@@ -29389,7 +27711,6 @@ func (stream *InputStreamInstance) SetPending() (bool, error) {
 // Skip wraps g_input_stream_skip
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_skip.g_input_stream_skip.html
-//
 func (stream *InputStreamInstance) Skip(count uint, cancellable Cancellable) (int, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 C.gsize         // in, none, casted
@@ -29422,7 +27743,6 @@ func (stream *InputStreamInstance) Skip(count uint, cancellable Cancellable) (in
 // SkipAsync wraps g_input_stream_skip_async
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_skip_async.g_input_stream_skip_async.html
-//
 func (stream *InputStreamInstance) SkipAsync(count uint, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GInputStream       // in, none, converted
 	var carg1 C.gsize               // in, none, casted
@@ -29453,7 +27773,6 @@ func (stream *InputStreamInstance) SkipAsync(count uint, ioPriority int32, cance
 // SkipFinish wraps g_input_stream_skip_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_input_stream_skip_finish.g_input_stream_skip_finish.html
-//
 func (stream *InputStreamInstance) SkipFinish(result AsyncResult) (int, error) {
 	var carg0 *C.GInputStream // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -29842,7 +28161,6 @@ var _ ListStore = (*ListStoreInstance)(nil)
 // ListStore wraps GListStore
 // 
 // see also https://docs.gtk.org/gio/class.ListStore.html
-//
 type ListStore interface {
 	gobject.Object
 	upcastToGListStore() *ListStoreInstance
@@ -29850,12 +28168,10 @@ type ListStore interface {
 	// Remove wraps g_list_store_remove
 	// 
 	// see also https://docs.gtk.org/gio/method.g_list_store_remove.g_list_store_remove.html
-	//
 	Remove(uint)
 	// RemoveAll wraps g_list_store_remove_all
 	// 
 	// see also https://docs.gtk.org/gio/method.g_list_store_remove_all.g_list_store_remove_all.html
-	//
 	RemoveAll()
 
 	// chain up virtual methods:
@@ -29912,7 +28228,6 @@ func UnsafeListStoreToGlibFull(c ListStore) unsafe.Pointer {
 // NewListStore wraps g_list_store_new
 // 
 // see also https://docs.gtk.org/gio/func.g_list_store_new.html
-//
 func NewListStore(itemType gobject.Type) ListStore {
 	var carg1 C.GType       // in, none, casted, alias
 	var cret  *C.GListStore // return, full, converted
@@ -29932,7 +28247,6 @@ func NewListStore(itemType gobject.Type) ListStore {
 // Remove wraps g_list_store_remove
 // 
 // see also https://docs.gtk.org/gio/method.g_list_store_remove.g_list_store_remove.html
-//
 func (store *ListStoreInstance) Remove(position uint) {
 	var carg0 *C.GListStore // in, none, converted
 	var carg1 C.guint       // in, none, casted
@@ -29948,7 +28262,6 @@ func (store *ListStoreInstance) Remove(position uint) {
 // RemoveAll wraps g_list_store_remove_all
 // 
 // see also https://docs.gtk.org/gio/method.g_list_store_remove_all.g_list_store_remove_all.html
-//
 func (store *ListStoreInstance) RemoveAll() {
 	var carg0 *C.GListStore // in, none, converted
 
@@ -30009,7 +28322,6 @@ var _ MemoryInputStream = (*MemoryInputStreamInstance)(nil)
 // MemoryInputStream wraps GMemoryInputStream
 // 
 // see also https://docs.gtk.org/gio/class.MemoryInputStream.html
-//
 type MemoryInputStream interface {
 	InputStream
 	upcastToGMemoryInputStream() *MemoryInputStreamInstance
@@ -30017,7 +28329,6 @@ type MemoryInputStream interface {
 	// AddBytes wraps g_memory_input_stream_add_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_memory_input_stream_add_bytes.g_memory_input_stream_add_bytes.html
-	//
 	AddBytes(*glib.Bytes)
 
 	// chain up virtual methods:
@@ -30076,7 +28387,6 @@ func UnsafeMemoryInputStreamToGlibFull(c MemoryInputStream) unsafe.Pointer {
 // NewMemoryInputStream wraps g_memory_input_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_memory_input_stream_new.html
-//
 func NewMemoryInputStream() InputStream {
 	var cret *C.GInputStream // return, full, converted
 
@@ -30092,7 +28402,6 @@ func NewMemoryInputStream() InputStream {
 // NewMemoryInputStreamFromBytes wraps g_memory_input_stream_new_from_bytes
 // 
 // see also https://docs.gtk.org/gio/func.g_memory_input_stream_new_from_bytes.html
-//
 func NewMemoryInputStreamFromBytes(bytes *glib.Bytes) InputStream {
 	var carg1 *C.GBytes       // in, none, converted
 	var cret  *C.GInputStream // return, full, converted
@@ -30112,7 +28421,6 @@ func NewMemoryInputStreamFromBytes(bytes *glib.Bytes) InputStream {
 // AddBytes wraps g_memory_input_stream_add_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_memory_input_stream_add_bytes.g_memory_input_stream_add_bytes.html
-//
 func (stream *MemoryInputStreamInstance) AddBytes(bytes *glib.Bytes) {
 	var carg0 *C.GMemoryInputStream // in, none, converted
 	var carg1 *C.GBytes             // in, none, converted
@@ -30176,7 +28484,6 @@ var _ MenuAttributeIter = (*MenuAttributeIterInstance)(nil)
 // MenuAttributeIter wraps GMenuAttributeIter
 // 
 // see also https://docs.gtk.org/gio/class.MenuAttributeIter.html
-//
 type MenuAttributeIter interface {
 	gobject.Object
 	upcastToGMenuAttributeIter() *MenuAttributeIterInstance
@@ -30184,12 +28491,10 @@ type MenuAttributeIter interface {
 	// GetName wraps g_menu_attribute_iter_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_attribute_iter_get_name.g_menu_attribute_iter_get_name.html
-	//
 	GetName() string
 	// Next wraps g_menu_attribute_iter_next
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_attribute_iter_next.g_menu_attribute_iter_next.html
-	//
 	Next() bool
 
 	// chain up virtual methods:
@@ -30246,7 +28551,6 @@ func UnsafeMenuAttributeIterToGlibFull(c MenuAttributeIter) unsafe.Pointer {
 // GetName wraps g_menu_attribute_iter_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_attribute_iter_get_name.g_menu_attribute_iter_get_name.html
-//
 func (iter *MenuAttributeIterInstance) GetName() string {
 	var carg0 *C.GMenuAttributeIter // in, none, converted
 	var cret  *C.gchar              // return, none, string
@@ -30266,7 +28570,6 @@ func (iter *MenuAttributeIterInstance) GetName() string {
 // Next wraps g_menu_attribute_iter_next
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_attribute_iter_next.g_menu_attribute_iter_next.html
-//
 func (iter *MenuAttributeIterInstance) Next() bool {
 	var carg0 *C.GMenuAttributeIter // in, none, converted
 	var cret  C.gboolean            // return
@@ -30336,7 +28639,6 @@ var _ MenuItem = (*MenuItemInstance)(nil)
 // MenuItem wraps GMenuItem
 // 
 // see also https://docs.gtk.org/gio/class.MenuItem.html
-//
 type MenuItem interface {
 	gobject.Object
 	upcastToGMenuItem() *MenuItemInstance
@@ -30344,37 +28646,30 @@ type MenuItem interface {
 	// GetLink wraps g_menu_item_get_link
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_item_get_link.g_menu_item_get_link.html
-	//
 	GetLink(string) MenuModel
 	// SetDetailedAction wraps g_menu_item_set_detailed_action
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_item_set_detailed_action.g_menu_item_set_detailed_action.html
-	//
 	SetDetailedAction(string)
 	// SetIcon wraps g_menu_item_set_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_item_set_icon.g_menu_item_set_icon.html
-	//
 	SetIcon(Icon)
 	// SetLabel wraps g_menu_item_set_label
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_item_set_label.g_menu_item_set_label.html
-	//
 	SetLabel(string)
 	// SetLink wraps g_menu_item_set_link
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_item_set_link.g_menu_item_set_link.html
-	//
 	SetLink(string, MenuModel)
 	// SetSection wraps g_menu_item_set_section
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_item_set_section.g_menu_item_set_section.html
-	//
 	SetSection(MenuModel)
 	// SetSubmenu wraps g_menu_item_set_submenu
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_item_set_submenu.g_menu_item_set_submenu.html
-	//
 	SetSubmenu(MenuModel)
 }
 
@@ -30429,7 +28724,6 @@ func UnsafeMenuItemToGlibFull(c MenuItem) unsafe.Pointer {
 // NewMenuItem wraps g_menu_item_new
 // 
 // see also https://docs.gtk.org/gio/func.g_menu_item_new.html
-//
 func NewMenuItem(label string, detailedAction string) MenuItem {
 	var carg1 *C.gchar     // in, none, string, nullable-string
 	var carg2 *C.gchar     // in, none, string, nullable-string
@@ -30458,7 +28752,6 @@ func NewMenuItem(label string, detailedAction string) MenuItem {
 // NewMenuItemFromModel wraps g_menu_item_new_from_model
 // 
 // see also https://docs.gtk.org/gio/func.g_menu_item_new_from_model.html
-//
 func NewMenuItemFromModel(model MenuModel, itemIndex int32) MenuItem {
 	var carg1 *C.GMenuModel // in, none, converted
 	var carg2 C.gint        // in, none, casted
@@ -30481,7 +28774,6 @@ func NewMenuItemFromModel(model MenuModel, itemIndex int32) MenuItem {
 // NewMenuItemSection wraps g_menu_item_new_section
 // 
 // see also https://docs.gtk.org/gio/func.g_menu_item_new_section.html
-//
 func NewMenuItemSection(label string, section MenuModel) MenuItem {
 	var carg1 *C.gchar      // in, none, string, nullable-string
 	var carg2 *C.GMenuModel // in, none, converted
@@ -30507,7 +28799,6 @@ func NewMenuItemSection(label string, section MenuModel) MenuItem {
 // NewMenuItemSubmenu wraps g_menu_item_new_submenu
 // 
 // see also https://docs.gtk.org/gio/func.g_menu_item_new_submenu.html
-//
 func NewMenuItemSubmenu(label string, submenu MenuModel) MenuItem {
 	var carg1 *C.gchar      // in, none, string, nullable-string
 	var carg2 *C.GMenuModel // in, none, converted
@@ -30533,7 +28824,6 @@ func NewMenuItemSubmenu(label string, submenu MenuModel) MenuItem {
 // GetLink wraps g_menu_item_get_link
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_item_get_link.g_menu_item_get_link.html
-//
 func (menuItem *MenuItemInstance) GetLink(link string) MenuModel {
 	var carg0 *C.GMenuItem  // in, none, converted
 	var carg1 *C.gchar      // in, none, string
@@ -30559,7 +28849,6 @@ func (menuItem *MenuItemInstance) GetLink(link string) MenuModel {
 // SetDetailedAction wraps g_menu_item_set_detailed_action
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_item_set_detailed_action.g_menu_item_set_detailed_action.html
-//
 func (menuItem *MenuItemInstance) SetDetailedAction(detailedAction string) {
 	var carg0 *C.GMenuItem // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -30576,7 +28865,6 @@ func (menuItem *MenuItemInstance) SetDetailedAction(detailedAction string) {
 // SetIcon wraps g_menu_item_set_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_item_set_icon.g_menu_item_set_icon.html
-//
 func (menuItem *MenuItemInstance) SetIcon(icon Icon) {
 	var carg0 *C.GMenuItem // in, none, converted
 	var carg1 *C.GIcon     // in, none, converted
@@ -30592,7 +28880,6 @@ func (menuItem *MenuItemInstance) SetIcon(icon Icon) {
 // SetLabel wraps g_menu_item_set_label
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_item_set_label.g_menu_item_set_label.html
-//
 func (menuItem *MenuItemInstance) SetLabel(label string) {
 	var carg0 *C.GMenuItem // in, none, converted
 	var carg1 *C.gchar     // in, none, string, nullable-string
@@ -30611,7 +28898,6 @@ func (menuItem *MenuItemInstance) SetLabel(label string) {
 // SetLink wraps g_menu_item_set_link
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_item_set_link.g_menu_item_set_link.html
-//
 func (menuItem *MenuItemInstance) SetLink(link string, model MenuModel) {
 	var carg0 *C.GMenuItem  // in, none, converted
 	var carg1 *C.gchar      // in, none, string
@@ -30633,7 +28919,6 @@ func (menuItem *MenuItemInstance) SetLink(link string, model MenuModel) {
 // SetSection wraps g_menu_item_set_section
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_item_set_section.g_menu_item_set_section.html
-//
 func (menuItem *MenuItemInstance) SetSection(section MenuModel) {
 	var carg0 *C.GMenuItem  // in, none, converted
 	var carg1 *C.GMenuModel // in, none, converted, nullable
@@ -30651,7 +28936,6 @@ func (menuItem *MenuItemInstance) SetSection(section MenuModel) {
 // SetSubmenu wraps g_menu_item_set_submenu
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_item_set_submenu.g_menu_item_set_submenu.html
-//
 func (menuItem *MenuItemInstance) SetSubmenu(submenu MenuModel) {
 	var carg0 *C.GMenuItem  // in, none, converted
 	var carg1 *C.GMenuModel // in, none, converted, nullable
@@ -30677,7 +28961,6 @@ var _ MenuLinkIter = (*MenuLinkIterInstance)(nil)
 // MenuLinkIter wraps GMenuLinkIter
 // 
 // see also https://docs.gtk.org/gio/class.MenuLinkIter.html
-//
 type MenuLinkIter interface {
 	gobject.Object
 	upcastToGMenuLinkIter() *MenuLinkIterInstance
@@ -30685,22 +28968,18 @@ type MenuLinkIter interface {
 	// GetName wraps g_menu_link_iter_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_link_iter_get_name.g_menu_link_iter_get_name.html
-	//
 	GetName() string
 	// GetNext wraps g_menu_link_iter_get_next
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_link_iter_get_next.g_menu_link_iter_get_next.html
-	//
 	GetNext() (string, MenuModel, bool)
 	// GetValue wraps g_menu_link_iter_get_value
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_link_iter_get_value.g_menu_link_iter_get_value.html
-	//
 	GetValue() MenuModel
 	// Next wraps g_menu_link_iter_next
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_link_iter_next.g_menu_link_iter_next.html
-	//
 	Next() bool
 
 	// chain up virtual methods:
@@ -30763,7 +29042,6 @@ func UnsafeMenuLinkIterToGlibFull(c MenuLinkIter) unsafe.Pointer {
 // GetName wraps g_menu_link_iter_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_link_iter_get_name.g_menu_link_iter_get_name.html
-//
 func (iter *MenuLinkIterInstance) GetName() string {
 	var carg0 *C.GMenuLinkIter // in, none, converted
 	var cret  *C.gchar         // return, none, string
@@ -30783,7 +29061,6 @@ func (iter *MenuLinkIterInstance) GetName() string {
 // GetNext wraps g_menu_link_iter_get_next
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_link_iter_get_next.g_menu_link_iter_get_next.html
-//
 func (iter *MenuLinkIterInstance) GetNext() (string, MenuModel, bool) {
 	var carg0 *C.GMenuLinkIter // in, none, converted
 	var carg1 *C.gchar         // out, none, string
@@ -30811,7 +29088,6 @@ func (iter *MenuLinkIterInstance) GetNext() (string, MenuModel, bool) {
 // GetValue wraps g_menu_link_iter_get_value
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_link_iter_get_value.g_menu_link_iter_get_value.html
-//
 func (iter *MenuLinkIterInstance) GetValue() MenuModel {
 	var carg0 *C.GMenuLinkIter // in, none, converted
 	var cret  *C.GMenuModel    // return, full, converted
@@ -30831,7 +29107,6 @@ func (iter *MenuLinkIterInstance) GetValue() MenuModel {
 // Next wraps g_menu_link_iter_next
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_link_iter_next.g_menu_link_iter_next.html
-//
 func (iter *MenuLinkIterInstance) Next() bool {
 	var carg0 *C.GMenuLinkIter // in, none, converted
 	var cret  C.gboolean       // return
@@ -30964,7 +29239,6 @@ var _ MenuModel = (*MenuModelInstance)(nil)
 // MenuModel wraps GMenuModel
 // 
 // see also https://docs.gtk.org/gio/class.MenuModel.html
-//
 type MenuModel interface {
 	gobject.Object
 	upcastToGMenuModel() *MenuModelInstance
@@ -30972,37 +29246,30 @@ type MenuModel interface {
 	// GetItemLink wraps g_menu_model_get_item_link
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_model_get_item_link.g_menu_model_get_item_link.html
-	//
 	GetItemLink(int32, string) MenuModel
 	// GetNItems wraps g_menu_model_get_n_items
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_model_get_n_items.g_menu_model_get_n_items.html
-	//
 	GetNItems() int32
 	// IsMutable wraps g_menu_model_is_mutable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_model_is_mutable.g_menu_model_is_mutable.html
-	//
 	IsMutable() bool
 	// ItemsChanged wraps g_menu_model_items_changed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_model_items_changed.g_menu_model_items_changed.html
-	//
 	ItemsChanged(int32, int32, int32)
 	// IterateItemAttributes wraps g_menu_model_iterate_item_attributes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_model_iterate_item_attributes.g_menu_model_iterate_item_attributes.html
-	//
 	IterateItemAttributes(int32) MenuAttributeIter
 	// IterateItemLinks wraps g_menu_model_iterate_item_links
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_model_iterate_item_links.g_menu_model_iterate_item_links.html
-	//
 	IterateItemLinks(int32) MenuLinkIter
 	// ConnectItemsChanged connects the provided callback to the "items-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.MenuModel.items-changed.html
-	//
 	ConnectItemsChanged(func(MenuModel, int32, int32, int32)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -31085,7 +29352,6 @@ func UnsafeMenuModelToGlibFull(c MenuModel) unsafe.Pointer {
 // GetItemLink wraps g_menu_model_get_item_link
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_model_get_item_link.g_menu_model_get_item_link.html
-//
 func (model *MenuModelInstance) GetItemLink(itemIndex int32, link string) MenuModel {
 	var carg0 *C.GMenuModel // in, none, converted
 	var carg1 C.gint        // in, none, casted
@@ -31114,7 +29380,6 @@ func (model *MenuModelInstance) GetItemLink(itemIndex int32, link string) MenuMo
 // GetNItems wraps g_menu_model_get_n_items
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_model_get_n_items.g_menu_model_get_n_items.html
-//
 func (model *MenuModelInstance) GetNItems() int32 {
 	var carg0 *C.GMenuModel // in, none, converted
 	var cret  C.gint        // return, none, casted
@@ -31134,7 +29399,6 @@ func (model *MenuModelInstance) GetNItems() int32 {
 // IsMutable wraps g_menu_model_is_mutable
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_model_is_mutable.g_menu_model_is_mutable.html
-//
 func (model *MenuModelInstance) IsMutable() bool {
 	var carg0 *C.GMenuModel // in, none, converted
 	var cret  C.gboolean    // return
@@ -31156,7 +29420,6 @@ func (model *MenuModelInstance) IsMutable() bool {
 // ItemsChanged wraps g_menu_model_items_changed
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_model_items_changed.g_menu_model_items_changed.html
-//
 func (model *MenuModelInstance) ItemsChanged(position int32, removed int32, added int32) {
 	var carg0 *C.GMenuModel // in, none, converted
 	var carg1 C.gint        // in, none, casted
@@ -31178,7 +29441,6 @@ func (model *MenuModelInstance) ItemsChanged(position int32, removed int32, adde
 // IterateItemAttributes wraps g_menu_model_iterate_item_attributes
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_model_iterate_item_attributes.g_menu_model_iterate_item_attributes.html
-//
 func (model *MenuModelInstance) IterateItemAttributes(itemIndex int32) MenuAttributeIter {
 	var carg0 *C.GMenuModel         // in, none, converted
 	var carg1 C.gint                // in, none, casted
@@ -31201,7 +29463,6 @@ func (model *MenuModelInstance) IterateItemAttributes(itemIndex int32) MenuAttri
 // IterateItemLinks wraps g_menu_model_iterate_item_links
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_model_iterate_item_links.g_menu_model_iterate_item_links.html
-//
 func (model *MenuModelInstance) IterateItemLinks(itemIndex int32) MenuLinkIter {
 	var carg0 *C.GMenuModel    // in, none, converted
 	var carg1 C.gint           // in, none, casted
@@ -31224,7 +29485,6 @@ func (model *MenuModelInstance) IterateItemLinks(itemIndex int32) MenuLinkIter {
 // ConnectItemsChanged connects the provided callback to the "items-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.MenuModel.items-changed.html
-//
 func (o *MenuModelInstance) ConnectItemsChanged(fn func(MenuModel, int32, int32, int32)) gobject.SignalHandle {
 	return o.Connect("items-changed", fn)
 }
@@ -31541,7 +29801,6 @@ var _ MountOperation = (*MountOperationInstance)(nil)
 // MountOperation wraps GMountOperation
 // 
 // see also https://docs.gtk.org/gio/class.MountOperation.html
-//
 type MountOperation interface {
 	gobject.Object
 	upcastToGMountOperation() *MountOperationInstance
@@ -31549,117 +29808,94 @@ type MountOperation interface {
 	// GetAnonymous wraps g_mount_operation_get_anonymous
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_anonymous.g_mount_operation_get_anonymous.html
-	//
 	GetAnonymous() bool
 	// GetChoice wraps g_mount_operation_get_choice
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_choice.g_mount_operation_get_choice.html
-	//
 	GetChoice() int32
 	// GetDomain wraps g_mount_operation_get_domain
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_domain.g_mount_operation_get_domain.html
-	//
 	GetDomain() string
 	// GetIsTcryptHiddenVolume wraps g_mount_operation_get_is_tcrypt_hidden_volume
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_is_tcrypt_hidden_volume.g_mount_operation_get_is_tcrypt_hidden_volume.html
-	//
 	GetIsTcryptHiddenVolume() bool
 	// GetIsTcryptSystemVolume wraps g_mount_operation_get_is_tcrypt_system_volume
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_is_tcrypt_system_volume.g_mount_operation_get_is_tcrypt_system_volume.html
-	//
 	GetIsTcryptSystemVolume() bool
 	// GetPassword wraps g_mount_operation_get_password
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_password.g_mount_operation_get_password.html
-	//
 	GetPassword() string
 	// GetPasswordSave wraps g_mount_operation_get_password_save
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_password_save.g_mount_operation_get_password_save.html
-	//
 	GetPasswordSave() PasswordSave
 	// GetPim wraps g_mount_operation_get_pim
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_pim.g_mount_operation_get_pim.html
-	//
 	GetPim() uint
 	// GetUsername wraps g_mount_operation_get_username
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_get_username.g_mount_operation_get_username.html
-	//
 	GetUsername() string
 	// Reply wraps g_mount_operation_reply
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_reply.g_mount_operation_reply.html
-	//
 	Reply(MountOperationResult)
 	// SetAnonymous wraps g_mount_operation_set_anonymous
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_anonymous.g_mount_operation_set_anonymous.html
-	//
 	SetAnonymous(bool)
 	// SetChoice wraps g_mount_operation_set_choice
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_choice.g_mount_operation_set_choice.html
-	//
 	SetChoice(int32)
 	// SetDomain wraps g_mount_operation_set_domain
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_domain.g_mount_operation_set_domain.html
-	//
 	SetDomain(string)
 	// SetIsTcryptHiddenVolume wraps g_mount_operation_set_is_tcrypt_hidden_volume
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_is_tcrypt_hidden_volume.g_mount_operation_set_is_tcrypt_hidden_volume.html
-	//
 	SetIsTcryptHiddenVolume(bool)
 	// SetIsTcryptSystemVolume wraps g_mount_operation_set_is_tcrypt_system_volume
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_is_tcrypt_system_volume.g_mount_operation_set_is_tcrypt_system_volume.html
-	//
 	SetIsTcryptSystemVolume(bool)
 	// SetPassword wraps g_mount_operation_set_password
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_password.g_mount_operation_set_password.html
-	//
 	SetPassword(string)
 	// SetPasswordSave wraps g_mount_operation_set_password_save
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_password_save.g_mount_operation_set_password_save.html
-	//
 	SetPasswordSave(PasswordSave)
 	// SetPim wraps g_mount_operation_set_pim
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_pim.g_mount_operation_set_pim.html
-	//
 	SetPim(uint)
 	// SetUsername wraps g_mount_operation_set_username
 	// 
 	// see also https://docs.gtk.org/gio/method.g_mount_operation_set_username.g_mount_operation_set_username.html
-	//
 	SetUsername(string)
 	// ConnectAborted connects the provided callback to the "aborted" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.MountOperation.aborted.html
-	//
 	ConnectAborted(func(MountOperation)) gobject.SignalHandle
 	// ConnectAskPassword connects the provided callback to the "ask-password" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.MountOperation.ask-password.html
-	//
 	ConnectAskPassword(func(MountOperation, string, string, string, AskPasswordFlags)) gobject.SignalHandle
 	// ConnectReply connects the provided callback to the "reply" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.MountOperation.reply.html
-	//
 	ConnectReply(func(MountOperation, MountOperationResult)) gobject.SignalHandle
 	// ConnectShowUnmountProgress connects the provided callback to the "show-unmount-progress" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.MountOperation.show-unmount-progress.html
-	//
 	ConnectShowUnmountProgress(func(MountOperation, string, int64, int64)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -31742,7 +29978,6 @@ func UnsafeMountOperationToGlibFull(c MountOperation) unsafe.Pointer {
 // NewMountOperation wraps g_mount_operation_new
 // 
 // see also https://docs.gtk.org/gio/func.g_mount_operation_new.html
-//
 func NewMountOperation() MountOperation {
 	var cret *C.GMountOperation // return, full, converted
 
@@ -31758,7 +29993,6 @@ func NewMountOperation() MountOperation {
 // GetAnonymous wraps g_mount_operation_get_anonymous
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_anonymous.g_mount_operation_get_anonymous.html
-//
 func (op *MountOperationInstance) GetAnonymous() bool {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  C.gboolean         // return
@@ -31780,7 +30014,6 @@ func (op *MountOperationInstance) GetAnonymous() bool {
 // GetChoice wraps g_mount_operation_get_choice
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_choice.g_mount_operation_get_choice.html
-//
 func (op *MountOperationInstance) GetChoice() int32 {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  C.int              // return, none, casted
@@ -31800,7 +30033,6 @@ func (op *MountOperationInstance) GetChoice() int32 {
 // GetDomain wraps g_mount_operation_get_domain
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_domain.g_mount_operation_get_domain.html
-//
 func (op *MountOperationInstance) GetDomain() string {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  *C.char            // return, none, string, nullable-string
@@ -31822,7 +30054,6 @@ func (op *MountOperationInstance) GetDomain() string {
 // GetIsTcryptHiddenVolume wraps g_mount_operation_get_is_tcrypt_hidden_volume
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_is_tcrypt_hidden_volume.g_mount_operation_get_is_tcrypt_hidden_volume.html
-//
 func (op *MountOperationInstance) GetIsTcryptHiddenVolume() bool {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  C.gboolean         // return
@@ -31844,7 +30075,6 @@ func (op *MountOperationInstance) GetIsTcryptHiddenVolume() bool {
 // GetIsTcryptSystemVolume wraps g_mount_operation_get_is_tcrypt_system_volume
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_is_tcrypt_system_volume.g_mount_operation_get_is_tcrypt_system_volume.html
-//
 func (op *MountOperationInstance) GetIsTcryptSystemVolume() bool {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  C.gboolean         // return
@@ -31866,7 +30096,6 @@ func (op *MountOperationInstance) GetIsTcryptSystemVolume() bool {
 // GetPassword wraps g_mount_operation_get_password
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_password.g_mount_operation_get_password.html
-//
 func (op *MountOperationInstance) GetPassword() string {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  *C.char            // return, none, string, nullable-string
@@ -31888,7 +30117,6 @@ func (op *MountOperationInstance) GetPassword() string {
 // GetPasswordSave wraps g_mount_operation_get_password_save
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_password_save.g_mount_operation_get_password_save.html
-//
 func (op *MountOperationInstance) GetPasswordSave() PasswordSave {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  C.GPasswordSave    // return, none, casted
@@ -31908,7 +30136,6 @@ func (op *MountOperationInstance) GetPasswordSave() PasswordSave {
 // GetPim wraps g_mount_operation_get_pim
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_pim.g_mount_operation_get_pim.html
-//
 func (op *MountOperationInstance) GetPim() uint {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  C.guint            // return, none, casted
@@ -31928,7 +30155,6 @@ func (op *MountOperationInstance) GetPim() uint {
 // GetUsername wraps g_mount_operation_get_username
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_get_username.g_mount_operation_get_username.html
-//
 func (op *MountOperationInstance) GetUsername() string {
 	var carg0 *C.GMountOperation // in, none, converted
 	var cret  *C.char            // return, none, string, nullable-string
@@ -31950,7 +30176,6 @@ func (op *MountOperationInstance) GetUsername() string {
 // Reply wraps g_mount_operation_reply
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_reply.g_mount_operation_reply.html
-//
 func (op *MountOperationInstance) Reply(result MountOperationResult) {
 	var carg0 *C.GMountOperation      // in, none, converted
 	var carg1 C.GMountOperationResult // in, none, casted
@@ -31966,7 +30191,6 @@ func (op *MountOperationInstance) Reply(result MountOperationResult) {
 // SetAnonymous wraps g_mount_operation_set_anonymous
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_anonymous.g_mount_operation_set_anonymous.html
-//
 func (op *MountOperationInstance) SetAnonymous(anonymous bool) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 C.gboolean         // in
@@ -31984,7 +30208,6 @@ func (op *MountOperationInstance) SetAnonymous(anonymous bool) {
 // SetChoice wraps g_mount_operation_set_choice
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_choice.g_mount_operation_set_choice.html
-//
 func (op *MountOperationInstance) SetChoice(choice int32) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 C.int              // in, none, casted
@@ -32000,7 +30223,6 @@ func (op *MountOperationInstance) SetChoice(choice int32) {
 // SetDomain wraps g_mount_operation_set_domain
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_domain.g_mount_operation_set_domain.html
-//
 func (op *MountOperationInstance) SetDomain(domain string) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 *C.char            // in, none, string, nullable-string
@@ -32019,7 +30241,6 @@ func (op *MountOperationInstance) SetDomain(domain string) {
 // SetIsTcryptHiddenVolume wraps g_mount_operation_set_is_tcrypt_hidden_volume
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_is_tcrypt_hidden_volume.g_mount_operation_set_is_tcrypt_hidden_volume.html
-//
 func (op *MountOperationInstance) SetIsTcryptHiddenVolume(hiddenVolume bool) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 C.gboolean         // in
@@ -32037,7 +30258,6 @@ func (op *MountOperationInstance) SetIsTcryptHiddenVolume(hiddenVolume bool) {
 // SetIsTcryptSystemVolume wraps g_mount_operation_set_is_tcrypt_system_volume
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_is_tcrypt_system_volume.g_mount_operation_set_is_tcrypt_system_volume.html
-//
 func (op *MountOperationInstance) SetIsTcryptSystemVolume(systemVolume bool) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 C.gboolean         // in
@@ -32055,7 +30275,6 @@ func (op *MountOperationInstance) SetIsTcryptSystemVolume(systemVolume bool) {
 // SetPassword wraps g_mount_operation_set_password
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_password.g_mount_operation_set_password.html
-//
 func (op *MountOperationInstance) SetPassword(password string) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 *C.char            // in, none, string, nullable-string
@@ -32074,7 +30293,6 @@ func (op *MountOperationInstance) SetPassword(password string) {
 // SetPasswordSave wraps g_mount_operation_set_password_save
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_password_save.g_mount_operation_set_password_save.html
-//
 func (op *MountOperationInstance) SetPasswordSave(save PasswordSave) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 C.GPasswordSave    // in, none, casted
@@ -32090,7 +30308,6 @@ func (op *MountOperationInstance) SetPasswordSave(save PasswordSave) {
 // SetPim wraps g_mount_operation_set_pim
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_pim.g_mount_operation_set_pim.html
-//
 func (op *MountOperationInstance) SetPim(pim uint) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 C.guint            // in, none, casted
@@ -32106,7 +30323,6 @@ func (op *MountOperationInstance) SetPim(pim uint) {
 // SetUsername wraps g_mount_operation_set_username
 // 
 // see also https://docs.gtk.org/gio/method.g_mount_operation_set_username.g_mount_operation_set_username.html
-//
 func (op *MountOperationInstance) SetUsername(username string) {
 	var carg0 *C.GMountOperation // in, none, converted
 	var carg1 *C.char            // in, none, string, nullable-string
@@ -32125,7 +30341,6 @@ func (op *MountOperationInstance) SetUsername(username string) {
 // ConnectAborted connects the provided callback to the "aborted" signal
 // 
 // see also https://docs.gtk.org/gio/signal.MountOperation.aborted.html
-//
 func (o *MountOperationInstance) ConnectAborted(fn func(MountOperation)) gobject.SignalHandle {
 	return o.Connect("aborted", fn)
 }
@@ -32133,7 +30348,6 @@ func (o *MountOperationInstance) ConnectAborted(fn func(MountOperation)) gobject
 // ConnectAskPassword connects the provided callback to the "ask-password" signal
 // 
 // see also https://docs.gtk.org/gio/signal.MountOperation.ask-password.html
-//
 func (o *MountOperationInstance) ConnectAskPassword(fn func(MountOperation, string, string, string, AskPasswordFlags)) gobject.SignalHandle {
 	return o.Connect("ask-password", fn)
 }
@@ -32141,7 +30355,6 @@ func (o *MountOperationInstance) ConnectAskPassword(fn func(MountOperation, stri
 // ConnectReply connects the provided callback to the "reply" signal
 // 
 // see also https://docs.gtk.org/gio/signal.MountOperation.reply.html
-//
 func (o *MountOperationInstance) ConnectReply(fn func(MountOperation, MountOperationResult)) gobject.SignalHandle {
 	return o.Connect("reply", fn)
 }
@@ -32149,7 +30362,6 @@ func (o *MountOperationInstance) ConnectReply(fn func(MountOperation, MountOpera
 // ConnectShowUnmountProgress connects the provided callback to the "show-unmount-progress" signal
 // 
 // see also https://docs.gtk.org/gio/signal.MountOperation.show-unmount-progress.html
-//
 func (o *MountOperationInstance) ConnectShowUnmountProgress(fn func(MountOperation, string, int64, int64)) gobject.SignalHandle {
 	return o.Connect("show-unmount-progress", fn)
 }
@@ -32436,7 +30648,6 @@ var _ NetworkAddress = (*NetworkAddressInstance)(nil)
 // NetworkAddress wraps GNetworkAddress
 // 
 // see also https://docs.gtk.org/gio/class.NetworkAddress.html
-//
 type NetworkAddress interface {
 	gobject.Object
 	upcastToGNetworkAddress() *NetworkAddressInstance
@@ -32444,17 +30655,14 @@ type NetworkAddress interface {
 	// GetHostname wraps g_network_address_get_hostname
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_address_get_hostname.g_network_address_get_hostname.html
-	//
 	GetHostname() string
 	// GetPort wraps g_network_address_get_port
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_address_get_port.g_network_address_get_port.html
-	//
 	GetPort() uint16
 	// GetScheme wraps g_network_address_get_scheme
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_address_get_scheme.g_network_address_get_scheme.html
-	//
 	GetScheme() string
 
 	// chain up virtual methods:
@@ -32511,7 +30719,6 @@ func UnsafeNetworkAddressToGlibFull(c NetworkAddress) unsafe.Pointer {
 // NewNetworkAddress wraps g_network_address_new
 // 
 // see also https://docs.gtk.org/gio/func.g_network_address_new.html
-//
 func NewNetworkAddress(hostname string, port uint16) NetworkAddress {
 	var carg1 *C.gchar              // in, none, string
 	var carg2 C.guint16             // in, none, casted
@@ -32535,7 +30742,6 @@ func NewNetworkAddress(hostname string, port uint16) NetworkAddress {
 // NewNetworkAddressLoopback wraps g_network_address_new_loopback
 // 
 // see also https://docs.gtk.org/gio/func.g_network_address_new_loopback.html
-//
 func NewNetworkAddressLoopback(port uint16) NetworkAddress {
 	var carg1 C.guint16             // in, none, casted
 	var cret  *C.GSocketConnectable // return, full, converted
@@ -32555,7 +30761,6 @@ func NewNetworkAddressLoopback(port uint16) NetworkAddress {
 // NetworkAddressParse wraps g_network_address_parse
 // 
 // see also https://docs.gtk.org/gio/func.g_network_address_parse.html
-//
 func NetworkAddressParse(hostAndPort string, defaultPort uint16) (NetworkAddress, error) {
 	var carg1 *C.gchar              // in, none, string
 	var carg2 C.guint16             // in, none, casted
@@ -32584,7 +30789,6 @@ func NetworkAddressParse(hostAndPort string, defaultPort uint16) (NetworkAddress
 // NetworkAddressParseURI wraps g_network_address_parse_uri
 // 
 // see also https://docs.gtk.org/gio/func.g_network_address_parse_uri.html
-//
 func NetworkAddressParseURI(uri string, defaultPort uint16) (NetworkAddress, error) {
 	var carg1 *C.gchar              // in, none, string
 	var carg2 C.guint16             // in, none, casted
@@ -32613,7 +30817,6 @@ func NetworkAddressParseURI(uri string, defaultPort uint16) (NetworkAddress, err
 // GetHostname wraps g_network_address_get_hostname
 // 
 // see also https://docs.gtk.org/gio/method.g_network_address_get_hostname.g_network_address_get_hostname.html
-//
 func (addr *NetworkAddressInstance) GetHostname() string {
 	var carg0 *C.GNetworkAddress // in, none, converted
 	var cret  *C.gchar           // return, none, string
@@ -32633,7 +30836,6 @@ func (addr *NetworkAddressInstance) GetHostname() string {
 // GetPort wraps g_network_address_get_port
 // 
 // see also https://docs.gtk.org/gio/method.g_network_address_get_port.g_network_address_get_port.html
-//
 func (addr *NetworkAddressInstance) GetPort() uint16 {
 	var carg0 *C.GNetworkAddress // in, none, converted
 	var cret  C.guint16          // return, none, casted
@@ -32653,7 +30855,6 @@ func (addr *NetworkAddressInstance) GetPort() uint16 {
 // GetScheme wraps g_network_address_get_scheme
 // 
 // see also https://docs.gtk.org/gio/method.g_network_address_get_scheme.g_network_address_get_scheme.html
-//
 func (addr *NetworkAddressInstance) GetScheme() string {
 	var carg0 *C.GNetworkAddress // in, none, converted
 	var cret  *C.gchar           // return, none, string, nullable-string
@@ -32723,7 +30924,6 @@ var _ NetworkService = (*NetworkServiceInstance)(nil)
 // NetworkService wraps GNetworkService
 // 
 // see also https://docs.gtk.org/gio/class.NetworkService.html
-//
 type NetworkService interface {
 	gobject.Object
 	upcastToGNetworkService() *NetworkServiceInstance
@@ -32731,27 +30931,22 @@ type NetworkService interface {
 	// GetDomain wraps g_network_service_get_domain
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_service_get_domain.g_network_service_get_domain.html
-	//
 	GetDomain() string
 	// GetProtocol wraps g_network_service_get_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_service_get_protocol.g_network_service_get_protocol.html
-	//
 	GetProtocol() string
 	// GetScheme wraps g_network_service_get_scheme
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_service_get_scheme.g_network_service_get_scheme.html
-	//
 	GetScheme() string
 	// GetService wraps g_network_service_get_service
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_service_get_service.g_network_service_get_service.html
-	//
 	GetService() string
 	// SetScheme wraps g_network_service_set_scheme
 	// 
 	// see also https://docs.gtk.org/gio/method.g_network_service_set_scheme.g_network_service_set_scheme.html
-	//
 	SetScheme(string)
 
 	// chain up virtual methods:
@@ -32808,7 +31003,6 @@ func UnsafeNetworkServiceToGlibFull(c NetworkService) unsafe.Pointer {
 // NewNetworkService wraps g_network_service_new
 // 
 // see also https://docs.gtk.org/gio/func.g_network_service_new.html
-//
 func NewNetworkService(service string, protocol string, domain string) NetworkService {
 	var carg1 *C.gchar              // in, none, string
 	var carg2 *C.gchar              // in, none, string
@@ -32837,7 +31031,6 @@ func NewNetworkService(service string, protocol string, domain string) NetworkSe
 // GetDomain wraps g_network_service_get_domain
 // 
 // see also https://docs.gtk.org/gio/method.g_network_service_get_domain.g_network_service_get_domain.html
-//
 func (srv *NetworkServiceInstance) GetDomain() string {
 	var carg0 *C.GNetworkService // in, none, converted
 	var cret  *C.gchar           // return, none, string
@@ -32857,7 +31050,6 @@ func (srv *NetworkServiceInstance) GetDomain() string {
 // GetProtocol wraps g_network_service_get_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_network_service_get_protocol.g_network_service_get_protocol.html
-//
 func (srv *NetworkServiceInstance) GetProtocol() string {
 	var carg0 *C.GNetworkService // in, none, converted
 	var cret  *C.gchar           // return, none, string
@@ -32877,7 +31069,6 @@ func (srv *NetworkServiceInstance) GetProtocol() string {
 // GetScheme wraps g_network_service_get_scheme
 // 
 // see also https://docs.gtk.org/gio/method.g_network_service_get_scheme.g_network_service_get_scheme.html
-//
 func (srv *NetworkServiceInstance) GetScheme() string {
 	var carg0 *C.GNetworkService // in, none, converted
 	var cret  *C.gchar           // return, none, string
@@ -32897,7 +31088,6 @@ func (srv *NetworkServiceInstance) GetScheme() string {
 // GetService wraps g_network_service_get_service
 // 
 // see also https://docs.gtk.org/gio/method.g_network_service_get_service.g_network_service_get_service.html
-//
 func (srv *NetworkServiceInstance) GetService() string {
 	var carg0 *C.GNetworkService // in, none, converted
 	var cret  *C.gchar           // return, none, string
@@ -32917,7 +31107,6 @@ func (srv *NetworkServiceInstance) GetService() string {
 // SetScheme wraps g_network_service_set_scheme
 // 
 // see also https://docs.gtk.org/gio/method.g_network_service_set_scheme.g_network_service_set_scheme.html
-//
 func (srv *NetworkServiceInstance) SetScheme(scheme string) {
 	var carg0 *C.GNetworkService // in, none, converted
 	var carg1 *C.gchar           // in, none, string
@@ -32982,7 +31171,6 @@ var _ Notification = (*NotificationInstance)(nil)
 // Notification wraps GNotification
 // 
 // see also https://docs.gtk.org/gio/class.Notification.html
-//
 type Notification interface {
 	gobject.Object
 	upcastToGNotification() *NotificationInstance
@@ -32990,45 +31178,36 @@ type Notification interface {
 	// AddButton wraps g_notification_add_button
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_add_button.g_notification_add_button.html
-	//
 	AddButton(string, string)
 	// SetBody wraps g_notification_set_body
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_set_body.g_notification_set_body.html
-	//
 	SetBody(string)
 	// SetCategory wraps g_notification_set_category
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_set_category.g_notification_set_category.html
-	//
 	SetCategory(string)
 	// SetDefaultAction wraps g_notification_set_default_action
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_set_default_action.g_notification_set_default_action.html
-	//
 	SetDefaultAction(string)
 	// SetIcon wraps g_notification_set_icon
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_set_icon.g_notification_set_icon.html
-	//
 	SetIcon(Icon)
 	// SetPriority wraps g_notification_set_priority
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_set_priority.g_notification_set_priority.html
-	//
 	SetPriority(NotificationPriority)
 	// SetTitle wraps g_notification_set_title
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_set_title.g_notification_set_title.html
-	//
 	SetTitle(string)
 	// SetUrgent wraps g_notification_set_urgent
 	// 
 	// see also https://docs.gtk.org/gio/method.g_notification_set_urgent.g_notification_set_urgent.html
 	//
-	//
-	// Deprecated: (since 2.42.0) Since 2.42, this has been deprecated in favour of
-	//    g_notification_set_priority().
+	// Deprecated: (since 2.42.0) see the provided link for the reason
 	SetUrgent(bool)
 }
 
@@ -33083,7 +31262,6 @@ func UnsafeNotificationToGlibFull(c Notification) unsafe.Pointer {
 // NewNotification wraps g_notification_new
 // 
 // see also https://docs.gtk.org/gio/func.g_notification_new.html
-//
 func NewNotification(title string) Notification {
 	var carg1 *C.gchar         // in, none, string
 	var cret  *C.GNotification // return, full, converted
@@ -33104,7 +31282,6 @@ func NewNotification(title string) Notification {
 // AddButton wraps g_notification_add_button
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_add_button.g_notification_add_button.html
-//
 func (notification *NotificationInstance) AddButton(label string, detailedAction string) {
 	var carg0 *C.GNotification // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -33125,7 +31302,6 @@ func (notification *NotificationInstance) AddButton(label string, detailedAction
 // SetBody wraps g_notification_set_body
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_set_body.g_notification_set_body.html
-//
 func (notification *NotificationInstance) SetBody(body string) {
 	var carg0 *C.GNotification // in, none, converted
 	var carg1 *C.gchar         // in, none, string, nullable-string
@@ -33144,7 +31320,6 @@ func (notification *NotificationInstance) SetBody(body string) {
 // SetCategory wraps g_notification_set_category
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_set_category.g_notification_set_category.html
-//
 func (notification *NotificationInstance) SetCategory(category string) {
 	var carg0 *C.GNotification // in, none, converted
 	var carg1 *C.gchar         // in, none, string, nullable-string
@@ -33163,7 +31338,6 @@ func (notification *NotificationInstance) SetCategory(category string) {
 // SetDefaultAction wraps g_notification_set_default_action
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_set_default_action.g_notification_set_default_action.html
-//
 func (notification *NotificationInstance) SetDefaultAction(detailedAction string) {
 	var carg0 *C.GNotification // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -33180,7 +31354,6 @@ func (notification *NotificationInstance) SetDefaultAction(detailedAction string
 // SetIcon wraps g_notification_set_icon
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_set_icon.g_notification_set_icon.html
-//
 func (notification *NotificationInstance) SetIcon(icon Icon) {
 	var carg0 *C.GNotification // in, none, converted
 	var carg1 *C.GIcon         // in, none, converted
@@ -33196,7 +31369,6 @@ func (notification *NotificationInstance) SetIcon(icon Icon) {
 // SetPriority wraps g_notification_set_priority
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_set_priority.g_notification_set_priority.html
-//
 func (notification *NotificationInstance) SetPriority(priority NotificationPriority) {
 	var carg0 *C.GNotification        // in, none, converted
 	var carg1 C.GNotificationPriority // in, none, casted
@@ -33212,7 +31384,6 @@ func (notification *NotificationInstance) SetPriority(priority NotificationPrior
 // SetTitle wraps g_notification_set_title
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_set_title.g_notification_set_title.html
-//
 func (notification *NotificationInstance) SetTitle(title string) {
 	var carg0 *C.GNotification // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -33230,9 +31401,7 @@ func (notification *NotificationInstance) SetTitle(title string) {
 // 
 // see also https://docs.gtk.org/gio/method.g_notification_set_urgent.g_notification_set_urgent.html
 //
-//
-// Deprecated: (since 2.42.0) Since 2.42, this has been deprecated in favour of
-//    g_notification_set_priority().
+// Deprecated: (since 2.42.0) see the provided link for the reason
 func (notification *NotificationInstance) SetUrgent(urgent bool) {
 	var carg0 *C.GNotification // in, none, converted
 	var carg1 C.gboolean       // in
@@ -33258,7 +31427,6 @@ var _ OutputStream = (*OutputStreamInstance)(nil)
 // OutputStream wraps GOutputStream
 // 
 // see also https://docs.gtk.org/gio/class.OutputStream.html
-//
 type OutputStream interface {
 	gobject.Object
 	upcastToGOutputStream() *OutputStreamInstance
@@ -33266,147 +31434,118 @@ type OutputStream interface {
 	// ClearPending wraps g_output_stream_clear_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_clear_pending.g_output_stream_clear_pending.html
-	//
 	ClearPending()
 	// Close wraps g_output_stream_close
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_close.g_output_stream_close.html
-	//
 	Close(Cancellable) (bool, error)
 	// CloseAsync wraps g_output_stream_close_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_close_async.g_output_stream_close_async.html
-	//
 	CloseAsync(int32, Cancellable, AsyncReadyCallback)
 	// CloseFinish wraps g_output_stream_close_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_close_finish.g_output_stream_close_finish.html
-	//
 	CloseFinish(AsyncResult) (bool, error)
 	// Flush wraps g_output_stream_flush
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_flush.g_output_stream_flush.html
-	//
 	Flush(Cancellable) (bool, error)
 	// FlushAsync wraps g_output_stream_flush_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_flush_async.g_output_stream_flush_async.html
-	//
 	FlushAsync(int32, Cancellable, AsyncReadyCallback)
 	// FlushFinish wraps g_output_stream_flush_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_flush_finish.g_output_stream_flush_finish.html
-	//
 	FlushFinish(AsyncResult) (bool, error)
 	// HasPending wraps g_output_stream_has_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_has_pending.g_output_stream_has_pending.html
-	//
 	HasPending() bool
 	// IsClosed wraps g_output_stream_is_closed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_is_closed.g_output_stream_is_closed.html
-	//
 	IsClosed() bool
 	// IsClosing wraps g_output_stream_is_closing
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_is_closing.g_output_stream_is_closing.html
-	//
 	IsClosing() bool
 	// SetPending wraps g_output_stream_set_pending
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_set_pending.g_output_stream_set_pending.html
-	//
 	SetPending() (bool, error)
 	// Splice wraps g_output_stream_splice
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_splice.g_output_stream_splice.html
-	//
 	Splice(InputStream, OutputStreamSpliceFlags, Cancellable) (int, error)
 	// SpliceAsync wraps g_output_stream_splice_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_splice_async.g_output_stream_splice_async.html
-	//
 	SpliceAsync(InputStream, OutputStreamSpliceFlags, int32, Cancellable, AsyncReadyCallback)
 	// SpliceFinish wraps g_output_stream_splice_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_splice_finish.g_output_stream_splice_finish.html
-	//
 	SpliceFinish(AsyncResult) (int, error)
 	// Write wraps g_output_stream_write
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write.g_output_stream_write.html
-	//
 	Write([]byte, Cancellable) (int, error)
 	// WriteAll wraps g_output_stream_write_all
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_all.g_output_stream_write_all.html
-	//
 	WriteAll([]byte, Cancellable) (uint, bool, error)
 	// WriteAllAsync wraps g_output_stream_write_all_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_all_async.g_output_stream_write_all_async.html
-	//
 	WriteAllAsync([]byte, int32, Cancellable, AsyncReadyCallback)
 	// WriteAllFinish wraps g_output_stream_write_all_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_all_finish.g_output_stream_write_all_finish.html
-	//
 	WriteAllFinish(AsyncResult) (uint, bool, error)
 	// WriteAsync wraps g_output_stream_write_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_async.g_output_stream_write_async.html
-	//
 	WriteAsync([]byte, int32, Cancellable, AsyncReadyCallback)
 	// WriteBytes wraps g_output_stream_write_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_bytes.g_output_stream_write_bytes.html
-	//
 	WriteBytes(*glib.Bytes, Cancellable) (int, error)
 	// WriteBytesAsync wraps g_output_stream_write_bytes_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_bytes_async.g_output_stream_write_bytes_async.html
-	//
 	WriteBytesAsync(*glib.Bytes, int32, Cancellable, AsyncReadyCallback)
 	// WriteBytesFinish wraps g_output_stream_write_bytes_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_bytes_finish.g_output_stream_write_bytes_finish.html
-	//
 	WriteBytesFinish(AsyncResult) (int, error)
 	// WriteFinish wraps g_output_stream_write_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_write_finish.g_output_stream_write_finish.html
-	//
 	WriteFinish(AsyncResult) (int, error)
 	// Writev wraps g_output_stream_writev
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_writev.g_output_stream_writev.html
-	//
 	Writev([]OutputVector, Cancellable) (uint, bool, error)
 	// WritevAll wraps g_output_stream_writev_all
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_writev_all.g_output_stream_writev_all.html
-	//
 	WritevAll([]OutputVector, Cancellable) (uint, bool, error)
 	// WritevAllAsync wraps g_output_stream_writev_all_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_writev_all_async.g_output_stream_writev_all_async.html
-	//
 	WritevAllAsync([]OutputVector, int32, Cancellable, AsyncReadyCallback)
 	// WritevAllFinish wraps g_output_stream_writev_all_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_writev_all_finish.g_output_stream_writev_all_finish.html
-	//
 	WritevAllFinish(AsyncResult) (uint, bool, error)
 	// WritevAsync wraps g_output_stream_writev_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_writev_async.g_output_stream_writev_async.html
-	//
 	WritevAsync([]OutputVector, int32, Cancellable, AsyncReadyCallback)
 	// WritevFinish wraps g_output_stream_writev_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_output_stream_writev_finish.g_output_stream_writev_finish.html
-	//
 	WritevFinish(AsyncResult) (uint, bool, error)
 
 	// chain up virtual methods:
@@ -33514,7 +31653,6 @@ func UnsafeOutputStreamToGlibFull(c OutputStream) unsafe.Pointer {
 // ClearPending wraps g_output_stream_clear_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_clear_pending.g_output_stream_clear_pending.html
-//
 func (stream *OutputStreamInstance) ClearPending() {
 	var carg0 *C.GOutputStream // in, none, converted
 
@@ -33527,7 +31665,6 @@ func (stream *OutputStreamInstance) ClearPending() {
 // Close wraps g_output_stream_close
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_close.g_output_stream_close.html
-//
 func (stream *OutputStreamInstance) Close(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GCancellable  // in, none, converted, nullable
@@ -33559,7 +31696,6 @@ func (stream *OutputStreamInstance) Close(cancellable Cancellable) (bool, error)
 // CloseAsync wraps g_output_stream_close_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_close_async.g_output_stream_close_async.html
-//
 func (stream *OutputStreamInstance) CloseAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream      // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -33587,7 +31723,6 @@ func (stream *OutputStreamInstance) CloseAsync(ioPriority int32, cancellable Can
 // CloseFinish wraps g_output_stream_close_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_close_finish.g_output_stream_close_finish.html
-//
 func (stream *OutputStreamInstance) CloseFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -33617,7 +31752,6 @@ func (stream *OutputStreamInstance) CloseFinish(result AsyncResult) (bool, error
 // Flush wraps g_output_stream_flush
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_flush.g_output_stream_flush.html
-//
 func (stream *OutputStreamInstance) Flush(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GCancellable  // in, none, converted, nullable
@@ -33649,7 +31783,6 @@ func (stream *OutputStreamInstance) Flush(cancellable Cancellable) (bool, error)
 // FlushAsync wraps g_output_stream_flush_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_flush_async.g_output_stream_flush_async.html
-//
 func (stream *OutputStreamInstance) FlushAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream      // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -33677,7 +31810,6 @@ func (stream *OutputStreamInstance) FlushAsync(ioPriority int32, cancellable Can
 // FlushFinish wraps g_output_stream_flush_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_flush_finish.g_output_stream_flush_finish.html
-//
 func (stream *OutputStreamInstance) FlushFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -33707,7 +31839,6 @@ func (stream *OutputStreamInstance) FlushFinish(result AsyncResult) (bool, error
 // HasPending wraps g_output_stream_has_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_has_pending.g_output_stream_has_pending.html
-//
 func (stream *OutputStreamInstance) HasPending() bool {
 	var carg0 *C.GOutputStream // in, none, converted
 	var cret  C.gboolean       // return
@@ -33729,7 +31860,6 @@ func (stream *OutputStreamInstance) HasPending() bool {
 // IsClosed wraps g_output_stream_is_closed
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_is_closed.g_output_stream_is_closed.html
-//
 func (stream *OutputStreamInstance) IsClosed() bool {
 	var carg0 *C.GOutputStream // in, none, converted
 	var cret  C.gboolean       // return
@@ -33751,7 +31881,6 @@ func (stream *OutputStreamInstance) IsClosed() bool {
 // IsClosing wraps g_output_stream_is_closing
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_is_closing.g_output_stream_is_closing.html
-//
 func (stream *OutputStreamInstance) IsClosing() bool {
 	var carg0 *C.GOutputStream // in, none, converted
 	var cret  C.gboolean       // return
@@ -33773,7 +31902,6 @@ func (stream *OutputStreamInstance) IsClosing() bool {
 // SetPending wraps g_output_stream_set_pending
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_set_pending.g_output_stream_set_pending.html
-//
 func (stream *OutputStreamInstance) SetPending() (bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var cret  C.gboolean       // return
@@ -33800,7 +31928,6 @@ func (stream *OutputStreamInstance) SetPending() (bool, error) {
 // Splice wraps g_output_stream_splice
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_splice.g_output_stream_splice.html
-//
 func (stream *OutputStreamInstance) Splice(source InputStream, flags OutputStreamSpliceFlags, cancellable Cancellable) (int, error) {
 	var carg0 *C.GOutputStream           // in, none, converted
 	var carg1 *C.GInputStream            // in, none, converted
@@ -33836,7 +31963,6 @@ func (stream *OutputStreamInstance) Splice(source InputStream, flags OutputStrea
 // SpliceAsync wraps g_output_stream_splice_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_splice_async.g_output_stream_splice_async.html
-//
 func (stream *OutputStreamInstance) SpliceAsync(source InputStream, flags OutputStreamSpliceFlags, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream           // in, none, converted
 	var carg1 *C.GInputStream            // in, none, converted
@@ -33870,7 +31996,6 @@ func (stream *OutputStreamInstance) SpliceAsync(source InputStream, flags Output
 // SpliceFinish wraps g_output_stream_splice_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_splice_finish.g_output_stream_splice_finish.html
-//
 func (stream *OutputStreamInstance) SpliceFinish(result AsyncResult) (int, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -33898,7 +32023,6 @@ func (stream *OutputStreamInstance) SpliceFinish(result AsyncResult) (int, error
 // Write wraps g_output_stream_write
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write.g_output_stream_write.html
-//
 func (stream *OutputStreamInstance) Write(buffer []byte, cancellable Cancellable) (int, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 unsafe.Pointer   // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -33935,7 +32059,6 @@ func (stream *OutputStreamInstance) Write(buffer []byte, cancellable Cancellable
 // WriteAll wraps g_output_stream_write_all
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_all.g_output_stream_write_all.html
-//
 func (stream *OutputStreamInstance) WriteAll(buffer []byte, cancellable Cancellable) (uint, bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 unsafe.Pointer   // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -33977,7 +32100,6 @@ func (stream *OutputStreamInstance) WriteAll(buffer []byte, cancellable Cancella
 // WriteAllAsync wraps g_output_stream_write_all_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_all_async.g_output_stream_write_all_async.html
-//
 func (stream *OutputStreamInstance) WriteAllAsync(buffer []byte, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream      // in, none, converted
 	var carg1 unsafe.Pointer        // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -34012,7 +32134,6 @@ func (stream *OutputStreamInstance) WriteAllAsync(buffer []byte, ioPriority int3
 // WriteAllFinish wraps g_output_stream_write_all_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_all_finish.g_output_stream_write_all_finish.html
-//
 func (stream *OutputStreamInstance) WriteAllFinish(result AsyncResult) (uint, bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -34045,7 +32166,6 @@ func (stream *OutputStreamInstance) WriteAllFinish(result AsyncResult) (uint, bo
 // WriteAsync wraps g_output_stream_write_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_async.g_output_stream_write_async.html
-//
 func (stream *OutputStreamInstance) WriteAsync(buffer []byte, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream      // in, none, converted
 	var carg1 unsafe.Pointer        // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -34080,7 +32200,6 @@ func (stream *OutputStreamInstance) WriteAsync(buffer []byte, ioPriority int32, 
 // WriteBytes wraps g_output_stream_write_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_bytes.g_output_stream_write_bytes.html
-//
 func (stream *OutputStreamInstance) WriteBytes(bytes *glib.Bytes, cancellable Cancellable) (int, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GBytes        // in, none, converted
@@ -34113,7 +32232,6 @@ func (stream *OutputStreamInstance) WriteBytes(bytes *glib.Bytes, cancellable Ca
 // WriteBytesAsync wraps g_output_stream_write_bytes_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_bytes_async.g_output_stream_write_bytes_async.html
-//
 func (stream *OutputStreamInstance) WriteBytesAsync(bytes *glib.Bytes, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream      // in, none, converted
 	var carg1 *C.GBytes             // in, none, converted
@@ -34144,7 +32262,6 @@ func (stream *OutputStreamInstance) WriteBytesAsync(bytes *glib.Bytes, ioPriorit
 // WriteBytesFinish wraps g_output_stream_write_bytes_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_bytes_finish.g_output_stream_write_bytes_finish.html
-//
 func (stream *OutputStreamInstance) WriteBytesFinish(result AsyncResult) (int, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -34172,7 +32289,6 @@ func (stream *OutputStreamInstance) WriteBytesFinish(result AsyncResult) (int, e
 // WriteFinish wraps g_output_stream_write_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_write_finish.g_output_stream_write_finish.html
-//
 func (stream *OutputStreamInstance) WriteFinish(result AsyncResult) (int, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -34200,7 +32316,6 @@ func (stream *OutputStreamInstance) WriteFinish(result AsyncResult) (int, error)
 // Writev wraps g_output_stream_writev
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_writev.g_output_stream_writev.html
-//
 func (stream *OutputStreamInstance) Writev(vectors []OutputVector, cancellable Cancellable) (uint, bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GOutputVector // in, transfer: none, C Pointers: 1, Name: array[OutputVector], array (inner GOutputVector (*typesystem.Record), length-by: carg2)
@@ -34242,7 +32357,6 @@ func (stream *OutputStreamInstance) Writev(vectors []OutputVector, cancellable C
 // WritevAll wraps g_output_stream_writev_all
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_writev_all.g_output_stream_writev_all.html
-//
 func (stream *OutputStreamInstance) WritevAll(vectors []OutputVector, cancellable Cancellable) (uint, bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GOutputVector // in, transfer: none, C Pointers: 1, Name: array[OutputVector], array (inner GOutputVector (*typesystem.Record), length-by: carg2)
@@ -34284,7 +32398,6 @@ func (stream *OutputStreamInstance) WritevAll(vectors []OutputVector, cancellabl
 // WritevAllAsync wraps g_output_stream_writev_all_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_writev_all_async.g_output_stream_writev_all_async.html
-//
 func (stream *OutputStreamInstance) WritevAllAsync(vectors []OutputVector, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream      // in, none, converted
 	var carg1 *C.GOutputVector      // in, transfer: none, C Pointers: 1, Name: array[OutputVector], array (inner GOutputVector (*typesystem.Record), length-by: carg2)
@@ -34319,7 +32432,6 @@ func (stream *OutputStreamInstance) WritevAllAsync(vectors []OutputVector, ioPri
 // WritevAllFinish wraps g_output_stream_writev_all_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_writev_all_finish.g_output_stream_writev_all_finish.html
-//
 func (stream *OutputStreamInstance) WritevAllFinish(result AsyncResult) (uint, bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -34352,7 +32464,6 @@ func (stream *OutputStreamInstance) WritevAllFinish(result AsyncResult) (uint, b
 // WritevAsync wraps g_output_stream_writev_async
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_writev_async.g_output_stream_writev_async.html
-//
 func (stream *OutputStreamInstance) WritevAsync(vectors []OutputVector, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GOutputStream      // in, none, converted
 	var carg1 *C.GOutputVector      // in, transfer: none, C Pointers: 1, Name: array[OutputVector], array (inner GOutputVector (*typesystem.Record), length-by: carg2)
@@ -34387,7 +32498,6 @@ func (stream *OutputStreamInstance) WritevAsync(vectors []OutputVector, ioPriori
 // WritevFinish wraps g_output_stream_writev_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_output_stream_writev_finish.g_output_stream_writev_finish.html
-//
 func (stream *OutputStreamInstance) WritevFinish(result AsyncResult) (uint, bool, error) {
 	var carg0 *C.GOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -35138,7 +33248,6 @@ var _ Permission = (*PermissionInstance)(nil)
 // Permission wraps GPermission
 // 
 // see also https://docs.gtk.org/gio/class.Permission.html
-//
 type Permission interface {
 	gobject.Object
 	upcastToGPermission() *PermissionInstance
@@ -35146,52 +33255,42 @@ type Permission interface {
 	// Acquire wraps g_permission_acquire
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_acquire.g_permission_acquire.html
-	//
 	Acquire(Cancellable) (bool, error)
 	// AcquireAsync wraps g_permission_acquire_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_acquire_async.g_permission_acquire_async.html
-	//
 	AcquireAsync(Cancellable, AsyncReadyCallback)
 	// AcquireFinish wraps g_permission_acquire_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_acquire_finish.g_permission_acquire_finish.html
-	//
 	AcquireFinish(AsyncResult) (bool, error)
 	// GetAllowed wraps g_permission_get_allowed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_get_allowed.g_permission_get_allowed.html
-	//
 	GetAllowed() bool
 	// GetCanAcquire wraps g_permission_get_can_acquire
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_get_can_acquire.g_permission_get_can_acquire.html
-	//
 	GetCanAcquire() bool
 	// GetCanRelease wraps g_permission_get_can_release
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_get_can_release.g_permission_get_can_release.html
-	//
 	GetCanRelease() bool
 	// ImplUpdate wraps g_permission_impl_update
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_impl_update.g_permission_impl_update.html
-	//
 	ImplUpdate(bool, bool, bool)
 	// Release wraps g_permission_release
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_release.g_permission_release.html
-	//
 	Release(Cancellable) (bool, error)
 	// ReleaseAsync wraps g_permission_release_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_release_async.g_permission_release_async.html
-	//
 	ReleaseAsync(Cancellable, AsyncReadyCallback)
 	// ReleaseFinish wraps g_permission_release_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_permission_release_finish.g_permission_release_finish.html
-	//
 	ReleaseFinish(AsyncResult) (bool, error)
 
 	// chain up virtual methods:
@@ -35269,7 +33368,6 @@ func UnsafePermissionToGlibFull(c Permission) unsafe.Pointer {
 // Acquire wraps g_permission_acquire
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_acquire.g_permission_acquire.html
-//
 func (permission *PermissionInstance) Acquire(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GPermission  // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -35301,7 +33399,6 @@ func (permission *PermissionInstance) Acquire(cancellable Cancellable) (bool, er
 // AcquireAsync wraps g_permission_acquire_async
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_acquire_async.g_permission_acquire_async.html
-//
 func (permission *PermissionInstance) AcquireAsync(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GPermission        // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -35326,7 +33423,6 @@ func (permission *PermissionInstance) AcquireAsync(cancellable Cancellable, call
 // AcquireFinish wraps g_permission_acquire_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_acquire_finish.g_permission_acquire_finish.html
-//
 func (permission *PermissionInstance) AcquireFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GPermission  // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -35356,7 +33452,6 @@ func (permission *PermissionInstance) AcquireFinish(result AsyncResult) (bool, e
 // GetAllowed wraps g_permission_get_allowed
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_get_allowed.g_permission_get_allowed.html
-//
 func (permission *PermissionInstance) GetAllowed() bool {
 	var carg0 *C.GPermission // in, none, converted
 	var cret  C.gboolean     // return
@@ -35378,7 +33473,6 @@ func (permission *PermissionInstance) GetAllowed() bool {
 // GetCanAcquire wraps g_permission_get_can_acquire
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_get_can_acquire.g_permission_get_can_acquire.html
-//
 func (permission *PermissionInstance) GetCanAcquire() bool {
 	var carg0 *C.GPermission // in, none, converted
 	var cret  C.gboolean     // return
@@ -35400,7 +33494,6 @@ func (permission *PermissionInstance) GetCanAcquire() bool {
 // GetCanRelease wraps g_permission_get_can_release
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_get_can_release.g_permission_get_can_release.html
-//
 func (permission *PermissionInstance) GetCanRelease() bool {
 	var carg0 *C.GPermission // in, none, converted
 	var cret  C.gboolean     // return
@@ -35422,7 +33515,6 @@ func (permission *PermissionInstance) GetCanRelease() bool {
 // ImplUpdate wraps g_permission_impl_update
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_impl_update.g_permission_impl_update.html
-//
 func (permission *PermissionInstance) ImplUpdate(allowed bool, canAcquire bool, canRelease bool) {
 	var carg0 *C.GPermission // in, none, converted
 	var carg1 C.gboolean     // in
@@ -35450,7 +33542,6 @@ func (permission *PermissionInstance) ImplUpdate(allowed bool, canAcquire bool, 
 // Release wraps g_permission_release
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_release.g_permission_release.html
-//
 func (permission *PermissionInstance) Release(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GPermission  // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -35482,7 +33573,6 @@ func (permission *PermissionInstance) Release(cancellable Cancellable) (bool, er
 // ReleaseAsync wraps g_permission_release_async
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_release_async.g_permission_release_async.html
-//
 func (permission *PermissionInstance) ReleaseAsync(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GPermission        // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -35507,7 +33597,6 @@ func (permission *PermissionInstance) ReleaseAsync(cancellable Cancellable, call
 // ReleaseFinish wraps g_permission_release_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_permission_release_finish.g_permission_release_finish.html
-//
 func (permission *PermissionInstance) ReleaseFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GPermission  // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -35843,7 +33932,6 @@ var _ PropertyAction = (*PropertyActionInstance)(nil)
 // PropertyAction wraps GPropertyAction
 // 
 // see also https://docs.gtk.org/gio/class.PropertyAction.html
-//
 type PropertyAction interface {
 	gobject.Object
 	upcastToGPropertyAction() *PropertyActionInstance
@@ -35908,7 +33996,6 @@ var _ Resolver = (*ResolverInstance)(nil)
 // Resolver wraps GResolver
 // 
 // see also https://docs.gtk.org/gio/class.Resolver.html
-//
 type Resolver interface {
 	gobject.Object
 	upcastToGResolver() *ResolverInstance
@@ -35916,87 +34003,70 @@ type Resolver interface {
 	// GetTimeout wraps g_resolver_get_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_get_timeout.g_resolver_get_timeout.html
-	//
 	GetTimeout() uint
 	// LookupByAddress wraps g_resolver_lookup_by_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_address.g_resolver_lookup_by_address.html
-	//
 	LookupByAddress(InetAddress, Cancellable) (string, error)
 	// LookupByAddressAsync wraps g_resolver_lookup_by_address_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_address_async.g_resolver_lookup_by_address_async.html
-	//
 	LookupByAddressAsync(InetAddress, Cancellable, AsyncReadyCallback)
 	// LookupByAddressFinish wraps g_resolver_lookup_by_address_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_address_finish.g_resolver_lookup_by_address_finish.html
-	//
 	LookupByAddressFinish(AsyncResult) (string, error)
 	// LookupByName wraps g_resolver_lookup_by_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name.g_resolver_lookup_by_name.html
-	//
 	LookupByName(string, Cancellable) ([]InetAddress, error)
 	// LookupByNameAsync wraps g_resolver_lookup_by_name_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_async.g_resolver_lookup_by_name_async.html
-	//
 	LookupByNameAsync(string, Cancellable, AsyncReadyCallback)
 	// LookupByNameFinish wraps g_resolver_lookup_by_name_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_finish.g_resolver_lookup_by_name_finish.html
-	//
 	LookupByNameFinish(AsyncResult) ([]InetAddress, error)
 	// LookupByNameWithFlags wraps g_resolver_lookup_by_name_with_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_with_flags.g_resolver_lookup_by_name_with_flags.html
-	//
 	LookupByNameWithFlags(string, ResolverNameLookupFlags, Cancellable) ([]InetAddress, error)
 	// LookupByNameWithFlagsAsync wraps g_resolver_lookup_by_name_with_flags_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_with_flags_async.g_resolver_lookup_by_name_with_flags_async.html
-	//
 	LookupByNameWithFlagsAsync(string, ResolverNameLookupFlags, Cancellable, AsyncReadyCallback)
 	// LookupByNameWithFlagsFinish wraps g_resolver_lookup_by_name_with_flags_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_with_flags_finish.g_resolver_lookup_by_name_with_flags_finish.html
-	//
 	LookupByNameWithFlagsFinish(AsyncResult) ([]InetAddress, error)
 	// LookupRecordsAsync wraps g_resolver_lookup_records_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_records_async.g_resolver_lookup_records_async.html
-	//
 	LookupRecordsAsync(string, ResolverRecordType, Cancellable, AsyncReadyCallback)
 	// LookupService wraps g_resolver_lookup_service
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_service.g_resolver_lookup_service.html
-	//
 	LookupService(string, string, string, Cancellable) ([]*SrvTarget, error)
 	// LookupServiceAsync wraps g_resolver_lookup_service_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_service_async.g_resolver_lookup_service_async.html
-	//
 	LookupServiceAsync(string, string, string, Cancellable, AsyncReadyCallback)
 	// LookupServiceFinish wraps g_resolver_lookup_service_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_lookup_service_finish.g_resolver_lookup_service_finish.html
-	//
 	LookupServiceFinish(AsyncResult) ([]*SrvTarget, error)
 	// SetDefault wraps g_resolver_set_default
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_set_default.g_resolver_set_default.html
-	//
 	SetDefault()
 	// SetTimeout wraps g_resolver_set_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_resolver_set_timeout.g_resolver_set_timeout.html
-	//
 	SetTimeout(uint)
 	// ConnectReload connects the provided callback to the "reload" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Resolver.reload.html
-	//
 	ConnectReload(func(Resolver)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -36094,7 +34164,6 @@ func UnsafeResolverToGlibFull(c Resolver) unsafe.Pointer {
 // ResolverGetDefault wraps g_resolver_get_default
 // 
 // see also https://docs.gtk.org/gio/func.g_resolver_get_default.html
-//
 func ResolverGetDefault() Resolver {
 	var cret *C.GResolver // return, full, converted
 
@@ -36110,7 +34179,6 @@ func ResolverGetDefault() Resolver {
 // GetTimeout wraps g_resolver_get_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_get_timeout.g_resolver_get_timeout.html
-//
 func (resolver *ResolverInstance) GetTimeout() uint {
 	var carg0 *C.GResolver // in, none, converted
 	var cret  C.unsigned   // return, none, casted
@@ -36130,7 +34198,6 @@ func (resolver *ResolverInstance) GetTimeout() uint {
 // LookupByAddress wraps g_resolver_lookup_by_address
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_address.g_resolver_lookup_by_address.html
-//
 func (resolver *ResolverInstance) LookupByAddress(address InetAddress, cancellable Cancellable) (string, error) {
 	var carg0 *C.GResolver    // in, none, converted
 	var carg1 *C.GInetAddress // in, none, converted
@@ -36164,7 +34231,6 @@ func (resolver *ResolverInstance) LookupByAddress(address InetAddress, cancellab
 // LookupByAddressAsync wraps g_resolver_lookup_by_address_async
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_address_async.g_resolver_lookup_by_address_async.html
-//
 func (resolver *ResolverInstance) LookupByAddressAsync(address InetAddress, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GResolver          // in, none, converted
 	var carg1 *C.GInetAddress       // in, none, converted
@@ -36192,7 +34258,6 @@ func (resolver *ResolverInstance) LookupByAddressAsync(address InetAddress, canc
 // LookupByAddressFinish wraps g_resolver_lookup_by_address_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_address_finish.g_resolver_lookup_by_address_finish.html
-//
 func (resolver *ResolverInstance) LookupByAddressFinish(result AsyncResult) (string, error) {
 	var carg0 *C.GResolver    // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -36221,7 +34286,6 @@ func (resolver *ResolverInstance) LookupByAddressFinish(result AsyncResult) (str
 // LookupByName wraps g_resolver_lookup_by_name
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name.g_resolver_lookup_by_name.html
-//
 func (resolver *ResolverInstance) LookupByName(hostname string, cancellable Cancellable) ([]InetAddress, error) {
 	var carg0 *C.GResolver    // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -36262,7 +34326,6 @@ func (resolver *ResolverInstance) LookupByName(hostname string, cancellable Canc
 // LookupByNameAsync wraps g_resolver_lookup_by_name_async
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_async.g_resolver_lookup_by_name_async.html
-//
 func (resolver *ResolverInstance) LookupByNameAsync(hostname string, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GResolver          // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -36291,7 +34354,6 @@ func (resolver *ResolverInstance) LookupByNameAsync(hostname string, cancellable
 // LookupByNameFinish wraps g_resolver_lookup_by_name_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_finish.g_resolver_lookup_by_name_finish.html
-//
 func (resolver *ResolverInstance) LookupByNameFinish(result AsyncResult) ([]InetAddress, error) {
 	var carg0 *C.GResolver    // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -36326,7 +34388,6 @@ func (resolver *ResolverInstance) LookupByNameFinish(result AsyncResult) ([]Inet
 // LookupByNameWithFlags wraps g_resolver_lookup_by_name_with_flags
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_with_flags.g_resolver_lookup_by_name_with_flags.html
-//
 func (resolver *ResolverInstance) LookupByNameWithFlags(hostname string, flags ResolverNameLookupFlags, cancellable Cancellable) ([]InetAddress, error) {
 	var carg0 *C.GResolver               // in, none, converted
 	var carg1 *C.gchar                   // in, none, string
@@ -36370,7 +34431,6 @@ func (resolver *ResolverInstance) LookupByNameWithFlags(hostname string, flags R
 // LookupByNameWithFlagsAsync wraps g_resolver_lookup_by_name_with_flags_async
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_with_flags_async.g_resolver_lookup_by_name_with_flags_async.html
-//
 func (resolver *ResolverInstance) LookupByNameWithFlagsAsync(hostname string, flags ResolverNameLookupFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GResolver               // in, none, converted
 	var carg1 *C.gchar                   // in, none, string
@@ -36402,7 +34462,6 @@ func (resolver *ResolverInstance) LookupByNameWithFlagsAsync(hostname string, fl
 // LookupByNameWithFlagsFinish wraps g_resolver_lookup_by_name_with_flags_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_by_name_with_flags_finish.g_resolver_lookup_by_name_with_flags_finish.html
-//
 func (resolver *ResolverInstance) LookupByNameWithFlagsFinish(result AsyncResult) ([]InetAddress, error) {
 	var carg0 *C.GResolver    // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -36437,7 +34496,6 @@ func (resolver *ResolverInstance) LookupByNameWithFlagsFinish(result AsyncResult
 // LookupRecordsAsync wraps g_resolver_lookup_records_async
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_records_async.g_resolver_lookup_records_async.html
-//
 func (resolver *ResolverInstance) LookupRecordsAsync(rrname string, recordType ResolverRecordType, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GResolver          // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -36469,7 +34527,6 @@ func (resolver *ResolverInstance) LookupRecordsAsync(rrname string, recordType R
 // LookupService wraps g_resolver_lookup_service
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_service.g_resolver_lookup_service.html
-//
 func (resolver *ResolverInstance) LookupService(service string, protocol string, domain string, cancellable Cancellable) ([]*SrvTarget, error) {
 	var carg0 *C.GResolver    // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -36518,7 +34575,6 @@ func (resolver *ResolverInstance) LookupService(service string, protocol string,
 // LookupServiceAsync wraps g_resolver_lookup_service_async
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_service_async.g_resolver_lookup_service_async.html
-//
 func (resolver *ResolverInstance) LookupServiceAsync(service string, protocol string, domain string, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GResolver          // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -36555,7 +34611,6 @@ func (resolver *ResolverInstance) LookupServiceAsync(service string, protocol st
 // LookupServiceFinish wraps g_resolver_lookup_service_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_lookup_service_finish.g_resolver_lookup_service_finish.html
-//
 func (resolver *ResolverInstance) LookupServiceFinish(result AsyncResult) ([]*SrvTarget, error) {
 	var carg0 *C.GResolver    // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -36590,7 +34645,6 @@ func (resolver *ResolverInstance) LookupServiceFinish(result AsyncResult) ([]*Sr
 // SetDefault wraps g_resolver_set_default
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_set_default.g_resolver_set_default.html
-//
 func (resolver *ResolverInstance) SetDefault() {
 	var carg0 *C.GResolver // in, none, converted
 
@@ -36603,7 +34657,6 @@ func (resolver *ResolverInstance) SetDefault() {
 // SetTimeout wraps g_resolver_set_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_resolver_set_timeout.g_resolver_set_timeout.html
-//
 func (resolver *ResolverInstance) SetTimeout(timeoutMs uint) {
 	var carg0 *C.GResolver // in, none, converted
 	var carg1 C.unsigned   // in, none, casted
@@ -36619,7 +34672,6 @@ func (resolver *ResolverInstance) SetTimeout(timeoutMs uint) {
 // ConnectReload connects the provided callback to the "reload" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Resolver.reload.html
-//
 func (o *ResolverInstance) ConnectReload(fn func(Resolver)) gobject.SignalHandle {
 	return o.Connect("reload", fn)
 }
@@ -37198,7 +35250,6 @@ var _ Settings = (*SettingsInstance)(nil)
 // Settings wraps GSettings
 // 
 // see also https://docs.gtk.org/gio/class.Settings.html
-//
 type Settings interface {
 	gobject.Object
 	upcastToGSettings() *SettingsInstance
@@ -37206,174 +35257,140 @@ type Settings interface {
 	// Apply wraps g_settings_apply
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_apply.g_settings_apply.html
-	//
 	Apply()
 	// CreateAction wraps g_settings_create_action
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_create_action.g_settings_create_action.html
-	//
 	CreateAction(string) Action
 	// Delay wraps g_settings_delay
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_delay.g_settings_delay.html
-	//
 	Delay()
 	// GetBoolean wraps g_settings_get_boolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_boolean.g_settings_get_boolean.html
-	//
 	GetBoolean(string) bool
 	// GetChild wraps g_settings_get_child
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_child.g_settings_get_child.html
-	//
 	GetChild(string) Settings
 	// GetDouble wraps g_settings_get_double
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_double.g_settings_get_double.html
-	//
 	GetDouble(string) float64
 	// GetEnum wraps g_settings_get_enum
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_enum.g_settings_get_enum.html
-	//
 	GetEnum(string) int32
 	// GetFlags wraps g_settings_get_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_flags.g_settings_get_flags.html
-	//
 	GetFlags(string) uint
 	// GetHasUnapplied wraps g_settings_get_has_unapplied
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_has_unapplied.g_settings_get_has_unapplied.html
-	//
 	GetHasUnapplied() bool
 	// GetInt wraps g_settings_get_int
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_int.g_settings_get_int.html
-	//
 	GetInt(string) int32
 	// GetInt64 wraps g_settings_get_int64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_int64.g_settings_get_int64.html
-	//
 	GetInt64(string) int64
 	// GetString wraps g_settings_get_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_string.g_settings_get_string.html
-	//
 	GetString(string) string
 	// GetStrv wraps g_settings_get_strv
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_strv.g_settings_get_strv.html
-	//
 	GetStrv(string) []string
 	// GetUint wraps g_settings_get_uint
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_uint.g_settings_get_uint.html
-	//
 	GetUint(string) uint
 	// GetUint64 wraps g_settings_get_uint64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_get_uint64.g_settings_get_uint64.html
-	//
 	GetUint64(string) uint64
 	// IsWritable wraps g_settings_is_writable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_is_writable.g_settings_is_writable.html
-	//
 	IsWritable(string) bool
 	// ListChildren wraps g_settings_list_children
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_list_children.g_settings_list_children.html
-	//
 	ListChildren() []string
 	// ListKeys wraps g_settings_list_keys
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_list_keys.g_settings_list_keys.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use [method@Gio.SettingsSchema.list_keys] instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	ListKeys() []string
 	// Reset wraps g_settings_reset
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_reset.g_settings_reset.html
-	//
 	Reset(string)
 	// Revert wraps g_settings_revert
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_revert.g_settings_revert.html
-	//
 	Revert()
 	// SetBoolean wraps g_settings_set_boolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_boolean.g_settings_set_boolean.html
-	//
 	SetBoolean(string, bool) bool
 	// SetDouble wraps g_settings_set_double
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_double.g_settings_set_double.html
-	//
 	SetDouble(string, float64) bool
 	// SetEnum wraps g_settings_set_enum
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_enum.g_settings_set_enum.html
-	//
 	SetEnum(string, int32) bool
 	// SetFlags wraps g_settings_set_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_flags.g_settings_set_flags.html
-	//
 	SetFlags(string, uint) bool
 	// SetInt wraps g_settings_set_int
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_int.g_settings_set_int.html
-	//
 	SetInt(string, int32) bool
 	// SetInt64 wraps g_settings_set_int64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_int64.g_settings_set_int64.html
-	//
 	SetInt64(string, int64) bool
 	// SetString wraps g_settings_set_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_string.g_settings_set_string.html
-	//
 	SetString(string, string) bool
 	// SetStrv wraps g_settings_set_strv
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_strv.g_settings_set_strv.html
-	//
 	SetStrv(string, []string) bool
 	// SetUint wraps g_settings_set_uint
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_uint.g_settings_set_uint.html
-	//
 	SetUint(string, uint) bool
 	// SetUint64 wraps g_settings_set_uint64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_settings_set_uint64.g_settings_set_uint64.html
-	//
 	SetUint64(string, uint64) bool
 	// ConnectChangeEvent connects the provided callback to the "change-event" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Settings.change-event.html
-	//
 	ConnectChangeEvent(func(Settings, []byte, int32) bool) gobject.SignalHandle
 	// ConnectChanged connects the provided callback to the "changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Settings.changed.html
-	//
 	ConnectChanged(func(Settings, string)) gobject.SignalHandle
 	// ConnectWritableChangeEvent connects the provided callback to the "writable-change-event" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Settings.writable-change-event.html
-	//
 	ConnectWritableChangeEvent(func(Settings, uint) bool) gobject.SignalHandle
 	// ConnectWritableChanged connects the provided callback to the "writable-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.Settings.writable-changed.html
-	//
 	ConnectWritableChanged(func(Settings, string)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -37451,7 +35468,6 @@ func UnsafeSettingsToGlibFull(c Settings) unsafe.Pointer {
 // NewSettings wraps g_settings_new
 // 
 // see also https://docs.gtk.org/gio/func.g_settings_new.html
-//
 func NewSettings(schemaId string) Settings {
 	var carg1 *C.gchar     // in, none, string
 	var cret  *C.GSettings // return, full, converted
@@ -37472,7 +35488,6 @@ func NewSettings(schemaId string) Settings {
 // NewSettingsWithPath wraps g_settings_new_with_path
 // 
 // see also https://docs.gtk.org/gio/func.g_settings_new_with_path.html
-//
 func NewSettingsWithPath(schemaId string, path string) Settings {
 	var carg1 *C.gchar     // in, none, string
 	var carg2 *C.gchar     // in, none, string
@@ -37498,8 +35513,7 @@ func NewSettingsWithPath(schemaId string, path string) Settings {
 // 
 // see also https://docs.gtk.org/gio/func.g_settings_list_relocatable_schemas.html
 //
-//
-// Deprecated: (since 2.40.0) Use g_settings_schema_source_list_schemas() instead
+// Deprecated: (since 2.40.0) see the provided link for the reason
 func SettingsListRelocatableSchemas() []string {
 	var cret **C.gchar // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -37518,11 +35532,7 @@ func SettingsListRelocatableSchemas() []string {
 // 
 // see also https://docs.gtk.org/gio/func.g_settings_list_schemas.html
 //
-//
-// Deprecated: (since 2.40.0) Use g_settings_schema_source_list_schemas() instead.
-// If you used g_settings_list_schemas() to check for the presence of
-// a particular schema, use g_settings_schema_source_lookup() instead
-// of your whole loop.
+// Deprecated: (since 2.40.0) see the provided link for the reason
 func SettingsListSchemas() []string {
 	var cret **C.gchar // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
 
@@ -37540,7 +35550,6 @@ func SettingsListSchemas() []string {
 // SettingsSync wraps g_settings_sync
 // 
 // see also https://docs.gtk.org/gio/func.g_settings_sync.html
-//
 func SettingsSync() {
 
 	C.g_settings_sync()
@@ -37549,7 +35558,6 @@ func SettingsSync() {
 // Apply wraps g_settings_apply
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_apply.g_settings_apply.html
-//
 func (settings *SettingsInstance) Apply() {
 	var carg0 *C.GSettings // in, none, converted
 
@@ -37562,7 +35570,6 @@ func (settings *SettingsInstance) Apply() {
 // CreateAction wraps g_settings_create_action
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_create_action.g_settings_create_action.html
-//
 func (settings *SettingsInstance) CreateAction(key string) Action {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37586,7 +35593,6 @@ func (settings *SettingsInstance) CreateAction(key string) Action {
 // Delay wraps g_settings_delay
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_delay.g_settings_delay.html
-//
 func (settings *SettingsInstance) Delay() {
 	var carg0 *C.GSettings // in, none, converted
 
@@ -37599,7 +35605,6 @@ func (settings *SettingsInstance) Delay() {
 // GetBoolean wraps g_settings_get_boolean
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_boolean.g_settings_get_boolean.html
-//
 func (settings *SettingsInstance) GetBoolean(key string) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37625,7 +35630,6 @@ func (settings *SettingsInstance) GetBoolean(key string) bool {
 // GetChild wraps g_settings_get_child
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_child.g_settings_get_child.html
-//
 func (settings *SettingsInstance) GetChild(name string) Settings {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37649,7 +35653,6 @@ func (settings *SettingsInstance) GetChild(name string) Settings {
 // GetDouble wraps g_settings_get_double
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_double.g_settings_get_double.html
-//
 func (settings *SettingsInstance) GetDouble(key string) float64 {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37673,7 +35676,6 @@ func (settings *SettingsInstance) GetDouble(key string) float64 {
 // GetEnum wraps g_settings_get_enum
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_enum.g_settings_get_enum.html
-//
 func (settings *SettingsInstance) GetEnum(key string) int32 {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37697,7 +35699,6 @@ func (settings *SettingsInstance) GetEnum(key string) int32 {
 // GetFlags wraps g_settings_get_flags
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_flags.g_settings_get_flags.html
-//
 func (settings *SettingsInstance) GetFlags(key string) uint {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37721,7 +35722,6 @@ func (settings *SettingsInstance) GetFlags(key string) uint {
 // GetHasUnapplied wraps g_settings_get_has_unapplied
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_has_unapplied.g_settings_get_has_unapplied.html
-//
 func (settings *SettingsInstance) GetHasUnapplied() bool {
 	var carg0 *C.GSettings // in, none, converted
 	var cret  C.gboolean   // return
@@ -37743,7 +35743,6 @@ func (settings *SettingsInstance) GetHasUnapplied() bool {
 // GetInt wraps g_settings_get_int
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_int.g_settings_get_int.html
-//
 func (settings *SettingsInstance) GetInt(key string) int32 {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37767,7 +35766,6 @@ func (settings *SettingsInstance) GetInt(key string) int32 {
 // GetInt64 wraps g_settings_get_int64
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_int64.g_settings_get_int64.html
-//
 func (settings *SettingsInstance) GetInt64(key string) int64 {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37791,7 +35789,6 @@ func (settings *SettingsInstance) GetInt64(key string) int64 {
 // GetString wraps g_settings_get_string
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_string.g_settings_get_string.html
-//
 func (settings *SettingsInstance) GetString(key string) string {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37816,7 +35813,6 @@ func (settings *SettingsInstance) GetString(key string) string {
 // GetStrv wraps g_settings_get_strv
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_strv.g_settings_get_strv.html
-//
 func (settings *SettingsInstance) GetStrv(key string) []string {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37842,7 +35838,6 @@ func (settings *SettingsInstance) GetStrv(key string) []string {
 // GetUint wraps g_settings_get_uint
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_uint.g_settings_get_uint.html
-//
 func (settings *SettingsInstance) GetUint(key string) uint {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37866,7 +35861,6 @@ func (settings *SettingsInstance) GetUint(key string) uint {
 // GetUint64 wraps g_settings_get_uint64
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_get_uint64.g_settings_get_uint64.html
-//
 func (settings *SettingsInstance) GetUint64(key string) uint64 {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37890,7 +35884,6 @@ func (settings *SettingsInstance) GetUint64(key string) uint64 {
 // IsWritable wraps g_settings_is_writable
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_is_writable.g_settings_is_writable.html
-//
 func (settings *SettingsInstance) IsWritable(name string) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37916,7 +35909,6 @@ func (settings *SettingsInstance) IsWritable(name string) bool {
 // ListChildren wraps g_settings_list_children
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_list_children.g_settings_list_children.html
-//
 func (settings *SettingsInstance) ListChildren() []string {
 	var carg0 *C.GSettings // in, none, converted
 	var cret  **C.gchar    // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -37939,8 +35931,7 @@ func (settings *SettingsInstance) ListChildren() []string {
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_list_keys.g_settings_list_keys.html
 //
-//
-// Deprecated: (since 2.46.0) Use [method@Gio.SettingsSchema.list_keys] instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (settings *SettingsInstance) ListKeys() []string {
 	var carg0 *C.GSettings // in, none, converted
 	var cret  **C.gchar    // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -37962,7 +35953,6 @@ func (settings *SettingsInstance) ListKeys() []string {
 // Reset wraps g_settings_reset
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_reset.g_settings_reset.html
-//
 func (settings *SettingsInstance) Reset(key string) {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -37979,7 +35969,6 @@ func (settings *SettingsInstance) Reset(key string) {
 // Revert wraps g_settings_revert
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_revert.g_settings_revert.html
-//
 func (settings *SettingsInstance) Revert() {
 	var carg0 *C.GSettings // in, none, converted
 
@@ -37992,7 +35981,6 @@ func (settings *SettingsInstance) Revert() {
 // SetBoolean wraps g_settings_set_boolean
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_boolean.g_settings_set_boolean.html
-//
 func (settings *SettingsInstance) SetBoolean(key string, value bool) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38023,7 +36011,6 @@ func (settings *SettingsInstance) SetBoolean(key string, value bool) bool {
 // SetDouble wraps g_settings_set_double
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_double.g_settings_set_double.html
-//
 func (settings *SettingsInstance) SetDouble(key string, value float64) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38052,7 +36039,6 @@ func (settings *SettingsInstance) SetDouble(key string, value float64) bool {
 // SetEnum wraps g_settings_set_enum
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_enum.g_settings_set_enum.html
-//
 func (settings *SettingsInstance) SetEnum(key string, value int32) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38081,7 +36067,6 @@ func (settings *SettingsInstance) SetEnum(key string, value int32) bool {
 // SetFlags wraps g_settings_set_flags
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_flags.g_settings_set_flags.html
-//
 func (settings *SettingsInstance) SetFlags(key string, value uint) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38110,7 +36095,6 @@ func (settings *SettingsInstance) SetFlags(key string, value uint) bool {
 // SetInt wraps g_settings_set_int
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_int.g_settings_set_int.html
-//
 func (settings *SettingsInstance) SetInt(key string, value int32) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38139,7 +36123,6 @@ func (settings *SettingsInstance) SetInt(key string, value int32) bool {
 // SetInt64 wraps g_settings_set_int64
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_int64.g_settings_set_int64.html
-//
 func (settings *SettingsInstance) SetInt64(key string, value int64) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38168,7 +36151,6 @@ func (settings *SettingsInstance) SetInt64(key string, value int64) bool {
 // SetString wraps g_settings_set_string
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_string.g_settings_set_string.html
-//
 func (settings *SettingsInstance) SetString(key string, value string) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38198,7 +36180,6 @@ func (settings *SettingsInstance) SetString(key string, value string) bool {
 // SetStrv wraps g_settings_set_strv
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_strv.g_settings_set_strv.html
-//
 func (settings *SettingsInstance) SetStrv(key string, value []string) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38229,7 +36210,6 @@ func (settings *SettingsInstance) SetStrv(key string, value []string) bool {
 // SetUint wraps g_settings_set_uint
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_uint.g_settings_set_uint.html
-//
 func (settings *SettingsInstance) SetUint(key string, value uint) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38258,7 +36238,6 @@ func (settings *SettingsInstance) SetUint(key string, value uint) bool {
 // SetUint64 wraps g_settings_set_uint64
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_set_uint64.g_settings_set_uint64.html
-//
 func (settings *SettingsInstance) SetUint64(key string, value uint64) bool {
 	var carg0 *C.GSettings // in, none, converted
 	var carg1 *C.gchar     // in, none, string
@@ -38287,7 +36266,6 @@ func (settings *SettingsInstance) SetUint64(key string, value uint64) bool {
 // ConnectChangeEvent connects the provided callback to the "change-event" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Settings.change-event.html
-//
 func (o *SettingsInstance) ConnectChangeEvent(fn func(Settings, []byte, int32) bool) gobject.SignalHandle {
 	return o.Connect("change-event", fn)
 }
@@ -38295,7 +36273,6 @@ func (o *SettingsInstance) ConnectChangeEvent(fn func(Settings, []byte, int32) b
 // ConnectChanged connects the provided callback to the "changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Settings.changed.html
-//
 func (o *SettingsInstance) ConnectChanged(fn func(Settings, string)) gobject.SignalHandle {
 	return o.Connect("changed", fn)
 }
@@ -38303,7 +36280,6 @@ func (o *SettingsInstance) ConnectChanged(fn func(Settings, string)) gobject.Sig
 // ConnectWritableChangeEvent connects the provided callback to the "writable-change-event" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Settings.writable-change-event.html
-//
 func (o *SettingsInstance) ConnectWritableChangeEvent(fn func(Settings, uint) bool) gobject.SignalHandle {
 	return o.Connect("writable-change-event", fn)
 }
@@ -38311,7 +36287,6 @@ func (o *SettingsInstance) ConnectWritableChangeEvent(fn func(Settings, uint) bo
 // ConnectWritableChanged connects the provided callback to the "writable-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.Settings.writable-changed.html
-//
 func (o *SettingsInstance) ConnectWritableChanged(fn func(Settings, string)) gobject.SignalHandle {
 	return o.Connect("writable-changed", fn)
 }
@@ -38568,7 +36543,6 @@ var _ SimpleAction = (*SimpleActionInstance)(nil)
 // SimpleAction wraps GSimpleAction
 // 
 // see also https://docs.gtk.org/gio/class.SimpleAction.html
-//
 type SimpleAction interface {
 	gobject.Object
 	upcastToGSimpleAction() *SimpleActionInstance
@@ -38576,7 +36550,6 @@ type SimpleAction interface {
 	// SetEnabled wraps g_simple_action_set_enabled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_action_set_enabled.g_simple_action_set_enabled.html
-	//
 	SetEnabled(bool)
 }
 
@@ -38631,7 +36604,6 @@ func UnsafeSimpleActionToGlibFull(c SimpleAction) unsafe.Pointer {
 // NewSimpleAction wraps g_simple_action_new
 // 
 // see also https://docs.gtk.org/gio/func.g_simple_action_new.html
-//
 func NewSimpleAction(name string, parameterType *glib.VariantType) SimpleAction {
 	var carg1 *C.gchar         // in, none, string
 	var carg2 *C.GVariantType  // in, none, converted, nullable
@@ -38657,7 +36629,6 @@ func NewSimpleAction(name string, parameterType *glib.VariantType) SimpleAction 
 // SetEnabled wraps g_simple_action_set_enabled
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_action_set_enabled.g_simple_action_set_enabled.html
-//
 func (simple *SimpleActionInstance) SetEnabled(enabled bool) {
 	var carg0 *C.GSimpleAction // in, none, converted
 	var carg1 C.gboolean       // in
@@ -38683,7 +36654,6 @@ var _ SimpleActionGroup = (*SimpleActionGroupInstance)(nil)
 // SimpleActionGroup wraps GSimpleActionGroup
 // 
 // see also https://docs.gtk.org/gio/class.SimpleActionGroup.html
-//
 type SimpleActionGroup interface {
 	gobject.Object
 	upcastToGSimpleActionGroup() *SimpleActionGroupInstance
@@ -38692,22 +36662,19 @@ type SimpleActionGroup interface {
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_action_group_insert.g_simple_action_group_insert.html
 	//
-	//
-	// Deprecated: (since 2.38.0) Use g_action_map_add_action()
+	// Deprecated: (since 2.38.0) see the provided link for the reason
 	Insert(Action)
 	// Lookup wraps g_simple_action_group_lookup
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_action_group_lookup.g_simple_action_group_lookup.html
 	//
-	//
-	// Deprecated: (since 2.38.0) Use g_action_map_lookup_action()
+	// Deprecated: (since 2.38.0) see the provided link for the reason
 	Lookup(string) Action
 	// Remove wraps g_simple_action_group_remove
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_action_group_remove.g_simple_action_group_remove.html
 	//
-	//
-	// Deprecated: (since 2.38.0) Use g_action_map_remove_action()
+	// Deprecated: (since 2.38.0) see the provided link for the reason
 	Remove(string)
 
 	// chain up virtual methods:
@@ -38764,7 +36731,6 @@ func UnsafeSimpleActionGroupToGlibFull(c SimpleActionGroup) unsafe.Pointer {
 // NewSimpleActionGroup wraps g_simple_action_group_new
 // 
 // see also https://docs.gtk.org/gio/func.g_simple_action_group_new.html
-//
 func NewSimpleActionGroup() SimpleActionGroup {
 	var cret *C.GSimpleActionGroup // return, full, converted
 
@@ -38781,8 +36747,7 @@ func NewSimpleActionGroup() SimpleActionGroup {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_action_group_insert.g_simple_action_group_insert.html
 //
-//
-// Deprecated: (since 2.38.0) Use g_action_map_add_action()
+// Deprecated: (since 2.38.0) see the provided link for the reason
 func (simple *SimpleActionGroupInstance) Insert(action Action) {
 	var carg0 *C.GSimpleActionGroup // in, none, converted
 	var carg1 *C.GAction            // in, none, converted
@@ -38799,8 +36764,7 @@ func (simple *SimpleActionGroupInstance) Insert(action Action) {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_action_group_lookup.g_simple_action_group_lookup.html
 //
-//
-// Deprecated: (since 2.38.0) Use g_action_map_lookup_action()
+// Deprecated: (since 2.38.0) see the provided link for the reason
 func (simple *SimpleActionGroupInstance) Lookup(actionName string) Action {
 	var carg0 *C.GSimpleActionGroup // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -38825,8 +36789,7 @@ func (simple *SimpleActionGroupInstance) Lookup(actionName string) Action {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_action_group_remove.g_simple_action_group_remove.html
 //
-//
-// Deprecated: (since 2.38.0) Use g_action_map_remove_action()
+// Deprecated: (since 2.38.0) see the provided link for the reason
 func (simple *SimpleActionGroupInstance) Remove(actionName string) {
 	var carg0 *C.GSimpleActionGroup // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -38891,7 +36854,6 @@ var _ SimpleAsyncResult = (*SimpleAsyncResultInstance)(nil)
 // SimpleAsyncResult wraps GSimpleAsyncResult
 // 
 // see also https://docs.gtk.org/gio/class.SimpleAsyncResult.html
-//
 type SimpleAsyncResult interface {
 	gobject.Object
 	upcastToGSimpleAsyncResult() *SimpleAsyncResultInstance
@@ -38900,64 +36862,55 @@ type SimpleAsyncResult interface {
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_complete.g_simple_async_result_complete.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	Complete()
 	// CompleteInIdle wraps g_simple_async_result_complete_in_idle
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_complete_in_idle.g_simple_async_result_complete_in_idle.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	CompleteInIdle()
 	// GetOpResGboolean wraps g_simple_async_result_get_op_res_gboolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_get_op_res_gboolean.g_simple_async_result_get_op_res_gboolean.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask and g_task_propagate_boolean() instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	GetOpResGboolean() bool
 	// GetOpResGssize wraps g_simple_async_result_get_op_res_gssize
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_get_op_res_gssize.g_simple_async_result_get_op_res_gssize.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask and g_task_propagate_int() instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	GetOpResGssize() int
 	// PropagateError wraps g_simple_async_result_propagate_error
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_propagate_error.g_simple_async_result_propagate_error.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	PropagateError() (bool, error)
 	// SetCheckCancellable wraps g_simple_async_result_set_check_cancellable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_set_check_cancellable.g_simple_async_result_set_check_cancellable.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	SetCheckCancellable(Cancellable)
 	// SetHandleCancellation wraps g_simple_async_result_set_handle_cancellation
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_set_handle_cancellation.g_simple_async_result_set_handle_cancellation.html
 	//
-	//
-	// Deprecated: (since 2.46.0) 
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	SetHandleCancellation(bool)
 	// SetOpResGboolean wraps g_simple_async_result_set_op_res_gboolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_set_op_res_gboolean.g_simple_async_result_set_op_res_gboolean.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask and g_task_return_boolean() instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	SetOpResGboolean(bool)
 	// SetOpResGssize wraps g_simple_async_result_set_op_res_gssize
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_async_result_set_op_res_gssize.g_simple_async_result_set_op_res_gssize.html
 	//
-	//
-	// Deprecated: (since 2.46.0) Use #GTask and g_task_return_int() instead.
+	// Deprecated: (since 2.46.0) see the provided link for the reason
 	SetOpResGssize(int)
 }
 
@@ -39013,8 +36966,7 @@ func UnsafeSimpleAsyncResultToGlibFull(c SimpleAsyncResult) unsafe.Pointer {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_complete.g_simple_async_result_complete.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) Complete() {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 
@@ -39028,8 +36980,7 @@ func (simple *SimpleAsyncResultInstance) Complete() {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_complete_in_idle.g_simple_async_result_complete_in_idle.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) CompleteInIdle() {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 
@@ -39043,8 +36994,7 @@ func (simple *SimpleAsyncResultInstance) CompleteInIdle() {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_get_op_res_gboolean.g_simple_async_result_get_op_res_gboolean.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask and g_task_propagate_boolean() instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) GetOpResGboolean() bool {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 	var cret  C.gboolean            // return
@@ -39067,8 +37017,7 @@ func (simple *SimpleAsyncResultInstance) GetOpResGboolean() bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_get_op_res_gssize.g_simple_async_result_get_op_res_gssize.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask and g_task_propagate_int() instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) GetOpResGssize() int {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 	var cret  C.gssize              // return, none, casted
@@ -39089,8 +37038,7 @@ func (simple *SimpleAsyncResultInstance) GetOpResGssize() int {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_propagate_error.g_simple_async_result_propagate_error.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) PropagateError() (bool, error) {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 	var cret  C.gboolean            // return
@@ -39118,8 +37066,7 @@ func (simple *SimpleAsyncResultInstance) PropagateError() (bool, error) {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_set_check_cancellable.g_simple_async_result_set_check_cancellable.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) SetCheckCancellable(checkCancellable Cancellable) {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -39138,8 +37085,7 @@ func (simple *SimpleAsyncResultInstance) SetCheckCancellable(checkCancellable Ca
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_set_handle_cancellation.g_simple_async_result_set_handle_cancellation.html
 //
-//
-// Deprecated: (since 2.46.0) 
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) SetHandleCancellation(handleCancellation bool) {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 	var carg1 C.gboolean            // in
@@ -39158,8 +37104,7 @@ func (simple *SimpleAsyncResultInstance) SetHandleCancellation(handleCancellatio
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_set_op_res_gboolean.g_simple_async_result_set_op_res_gboolean.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask and g_task_return_boolean() instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) SetOpResGboolean(opRes bool) {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 	var carg1 C.gboolean            // in
@@ -39178,8 +37123,7 @@ func (simple *SimpleAsyncResultInstance) SetOpResGboolean(opRes bool) {
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_async_result_set_op_res_gssize.g_simple_async_result_set_op_res_gssize.html
 //
-//
-// Deprecated: (since 2.46.0) Use #GTask and g_task_return_int() instead.
+// Deprecated: (since 2.46.0) see the provided link for the reason
 func (simple *SimpleAsyncResultInstance) SetOpResGssize(opRes int) {
 	var carg0 *C.GSimpleAsyncResult // in, none, converted
 	var carg1 C.gssize              // in, none, casted
@@ -39203,7 +37147,6 @@ var _ SimpleIOStream = (*SimpleIOStreamInstance)(nil)
 // SimpleIOStream wraps GSimpleIOStream
 // 
 // see also https://docs.gtk.org/gio/class.SimpleIOStream.html
-//
 type SimpleIOStream interface {
 	IOStream
 	upcastToGSimpleIOStream() *SimpleIOStreamInstance
@@ -39262,7 +37205,6 @@ func UnsafeSimpleIOStreamToGlibFull(c SimpleIOStream) unsafe.Pointer {
 // NewSimpleIOStream wraps g_simple_io_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_simple_io_stream_new.html
-//
 func NewSimpleIOStream(inputStream InputStream, outputStream OutputStream) IOStream {
 	var carg1 *C.GInputStream  // in, none, converted
 	var carg2 *C.GOutputStream // in, none, converted
@@ -39293,7 +37235,6 @@ var _ SimplePermission = (*SimplePermissionInstance)(nil)
 // SimplePermission wraps GSimplePermission
 // 
 // see also https://docs.gtk.org/gio/class.SimplePermission.html
-//
 type SimplePermission interface {
 	Permission
 	upcastToGSimplePermission() *SimplePermissionInstance
@@ -39352,7 +37293,6 @@ func UnsafeSimplePermissionToGlibFull(c SimplePermission) unsafe.Pointer {
 // NewSimplePermission wraps g_simple_permission_new
 // 
 // see also https://docs.gtk.org/gio/func.g_simple_permission_new.html
-//
 func NewSimplePermission(allowed bool) Permission {
 	var carg1 C.gboolean     // in
 	var cret  *C.GPermission // return, full, converted
@@ -39382,7 +37322,6 @@ var _ SimpleProxyResolver = (*SimpleProxyResolverInstance)(nil)
 // SimpleProxyResolver wraps GSimpleProxyResolver
 // 
 // see also https://docs.gtk.org/gio/class.SimpleProxyResolver.html
-//
 type SimpleProxyResolver interface {
 	gobject.Object
 	upcastToGSimpleProxyResolver() *SimpleProxyResolverInstance
@@ -39390,17 +37329,14 @@ type SimpleProxyResolver interface {
 	// SetDefaultProxy wraps g_simple_proxy_resolver_set_default_proxy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_proxy_resolver_set_default_proxy.g_simple_proxy_resolver_set_default_proxy.html
-	//
 	SetDefaultProxy(string)
 	// SetIgnoreHosts wraps g_simple_proxy_resolver_set_ignore_hosts
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_proxy_resolver_set_ignore_hosts.g_simple_proxy_resolver_set_ignore_hosts.html
-	//
 	SetIgnoreHosts([]string)
 	// SetURIProxy wraps g_simple_proxy_resolver_set_uri_proxy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_simple_proxy_resolver_set_uri_proxy.g_simple_proxy_resolver_set_uri_proxy.html
-	//
 	SetURIProxy(string, string)
 
 	// chain up virtual methods:
@@ -39457,7 +37393,6 @@ func UnsafeSimpleProxyResolverToGlibFull(c SimpleProxyResolver) unsafe.Pointer {
 // NewSimpleProxyResolver wraps g_simple_proxy_resolver_new
 // 
 // see also https://docs.gtk.org/gio/func.g_simple_proxy_resolver_new.html
-//
 func NewSimpleProxyResolver(defaultProxy string, ignoreHosts []string) ProxyResolver {
 	var carg1 *C.gchar          // in, none, string, nullable-string
 	var carg2 **C.gchar         // in, transfer: none, C Pointers: 2, Name: array[utf8], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -39485,7 +37420,6 @@ func NewSimpleProxyResolver(defaultProxy string, ignoreHosts []string) ProxyReso
 // SetDefaultProxy wraps g_simple_proxy_resolver_set_default_proxy
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_proxy_resolver_set_default_proxy.g_simple_proxy_resolver_set_default_proxy.html
-//
 func (resolver *SimpleProxyResolverInstance) SetDefaultProxy(defaultProxy string) {
 	var carg0 *C.GSimpleProxyResolver // in, none, converted
 	var carg1 *C.gchar                // in, none, string, nullable-string
@@ -39504,7 +37438,6 @@ func (resolver *SimpleProxyResolverInstance) SetDefaultProxy(defaultProxy string
 // SetIgnoreHosts wraps g_simple_proxy_resolver_set_ignore_hosts
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_proxy_resolver_set_ignore_hosts.g_simple_proxy_resolver_set_ignore_hosts.html
-//
 func (resolver *SimpleProxyResolverInstance) SetIgnoreHosts(ignoreHosts []string) {
 	var carg0 *C.GSimpleProxyResolver // in, none, converted
 	var carg1 **C.gchar               // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -39522,7 +37455,6 @@ func (resolver *SimpleProxyResolverInstance) SetIgnoreHosts(ignoreHosts []string
 // SetURIProxy wraps g_simple_proxy_resolver_set_uri_proxy
 // 
 // see also https://docs.gtk.org/gio/method.g_simple_proxy_resolver_set_uri_proxy.g_simple_proxy_resolver_set_uri_proxy.html
-//
 func (resolver *SimpleProxyResolverInstance) SetURIProxy(uriScheme string, proxy string) {
 	var carg0 *C.GSimpleProxyResolver // in, none, converted
 	var carg1 *C.gchar                // in, none, string
@@ -39591,7 +37523,6 @@ var _ Socket = (*SocketInstance)(nil)
 // Socket wraps GSocket
 // 
 // see also https://docs.gtk.org/gio/class.Socket.html
-//
 type Socket interface {
 	gobject.Object
 	upcastToGSocket() *SocketInstance
@@ -39599,267 +37530,214 @@ type Socket interface {
 	// Accept wraps g_socket_accept
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_accept.g_socket_accept.html
-	//
 	Accept(Cancellable) (Socket, error)
 	// Bind wraps g_socket_bind
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_bind.g_socket_bind.html
-	//
 	Bind(SocketAddress, bool) (bool, error)
 	// CheckConnectResult wraps g_socket_check_connect_result
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_check_connect_result.g_socket_check_connect_result.html
-	//
 	CheckConnectResult() (bool, error)
 	// Close wraps g_socket_close
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_close.g_socket_close.html
-	//
 	Close() (bool, error)
 	// ConditionCheck wraps g_socket_condition_check
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_condition_check.g_socket_condition_check.html
-	//
 	ConditionCheck(glib.IOCondition) glib.IOCondition
 	// ConditionTimedWait wraps g_socket_condition_timed_wait
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_condition_timed_wait.g_socket_condition_timed_wait.html
-	//
 	ConditionTimedWait(glib.IOCondition, int64, Cancellable) (bool, error)
 	// ConditionWait wraps g_socket_condition_wait
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_condition_wait.g_socket_condition_wait.html
-	//
 	ConditionWait(glib.IOCondition, Cancellable) (bool, error)
 	// ConnectSocket wraps g_socket_connect
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connect.g_socket_connect.html
-	//
 	ConnectSocket(SocketAddress, Cancellable) (bool, error)
 	// ConnectionFactoryCreateConnection wraps g_socket_connection_factory_create_connection
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_factory_create_connection.g_socket_connection_factory_create_connection.html
-	//
 	ConnectionFactoryCreateConnection() SocketConnection
 	// GetAvailableBytes wraps g_socket_get_available_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_available_bytes.g_socket_get_available_bytes.html
-	//
 	GetAvailableBytes() int
 	// GetBlocking wraps g_socket_get_blocking
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_blocking.g_socket_get_blocking.html
-	//
 	GetBlocking() bool
 	// GetBroadcast wraps g_socket_get_broadcast
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_broadcast.g_socket_get_broadcast.html
-	//
 	GetBroadcast() bool
 	// GetCredentials wraps g_socket_get_credentials
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_credentials.g_socket_get_credentials.html
-	//
 	GetCredentials() (Credentials, error)
 	// GetFamily wraps g_socket_get_family
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_family.g_socket_get_family.html
-	//
 	GetFamily() SocketFamily
 	// GetFd wraps g_socket_get_fd
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_fd.g_socket_get_fd.html
-	//
 	GetFd() int32
 	// GetKeepalive wraps g_socket_get_keepalive
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_keepalive.g_socket_get_keepalive.html
-	//
 	GetKeepalive() bool
 	// GetListenBacklog wraps g_socket_get_listen_backlog
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_listen_backlog.g_socket_get_listen_backlog.html
-	//
 	GetListenBacklog() int32
 	// GetLocalAddress wraps g_socket_get_local_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_local_address.g_socket_get_local_address.html
-	//
 	GetLocalAddress() (SocketAddress, error)
 	// GetMulticastLoopback wraps g_socket_get_multicast_loopback
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_multicast_loopback.g_socket_get_multicast_loopback.html
-	//
 	GetMulticastLoopback() bool
 	// GetMulticastTtl wraps g_socket_get_multicast_ttl
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_multicast_ttl.g_socket_get_multicast_ttl.html
-	//
 	GetMulticastTtl() uint
 	// GetOption wraps g_socket_get_option
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_option.g_socket_get_option.html
-	//
 	GetOption(int32, int32) (int32, bool, error)
 	// GetProtocol wraps g_socket_get_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_protocol.g_socket_get_protocol.html
-	//
 	GetProtocol() SocketProtocol
 	// GetRemoteAddress wraps g_socket_get_remote_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_remote_address.g_socket_get_remote_address.html
-	//
 	GetRemoteAddress() (SocketAddress, error)
 	// GetSocketType wraps g_socket_get_socket_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_socket_type.g_socket_get_socket_type.html
-	//
 	GetSocketType() SocketType
 	// GetTimeout wraps g_socket_get_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_timeout.g_socket_get_timeout.html
-	//
 	GetTimeout() uint
 	// GetTtl wraps g_socket_get_ttl
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_get_ttl.g_socket_get_ttl.html
-	//
 	GetTtl() uint
 	// IsClosed wraps g_socket_is_closed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_is_closed.g_socket_is_closed.html
-	//
 	IsClosed() bool
 	// IsConnected wraps g_socket_is_connected
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_is_connected.g_socket_is_connected.html
-	//
 	IsConnected() bool
 	// JoinMulticastGroup wraps g_socket_join_multicast_group
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_join_multicast_group.g_socket_join_multicast_group.html
-	//
 	JoinMulticastGroup(InetAddress, bool, string) (bool, error)
 	// JoinMulticastGroupSsm wraps g_socket_join_multicast_group_ssm
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_join_multicast_group_ssm.g_socket_join_multicast_group_ssm.html
-	//
 	JoinMulticastGroupSsm(InetAddress, InetAddress, string) (bool, error)
 	// LeaveMulticastGroup wraps g_socket_leave_multicast_group
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_leave_multicast_group.g_socket_leave_multicast_group.html
-	//
 	LeaveMulticastGroup(InetAddress, bool, string) (bool, error)
 	// LeaveMulticastGroupSsm wraps g_socket_leave_multicast_group_ssm
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_leave_multicast_group_ssm.g_socket_leave_multicast_group_ssm.html
-	//
 	LeaveMulticastGroupSsm(InetAddress, InetAddress, string) (bool, error)
 	// Listen wraps g_socket_listen
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listen.g_socket_listen.html
-	//
 	Listen() (bool, error)
 	// ReceiveBytes wraps g_socket_receive_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_receive_bytes.g_socket_receive_bytes.html
-	//
 	ReceiveBytes(uint, int64, Cancellable) (*glib.Bytes, error)
 	// ReceiveBytesFrom wraps g_socket_receive_bytes_from
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_receive_bytes_from.g_socket_receive_bytes_from.html
-	//
 	ReceiveBytesFrom(uint, int64, Cancellable) (SocketAddress, *glib.Bytes, error)
 	// ReceiveMessages wraps g_socket_receive_messages
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_receive_messages.g_socket_receive_messages.html
-	//
 	ReceiveMessages([]InputMessage, int32, Cancellable) (int32, error)
 	// Send wraps g_socket_send
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_send.g_socket_send.html
-	//
 	Send(string, Cancellable) (int, error)
 	// SendMessage wraps g_socket_send_message
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_send_message.g_socket_send_message.html
-	//
 	SendMessage(SocketAddress, []OutputVector, []SocketControlMessage, int32, Cancellable) (int, error)
 	// SendMessageWithTimeout wraps g_socket_send_message_with_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_send_message_with_timeout.g_socket_send_message_with_timeout.html
-	//
 	SendMessageWithTimeout(SocketAddress, []OutputVector, []SocketControlMessage, int32, int64, Cancellable) (uint, PollableReturn, error)
 	// SendMessages wraps g_socket_send_messages
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_send_messages.g_socket_send_messages.html
-	//
 	SendMessages([]OutputMessage, int32, Cancellable) (int32, error)
 	// SendTo wraps g_socket_send_to
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_send_to.g_socket_send_to.html
-	//
 	SendTo(SocketAddress, string, Cancellable) (int, error)
 	// SendWithBlocking wraps g_socket_send_with_blocking
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_send_with_blocking.g_socket_send_with_blocking.html
-	//
 	SendWithBlocking(string, bool, Cancellable) (int, error)
 	// SetBlocking wraps g_socket_set_blocking
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_blocking.g_socket_set_blocking.html
-	//
 	SetBlocking(bool)
 	// SetBroadcast wraps g_socket_set_broadcast
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_broadcast.g_socket_set_broadcast.html
-	//
 	SetBroadcast(bool)
 	// SetKeepalive wraps g_socket_set_keepalive
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_keepalive.g_socket_set_keepalive.html
-	//
 	SetKeepalive(bool)
 	// SetListenBacklog wraps g_socket_set_listen_backlog
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_listen_backlog.g_socket_set_listen_backlog.html
-	//
 	SetListenBacklog(int32)
 	// SetMulticastLoopback wraps g_socket_set_multicast_loopback
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_multicast_loopback.g_socket_set_multicast_loopback.html
-	//
 	SetMulticastLoopback(bool)
 	// SetMulticastTtl wraps g_socket_set_multicast_ttl
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_multicast_ttl.g_socket_set_multicast_ttl.html
-	//
 	SetMulticastTtl(uint)
 	// SetOption wraps g_socket_set_option
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_option.g_socket_set_option.html
-	//
 	SetOption(int32, int32, int32) (bool, error)
 	// SetTimeout wraps g_socket_set_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_timeout.g_socket_set_timeout.html
-	//
 	SetTimeout(uint)
 	// SetTtl wraps g_socket_set_ttl
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_set_ttl.g_socket_set_ttl.html
-	//
 	SetTtl(uint)
 	// Shutdown wraps g_socket_shutdown
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_shutdown.g_socket_shutdown.html
-	//
 	Shutdown(bool, bool) (bool, error)
 	// SpeaksIpv4 wraps g_socket_speaks_ipv4
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_speaks_ipv4.g_socket_speaks_ipv4.html
-	//
 	SpeaksIpv4() bool
 
 	// chain up virtual methods:
@@ -39916,7 +37794,6 @@ func UnsafeSocketToGlibFull(c Socket) unsafe.Pointer {
 // NewSocket wraps g_socket_new
 // 
 // see also https://docs.gtk.org/gio/func.g_socket_new.html
-//
 func NewSocket(family SocketFamily, typ SocketType, protocol SocketProtocol) (Socket, error) {
 	var carg1 C.GSocketFamily   // in, none, casted
 	var carg2 C.GSocketType     // in, none, casted
@@ -39947,7 +37824,6 @@ func NewSocket(family SocketFamily, typ SocketType, protocol SocketProtocol) (So
 // NewSocketFromFd wraps g_socket_new_from_fd
 // 
 // see also https://docs.gtk.org/gio/func.g_socket_new_from_fd.html
-//
 func NewSocketFromFd(fd int32) (Socket, error) {
 	var carg1 C.gint     // in, none, casted
 	var cret  *C.GSocket // return, full, converted
@@ -39972,7 +37848,6 @@ func NewSocketFromFd(fd int32) (Socket, error) {
 // Accept wraps g_socket_accept
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_accept.g_socket_accept.html
-//
 func (socket *SocketInstance) Accept(cancellable Cancellable) (Socket, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 *C.GCancellable // in, none, converted, nullable
@@ -40002,7 +37877,6 @@ func (socket *SocketInstance) Accept(cancellable Cancellable) (Socket, error) {
 // Bind wraps g_socket_bind
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_bind.g_socket_bind.html
-//
 func (socket *SocketInstance) Bind(address SocketAddress, allowReuse bool) (bool, error) {
 	var carg0 *C.GSocket        // in, none, converted
 	var carg1 *C.GSocketAddress // in, none, converted
@@ -40037,7 +37911,6 @@ func (socket *SocketInstance) Bind(address SocketAddress, allowReuse bool) (bool
 // CheckConnectResult wraps g_socket_check_connect_result
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_check_connect_result.g_socket_check_connect_result.html
-//
 func (socket *SocketInstance) CheckConnectResult() (bool, error) {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40064,7 +37937,6 @@ func (socket *SocketInstance) CheckConnectResult() (bool, error) {
 // Close wraps g_socket_close
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_close.g_socket_close.html
-//
 func (socket *SocketInstance) Close() (bool, error) {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40091,7 +37963,6 @@ func (socket *SocketInstance) Close() (bool, error) {
 // ConditionCheck wraps g_socket_condition_check
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_condition_check.g_socket_condition_check.html
-//
 func (socket *SocketInstance) ConditionCheck(condition glib.IOCondition) glib.IOCondition {
 	var carg0 *C.GSocket     // in, none, converted
 	var carg1 C.GIOCondition // in, none, casted
@@ -40114,7 +37985,6 @@ func (socket *SocketInstance) ConditionCheck(condition glib.IOCondition) glib.IO
 // ConditionTimedWait wraps g_socket_condition_timed_wait
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_condition_timed_wait.g_socket_condition_timed_wait.html
-//
 func (socket *SocketInstance) ConditionTimedWait(condition glib.IOCondition, timeoutUs int64, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 C.GIOCondition  // in, none, casted
@@ -40152,7 +38022,6 @@ func (socket *SocketInstance) ConditionTimedWait(condition glib.IOCondition, tim
 // ConditionWait wraps g_socket_condition_wait
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_condition_wait.g_socket_condition_wait.html
-//
 func (socket *SocketInstance) ConditionWait(condition glib.IOCondition, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 C.GIOCondition  // in, none, casted
@@ -40187,7 +38056,6 @@ func (socket *SocketInstance) ConditionWait(condition glib.IOCondition, cancella
 // ConnectSocket wraps g_socket_connect
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connect.g_socket_connect.html
-//
 func (socket *SocketInstance) ConnectSocket(address SocketAddress, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GSocket        // in, none, converted
 	var carg1 *C.GSocketAddress // in, none, converted
@@ -40222,7 +38090,6 @@ func (socket *SocketInstance) ConnectSocket(address SocketAddress, cancellable C
 // ConnectionFactoryCreateConnection wraps g_socket_connection_factory_create_connection
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_factory_create_connection.g_socket_connection_factory_create_connection.html
-//
 func (socket *SocketInstance) ConnectionFactoryCreateConnection() SocketConnection {
 	var carg0 *C.GSocket           // in, none, converted
 	var cret  *C.GSocketConnection // return, full, converted
@@ -40242,7 +38109,6 @@ func (socket *SocketInstance) ConnectionFactoryCreateConnection() SocketConnecti
 // GetAvailableBytes wraps g_socket_get_available_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_available_bytes.g_socket_get_available_bytes.html
-//
 func (socket *SocketInstance) GetAvailableBytes() int {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gssize   // return, none, casted
@@ -40262,7 +38128,6 @@ func (socket *SocketInstance) GetAvailableBytes() int {
 // GetBlocking wraps g_socket_get_blocking
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_blocking.g_socket_get_blocking.html
-//
 func (socket *SocketInstance) GetBlocking() bool {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40284,7 +38149,6 @@ func (socket *SocketInstance) GetBlocking() bool {
 // GetBroadcast wraps g_socket_get_broadcast
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_broadcast.g_socket_get_broadcast.html
-//
 func (socket *SocketInstance) GetBroadcast() bool {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40306,7 +38170,6 @@ func (socket *SocketInstance) GetBroadcast() bool {
 // GetCredentials wraps g_socket_get_credentials
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_credentials.g_socket_get_credentials.html
-//
 func (socket *SocketInstance) GetCredentials() (Credentials, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var cret  *C.GCredentials // return, full, converted
@@ -40331,7 +38194,6 @@ func (socket *SocketInstance) GetCredentials() (Credentials, error) {
 // GetFamily wraps g_socket_get_family
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_family.g_socket_get_family.html
-//
 func (socket *SocketInstance) GetFamily() SocketFamily {
 	var carg0 *C.GSocket      // in, none, converted
 	var cret  C.GSocketFamily // return, none, casted
@@ -40351,7 +38213,6 @@ func (socket *SocketInstance) GetFamily() SocketFamily {
 // GetFd wraps g_socket_get_fd
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_fd.g_socket_get_fd.html
-//
 func (socket *SocketInstance) GetFd() int32 {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.int      // return, none, casted
@@ -40371,7 +38232,6 @@ func (socket *SocketInstance) GetFd() int32 {
 // GetKeepalive wraps g_socket_get_keepalive
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_keepalive.g_socket_get_keepalive.html
-//
 func (socket *SocketInstance) GetKeepalive() bool {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40393,7 +38253,6 @@ func (socket *SocketInstance) GetKeepalive() bool {
 // GetListenBacklog wraps g_socket_get_listen_backlog
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_listen_backlog.g_socket_get_listen_backlog.html
-//
 func (socket *SocketInstance) GetListenBacklog() int32 {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gint     // return, none, casted
@@ -40413,7 +38272,6 @@ func (socket *SocketInstance) GetListenBacklog() int32 {
 // GetLocalAddress wraps g_socket_get_local_address
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_local_address.g_socket_get_local_address.html
-//
 func (socket *SocketInstance) GetLocalAddress() (SocketAddress, error) {
 	var carg0 *C.GSocket        // in, none, converted
 	var cret  *C.GSocketAddress // return, full, converted
@@ -40438,7 +38296,6 @@ func (socket *SocketInstance) GetLocalAddress() (SocketAddress, error) {
 // GetMulticastLoopback wraps g_socket_get_multicast_loopback
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_multicast_loopback.g_socket_get_multicast_loopback.html
-//
 func (socket *SocketInstance) GetMulticastLoopback() bool {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40460,7 +38317,6 @@ func (socket *SocketInstance) GetMulticastLoopback() bool {
 // GetMulticastTtl wraps g_socket_get_multicast_ttl
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_multicast_ttl.g_socket_get_multicast_ttl.html
-//
 func (socket *SocketInstance) GetMulticastTtl() uint {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.guint    // return, none, casted
@@ -40480,7 +38336,6 @@ func (socket *SocketInstance) GetMulticastTtl() uint {
 // GetOption wraps g_socket_get_option
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_option.g_socket_get_option.html
-//
 func (socket *SocketInstance) GetOption(level int32, optname int32) (int32, bool, error) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gint     // in, none, casted
@@ -40516,7 +38371,6 @@ func (socket *SocketInstance) GetOption(level int32, optname int32) (int32, bool
 // GetProtocol wraps g_socket_get_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_protocol.g_socket_get_protocol.html
-//
 func (socket *SocketInstance) GetProtocol() SocketProtocol {
 	var carg0 *C.GSocket        // in, none, converted
 	var cret  C.GSocketProtocol // return, none, casted
@@ -40536,7 +38390,6 @@ func (socket *SocketInstance) GetProtocol() SocketProtocol {
 // GetRemoteAddress wraps g_socket_get_remote_address
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_remote_address.g_socket_get_remote_address.html
-//
 func (socket *SocketInstance) GetRemoteAddress() (SocketAddress, error) {
 	var carg0 *C.GSocket        // in, none, converted
 	var cret  *C.GSocketAddress // return, full, converted
@@ -40561,7 +38414,6 @@ func (socket *SocketInstance) GetRemoteAddress() (SocketAddress, error) {
 // GetSocketType wraps g_socket_get_socket_type
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_socket_type.g_socket_get_socket_type.html
-//
 func (socket *SocketInstance) GetSocketType() SocketType {
 	var carg0 *C.GSocket    // in, none, converted
 	var cret  C.GSocketType // return, none, casted
@@ -40581,7 +38433,6 @@ func (socket *SocketInstance) GetSocketType() SocketType {
 // GetTimeout wraps g_socket_get_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_timeout.g_socket_get_timeout.html
-//
 func (socket *SocketInstance) GetTimeout() uint {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.guint    // return, none, casted
@@ -40601,7 +38452,6 @@ func (socket *SocketInstance) GetTimeout() uint {
 // GetTtl wraps g_socket_get_ttl
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_get_ttl.g_socket_get_ttl.html
-//
 func (socket *SocketInstance) GetTtl() uint {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.guint    // return, none, casted
@@ -40621,7 +38471,6 @@ func (socket *SocketInstance) GetTtl() uint {
 // IsClosed wraps g_socket_is_closed
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_is_closed.g_socket_is_closed.html
-//
 func (socket *SocketInstance) IsClosed() bool {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40643,7 +38492,6 @@ func (socket *SocketInstance) IsClosed() bool {
 // IsConnected wraps g_socket_is_connected
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_is_connected.g_socket_is_connected.html
-//
 func (socket *SocketInstance) IsConnected() bool {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40665,7 +38513,6 @@ func (socket *SocketInstance) IsConnected() bool {
 // JoinMulticastGroup wraps g_socket_join_multicast_group
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_join_multicast_group.g_socket_join_multicast_group.html
-//
 func (socket *SocketInstance) JoinMulticastGroup(group InetAddress, sourceSpecific bool, iface string) (bool, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 *C.GInetAddress // in, none, converted
@@ -40706,7 +38553,6 @@ func (socket *SocketInstance) JoinMulticastGroup(group InetAddress, sourceSpecif
 // JoinMulticastGroupSsm wraps g_socket_join_multicast_group_ssm
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_join_multicast_group_ssm.g_socket_join_multicast_group_ssm.html
-//
 func (socket *SocketInstance) JoinMulticastGroupSsm(group InetAddress, sourceSpecific InetAddress, iface string) (bool, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 *C.GInetAddress // in, none, converted
@@ -40747,7 +38593,6 @@ func (socket *SocketInstance) JoinMulticastGroupSsm(group InetAddress, sourceSpe
 // LeaveMulticastGroup wraps g_socket_leave_multicast_group
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_leave_multicast_group.g_socket_leave_multicast_group.html
-//
 func (socket *SocketInstance) LeaveMulticastGroup(group InetAddress, sourceSpecific bool, iface string) (bool, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 *C.GInetAddress // in, none, converted
@@ -40788,7 +38633,6 @@ func (socket *SocketInstance) LeaveMulticastGroup(group InetAddress, sourceSpeci
 // LeaveMulticastGroupSsm wraps g_socket_leave_multicast_group_ssm
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_leave_multicast_group_ssm.g_socket_leave_multicast_group_ssm.html
-//
 func (socket *SocketInstance) LeaveMulticastGroupSsm(group InetAddress, sourceSpecific InetAddress, iface string) (bool, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 *C.GInetAddress // in, none, converted
@@ -40829,7 +38673,6 @@ func (socket *SocketInstance) LeaveMulticastGroupSsm(group InetAddress, sourceSp
 // Listen wraps g_socket_listen
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listen.g_socket_listen.html
-//
 func (socket *SocketInstance) Listen() (bool, error) {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -40856,7 +38699,6 @@ func (socket *SocketInstance) Listen() (bool, error) {
 // ReceiveBytes wraps g_socket_receive_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_receive_bytes.g_socket_receive_bytes.html
-//
 func (socket *SocketInstance) ReceiveBytes(size uint, timeoutUs int64, cancellable Cancellable) (*glib.Bytes, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 C.gsize         // in, none, casted
@@ -40892,7 +38734,6 @@ func (socket *SocketInstance) ReceiveBytes(size uint, timeoutUs int64, cancellab
 // ReceiveBytesFrom wraps g_socket_receive_bytes_from
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_receive_bytes_from.g_socket_receive_bytes_from.html
-//
 func (socket *SocketInstance) ReceiveBytesFrom(size uint, timeoutUs int64, cancellable Cancellable) (SocketAddress, *glib.Bytes, error) {
 	var carg0 *C.GSocket        // in, none, converted
 	var carg2 C.gsize           // in, none, casted
@@ -40931,7 +38772,6 @@ func (socket *SocketInstance) ReceiveBytesFrom(size uint, timeoutUs int64, cance
 // ReceiveMessages wraps g_socket_receive_messages
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_receive_messages.g_socket_receive_messages.html
-//
 func (socket *SocketInstance) ReceiveMessages(messages []InputMessage, flags int32, cancellable Cancellable) (int32, error) {
 	var carg0 *C.GSocket       // in, none, converted
 	var carg1 *C.GInputMessage // in, transfer: none, C Pointers: 1, Name: array[InputMessage], array (inner GInputMessage (*typesystem.Record), length-by: carg2)
@@ -40971,7 +38811,6 @@ func (socket *SocketInstance) ReceiveMessages(messages []InputMessage, flags int
 // Send wraps g_socket_send
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_send.g_socket_send.html
-//
 func (socket *SocketInstance) Send(buffer string, cancellable Cancellable) (int, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 *C.gchar        // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -41008,7 +38847,6 @@ func (socket *SocketInstance) Send(buffer string, cancellable Cancellable) (int,
 // SendMessage wraps g_socket_send_message
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_send_message.g_socket_send_message.html
-//
 func (socket *SocketInstance) SendMessage(address SocketAddress, vectors []OutputVector, messages []SocketControlMessage, flags int32, cancellable Cancellable) (int, error) {
 	var carg0 *C.GSocket                // in, none, converted
 	var carg1 *C.GSocketAddress         // in, none, converted, nullable
@@ -41060,7 +38898,6 @@ func (socket *SocketInstance) SendMessage(address SocketAddress, vectors []Outpu
 // SendMessageWithTimeout wraps g_socket_send_message_with_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_send_message_with_timeout.g_socket_send_message_with_timeout.html
-//
 func (socket *SocketInstance) SendMessageWithTimeout(address SocketAddress, vectors []OutputVector, messages []SocketControlMessage, flags int32, timeoutUs int64, cancellable Cancellable) (uint, PollableReturn, error) {
 	var carg0 *C.GSocket                // in, none, converted
 	var carg1 *C.GSocketAddress         // in, none, converted, nullable
@@ -41118,7 +38955,6 @@ func (socket *SocketInstance) SendMessageWithTimeout(address SocketAddress, vect
 // SendMessages wraps g_socket_send_messages
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_send_messages.g_socket_send_messages.html
-//
 func (socket *SocketInstance) SendMessages(messages []OutputMessage, flags int32, cancellable Cancellable) (int32, error) {
 	var carg0 *C.GSocket        // in, none, converted
 	var carg1 *C.GOutputMessage // in, transfer: none, C Pointers: 1, Name: array[OutputMessage], array (inner GOutputMessage (*typesystem.Record), length-by: carg2)
@@ -41158,7 +38994,6 @@ func (socket *SocketInstance) SendMessages(messages []OutputMessage, flags int32
 // SendTo wraps g_socket_send_to
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_send_to.g_socket_send_to.html
-//
 func (socket *SocketInstance) SendTo(address SocketAddress, buffer string, cancellable Cancellable) (int, error) {
 	var carg0 *C.GSocket        // in, none, converted
 	var carg1 *C.GSocketAddress // in, none, converted, nullable
@@ -41200,7 +39035,6 @@ func (socket *SocketInstance) SendTo(address SocketAddress, buffer string, cance
 // SendWithBlocking wraps g_socket_send_with_blocking
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_send_with_blocking.g_socket_send_with_blocking.html
-//
 func (socket *SocketInstance) SendWithBlocking(buffer string, blocking bool, cancellable Cancellable) (int, error) {
 	var carg0 *C.GSocket      // in, none, converted
 	var carg1 *C.gchar        // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg2)
@@ -41242,7 +39076,6 @@ func (socket *SocketInstance) SendWithBlocking(buffer string, blocking bool, can
 // SetBlocking wraps g_socket_set_blocking
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_blocking.g_socket_set_blocking.html
-//
 func (socket *SocketInstance) SetBlocking(blocking bool) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gboolean // in
@@ -41260,7 +39093,6 @@ func (socket *SocketInstance) SetBlocking(blocking bool) {
 // SetBroadcast wraps g_socket_set_broadcast
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_broadcast.g_socket_set_broadcast.html
-//
 func (socket *SocketInstance) SetBroadcast(broadcast bool) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gboolean // in
@@ -41278,7 +39110,6 @@ func (socket *SocketInstance) SetBroadcast(broadcast bool) {
 // SetKeepalive wraps g_socket_set_keepalive
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_keepalive.g_socket_set_keepalive.html
-//
 func (socket *SocketInstance) SetKeepalive(keepalive bool) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gboolean // in
@@ -41296,7 +39127,6 @@ func (socket *SocketInstance) SetKeepalive(keepalive bool) {
 // SetListenBacklog wraps g_socket_set_listen_backlog
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_listen_backlog.g_socket_set_listen_backlog.html
-//
 func (socket *SocketInstance) SetListenBacklog(backlog int32) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gint     // in, none, casted
@@ -41312,7 +39142,6 @@ func (socket *SocketInstance) SetListenBacklog(backlog int32) {
 // SetMulticastLoopback wraps g_socket_set_multicast_loopback
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_multicast_loopback.g_socket_set_multicast_loopback.html
-//
 func (socket *SocketInstance) SetMulticastLoopback(loopback bool) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gboolean // in
@@ -41330,7 +39159,6 @@ func (socket *SocketInstance) SetMulticastLoopback(loopback bool) {
 // SetMulticastTtl wraps g_socket_set_multicast_ttl
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_multicast_ttl.g_socket_set_multicast_ttl.html
-//
 func (socket *SocketInstance) SetMulticastTtl(ttl uint) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.guint    // in, none, casted
@@ -41346,7 +39174,6 @@ func (socket *SocketInstance) SetMulticastTtl(ttl uint) {
 // SetOption wraps g_socket_set_option
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_option.g_socket_set_option.html
-//
 func (socket *SocketInstance) SetOption(level int32, optname int32, value int32) (bool, error) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gint     // in, none, casted
@@ -41382,7 +39209,6 @@ func (socket *SocketInstance) SetOption(level int32, optname int32, value int32)
 // SetTimeout wraps g_socket_set_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_timeout.g_socket_set_timeout.html
-//
 func (socket *SocketInstance) SetTimeout(timeout uint) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.guint    // in, none, casted
@@ -41398,7 +39224,6 @@ func (socket *SocketInstance) SetTimeout(timeout uint) {
 // SetTtl wraps g_socket_set_ttl
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_set_ttl.g_socket_set_ttl.html
-//
 func (socket *SocketInstance) SetTtl(ttl uint) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.guint    // in, none, casted
@@ -41414,7 +39239,6 @@ func (socket *SocketInstance) SetTtl(ttl uint) {
 // Shutdown wraps g_socket_shutdown
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_shutdown.g_socket_shutdown.html
-//
 func (socket *SocketInstance) Shutdown(shutdownRead bool, shutdownWrite bool) (bool, error) {
 	var carg0 *C.GSocket // in, none, converted
 	var carg1 C.gboolean // in
@@ -41451,7 +39275,6 @@ func (socket *SocketInstance) Shutdown(shutdownRead bool, shutdownWrite bool) (b
 // SpeaksIpv4 wraps g_socket_speaks_ipv4
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_speaks_ipv4.g_socket_speaks_ipv4.html
-//
 func (socket *SocketInstance) SpeaksIpv4() bool {
 	var carg0 *C.GSocket // in, none, converted
 	var cret  C.gboolean // return
@@ -41521,7 +39344,6 @@ var _ SocketAddress = (*SocketAddressInstance)(nil)
 // SocketAddress wraps GSocketAddress
 // 
 // see also https://docs.gtk.org/gio/class.SocketAddress.html
-//
 type SocketAddress interface {
 	gobject.Object
 	upcastToGSocketAddress() *SocketAddressInstance
@@ -41529,12 +39351,10 @@ type SocketAddress interface {
 	// GetFamily wraps g_socket_address_get_family
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_address_get_family.g_socket_address_get_family.html
-	//
 	GetFamily() SocketFamily
 	// GetNativeSize wraps g_socket_address_get_native_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_address_get_native_size.g_socket_address_get_native_size.html
-	//
 	GetNativeSize() int
 
 	// chain up virtual methods:
@@ -41602,7 +39422,6 @@ func UnsafeSocketAddressToGlibFull(c SocketAddress) unsafe.Pointer {
 // GetFamily wraps g_socket_address_get_family
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_address_get_family.g_socket_address_get_family.html
-//
 func (address *SocketAddressInstance) GetFamily() SocketFamily {
 	var carg0 *C.GSocketAddress // in, none, converted
 	var cret  C.GSocketFamily   // return, none, casted
@@ -41622,7 +39441,6 @@ func (address *SocketAddressInstance) GetFamily() SocketFamily {
 // GetNativeSize wraps g_socket_address_get_native_size
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_address_get_native_size.g_socket_address_get_native_size.html
-//
 func (address *SocketAddressInstance) GetNativeSize() int {
 	var carg0 *C.GSocketAddress // in, none, converted
 	var cret  C.gssize          // return, none, casted
@@ -41784,7 +39602,6 @@ var _ SocketAddressEnumerator = (*SocketAddressEnumeratorInstance)(nil)
 // SocketAddressEnumerator wraps GSocketAddressEnumerator
 // 
 // see also https://docs.gtk.org/gio/class.SocketAddressEnumerator.html
-//
 type SocketAddressEnumerator interface {
 	gobject.Object
 	upcastToGSocketAddressEnumerator() *SocketAddressEnumeratorInstance
@@ -41792,17 +39609,14 @@ type SocketAddressEnumerator interface {
 	// Next wraps g_socket_address_enumerator_next
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_address_enumerator_next.g_socket_address_enumerator_next.html
-	//
 	Next(Cancellable) (SocketAddress, error)
 	// NextAsync wraps g_socket_address_enumerator_next_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_address_enumerator_next_async.g_socket_address_enumerator_next_async.html
-	//
 	NextAsync(Cancellable, AsyncReadyCallback)
 	// NextFinish wraps g_socket_address_enumerator_next_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_address_enumerator_next_finish.g_socket_address_enumerator_next_finish.html
-	//
 	NextFinish(AsyncResult) (SocketAddress, error)
 
 	// chain up virtual methods:
@@ -41870,7 +39684,6 @@ func UnsafeSocketAddressEnumeratorToGlibFull(c SocketAddressEnumerator) unsafe.P
 // Next wraps g_socket_address_enumerator_next
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_address_enumerator_next.g_socket_address_enumerator_next.html
-//
 func (enumerator *SocketAddressEnumeratorInstance) Next(cancellable Cancellable) (SocketAddress, error) {
 	var carg0 *C.GSocketAddressEnumerator // in, none, converted
 	var carg1 *C.GCancellable             // in, none, converted, nullable
@@ -41902,7 +39715,6 @@ func (enumerator *SocketAddressEnumeratorInstance) Next(cancellable Cancellable)
 // NextAsync wraps g_socket_address_enumerator_next_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_address_enumerator_next_async.g_socket_address_enumerator_next_async.html
-//
 func (enumerator *SocketAddressEnumeratorInstance) NextAsync(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketAddressEnumerator // in, none, converted
 	var carg1 *C.GCancellable             // in, none, converted, nullable
@@ -41927,7 +39739,6 @@ func (enumerator *SocketAddressEnumeratorInstance) NextAsync(cancellable Cancell
 // NextFinish wraps g_socket_address_enumerator_next_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_address_enumerator_next_finish.g_socket_address_enumerator_next_finish.html
-//
 func (enumerator *SocketAddressEnumeratorInstance) NextFinish(result AsyncResult) (SocketAddress, error) {
 	var carg0 *C.GSocketAddressEnumerator // in, none, converted
 	var carg1 *C.GAsyncResult             // in, none, converted
@@ -42135,7 +39946,6 @@ var _ SocketClient = (*SocketClientInstance)(nil)
 // SocketClient wraps GSocketClient
 // 
 // see also https://docs.gtk.org/gio/class.SocketClient.html
-//
 type SocketClient interface {
 	gobject.Object
 	upcastToGSocketClient() *SocketClientInstance
@@ -42143,166 +39953,134 @@ type SocketClient interface {
 	// AddApplicationProxy wraps g_socket_client_add_application_proxy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_add_application_proxy.g_socket_client_add_application_proxy.html
-	//
 	AddApplicationProxy(string)
 	// ConnectSocketClient wraps g_socket_client_connect
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect.g_socket_client_connect.html
-	//
 	ConnectSocketClient(SocketConnectable, Cancellable) (SocketConnection, error)
 	// ConnectAsync wraps g_socket_client_connect_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_async.g_socket_client_connect_async.html
-	//
 	ConnectAsync(SocketConnectable, Cancellable, AsyncReadyCallback)
 	// ConnectFinish wraps g_socket_client_connect_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_finish.g_socket_client_connect_finish.html
-	//
 	ConnectFinish(AsyncResult) (SocketConnection, error)
 	// ConnectToHost wraps g_socket_client_connect_to_host
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_host.g_socket_client_connect_to_host.html
-	//
 	ConnectToHost(string, uint16, Cancellable) (SocketConnection, error)
 	// ConnectToHostAsync wraps g_socket_client_connect_to_host_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_host_async.g_socket_client_connect_to_host_async.html
-	//
 	ConnectToHostAsync(string, uint16, Cancellable, AsyncReadyCallback)
 	// ConnectToHostFinish wraps g_socket_client_connect_to_host_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_host_finish.g_socket_client_connect_to_host_finish.html
-	//
 	ConnectToHostFinish(AsyncResult) (SocketConnection, error)
 	// ConnectToService wraps g_socket_client_connect_to_service
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_service.g_socket_client_connect_to_service.html
-	//
 	ConnectToService(string, string, Cancellable) (SocketConnection, error)
 	// ConnectToServiceAsync wraps g_socket_client_connect_to_service_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_service_async.g_socket_client_connect_to_service_async.html
-	//
 	ConnectToServiceAsync(string, string, Cancellable, AsyncReadyCallback)
 	// ConnectToServiceFinish wraps g_socket_client_connect_to_service_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_service_finish.g_socket_client_connect_to_service_finish.html
-	//
 	ConnectToServiceFinish(AsyncResult) (SocketConnection, error)
 	// ConnectToURI wraps g_socket_client_connect_to_uri
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_uri.g_socket_client_connect_to_uri.html
-	//
 	ConnectToURI(string, uint16, Cancellable) (SocketConnection, error)
 	// ConnectToURIAsync wraps g_socket_client_connect_to_uri_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_uri_async.g_socket_client_connect_to_uri_async.html
-	//
 	ConnectToURIAsync(string, uint16, Cancellable, AsyncReadyCallback)
 	// ConnectToURIFinish wraps g_socket_client_connect_to_uri_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_uri_finish.g_socket_client_connect_to_uri_finish.html
-	//
 	ConnectToURIFinish(AsyncResult) (SocketConnection, error)
 	// GetEnableProxy wraps g_socket_client_get_enable_proxy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_enable_proxy.g_socket_client_get_enable_proxy.html
-	//
 	GetEnableProxy() bool
 	// GetFamily wraps g_socket_client_get_family
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_family.g_socket_client_get_family.html
-	//
 	GetFamily() SocketFamily
 	// GetLocalAddress wraps g_socket_client_get_local_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_local_address.g_socket_client_get_local_address.html
-	//
 	GetLocalAddress() SocketAddress
 	// GetProtocol wraps g_socket_client_get_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_protocol.g_socket_client_get_protocol.html
-	//
 	GetProtocol() SocketProtocol
 	// GetProxyResolver wraps g_socket_client_get_proxy_resolver
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_proxy_resolver.g_socket_client_get_proxy_resolver.html
-	//
 	GetProxyResolver() ProxyResolver
 	// GetSocketType wraps g_socket_client_get_socket_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_socket_type.g_socket_client_get_socket_type.html
-	//
 	GetSocketType() SocketType
 	// GetTimeout wraps g_socket_client_get_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_timeout.g_socket_client_get_timeout.html
-	//
 	GetTimeout() uint
 	// GetTls wraps g_socket_client_get_tls
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_tls.g_socket_client_get_tls.html
-	//
 	GetTls() bool
 	// GetTlsValidationFlags wraps g_socket_client_get_tls_validation_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_get_tls_validation_flags.g_socket_client_get_tls_validation_flags.html
 	//
-	//
-	// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+	// Deprecated: (since 2.72.0) see the provided link for the reason
 	GetTlsValidationFlags() TlsCertificateFlags
 	// SetEnableProxy wraps g_socket_client_set_enable_proxy
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_enable_proxy.g_socket_client_set_enable_proxy.html
-	//
 	SetEnableProxy(bool)
 	// SetFamily wraps g_socket_client_set_family
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_family.g_socket_client_set_family.html
-	//
 	SetFamily(SocketFamily)
 	// SetLocalAddress wraps g_socket_client_set_local_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_local_address.g_socket_client_set_local_address.html
-	//
 	SetLocalAddress(SocketAddress)
 	// SetProtocol wraps g_socket_client_set_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_protocol.g_socket_client_set_protocol.html
-	//
 	SetProtocol(SocketProtocol)
 	// SetProxyResolver wraps g_socket_client_set_proxy_resolver
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_proxy_resolver.g_socket_client_set_proxy_resolver.html
-	//
 	SetProxyResolver(ProxyResolver)
 	// SetSocketType wraps g_socket_client_set_socket_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_socket_type.g_socket_client_set_socket_type.html
-	//
 	SetSocketType(SocketType)
 	// SetTimeout wraps g_socket_client_set_timeout
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_timeout.g_socket_client_set_timeout.html
-	//
 	SetTimeout(uint)
 	// SetTls wraps g_socket_client_set_tls
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_tls.g_socket_client_set_tls.html
-	//
 	SetTls(bool)
 	// SetTlsValidationFlags wraps g_socket_client_set_tls_validation_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_client_set_tls_validation_flags.g_socket_client_set_tls_validation_flags.html
 	//
-	//
-	// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+	// Deprecated: (since 2.72.0) see the provided link for the reason
 	SetTlsValidationFlags(TlsCertificateFlags)
 	// ConnectEvent connects the provided callback to the "event" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.SocketClient.event.html
-	//
 	ConnectEvent(func(SocketClient, SocketClientEvent, SocketConnectable, IOStream)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -42365,7 +40143,6 @@ func UnsafeSocketClientToGlibFull(c SocketClient) unsafe.Pointer {
 // NewSocketClient wraps g_socket_client_new
 // 
 // see also https://docs.gtk.org/gio/func.g_socket_client_new.html
-//
 func NewSocketClient() SocketClient {
 	var cret *C.GSocketClient // return, full, converted
 
@@ -42381,7 +40158,6 @@ func NewSocketClient() SocketClient {
 // AddApplicationProxy wraps g_socket_client_add_application_proxy
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_add_application_proxy.g_socket_client_add_application_proxy.html
-//
 func (client *SocketClientInstance) AddApplicationProxy(protocol string) {
 	var carg0 *C.GSocketClient // in, none, converted
 	var carg1 *C.gchar         // in, none, string
@@ -42398,7 +40174,6 @@ func (client *SocketClientInstance) AddApplicationProxy(protocol string) {
 // ConnectSocketClient wraps g_socket_client_connect
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect.g_socket_client_connect.html
-//
 func (client *SocketClientInstance) ConnectSocketClient(connectable SocketConnectable, cancellable Cancellable) (SocketConnection, error) {
 	var carg0 *C.GSocketClient      // in, none, converted
 	var carg1 *C.GSocketConnectable // in, none, converted
@@ -42431,7 +40206,6 @@ func (client *SocketClientInstance) ConnectSocketClient(connectable SocketConnec
 // ConnectAsync wraps g_socket_client_connect_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_async.g_socket_client_connect_async.html
-//
 func (client *SocketClientInstance) ConnectAsync(connectable SocketConnectable, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketClient      // in, none, converted
 	var carg1 *C.GSocketConnectable // in, none, converted
@@ -42459,7 +40233,6 @@ func (client *SocketClientInstance) ConnectAsync(connectable SocketConnectable, 
 // ConnectFinish wraps g_socket_client_connect_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_finish.g_socket_client_connect_finish.html
-//
 func (client *SocketClientInstance) ConnectFinish(result AsyncResult) (SocketConnection, error) {
 	var carg0 *C.GSocketClient     // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -42487,7 +40260,6 @@ func (client *SocketClientInstance) ConnectFinish(result AsyncResult) (SocketCon
 // ConnectToHost wraps g_socket_client_connect_to_host
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_host.g_socket_client_connect_to_host.html
-//
 func (client *SocketClientInstance) ConnectToHost(hostAndPort string, defaultPort uint16, cancellable Cancellable) (SocketConnection, error) {
 	var carg0 *C.GSocketClient     // in, none, converted
 	var carg1 *C.gchar             // in, none, string
@@ -42524,7 +40296,6 @@ func (client *SocketClientInstance) ConnectToHost(hostAndPort string, defaultPor
 // ConnectToHostAsync wraps g_socket_client_connect_to_host_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_host_async.g_socket_client_connect_to_host_async.html
-//
 func (client *SocketClientInstance) ConnectToHostAsync(hostAndPort string, defaultPort uint16, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketClient      // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -42556,7 +40327,6 @@ func (client *SocketClientInstance) ConnectToHostAsync(hostAndPort string, defau
 // ConnectToHostFinish wraps g_socket_client_connect_to_host_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_host_finish.g_socket_client_connect_to_host_finish.html
-//
 func (client *SocketClientInstance) ConnectToHostFinish(result AsyncResult) (SocketConnection, error) {
 	var carg0 *C.GSocketClient     // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -42584,7 +40354,6 @@ func (client *SocketClientInstance) ConnectToHostFinish(result AsyncResult) (Soc
 // ConnectToService wraps g_socket_client_connect_to_service
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_service.g_socket_client_connect_to_service.html
-//
 func (client *SocketClientInstance) ConnectToService(domain string, service string, cancellable Cancellable) (SocketConnection, error) {
 	var carg0 *C.GSocketClient     // in, none, converted
 	var carg1 *C.gchar             // in, none, string
@@ -42622,7 +40391,6 @@ func (client *SocketClientInstance) ConnectToService(domain string, service stri
 // ConnectToServiceAsync wraps g_socket_client_connect_to_service_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_service_async.g_socket_client_connect_to_service_async.html
-//
 func (client *SocketClientInstance) ConnectToServiceAsync(domain string, service string, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketClient      // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -42655,7 +40423,6 @@ func (client *SocketClientInstance) ConnectToServiceAsync(domain string, service
 // ConnectToServiceFinish wraps g_socket_client_connect_to_service_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_service_finish.g_socket_client_connect_to_service_finish.html
-//
 func (client *SocketClientInstance) ConnectToServiceFinish(result AsyncResult) (SocketConnection, error) {
 	var carg0 *C.GSocketClient     // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -42683,7 +40450,6 @@ func (client *SocketClientInstance) ConnectToServiceFinish(result AsyncResult) (
 // ConnectToURI wraps g_socket_client_connect_to_uri
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_uri.g_socket_client_connect_to_uri.html
-//
 func (client *SocketClientInstance) ConnectToURI(uri string, defaultPort uint16, cancellable Cancellable) (SocketConnection, error) {
 	var carg0 *C.GSocketClient     // in, none, converted
 	var carg1 *C.gchar             // in, none, string
@@ -42720,7 +40486,6 @@ func (client *SocketClientInstance) ConnectToURI(uri string, defaultPort uint16,
 // ConnectToURIAsync wraps g_socket_client_connect_to_uri_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_uri_async.g_socket_client_connect_to_uri_async.html
-//
 func (client *SocketClientInstance) ConnectToURIAsync(uri string, defaultPort uint16, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketClient      // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -42752,7 +40517,6 @@ func (client *SocketClientInstance) ConnectToURIAsync(uri string, defaultPort ui
 // ConnectToURIFinish wraps g_socket_client_connect_to_uri_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_connect_to_uri_finish.g_socket_client_connect_to_uri_finish.html
-//
 func (client *SocketClientInstance) ConnectToURIFinish(result AsyncResult) (SocketConnection, error) {
 	var carg0 *C.GSocketClient     // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -42780,7 +40544,6 @@ func (client *SocketClientInstance) ConnectToURIFinish(result AsyncResult) (Sock
 // GetEnableProxy wraps g_socket_client_get_enable_proxy
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_enable_proxy.g_socket_client_get_enable_proxy.html
-//
 func (client *SocketClientInstance) GetEnableProxy() bool {
 	var carg0 *C.GSocketClient // in, none, converted
 	var cret  C.gboolean       // return
@@ -42802,7 +40565,6 @@ func (client *SocketClientInstance) GetEnableProxy() bool {
 // GetFamily wraps g_socket_client_get_family
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_family.g_socket_client_get_family.html
-//
 func (client *SocketClientInstance) GetFamily() SocketFamily {
 	var carg0 *C.GSocketClient // in, none, converted
 	var cret  C.GSocketFamily  // return, none, casted
@@ -42822,7 +40584,6 @@ func (client *SocketClientInstance) GetFamily() SocketFamily {
 // GetLocalAddress wraps g_socket_client_get_local_address
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_local_address.g_socket_client_get_local_address.html
-//
 func (client *SocketClientInstance) GetLocalAddress() SocketAddress {
 	var carg0 *C.GSocketClient  // in, none, converted
 	var cret  *C.GSocketAddress // return, none, converted, nullable
@@ -42844,7 +40605,6 @@ func (client *SocketClientInstance) GetLocalAddress() SocketAddress {
 // GetProtocol wraps g_socket_client_get_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_protocol.g_socket_client_get_protocol.html
-//
 func (client *SocketClientInstance) GetProtocol() SocketProtocol {
 	var carg0 *C.GSocketClient  // in, none, converted
 	var cret  C.GSocketProtocol // return, none, casted
@@ -42864,7 +40624,6 @@ func (client *SocketClientInstance) GetProtocol() SocketProtocol {
 // GetProxyResolver wraps g_socket_client_get_proxy_resolver
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_proxy_resolver.g_socket_client_get_proxy_resolver.html
-//
 func (client *SocketClientInstance) GetProxyResolver() ProxyResolver {
 	var carg0 *C.GSocketClient  // in, none, converted
 	var cret  *C.GProxyResolver // return, none, converted
@@ -42884,7 +40643,6 @@ func (client *SocketClientInstance) GetProxyResolver() ProxyResolver {
 // GetSocketType wraps g_socket_client_get_socket_type
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_socket_type.g_socket_client_get_socket_type.html
-//
 func (client *SocketClientInstance) GetSocketType() SocketType {
 	var carg0 *C.GSocketClient // in, none, converted
 	var cret  C.GSocketType    // return, none, casted
@@ -42904,7 +40662,6 @@ func (client *SocketClientInstance) GetSocketType() SocketType {
 // GetTimeout wraps g_socket_client_get_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_timeout.g_socket_client_get_timeout.html
-//
 func (client *SocketClientInstance) GetTimeout() uint {
 	var carg0 *C.GSocketClient // in, none, converted
 	var cret  C.guint          // return, none, casted
@@ -42924,7 +40681,6 @@ func (client *SocketClientInstance) GetTimeout() uint {
 // GetTls wraps g_socket_client_get_tls
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_tls.g_socket_client_get_tls.html
-//
 func (client *SocketClientInstance) GetTls() bool {
 	var carg0 *C.GSocketClient // in, none, converted
 	var cret  C.gboolean       // return
@@ -42947,8 +40703,7 @@ func (client *SocketClientInstance) GetTls() bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_get_tls_validation_flags.g_socket_client_get_tls_validation_flags.html
 //
-//
-// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+// Deprecated: (since 2.72.0) see the provided link for the reason
 func (client *SocketClientInstance) GetTlsValidationFlags() TlsCertificateFlags {
 	var carg0 *C.GSocketClient       // in, none, converted
 	var cret  C.GTlsCertificateFlags // return, none, casted
@@ -42968,7 +40723,6 @@ func (client *SocketClientInstance) GetTlsValidationFlags() TlsCertificateFlags 
 // SetEnableProxy wraps g_socket_client_set_enable_proxy
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_enable_proxy.g_socket_client_set_enable_proxy.html
-//
 func (client *SocketClientInstance) SetEnableProxy(enable bool) {
 	var carg0 *C.GSocketClient // in, none, converted
 	var carg1 C.gboolean       // in
@@ -42986,7 +40740,6 @@ func (client *SocketClientInstance) SetEnableProxy(enable bool) {
 // SetFamily wraps g_socket_client_set_family
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_family.g_socket_client_set_family.html
-//
 func (client *SocketClientInstance) SetFamily(family SocketFamily) {
 	var carg0 *C.GSocketClient // in, none, converted
 	var carg1 C.GSocketFamily  // in, none, casted
@@ -43002,7 +40755,6 @@ func (client *SocketClientInstance) SetFamily(family SocketFamily) {
 // SetLocalAddress wraps g_socket_client_set_local_address
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_local_address.g_socket_client_set_local_address.html
-//
 func (client *SocketClientInstance) SetLocalAddress(address SocketAddress) {
 	var carg0 *C.GSocketClient  // in, none, converted
 	var carg1 *C.GSocketAddress // in, none, converted, nullable
@@ -43020,7 +40772,6 @@ func (client *SocketClientInstance) SetLocalAddress(address SocketAddress) {
 // SetProtocol wraps g_socket_client_set_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_protocol.g_socket_client_set_protocol.html
-//
 func (client *SocketClientInstance) SetProtocol(protocol SocketProtocol) {
 	var carg0 *C.GSocketClient  // in, none, converted
 	var carg1 C.GSocketProtocol // in, none, casted
@@ -43036,7 +40787,6 @@ func (client *SocketClientInstance) SetProtocol(protocol SocketProtocol) {
 // SetProxyResolver wraps g_socket_client_set_proxy_resolver
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_proxy_resolver.g_socket_client_set_proxy_resolver.html
-//
 func (client *SocketClientInstance) SetProxyResolver(proxyResolver ProxyResolver) {
 	var carg0 *C.GSocketClient  // in, none, converted
 	var carg1 *C.GProxyResolver // in, none, converted, nullable
@@ -43054,7 +40804,6 @@ func (client *SocketClientInstance) SetProxyResolver(proxyResolver ProxyResolver
 // SetSocketType wraps g_socket_client_set_socket_type
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_socket_type.g_socket_client_set_socket_type.html
-//
 func (client *SocketClientInstance) SetSocketType(typ SocketType) {
 	var carg0 *C.GSocketClient // in, none, converted
 	var carg1 C.GSocketType    // in, none, casted
@@ -43070,7 +40819,6 @@ func (client *SocketClientInstance) SetSocketType(typ SocketType) {
 // SetTimeout wraps g_socket_client_set_timeout
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_timeout.g_socket_client_set_timeout.html
-//
 func (client *SocketClientInstance) SetTimeout(timeout uint) {
 	var carg0 *C.GSocketClient // in, none, converted
 	var carg1 C.guint          // in, none, casted
@@ -43086,7 +40834,6 @@ func (client *SocketClientInstance) SetTimeout(timeout uint) {
 // SetTls wraps g_socket_client_set_tls
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_tls.g_socket_client_set_tls.html
-//
 func (client *SocketClientInstance) SetTls(tls bool) {
 	var carg0 *C.GSocketClient // in, none, converted
 	var carg1 C.gboolean       // in
@@ -43105,8 +40852,7 @@ func (client *SocketClientInstance) SetTls(tls bool) {
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_client_set_tls_validation_flags.g_socket_client_set_tls_validation_flags.html
 //
-//
-// Deprecated: (since 2.72.0) Do not attempt to ignore validation errors.
+// Deprecated: (since 2.72.0) see the provided link for the reason
 func (client *SocketClientInstance) SetTlsValidationFlags(flags TlsCertificateFlags) {
 	var carg0 *C.GSocketClient       // in, none, converted
 	var carg1 C.GTlsCertificateFlags // in, none, casted
@@ -43122,7 +40868,6 @@ func (client *SocketClientInstance) SetTlsValidationFlags(flags TlsCertificateFl
 // ConnectEvent connects the provided callback to the "event" signal
 // 
 // see also https://docs.gtk.org/gio/signal.SocketClient.event.html
-//
 func (o *SocketClientInstance) ConnectEvent(fn func(SocketClient, SocketClientEvent, SocketConnectable, IOStream)) gobject.SignalHandle {
 	return o.Connect("event", fn)
 }
@@ -43229,7 +40974,6 @@ var _ SocketConnection = (*SocketConnectionInstance)(nil)
 // SocketConnection wraps GSocketConnection
 // 
 // see also https://docs.gtk.org/gio/class.SocketConnection.html
-//
 type SocketConnection interface {
 	IOStream
 	upcastToGSocketConnection() *SocketConnectionInstance
@@ -43237,37 +40981,30 @@ type SocketConnection interface {
 	// ConnectSocketConnection wraps g_socket_connection_connect
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_connect.g_socket_connection_connect.html
-	//
 	ConnectSocketConnection(SocketAddress, Cancellable) (bool, error)
 	// ConnectAsync wraps g_socket_connection_connect_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_connect_async.g_socket_connection_connect_async.html
-	//
 	ConnectAsync(SocketAddress, Cancellable, AsyncReadyCallback)
 	// ConnectFinish wraps g_socket_connection_connect_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_connect_finish.g_socket_connection_connect_finish.html
-	//
 	ConnectFinish(AsyncResult) (bool, error)
 	// GetLocalAddress wraps g_socket_connection_get_local_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_get_local_address.g_socket_connection_get_local_address.html
-	//
 	GetLocalAddress() (SocketAddress, error)
 	// GetRemoteAddress wraps g_socket_connection_get_remote_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_get_remote_address.g_socket_connection_get_remote_address.html
-	//
 	GetRemoteAddress() (SocketAddress, error)
 	// GetSocket wraps g_socket_connection_get_socket
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_get_socket.g_socket_connection_get_socket.html
-	//
 	GetSocket() Socket
 	// IsConnected wraps g_socket_connection_is_connected
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_connection_is_connected.g_socket_connection_is_connected.html
-	//
 	IsConnected() bool
 
 	// chain up virtual methods:
@@ -43326,7 +41063,6 @@ func UnsafeSocketConnectionToGlibFull(c SocketConnection) unsafe.Pointer {
 // SocketConnectionFactoryLookupType wraps g_socket_connection_factory_lookup_type
 // 
 // see also https://docs.gtk.org/gio/func.g_socket_connection_factory_lookup_type.html
-//
 func SocketConnectionFactoryLookupType(family SocketFamily, typ SocketType, protocolId int32) gobject.Type {
 	var carg1 C.GSocketFamily // in, none, casted
 	var carg2 C.GSocketType   // in, none, casted
@@ -43352,7 +41088,6 @@ func SocketConnectionFactoryLookupType(family SocketFamily, typ SocketType, prot
 // SocketConnectionFactoryRegisterType wraps g_socket_connection_factory_register_type
 // 
 // see also https://docs.gtk.org/gio/func.g_socket_connection_factory_register_type.html
-//
 func SocketConnectionFactoryRegisterType(gType gobject.Type, family SocketFamily, typ SocketType, protocol int32) {
 	var carg1 C.GType         // in, none, casted, alias
 	var carg2 C.GSocketFamily // in, none, casted
@@ -43374,7 +41109,6 @@ func SocketConnectionFactoryRegisterType(gType gobject.Type, family SocketFamily
 // ConnectSocketConnection wraps g_socket_connection_connect
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_connect.g_socket_connection_connect.html
-//
 func (connection *SocketConnectionInstance) ConnectSocketConnection(address SocketAddress, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GSocketConnection // in, none, converted
 	var carg1 *C.GSocketAddress    // in, none, converted
@@ -43409,7 +41143,6 @@ func (connection *SocketConnectionInstance) ConnectSocketConnection(address Sock
 // ConnectAsync wraps g_socket_connection_connect_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_connect_async.g_socket_connection_connect_async.html
-//
 func (connection *SocketConnectionInstance) ConnectAsync(address SocketAddress, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketConnection  // in, none, converted
 	var carg1 *C.GSocketAddress     // in, none, converted
@@ -43437,7 +41170,6 @@ func (connection *SocketConnectionInstance) ConnectAsync(address SocketAddress, 
 // ConnectFinish wraps g_socket_connection_connect_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_connect_finish.g_socket_connection_connect_finish.html
-//
 func (connection *SocketConnectionInstance) ConnectFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GSocketConnection // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -43467,7 +41199,6 @@ func (connection *SocketConnectionInstance) ConnectFinish(result AsyncResult) (b
 // GetLocalAddress wraps g_socket_connection_get_local_address
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_get_local_address.g_socket_connection_get_local_address.html
-//
 func (connection *SocketConnectionInstance) GetLocalAddress() (SocketAddress, error) {
 	var carg0 *C.GSocketConnection // in, none, converted
 	var cret  *C.GSocketAddress    // return, full, converted
@@ -43492,7 +41223,6 @@ func (connection *SocketConnectionInstance) GetLocalAddress() (SocketAddress, er
 // GetRemoteAddress wraps g_socket_connection_get_remote_address
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_get_remote_address.g_socket_connection_get_remote_address.html
-//
 func (connection *SocketConnectionInstance) GetRemoteAddress() (SocketAddress, error) {
 	var carg0 *C.GSocketConnection // in, none, converted
 	var cret  *C.GSocketAddress    // return, full, converted
@@ -43517,7 +41247,6 @@ func (connection *SocketConnectionInstance) GetRemoteAddress() (SocketAddress, e
 // GetSocket wraps g_socket_connection_get_socket
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_get_socket.g_socket_connection_get_socket.html
-//
 func (connection *SocketConnectionInstance) GetSocket() Socket {
 	var carg0 *C.GSocketConnection // in, none, converted
 	var cret  *C.GSocket           // return, none, converted
@@ -43537,7 +41266,6 @@ func (connection *SocketConnectionInstance) GetSocket() Socket {
 // IsConnected wraps g_socket_connection_is_connected
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_connection_is_connected.g_socket_connection_is_connected.html
-//
 func (connection *SocketConnectionInstance) IsConnected() bool {
 	var carg0 *C.GSocketConnection // in, none, converted
 	var cret  C.gboolean           // return
@@ -43607,7 +41335,6 @@ var _ SocketControlMessage = (*SocketControlMessageInstance)(nil)
 // SocketControlMessage wraps GSocketControlMessage
 // 
 // see also https://docs.gtk.org/gio/class.SocketControlMessage.html
-//
 type SocketControlMessage interface {
 	gobject.Object
 	upcastToGSocketControlMessage() *SocketControlMessageInstance
@@ -43615,17 +41342,14 @@ type SocketControlMessage interface {
 	// GetLevel wraps g_socket_control_message_get_level
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_control_message_get_level.g_socket_control_message_get_level.html
-	//
 	GetLevel() int32
 	// GetMsgType wraps g_socket_control_message_get_msg_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_control_message_get_msg_type.g_socket_control_message_get_msg_type.html
-	//
 	GetMsgType() int32
 	// GetSize wraps g_socket_control_message_get_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_control_message_get_size.g_socket_control_message_get_size.html
-	//
 	GetSize() uint
 
 	// chain up virtual methods:
@@ -43698,7 +41422,6 @@ func UnsafeSocketControlMessageToGlibFull(c SocketControlMessage) unsafe.Pointer
 // GetLevel wraps g_socket_control_message_get_level
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_control_message_get_level.g_socket_control_message_get_level.html
-//
 func (message *SocketControlMessageInstance) GetLevel() int32 {
 	var carg0 *C.GSocketControlMessage // in, none, converted
 	var cret  C.int                    // return, none, casted
@@ -43718,7 +41441,6 @@ func (message *SocketControlMessageInstance) GetLevel() int32 {
 // GetMsgType wraps g_socket_control_message_get_msg_type
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_control_message_get_msg_type.g_socket_control_message_get_msg_type.html
-//
 func (message *SocketControlMessageInstance) GetMsgType() int32 {
 	var carg0 *C.GSocketControlMessage // in, none, converted
 	var cret  C.int                    // return, none, casted
@@ -43738,7 +41460,6 @@ func (message *SocketControlMessageInstance) GetMsgType() int32 {
 // GetSize wraps g_socket_control_message_get_size
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_control_message_get_size.g_socket_control_message_get_size.html
-//
 func (message *SocketControlMessageInstance) GetSize() uint {
 	var carg0 *C.GSocketControlMessage // in, none, converted
 	var cret  C.gsize                  // return, none, casted
@@ -43946,7 +41667,6 @@ var _ SocketListener = (*SocketListenerInstance)(nil)
 // SocketListener wraps GSocketListener
 // 
 // see also https://docs.gtk.org/gio/class.SocketListener.html
-//
 type SocketListener interface {
 	gobject.Object
 	upcastToGSocketListener() *SocketListenerInstance
@@ -43954,67 +41674,54 @@ type SocketListener interface {
 	// Accept wraps g_socket_listener_accept
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_accept.g_socket_listener_accept.html
-	//
 	Accept(Cancellable) (gobject.Object, SocketConnection, error)
 	// AcceptAsync wraps g_socket_listener_accept_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_accept_async.g_socket_listener_accept_async.html
-	//
 	AcceptAsync(Cancellable, AsyncReadyCallback)
 	// AcceptFinish wraps g_socket_listener_accept_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_accept_finish.g_socket_listener_accept_finish.html
-	//
 	AcceptFinish(AsyncResult) (gobject.Object, SocketConnection, error)
 	// AcceptSocket wraps g_socket_listener_accept_socket
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_accept_socket.g_socket_listener_accept_socket.html
-	//
 	AcceptSocket(Cancellable) (gobject.Object, Socket, error)
 	// AcceptSocketAsync wraps g_socket_listener_accept_socket_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_accept_socket_async.g_socket_listener_accept_socket_async.html
-	//
 	AcceptSocketAsync(Cancellable, AsyncReadyCallback)
 	// AcceptSocketFinish wraps g_socket_listener_accept_socket_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_accept_socket_finish.g_socket_listener_accept_socket_finish.html
-	//
 	AcceptSocketFinish(AsyncResult) (gobject.Object, Socket, error)
 	// AddAddress wraps g_socket_listener_add_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_add_address.g_socket_listener_add_address.html
-	//
 	AddAddress(SocketAddress, SocketType, SocketProtocol, gobject.Object) (SocketAddress, bool, error)
 	// AddAnyInetPort wraps g_socket_listener_add_any_inet_port
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_add_any_inet_port.g_socket_listener_add_any_inet_port.html
-	//
 	AddAnyInetPort(gobject.Object) (uint16, error)
 	// AddInetPort wraps g_socket_listener_add_inet_port
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_add_inet_port.g_socket_listener_add_inet_port.html
-	//
 	AddInetPort(uint16, gobject.Object) (bool, error)
 	// AddSocket wraps g_socket_listener_add_socket
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_add_socket.g_socket_listener_add_socket.html
-	//
 	AddSocket(Socket, gobject.Object) (bool, error)
 	// Close wraps g_socket_listener_close
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_close.g_socket_listener_close.html
-	//
 	Close()
 	// SetBacklog wraps g_socket_listener_set_backlog
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_listener_set_backlog.g_socket_listener_set_backlog.html
-	//
 	SetBacklog(int32)
 	// ConnectEvent connects the provided callback to the "event" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.SocketListener.event.html
-	//
 	ConnectEvent(func(SocketListener, SocketListenerEvent, Socket)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -44082,7 +41789,6 @@ func UnsafeSocketListenerToGlibFull(c SocketListener) unsafe.Pointer {
 // NewSocketListener wraps g_socket_listener_new
 // 
 // see also https://docs.gtk.org/gio/func.g_socket_listener_new.html
-//
 func NewSocketListener() SocketListener {
 	var cret *C.GSocketListener // return, full, converted
 
@@ -44098,7 +41804,6 @@ func NewSocketListener() SocketListener {
 // Accept wraps g_socket_listener_accept
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_accept.g_socket_listener_accept.html
-//
 func (listener *SocketListenerInstance) Accept(cancellable Cancellable) (gobject.Object, SocketConnection, error) {
 	var carg0 *C.GSocketListener   // in, none, converted
 	var carg2 *C.GCancellable      // in, none, converted, nullable
@@ -44133,7 +41838,6 @@ func (listener *SocketListenerInstance) Accept(cancellable Cancellable) (gobject
 // AcceptAsync wraps g_socket_listener_accept_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_accept_async.g_socket_listener_accept_async.html
-//
 func (listener *SocketListenerInstance) AcceptAsync(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketListener    // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -44158,7 +41862,6 @@ func (listener *SocketListenerInstance) AcceptAsync(cancellable Cancellable, cal
 // AcceptFinish wraps g_socket_listener_accept_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_accept_finish.g_socket_listener_accept_finish.html
-//
 func (listener *SocketListenerInstance) AcceptFinish(result AsyncResult) (gobject.Object, SocketConnection, error) {
 	var carg0 *C.GSocketListener   // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -44191,7 +41894,6 @@ func (listener *SocketListenerInstance) AcceptFinish(result AsyncResult) (gobjec
 // AcceptSocket wraps g_socket_listener_accept_socket
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_accept_socket.g_socket_listener_accept_socket.html
-//
 func (listener *SocketListenerInstance) AcceptSocket(cancellable Cancellable) (gobject.Object, Socket, error) {
 	var carg0 *C.GSocketListener // in, none, converted
 	var carg2 *C.GCancellable    // in, none, converted, nullable
@@ -44226,7 +41928,6 @@ func (listener *SocketListenerInstance) AcceptSocket(cancellable Cancellable) (g
 // AcceptSocketAsync wraps g_socket_listener_accept_socket_async
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_accept_socket_async.g_socket_listener_accept_socket_async.html
-//
 func (listener *SocketListenerInstance) AcceptSocketAsync(cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GSocketListener    // in, none, converted
 	var carg1 *C.GCancellable       // in, none, converted, nullable
@@ -44251,7 +41952,6 @@ func (listener *SocketListenerInstance) AcceptSocketAsync(cancellable Cancellabl
 // AcceptSocketFinish wraps g_socket_listener_accept_socket_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_accept_socket_finish.g_socket_listener_accept_socket_finish.html
-//
 func (listener *SocketListenerInstance) AcceptSocketFinish(result AsyncResult) (gobject.Object, Socket, error) {
 	var carg0 *C.GSocketListener // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -44284,7 +41984,6 @@ func (listener *SocketListenerInstance) AcceptSocketFinish(result AsyncResult) (
 // AddAddress wraps g_socket_listener_add_address
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_add_address.g_socket_listener_add_address.html
-//
 func (listener *SocketListenerInstance) AddAddress(address SocketAddress, typ SocketType, protocol SocketProtocol, sourceObject gobject.Object) (SocketAddress, bool, error) {
 	var carg0 *C.GSocketListener // in, none, converted
 	var carg1 *C.GSocketAddress  // in, none, converted
@@ -44328,7 +42027,6 @@ func (listener *SocketListenerInstance) AddAddress(address SocketAddress, typ So
 // AddAnyInetPort wraps g_socket_listener_add_any_inet_port
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_add_any_inet_port.g_socket_listener_add_any_inet_port.html
-//
 func (listener *SocketListenerInstance) AddAnyInetPort(sourceObject gobject.Object) (uint16, error) {
 	var carg0 *C.GSocketListener // in, none, converted
 	var carg1 *C.GObject         // in, none, converted, nullable
@@ -44358,7 +42056,6 @@ func (listener *SocketListenerInstance) AddAnyInetPort(sourceObject gobject.Obje
 // AddInetPort wraps g_socket_listener_add_inet_port
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_add_inet_port.g_socket_listener_add_inet_port.html
-//
 func (listener *SocketListenerInstance) AddInetPort(port uint16, sourceObject gobject.Object) (bool, error) {
 	var carg0 *C.GSocketListener // in, none, converted
 	var carg1 C.guint16          // in, none, casted
@@ -44393,7 +42090,6 @@ func (listener *SocketListenerInstance) AddInetPort(port uint16, sourceObject go
 // AddSocket wraps g_socket_listener_add_socket
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_add_socket.g_socket_listener_add_socket.html
-//
 func (listener *SocketListenerInstance) AddSocket(socket Socket, sourceObject gobject.Object) (bool, error) {
 	var carg0 *C.GSocketListener // in, none, converted
 	var carg1 *C.GSocket         // in, none, converted
@@ -44428,7 +42124,6 @@ func (listener *SocketListenerInstance) AddSocket(socket Socket, sourceObject go
 // Close wraps g_socket_listener_close
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_close.g_socket_listener_close.html
-//
 func (listener *SocketListenerInstance) Close() {
 	var carg0 *C.GSocketListener // in, none, converted
 
@@ -44441,7 +42136,6 @@ func (listener *SocketListenerInstance) Close() {
 // SetBacklog wraps g_socket_listener_set_backlog
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_listener_set_backlog.g_socket_listener_set_backlog.html
-//
 func (listener *SocketListenerInstance) SetBacklog(listenBacklog int32) {
 	var carg0 *C.GSocketListener // in, none, converted
 	var carg1 C.int              // in, none, casted
@@ -44457,7 +42151,6 @@ func (listener *SocketListenerInstance) SetBacklog(listenBacklog int32) {
 // ConnectEvent connects the provided callback to the "event" signal
 // 
 // see also https://docs.gtk.org/gio/signal.SocketListener.event.html
-//
 func (o *SocketListenerInstance) ConnectEvent(fn func(SocketListener, SocketListenerEvent, Socket)) gobject.SignalHandle {
 	return o.Connect("event", fn)
 }
@@ -44593,7 +42286,6 @@ var _ SocketService = (*SocketServiceInstance)(nil)
 // SocketService wraps GSocketService
 // 
 // see also https://docs.gtk.org/gio/class.SocketService.html
-//
 type SocketService interface {
 	SocketListener
 	upcastToGSocketService() *SocketServiceInstance
@@ -44601,22 +42293,18 @@ type SocketService interface {
 	// IsActive wraps g_socket_service_is_active
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_service_is_active.g_socket_service_is_active.html
-	//
 	IsActive() bool
 	// Start wraps g_socket_service_start
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_service_start.g_socket_service_start.html
-	//
 	Start()
 	// Stop wraps g_socket_service_stop
 	// 
 	// see also https://docs.gtk.org/gio/method.g_socket_service_stop.g_socket_service_stop.html
-	//
 	Stop()
 	// ConnectIncoming connects the provided callback to the "incoming" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.SocketService.incoming.html
-	//
 	ConnectIncoming(func(SocketService, SocketConnection, gobject.Object) bool) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -44681,7 +42369,6 @@ func UnsafeSocketServiceToGlibFull(c SocketService) unsafe.Pointer {
 // NewSocketService wraps g_socket_service_new
 // 
 // see also https://docs.gtk.org/gio/func.g_socket_service_new.html
-//
 func NewSocketService() SocketService {
 	var cret *C.GSocketService // return, full, converted
 
@@ -44697,7 +42384,6 @@ func NewSocketService() SocketService {
 // IsActive wraps g_socket_service_is_active
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_service_is_active.g_socket_service_is_active.html
-//
 func (service *SocketServiceInstance) IsActive() bool {
 	var carg0 *C.GSocketService // in, none, converted
 	var cret  C.gboolean        // return
@@ -44719,7 +42405,6 @@ func (service *SocketServiceInstance) IsActive() bool {
 // Start wraps g_socket_service_start
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_service_start.g_socket_service_start.html
-//
 func (service *SocketServiceInstance) Start() {
 	var carg0 *C.GSocketService // in, none, converted
 
@@ -44732,7 +42417,6 @@ func (service *SocketServiceInstance) Start() {
 // Stop wraps g_socket_service_stop
 // 
 // see also https://docs.gtk.org/gio/method.g_socket_service_stop.g_socket_service_stop.html
-//
 func (service *SocketServiceInstance) Stop() {
 	var carg0 *C.GSocketService // in, none, converted
 
@@ -44745,7 +42429,6 @@ func (service *SocketServiceInstance) Stop() {
 // ConnectIncoming connects the provided callback to the "incoming" signal
 // 
 // see also https://docs.gtk.org/gio/signal.SocketService.incoming.html
-//
 func (o *SocketServiceInstance) ConnectIncoming(fn func(SocketService, SocketConnection, gobject.Object) bool) gobject.SignalHandle {
 	return o.Connect("incoming", fn)
 }
@@ -44863,7 +42546,6 @@ var _ Task = (*TaskInstance)(nil)
 // Task wraps GTask
 // 
 // see also https://docs.gtk.org/gio/class.Task.html
-//
 type Task interface {
 	gobject.Object
 	upcastToGTask() *TaskInstance
@@ -44871,112 +42553,90 @@ type Task interface {
 	// GetCancellable wraps g_task_get_cancellable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_get_cancellable.g_task_get_cancellable.html
-	//
 	GetCancellable() Cancellable
 	// GetCheckCancellable wraps g_task_get_check_cancellable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_get_check_cancellable.g_task_get_check_cancellable.html
-	//
 	GetCheckCancellable() bool
 	// GetCompleted wraps g_task_get_completed
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_get_completed.g_task_get_completed.html
-	//
 	GetCompleted() bool
 	// GetContext wraps g_task_get_context
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_get_context.g_task_get_context.html
-	//
 	GetContext() *glib.MainContext
 	// GetName wraps g_task_get_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_get_name.g_task_get_name.html
-	//
 	GetName() string
 	// GetPriority wraps g_task_get_priority
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_get_priority.g_task_get_priority.html
-	//
 	GetPriority() int32
 	// GetReturnOnCancel wraps g_task_get_return_on_cancel
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_get_return_on_cancel.g_task_get_return_on_cancel.html
-	//
 	GetReturnOnCancel() bool
 	// HadError wraps g_task_had_error
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_had_error.g_task_had_error.html
-	//
 	HadError() bool
 	// PropagateBoolean wraps g_task_propagate_boolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_propagate_boolean.g_task_propagate_boolean.html
-	//
 	PropagateBoolean() (bool, error)
 	// PropagateInt wraps g_task_propagate_int
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_propagate_int.g_task_propagate_int.html
-	//
 	PropagateInt() (int, error)
 	// PropagateValue wraps g_task_propagate_value
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_propagate_value.g_task_propagate_value.html
-	//
 	PropagateValue() (gobject.Value, bool, error)
 	// ReturnBoolean wraps g_task_return_boolean
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_return_boolean.g_task_return_boolean.html
-	//
 	ReturnBoolean(bool)
 	// ReturnError wraps g_task_return_error
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_return_error.g_task_return_error.html
-	//
 	ReturnError(error)
 	// ReturnErrorIfCancelled wraps g_task_return_error_if_cancelled
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_return_error_if_cancelled.g_task_return_error_if_cancelled.html
-	//
 	ReturnErrorIfCancelled() bool
 	// ReturnInt wraps g_task_return_int
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_return_int.g_task_return_int.html
-	//
 	ReturnInt(int)
 	// ReturnNewErrorLiteral wraps g_task_return_new_error_literal
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_return_new_error_literal.g_task_return_new_error_literal.html
-	//
 	ReturnNewErrorLiteral(glib.Quark, int32, string)
 	// ReturnValue wraps g_task_return_value
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_return_value.g_task_return_value.html
-	//
 	ReturnValue(*gobject.Value)
 	// SetCheckCancellable wraps g_task_set_check_cancellable
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_set_check_cancellable.g_task_set_check_cancellable.html
-	//
 	SetCheckCancellable(bool)
 	// SetName wraps g_task_set_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_set_name.g_task_set_name.html
-	//
 	SetName(string)
 	// SetPriority wraps g_task_set_priority
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_set_priority.g_task_set_priority.html
-	//
 	SetPriority(int32)
 	// SetReturnOnCancel wraps g_task_set_return_on_cancel
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_set_return_on_cancel.g_task_set_return_on_cancel.html
-	//
 	SetReturnOnCancel(bool) bool
 	// SetStaticName wraps g_task_set_static_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_task_set_static_name.g_task_set_static_name.html
-	//
 	SetStaticName(string)
 }
 
@@ -45031,7 +42691,6 @@ func UnsafeTaskToGlibFull(c Task) unsafe.Pointer {
 // GetCancellable wraps g_task_get_cancellable
 // 
 // see also https://docs.gtk.org/gio/method.g_task_get_cancellable.g_task_get_cancellable.html
-//
 func (task *TaskInstance) GetCancellable() Cancellable {
 	var carg0 *C.GTask        // in, none, converted
 	var cret  *C.GCancellable // return, none, converted, nullable
@@ -45053,7 +42712,6 @@ func (task *TaskInstance) GetCancellable() Cancellable {
 // GetCheckCancellable wraps g_task_get_check_cancellable
 // 
 // see also https://docs.gtk.org/gio/method.g_task_get_check_cancellable.g_task_get_check_cancellable.html
-//
 func (task *TaskInstance) GetCheckCancellable() bool {
 	var carg0 *C.GTask   // in, none, converted
 	var cret  C.gboolean // return
@@ -45075,7 +42733,6 @@ func (task *TaskInstance) GetCheckCancellable() bool {
 // GetCompleted wraps g_task_get_completed
 // 
 // see also https://docs.gtk.org/gio/method.g_task_get_completed.g_task_get_completed.html
-//
 func (task *TaskInstance) GetCompleted() bool {
 	var carg0 *C.GTask   // in, none, converted
 	var cret  C.gboolean // return
@@ -45097,7 +42754,6 @@ func (task *TaskInstance) GetCompleted() bool {
 // GetContext wraps g_task_get_context
 // 
 // see also https://docs.gtk.org/gio/method.g_task_get_context.g_task_get_context.html
-//
 func (task *TaskInstance) GetContext() *glib.MainContext {
 	var carg0 *C.GTask        // in, none, converted
 	var cret  *C.GMainContext // return, none, converted
@@ -45117,7 +42773,6 @@ func (task *TaskInstance) GetContext() *glib.MainContext {
 // GetName wraps g_task_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_task_get_name.g_task_get_name.html
-//
 func (task *TaskInstance) GetName() string {
 	var carg0 *C.GTask // in, none, converted
 	var cret  *C.gchar // return, none, string, nullable-string
@@ -45139,7 +42794,6 @@ func (task *TaskInstance) GetName() string {
 // GetPriority wraps g_task_get_priority
 // 
 // see also https://docs.gtk.org/gio/method.g_task_get_priority.g_task_get_priority.html
-//
 func (task *TaskInstance) GetPriority() int32 {
 	var carg0 *C.GTask // in, none, converted
 	var cret  C.gint   // return, none, casted
@@ -45159,7 +42813,6 @@ func (task *TaskInstance) GetPriority() int32 {
 // GetReturnOnCancel wraps g_task_get_return_on_cancel
 // 
 // see also https://docs.gtk.org/gio/method.g_task_get_return_on_cancel.g_task_get_return_on_cancel.html
-//
 func (task *TaskInstance) GetReturnOnCancel() bool {
 	var carg0 *C.GTask   // in, none, converted
 	var cret  C.gboolean // return
@@ -45181,7 +42834,6 @@ func (task *TaskInstance) GetReturnOnCancel() bool {
 // HadError wraps g_task_had_error
 // 
 // see also https://docs.gtk.org/gio/method.g_task_had_error.g_task_had_error.html
-//
 func (task *TaskInstance) HadError() bool {
 	var carg0 *C.GTask   // in, none, converted
 	var cret  C.gboolean // return
@@ -45203,7 +42855,6 @@ func (task *TaskInstance) HadError() bool {
 // PropagateBoolean wraps g_task_propagate_boolean
 // 
 // see also https://docs.gtk.org/gio/method.g_task_propagate_boolean.g_task_propagate_boolean.html
-//
 func (task *TaskInstance) PropagateBoolean() (bool, error) {
 	var carg0 *C.GTask   // in, none, converted
 	var cret  C.gboolean // return
@@ -45230,7 +42881,6 @@ func (task *TaskInstance) PropagateBoolean() (bool, error) {
 // PropagateInt wraps g_task_propagate_int
 // 
 // see also https://docs.gtk.org/gio/method.g_task_propagate_int.g_task_propagate_int.html
-//
 func (task *TaskInstance) PropagateInt() (int, error) {
 	var carg0 *C.GTask  // in, none, converted
 	var cret  C.gssize  // return, none, casted
@@ -45255,7 +42905,6 @@ func (task *TaskInstance) PropagateInt() (int, error) {
 // PropagateValue wraps g_task_propagate_value
 // 
 // see also https://docs.gtk.org/gio/method.g_task_propagate_value.g_task_propagate_value.html
-//
 func (task *TaskInstance) PropagateValue() (gobject.Value, bool, error) {
 	var carg0 *C.GTask   // in, none, converted
 	var carg1 C.GValue   // out, transfer: none, C Pointers: 0, Name: Value, caller-allocates
@@ -45287,7 +42936,6 @@ func (task *TaskInstance) PropagateValue() (gobject.Value, bool, error) {
 // ReturnBoolean wraps g_task_return_boolean
 // 
 // see also https://docs.gtk.org/gio/method.g_task_return_boolean.g_task_return_boolean.html
-//
 func (task *TaskInstance) ReturnBoolean(result bool) {
 	var carg0 *C.GTask   // in, none, converted
 	var carg1 C.gboolean // in
@@ -45305,7 +42953,6 @@ func (task *TaskInstance) ReturnBoolean(result bool) {
 // ReturnError wraps g_task_return_error
 // 
 // see also https://docs.gtk.org/gio/method.g_task_return_error.g_task_return_error.html
-//
 func (task *TaskInstance) ReturnError(err error) {
 	var carg0 *C.GTask  // in, none, converted
 	var carg1 *C.GError // in, full, converted
@@ -45321,7 +42968,6 @@ func (task *TaskInstance) ReturnError(err error) {
 // ReturnErrorIfCancelled wraps g_task_return_error_if_cancelled
 // 
 // see also https://docs.gtk.org/gio/method.g_task_return_error_if_cancelled.g_task_return_error_if_cancelled.html
-//
 func (task *TaskInstance) ReturnErrorIfCancelled() bool {
 	var carg0 *C.GTask   // in, none, converted
 	var cret  C.gboolean // return
@@ -45343,7 +42989,6 @@ func (task *TaskInstance) ReturnErrorIfCancelled() bool {
 // ReturnInt wraps g_task_return_int
 // 
 // see also https://docs.gtk.org/gio/method.g_task_return_int.g_task_return_int.html
-//
 func (task *TaskInstance) ReturnInt(result int) {
 	var carg0 *C.GTask // in, none, converted
 	var carg1 C.gssize // in, none, casted
@@ -45359,7 +43004,6 @@ func (task *TaskInstance) ReturnInt(result int) {
 // ReturnNewErrorLiteral wraps g_task_return_new_error_literal
 // 
 // see also https://docs.gtk.org/gio/method.g_task_return_new_error_literal.g_task_return_new_error_literal.html
-//
 func (task *TaskInstance) ReturnNewErrorLiteral(domain glib.Quark, code int32, message string) {
 	var carg0 *C.GTask // in, none, converted
 	var carg1 C.GQuark // in, none, casted, alias
@@ -45382,7 +43026,6 @@ func (task *TaskInstance) ReturnNewErrorLiteral(domain glib.Quark, code int32, m
 // ReturnValue wraps g_task_return_value
 // 
 // see also https://docs.gtk.org/gio/method.g_task_return_value.g_task_return_value.html
-//
 func (task *TaskInstance) ReturnValue(result *gobject.Value) {
 	var carg0 *C.GTask  // in, none, converted
 	var carg1 *C.GValue // in, none, converted, nullable
@@ -45400,7 +43043,6 @@ func (task *TaskInstance) ReturnValue(result *gobject.Value) {
 // SetCheckCancellable wraps g_task_set_check_cancellable
 // 
 // see also https://docs.gtk.org/gio/method.g_task_set_check_cancellable.g_task_set_check_cancellable.html
-//
 func (task *TaskInstance) SetCheckCancellable(checkCancellable bool) {
 	var carg0 *C.GTask   // in, none, converted
 	var carg1 C.gboolean // in
@@ -45418,7 +43060,6 @@ func (task *TaskInstance) SetCheckCancellable(checkCancellable bool) {
 // SetName wraps g_task_set_name
 // 
 // see also https://docs.gtk.org/gio/method.g_task_set_name.g_task_set_name.html
-//
 func (task *TaskInstance) SetName(name string) {
 	var carg0 *C.GTask // in, none, converted
 	var carg1 *C.gchar // in, none, string, nullable-string
@@ -45437,7 +43078,6 @@ func (task *TaskInstance) SetName(name string) {
 // SetPriority wraps g_task_set_priority
 // 
 // see also https://docs.gtk.org/gio/method.g_task_set_priority.g_task_set_priority.html
-//
 func (task *TaskInstance) SetPriority(priority int32) {
 	var carg0 *C.GTask // in, none, converted
 	var carg1 C.gint   // in, none, casted
@@ -45453,7 +43093,6 @@ func (task *TaskInstance) SetPriority(priority int32) {
 // SetReturnOnCancel wraps g_task_set_return_on_cancel
 // 
 // see also https://docs.gtk.org/gio/method.g_task_set_return_on_cancel.g_task_set_return_on_cancel.html
-//
 func (task *TaskInstance) SetReturnOnCancel(returnOnCancel bool) bool {
 	var carg0 *C.GTask   // in, none, converted
 	var carg1 C.gboolean // in
@@ -45480,7 +43119,6 @@ func (task *TaskInstance) SetReturnOnCancel(returnOnCancel bool) bool {
 // SetStaticName wraps g_task_set_static_name
 // 
 // see also https://docs.gtk.org/gio/method.g_task_set_static_name.g_task_set_static_name.html
-//
 func (task *TaskInstance) SetStaticName(name string) {
 	var carg0 *C.GTask // in, none, converted
 	var carg1 *C.gchar // in, none, string, nullable-string
@@ -45507,7 +43145,6 @@ var _ TcpConnection = (*TcpConnectionInstance)(nil)
 // TcpConnection wraps GTcpConnection
 // 
 // see also https://docs.gtk.org/gio/class.TcpConnection.html
-//
 type TcpConnection interface {
 	SocketConnection
 	upcastToGTcpConnection() *TcpConnectionInstance
@@ -45515,12 +43152,10 @@ type TcpConnection interface {
 	// GetGracefulDisconnect wraps g_tcp_connection_get_graceful_disconnect
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tcp_connection_get_graceful_disconnect.g_tcp_connection_get_graceful_disconnect.html
-	//
 	GetGracefulDisconnect() bool
 	// SetGracefulDisconnect wraps g_tcp_connection_set_graceful_disconnect
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tcp_connection_set_graceful_disconnect.g_tcp_connection_set_graceful_disconnect.html
-	//
 	SetGracefulDisconnect(bool)
 
 	// chain up virtual methods:
@@ -45581,7 +43216,6 @@ func UnsafeTcpConnectionToGlibFull(c TcpConnection) unsafe.Pointer {
 // GetGracefulDisconnect wraps g_tcp_connection_get_graceful_disconnect
 // 
 // see also https://docs.gtk.org/gio/method.g_tcp_connection_get_graceful_disconnect.g_tcp_connection_get_graceful_disconnect.html
-//
 func (connection *TcpConnectionInstance) GetGracefulDisconnect() bool {
 	var carg0 *C.GTcpConnection // in, none, converted
 	var cret  C.gboolean        // return
@@ -45603,7 +43237,6 @@ func (connection *TcpConnectionInstance) GetGracefulDisconnect() bool {
 // SetGracefulDisconnect wraps g_tcp_connection_set_graceful_disconnect
 // 
 // see also https://docs.gtk.org/gio/method.g_tcp_connection_set_graceful_disconnect.g_tcp_connection_set_graceful_disconnect.html
-//
 func (connection *TcpConnectionInstance) SetGracefulDisconnect(gracefulDisconnect bool) {
 	var carg0 *C.GTcpConnection // in, none, converted
 	var carg1 C.gboolean        // in
@@ -45669,7 +43302,6 @@ var _ TcpWrapperConnection = (*TcpWrapperConnectionInstance)(nil)
 // TcpWrapperConnection wraps GTcpWrapperConnection
 // 
 // see also https://docs.gtk.org/gio/class.TcpWrapperConnection.html
-//
 type TcpWrapperConnection interface {
 	TcpConnection
 	upcastToGTcpWrapperConnection() *TcpWrapperConnectionInstance
@@ -45677,7 +43309,6 @@ type TcpWrapperConnection interface {
 	// GetBaseIOStream wraps g_tcp_wrapper_connection_get_base_io_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tcp_wrapper_connection_get_base_io_stream.g_tcp_wrapper_connection_get_base_io_stream.html
-	//
 	GetBaseIOStream() IOStream
 
 	// chain up virtual methods:
@@ -45740,7 +43371,6 @@ func UnsafeTcpWrapperConnectionToGlibFull(c TcpWrapperConnection) unsafe.Pointer
 // NewTcpWrapperConnection wraps g_tcp_wrapper_connection_new
 // 
 // see also https://docs.gtk.org/gio/func.g_tcp_wrapper_connection_new.html
-//
 func NewTcpWrapperConnection(baseIoStream IOStream, socket Socket) SocketConnection {
 	var carg1 *C.GIOStream         // in, none, converted
 	var carg2 *C.GSocket           // in, none, converted
@@ -45763,7 +43393,6 @@ func NewTcpWrapperConnection(baseIoStream IOStream, socket Socket) SocketConnect
 // GetBaseIOStream wraps g_tcp_wrapper_connection_get_base_io_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_tcp_wrapper_connection_get_base_io_stream.g_tcp_wrapper_connection_get_base_io_stream.html
-//
 func (conn *TcpWrapperConnectionInstance) GetBaseIOStream() IOStream {
 	var carg0 *C.GTcpWrapperConnection // in, none, converted
 	var cret  *C.GIOStream             // return, none, converted
@@ -45831,7 +43460,6 @@ var _ ThemedIcon = (*ThemedIconInstance)(nil)
 // ThemedIcon wraps GThemedIcon
 // 
 // see also https://docs.gtk.org/gio/class.ThemedIcon.html
-//
 type ThemedIcon interface {
 	gobject.Object
 	upcastToGThemedIcon() *ThemedIconInstance
@@ -45839,17 +43467,14 @@ type ThemedIcon interface {
 	// AppendName wraps g_themed_icon_append_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_themed_icon_append_name.g_themed_icon_append_name.html
-	//
 	AppendName(string)
 	// GetNames wraps g_themed_icon_get_names
 	// 
 	// see also https://docs.gtk.org/gio/method.g_themed_icon_get_names.g_themed_icon_get_names.html
-	//
 	GetNames() []string
 	// PrependName wraps g_themed_icon_prepend_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_themed_icon_prepend_name.g_themed_icon_prepend_name.html
-	//
 	PrependName(string)
 }
 
@@ -45904,7 +43529,6 @@ func UnsafeThemedIconToGlibFull(c ThemedIcon) unsafe.Pointer {
 // NewThemedIcon wraps g_themed_icon_new
 // 
 // see also https://docs.gtk.org/gio/func.g_themed_icon_new.html
-//
 func NewThemedIcon(iconname string) ThemedIcon {
 	var carg1 *C.char  // in, none, string
 	var cret  *C.GIcon // return, full, converted
@@ -45925,7 +43549,6 @@ func NewThemedIcon(iconname string) ThemedIcon {
 // NewThemedIconFromNames wraps g_themed_icon_new_from_names
 // 
 // see also https://docs.gtk.org/gio/func.g_themed_icon_new_from_names.html
-//
 func NewThemedIconFromNames(iconnames []string) ThemedIcon {
 	var carg1 **C.char // in, transfer: none, C Pointers: 2, Name: array[utf8], array (inner gchar* (*typesystem.StringPrimitive), length-by: carg2)
 	var carg2 C.int    // implicit
@@ -45949,7 +43572,6 @@ func NewThemedIconFromNames(iconnames []string) ThemedIcon {
 // NewThemedIconWithDefaultFallbacks wraps g_themed_icon_new_with_default_fallbacks
 // 
 // see also https://docs.gtk.org/gio/func.g_themed_icon_new_with_default_fallbacks.html
-//
 func NewThemedIconWithDefaultFallbacks(iconname string) ThemedIcon {
 	var carg1 *C.char  // in, none, string
 	var cret  *C.GIcon // return, full, converted
@@ -45970,7 +43592,6 @@ func NewThemedIconWithDefaultFallbacks(iconname string) ThemedIcon {
 // AppendName wraps g_themed_icon_append_name
 // 
 // see also https://docs.gtk.org/gio/method.g_themed_icon_append_name.g_themed_icon_append_name.html
-//
 func (icon *ThemedIconInstance) AppendName(iconname string) {
 	var carg0 *C.GThemedIcon // in, none, converted
 	var carg1 *C.char        // in, none, string
@@ -45987,7 +43608,6 @@ func (icon *ThemedIconInstance) AppendName(iconname string) {
 // GetNames wraps g_themed_icon_get_names
 // 
 // see also https://docs.gtk.org/gio/method.g_themed_icon_get_names.g_themed_icon_get_names.html
-//
 func (icon *ThemedIconInstance) GetNames() []string {
 	var carg0 *C.GThemedIcon // in, none, converted
 	var cret  **C.gchar      // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -46009,7 +43629,6 @@ func (icon *ThemedIconInstance) GetNames() []string {
 // PrependName wraps g_themed_icon_prepend_name
 // 
 // see also https://docs.gtk.org/gio/method.g_themed_icon_prepend_name.g_themed_icon_prepend_name.html
-//
 func (icon *ThemedIconInstance) PrependName(iconname string) {
 	var carg0 *C.GThemedIcon // in, none, converted
 	var carg1 *C.char        // in, none, string
@@ -46034,7 +43653,6 @@ var _ ThreadedSocketService = (*ThreadedSocketServiceInstance)(nil)
 // ThreadedSocketService wraps GThreadedSocketService
 // 
 // see also https://docs.gtk.org/gio/class.ThreadedSocketService.html
-//
 type ThreadedSocketService interface {
 	SocketService
 	upcastToGThreadedSocketService() *ThreadedSocketServiceInstance
@@ -46042,7 +43660,6 @@ type ThreadedSocketService interface {
 	// ConnectRun connects the provided callback to the "run" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.ThreadedSocketService.run.html
-	//
 	ConnectRun(func(ThreadedSocketService, SocketConnection, gobject.Object) bool) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -46109,7 +43726,6 @@ func UnsafeThreadedSocketServiceToGlibFull(c ThreadedSocketService) unsafe.Point
 // NewThreadedSocketService wraps g_threaded_socket_service_new
 // 
 // see also https://docs.gtk.org/gio/func.g_threaded_socket_service_new.html
-//
 func NewThreadedSocketService(maxThreads int32) SocketService {
 	var carg1 C.int             // in, none, casted
 	var cret  *C.GSocketService // return, full, converted
@@ -46129,7 +43745,6 @@ func NewThreadedSocketService(maxThreads int32) SocketService {
 // ConnectRun connects the provided callback to the "run" signal
 // 
 // see also https://docs.gtk.org/gio/signal.ThreadedSocketService.run.html
-//
 func (o *ThreadedSocketServiceInstance) ConnectRun(fn func(ThreadedSocketService, SocketConnection, gobject.Object) bool) gobject.SignalHandle {
 	return o.Connect("run", fn)
 }
@@ -46247,7 +43862,6 @@ var _ TlsCertificate = (*TlsCertificateInstance)(nil)
 // TlsCertificate wraps GTlsCertificate
 // 
 // see also https://docs.gtk.org/gio/class.TlsCertificate.html
-//
 type TlsCertificate interface {
 	gobject.Object
 	upcastToGTlsCertificate() *TlsCertificateInstance
@@ -46255,27 +43869,22 @@ type TlsCertificate interface {
 	// GetIssuer wraps g_tls_certificate_get_issuer
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_certificate_get_issuer.g_tls_certificate_get_issuer.html
-	//
 	GetIssuer() TlsCertificate
 	// GetIssuerName wraps g_tls_certificate_get_issuer_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_certificate_get_issuer_name.g_tls_certificate_get_issuer_name.html
-	//
 	GetIssuerName() string
 	// GetSubjectName wraps g_tls_certificate_get_subject_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_certificate_get_subject_name.g_tls_certificate_get_subject_name.html
-	//
 	GetSubjectName() string
 	// IsSame wraps g_tls_certificate_is_same
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_certificate_is_same.g_tls_certificate_is_same.html
-	//
 	IsSame(TlsCertificate) bool
 	// Verify wraps g_tls_certificate_verify
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_certificate_verify.g_tls_certificate_verify.html
-	//
 	Verify(SocketConnectable, TlsCertificate) TlsCertificateFlags
 
 	// chain up virtual methods:
@@ -46338,7 +43947,6 @@ func UnsafeTlsCertificateToGlibFull(c TlsCertificate) unsafe.Pointer {
 // NewTlsCertificateFromFile wraps g_tls_certificate_new_from_file
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_certificate_new_from_file.html
-//
 func NewTlsCertificateFromFile(file string) (TlsCertificate, error) {
 	var carg1 *C.gchar           // in, none, string
 	var cret  *C.GTlsCertificate // return, full, converted
@@ -46364,7 +43972,6 @@ func NewTlsCertificateFromFile(file string) (TlsCertificate, error) {
 // NewTlsCertificateFromFileWithPassword wraps g_tls_certificate_new_from_file_with_password
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_certificate_new_from_file_with_password.html
-//
 func NewTlsCertificateFromFileWithPassword(file string, password string) (TlsCertificate, error) {
 	var carg1 *C.gchar           // in, none, string
 	var carg2 *C.gchar           // in, none, string
@@ -46394,7 +44001,6 @@ func NewTlsCertificateFromFileWithPassword(file string, password string) (TlsCer
 // NewTlsCertificateFromFiles wraps g_tls_certificate_new_from_files
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_certificate_new_from_files.html
-//
 func NewTlsCertificateFromFiles(certFile string, keyFile string) (TlsCertificate, error) {
 	var carg1 *C.gchar           // in, none, string
 	var carg2 *C.gchar           // in, none, string
@@ -46424,7 +44030,6 @@ func NewTlsCertificateFromFiles(certFile string, keyFile string) (TlsCertificate
 // NewTlsCertificateFromPem wraps g_tls_certificate_new_from_pem
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_certificate_new_from_pem.html
-//
 func NewTlsCertificateFromPem(data string, length int) (TlsCertificate, error) {
 	var carg1 *C.gchar           // in, none, string
 	var carg2 C.gssize           // in, none, casted
@@ -46453,7 +44058,6 @@ func NewTlsCertificateFromPem(data string, length int) (TlsCertificate, error) {
 // NewTlsCertificateFromPkcs11Uris wraps g_tls_certificate_new_from_pkcs11_uris
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_certificate_new_from_pkcs11_uris.html
-//
 func NewTlsCertificateFromPkcs11Uris(pkcs11Uri string, privateKeyPkcs11Uri string) (TlsCertificate, error) {
 	var carg1 *C.gchar           // in, none, string
 	var carg2 *C.gchar           // in, none, string, nullable-string
@@ -46485,7 +44089,6 @@ func NewTlsCertificateFromPkcs11Uris(pkcs11Uri string, privateKeyPkcs11Uri strin
 // NewTlsCertificateFromPkcs12 wraps g_tls_certificate_new_from_pkcs12
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_certificate_new_from_pkcs12.html
-//
 func NewTlsCertificateFromPkcs12(data []uint8, password string) (TlsCertificate, error) {
 	var carg1 *C.guint8          // in, transfer: none, C Pointers: 1, Name: array[guint8], array (inner guint8 (*typesystem.CastablePrimitive), length-by: carg2)
 	var carg2 C.gsize            // implicit
@@ -46520,7 +44123,6 @@ func NewTlsCertificateFromPkcs12(data []uint8, password string) (TlsCertificate,
 // TlsCertificateListNewFromFile wraps g_tls_certificate_list_new_from_file
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_certificate_list_new_from_file.html
-//
 func TlsCertificateListNewFromFile(file string) ([]TlsCertificate, error) {
 	var carg1 *C.gchar  // in, none, string
 	var cret  *C.GList  // container, transfer: full
@@ -46553,7 +44155,6 @@ func TlsCertificateListNewFromFile(file string) ([]TlsCertificate, error) {
 // GetIssuer wraps g_tls_certificate_get_issuer
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_certificate_get_issuer.g_tls_certificate_get_issuer.html
-//
 func (cert *TlsCertificateInstance) GetIssuer() TlsCertificate {
 	var carg0 *C.GTlsCertificate // in, none, converted
 	var cret  *C.GTlsCertificate // return, none, converted, nullable
@@ -46575,7 +44176,6 @@ func (cert *TlsCertificateInstance) GetIssuer() TlsCertificate {
 // GetIssuerName wraps g_tls_certificate_get_issuer_name
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_certificate_get_issuer_name.g_tls_certificate_get_issuer_name.html
-//
 func (cert *TlsCertificateInstance) GetIssuerName() string {
 	var carg0 *C.GTlsCertificate // in, none, converted
 	var cret  *C.gchar           // return, full, string, nullable-string
@@ -46598,7 +44198,6 @@ func (cert *TlsCertificateInstance) GetIssuerName() string {
 // GetSubjectName wraps g_tls_certificate_get_subject_name
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_certificate_get_subject_name.g_tls_certificate_get_subject_name.html
-//
 func (cert *TlsCertificateInstance) GetSubjectName() string {
 	var carg0 *C.GTlsCertificate // in, none, converted
 	var cret  *C.gchar           // return, full, string, nullable-string
@@ -46621,7 +44220,6 @@ func (cert *TlsCertificateInstance) GetSubjectName() string {
 // IsSame wraps g_tls_certificate_is_same
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_certificate_is_same.g_tls_certificate_is_same.html
-//
 func (certOne *TlsCertificateInstance) IsSame(certTwo TlsCertificate) bool {
 	var carg0 *C.GTlsCertificate // in, none, converted
 	var carg1 *C.GTlsCertificate // in, none, converted
@@ -46646,7 +44244,6 @@ func (certOne *TlsCertificateInstance) IsSame(certTwo TlsCertificate) bool {
 // Verify wraps g_tls_certificate_verify
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_certificate_verify.g_tls_certificate_verify.html
-//
 func (cert *TlsCertificateInstance) Verify(identity SocketConnectable, trustedCa TlsCertificate) TlsCertificateFlags {
 	var carg0 *C.GTlsCertificate     // in, none, converted
 	var carg1 *C.GSocketConnectable  // in, none, converted, nullable
@@ -46790,7 +44387,6 @@ var _ TlsConnection = (*TlsConnectionInstance)(nil)
 // TlsConnection wraps GTlsConnection
 // 
 // see also https://docs.gtk.org/gio/class.TlsConnection.html
-//
 type TlsConnection interface {
 	IOStream
 	upcastToGTlsConnection() *TlsConnectionInstance
@@ -46798,129 +44394,102 @@ type TlsConnection interface {
 	// EmitAcceptCertificate wraps g_tls_connection_emit_accept_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_emit_accept_certificate.g_tls_connection_emit_accept_certificate.html
-	//
 	EmitAcceptCertificate(TlsCertificate, TlsCertificateFlags) bool
 	// GetCertificate wraps g_tls_connection_get_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_certificate.g_tls_connection_get_certificate.html
-	//
 	GetCertificate() TlsCertificate
 	// GetCiphersuiteName wraps g_tls_connection_get_ciphersuite_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_ciphersuite_name.g_tls_connection_get_ciphersuite_name.html
-	//
 	GetCiphersuiteName() string
 	// GetDatabase wraps g_tls_connection_get_database
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_database.g_tls_connection_get_database.html
-	//
 	GetDatabase() TlsDatabase
 	// GetInteraction wraps g_tls_connection_get_interaction
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_interaction.g_tls_connection_get_interaction.html
-	//
 	GetInteraction() TlsInteraction
 	// GetNegotiatedProtocol wraps g_tls_connection_get_negotiated_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_negotiated_protocol.g_tls_connection_get_negotiated_protocol.html
-	//
 	GetNegotiatedProtocol() string
 	// GetPeerCertificate wraps g_tls_connection_get_peer_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_peer_certificate.g_tls_connection_get_peer_certificate.html
-	//
 	GetPeerCertificate() TlsCertificate
 	// GetPeerCertificateErrors wraps g_tls_connection_get_peer_certificate_errors
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_peer_certificate_errors.g_tls_connection_get_peer_certificate_errors.html
-	//
 	GetPeerCertificateErrors() TlsCertificateFlags
 	// GetProtocolVersion wraps g_tls_connection_get_protocol_version
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_protocol_version.g_tls_connection_get_protocol_version.html
-	//
 	GetProtocolVersion() TlsProtocolVersion
 	// GetRehandshakeMode wraps g_tls_connection_get_rehandshake_mode
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_rehandshake_mode.g_tls_connection_get_rehandshake_mode.html
 	//
-	//
-	// Deprecated: (since 2.60.0) Changing the rehandshake mode is no longer
-	//   required for compatibility. Also, rehandshaking has been removed
-	//   from the TLS protocol in TLS 1.3.
+	// Deprecated: (since 2.60.0) see the provided link for the reason
 	GetRehandshakeMode() TlsRehandshakeMode
 	// GetRequireCloseNotify wraps g_tls_connection_get_require_close_notify
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_require_close_notify.g_tls_connection_get_require_close_notify.html
-	//
 	GetRequireCloseNotify() bool
 	// GetUseSystemCertdb wraps g_tls_connection_get_use_system_certdb
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_get_use_system_certdb.g_tls_connection_get_use_system_certdb.html
 	//
-	//
-	// Deprecated: (since 2.30.0) Use g_tls_connection_get_database() instead
+	// Deprecated: (since 2.30.0) see the provided link for the reason
 	GetUseSystemCertdb() bool
 	// Handshake wraps g_tls_connection_handshake
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_handshake.g_tls_connection_handshake.html
-	//
 	Handshake(Cancellable) (bool, error)
 	// HandshakeAsync wraps g_tls_connection_handshake_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_handshake_async.g_tls_connection_handshake_async.html
-	//
 	HandshakeAsync(int32, Cancellable, AsyncReadyCallback)
 	// HandshakeFinish wraps g_tls_connection_handshake_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_handshake_finish.g_tls_connection_handshake_finish.html
-	//
 	HandshakeFinish(AsyncResult) (bool, error)
 	// SetAdvertisedProtocols wraps g_tls_connection_set_advertised_protocols
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_set_advertised_protocols.g_tls_connection_set_advertised_protocols.html
-	//
 	SetAdvertisedProtocols([]string)
 	// SetCertificate wraps g_tls_connection_set_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_set_certificate.g_tls_connection_set_certificate.html
-	//
 	SetCertificate(TlsCertificate)
 	// SetDatabase wraps g_tls_connection_set_database
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_set_database.g_tls_connection_set_database.html
-	//
 	SetDatabase(TlsDatabase)
 	// SetInteraction wraps g_tls_connection_set_interaction
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_set_interaction.g_tls_connection_set_interaction.html
-	//
 	SetInteraction(TlsInteraction)
 	// SetRehandshakeMode wraps g_tls_connection_set_rehandshake_mode
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_set_rehandshake_mode.g_tls_connection_set_rehandshake_mode.html
 	//
-	//
-	// Deprecated: (since 2.60.0) Changing the rehandshake mode is no longer
-	//   required for compatibility. Also, rehandshaking has been removed
-	//   from the TLS protocol in TLS 1.3.
+	// Deprecated: (since 2.60.0) see the provided link for the reason
 	SetRehandshakeMode(TlsRehandshakeMode)
 	// SetRequireCloseNotify wraps g_tls_connection_set_require_close_notify
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_set_require_close_notify.g_tls_connection_set_require_close_notify.html
-	//
 	SetRequireCloseNotify(bool)
 	// SetUseSystemCertdb wraps g_tls_connection_set_use_system_certdb
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_connection_set_use_system_certdb.g_tls_connection_set_use_system_certdb.html
 	//
-	//
-	// Deprecated: (since 2.30.0) Use g_tls_connection_set_database() instead
+	// Deprecated: (since 2.30.0) see the provided link for the reason
 	SetUseSystemCertdb(bool)
 	// ConnectAcceptCertificate connects the provided callback to the "accept-certificate" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.TlsConnection.accept-certificate.html
-	//
 	ConnectAcceptCertificate(func(TlsConnection, TlsCertificate, TlsCertificateFlags) bool) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -47000,7 +44569,6 @@ func UnsafeTlsConnectionToGlibFull(c TlsConnection) unsafe.Pointer {
 // EmitAcceptCertificate wraps g_tls_connection_emit_accept_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_emit_accept_certificate.g_tls_connection_emit_accept_certificate.html
-//
 func (conn *TlsConnectionInstance) EmitAcceptCertificate(peerCert TlsCertificate, errors TlsCertificateFlags) bool {
 	var carg0 *C.GTlsConnection      // in, none, converted
 	var carg1 *C.GTlsCertificate     // in, none, converted
@@ -47028,7 +44596,6 @@ func (conn *TlsConnectionInstance) EmitAcceptCertificate(peerCert TlsCertificate
 // GetCertificate wraps g_tls_connection_get_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_certificate.g_tls_connection_get_certificate.html
-//
 func (conn *TlsConnectionInstance) GetCertificate() TlsCertificate {
 	var carg0 *C.GTlsConnection  // in, none, converted
 	var cret  *C.GTlsCertificate // return, none, converted, nullable
@@ -47050,7 +44617,6 @@ func (conn *TlsConnectionInstance) GetCertificate() TlsCertificate {
 // GetCiphersuiteName wraps g_tls_connection_get_ciphersuite_name
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_ciphersuite_name.g_tls_connection_get_ciphersuite_name.html
-//
 func (conn *TlsConnectionInstance) GetCiphersuiteName() string {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var cret  *C.gchar          // return, full, string, nullable-string
@@ -47073,7 +44639,6 @@ func (conn *TlsConnectionInstance) GetCiphersuiteName() string {
 // GetDatabase wraps g_tls_connection_get_database
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_database.g_tls_connection_get_database.html
-//
 func (conn *TlsConnectionInstance) GetDatabase() TlsDatabase {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var cret  *C.GTlsDatabase   // return, none, converted, nullable
@@ -47095,7 +44660,6 @@ func (conn *TlsConnectionInstance) GetDatabase() TlsDatabase {
 // GetInteraction wraps g_tls_connection_get_interaction
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_interaction.g_tls_connection_get_interaction.html
-//
 func (conn *TlsConnectionInstance) GetInteraction() TlsInteraction {
 	var carg0 *C.GTlsConnection  // in, none, converted
 	var cret  *C.GTlsInteraction // return, none, converted, nullable
@@ -47117,7 +44681,6 @@ func (conn *TlsConnectionInstance) GetInteraction() TlsInteraction {
 // GetNegotiatedProtocol wraps g_tls_connection_get_negotiated_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_negotiated_protocol.g_tls_connection_get_negotiated_protocol.html
-//
 func (conn *TlsConnectionInstance) GetNegotiatedProtocol() string {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var cret  *C.gchar          // return, none, string, nullable-string
@@ -47139,7 +44702,6 @@ func (conn *TlsConnectionInstance) GetNegotiatedProtocol() string {
 // GetPeerCertificate wraps g_tls_connection_get_peer_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_peer_certificate.g_tls_connection_get_peer_certificate.html
-//
 func (conn *TlsConnectionInstance) GetPeerCertificate() TlsCertificate {
 	var carg0 *C.GTlsConnection  // in, none, converted
 	var cret  *C.GTlsCertificate // return, none, converted, nullable
@@ -47161,7 +44723,6 @@ func (conn *TlsConnectionInstance) GetPeerCertificate() TlsCertificate {
 // GetPeerCertificateErrors wraps g_tls_connection_get_peer_certificate_errors
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_peer_certificate_errors.g_tls_connection_get_peer_certificate_errors.html
-//
 func (conn *TlsConnectionInstance) GetPeerCertificateErrors() TlsCertificateFlags {
 	var carg0 *C.GTlsConnection      // in, none, converted
 	var cret  C.GTlsCertificateFlags // return, none, casted
@@ -47181,7 +44742,6 @@ func (conn *TlsConnectionInstance) GetPeerCertificateErrors() TlsCertificateFlag
 // GetProtocolVersion wraps g_tls_connection_get_protocol_version
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_protocol_version.g_tls_connection_get_protocol_version.html
-//
 func (conn *TlsConnectionInstance) GetProtocolVersion() TlsProtocolVersion {
 	var carg0 *C.GTlsConnection     // in, none, converted
 	var cret  C.GTlsProtocolVersion // return, none, casted
@@ -47202,10 +44762,7 @@ func (conn *TlsConnectionInstance) GetProtocolVersion() TlsProtocolVersion {
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_rehandshake_mode.g_tls_connection_get_rehandshake_mode.html
 //
-//
-// Deprecated: (since 2.60.0) Changing the rehandshake mode is no longer
-//   required for compatibility. Also, rehandshaking has been removed
-//   from the TLS protocol in TLS 1.3.
+// Deprecated: (since 2.60.0) see the provided link for the reason
 func (conn *TlsConnectionInstance) GetRehandshakeMode() TlsRehandshakeMode {
 	var carg0 *C.GTlsConnection     // in, none, converted
 	var cret  C.GTlsRehandshakeMode // return, none, casted
@@ -47225,7 +44782,6 @@ func (conn *TlsConnectionInstance) GetRehandshakeMode() TlsRehandshakeMode {
 // GetRequireCloseNotify wraps g_tls_connection_get_require_close_notify
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_require_close_notify.g_tls_connection_get_require_close_notify.html
-//
 func (conn *TlsConnectionInstance) GetRequireCloseNotify() bool {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var cret  C.gboolean        // return
@@ -47248,8 +44804,7 @@ func (conn *TlsConnectionInstance) GetRequireCloseNotify() bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_get_use_system_certdb.g_tls_connection_get_use_system_certdb.html
 //
-//
-// Deprecated: (since 2.30.0) Use g_tls_connection_get_database() instead
+// Deprecated: (since 2.30.0) see the provided link for the reason
 func (conn *TlsConnectionInstance) GetUseSystemCertdb() bool {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var cret  C.gboolean        // return
@@ -47271,7 +44826,6 @@ func (conn *TlsConnectionInstance) GetUseSystemCertdb() bool {
 // Handshake wraps g_tls_connection_handshake
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_handshake.g_tls_connection_handshake.html
-//
 func (conn *TlsConnectionInstance) Handshake(cancellable Cancellable) (bool, error) {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var carg1 *C.GCancellable   // in, none, converted, nullable
@@ -47303,7 +44857,6 @@ func (conn *TlsConnectionInstance) Handshake(cancellable Cancellable) (bool, err
 // HandshakeAsync wraps g_tls_connection_handshake_async
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_handshake_async.g_tls_connection_handshake_async.html
-//
 func (conn *TlsConnectionInstance) HandshakeAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GTlsConnection     // in, none, converted
 	var carg1 C.int                 // in, none, casted
@@ -47331,7 +44884,6 @@ func (conn *TlsConnectionInstance) HandshakeAsync(ioPriority int32, cancellable 
 // HandshakeFinish wraps g_tls_connection_handshake_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_handshake_finish.g_tls_connection_handshake_finish.html
-//
 func (conn *TlsConnectionInstance) HandshakeFinish(result AsyncResult) (bool, error) {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var carg1 *C.GAsyncResult   // in, none, converted
@@ -47361,7 +44913,6 @@ func (conn *TlsConnectionInstance) HandshakeFinish(result AsyncResult) (bool, er
 // SetAdvertisedProtocols wraps g_tls_connection_set_advertised_protocols
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_set_advertised_protocols.g_tls_connection_set_advertised_protocols.html
-//
 func (conn *TlsConnectionInstance) SetAdvertisedProtocols(protocols []string) {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var carg1 **C.gchar         // in, transfer: none, C Pointers: 2, Name: array[utf8], nullable, array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -47379,7 +44930,6 @@ func (conn *TlsConnectionInstance) SetAdvertisedProtocols(protocols []string) {
 // SetCertificate wraps g_tls_connection_set_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_set_certificate.g_tls_connection_set_certificate.html
-//
 func (conn *TlsConnectionInstance) SetCertificate(certificate TlsCertificate) {
 	var carg0 *C.GTlsConnection  // in, none, converted
 	var carg1 *C.GTlsCertificate // in, none, converted
@@ -47395,7 +44945,6 @@ func (conn *TlsConnectionInstance) SetCertificate(certificate TlsCertificate) {
 // SetDatabase wraps g_tls_connection_set_database
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_set_database.g_tls_connection_set_database.html
-//
 func (conn *TlsConnectionInstance) SetDatabase(database TlsDatabase) {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var carg1 *C.GTlsDatabase   // in, none, converted, nullable
@@ -47413,7 +44962,6 @@ func (conn *TlsConnectionInstance) SetDatabase(database TlsDatabase) {
 // SetInteraction wraps g_tls_connection_set_interaction
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_set_interaction.g_tls_connection_set_interaction.html
-//
 func (conn *TlsConnectionInstance) SetInteraction(interaction TlsInteraction) {
 	var carg0 *C.GTlsConnection  // in, none, converted
 	var carg1 *C.GTlsInteraction // in, none, converted, nullable
@@ -47432,10 +44980,7 @@ func (conn *TlsConnectionInstance) SetInteraction(interaction TlsInteraction) {
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_set_rehandshake_mode.g_tls_connection_set_rehandshake_mode.html
 //
-//
-// Deprecated: (since 2.60.0) Changing the rehandshake mode is no longer
-//   required for compatibility. Also, rehandshaking has been removed
-//   from the TLS protocol in TLS 1.3.
+// Deprecated: (since 2.60.0) see the provided link for the reason
 func (conn *TlsConnectionInstance) SetRehandshakeMode(mode TlsRehandshakeMode) {
 	var carg0 *C.GTlsConnection     // in, none, converted
 	var carg1 C.GTlsRehandshakeMode // in, none, casted
@@ -47451,7 +44996,6 @@ func (conn *TlsConnectionInstance) SetRehandshakeMode(mode TlsRehandshakeMode) {
 // SetRequireCloseNotify wraps g_tls_connection_set_require_close_notify
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_set_require_close_notify.g_tls_connection_set_require_close_notify.html
-//
 func (conn *TlsConnectionInstance) SetRequireCloseNotify(requireCloseNotify bool) {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var carg1 C.gboolean        // in
@@ -47470,8 +45014,7 @@ func (conn *TlsConnectionInstance) SetRequireCloseNotify(requireCloseNotify bool
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_connection_set_use_system_certdb.g_tls_connection_set_use_system_certdb.html
 //
-//
-// Deprecated: (since 2.30.0) Use g_tls_connection_set_database() instead
+// Deprecated: (since 2.30.0) see the provided link for the reason
 func (conn *TlsConnectionInstance) SetUseSystemCertdb(useSystemCertdb bool) {
 	var carg0 *C.GTlsConnection // in, none, converted
 	var carg1 C.gboolean        // in
@@ -47489,7 +45032,6 @@ func (conn *TlsConnectionInstance) SetUseSystemCertdb(useSystemCertdb bool) {
 // ConnectAcceptCertificate connects the provided callback to the "accept-certificate" signal
 // 
 // see also https://docs.gtk.org/gio/signal.TlsConnection.accept-certificate.html
-//
 func (o *TlsConnectionInstance) ConnectAcceptCertificate(fn func(TlsConnection, TlsCertificate, TlsCertificateFlags) bool) gobject.SignalHandle {
 	return o.Connect("accept-certificate", fn)
 }
@@ -47786,7 +45328,6 @@ var _ TlsDatabase = (*TlsDatabaseInstance)(nil)
 // TlsDatabase wraps GTlsDatabase
 // 
 // see also https://docs.gtk.org/gio/class.TlsDatabase.html
-//
 type TlsDatabase interface {
 	gobject.Object
 	upcastToGTlsDatabase() *TlsDatabaseInstance
@@ -47794,57 +45335,46 @@ type TlsDatabase interface {
 	// CreateCertificateHandle wraps g_tls_database_create_certificate_handle
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_create_certificate_handle.g_tls_database_create_certificate_handle.html
-	//
 	CreateCertificateHandle(TlsCertificate) string
 	// LookupCertificateForHandle wraps g_tls_database_lookup_certificate_for_handle
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_for_handle.g_tls_database_lookup_certificate_for_handle.html
-	//
 	LookupCertificateForHandle(string, TlsInteraction, TlsDatabaseLookupFlags, Cancellable) (TlsCertificate, error)
 	// LookupCertificateForHandleAsync wraps g_tls_database_lookup_certificate_for_handle_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_for_handle_async.g_tls_database_lookup_certificate_for_handle_async.html
-	//
 	LookupCertificateForHandleAsync(string, TlsInteraction, TlsDatabaseLookupFlags, Cancellable, AsyncReadyCallback)
 	// LookupCertificateForHandleFinish wraps g_tls_database_lookup_certificate_for_handle_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_for_handle_finish.g_tls_database_lookup_certificate_for_handle_finish.html
-	//
 	LookupCertificateForHandleFinish(AsyncResult) (TlsCertificate, error)
 	// LookupCertificateIssuer wraps g_tls_database_lookup_certificate_issuer
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_issuer.g_tls_database_lookup_certificate_issuer.html
-	//
 	LookupCertificateIssuer(TlsCertificate, TlsInteraction, TlsDatabaseLookupFlags, Cancellable) (TlsCertificate, error)
 	// LookupCertificateIssuerAsync wraps g_tls_database_lookup_certificate_issuer_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_issuer_async.g_tls_database_lookup_certificate_issuer_async.html
-	//
 	LookupCertificateIssuerAsync(TlsCertificate, TlsInteraction, TlsDatabaseLookupFlags, Cancellable, AsyncReadyCallback)
 	// LookupCertificateIssuerFinish wraps g_tls_database_lookup_certificate_issuer_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_issuer_finish.g_tls_database_lookup_certificate_issuer_finish.html
-	//
 	LookupCertificateIssuerFinish(AsyncResult) (TlsCertificate, error)
 	// LookupCertificatesIssuedByFinish wraps g_tls_database_lookup_certificates_issued_by_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificates_issued_by_finish.g_tls_database_lookup_certificates_issued_by_finish.html
-	//
 	LookupCertificatesIssuedByFinish(AsyncResult) ([]TlsCertificate, error)
 	// VerifyChain wraps g_tls_database_verify_chain
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_verify_chain.g_tls_database_verify_chain.html
-	//
 	VerifyChain(TlsCertificate, string, SocketConnectable, TlsInteraction, TlsDatabaseVerifyFlags, Cancellable) (TlsCertificateFlags, error)
 	// VerifyChainAsync wraps g_tls_database_verify_chain_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_verify_chain_async.g_tls_database_verify_chain_async.html
-	//
 	VerifyChainAsync(TlsCertificate, string, SocketConnectable, TlsInteraction, TlsDatabaseVerifyFlags, Cancellable, AsyncReadyCallback)
 	// VerifyChainFinish wraps g_tls_database_verify_chain_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_database_verify_chain_finish.g_tls_database_verify_chain_finish.html
-	//
 	VerifyChainFinish(AsyncResult) (TlsCertificateFlags, error)
 
 	// chain up virtual methods:
@@ -47942,7 +45472,6 @@ func UnsafeTlsDatabaseToGlibFull(c TlsDatabase) unsafe.Pointer {
 // CreateCertificateHandle wraps g_tls_database_create_certificate_handle
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_create_certificate_handle.g_tls_database_create_certificate_handle.html
-//
 func (self *TlsDatabaseInstance) CreateCertificateHandle(certificate TlsCertificate) string {
 	var carg0 *C.GTlsDatabase    // in, none, converted
 	var carg1 *C.GTlsCertificate // in, none, converted
@@ -47968,7 +45497,6 @@ func (self *TlsDatabaseInstance) CreateCertificateHandle(certificate TlsCertific
 // LookupCertificateForHandle wraps g_tls_database_lookup_certificate_for_handle
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_for_handle.g_tls_database_lookup_certificate_for_handle.html
-//
 func (self *TlsDatabaseInstance) LookupCertificateForHandle(handle string, interaction TlsInteraction, flags TlsDatabaseLookupFlags, cancellable Cancellable) (TlsCertificate, error) {
 	var carg0 *C.GTlsDatabase           // in, none, converted
 	var carg1 *C.gchar                  // in, none, string
@@ -48012,7 +45540,6 @@ func (self *TlsDatabaseInstance) LookupCertificateForHandle(handle string, inter
 // LookupCertificateForHandleAsync wraps g_tls_database_lookup_certificate_for_handle_async
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_for_handle_async.g_tls_database_lookup_certificate_for_handle_async.html
-//
 func (self *TlsDatabaseInstance) LookupCertificateForHandleAsync(handle string, interaction TlsInteraction, flags TlsDatabaseLookupFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GTlsDatabase           // in, none, converted
 	var carg1 *C.gchar                  // in, none, string
@@ -48049,7 +45576,6 @@ func (self *TlsDatabaseInstance) LookupCertificateForHandleAsync(handle string, 
 // LookupCertificateForHandleFinish wraps g_tls_database_lookup_certificate_for_handle_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_for_handle_finish.g_tls_database_lookup_certificate_for_handle_finish.html
-//
 func (self *TlsDatabaseInstance) LookupCertificateForHandleFinish(result AsyncResult) (TlsCertificate, error) {
 	var carg0 *C.GTlsDatabase    // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -48077,7 +45603,6 @@ func (self *TlsDatabaseInstance) LookupCertificateForHandleFinish(result AsyncRe
 // LookupCertificateIssuer wraps g_tls_database_lookup_certificate_issuer
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_issuer.g_tls_database_lookup_certificate_issuer.html
-//
 func (self *TlsDatabaseInstance) LookupCertificateIssuer(certificate TlsCertificate, interaction TlsInteraction, flags TlsDatabaseLookupFlags, cancellable Cancellable) (TlsCertificate, error) {
 	var carg0 *C.GTlsDatabase           // in, none, converted
 	var carg1 *C.GTlsCertificate        // in, none, converted
@@ -48118,7 +45643,6 @@ func (self *TlsDatabaseInstance) LookupCertificateIssuer(certificate TlsCertific
 // LookupCertificateIssuerAsync wraps g_tls_database_lookup_certificate_issuer_async
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_issuer_async.g_tls_database_lookup_certificate_issuer_async.html
-//
 func (self *TlsDatabaseInstance) LookupCertificateIssuerAsync(certificate TlsCertificate, interaction TlsInteraction, flags TlsDatabaseLookupFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GTlsDatabase           // in, none, converted
 	var carg1 *C.GTlsCertificate        // in, none, converted
@@ -48154,7 +45678,6 @@ func (self *TlsDatabaseInstance) LookupCertificateIssuerAsync(certificate TlsCer
 // LookupCertificateIssuerFinish wraps g_tls_database_lookup_certificate_issuer_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificate_issuer_finish.g_tls_database_lookup_certificate_issuer_finish.html
-//
 func (self *TlsDatabaseInstance) LookupCertificateIssuerFinish(result AsyncResult) (TlsCertificate, error) {
 	var carg0 *C.GTlsDatabase    // in, none, converted
 	var carg1 *C.GAsyncResult    // in, none, converted
@@ -48182,7 +45705,6 @@ func (self *TlsDatabaseInstance) LookupCertificateIssuerFinish(result AsyncResul
 // LookupCertificatesIssuedByFinish wraps g_tls_database_lookup_certificates_issued_by_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_lookup_certificates_issued_by_finish.g_tls_database_lookup_certificates_issued_by_finish.html
-//
 func (self *TlsDatabaseInstance) LookupCertificatesIssuedByFinish(result AsyncResult) ([]TlsCertificate, error) {
 	var carg0 *C.GTlsDatabase // in, none, converted
 	var carg1 *C.GAsyncResult // in, none, converted
@@ -48217,7 +45739,6 @@ func (self *TlsDatabaseInstance) LookupCertificatesIssuedByFinish(result AsyncRe
 // VerifyChain wraps g_tls_database_verify_chain
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_verify_chain.g_tls_database_verify_chain.html
-//
 func (self *TlsDatabaseInstance) VerifyChain(chain TlsCertificate, purpose string, identity SocketConnectable, interaction TlsInteraction, flags TlsDatabaseVerifyFlags, cancellable Cancellable) (TlsCertificateFlags, error) {
 	var carg0 *C.GTlsDatabase           // in, none, converted
 	var carg1 *C.GTlsCertificate        // in, none, converted
@@ -48267,7 +45788,6 @@ func (self *TlsDatabaseInstance) VerifyChain(chain TlsCertificate, purpose strin
 // VerifyChainAsync wraps g_tls_database_verify_chain_async
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_verify_chain_async.g_tls_database_verify_chain_async.html
-//
 func (self *TlsDatabaseInstance) VerifyChainAsync(chain TlsCertificate, purpose string, identity SocketConnectable, interaction TlsInteraction, flags TlsDatabaseVerifyFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GTlsDatabase           // in, none, converted
 	var carg1 *C.GTlsCertificate        // in, none, converted
@@ -48312,7 +45832,6 @@ func (self *TlsDatabaseInstance) VerifyChainAsync(chain TlsCertificate, purpose 
 // VerifyChainFinish wraps g_tls_database_verify_chain_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_database_verify_chain_finish.g_tls_database_verify_chain_finish.html
-//
 func (self *TlsDatabaseInstance) VerifyChainFinish(result AsyncResult) (TlsCertificateFlags, error) {
 	var carg0 *C.GTlsDatabase        // in, none, converted
 	var carg1 *C.GAsyncResult        // in, none, converted
@@ -48950,7 +46469,6 @@ var _ TlsInteraction = (*TlsInteractionInstance)(nil)
 // TlsInteraction wraps GTlsInteraction
 // 
 // see also https://docs.gtk.org/gio/class.TlsInteraction.html
-//
 type TlsInteraction interface {
 	gobject.Object
 	upcastToGTlsInteraction() *TlsInteractionInstance
@@ -48958,42 +46476,34 @@ type TlsInteraction interface {
 	// AskPassword wraps g_tls_interaction_ask_password
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_ask_password.g_tls_interaction_ask_password.html
-	//
 	AskPassword(TlsPassword, Cancellable) (TlsInteractionResult, error)
 	// AskPasswordAsync wraps g_tls_interaction_ask_password_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_ask_password_async.g_tls_interaction_ask_password_async.html
-	//
 	AskPasswordAsync(TlsPassword, Cancellable, AsyncReadyCallback)
 	// AskPasswordFinish wraps g_tls_interaction_ask_password_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_ask_password_finish.g_tls_interaction_ask_password_finish.html
-	//
 	AskPasswordFinish(AsyncResult) (TlsInteractionResult, error)
 	// InvokeAskPassword wraps g_tls_interaction_invoke_ask_password
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_invoke_ask_password.g_tls_interaction_invoke_ask_password.html
-	//
 	InvokeAskPassword(TlsPassword, Cancellable) (TlsInteractionResult, error)
 	// InvokeRequestCertificate wraps g_tls_interaction_invoke_request_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_invoke_request_certificate.g_tls_interaction_invoke_request_certificate.html
-	//
 	InvokeRequestCertificate(TlsConnection, TlsCertificateRequestFlags, Cancellable) (TlsInteractionResult, error)
 	// RequestCertificate wraps g_tls_interaction_request_certificate
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_request_certificate.g_tls_interaction_request_certificate.html
-	//
 	RequestCertificate(TlsConnection, TlsCertificateRequestFlags, Cancellable) (TlsInteractionResult, error)
 	// RequestCertificateAsync wraps g_tls_interaction_request_certificate_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_request_certificate_async.g_tls_interaction_request_certificate_async.html
-	//
 	RequestCertificateAsync(TlsConnection, TlsCertificateRequestFlags, Cancellable, AsyncReadyCallback)
 	// RequestCertificateFinish wraps g_tls_interaction_request_certificate_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_interaction_request_certificate_finish.g_tls_interaction_request_certificate_finish.html
-	//
 	RequestCertificateFinish(AsyncResult) (TlsInteractionResult, error)
 
 	// chain up virtual methods:
@@ -49071,7 +46581,6 @@ func UnsafeTlsInteractionToGlibFull(c TlsInteraction) unsafe.Pointer {
 // AskPassword wraps g_tls_interaction_ask_password
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_ask_password.g_tls_interaction_ask_password.html
-//
 func (interaction *TlsInteractionInstance) AskPassword(password TlsPassword, cancellable Cancellable) (TlsInteractionResult, error) {
 	var carg0 *C.GTlsInteraction      // in, none, converted
 	var carg1 *C.GTlsPassword         // in, none, converted
@@ -49104,7 +46613,6 @@ func (interaction *TlsInteractionInstance) AskPassword(password TlsPassword, can
 // AskPasswordAsync wraps g_tls_interaction_ask_password_async
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_ask_password_async.g_tls_interaction_ask_password_async.html
-//
 func (interaction *TlsInteractionInstance) AskPasswordAsync(password TlsPassword, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GTlsInteraction    // in, none, converted
 	var carg1 *C.GTlsPassword       // in, none, converted
@@ -49132,7 +46640,6 @@ func (interaction *TlsInteractionInstance) AskPasswordAsync(password TlsPassword
 // AskPasswordFinish wraps g_tls_interaction_ask_password_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_ask_password_finish.g_tls_interaction_ask_password_finish.html
-//
 func (interaction *TlsInteractionInstance) AskPasswordFinish(result AsyncResult) (TlsInteractionResult, error) {
 	var carg0 *C.GTlsInteraction      // in, none, converted
 	var carg1 *C.GAsyncResult         // in, none, converted
@@ -49160,7 +46667,6 @@ func (interaction *TlsInteractionInstance) AskPasswordFinish(result AsyncResult)
 // InvokeAskPassword wraps g_tls_interaction_invoke_ask_password
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_invoke_ask_password.g_tls_interaction_invoke_ask_password.html
-//
 func (interaction *TlsInteractionInstance) InvokeAskPassword(password TlsPassword, cancellable Cancellable) (TlsInteractionResult, error) {
 	var carg0 *C.GTlsInteraction      // in, none, converted
 	var carg1 *C.GTlsPassword         // in, none, converted
@@ -49193,7 +46699,6 @@ func (interaction *TlsInteractionInstance) InvokeAskPassword(password TlsPasswor
 // InvokeRequestCertificate wraps g_tls_interaction_invoke_request_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_invoke_request_certificate.g_tls_interaction_invoke_request_certificate.html
-//
 func (interaction *TlsInteractionInstance) InvokeRequestCertificate(connection TlsConnection, flags TlsCertificateRequestFlags, cancellable Cancellable) (TlsInteractionResult, error) {
 	var carg0 *C.GTlsInteraction            // in, none, converted
 	var carg1 *C.GTlsConnection             // in, none, converted
@@ -49229,7 +46734,6 @@ func (interaction *TlsInteractionInstance) InvokeRequestCertificate(connection T
 // RequestCertificate wraps g_tls_interaction_request_certificate
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_request_certificate.g_tls_interaction_request_certificate.html
-//
 func (interaction *TlsInteractionInstance) RequestCertificate(connection TlsConnection, flags TlsCertificateRequestFlags, cancellable Cancellable) (TlsInteractionResult, error) {
 	var carg0 *C.GTlsInteraction            // in, none, converted
 	var carg1 *C.GTlsConnection             // in, none, converted
@@ -49265,7 +46769,6 @@ func (interaction *TlsInteractionInstance) RequestCertificate(connection TlsConn
 // RequestCertificateAsync wraps g_tls_interaction_request_certificate_async
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_request_certificate_async.g_tls_interaction_request_certificate_async.html
-//
 func (interaction *TlsInteractionInstance) RequestCertificateAsync(connection TlsConnection, flags TlsCertificateRequestFlags, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GTlsInteraction            // in, none, converted
 	var carg1 *C.GTlsConnection             // in, none, converted
@@ -49296,7 +46799,6 @@ func (interaction *TlsInteractionInstance) RequestCertificateAsync(connection Tl
 // RequestCertificateFinish wraps g_tls_interaction_request_certificate_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_interaction_request_certificate_finish.g_tls_interaction_request_certificate_finish.html
-//
 func (interaction *TlsInteractionInstance) RequestCertificateFinish(result AsyncResult) (TlsInteractionResult, error) {
 	var carg0 *C.GTlsInteraction      // in, none, converted
 	var carg1 *C.GAsyncResult         // in, none, converted
@@ -49629,7 +47131,6 @@ var _ TlsPassword = (*TlsPasswordInstance)(nil)
 // TlsPassword wraps GTlsPassword
 // 
 // see also https://docs.gtk.org/gio/class.TlsPassword.html
-//
 type TlsPassword interface {
 	gobject.Object
 	upcastToGTlsPassword() *TlsPasswordInstance
@@ -49637,42 +47138,34 @@ type TlsPassword interface {
 	// GetDescription wraps g_tls_password_get_description
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_get_description.g_tls_password_get_description.html
-	//
 	GetDescription() string
 	// GetFlags wraps g_tls_password_get_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_get_flags.g_tls_password_get_flags.html
-	//
 	GetFlags() TlsPasswordFlags
 	// GetValue wraps g_tls_password_get_value
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_get_value.g_tls_password_get_value.html
-	//
 	GetValue() (uint, []byte)
 	// GetWarning wraps g_tls_password_get_warning
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_get_warning.g_tls_password_get_warning.html
-	//
 	GetWarning() string
 	// SetDescription wraps g_tls_password_set_description
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_set_description.g_tls_password_set_description.html
-	//
 	SetDescription(string)
 	// SetFlags wraps g_tls_password_set_flags
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_set_flags.g_tls_password_set_flags.html
-	//
 	SetFlags(TlsPasswordFlags)
 	// SetValue wraps g_tls_password_set_value
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_set_value.g_tls_password_set_value.html
-	//
 	SetValue([]byte)
 	// SetWarning wraps g_tls_password_set_warning
 	// 
 	// see also https://docs.gtk.org/gio/method.g_tls_password_set_warning.g_tls_password_set_warning.html
-	//
 	SetWarning(string)
 
 	// chain up virtual methods:
@@ -49740,7 +47233,6 @@ func UnsafeTlsPasswordToGlibFull(c TlsPassword) unsafe.Pointer {
 // NewTlsPassword wraps g_tls_password_new
 // 
 // see also https://docs.gtk.org/gio/func.g_tls_password_new.html
-//
 func NewTlsPassword(flags TlsPasswordFlags, description string) TlsPassword {
 	var carg1 C.GTlsPasswordFlags // in, none, casted
 	var carg2 *C.gchar            // in, none, string
@@ -49764,7 +47256,6 @@ func NewTlsPassword(flags TlsPasswordFlags, description string) TlsPassword {
 // GetDescription wraps g_tls_password_get_description
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_get_description.g_tls_password_get_description.html
-//
 func (password *TlsPasswordInstance) GetDescription() string {
 	var carg0 *C.GTlsPassword // in, none, converted
 	var cret  *C.gchar        // return, none, string
@@ -49784,7 +47275,6 @@ func (password *TlsPasswordInstance) GetDescription() string {
 // GetFlags wraps g_tls_password_get_flags
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_get_flags.g_tls_password_get_flags.html
-//
 func (password *TlsPasswordInstance) GetFlags() TlsPasswordFlags {
 	var carg0 *C.GTlsPassword     // in, none, converted
 	var cret  C.GTlsPasswordFlags // return, none, casted
@@ -49804,7 +47294,6 @@ func (password *TlsPasswordInstance) GetFlags() TlsPasswordFlags {
 // GetValue wraps g_tls_password_get_value
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_get_value.g_tls_password_get_value.html
-//
 func (password *TlsPasswordInstance) GetValue() (uint, []byte) {
 	var carg0 *C.GTlsPassword // in, none, converted
 	var carg1 C.gsize         // out, transfer: full, C Pointers: 0, Name: gsize, optional, caller-allocates
@@ -49831,7 +47320,6 @@ func (password *TlsPasswordInstance) GetValue() (uint, []byte) {
 // GetWarning wraps g_tls_password_get_warning
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_get_warning.g_tls_password_get_warning.html
-//
 func (password *TlsPasswordInstance) GetWarning() string {
 	var carg0 *C.GTlsPassword // in, none, converted
 	var cret  *C.gchar        // return, none, string
@@ -49851,7 +47339,6 @@ func (password *TlsPasswordInstance) GetWarning() string {
 // SetDescription wraps g_tls_password_set_description
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_set_description.g_tls_password_set_description.html
-//
 func (password *TlsPasswordInstance) SetDescription(description string) {
 	var carg0 *C.GTlsPassword // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -49868,7 +47355,6 @@ func (password *TlsPasswordInstance) SetDescription(description string) {
 // SetFlags wraps g_tls_password_set_flags
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_set_flags.g_tls_password_set_flags.html
-//
 func (password *TlsPasswordInstance) SetFlags(flags TlsPasswordFlags) {
 	var carg0 *C.GTlsPassword     // in, none, converted
 	var carg1 C.GTlsPasswordFlags // in, none, casted
@@ -49884,7 +47370,6 @@ func (password *TlsPasswordInstance) SetFlags(flags TlsPasswordFlags) {
 // SetValue wraps g_tls_password_set_value
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_set_value.g_tls_password_set_value.html
-//
 func (password *TlsPasswordInstance) SetValue(value []byte) {
 	var carg0 *C.GTlsPassword // in, none, converted
 	var carg1 *C.guchar       // in, transfer: none, C Pointers: 1, Name: array[guchar], array (inner guchar (*typesystem.CastablePrimitive), length-by: carg2)
@@ -49904,7 +47389,6 @@ func (password *TlsPasswordInstance) SetValue(value []byte) {
 // SetWarning wraps g_tls_password_set_warning
 // 
 // see also https://docs.gtk.org/gio/method.g_tls_password_set_warning.g_tls_password_set_warning.html
-//
 func (password *TlsPasswordInstance) SetWarning(warning string) {
 	var carg0 *C.GTlsPassword // in, none, converted
 	var carg1 *C.gchar        // in, none, string
@@ -50077,7 +47561,6 @@ var _ Vfs = (*VfsInstance)(nil)
 // Vfs wraps GVfs
 // 
 // see also https://docs.gtk.org/gio/class.Vfs.html
-//
 type Vfs interface {
 	gobject.Object
 	upcastToGVfs() *VfsInstance
@@ -50085,37 +47568,30 @@ type Vfs interface {
 	// GetFileForPath wraps g_vfs_get_file_for_path
 	// 
 	// see also https://docs.gtk.org/gio/method.g_vfs_get_file_for_path.g_vfs_get_file_for_path.html
-	//
 	GetFileForPath(string) File
 	// GetFileForURI wraps g_vfs_get_file_for_uri
 	// 
 	// see also https://docs.gtk.org/gio/method.g_vfs_get_file_for_uri.g_vfs_get_file_for_uri.html
-	//
 	GetFileForURI(string) File
 	// GetSupportedURISchemes wraps g_vfs_get_supported_uri_schemes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_vfs_get_supported_uri_schemes.g_vfs_get_supported_uri_schemes.html
-	//
 	GetSupportedURISchemes() []string
 	// IsActive wraps g_vfs_is_active
 	// 
 	// see also https://docs.gtk.org/gio/method.g_vfs_is_active.g_vfs_is_active.html
-	//
 	IsActive() bool
 	// ParseName wraps g_vfs_parse_name
 	// 
 	// see also https://docs.gtk.org/gio/method.g_vfs_parse_name.g_vfs_parse_name.html
-	//
 	ParseName(string) File
 	// RegisterURIScheme wraps g_vfs_register_uri_scheme
 	// 
 	// see also https://docs.gtk.org/gio/method.g_vfs_register_uri_scheme.g_vfs_register_uri_scheme.html
-	//
 	RegisterURIScheme(string, VfsFileLookupFunc, VfsFileLookupFunc) bool
 	// UnregisterURIScheme wraps g_vfs_unregister_uri_scheme
 	// 
 	// see also https://docs.gtk.org/gio/method.g_vfs_unregister_uri_scheme.g_vfs_unregister_uri_scheme.html
-	//
 	UnregisterURIScheme(string) bool
 
 	// chain up virtual methods:
@@ -50218,7 +47694,6 @@ func UnsafeVfsToGlibFull(c Vfs) unsafe.Pointer {
 // VfsGetDefault wraps g_vfs_get_default
 // 
 // see also https://docs.gtk.org/gio/func.g_vfs_get_default.html
-//
 func VfsGetDefault() Vfs {
 	var cret *C.GVfs // return, none, converted
 
@@ -50234,7 +47709,6 @@ func VfsGetDefault() Vfs {
 // VfsGetLocal wraps g_vfs_get_local
 // 
 // see also https://docs.gtk.org/gio/func.g_vfs_get_local.html
-//
 func VfsGetLocal() Vfs {
 	var cret *C.GVfs // return, none, converted
 
@@ -50250,7 +47724,6 @@ func VfsGetLocal() Vfs {
 // GetFileForPath wraps g_vfs_get_file_for_path
 // 
 // see also https://docs.gtk.org/gio/method.g_vfs_get_file_for_path.g_vfs_get_file_for_path.html
-//
 func (vfs *VfsInstance) GetFileForPath(path string) File {
 	var carg0 *C.GVfs  // in, none, converted
 	var carg1 *C.char  // in, none, string
@@ -50274,7 +47747,6 @@ func (vfs *VfsInstance) GetFileForPath(path string) File {
 // GetFileForURI wraps g_vfs_get_file_for_uri
 // 
 // see also https://docs.gtk.org/gio/method.g_vfs_get_file_for_uri.g_vfs_get_file_for_uri.html
-//
 func (vfs *VfsInstance) GetFileForURI(uri string) File {
 	var carg0 *C.GVfs  // in, none, converted
 	var carg1 *C.char  // in, none, string
@@ -50298,7 +47770,6 @@ func (vfs *VfsInstance) GetFileForURI(uri string) File {
 // GetSupportedURISchemes wraps g_vfs_get_supported_uri_schemes
 // 
 // see also https://docs.gtk.org/gio/method.g_vfs_get_supported_uri_schemes.g_vfs_get_supported_uri_schemes.html
-//
 func (vfs *VfsInstance) GetSupportedURISchemes() []string {
 	var carg0 *C.GVfs   // in, none, converted
 	var cret  **C.gchar // return, transfer: none, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -50320,7 +47791,6 @@ func (vfs *VfsInstance) GetSupportedURISchemes() []string {
 // IsActive wraps g_vfs_is_active
 // 
 // see also https://docs.gtk.org/gio/method.g_vfs_is_active.g_vfs_is_active.html
-//
 func (vfs *VfsInstance) IsActive() bool {
 	var carg0 *C.GVfs    // in, none, converted
 	var cret  C.gboolean // return
@@ -50342,7 +47812,6 @@ func (vfs *VfsInstance) IsActive() bool {
 // ParseName wraps g_vfs_parse_name
 // 
 // see also https://docs.gtk.org/gio/method.g_vfs_parse_name.g_vfs_parse_name.html
-//
 func (vfs *VfsInstance) ParseName(parseName string) File {
 	var carg0 *C.GVfs  // in, none, converted
 	var carg1 *C.char  // in, none, string
@@ -50366,7 +47835,6 @@ func (vfs *VfsInstance) ParseName(parseName string) File {
 // RegisterURIScheme wraps g_vfs_register_uri_scheme
 // 
 // see also https://docs.gtk.org/gio/method.g_vfs_register_uri_scheme.g_vfs_register_uri_scheme.html
-//
 func (vfs *VfsInstance) RegisterURIScheme(scheme string, uriFunc VfsFileLookupFunc, parseNameFunc VfsFileLookupFunc) bool {
 	var carg0 *C.GVfs              // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -50410,7 +47878,6 @@ func (vfs *VfsInstance) RegisterURIScheme(scheme string, uriFunc VfsFileLookupFu
 // UnregisterURIScheme wraps g_vfs_unregister_uri_scheme
 // 
 // see also https://docs.gtk.org/gio/method.g_vfs_unregister_uri_scheme.g_vfs_unregister_uri_scheme.html
-//
 func (vfs *VfsInstance) UnregisterURIScheme(scheme string) bool {
 	var carg0 *C.GVfs    // in, none, converted
 	var carg1 *C.char    // in, none, string
@@ -50949,7 +48416,6 @@ var _ VolumeMonitor = (*VolumeMonitorInstance)(nil)
 // VolumeMonitor wraps GVolumeMonitor
 // 
 // see also https://docs.gtk.org/gio/class.VolumeMonitor.html
-//
 type VolumeMonitor interface {
 	gobject.Object
 	upcastToGVolumeMonitor() *VolumeMonitorInstance
@@ -50957,87 +48423,70 @@ type VolumeMonitor interface {
 	// GetConnectedDrives wraps g_volume_monitor_get_connected_drives
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_monitor_get_connected_drives.g_volume_monitor_get_connected_drives.html
-	//
 	GetConnectedDrives() []Drive
 	// GetMountForUuid wraps g_volume_monitor_get_mount_for_uuid
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_monitor_get_mount_for_uuid.g_volume_monitor_get_mount_for_uuid.html
-	//
 	GetMountForUuid(string) Mount
 	// GetMounts wraps g_volume_monitor_get_mounts
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_monitor_get_mounts.g_volume_monitor_get_mounts.html
-	//
 	GetMounts() []Mount
 	// GetVolumeForUuid wraps g_volume_monitor_get_volume_for_uuid
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_monitor_get_volume_for_uuid.g_volume_monitor_get_volume_for_uuid.html
-	//
 	GetVolumeForUuid(string) Volume
 	// GetVolumes wraps g_volume_monitor_get_volumes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_volume_monitor_get_volumes.g_volume_monitor_get_volumes.html
-	//
 	GetVolumes() []Volume
 	// ConnectDriveChanged connects the provided callback to the "drive-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-changed.html
-	//
 	ConnectDriveChanged(func(VolumeMonitor, Drive)) gobject.SignalHandle
 	// ConnectDriveConnected connects the provided callback to the "drive-connected" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-connected.html
-	//
 	ConnectDriveConnected(func(VolumeMonitor, Drive)) gobject.SignalHandle
 	// ConnectDriveDisconnected connects the provided callback to the "drive-disconnected" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-disconnected.html
-	//
 	ConnectDriveDisconnected(func(VolumeMonitor, Drive)) gobject.SignalHandle
 	// ConnectDriveEjectButton connects the provided callback to the "drive-eject-button" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-eject-button.html
-	//
 	ConnectDriveEjectButton(func(VolumeMonitor, Drive)) gobject.SignalHandle
 	// ConnectDriveStopButton connects the provided callback to the "drive-stop-button" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-stop-button.html
-	//
 	ConnectDriveStopButton(func(VolumeMonitor, Drive)) gobject.SignalHandle
 	// ConnectMountAdded connects the provided callback to the "mount-added" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-added.html
-	//
 	ConnectMountAdded(func(VolumeMonitor, Mount)) gobject.SignalHandle
 	// ConnectMountChanged connects the provided callback to the "mount-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-changed.html
-	//
 	ConnectMountChanged(func(VolumeMonitor, Mount)) gobject.SignalHandle
 	// ConnectMountPreUnmount connects the provided callback to the "mount-pre-unmount" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-pre-unmount.html
-	//
 	ConnectMountPreUnmount(func(VolumeMonitor, Mount)) gobject.SignalHandle
 	// ConnectMountRemoved connects the provided callback to the "mount-removed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-removed.html
-	//
 	ConnectMountRemoved(func(VolumeMonitor, Mount)) gobject.SignalHandle
 	// ConnectVolumeAdded connects the provided callback to the "volume-added" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.volume-added.html
-	//
 	ConnectVolumeAdded(func(VolumeMonitor, Volume)) gobject.SignalHandle
 	// ConnectVolumeChanged connects the provided callback to the "volume-changed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.volume-changed.html
-	//
 	ConnectVolumeChanged(func(VolumeMonitor, Volume)) gobject.SignalHandle
 	// ConnectVolumeRemoved connects the provided callback to the "volume-removed" signal
 	// 
 	// see also https://docs.gtk.org/gio/signal.VolumeMonitor.volume-removed.html
-	//
 	ConnectVolumeRemoved(func(VolumeMonitor, Volume)) gobject.SignalHandle
 
 	// chain up virtual methods:
@@ -51181,12 +48630,7 @@ func UnsafeVolumeMonitorToGlibFull(c VolumeMonitor) unsafe.Pointer {
 // 
 // see also https://docs.gtk.org/gio/func.g_volume_monitor_adopt_orphan_mount.html
 //
-//
-// Deprecated: (since 2.20.0) Instead of using this function, #GVolumeMonitor
-// implementations should instead create shadow mounts with the URI of
-// the mount they intend to adopt. See the proxy volume monitor in
-// gvfs for an example of this. Also see g_mount_is_shadowed(),
-// g_mount_shadow() and g_mount_unshadow() functions.
+// Deprecated: (since 2.20.0) see the provided link for the reason
 func VolumeMonitorAdoptOrphanMount(mount Mount) Volume {
 	var carg1 *C.GMount  // in, none, converted
 	var cret  *C.GVolume // return, full, converted
@@ -51206,7 +48650,6 @@ func VolumeMonitorAdoptOrphanMount(mount Mount) Volume {
 // VolumeMonitorGet wraps g_volume_monitor_get
 // 
 // see also https://docs.gtk.org/gio/func.g_volume_monitor_get.html
-//
 func VolumeMonitorGet() VolumeMonitor {
 	var cret *C.GVolumeMonitor // return, full, converted
 
@@ -51222,7 +48665,6 @@ func VolumeMonitorGet() VolumeMonitor {
 // GetConnectedDrives wraps g_volume_monitor_get_connected_drives
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_monitor_get_connected_drives.g_volume_monitor_get_connected_drives.html
-//
 func (volumeMonitor *VolumeMonitorInstance) GetConnectedDrives() []Drive {
 	var carg0 *C.GVolumeMonitor // in, none, converted
 	var cret  *C.GList          // container, transfer: full
@@ -51249,7 +48691,6 @@ func (volumeMonitor *VolumeMonitorInstance) GetConnectedDrives() []Drive {
 // GetMountForUuid wraps g_volume_monitor_get_mount_for_uuid
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_monitor_get_mount_for_uuid.g_volume_monitor_get_mount_for_uuid.html
-//
 func (volumeMonitor *VolumeMonitorInstance) GetMountForUuid(uuid string) Mount {
 	var carg0 *C.GVolumeMonitor // in, none, converted
 	var carg1 *C.char           // in, none, string
@@ -51275,7 +48716,6 @@ func (volumeMonitor *VolumeMonitorInstance) GetMountForUuid(uuid string) Mount {
 // GetMounts wraps g_volume_monitor_get_mounts
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_monitor_get_mounts.g_volume_monitor_get_mounts.html
-//
 func (volumeMonitor *VolumeMonitorInstance) GetMounts() []Mount {
 	var carg0 *C.GVolumeMonitor // in, none, converted
 	var cret  *C.GList          // container, transfer: full
@@ -51302,7 +48742,6 @@ func (volumeMonitor *VolumeMonitorInstance) GetMounts() []Mount {
 // GetVolumeForUuid wraps g_volume_monitor_get_volume_for_uuid
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_monitor_get_volume_for_uuid.g_volume_monitor_get_volume_for_uuid.html
-//
 func (volumeMonitor *VolumeMonitorInstance) GetVolumeForUuid(uuid string) Volume {
 	var carg0 *C.GVolumeMonitor // in, none, converted
 	var carg1 *C.char           // in, none, string
@@ -51328,7 +48767,6 @@ func (volumeMonitor *VolumeMonitorInstance) GetVolumeForUuid(uuid string) Volume
 // GetVolumes wraps g_volume_monitor_get_volumes
 // 
 // see also https://docs.gtk.org/gio/method.g_volume_monitor_get_volumes.g_volume_monitor_get_volumes.html
-//
 func (volumeMonitor *VolumeMonitorInstance) GetVolumes() []Volume {
 	var carg0 *C.GVolumeMonitor // in, none, converted
 	var cret  *C.GList          // container, transfer: full
@@ -51355,7 +48793,6 @@ func (volumeMonitor *VolumeMonitorInstance) GetVolumes() []Volume {
 // ConnectDriveChanged connects the provided callback to the "drive-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-changed.html
-//
 func (o *VolumeMonitorInstance) ConnectDriveChanged(fn func(VolumeMonitor, Drive)) gobject.SignalHandle {
 	return o.Connect("drive-changed", fn)
 }
@@ -51363,7 +48800,6 @@ func (o *VolumeMonitorInstance) ConnectDriveChanged(fn func(VolumeMonitor, Drive
 // ConnectDriveConnected connects the provided callback to the "drive-connected" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-connected.html
-//
 func (o *VolumeMonitorInstance) ConnectDriveConnected(fn func(VolumeMonitor, Drive)) gobject.SignalHandle {
 	return o.Connect("drive-connected", fn)
 }
@@ -51371,7 +48807,6 @@ func (o *VolumeMonitorInstance) ConnectDriveConnected(fn func(VolumeMonitor, Dri
 // ConnectDriveDisconnected connects the provided callback to the "drive-disconnected" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-disconnected.html
-//
 func (o *VolumeMonitorInstance) ConnectDriveDisconnected(fn func(VolumeMonitor, Drive)) gobject.SignalHandle {
 	return o.Connect("drive-disconnected", fn)
 }
@@ -51379,7 +48814,6 @@ func (o *VolumeMonitorInstance) ConnectDriveDisconnected(fn func(VolumeMonitor, 
 // ConnectDriveEjectButton connects the provided callback to the "drive-eject-button" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-eject-button.html
-//
 func (o *VolumeMonitorInstance) ConnectDriveEjectButton(fn func(VolumeMonitor, Drive)) gobject.SignalHandle {
 	return o.Connect("drive-eject-button", fn)
 }
@@ -51387,7 +48821,6 @@ func (o *VolumeMonitorInstance) ConnectDriveEjectButton(fn func(VolumeMonitor, D
 // ConnectDriveStopButton connects the provided callback to the "drive-stop-button" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.drive-stop-button.html
-//
 func (o *VolumeMonitorInstance) ConnectDriveStopButton(fn func(VolumeMonitor, Drive)) gobject.SignalHandle {
 	return o.Connect("drive-stop-button", fn)
 }
@@ -51395,7 +48828,6 @@ func (o *VolumeMonitorInstance) ConnectDriveStopButton(fn func(VolumeMonitor, Dr
 // ConnectMountAdded connects the provided callback to the "mount-added" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-added.html
-//
 func (o *VolumeMonitorInstance) ConnectMountAdded(fn func(VolumeMonitor, Mount)) gobject.SignalHandle {
 	return o.Connect("mount-added", fn)
 }
@@ -51403,7 +48835,6 @@ func (o *VolumeMonitorInstance) ConnectMountAdded(fn func(VolumeMonitor, Mount))
 // ConnectMountChanged connects the provided callback to the "mount-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-changed.html
-//
 func (o *VolumeMonitorInstance) ConnectMountChanged(fn func(VolumeMonitor, Mount)) gobject.SignalHandle {
 	return o.Connect("mount-changed", fn)
 }
@@ -51411,7 +48842,6 @@ func (o *VolumeMonitorInstance) ConnectMountChanged(fn func(VolumeMonitor, Mount
 // ConnectMountPreUnmount connects the provided callback to the "mount-pre-unmount" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-pre-unmount.html
-//
 func (o *VolumeMonitorInstance) ConnectMountPreUnmount(fn func(VolumeMonitor, Mount)) gobject.SignalHandle {
 	return o.Connect("mount-pre-unmount", fn)
 }
@@ -51419,7 +48849,6 @@ func (o *VolumeMonitorInstance) ConnectMountPreUnmount(fn func(VolumeMonitor, Mo
 // ConnectMountRemoved connects the provided callback to the "mount-removed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.mount-removed.html
-//
 func (o *VolumeMonitorInstance) ConnectMountRemoved(fn func(VolumeMonitor, Mount)) gobject.SignalHandle {
 	return o.Connect("mount-removed", fn)
 }
@@ -51427,7 +48856,6 @@ func (o *VolumeMonitorInstance) ConnectMountRemoved(fn func(VolumeMonitor, Mount
 // ConnectVolumeAdded connects the provided callback to the "volume-added" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.volume-added.html
-//
 func (o *VolumeMonitorInstance) ConnectVolumeAdded(fn func(VolumeMonitor, Volume)) gobject.SignalHandle {
 	return o.Connect("volume-added", fn)
 }
@@ -51435,7 +48863,6 @@ func (o *VolumeMonitorInstance) ConnectVolumeAdded(fn func(VolumeMonitor, Volume
 // ConnectVolumeChanged connects the provided callback to the "volume-changed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.volume-changed.html
-//
 func (o *VolumeMonitorInstance) ConnectVolumeChanged(fn func(VolumeMonitor, Volume)) gobject.SignalHandle {
 	return o.Connect("volume-changed", fn)
 }
@@ -51443,7 +48870,6 @@ func (o *VolumeMonitorInstance) ConnectVolumeChanged(fn func(VolumeMonitor, Volu
 // ConnectVolumeRemoved connects the provided callback to the "volume-removed" signal
 // 
 // see also https://docs.gtk.org/gio/signal.VolumeMonitor.volume-removed.html
-//
 func (o *VolumeMonitorInstance) ConnectVolumeRemoved(fn func(VolumeMonitor, Volume)) gobject.SignalHandle {
 	return o.Connect("volume-removed", fn)
 }
@@ -52246,7 +49672,6 @@ var _ ZlibDecompressor = (*ZlibDecompressorInstance)(nil)
 // ZlibDecompressor wraps GZlibDecompressor
 // 
 // see also https://docs.gtk.org/gio/class.ZlibDecompressor.html
-//
 type ZlibDecompressor interface {
 	gobject.Object
 	upcastToGZlibDecompressor() *ZlibDecompressorInstance
@@ -52254,7 +49679,6 @@ type ZlibDecompressor interface {
 	// GetFileInfo wraps g_zlib_decompressor_get_file_info
 	// 
 	// see also https://docs.gtk.org/gio/method.g_zlib_decompressor_get_file_info.g_zlib_decompressor_get_file_info.html
-	//
 	GetFileInfo() FileInfo
 
 	// chain up virtual methods:
@@ -52311,7 +49735,6 @@ func UnsafeZlibDecompressorToGlibFull(c ZlibDecompressor) unsafe.Pointer {
 // NewZlibDecompressor wraps g_zlib_decompressor_new
 // 
 // see also https://docs.gtk.org/gio/func.g_zlib_decompressor_new.html
-//
 func NewZlibDecompressor(format ZlibCompressorFormat) ZlibDecompressor {
 	var carg1 C.GZlibCompressorFormat // in, none, casted
 	var cret  *C.GZlibDecompressor    // return, full, converted
@@ -52331,7 +49754,6 @@ func NewZlibDecompressor(format ZlibCompressorFormat) ZlibDecompressor {
 // GetFileInfo wraps g_zlib_decompressor_get_file_info
 // 
 // see also https://docs.gtk.org/gio/method.g_zlib_decompressor_get_file_info.g_zlib_decompressor_get_file_info.html
-//
 func (decompressor *ZlibDecompressorInstance) GetFileInfo() FileInfo {
 	var carg0 *C.GZlibDecompressor // in, none, converted
 	var cret  *C.GFileInfo         // return, none, converted, nullable
@@ -52403,7 +49825,6 @@ var _ FileIOStream = (*FileIOStreamInstance)(nil)
 // FileIOStream wraps GFileIOStream
 // 
 // see also https://docs.gtk.org/gio/class.FileIOStream.html
-//
 type FileIOStream interface {
 	IOStream
 	Seekable
@@ -52412,22 +49833,18 @@ type FileIOStream interface {
 	// GetEtag wraps g_file_io_stream_get_etag
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_io_stream_get_etag.g_file_io_stream_get_etag.html
-	//
 	GetEtag() string
 	// QueryInfo wraps g_file_io_stream_query_info
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_io_stream_query_info.g_file_io_stream_query_info.html
-	//
 	QueryInfo(string, Cancellable) (FileInfo, error)
 	// QueryInfoAsync wraps g_file_io_stream_query_info_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_io_stream_query_info_async.g_file_io_stream_query_info_async.html
-	//
 	QueryInfoAsync(string, int32, Cancellable, AsyncReadyCallback)
 	// QueryInfoFinish wraps g_file_io_stream_query_info_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_io_stream_query_info_finish.g_file_io_stream_query_info_finish.html
-	//
 	QueryInfoFinish(AsyncResult) (FileInfo, error)
 
 	// chain up virtual methods:
@@ -52530,7 +49947,6 @@ func UnsafeFileIOStreamToGlibFull(c FileIOStream) unsafe.Pointer {
 // GetEtag wraps g_file_io_stream_get_etag
 // 
 // see also https://docs.gtk.org/gio/method.g_file_io_stream_get_etag.g_file_io_stream_get_etag.html
-//
 func (stream *FileIOStreamInstance) GetEtag() string {
 	var carg0 *C.GFileIOStream // in, none, converted
 	var cret  *C.char          // return, full, string, nullable-string
@@ -52553,7 +49969,6 @@ func (stream *FileIOStreamInstance) GetEtag() string {
 // QueryInfo wraps g_file_io_stream_query_info
 // 
 // see also https://docs.gtk.org/gio/method.g_file_io_stream_query_info.g_file_io_stream_query_info.html
-//
 func (stream *FileIOStreamInstance) QueryInfo(attributes string, cancellable Cancellable) (FileInfo, error) {
 	var carg0 *C.GFileIOStream // in, none, converted
 	var carg1 *C.char          // in, none, string
@@ -52587,7 +50002,6 @@ func (stream *FileIOStreamInstance) QueryInfo(attributes string, cancellable Can
 // QueryInfoAsync wraps g_file_io_stream_query_info_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_io_stream_query_info_async.g_file_io_stream_query_info_async.html
-//
 func (stream *FileIOStreamInstance) QueryInfoAsync(attributes string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFileIOStream      // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -52619,7 +50033,6 @@ func (stream *FileIOStreamInstance) QueryInfoAsync(attributes string, ioPriority
 // QueryInfoFinish wraps g_file_io_stream_query_info_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_io_stream_query_info_finish.g_file_io_stream_query_info_finish.html
-//
 func (stream *FileIOStreamInstance) QueryInfoFinish(result AsyncResult) (FileInfo, error) {
 	var carg0 *C.GFileIOStream // in, none, converted
 	var carg1 *C.GAsyncResult  // in, none, converted
@@ -53169,7 +50582,6 @@ var _ FileInputStream = (*FileInputStreamInstance)(nil)
 // FileInputStream wraps GFileInputStream
 // 
 // see also https://docs.gtk.org/gio/class.FileInputStream.html
-//
 type FileInputStream interface {
 	InputStream
 	Seekable
@@ -53178,17 +50590,14 @@ type FileInputStream interface {
 	// QueryInfo wraps g_file_input_stream_query_info
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_input_stream_query_info.g_file_input_stream_query_info.html
-	//
 	QueryInfo(string, Cancellable) (FileInfo, error)
 	// QueryInfoAsync wraps g_file_input_stream_query_info_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_input_stream_query_info_async.g_file_input_stream_query_info_async.html
-	//
 	QueryInfoAsync(string, int32, Cancellable, AsyncReadyCallback)
 	// QueryInfoFinish wraps g_file_input_stream_query_info_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_input_stream_query_info_finish.g_file_input_stream_query_info_finish.html
-	//
 	QueryInfoFinish(AsyncResult) (FileInfo, error)
 
 	// chain up virtual methods:
@@ -53276,7 +50685,6 @@ func UnsafeFileInputStreamToGlibFull(c FileInputStream) unsafe.Pointer {
 // QueryInfo wraps g_file_input_stream_query_info
 // 
 // see also https://docs.gtk.org/gio/method.g_file_input_stream_query_info.g_file_input_stream_query_info.html
-//
 func (stream *FileInputStreamInstance) QueryInfo(attributes string, cancellable Cancellable) (FileInfo, error) {
 	var carg0 *C.GFileInputStream // in, none, converted
 	var carg1 *C.char             // in, none, string
@@ -53310,7 +50718,6 @@ func (stream *FileInputStreamInstance) QueryInfo(attributes string, cancellable 
 // QueryInfoAsync wraps g_file_input_stream_query_info_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_input_stream_query_info_async.g_file_input_stream_query_info_async.html
-//
 func (stream *FileInputStreamInstance) QueryInfoAsync(attributes string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFileInputStream   // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -53342,7 +50749,6 @@ func (stream *FileInputStreamInstance) QueryInfoAsync(attributes string, ioPrior
 // QueryInfoFinish wraps g_file_input_stream_query_info_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_input_stream_query_info_finish.g_file_input_stream_query_info_finish.html
-//
 func (stream *FileInputStreamInstance) QueryInfoFinish(result AsyncResult) (FileInfo, error) {
 	var carg0 *C.GFileInputStream // in, none, converted
 	var carg1 *C.GAsyncResult     // in, none, converted
@@ -53720,7 +51126,6 @@ var _ FileOutputStream = (*FileOutputStreamInstance)(nil)
 // FileOutputStream wraps GFileOutputStream
 // 
 // see also https://docs.gtk.org/gio/class.FileOutputStream.html
-//
 type FileOutputStream interface {
 	OutputStream
 	Seekable
@@ -53729,22 +51134,18 @@ type FileOutputStream interface {
 	// GetEtag wraps g_file_output_stream_get_etag
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_output_stream_get_etag.g_file_output_stream_get_etag.html
-	//
 	GetEtag() string
 	// QueryInfo wraps g_file_output_stream_query_info
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_output_stream_query_info.g_file_output_stream_query_info.html
-	//
 	QueryInfo(string, Cancellable) (FileInfo, error)
 	// QueryInfoAsync wraps g_file_output_stream_query_info_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_output_stream_query_info_async.g_file_output_stream_query_info_async.html
-	//
 	QueryInfoAsync(string, int32, Cancellable, AsyncReadyCallback)
 	// QueryInfoFinish wraps g_file_output_stream_query_info_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_file_output_stream_query_info_finish.g_file_output_stream_query_info_finish.html
-	//
 	QueryInfoFinish(AsyncResult) (FileInfo, error)
 
 	// chain up virtual methods:
@@ -53847,7 +51248,6 @@ func UnsafeFileOutputStreamToGlibFull(c FileOutputStream) unsafe.Pointer {
 // GetEtag wraps g_file_output_stream_get_etag
 // 
 // see also https://docs.gtk.org/gio/method.g_file_output_stream_get_etag.g_file_output_stream_get_etag.html
-//
 func (stream *FileOutputStreamInstance) GetEtag() string {
 	var carg0 *C.GFileOutputStream // in, none, converted
 	var cret  *C.char              // return, full, string, nullable-string
@@ -53870,7 +51270,6 @@ func (stream *FileOutputStreamInstance) GetEtag() string {
 // QueryInfo wraps g_file_output_stream_query_info
 // 
 // see also https://docs.gtk.org/gio/method.g_file_output_stream_query_info.g_file_output_stream_query_info.html
-//
 func (stream *FileOutputStreamInstance) QueryInfo(attributes string, cancellable Cancellable) (FileInfo, error) {
 	var carg0 *C.GFileOutputStream // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -53904,7 +51303,6 @@ func (stream *FileOutputStreamInstance) QueryInfo(attributes string, cancellable
 // QueryInfoAsync wraps g_file_output_stream_query_info_async
 // 
 // see also https://docs.gtk.org/gio/method.g_file_output_stream_query_info_async.g_file_output_stream_query_info_async.html
-//
 func (stream *FileOutputStreamInstance) QueryInfoAsync(attributes string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GFileOutputStream  // in, none, converted
 	var carg1 *C.char               // in, none, string
@@ -53936,7 +51334,6 @@ func (stream *FileOutputStreamInstance) QueryInfoAsync(attributes string, ioPrio
 // QueryInfoFinish wraps g_file_output_stream_query_info_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_file_output_stream_query_info_finish.g_file_output_stream_query_info_finish.html
-//
 func (stream *FileOutputStreamInstance) QueryInfoFinish(result AsyncResult) (FileInfo, error) {
 	var carg0 *C.GFileOutputStream // in, none, converted
 	var carg1 *C.GAsyncResult      // in, none, converted
@@ -54484,7 +51881,6 @@ var _ FilterInputStream = (*FilterInputStreamInstance)(nil)
 // FilterInputStream wraps GFilterInputStream
 // 
 // see also https://docs.gtk.org/gio/class.FilterInputStream.html
-//
 type FilterInputStream interface {
 	InputStream
 	upcastToGFilterInputStream() *FilterInputStreamInstance
@@ -54492,17 +51888,14 @@ type FilterInputStream interface {
 	// GetBaseStream wraps g_filter_input_stream_get_base_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filter_input_stream_get_base_stream.g_filter_input_stream_get_base_stream.html
-	//
 	GetBaseStream() InputStream
 	// GetCloseBaseStream wraps g_filter_input_stream_get_close_base_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filter_input_stream_get_close_base_stream.g_filter_input_stream_get_close_base_stream.html
-	//
 	GetCloseBaseStream() bool
 	// SetCloseBaseStream wraps g_filter_input_stream_set_close_base_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filter_input_stream_set_close_base_stream.g_filter_input_stream_set_close_base_stream.html
-	//
 	SetCloseBaseStream(bool)
 
 	// chain up virtual methods:
@@ -54561,7 +51954,6 @@ func UnsafeFilterInputStreamToGlibFull(c FilterInputStream) unsafe.Pointer {
 // GetBaseStream wraps g_filter_input_stream_get_base_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_filter_input_stream_get_base_stream.g_filter_input_stream_get_base_stream.html
-//
 func (stream *FilterInputStreamInstance) GetBaseStream() InputStream {
 	var carg0 *C.GFilterInputStream // in, none, converted
 	var cret  *C.GInputStream       // return, none, converted
@@ -54581,7 +51973,6 @@ func (stream *FilterInputStreamInstance) GetBaseStream() InputStream {
 // GetCloseBaseStream wraps g_filter_input_stream_get_close_base_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_filter_input_stream_get_close_base_stream.g_filter_input_stream_get_close_base_stream.html
-//
 func (stream *FilterInputStreamInstance) GetCloseBaseStream() bool {
 	var carg0 *C.GFilterInputStream // in, none, converted
 	var cret  C.gboolean            // return
@@ -54603,7 +51994,6 @@ func (stream *FilterInputStreamInstance) GetCloseBaseStream() bool {
 // SetCloseBaseStream wraps g_filter_input_stream_set_close_base_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_filter_input_stream_set_close_base_stream.g_filter_input_stream_set_close_base_stream.html
-//
 func (stream *FilterInputStreamInstance) SetCloseBaseStream(closeBase bool) {
 	var carg0 *C.GFilterInputStream // in, none, converted
 	var carg1 C.gboolean            // in
@@ -54669,7 +52059,6 @@ var _ FilterOutputStream = (*FilterOutputStreamInstance)(nil)
 // FilterOutputStream wraps GFilterOutputStream
 // 
 // see also https://docs.gtk.org/gio/class.FilterOutputStream.html
-//
 type FilterOutputStream interface {
 	OutputStream
 	upcastToGFilterOutputStream() *FilterOutputStreamInstance
@@ -54677,17 +52066,14 @@ type FilterOutputStream interface {
 	// GetBaseStream wraps g_filter_output_stream_get_base_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filter_output_stream_get_base_stream.g_filter_output_stream_get_base_stream.html
-	//
 	GetBaseStream() OutputStream
 	// GetCloseBaseStream wraps g_filter_output_stream_get_close_base_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filter_output_stream_get_close_base_stream.g_filter_output_stream_get_close_base_stream.html
-	//
 	GetCloseBaseStream() bool
 	// SetCloseBaseStream wraps g_filter_output_stream_set_close_base_stream
 	// 
 	// see also https://docs.gtk.org/gio/method.g_filter_output_stream_set_close_base_stream.g_filter_output_stream_set_close_base_stream.html
-	//
 	SetCloseBaseStream(bool)
 
 	// chain up virtual methods:
@@ -54746,7 +52132,6 @@ func UnsafeFilterOutputStreamToGlibFull(c FilterOutputStream) unsafe.Pointer {
 // GetBaseStream wraps g_filter_output_stream_get_base_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_filter_output_stream_get_base_stream.g_filter_output_stream_get_base_stream.html
-//
 func (stream *FilterOutputStreamInstance) GetBaseStream() OutputStream {
 	var carg0 *C.GFilterOutputStream // in, none, converted
 	var cret  *C.GOutputStream       // return, none, converted
@@ -54766,7 +52151,6 @@ func (stream *FilterOutputStreamInstance) GetBaseStream() OutputStream {
 // GetCloseBaseStream wraps g_filter_output_stream_get_close_base_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_filter_output_stream_get_close_base_stream.g_filter_output_stream_get_close_base_stream.html
-//
 func (stream *FilterOutputStreamInstance) GetCloseBaseStream() bool {
 	var carg0 *C.GFilterOutputStream // in, none, converted
 	var cret  C.gboolean             // return
@@ -54788,7 +52172,6 @@ func (stream *FilterOutputStreamInstance) GetCloseBaseStream() bool {
 // SetCloseBaseStream wraps g_filter_output_stream_set_close_base_stream
 // 
 // see also https://docs.gtk.org/gio/method.g_filter_output_stream_set_close_base_stream.g_filter_output_stream_set_close_base_stream.html
-//
 func (stream *FilterOutputStreamInstance) SetCloseBaseStream(closeBase bool) {
 	var carg0 *C.GFilterOutputStream // in, none, converted
 	var carg1 C.gboolean             // in
@@ -54856,7 +52239,6 @@ var _ InetSocketAddress = (*InetSocketAddressInstance)(nil)
 // InetSocketAddress wraps GInetSocketAddress
 // 
 // see also https://docs.gtk.org/gio/class.InetSocketAddress.html
-//
 type InetSocketAddress interface {
 	SocketAddress
 	SocketConnectable
@@ -54865,22 +52247,18 @@ type InetSocketAddress interface {
 	// GetAddress wraps g_inet_socket_address_get_address
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_address.g_inet_socket_address_get_address.html
-	//
 	GetAddress() InetAddress
 	// GetFlowinfo wraps g_inet_socket_address_get_flowinfo
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_flowinfo.g_inet_socket_address_get_flowinfo.html
-	//
 	GetFlowinfo() uint32
 	// GetPort wraps g_inet_socket_address_get_port
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_port.g_inet_socket_address_get_port.html
-	//
 	GetPort() uint16
 	// GetScopeID wraps g_inet_socket_address_get_scope_id
 	// 
 	// see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_scope_id.g_inet_socket_address_get_scope_id.html
-	//
 	GetScopeID() uint32
 
 	// chain up virtual methods:
@@ -54942,7 +52320,6 @@ func UnsafeInetSocketAddressToGlibFull(c InetSocketAddress) unsafe.Pointer {
 // NewInetSocketAddress wraps g_inet_socket_address_new
 // 
 // see also https://docs.gtk.org/gio/func.g_inet_socket_address_new.html
-//
 func NewInetSocketAddress(address InetAddress, port uint16) SocketAddress {
 	var carg1 *C.GInetAddress   // in, none, converted
 	var carg2 C.guint16         // in, none, casted
@@ -54965,7 +52342,6 @@ func NewInetSocketAddress(address InetAddress, port uint16) SocketAddress {
 // NewInetSocketAddressFromString wraps g_inet_socket_address_new_from_string
 // 
 // see also https://docs.gtk.org/gio/func.g_inet_socket_address_new_from_string.html
-//
 func NewInetSocketAddressFromString(address string, port uint) SocketAddress {
 	var carg1 *C.char           // in, none, string
 	var carg2 C.guint           // in, none, casted
@@ -54991,7 +52367,6 @@ func NewInetSocketAddressFromString(address string, port uint) SocketAddress {
 // GetAddress wraps g_inet_socket_address_get_address
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_address.g_inet_socket_address_get_address.html
-//
 func (address *InetSocketAddressInstance) GetAddress() InetAddress {
 	var carg0 *C.GInetSocketAddress // in, none, converted
 	var cret  *C.GInetAddress       // return, none, converted
@@ -55011,7 +52386,6 @@ func (address *InetSocketAddressInstance) GetAddress() InetAddress {
 // GetFlowinfo wraps g_inet_socket_address_get_flowinfo
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_flowinfo.g_inet_socket_address_get_flowinfo.html
-//
 func (address *InetSocketAddressInstance) GetFlowinfo() uint32 {
 	var carg0 *C.GInetSocketAddress // in, none, converted
 	var cret  C.guint32             // return, none, casted
@@ -55031,7 +52405,6 @@ func (address *InetSocketAddressInstance) GetFlowinfo() uint32 {
 // GetPort wraps g_inet_socket_address_get_port
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_port.g_inet_socket_address_get_port.html
-//
 func (address *InetSocketAddressInstance) GetPort() uint16 {
 	var carg0 *C.GInetSocketAddress // in, none, converted
 	var cret  C.guint16             // return, none, casted
@@ -55051,7 +52424,6 @@ func (address *InetSocketAddressInstance) GetPort() uint16 {
 // GetScopeID wraps g_inet_socket_address_get_scope_id
 // 
 // see also https://docs.gtk.org/gio/method.g_inet_socket_address_get_scope_id.g_inet_socket_address_get_scope_id.html
-//
 func (address *InetSocketAddressInstance) GetScopeID() uint32 {
 	var carg0 *C.GInetSocketAddress // in, none, converted
 	var cret  C.guint32             // return, none, casted
@@ -55122,7 +52494,6 @@ var _ MemoryOutputStream = (*MemoryOutputStreamInstance)(nil)
 // MemoryOutputStream wraps GMemoryOutputStream
 // 
 // see also https://docs.gtk.org/gio/class.MemoryOutputStream.html
-//
 type MemoryOutputStream interface {
 	OutputStream
 	PollableOutputStream
@@ -55132,17 +52503,14 @@ type MemoryOutputStream interface {
 	// GetDataSize wraps g_memory_output_stream_get_data_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_memory_output_stream_get_data_size.g_memory_output_stream_get_data_size.html
-	//
 	GetDataSize() uint
 	// GetSize wraps g_memory_output_stream_get_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_memory_output_stream_get_size.g_memory_output_stream_get_size.html
-	//
 	GetSize() uint
 	// StealAsBytes wraps g_memory_output_stream_steal_as_bytes
 	// 
 	// see also https://docs.gtk.org/gio/method.g_memory_output_stream_steal_as_bytes.g_memory_output_stream_steal_as_bytes.html
-	//
 	StealAsBytes() *glib.Bytes
 
 	// chain up virtual methods:
@@ -55207,7 +52575,6 @@ func UnsafeMemoryOutputStreamToGlibFull(c MemoryOutputStream) unsafe.Pointer {
 // NewMemoryOutputStreamResizable wraps g_memory_output_stream_new_resizable
 // 
 // see also https://docs.gtk.org/gio/func.g_memory_output_stream_new_resizable.html
-//
 func NewMemoryOutputStreamResizable() OutputStream {
 	var cret *C.GOutputStream // return, full, converted
 
@@ -55223,7 +52590,6 @@ func NewMemoryOutputStreamResizable() OutputStream {
 // GetDataSize wraps g_memory_output_stream_get_data_size
 // 
 // see also https://docs.gtk.org/gio/method.g_memory_output_stream_get_data_size.g_memory_output_stream_get_data_size.html
-//
 func (ostream *MemoryOutputStreamInstance) GetDataSize() uint {
 	var carg0 *C.GMemoryOutputStream // in, none, converted
 	var cret  C.gsize                // return, none, casted
@@ -55243,7 +52609,6 @@ func (ostream *MemoryOutputStreamInstance) GetDataSize() uint {
 // GetSize wraps g_memory_output_stream_get_size
 // 
 // see also https://docs.gtk.org/gio/method.g_memory_output_stream_get_size.g_memory_output_stream_get_size.html
-//
 func (ostream *MemoryOutputStreamInstance) GetSize() uint {
 	var carg0 *C.GMemoryOutputStream // in, none, converted
 	var cret  C.gsize                // return, none, casted
@@ -55263,7 +52628,6 @@ func (ostream *MemoryOutputStreamInstance) GetSize() uint {
 // StealAsBytes wraps g_memory_output_stream_steal_as_bytes
 // 
 // see also https://docs.gtk.org/gio/method.g_memory_output_stream_steal_as_bytes.g_memory_output_stream_steal_as_bytes.html
-//
 func (ostream *MemoryOutputStreamInstance) StealAsBytes() *glib.Bytes {
 	var carg0 *C.GMemoryOutputStream // in, none, converted
 	var cret  *C.GBytes              // return, full, converted
@@ -55331,7 +52695,6 @@ var _ Menu = (*MenuInstance)(nil)
 // Menu wraps GMenu
 // 
 // see also https://docs.gtk.org/gio/class.Menu.html
-//
 type Menu interface {
 	MenuModel
 	upcastToGMenu() *MenuInstance
@@ -55339,77 +52702,62 @@ type Menu interface {
 	// Append wraps g_menu_append
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_append.g_menu_append.html
-	//
 	Append(string, string)
 	// AppendItem wraps g_menu_append_item
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_append_item.g_menu_append_item.html
-	//
 	AppendItem(MenuItem)
 	// AppendSection wraps g_menu_append_section
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_append_section.g_menu_append_section.html
-	//
 	AppendSection(string, MenuModel)
 	// AppendSubmenu wraps g_menu_append_submenu
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_append_submenu.g_menu_append_submenu.html
-	//
 	AppendSubmenu(string, MenuModel)
 	// Freeze wraps g_menu_freeze
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_freeze.g_menu_freeze.html
-	//
 	Freeze()
 	// Insert wraps g_menu_insert
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_insert.g_menu_insert.html
-	//
 	Insert(int32, string, string)
 	// InsertItem wraps g_menu_insert_item
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_insert_item.g_menu_insert_item.html
-	//
 	InsertItem(int32, MenuItem)
 	// InsertSection wraps g_menu_insert_section
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_insert_section.g_menu_insert_section.html
-	//
 	InsertSection(int32, string, MenuModel)
 	// InsertSubmenu wraps g_menu_insert_submenu
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_insert_submenu.g_menu_insert_submenu.html
-	//
 	InsertSubmenu(int32, string, MenuModel)
 	// Prepend wraps g_menu_prepend
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_prepend.g_menu_prepend.html
-	//
 	Prepend(string, string)
 	// PrependItem wraps g_menu_prepend_item
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_prepend_item.g_menu_prepend_item.html
-	//
 	PrependItem(MenuItem)
 	// PrependSection wraps g_menu_prepend_section
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_prepend_section.g_menu_prepend_section.html
-	//
 	PrependSection(string, MenuModel)
 	// PrependSubmenu wraps g_menu_prepend_submenu
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_prepend_submenu.g_menu_prepend_submenu.html
-	//
 	PrependSubmenu(string, MenuModel)
 	// Remove wraps g_menu_remove
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_remove.g_menu_remove.html
-	//
 	Remove(int32)
 	// RemoveAll wraps g_menu_remove_all
 	// 
 	// see also https://docs.gtk.org/gio/method.g_menu_remove_all.g_menu_remove_all.html
-	//
 	RemoveAll()
 }
 
@@ -55466,7 +52814,6 @@ func UnsafeMenuToGlibFull(c Menu) unsafe.Pointer {
 // NewMenu wraps g_menu_new
 // 
 // see also https://docs.gtk.org/gio/func.g_menu_new.html
-//
 func NewMenu() Menu {
 	var cret *C.GMenu // return, full, converted
 
@@ -55482,7 +52829,6 @@ func NewMenu() Menu {
 // Append wraps g_menu_append
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_append.g_menu_append.html
-//
 func (menu *MenuInstance) Append(label string, detailedAction string) {
 	var carg0 *C.GMenu // in, none, converted
 	var carg1 *C.gchar // in, none, string, nullable-string
@@ -55507,7 +52853,6 @@ func (menu *MenuInstance) Append(label string, detailedAction string) {
 // AppendItem wraps g_menu_append_item
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_append_item.g_menu_append_item.html
-//
 func (menu *MenuInstance) AppendItem(item MenuItem) {
 	var carg0 *C.GMenu     // in, none, converted
 	var carg1 *C.GMenuItem // in, none, converted
@@ -55523,7 +52868,6 @@ func (menu *MenuInstance) AppendItem(item MenuItem) {
 // AppendSection wraps g_menu_append_section
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_append_section.g_menu_append_section.html
-//
 func (menu *MenuInstance) AppendSection(label string, section MenuModel) {
 	var carg0 *C.GMenu      // in, none, converted
 	var carg1 *C.gchar      // in, none, string, nullable-string
@@ -55545,7 +52889,6 @@ func (menu *MenuInstance) AppendSection(label string, section MenuModel) {
 // AppendSubmenu wraps g_menu_append_submenu
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_append_submenu.g_menu_append_submenu.html
-//
 func (menu *MenuInstance) AppendSubmenu(label string, submenu MenuModel) {
 	var carg0 *C.GMenu      // in, none, converted
 	var carg1 *C.gchar      // in, none, string, nullable-string
@@ -55567,7 +52910,6 @@ func (menu *MenuInstance) AppendSubmenu(label string, submenu MenuModel) {
 // Freeze wraps g_menu_freeze
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_freeze.g_menu_freeze.html
-//
 func (menu *MenuInstance) Freeze() {
 	var carg0 *C.GMenu // in, none, converted
 
@@ -55580,7 +52922,6 @@ func (menu *MenuInstance) Freeze() {
 // Insert wraps g_menu_insert
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_insert.g_menu_insert.html
-//
 func (menu *MenuInstance) Insert(position int32, label string, detailedAction string) {
 	var carg0 *C.GMenu // in, none, converted
 	var carg1 C.gint   // in, none, casted
@@ -55608,7 +52949,6 @@ func (menu *MenuInstance) Insert(position int32, label string, detailedAction st
 // InsertItem wraps g_menu_insert_item
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_insert_item.g_menu_insert_item.html
-//
 func (menu *MenuInstance) InsertItem(position int32, item MenuItem) {
 	var carg0 *C.GMenu     // in, none, converted
 	var carg1 C.gint       // in, none, casted
@@ -55627,7 +52967,6 @@ func (menu *MenuInstance) InsertItem(position int32, item MenuItem) {
 // InsertSection wraps g_menu_insert_section
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_insert_section.g_menu_insert_section.html
-//
 func (menu *MenuInstance) InsertSection(position int32, label string, section MenuModel) {
 	var carg0 *C.GMenu      // in, none, converted
 	var carg1 C.gint        // in, none, casted
@@ -55652,7 +52991,6 @@ func (menu *MenuInstance) InsertSection(position int32, label string, section Me
 // InsertSubmenu wraps g_menu_insert_submenu
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_insert_submenu.g_menu_insert_submenu.html
-//
 func (menu *MenuInstance) InsertSubmenu(position int32, label string, submenu MenuModel) {
 	var carg0 *C.GMenu      // in, none, converted
 	var carg1 C.gint        // in, none, casted
@@ -55677,7 +53015,6 @@ func (menu *MenuInstance) InsertSubmenu(position int32, label string, submenu Me
 // Prepend wraps g_menu_prepend
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_prepend.g_menu_prepend.html
-//
 func (menu *MenuInstance) Prepend(label string, detailedAction string) {
 	var carg0 *C.GMenu // in, none, converted
 	var carg1 *C.gchar // in, none, string, nullable-string
@@ -55702,7 +53039,6 @@ func (menu *MenuInstance) Prepend(label string, detailedAction string) {
 // PrependItem wraps g_menu_prepend_item
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_prepend_item.g_menu_prepend_item.html
-//
 func (menu *MenuInstance) PrependItem(item MenuItem) {
 	var carg0 *C.GMenu     // in, none, converted
 	var carg1 *C.GMenuItem // in, none, converted
@@ -55718,7 +53054,6 @@ func (menu *MenuInstance) PrependItem(item MenuItem) {
 // PrependSection wraps g_menu_prepend_section
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_prepend_section.g_menu_prepend_section.html
-//
 func (menu *MenuInstance) PrependSection(label string, section MenuModel) {
 	var carg0 *C.GMenu      // in, none, converted
 	var carg1 *C.gchar      // in, none, string, nullable-string
@@ -55740,7 +53075,6 @@ func (menu *MenuInstance) PrependSection(label string, section MenuModel) {
 // PrependSubmenu wraps g_menu_prepend_submenu
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_prepend_submenu.g_menu_prepend_submenu.html
-//
 func (menu *MenuInstance) PrependSubmenu(label string, submenu MenuModel) {
 	var carg0 *C.GMenu      // in, none, converted
 	var carg1 *C.gchar      // in, none, string, nullable-string
@@ -55762,7 +53096,6 @@ func (menu *MenuInstance) PrependSubmenu(label string, submenu MenuModel) {
 // Remove wraps g_menu_remove
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_remove.g_menu_remove.html
-//
 func (menu *MenuInstance) Remove(position int32) {
 	var carg0 *C.GMenu // in, none, converted
 	var carg1 C.gint   // in, none, casted
@@ -55778,7 +53111,6 @@ func (menu *MenuInstance) Remove(position int32) {
 // RemoveAll wraps g_menu_remove_all
 // 
 // see also https://docs.gtk.org/gio/method.g_menu_remove_all.g_menu_remove_all.html
-//
 func (menu *MenuInstance) RemoveAll() {
 	var carg0 *C.GMenu // in, none, converted
 
@@ -55801,7 +53133,6 @@ var _ NativeSocketAddress = (*NativeSocketAddressInstance)(nil)
 // NativeSocketAddress wraps GNativeSocketAddress
 // 
 // see also https://docs.gtk.org/gio/class.NativeSocketAddress.html
-//
 type NativeSocketAddress interface {
 	SocketAddress
 	SocketConnectable
@@ -56022,7 +53353,6 @@ var _ ProxyAddress = (*ProxyAddressInstance)(nil)
 // ProxyAddress wraps GProxyAddress
 // 
 // see also https://docs.gtk.org/gio/class.ProxyAddress.html
-//
 type ProxyAddress interface {
 	InetSocketAddress
 	upcastToGProxyAddress() *ProxyAddressInstance
@@ -56030,37 +53360,30 @@ type ProxyAddress interface {
 	// GetDestinationHostname wraps g_proxy_address_get_destination_hostname
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_address_get_destination_hostname.g_proxy_address_get_destination_hostname.html
-	//
 	GetDestinationHostname() string
 	// GetDestinationPort wraps g_proxy_address_get_destination_port
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_address_get_destination_port.g_proxy_address_get_destination_port.html
-	//
 	GetDestinationPort() uint16
 	// GetDestinationProtocol wraps g_proxy_address_get_destination_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_address_get_destination_protocol.g_proxy_address_get_destination_protocol.html
-	//
 	GetDestinationProtocol() string
 	// GetPassword wraps g_proxy_address_get_password
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_address_get_password.g_proxy_address_get_password.html
-	//
 	GetPassword() string
 	// GetProtocol wraps g_proxy_address_get_protocol
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_address_get_protocol.g_proxy_address_get_protocol.html
-	//
 	GetProtocol() string
 	// GetURI wraps g_proxy_address_get_uri
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_address_get_uri.g_proxy_address_get_uri.html
-	//
 	GetURI() string
 	// GetUsername wraps g_proxy_address_get_username
 	// 
 	// see also https://docs.gtk.org/gio/method.g_proxy_address_get_username.g_proxy_address_get_username.html
-	//
 	GetUsername() string
 
 	// chain up virtual methods:
@@ -56124,7 +53447,6 @@ func UnsafeProxyAddressToGlibFull(c ProxyAddress) unsafe.Pointer {
 // NewProxyAddress wraps g_proxy_address_new
 // 
 // see also https://docs.gtk.org/gio/func.g_proxy_address_new.html
-//
 func NewProxyAddress(inetaddr InetAddress, port uint16, protocol string, destHostname string, destPort uint16, username string, password string) SocketAddress {
 	var carg1 *C.GInetAddress   // in, none, converted
 	var carg2 C.guint16         // in, none, casted
@@ -56170,7 +53492,6 @@ func NewProxyAddress(inetaddr InetAddress, port uint16, protocol string, destHos
 // GetDestinationHostname wraps g_proxy_address_get_destination_hostname
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_address_get_destination_hostname.g_proxy_address_get_destination_hostname.html
-//
 func (proxy *ProxyAddressInstance) GetDestinationHostname() string {
 	var carg0 *C.GProxyAddress // in, none, converted
 	var cret  *C.gchar         // return, none, string
@@ -56190,7 +53511,6 @@ func (proxy *ProxyAddressInstance) GetDestinationHostname() string {
 // GetDestinationPort wraps g_proxy_address_get_destination_port
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_address_get_destination_port.g_proxy_address_get_destination_port.html
-//
 func (proxy *ProxyAddressInstance) GetDestinationPort() uint16 {
 	var carg0 *C.GProxyAddress // in, none, converted
 	var cret  C.guint16        // return, none, casted
@@ -56210,7 +53530,6 @@ func (proxy *ProxyAddressInstance) GetDestinationPort() uint16 {
 // GetDestinationProtocol wraps g_proxy_address_get_destination_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_address_get_destination_protocol.g_proxy_address_get_destination_protocol.html
-//
 func (proxy *ProxyAddressInstance) GetDestinationProtocol() string {
 	var carg0 *C.GProxyAddress // in, none, converted
 	var cret  *C.gchar         // return, none, string
@@ -56230,7 +53549,6 @@ func (proxy *ProxyAddressInstance) GetDestinationProtocol() string {
 // GetPassword wraps g_proxy_address_get_password
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_address_get_password.g_proxy_address_get_password.html
-//
 func (proxy *ProxyAddressInstance) GetPassword() string {
 	var carg0 *C.GProxyAddress // in, none, converted
 	var cret  *C.gchar         // return, none, string, nullable-string
@@ -56252,7 +53570,6 @@ func (proxy *ProxyAddressInstance) GetPassword() string {
 // GetProtocol wraps g_proxy_address_get_protocol
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_address_get_protocol.g_proxy_address_get_protocol.html
-//
 func (proxy *ProxyAddressInstance) GetProtocol() string {
 	var carg0 *C.GProxyAddress // in, none, converted
 	var cret  *C.gchar         // return, none, string
@@ -56272,7 +53589,6 @@ func (proxy *ProxyAddressInstance) GetProtocol() string {
 // GetURI wraps g_proxy_address_get_uri
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_address_get_uri.g_proxy_address_get_uri.html
-//
 func (proxy *ProxyAddressInstance) GetURI() string {
 	var carg0 *C.GProxyAddress // in, none, converted
 	var cret  *C.gchar         // return, none, string, nullable-string
@@ -56294,7 +53610,6 @@ func (proxy *ProxyAddressInstance) GetURI() string {
 // GetUsername wraps g_proxy_address_get_username
 // 
 // see also https://docs.gtk.org/gio/method.g_proxy_address_get_username.g_proxy_address_get_username.html
-//
 func (proxy *ProxyAddressInstance) GetUsername() string {
 	var carg0 *C.GProxyAddress // in, none, converted
 	var cret  *C.gchar         // return, none, string, nullable-string
@@ -56364,7 +53679,6 @@ var _ ProxyAddressEnumerator = (*ProxyAddressEnumeratorInstance)(nil)
 // ProxyAddressEnumerator wraps GProxyAddressEnumerator
 // 
 // see also https://docs.gtk.org/gio/class.ProxyAddressEnumerator.html
-//
 type ProxyAddressEnumerator interface {
 	SocketAddressEnumerator
 	upcastToGProxyAddressEnumerator() *ProxyAddressEnumeratorInstance
@@ -56475,7 +53789,6 @@ var _ BufferedInputStream = (*BufferedInputStreamInstance)(nil)
 // BufferedInputStream wraps GBufferedInputStream
 // 
 // see also https://docs.gtk.org/gio/class.BufferedInputStream.html
-//
 type BufferedInputStream interface {
 	FilterInputStream
 	Seekable
@@ -56484,47 +53797,38 @@ type BufferedInputStream interface {
 	// Fill wraps g_buffered_input_stream_fill
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_fill.g_buffered_input_stream_fill.html
-	//
 	Fill(int, Cancellable) (int, error)
 	// FillAsync wraps g_buffered_input_stream_fill_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_fill_async.g_buffered_input_stream_fill_async.html
-	//
 	FillAsync(int, int32, Cancellable, AsyncReadyCallback)
 	// FillFinish wraps g_buffered_input_stream_fill_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_fill_finish.g_buffered_input_stream_fill_finish.html
-	//
 	FillFinish(AsyncResult) (int, error)
 	// GetAvailable wraps g_buffered_input_stream_get_available
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_get_available.g_buffered_input_stream_get_available.html
-	//
 	GetAvailable() uint
 	// GetBufferSize wraps g_buffered_input_stream_get_buffer_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_get_buffer_size.g_buffered_input_stream_get_buffer_size.html
-	//
 	GetBufferSize() uint
 	// Peek wraps g_buffered_input_stream_peek
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_peek.g_buffered_input_stream_peek.html
-	//
 	Peek([]byte, uint) uint
 	// PeekBuffer wraps g_buffered_input_stream_peek_buffer
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_peek_buffer.g_buffered_input_stream_peek_buffer.html
-	//
 	PeekBuffer() (uint, []byte)
 	// ReadByte wraps g_buffered_input_stream_read_byte
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_read_byte.g_buffered_input_stream_read_byte.html
-	//
 	ReadByte(Cancellable) (int32, error)
 	// SetBufferSize wraps g_buffered_input_stream_set_buffer_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_input_stream_set_buffer_size.g_buffered_input_stream_set_buffer_size.html
-	//
 	SetBufferSize(uint)
 
 	// chain up virtual methods:
@@ -56599,7 +53903,6 @@ func UnsafeBufferedInputStreamToGlibFull(c BufferedInputStream) unsafe.Pointer {
 // NewBufferedInputStream wraps g_buffered_input_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_buffered_input_stream_new.html
-//
 func NewBufferedInputStream(baseStream InputStream) InputStream {
 	var carg1 *C.GInputStream // in, none, converted
 	var cret  *C.GInputStream // return, full, converted
@@ -56619,7 +53922,6 @@ func NewBufferedInputStream(baseStream InputStream) InputStream {
 // NewBufferedInputStreamSized wraps g_buffered_input_stream_new_sized
 // 
 // see also https://docs.gtk.org/gio/func.g_buffered_input_stream_new_sized.html
-//
 func NewBufferedInputStreamSized(baseStream InputStream, size uint) InputStream {
 	var carg1 *C.GInputStream // in, none, converted
 	var carg2 C.gsize         // in, none, casted
@@ -56642,7 +53944,6 @@ func NewBufferedInputStreamSized(baseStream InputStream, size uint) InputStream 
 // Fill wraps g_buffered_input_stream_fill
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_fill.g_buffered_input_stream_fill.html
-//
 func (stream *BufferedInputStreamInstance) Fill(count int, cancellable Cancellable) (int, error) {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var carg1 C.gssize                // in, none, casted
@@ -56675,7 +53976,6 @@ func (stream *BufferedInputStreamInstance) Fill(count int, cancellable Cancellab
 // FillAsync wraps g_buffered_input_stream_fill_async
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_fill_async.g_buffered_input_stream_fill_async.html
-//
 func (stream *BufferedInputStreamInstance) FillAsync(count int, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var carg1 C.gssize                // in, none, casted
@@ -56706,7 +54006,6 @@ func (stream *BufferedInputStreamInstance) FillAsync(count int, ioPriority int32
 // FillFinish wraps g_buffered_input_stream_fill_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_fill_finish.g_buffered_input_stream_fill_finish.html
-//
 func (stream *BufferedInputStreamInstance) FillFinish(result AsyncResult) (int, error) {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var carg1 *C.GAsyncResult         // in, none, converted
@@ -56734,7 +54033,6 @@ func (stream *BufferedInputStreamInstance) FillFinish(result AsyncResult) (int, 
 // GetAvailable wraps g_buffered_input_stream_get_available
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_get_available.g_buffered_input_stream_get_available.html
-//
 func (stream *BufferedInputStreamInstance) GetAvailable() uint {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var cret  C.gsize                 // return, none, casted
@@ -56754,7 +54052,6 @@ func (stream *BufferedInputStreamInstance) GetAvailable() uint {
 // GetBufferSize wraps g_buffered_input_stream_get_buffer_size
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_get_buffer_size.g_buffered_input_stream_get_buffer_size.html
-//
 func (stream *BufferedInputStreamInstance) GetBufferSize() uint {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var cret  C.gsize                 // return, none, casted
@@ -56774,7 +54071,6 @@ func (stream *BufferedInputStreamInstance) GetBufferSize() uint {
 // Peek wraps g_buffered_input_stream_peek
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_peek.g_buffered_input_stream_peek.html
-//
 func (stream *BufferedInputStreamInstance) Peek(buffer []byte, offset uint) uint {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var carg1 unsafe.Pointer          // in, transfer: none, C Pointers: 1, Name: array[unknown], array (inner unknown, length-by: carg3)
@@ -56804,7 +54100,6 @@ func (stream *BufferedInputStreamInstance) Peek(buffer []byte, offset uint) uint
 // PeekBuffer wraps g_buffered_input_stream_peek_buffer
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_peek_buffer.g_buffered_input_stream_peek_buffer.html
-//
 func (stream *BufferedInputStreamInstance) PeekBuffer() (uint, []byte) {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var carg1 C.gsize                 // out, full, casted
@@ -56829,7 +54124,6 @@ func (stream *BufferedInputStreamInstance) PeekBuffer() (uint, []byte) {
 // ReadByte wraps g_buffered_input_stream_read_byte
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_read_byte.g_buffered_input_stream_read_byte.html
-//
 func (stream *BufferedInputStreamInstance) ReadByte(cancellable Cancellable) (int32, error) {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var carg1 *C.GCancellable         // in, none, converted, nullable
@@ -56859,7 +54153,6 @@ func (stream *BufferedInputStreamInstance) ReadByte(cancellable Cancellable) (in
 // SetBufferSize wraps g_buffered_input_stream_set_buffer_size
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_input_stream_set_buffer_size.g_buffered_input_stream_set_buffer_size.html
-//
 func (stream *BufferedInputStreamInstance) SetBufferSize(size uint) {
 	var carg0 *C.GBufferedInputStream // in, none, converted
 	var carg1 C.gsize                 // in, none, casted
@@ -57052,7 +54345,6 @@ var _ BufferedOutputStream = (*BufferedOutputStreamInstance)(nil)
 // BufferedOutputStream wraps GBufferedOutputStream
 // 
 // see also https://docs.gtk.org/gio/class.BufferedOutputStream.html
-//
 type BufferedOutputStream interface {
 	FilterOutputStream
 	Seekable
@@ -57061,22 +54353,18 @@ type BufferedOutputStream interface {
 	// GetAutoGrow wraps g_buffered_output_stream_get_auto_grow
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_output_stream_get_auto_grow.g_buffered_output_stream_get_auto_grow.html
-	//
 	GetAutoGrow() bool
 	// GetBufferSize wraps g_buffered_output_stream_get_buffer_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_output_stream_get_buffer_size.g_buffered_output_stream_get_buffer_size.html
-	//
 	GetBufferSize() uint
 	// SetAutoGrow wraps g_buffered_output_stream_set_auto_grow
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_output_stream_set_auto_grow.g_buffered_output_stream_set_auto_grow.html
-	//
 	SetAutoGrow(bool)
 	// SetBufferSize wraps g_buffered_output_stream_set_buffer_size
 	// 
 	// see also https://docs.gtk.org/gio/method.g_buffered_output_stream_set_buffer_size.g_buffered_output_stream_set_buffer_size.html
-	//
 	SetBufferSize(uint)
 
 	// chain up virtual methods:
@@ -57140,7 +54428,6 @@ func UnsafeBufferedOutputStreamToGlibFull(c BufferedOutputStream) unsafe.Pointer
 // NewBufferedOutputStream wraps g_buffered_output_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_buffered_output_stream_new.html
-//
 func NewBufferedOutputStream(baseStream OutputStream) OutputStream {
 	var carg1 *C.GOutputStream // in, none, converted
 	var cret  *C.GOutputStream // return, full, converted
@@ -57160,7 +54447,6 @@ func NewBufferedOutputStream(baseStream OutputStream) OutputStream {
 // NewBufferedOutputStreamSized wraps g_buffered_output_stream_new_sized
 // 
 // see also https://docs.gtk.org/gio/func.g_buffered_output_stream_new_sized.html
-//
 func NewBufferedOutputStreamSized(baseStream OutputStream, size uint) OutputStream {
 	var carg1 *C.GOutputStream // in, none, converted
 	var carg2 C.gsize          // in, none, casted
@@ -57183,7 +54469,6 @@ func NewBufferedOutputStreamSized(baseStream OutputStream, size uint) OutputStre
 // GetAutoGrow wraps g_buffered_output_stream_get_auto_grow
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_output_stream_get_auto_grow.g_buffered_output_stream_get_auto_grow.html
-//
 func (stream *BufferedOutputStreamInstance) GetAutoGrow() bool {
 	var carg0 *C.GBufferedOutputStream // in, none, converted
 	var cret  C.gboolean               // return
@@ -57205,7 +54490,6 @@ func (stream *BufferedOutputStreamInstance) GetAutoGrow() bool {
 // GetBufferSize wraps g_buffered_output_stream_get_buffer_size
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_output_stream_get_buffer_size.g_buffered_output_stream_get_buffer_size.html
-//
 func (stream *BufferedOutputStreamInstance) GetBufferSize() uint {
 	var carg0 *C.GBufferedOutputStream // in, none, converted
 	var cret  C.gsize                  // return, none, casted
@@ -57225,7 +54509,6 @@ func (stream *BufferedOutputStreamInstance) GetBufferSize() uint {
 // SetAutoGrow wraps g_buffered_output_stream_set_auto_grow
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_output_stream_set_auto_grow.g_buffered_output_stream_set_auto_grow.html
-//
 func (stream *BufferedOutputStreamInstance) SetAutoGrow(autoGrow bool) {
 	var carg0 *C.GBufferedOutputStream // in, none, converted
 	var carg1 C.gboolean               // in
@@ -57243,7 +54526,6 @@ func (stream *BufferedOutputStreamInstance) SetAutoGrow(autoGrow bool) {
 // SetBufferSize wraps g_buffered_output_stream_set_buffer_size
 // 
 // see also https://docs.gtk.org/gio/method.g_buffered_output_stream_set_buffer_size.g_buffered_output_stream_set_buffer_size.html
-//
 func (stream *BufferedOutputStreamInstance) SetBufferSize(size uint) {
 	var carg0 *C.GBufferedOutputStream // in, none, converted
 	var carg1 C.gsize                  // in, none, casted
@@ -57309,7 +54591,6 @@ var _ ConverterInputStream = (*ConverterInputStreamInstance)(nil)
 // ConverterInputStream wraps GConverterInputStream
 // 
 // see also https://docs.gtk.org/gio/class.ConverterInputStream.html
-//
 type ConverterInputStream interface {
 	FilterInputStream
 	PollableInputStream
@@ -57318,7 +54599,6 @@ type ConverterInputStream interface {
 	// GetConverter wraps g_converter_input_stream_get_converter
 	// 
 	// see also https://docs.gtk.org/gio/method.g_converter_input_stream_get_converter.g_converter_input_stream_get_converter.html
-	//
 	GetConverter() Converter
 
 	// chain up virtual methods:
@@ -57382,7 +54662,6 @@ func UnsafeConverterInputStreamToGlibFull(c ConverterInputStream) unsafe.Pointer
 // NewConverterInputStream wraps g_converter_input_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_converter_input_stream_new.html
-//
 func NewConverterInputStream(baseStream InputStream, converter Converter) InputStream {
 	var carg1 *C.GInputStream // in, none, converted
 	var carg2 *C.GConverter   // in, none, converted
@@ -57405,7 +54684,6 @@ func NewConverterInputStream(baseStream InputStream, converter Converter) InputS
 // GetConverter wraps g_converter_input_stream_get_converter
 // 
 // see also https://docs.gtk.org/gio/method.g_converter_input_stream_get_converter.g_converter_input_stream_get_converter.html
-//
 func (converterStream *ConverterInputStreamInstance) GetConverter() Converter {
 	var carg0 *C.GConverterInputStream // in, none, converted
 	var cret  *C.GConverter            // return, none, converted
@@ -57475,7 +54753,6 @@ var _ ConverterOutputStream = (*ConverterOutputStreamInstance)(nil)
 // ConverterOutputStream wraps GConverterOutputStream
 // 
 // see also https://docs.gtk.org/gio/class.ConverterOutputStream.html
-//
 type ConverterOutputStream interface {
 	FilterOutputStream
 	PollableOutputStream
@@ -57484,7 +54761,6 @@ type ConverterOutputStream interface {
 	// GetConverter wraps g_converter_output_stream_get_converter
 	// 
 	// see also https://docs.gtk.org/gio/method.g_converter_output_stream_get_converter.g_converter_output_stream_get_converter.html
-	//
 	GetConverter() Converter
 
 	// chain up virtual methods:
@@ -57548,7 +54824,6 @@ func UnsafeConverterOutputStreamToGlibFull(c ConverterOutputStream) unsafe.Point
 // NewConverterOutputStream wraps g_converter_output_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_converter_output_stream_new.html
-//
 func NewConverterOutputStream(baseStream OutputStream, converter Converter) OutputStream {
 	var carg1 *C.GOutputStream // in, none, converted
 	var carg2 *C.GConverter    // in, none, converted
@@ -57571,7 +54846,6 @@ func NewConverterOutputStream(baseStream OutputStream, converter Converter) Outp
 // GetConverter wraps g_converter_output_stream_get_converter
 // 
 // see also https://docs.gtk.org/gio/method.g_converter_output_stream_get_converter.g_converter_output_stream_get_converter.html
-//
 func (converterStream *ConverterOutputStreamInstance) GetConverter() Converter {
 	var carg0 *C.GConverterOutputStream // in, none, converted
 	var cret  *C.GConverter             // return, none, converted
@@ -57639,7 +54913,6 @@ var _ DataInputStream = (*DataInputStreamInstance)(nil)
 // DataInputStream wraps GDataInputStream
 // 
 // see also https://docs.gtk.org/gio/class.DataInputStream.html
-//
 type DataInputStream interface {
 	BufferedInputStream
 	upcastToGDataInputStream() *DataInputStreamInstance
@@ -57647,116 +54920,92 @@ type DataInputStream interface {
 	// GetByteOrder wraps g_data_input_stream_get_byte_order
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_get_byte_order.g_data_input_stream_get_byte_order.html
-	//
 	GetByteOrder() DataStreamByteOrder
 	// GetNewlineType wraps g_data_input_stream_get_newline_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_get_newline_type.g_data_input_stream_get_newline_type.html
-	//
 	GetNewlineType() DataStreamNewlineType
 	// ReadInt16 wraps g_data_input_stream_read_int16
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_int16.g_data_input_stream_read_int16.html
-	//
 	ReadInt16(Cancellable) (int16, error)
 	// ReadInt32 wraps g_data_input_stream_read_int32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_int32.g_data_input_stream_read_int32.html
-	//
 	ReadInt32(Cancellable) (int32, error)
 	// ReadInt64 wraps g_data_input_stream_read_int64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_int64.g_data_input_stream_read_int64.html
-	//
 	ReadInt64(Cancellable) (int64, error)
 	// ReadLine wraps g_data_input_stream_read_line
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line.g_data_input_stream_read_line.html
-	//
 	ReadLine(Cancellable) (uint, string, error)
 	// ReadLineAsync wraps g_data_input_stream_read_line_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_async.g_data_input_stream_read_line_async.html
-	//
 	ReadLineAsync(int32, Cancellable, AsyncReadyCallback)
 	// ReadLineFinish wraps g_data_input_stream_read_line_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_finish.g_data_input_stream_read_line_finish.html
-	//
 	ReadLineFinish(AsyncResult) (uint, string, error)
 	// ReadLineFinishUTF8 wraps g_data_input_stream_read_line_finish_utf8
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_finish_utf8.g_data_input_stream_read_line_finish_utf8.html
-	//
 	ReadLineFinishUTF8(AsyncResult) (uint, string, error)
 	// ReadLineUTF8 wraps g_data_input_stream_read_line_utf8
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_utf8.g_data_input_stream_read_line_utf8.html
-	//
 	ReadLineUTF8(Cancellable) (uint, string, error)
 	// ReadUint16 wraps g_data_input_stream_read_uint16
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_uint16.g_data_input_stream_read_uint16.html
-	//
 	ReadUint16(Cancellable) (uint16, error)
 	// ReadUint32 wraps g_data_input_stream_read_uint32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_uint32.g_data_input_stream_read_uint32.html
-	//
 	ReadUint32(Cancellable) (uint32, error)
 	// ReadUint64 wraps g_data_input_stream_read_uint64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_uint64.g_data_input_stream_read_uint64.html
-	//
 	ReadUint64(Cancellable) (uint64, error)
 	// ReadUntil wraps g_data_input_stream_read_until
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_until.g_data_input_stream_read_until.html
 	//
-	//
-	// Deprecated: (since 2.56.0) Use g_data_input_stream_read_upto() instead, which has more
-	//     consistent behaviour regarding the stop character.
+	// Deprecated: (since 2.56.0) see the provided link for the reason
 	ReadUntil(string, Cancellable) (uint, string, error)
 	// ReadUntilAsync wraps g_data_input_stream_read_until_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_until_async.g_data_input_stream_read_until_async.html
 	//
-	//
-	// Deprecated: (since 2.56.0) Use g_data_input_stream_read_upto_async() instead, which
-	//     has more consistent behaviour regarding the stop character.
+	// Deprecated: (since 2.56.0) see the provided link for the reason
 	ReadUntilAsync(string, int32, Cancellable, AsyncReadyCallback)
 	// ReadUntilFinish wraps g_data_input_stream_read_until_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_until_finish.g_data_input_stream_read_until_finish.html
 	//
-	//
-	// Deprecated: (since 2.56.0) Use g_data_input_stream_read_upto_finish() instead, which
-	//     has more consistent behaviour regarding the stop character.
+	// Deprecated: (since 2.56.0) see the provided link for the reason
 	ReadUntilFinish(AsyncResult) (uint, string, error)
 	// ReadUpto wraps g_data_input_stream_read_upto
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_upto.g_data_input_stream_read_upto.html
-	//
 	ReadUpto(string, int, Cancellable) (uint, string, error)
 	// ReadUptoAsync wraps g_data_input_stream_read_upto_async
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_upto_async.g_data_input_stream_read_upto_async.html
-	//
 	ReadUptoAsync(string, int, int32, Cancellable, AsyncReadyCallback)
 	// ReadUptoFinish wraps g_data_input_stream_read_upto_finish
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_read_upto_finish.g_data_input_stream_read_upto_finish.html
-	//
 	ReadUptoFinish(AsyncResult) (uint, string, error)
 	// SetByteOrder wraps g_data_input_stream_set_byte_order
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_set_byte_order.g_data_input_stream_set_byte_order.html
-	//
 	SetByteOrder(DataStreamByteOrder)
 	// SetNewlineType wraps g_data_input_stream_set_newline_type
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_input_stream_set_newline_type.g_data_input_stream_set_newline_type.html
-	//
 	SetNewlineType(DataStreamNewlineType)
 
 	// chain up virtual methods:
@@ -57822,7 +55071,6 @@ func UnsafeDataInputStreamToGlibFull(c DataInputStream) unsafe.Pointer {
 // NewDataInputStream wraps g_data_input_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_data_input_stream_new.html
-//
 func NewDataInputStream(baseStream InputStream) DataInputStream {
 	var carg1 *C.GInputStream     // in, none, converted
 	var cret  *C.GDataInputStream // return, full, converted
@@ -57842,7 +55090,6 @@ func NewDataInputStream(baseStream InputStream) DataInputStream {
 // GetByteOrder wraps g_data_input_stream_get_byte_order
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_get_byte_order.g_data_input_stream_get_byte_order.html
-//
 func (stream *DataInputStreamInstance) GetByteOrder() DataStreamByteOrder {
 	var carg0 *C.GDataInputStream    // in, none, converted
 	var cret  C.GDataStreamByteOrder // return, none, casted
@@ -57862,7 +55109,6 @@ func (stream *DataInputStreamInstance) GetByteOrder() DataStreamByteOrder {
 // GetNewlineType wraps g_data_input_stream_get_newline_type
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_get_newline_type.g_data_input_stream_get_newline_type.html
-//
 func (stream *DataInputStreamInstance) GetNewlineType() DataStreamNewlineType {
 	var carg0 *C.GDataInputStream      // in, none, converted
 	var cret  C.GDataStreamNewlineType // return, none, casted
@@ -57882,7 +55128,6 @@ func (stream *DataInputStreamInstance) GetNewlineType() DataStreamNewlineType {
 // ReadInt16 wraps g_data_input_stream_read_int16
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_int16.g_data_input_stream_read_int16.html
-//
 func (stream *DataInputStreamInstance) ReadInt16(cancellable Cancellable) (int16, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GCancellable     // in, none, converted, nullable
@@ -57912,7 +55157,6 @@ func (stream *DataInputStreamInstance) ReadInt16(cancellable Cancellable) (int16
 // ReadInt32 wraps g_data_input_stream_read_int32
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_int32.g_data_input_stream_read_int32.html
-//
 func (stream *DataInputStreamInstance) ReadInt32(cancellable Cancellable) (int32, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GCancellable     // in, none, converted, nullable
@@ -57942,7 +55186,6 @@ func (stream *DataInputStreamInstance) ReadInt32(cancellable Cancellable) (int32
 // ReadInt64 wraps g_data_input_stream_read_int64
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_int64.g_data_input_stream_read_int64.html
-//
 func (stream *DataInputStreamInstance) ReadInt64(cancellable Cancellable) (int64, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GCancellable     // in, none, converted, nullable
@@ -57972,7 +55215,6 @@ func (stream *DataInputStreamInstance) ReadInt64(cancellable Cancellable) (int64
 // ReadLine wraps g_data_input_stream_read_line
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line.g_data_input_stream_read_line.html
-//
 func (stream *DataInputStreamInstance) ReadLine(cancellable Cancellable) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg2 *C.GCancellable     // in, none, converted, nullable
@@ -58007,7 +55249,6 @@ func (stream *DataInputStreamInstance) ReadLine(cancellable Cancellable) (uint, 
 // ReadLineAsync wraps g_data_input_stream_read_line_async
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_async.g_data_input_stream_read_line_async.html
-//
 func (stream *DataInputStreamInstance) ReadLineAsync(ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDataInputStream   // in, none, converted
 	var carg1 C.gint                // in, none, casted
@@ -58035,7 +55276,6 @@ func (stream *DataInputStreamInstance) ReadLineAsync(ioPriority int32, cancellab
 // ReadLineFinish wraps g_data_input_stream_read_line_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_finish.g_data_input_stream_read_line_finish.html
-//
 func (stream *DataInputStreamInstance) ReadLineFinish(result AsyncResult) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GAsyncResult     // in, none, converted
@@ -58068,7 +55308,6 @@ func (stream *DataInputStreamInstance) ReadLineFinish(result AsyncResult) (uint,
 // ReadLineFinishUTF8 wraps g_data_input_stream_read_line_finish_utf8
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_finish_utf8.g_data_input_stream_read_line_finish_utf8.html
-//
 func (stream *DataInputStreamInstance) ReadLineFinishUTF8(result AsyncResult) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GAsyncResult     // in, none, converted
@@ -58102,7 +55341,6 @@ func (stream *DataInputStreamInstance) ReadLineFinishUTF8(result AsyncResult) (u
 // ReadLineUTF8 wraps g_data_input_stream_read_line_utf8
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_line_utf8.g_data_input_stream_read_line_utf8.html
-//
 func (stream *DataInputStreamInstance) ReadLineUTF8(cancellable Cancellable) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg2 *C.GCancellable     // in, none, converted, nullable
@@ -58138,7 +55376,6 @@ func (stream *DataInputStreamInstance) ReadLineUTF8(cancellable Cancellable) (ui
 // ReadUint16 wraps g_data_input_stream_read_uint16
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_uint16.g_data_input_stream_read_uint16.html
-//
 func (stream *DataInputStreamInstance) ReadUint16(cancellable Cancellable) (uint16, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GCancellable     // in, none, converted, nullable
@@ -58168,7 +55405,6 @@ func (stream *DataInputStreamInstance) ReadUint16(cancellable Cancellable) (uint
 // ReadUint32 wraps g_data_input_stream_read_uint32
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_uint32.g_data_input_stream_read_uint32.html
-//
 func (stream *DataInputStreamInstance) ReadUint32(cancellable Cancellable) (uint32, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GCancellable     // in, none, converted, nullable
@@ -58198,7 +55434,6 @@ func (stream *DataInputStreamInstance) ReadUint32(cancellable Cancellable) (uint
 // ReadUint64 wraps g_data_input_stream_read_uint64
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_uint64.g_data_input_stream_read_uint64.html
-//
 func (stream *DataInputStreamInstance) ReadUint64(cancellable Cancellable) (uint64, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GCancellable     // in, none, converted, nullable
@@ -58229,9 +55464,7 @@ func (stream *DataInputStreamInstance) ReadUint64(cancellable Cancellable) (uint
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_until.g_data_input_stream_read_until.html
 //
-//
-// Deprecated: (since 2.56.0) Use g_data_input_stream_read_upto() instead, which has more
-//     consistent behaviour regarding the stop character.
+// Deprecated: (since 2.56.0) see the provided link for the reason
 func (stream *DataInputStreamInstance) ReadUntil(stopChars string, cancellable Cancellable) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.gchar            // in, none, string
@@ -58270,9 +55503,7 @@ func (stream *DataInputStreamInstance) ReadUntil(stopChars string, cancellable C
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_until_async.g_data_input_stream_read_until_async.html
 //
-//
-// Deprecated: (since 2.56.0) Use g_data_input_stream_read_upto_async() instead, which
-//     has more consistent behaviour regarding the stop character.
+// Deprecated: (since 2.56.0) see the provided link for the reason
 func (stream *DataInputStreamInstance) ReadUntilAsync(stopChars string, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDataInputStream   // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -58305,9 +55536,7 @@ func (stream *DataInputStreamInstance) ReadUntilAsync(stopChars string, ioPriori
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_until_finish.g_data_input_stream_read_until_finish.html
 //
-//
-// Deprecated: (since 2.56.0) Use g_data_input_stream_read_upto_finish() instead, which
-//     has more consistent behaviour regarding the stop character.
+// Deprecated: (since 2.56.0) see the provided link for the reason
 func (stream *DataInputStreamInstance) ReadUntilFinish(result AsyncResult) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GAsyncResult     // in, none, converted
@@ -58339,7 +55568,6 @@ func (stream *DataInputStreamInstance) ReadUntilFinish(result AsyncResult) (uint
 // ReadUpto wraps g_data_input_stream_read_upto
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_upto.g_data_input_stream_read_upto.html
-//
 func (stream *DataInputStreamInstance) ReadUpto(stopChars string, stopCharsLen int, cancellable Cancellable) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.gchar            // in, none, string
@@ -58380,7 +55608,6 @@ func (stream *DataInputStreamInstance) ReadUpto(stopChars string, stopCharsLen i
 // ReadUptoAsync wraps g_data_input_stream_read_upto_async
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_upto_async.g_data_input_stream_read_upto_async.html
-//
 func (stream *DataInputStreamInstance) ReadUptoAsync(stopChars string, stopCharsLen int, ioPriority int32, cancellable Cancellable, callback AsyncReadyCallback) {
 	var carg0 *C.GDataInputStream   // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -58415,7 +55642,6 @@ func (stream *DataInputStreamInstance) ReadUptoAsync(stopChars string, stopChars
 // ReadUptoFinish wraps g_data_input_stream_read_upto_finish
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_read_upto_finish.g_data_input_stream_read_upto_finish.html
-//
 func (stream *DataInputStreamInstance) ReadUptoFinish(result AsyncResult) (uint, string, error) {
 	var carg0 *C.GDataInputStream // in, none, converted
 	var carg1 *C.GAsyncResult     // in, none, converted
@@ -58447,7 +55673,6 @@ func (stream *DataInputStreamInstance) ReadUptoFinish(result AsyncResult) (uint,
 // SetByteOrder wraps g_data_input_stream_set_byte_order
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_set_byte_order.g_data_input_stream_set_byte_order.html
-//
 func (stream *DataInputStreamInstance) SetByteOrder(order DataStreamByteOrder) {
 	var carg0 *C.GDataInputStream    // in, none, converted
 	var carg1 C.GDataStreamByteOrder // in, none, casted
@@ -58463,7 +55688,6 @@ func (stream *DataInputStreamInstance) SetByteOrder(order DataStreamByteOrder) {
 // SetNewlineType wraps g_data_input_stream_set_newline_type
 // 
 // see also https://docs.gtk.org/gio/method.g_data_input_stream_set_newline_type.g_data_input_stream_set_newline_type.html
-//
 func (stream *DataInputStreamInstance) SetNewlineType(typ DataStreamNewlineType) {
 	var carg0 *C.GDataInputStream      // in, none, converted
 	var carg1 C.GDataStreamNewlineType // in, none, casted
@@ -58529,7 +55753,6 @@ var _ DataOutputStream = (*DataOutputStreamInstance)(nil)
 // DataOutputStream wraps GDataOutputStream
 // 
 // see also https://docs.gtk.org/gio/class.DataOutputStream.html
-//
 type DataOutputStream interface {
 	FilterOutputStream
 	Seekable
@@ -58538,52 +55761,42 @@ type DataOutputStream interface {
 	// GetByteOrder wraps g_data_output_stream_get_byte_order
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_get_byte_order.g_data_output_stream_get_byte_order.html
-	//
 	GetByteOrder() DataStreamByteOrder
 	// PutByte wraps g_data_output_stream_put_byte
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_byte.g_data_output_stream_put_byte.html
-	//
 	PutByte(byte, Cancellable) (bool, error)
 	// PutInt16 wraps g_data_output_stream_put_int16
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_int16.g_data_output_stream_put_int16.html
-	//
 	PutInt16(int16, Cancellable) (bool, error)
 	// PutInt32 wraps g_data_output_stream_put_int32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_int32.g_data_output_stream_put_int32.html
-	//
 	PutInt32(int32, Cancellable) (bool, error)
 	// PutInt64 wraps g_data_output_stream_put_int64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_int64.g_data_output_stream_put_int64.html
-	//
 	PutInt64(int64, Cancellable) (bool, error)
 	// PutString wraps g_data_output_stream_put_string
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_string.g_data_output_stream_put_string.html
-	//
 	PutString(string, Cancellable) (bool, error)
 	// PutUint16 wraps g_data_output_stream_put_uint16
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_uint16.g_data_output_stream_put_uint16.html
-	//
 	PutUint16(uint16, Cancellable) (bool, error)
 	// PutUint32 wraps g_data_output_stream_put_uint32
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_uint32.g_data_output_stream_put_uint32.html
-	//
 	PutUint32(uint32, Cancellable) (bool, error)
 	// PutUint64 wraps g_data_output_stream_put_uint64
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_put_uint64.g_data_output_stream_put_uint64.html
-	//
 	PutUint64(uint64, Cancellable) (bool, error)
 	// SetByteOrder wraps g_data_output_stream_set_byte_order
 	// 
 	// see also https://docs.gtk.org/gio/method.g_data_output_stream_set_byte_order.g_data_output_stream_set_byte_order.html
-	//
 	SetByteOrder(DataStreamByteOrder)
 
 	// chain up virtual methods:
@@ -58647,7 +55860,6 @@ func UnsafeDataOutputStreamToGlibFull(c DataOutputStream) unsafe.Pointer {
 // NewDataOutputStream wraps g_data_output_stream_new
 // 
 // see also https://docs.gtk.org/gio/func.g_data_output_stream_new.html
-//
 func NewDataOutputStream(baseStream OutputStream) DataOutputStream {
 	var carg1 *C.GOutputStream     // in, none, converted
 	var cret  *C.GDataOutputStream // return, full, converted
@@ -58667,7 +55879,6 @@ func NewDataOutputStream(baseStream OutputStream) DataOutputStream {
 // GetByteOrder wraps g_data_output_stream_get_byte_order
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_get_byte_order.g_data_output_stream_get_byte_order.html
-//
 func (stream *DataOutputStreamInstance) GetByteOrder() DataStreamByteOrder {
 	var carg0 *C.GDataOutputStream   // in, none, converted
 	var cret  C.GDataStreamByteOrder // return, none, casted
@@ -58687,7 +55898,6 @@ func (stream *DataOutputStreamInstance) GetByteOrder() DataStreamByteOrder {
 // PutByte wraps g_data_output_stream_put_byte
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_byte.g_data_output_stream_put_byte.html
-//
 func (stream *DataOutputStreamInstance) PutByte(data byte, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 C.guchar             // in, none, casted
@@ -58722,7 +55932,6 @@ func (stream *DataOutputStreamInstance) PutByte(data byte, cancellable Cancellab
 // PutInt16 wraps g_data_output_stream_put_int16
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_int16.g_data_output_stream_put_int16.html
-//
 func (stream *DataOutputStreamInstance) PutInt16(data int16, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 C.gint16             // in, none, casted
@@ -58757,7 +55966,6 @@ func (stream *DataOutputStreamInstance) PutInt16(data int16, cancellable Cancell
 // PutInt32 wraps g_data_output_stream_put_int32
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_int32.g_data_output_stream_put_int32.html
-//
 func (stream *DataOutputStreamInstance) PutInt32(data int32, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 C.gint32             // in, none, casted
@@ -58792,7 +56000,6 @@ func (stream *DataOutputStreamInstance) PutInt32(data int32, cancellable Cancell
 // PutInt64 wraps g_data_output_stream_put_int64
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_int64.g_data_output_stream_put_int64.html
-//
 func (stream *DataOutputStreamInstance) PutInt64(data int64, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 C.gint64             // in, none, casted
@@ -58827,7 +56034,6 @@ func (stream *DataOutputStreamInstance) PutInt64(data int64, cancellable Cancell
 // PutString wraps g_data_output_stream_put_string
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_string.g_data_output_stream_put_string.html
-//
 func (stream *DataOutputStreamInstance) PutString(str string, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -58863,7 +56069,6 @@ func (stream *DataOutputStreamInstance) PutString(str string, cancellable Cancel
 // PutUint16 wraps g_data_output_stream_put_uint16
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_uint16.g_data_output_stream_put_uint16.html
-//
 func (stream *DataOutputStreamInstance) PutUint16(data uint16, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 C.guint16            // in, none, casted
@@ -58898,7 +56103,6 @@ func (stream *DataOutputStreamInstance) PutUint16(data uint16, cancellable Cance
 // PutUint32 wraps g_data_output_stream_put_uint32
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_uint32.g_data_output_stream_put_uint32.html
-//
 func (stream *DataOutputStreamInstance) PutUint32(data uint32, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 C.guint32            // in, none, casted
@@ -58933,7 +56137,6 @@ func (stream *DataOutputStreamInstance) PutUint32(data uint32, cancellable Cance
 // PutUint64 wraps g_data_output_stream_put_uint64
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_put_uint64.g_data_output_stream_put_uint64.html
-//
 func (stream *DataOutputStreamInstance) PutUint64(data uint64, cancellable Cancellable) (bool, error) {
 	var carg0 *C.GDataOutputStream // in, none, converted
 	var carg1 C.guint64            // in, none, casted
@@ -58968,7 +56171,6 @@ func (stream *DataOutputStreamInstance) PutUint64(data uint64, cancellable Cance
 // SetByteOrder wraps g_data_output_stream_set_byte_order
 // 
 // see also https://docs.gtk.org/gio/method.g_data_output_stream_set_byte_order.g_data_output_stream_set_byte_order.html
-//
 func (stream *DataOutputStreamInstance) SetByteOrder(order DataStreamByteOrder) {
 	var carg0 *C.GDataOutputStream   // in, none, converted
 	var carg1 C.GDataStreamByteOrder // in, none, casted
@@ -59024,7 +56226,6 @@ func RegisterDataOutputStreamSubClass[InstanceT DataOutputStream](
 // ActionEntry wraps GActionEntry
 // 
 // see also https://docs.gtk.org/gio/struct.ActionEntry.html
-//
 type ActionEntry struct {
 	*actionEntry
 }
@@ -59106,7 +56307,6 @@ func UnsafeActionEntryToGlibFull(a *ActionEntry) unsafe.Pointer {
 // ActionGroupInterface wraps GActionGroupInterface
 // 
 // see also https://docs.gtk.org/gio/struct.ActionGroupInterface.html
-//
 type ActionGroupInterface struct {
 	*actionGroupInterface
 }
@@ -59188,7 +56388,6 @@ func UnsafeActionGroupInterfaceToGlibFull(a *ActionGroupInterface) unsafe.Pointe
 // ActionInterface wraps GActionInterface
 // 
 // see also https://docs.gtk.org/gio/struct.ActionInterface.html
-//
 type ActionInterface struct {
 	*actionInterface
 }
@@ -59270,7 +56469,6 @@ func UnsafeActionInterfaceToGlibFull(a *ActionInterface) unsafe.Pointer {
 // ActionMapInterface wraps GActionMapInterface
 // 
 // see also https://docs.gtk.org/gio/struct.ActionMapInterface.html
-//
 type ActionMapInterface struct {
 	*actionMapInterface
 }
@@ -59352,7 +56550,6 @@ func UnsafeActionMapInterfaceToGlibFull(a *ActionMapInterface) unsafe.Pointer {
 // AppInfoIface wraps GAppInfoIface
 // 
 // see also https://docs.gtk.org/gio/struct.AppInfoIface.html
-//
 type AppInfoIface struct {
 	*appInfoIface
 }
@@ -59488,7 +56685,6 @@ func (a *AppLaunchContextClass) ParentClass() *gobject.ObjectClass {
 // ApplicationClass wraps GApplicationClass
 // 
 // see also https://docs.gtk.org/gio/struct.ApplicationClass.html
-//
 // 
 // ApplicationClass is the type struct for [Application]
 type ApplicationClass struct {
@@ -59543,7 +56739,6 @@ func (a *ApplicationClass) ParentClass() *gobject.ObjectClass {
 // ApplicationCommandLineClass wraps GApplicationCommandLineClass
 // 
 // see also https://docs.gtk.org/gio/struct.ApplicationCommandLineClass.html
-//
 // 
 // ApplicationCommandLineClass is the type struct for [ApplicationCommandLine]
 type ApplicationCommandLineClass struct {
@@ -59598,7 +56793,6 @@ func (a *ApplicationCommandLineClass) ParentClass() *gobject.ObjectClass {
 // AsyncInitableIface wraps GAsyncInitableIface
 // 
 // see also https://docs.gtk.org/gio/struct.AsyncInitableIface.html
-//
 type AsyncInitableIface struct {
 	*asyncInitableIface
 }
@@ -59680,7 +56874,6 @@ func UnsafeAsyncInitableIfaceToGlibFull(a *AsyncInitableIface) unsafe.Pointer {
 // AsyncResultIface wraps GAsyncResultIface
 // 
 // see also https://docs.gtk.org/gio/struct.AsyncResultIface.html
-//
 type AsyncResultIface struct {
 	*asyncResultIface
 }
@@ -59978,7 +57171,6 @@ func (c *CharsetConverterClass) ParentClass() *gobject.ObjectClass {
 // ConverterIface wraps GConverterIface
 // 
 // see also https://docs.gtk.org/gio/struct.ConverterIface.html
-//
 type ConverterIface struct {
 	*converterIface
 }
@@ -60168,7 +57360,6 @@ func (c *ConverterOutputStreamClass) ParentClass() *FilterOutputStreamClass {
 // CredentialsClass wraps GCredentialsClass
 // 
 // see also https://docs.gtk.org/gio/struct.CredentialsClass.html
-//
 // 
 // CredentialsClass is the type struct for [Credentials]
 type CredentialsClass struct {
@@ -60331,7 +57522,6 @@ func (d *DataOutputStreamClass) ParentClass() *FilterOutputStreamClass {
 // DatagramBasedInterface wraps GDatagramBasedInterface
 // 
 // see also https://docs.gtk.org/gio/struct.DatagramBasedInterface.html
-//
 type DatagramBasedInterface struct {
 	*datagramBasedInterface
 }
@@ -60413,7 +57603,6 @@ func UnsafeDatagramBasedInterfaceToGlibFull(d *DatagramBasedInterface) unsafe.Po
 // DebugControllerInterface wraps GDebugControllerInterface
 // 
 // see also https://docs.gtk.org/gio/struct.DebugControllerInterface.html
-//
 type DebugControllerInterface struct {
 	*debugControllerInterface
 }
@@ -60495,7 +57684,6 @@ func UnsafeDebugControllerInterfaceToGlibFull(d *DebugControllerInterface) unsaf
 // DriveIface wraps GDriveIface
 // 
 // see also https://docs.gtk.org/gio/struct.DriveIface.html
-//
 type DriveIface struct {
 	*driveIface
 }
@@ -60577,7 +57765,6 @@ func UnsafeDriveIfaceToGlibFull(d *DriveIface) unsafe.Pointer {
 // DtlsClientConnectionInterface wraps GDtlsClientConnectionInterface
 // 
 // see also https://docs.gtk.org/gio/struct.DtlsClientConnectionInterface.html
-//
 type DtlsClientConnectionInterface struct {
 	*dtlsClientConnectionInterface
 }
@@ -60659,7 +57846,6 @@ func UnsafeDtlsClientConnectionInterfaceToGlibFull(d *DtlsClientConnectionInterf
 // DtlsConnectionInterface wraps GDtlsConnectionInterface
 // 
 // see also https://docs.gtk.org/gio/struct.DtlsConnectionInterface.html
-//
 type DtlsConnectionInterface struct {
 	*dtlsConnectionInterface
 }
@@ -60741,7 +57927,6 @@ func UnsafeDtlsConnectionInterfaceToGlibFull(d *DtlsConnectionInterface) unsafe.
 // DtlsServerConnectionInterface wraps GDtlsServerConnectionInterface
 // 
 // see also https://docs.gtk.org/gio/struct.DtlsServerConnectionInterface.html
-//
 type DtlsServerConnectionInterface struct {
 	*dtlsServerConnectionInterface
 }
@@ -60931,7 +58116,6 @@ func (e *EmblemedIconClass) ParentClass() *gobject.ObjectClass {
 // FileAttributeInfo wraps GFileAttributeInfo
 // 
 // see also https://docs.gtk.org/gio/struct.FileAttributeInfo.html
-//
 type FileAttributeInfo struct {
 	*fileAttributeInfo
 }
@@ -61013,7 +58197,6 @@ func UnsafeFileAttributeInfoToGlibFull(f *FileAttributeInfo) unsafe.Pointer {
 // FileAttributeInfoList wraps GFileAttributeInfoList
 // 
 // see also https://docs.gtk.org/gio/struct.FileAttributeInfoList.html
-//
 type FileAttributeInfoList struct {
 	*fileAttributeInfoList
 }
@@ -61123,7 +58306,6 @@ func UnsafeFileAttributeInfoListToGlibFull(f *FileAttributeInfoList) unsafe.Poin
 // NewFileAttributeInfoList wraps g_file_attribute_info_list_new
 // 
 // see also https://docs.gtk.org/gio/func.g_file_attribute_info_list_new.html
-//
 func NewFileAttributeInfoList() *FileAttributeInfoList {
 	var cret *C.GFileAttributeInfoList // return, full, converted
 
@@ -61139,7 +58321,6 @@ func NewFileAttributeInfoList() *FileAttributeInfoList {
 // Add wraps g_file_attribute_info_list_add
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_info_list_add.g_file_attribute_info_list_add.html
-//
 func (list *FileAttributeInfoList) Add(name string, typ FileAttributeType, flags FileAttributeInfoFlags) {
 	var carg0 *C.GFileAttributeInfoList // in, none, converted
 	var carg1 *C.char                   // in, none, string
@@ -61162,7 +58343,6 @@ func (list *FileAttributeInfoList) Add(name string, typ FileAttributeType, flags
 // Dup wraps g_file_attribute_info_list_dup
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_info_list_dup.g_file_attribute_info_list_dup.html
-//
 func (list *FileAttributeInfoList) Dup() *FileAttributeInfoList {
 	var carg0 *C.GFileAttributeInfoList // in, none, converted
 	var cret  *C.GFileAttributeInfoList // return, full, converted
@@ -61182,7 +58362,6 @@ func (list *FileAttributeInfoList) Dup() *FileAttributeInfoList {
 // Lookup wraps g_file_attribute_info_list_lookup
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_info_list_lookup.g_file_attribute_info_list_lookup.html
-//
 func (list *FileAttributeInfoList) Lookup(name string) *FileAttributeInfo {
 	var carg0 *C.GFileAttributeInfoList // in, none, converted
 	var carg1 *C.char                   // in, none, string
@@ -61206,7 +58385,6 @@ func (list *FileAttributeInfoList) Lookup(name string) *FileAttributeInfo {
 // FileAttributeMatcher wraps GFileAttributeMatcher
 // 
 // see also https://docs.gtk.org/gio/struct.FileAttributeMatcher.html
-//
 type FileAttributeMatcher struct {
 	*fileAttributeMatcher
 }
@@ -61316,7 +58494,6 @@ func UnsafeFileAttributeMatcherToGlibFull(f *FileAttributeMatcher) unsafe.Pointe
 // NewFileAttributeMatcher wraps g_file_attribute_matcher_new
 // 
 // see also https://docs.gtk.org/gio/func.g_file_attribute_matcher_new.html
-//
 func NewFileAttributeMatcher(attributes string) *FileAttributeMatcher {
 	var carg1 *C.char                  // in, none, string
 	var cret  *C.GFileAttributeMatcher // return, full, converted
@@ -61337,7 +58514,6 @@ func NewFileAttributeMatcher(attributes string) *FileAttributeMatcher {
 // EnumerateNamespace wraps g_file_attribute_matcher_enumerate_namespace
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_matcher_enumerate_namespace.g_file_attribute_matcher_enumerate_namespace.html
-//
 func (matcher *FileAttributeMatcher) EnumerateNamespace(ns string) bool {
 	var carg0 *C.GFileAttributeMatcher // in, none, converted
 	var carg1 *C.char                  // in, none, string
@@ -61363,7 +58539,6 @@ func (matcher *FileAttributeMatcher) EnumerateNamespace(ns string) bool {
 // EnumerateNext wraps g_file_attribute_matcher_enumerate_next
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_matcher_enumerate_next.g_file_attribute_matcher_enumerate_next.html
-//
 func (matcher *FileAttributeMatcher) EnumerateNext() string {
 	var carg0 *C.GFileAttributeMatcher // in, none, converted
 	var cret  *C.char                  // return, none, string, nullable-string
@@ -61385,7 +58560,6 @@ func (matcher *FileAttributeMatcher) EnumerateNext() string {
 // Matches wraps g_file_attribute_matcher_matches
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_matcher_matches.g_file_attribute_matcher_matches.html
-//
 func (matcher *FileAttributeMatcher) Matches(attribute string) bool {
 	var carg0 *C.GFileAttributeMatcher // in, none, converted
 	var carg1 *C.char                  // in, none, string
@@ -61411,7 +58585,6 @@ func (matcher *FileAttributeMatcher) Matches(attribute string) bool {
 // MatchesOnly wraps g_file_attribute_matcher_matches_only
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_matcher_matches_only.g_file_attribute_matcher_matches_only.html
-//
 func (matcher *FileAttributeMatcher) MatchesOnly(attribute string) bool {
 	var carg0 *C.GFileAttributeMatcher // in, none, converted
 	var carg1 *C.char                  // in, none, string
@@ -61437,7 +58610,6 @@ func (matcher *FileAttributeMatcher) MatchesOnly(attribute string) bool {
 // Subtract wraps g_file_attribute_matcher_subtract
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_matcher_subtract.g_file_attribute_matcher_subtract.html
-//
 func (matcher *FileAttributeMatcher) Subtract(subtract *FileAttributeMatcher) *FileAttributeMatcher {
 	var carg0 *C.GFileAttributeMatcher // in, none, converted
 	var carg1 *C.GFileAttributeMatcher // in, none, converted, nullable
@@ -61464,7 +58636,6 @@ func (matcher *FileAttributeMatcher) Subtract(subtract *FileAttributeMatcher) *F
 // String wraps g_file_attribute_matcher_to_string
 // 
 // see also https://docs.gtk.org/gio/method.g_file_attribute_matcher_to_string.g_file_attribute_matcher_to_string.html
-//
 func (matcher *FileAttributeMatcher) String() string {
 	var carg0 *C.GFileAttributeMatcher // in, none, converted
 	var cret  *C.char                  // return, full, string
@@ -61647,7 +58818,6 @@ func (f *FileIconClass) ParentClass() *gobject.ObjectClass {
 // FileIface wraps GFileIface
 // 
 // see also https://docs.gtk.org/gio/struct.FileIface.html
-//
 type FileIface struct {
 	*fileIface
 }
@@ -62107,7 +59277,6 @@ func (f *FilterOutputStreamClass) ParentClass() *OutputStreamClass {
 // IOExtension wraps GIOExtension
 // 
 // see also https://docs.gtk.org/gio/struct.IOExtension.html
-//
 type IOExtension struct {
 	*iOExtension
 }
@@ -62189,7 +59358,6 @@ func UnsafeIOExtensionToGlibFull(i *IOExtension) unsafe.Pointer {
 // GetName wraps g_io_extension_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_io_extension_get_name.g_io_extension_get_name.html
-//
 func (extension *IOExtension) GetName() string {
 	var carg0 *C.GIOExtension // in, none, converted
 	var cret  *C.char         // return, none, string
@@ -62209,7 +59377,6 @@ func (extension *IOExtension) GetName() string {
 // GetPriority wraps g_io_extension_get_priority
 // 
 // see also https://docs.gtk.org/gio/method.g_io_extension_get_priority.g_io_extension_get_priority.html
-//
 func (extension *IOExtension) GetPriority() int32 {
 	var carg0 *C.GIOExtension // in, none, converted
 	var cret  C.gint          // return, none, casted
@@ -62229,7 +59396,6 @@ func (extension *IOExtension) GetPriority() int32 {
 // GetType wraps g_io_extension_get_type
 // 
 // see also https://docs.gtk.org/gio/method.g_io_extension_get_type.g_io_extension_get_type.html
-//
 func (extension *IOExtension) GetType() gobject.Type {
 	var carg0 *C.GIOExtension // in, none, converted
 	var cret  C.GType         // return, none, casted, alias
@@ -62249,7 +59415,6 @@ func (extension *IOExtension) GetType() gobject.Type {
 // IOExtensionPoint wraps GIOExtensionPoint
 // 
 // see also https://docs.gtk.org/gio/struct.IOExtensionPoint.html
-//
 type IOExtensionPoint struct {
 	*iOExtensionPoint
 }
@@ -62331,7 +59496,6 @@ func UnsafeIOExtensionPointToGlibFull(i *IOExtensionPoint) unsafe.Pointer {
 // IOExtensionPointImplement wraps g_io_extension_point_implement
 // 
 // see also https://docs.gtk.org/gio/func.g_io_extension_point_implement.html
-//
 func IOExtensionPointImplement(extensionPointName string, typ gobject.Type, extensionName string, priority int32) *IOExtension {
 	var carg1 *C.char         // in, none, string
 	var carg2 C.GType         // in, none, casted, alias
@@ -62362,7 +59526,6 @@ func IOExtensionPointImplement(extensionPointName string, typ gobject.Type, exte
 // IOExtensionPointLookup wraps g_io_extension_point_lookup
 // 
 // see also https://docs.gtk.org/gio/func.g_io_extension_point_lookup.html
-//
 func IOExtensionPointLookup(name string) *IOExtensionPoint {
 	var carg1 *C.char              // in, none, string
 	var cret  *C.GIOExtensionPoint // return, none, converted
@@ -62383,7 +59546,6 @@ func IOExtensionPointLookup(name string) *IOExtensionPoint {
 // IOExtensionPointRegister wraps g_io_extension_point_register
 // 
 // see also https://docs.gtk.org/gio/func.g_io_extension_point_register.html
-//
 func IOExtensionPointRegister(name string) *IOExtensionPoint {
 	var carg1 *C.char              // in, none, string
 	var cret  *C.GIOExtensionPoint // return, none, converted
@@ -62404,7 +59566,6 @@ func IOExtensionPointRegister(name string) *IOExtensionPoint {
 // GetExtensionByName wraps g_io_extension_point_get_extension_by_name
 // 
 // see also https://docs.gtk.org/gio/method.g_io_extension_point_get_extension_by_name.g_io_extension_point_get_extension_by_name.html
-//
 func (extensionPoint *IOExtensionPoint) GetExtensionByName(name string) *IOExtension {
 	var carg0 *C.GIOExtensionPoint // in, none, converted
 	var carg1 *C.char              // in, none, string
@@ -62428,7 +59589,6 @@ func (extensionPoint *IOExtensionPoint) GetExtensionByName(name string) *IOExten
 // GetExtensions wraps g_io_extension_point_get_extensions
 // 
 // see also https://docs.gtk.org/gio/method.g_io_extension_point_get_extensions.g_io_extension_point_get_extensions.html
-//
 func (extensionPoint *IOExtensionPoint) GetExtensions() []*IOExtension {
 	var carg0 *C.GIOExtensionPoint // in, none, converted
 	var cret  *C.GList             // container, transfer: none
@@ -62455,7 +59615,6 @@ func (extensionPoint *IOExtensionPoint) GetExtensions() []*IOExtension {
 // GetRequiredType wraps g_io_extension_point_get_required_type
 // 
 // see also https://docs.gtk.org/gio/method.g_io_extension_point_get_required_type.g_io_extension_point_get_required_type.html
-//
 func (extensionPoint *IOExtensionPoint) GetRequiredType() gobject.Type {
 	var carg0 *C.GIOExtensionPoint // in, none, converted
 	var cret  C.GType              // return, none, casted, alias
@@ -62475,7 +59634,6 @@ func (extensionPoint *IOExtensionPoint) GetRequiredType() gobject.Type {
 // SetRequiredType wraps g_io_extension_point_set_required_type
 // 
 // see also https://docs.gtk.org/gio/method.g_io_extension_point_set_required_type.g_io_extension_point_set_required_type.html
-//
 func (extensionPoint *IOExtensionPoint) SetRequiredType(typ gobject.Type) {
 	var carg0 *C.GIOExtensionPoint // in, none, converted
 	var carg1 C.GType              // in, none, casted, alias
@@ -62536,7 +59694,6 @@ func UnsafeIOModuleClassToGlibNone(i *IOModuleClass) unsafe.Pointer {
 // IOModuleScope wraps GIOModuleScope
 // 
 // see also https://docs.gtk.org/gio/struct.IOModuleScope.html
-//
 type IOModuleScope struct {
 	*iOModuleScope
 }
@@ -62618,7 +59775,6 @@ func UnsafeIOModuleScopeToGlibFull(i *IOModuleScope) unsafe.Pointer {
 // Block wraps g_io_module_scope_block
 // 
 // see also https://docs.gtk.org/gio/method.g_io_module_scope_block.g_io_module_scope_block.html
-//
 func (scope *IOModuleScope) Block(basename string) {
 	var carg0 *C.GIOModuleScope // in, none, converted
 	var carg1 *C.gchar          // in, none, string
@@ -62636,9 +59792,7 @@ func (scope *IOModuleScope) Block(basename string) {
 // 
 // see also https://docs.gtk.org/gio/struct.IOSchedulerJob.html
 //
-//
-// Deprecated: (since 2.36.0) Use [struct@GLib.ThreadPool] or
-//   [method@Gio.Task.run_in_thread]
+// Deprecated: (since 2.36.0) see the provided link for the reason
 type IOSchedulerJob struct {
 	*iOSchedulerJob
 }
@@ -62721,8 +59875,7 @@ func UnsafeIOSchedulerJobToGlibFull(i *IOSchedulerJob) unsafe.Pointer {
 // 
 // see also https://docs.gtk.org/gio/method.g_io_scheduler_job_send_to_mainloop.g_io_scheduler_job_send_to_mainloop.html
 //
-//
-// Deprecated: (since 2.36.0) Use g_main_context_invoke().
+// Deprecated: (since 2.36.0) see the provided link for the reason
 func (job *IOSchedulerJob) SendToMainloop(fn glib.SourceFunc) bool {
 	var carg0 *C.GIOSchedulerJob // in, none, converted
 	var carg1 C.GSourceFunc      // callback, scope: notified, closure: carg2, destroy: carg3
@@ -62752,8 +59905,7 @@ func (job *IOSchedulerJob) SendToMainloop(fn glib.SourceFunc) bool {
 // 
 // see also https://docs.gtk.org/gio/method.g_io_scheduler_job_send_to_mainloop_async.g_io_scheduler_job_send_to_mainloop_async.html
 //
-//
-// Deprecated: (since 2.36.0) Use g_main_context_invoke().
+// Deprecated: (since 2.36.0) see the provided link for the reason
 func (job *IOSchedulerJob) SendToMainloopAsync(fn glib.SourceFunc) {
 	var carg0 *C.GIOSchedulerJob // in, none, converted
 	var carg1 C.GSourceFunc      // callback, scope: notified, closure: carg2, destroy: carg3
@@ -62908,7 +60060,6 @@ func (i *IOStreamClass) ParentClass() *gobject.ObjectClass {
 // IconIface wraps GIconIface
 // 
 // see also https://docs.gtk.org/gio/struct.IconIface.html
-//
 type IconIface struct {
 	*iconIface
 }
@@ -63152,7 +60303,6 @@ func (i *InetSocketAddressClass) ParentClass() *SocketAddressClass {
 // InitableIface wraps GInitableIface
 // 
 // see also https://docs.gtk.org/gio/struct.InitableIface.html
-//
 type InitableIface struct {
 	*initableIface
 }
@@ -63234,7 +60384,6 @@ func UnsafeInitableIfaceToGlibFull(i *InitableIface) unsafe.Pointer {
 // InputMessage wraps GInputMessage
 // 
 // see also https://docs.gtk.org/gio/struct.InputMessage.html
-//
 type InputMessage struct {
 	*inputMessage
 }
@@ -63370,7 +60519,6 @@ func (i *InputStreamClass) ParentClass() *gobject.ObjectClass {
 // InputVector wraps GInputVector
 // 
 // see also https://docs.gtk.org/gio/struct.InputVector.html
-//
 type InputVector struct {
 	*inputVector
 }
@@ -63452,7 +60600,6 @@ func UnsafeInputVectorToGlibFull(i *InputVector) unsafe.Pointer {
 // ListModelInterface wraps GListModelInterface
 // 
 // see also https://docs.gtk.org/gio/struct.ListModelInterface.html
-//
 type ListModelInterface struct {
 	*listModelInterface
 }
@@ -63588,7 +60735,6 @@ func (l *ListStoreClass) ParentClass() *gobject.ObjectClass {
 // LoadableIconIface wraps GLoadableIconIface
 // 
 // see also https://docs.gtk.org/gio/struct.LoadableIconIface.html
-//
 type LoadableIconIface struct {
 	*loadableIconIface
 }
@@ -63724,7 +60870,6 @@ func (m *MemoryInputStreamClass) ParentClass() *InputStreamClass {
 // MemoryMonitorInterface wraps GMemoryMonitorInterface
 // 
 // see also https://docs.gtk.org/gio/struct.MemoryMonitorInterface.html
-//
 type MemoryMonitorInterface struct {
 	*memoryMonitorInterface
 }
@@ -64022,7 +61167,6 @@ func (m *MenuModelClass) ParentClass() *gobject.ObjectClass {
 // MountIface wraps GMountIface
 // 
 // see also https://docs.gtk.org/gio/struct.MountIface.html
-//
 type MountIface struct {
 	*mountIface
 }
@@ -64320,7 +61464,6 @@ func (n *NetworkAddressClass) ParentClass() *gobject.ObjectClass {
 // NetworkMonitorInterface wraps GNetworkMonitorInterface
 // 
 // see also https://docs.gtk.org/gio/struct.NetworkMonitorInterface.html
-//
 type NetworkMonitorInterface struct {
 	*networkMonitorInterface
 }
@@ -64456,7 +61599,6 @@ func (n *NetworkServiceClass) ParentClass() *gobject.ObjectClass {
 // OutputMessage wraps GOutputMessage
 // 
 // see also https://docs.gtk.org/gio/struct.OutputMessage.html
-//
 type OutputMessage struct {
 	*outputMessage
 }
@@ -64592,7 +61734,6 @@ func (o *OutputStreamClass) ParentClass() *gobject.ObjectClass {
 // OutputVector wraps GOutputVector
 // 
 // see also https://docs.gtk.org/gio/struct.OutputVector.html
-//
 type OutputVector struct {
 	*outputVector
 }
@@ -64728,7 +61869,6 @@ func (p *PermissionClass) ParentClass() *gobject.ObjectClass {
 // PollableInputStreamInterface wraps GPollableInputStreamInterface
 // 
 // see also https://docs.gtk.org/gio/struct.PollableInputStreamInterface.html
-//
 type PollableInputStreamInterface struct {
 	*pollableInputStreamInterface
 }
@@ -64810,7 +61950,6 @@ func UnsafePollableInputStreamInterfaceToGlibFull(p *PollableInputStreamInterfac
 // PollableOutputStreamInterface wraps GPollableOutputStreamInterface
 // 
 // see also https://docs.gtk.org/gio/struct.PollableOutputStreamInterface.html
-//
 type PollableOutputStreamInterface struct {
 	*pollableOutputStreamInterface
 }
@@ -64892,7 +62031,6 @@ func UnsafePollableOutputStreamInterfaceToGlibFull(p *PollableOutputStreamInterf
 // PowerProfileMonitorInterface wraps GPowerProfileMonitorInterface
 // 
 // see also https://docs.gtk.org/gio/struct.PowerProfileMonitorInterface.html
-//
 type PowerProfileMonitorInterface struct {
 	*powerProfileMonitorInterface
 }
@@ -64974,7 +62112,6 @@ func UnsafePowerProfileMonitorInterfaceToGlibFull(p *PowerProfileMonitorInterfac
 // ProxyAddressClass wraps GProxyAddressClass
 // 
 // see also https://docs.gtk.org/gio/struct.ProxyAddressClass.html
-//
 // 
 // ProxyAddressClass is the type struct for [ProxyAddress]
 type ProxyAddressClass struct {
@@ -65029,7 +62166,6 @@ func (p *ProxyAddressClass) ParentClass() *InetSocketAddressClass {
 // ProxyAddressEnumeratorClass wraps GProxyAddressEnumeratorClass
 // 
 // see also https://docs.gtk.org/gio/struct.ProxyAddressEnumeratorClass.html
-//
 // 
 // ProxyAddressEnumeratorClass is the type struct for [ProxyAddressEnumerator]
 type ProxyAddressEnumeratorClass struct {
@@ -65084,7 +62220,6 @@ func (p *ProxyAddressEnumeratorClass) ParentClass() *SocketAddressEnumeratorClas
 // ProxyInterface wraps GProxyInterface
 // 
 // see also https://docs.gtk.org/gio/struct.ProxyInterface.html
-//
 type ProxyInterface struct {
 	*proxyInterface
 }
@@ -65166,7 +62301,6 @@ func UnsafeProxyInterfaceToGlibFull(p *ProxyInterface) unsafe.Pointer {
 // ProxyResolverInterface wraps GProxyResolverInterface
 // 
 // see also https://docs.gtk.org/gio/struct.ProxyResolverInterface.html
-//
 type ProxyResolverInterface struct {
 	*proxyResolverInterface
 }
@@ -65248,7 +62382,6 @@ func UnsafeProxyResolverInterfaceToGlibFull(p *ProxyResolverInterface) unsafe.Po
 // RemoteActionGroupInterface wraps GRemoteActionGroupInterface
 // 
 // see also https://docs.gtk.org/gio/struct.RemoteActionGroupInterface.html
-//
 type RemoteActionGroupInterface struct {
 	*remoteActionGroupInterface
 }
@@ -65384,7 +62517,6 @@ func (r *ResolverClass) ParentClass() *gobject.ObjectClass {
 // SeekableIface wraps GSeekableIface
 // 
 // see also https://docs.gtk.org/gio/struct.SeekableIface.html
-//
 type SeekableIface struct {
 	*seekableIface
 }
@@ -65520,7 +62652,6 @@ func (s *SettingsClass) ParentClass() *gobject.ObjectClass {
 // SettingsSchema wraps GSettingsSchema
 // 
 // see also https://docs.gtk.org/gio/struct.SettingsSchema.html
-//
 type SettingsSchema struct {
 	*settingsSchema
 }
@@ -65630,7 +62761,6 @@ func UnsafeSettingsSchemaToGlibFull(s *SettingsSchema) unsafe.Pointer {
 // GetID wraps g_settings_schema_get_id
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_get_id.g_settings_schema_get_id.html
-//
 func (schema *SettingsSchema) GetID() string {
 	var carg0 *C.GSettingsSchema // in, none, converted
 	var cret  *C.gchar           // return, none, string
@@ -65650,7 +62780,6 @@ func (schema *SettingsSchema) GetID() string {
 // GetKey wraps g_settings_schema_get_key
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_get_key.g_settings_schema_get_key.html
-//
 func (schema *SettingsSchema) GetKey(name string) *SettingsSchemaKey {
 	var carg0 *C.GSettingsSchema    // in, none, converted
 	var carg1 *C.gchar              // in, none, string
@@ -65674,7 +62803,6 @@ func (schema *SettingsSchema) GetKey(name string) *SettingsSchemaKey {
 // GetPath wraps g_settings_schema_get_path
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_get_path.g_settings_schema_get_path.html
-//
 func (schema *SettingsSchema) GetPath() string {
 	var carg0 *C.GSettingsSchema // in, none, converted
 	var cret  *C.gchar           // return, none, string, nullable-string
@@ -65696,7 +62824,6 @@ func (schema *SettingsSchema) GetPath() string {
 // HasKey wraps g_settings_schema_has_key
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_has_key.g_settings_schema_has_key.html
-//
 func (schema *SettingsSchema) HasKey(name string) bool {
 	var carg0 *C.GSettingsSchema // in, none, converted
 	var carg1 *C.gchar           // in, none, string
@@ -65722,7 +62849,6 @@ func (schema *SettingsSchema) HasKey(name string) bool {
 // ListChildren wraps g_settings_schema_list_children
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_list_children.g_settings_schema_list_children.html
-//
 func (schema *SettingsSchema) ListChildren() []string {
 	var carg0 *C.GSettingsSchema // in, none, converted
 	var cret  **C.gchar          // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -65744,7 +62870,6 @@ func (schema *SettingsSchema) ListChildren() []string {
 // ListKeys wraps g_settings_schema_list_keys
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_list_keys.g_settings_schema_list_keys.html
-//
 func (schema *SettingsSchema) ListKeys() []string {
 	var carg0 *C.GSettingsSchema // in, none, converted
 	var cret  **C.gchar          // return, transfer: full, C Pointers: 2, Name: array[utf8], scope: , array (inner gchar* (*typesystem.StringPrimitive), zero-terminated)
@@ -65766,7 +62891,6 @@ func (schema *SettingsSchema) ListKeys() []string {
 // SettingsSchemaKey wraps GSettingsSchemaKey
 // 
 // see also https://docs.gtk.org/gio/struct.SettingsSchemaKey.html
-//
 type SettingsSchemaKey struct {
 	*settingsSchemaKey
 }
@@ -65876,7 +63000,6 @@ func UnsafeSettingsSchemaKeyToGlibFull(s *SettingsSchemaKey) unsafe.Pointer {
 // GetDescription wraps g_settings_schema_key_get_description
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_key_get_description.g_settings_schema_key_get_description.html
-//
 func (key *SettingsSchemaKey) GetDescription() string {
 	var carg0 *C.GSettingsSchemaKey // in, none, converted
 	var cret  *C.gchar              // return, none, string, nullable-string
@@ -65898,7 +63021,6 @@ func (key *SettingsSchemaKey) GetDescription() string {
 // GetName wraps g_settings_schema_key_get_name
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_key_get_name.g_settings_schema_key_get_name.html
-//
 func (key *SettingsSchemaKey) GetName() string {
 	var carg0 *C.GSettingsSchemaKey // in, none, converted
 	var cret  *C.gchar              // return, none, string
@@ -65918,7 +63040,6 @@ func (key *SettingsSchemaKey) GetName() string {
 // GetSummary wraps g_settings_schema_key_get_summary
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_key_get_summary.g_settings_schema_key_get_summary.html
-//
 func (key *SettingsSchemaKey) GetSummary() string {
 	var carg0 *C.GSettingsSchemaKey // in, none, converted
 	var cret  *C.gchar              // return, none, string, nullable-string
@@ -65940,7 +63061,6 @@ func (key *SettingsSchemaKey) GetSummary() string {
 // GetValueType wraps g_settings_schema_key_get_value_type
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_key_get_value_type.g_settings_schema_key_get_value_type.html
-//
 func (key *SettingsSchemaKey) GetValueType() *glib.VariantType {
 	var carg0 *C.GSettingsSchemaKey // in, none, converted
 	var cret  *C.GVariantType       // return, none, converted
@@ -65960,7 +63080,6 @@ func (key *SettingsSchemaKey) GetValueType() *glib.VariantType {
 // SettingsSchemaSource wraps GSettingsSchemaSource
 // 
 // see also https://docs.gtk.org/gio/struct.SettingsSchemaSource.html
-//
 type SettingsSchemaSource struct {
 	*settingsSchemaSource
 }
@@ -66070,7 +63189,6 @@ func UnsafeSettingsSchemaSourceToGlibFull(s *SettingsSchemaSource) unsafe.Pointe
 // NewSettingsSchemaSourceFromDirectory wraps g_settings_schema_source_new_from_directory
 // 
 // see also https://docs.gtk.org/gio/func.g_settings_schema_source_new_from_directory.html
-//
 func NewSettingsSchemaSourceFromDirectory(directory string, parent *SettingsSchemaSource, trusted bool) (*SettingsSchemaSource, error) {
 	var carg1 *C.gchar                 // in, none, string
 	var carg2 *C.GSettingsSchemaSource // in, none, converted, nullable
@@ -66106,7 +63224,6 @@ func NewSettingsSchemaSourceFromDirectory(directory string, parent *SettingsSche
 // SettingsSchemaSourceGetDefault wraps g_settings_schema_source_get_default
 // 
 // see also https://docs.gtk.org/gio/func.g_settings_schema_source_get_default.html
-//
 func SettingsSchemaSourceGetDefault() *SettingsSchemaSource {
 	var cret *C.GSettingsSchemaSource // return, none, converted, nullable
 
@@ -66124,7 +63241,6 @@ func SettingsSchemaSourceGetDefault() *SettingsSchemaSource {
 // Lookup wraps g_settings_schema_source_lookup
 // 
 // see also https://docs.gtk.org/gio/method.g_settings_schema_source_lookup.g_settings_schema_source_lookup.html
-//
 func (source *SettingsSchemaSource) Lookup(schemaId string, recursive bool) *SettingsSchema {
 	var carg0 *C.GSettingsSchemaSource // in, none, converted
 	var carg1 *C.gchar                 // in, none, string
@@ -66371,7 +63487,6 @@ func (s *SocketAddressClass) ParentClass() *gobject.ObjectClass {
 // SocketAddressEnumeratorClass wraps GSocketAddressEnumeratorClass
 // 
 // see also https://docs.gtk.org/gio/struct.SocketAddressEnumeratorClass.html
-//
 // 
 // SocketAddressEnumeratorClass is the type struct for [SocketAddressEnumerator]
 type SocketAddressEnumeratorClass struct {
@@ -66534,7 +63649,6 @@ func (s *SocketClientClass) ParentClass() *gobject.ObjectClass {
 // SocketConnectableIface wraps GSocketConnectableIface
 // 
 // see also https://docs.gtk.org/gio/struct.SocketConnectableIface.html
-//
 type SocketConnectableIface struct {
 	*socketConnectableIface
 }
@@ -66670,7 +63784,6 @@ func (s *SocketConnectionClass) ParentClass() *IOStreamClass {
 // SocketControlMessageClass wraps GSocketControlMessageClass
 // 
 // see also https://docs.gtk.org/gio/struct.SocketControlMessageClass.html
-//
 // 
 // SocketControlMessageClass is the type struct for [SocketControlMessage]
 type SocketControlMessageClass struct {
@@ -66725,7 +63838,6 @@ func (s *SocketControlMessageClass) ParentClass() *gobject.ObjectClass {
 // SocketListenerClass wraps GSocketListenerClass
 // 
 // see also https://docs.gtk.org/gio/struct.SocketListenerClass.html
-//
 // 
 // SocketListenerClass is the type struct for [SocketListener]
 type SocketListenerClass struct {
@@ -66780,7 +63892,6 @@ func (s *SocketListenerClass) ParentClass() *gobject.ObjectClass {
 // SocketServiceClass wraps GSocketServiceClass
 // 
 // see also https://docs.gtk.org/gio/struct.SocketServiceClass.html
-//
 // 
 // SocketServiceClass is the type struct for [SocketService]
 type SocketServiceClass struct {
@@ -66835,7 +63946,6 @@ func (s *SocketServiceClass) ParentClass() *SocketListenerClass {
 // SrvTarget wraps GSrvTarget
 // 
 // see also https://docs.gtk.org/gio/struct.SrvTarget.html
-//
 type SrvTarget struct {
 	*srvTarget
 }
@@ -66932,7 +64042,6 @@ func UnsafeSrvTargetToGlibFull(s *SrvTarget) unsafe.Pointer {
 // NewSrvTarget wraps g_srv_target_new
 // 
 // see also https://docs.gtk.org/gio/func.g_srv_target_new.html
-//
 func NewSrvTarget(hostname string, port uint16, priority uint16, weight uint16) *SrvTarget {
 	var carg1 *C.gchar      // in, none, string
 	var carg2 C.guint16     // in, none, casted
@@ -66962,7 +64071,6 @@ func NewSrvTarget(hostname string, port uint16, priority uint16, weight uint16) 
 // Copy wraps g_srv_target_copy
 // 
 // see also https://docs.gtk.org/gio/method.g_srv_target_copy.g_srv_target_copy.html
-//
 func (target *SrvTarget) Copy() *SrvTarget {
 	var carg0 *C.GSrvTarget // in, none, converted
 	var cret  *C.GSrvTarget // return, full, converted
@@ -66982,7 +64090,6 @@ func (target *SrvTarget) Copy() *SrvTarget {
 // GetHostname wraps g_srv_target_get_hostname
 // 
 // see also https://docs.gtk.org/gio/method.g_srv_target_get_hostname.g_srv_target_get_hostname.html
-//
 func (target *SrvTarget) GetHostname() string {
 	var carg0 *C.GSrvTarget // in, none, converted
 	var cret  *C.gchar      // return, none, string
@@ -67002,7 +64109,6 @@ func (target *SrvTarget) GetHostname() string {
 // GetPort wraps g_srv_target_get_port
 // 
 // see also https://docs.gtk.org/gio/method.g_srv_target_get_port.g_srv_target_get_port.html
-//
 func (target *SrvTarget) GetPort() uint16 {
 	var carg0 *C.GSrvTarget // in, none, converted
 	var cret  C.guint16     // return, none, casted
@@ -67022,7 +64128,6 @@ func (target *SrvTarget) GetPort() uint16 {
 // GetPriority wraps g_srv_target_get_priority
 // 
 // see also https://docs.gtk.org/gio/method.g_srv_target_get_priority.g_srv_target_get_priority.html
-//
 func (target *SrvTarget) GetPriority() uint16 {
 	var carg0 *C.GSrvTarget // in, none, converted
 	var cret  C.guint16     // return, none, casted
@@ -67042,7 +64147,6 @@ func (target *SrvTarget) GetPriority() uint16 {
 // GetWeight wraps g_srv_target_get_weight
 // 
 // see also https://docs.gtk.org/gio/method.g_srv_target_get_weight.g_srv_target_get_weight.html
-//
 func (target *SrvTarget) GetWeight() uint16 {
 	var carg0 *C.GSrvTarget // in, none, converted
 	var cret  C.guint16     // return, none, casted
@@ -67062,7 +64166,6 @@ func (target *SrvTarget) GetWeight() uint16 {
 // StaticResource wraps GStaticResource
 // 
 // see also https://docs.gtk.org/gio/struct.StaticResource.html
-//
 type StaticResource struct {
 	*staticResource
 }
@@ -67144,7 +64247,6 @@ func UnsafeStaticResourceToGlibFull(s *StaticResource) unsafe.Pointer {
 // Fini wraps g_static_resource_fini
 // 
 // see also https://docs.gtk.org/gio/method.g_static_resource_fini.g_static_resource_fini.html
-//
 func (staticResource *StaticResource) Fini() {
 	var carg0 *C.GStaticResource // in, none, converted
 
@@ -67157,7 +64259,6 @@ func (staticResource *StaticResource) Fini() {
 // Init wraps g_static_resource_init
 // 
 // see also https://docs.gtk.org/gio/method.g_static_resource_init.g_static_resource_init.html
-//
 func (staticResource *StaticResource) Init() {
 	var carg0 *C.GStaticResource // in, none, converted
 
@@ -67440,7 +64541,6 @@ func (t *ThreadedSocketServiceClass) ParentClass() *SocketServiceClass {
 // TlsBackendInterface wraps GTlsBackendInterface
 // 
 // see also https://docs.gtk.org/gio/struct.TlsBackendInterface.html
-//
 type TlsBackendInterface struct {
 	*tlsBackendInterface
 }
@@ -67576,7 +64676,6 @@ func (t *TlsCertificateClass) ParentClass() *gobject.ObjectClass {
 // TlsClientConnectionInterface wraps GTlsClientConnectionInterface
 // 
 // see also https://docs.gtk.org/gio/struct.TlsClientConnectionInterface.html
-//
 type TlsClientConnectionInterface struct {
 	*tlsClientConnectionInterface
 }
@@ -67658,7 +64757,6 @@ func UnsafeTlsClientConnectionInterfaceToGlibFull(t *TlsClientConnectionInterfac
 // TlsConnectionClass wraps GTlsConnectionClass
 // 
 // see also https://docs.gtk.org/gio/struct.TlsConnectionClass.html
-//
 // 
 // TlsConnectionClass is the type struct for [TlsConnection]
 type TlsConnectionClass struct {
@@ -67713,7 +64811,6 @@ func (t *TlsConnectionClass) ParentClass() *IOStreamClass {
 // TlsDatabaseClass wraps GTlsDatabaseClass
 // 
 // see also https://docs.gtk.org/gio/struct.TlsDatabaseClass.html
-//
 // 
 // TlsDatabaseClass is the type struct for [TlsDatabase]
 type TlsDatabaseClass struct {
@@ -67768,7 +64865,6 @@ func (t *TlsDatabaseClass) ParentClass() *gobject.ObjectClass {
 // TlsFileDatabaseInterface wraps GTlsFileDatabaseInterface
 // 
 // see also https://docs.gtk.org/gio/struct.TlsFileDatabaseInterface.html
-//
 type TlsFileDatabaseInterface struct {
 	*tlsFileDatabaseInterface
 }
@@ -67850,7 +64946,6 @@ func UnsafeTlsFileDatabaseInterfaceToGlibFull(t *TlsFileDatabaseInterface) unsaf
 // TlsInteractionClass wraps GTlsInteractionClass
 // 
 // see also https://docs.gtk.org/gio/struct.TlsInteractionClass.html
-//
 // 
 // TlsInteractionClass is the type struct for [TlsInteraction]
 type TlsInteractionClass struct {
@@ -67905,7 +65000,6 @@ func (t *TlsInteractionClass) ParentClass() *gobject.ObjectClass {
 // TlsPasswordClass wraps GTlsPasswordClass
 // 
 // see also https://docs.gtk.org/gio/struct.TlsPasswordClass.html
-//
 // 
 // TlsPasswordClass is the type struct for [TlsPassword]
 type TlsPasswordClass struct {
@@ -67960,7 +65054,6 @@ func (t *TlsPasswordClass) ParentClass() *gobject.ObjectClass {
 // TlsServerConnectionInterface wraps GTlsServerConnectionInterface
 // 
 // see also https://docs.gtk.org/gio/struct.TlsServerConnectionInterface.html
-//
 type TlsServerConnectionInterface struct {
 	*tlsServerConnectionInterface
 }
@@ -68096,7 +65189,6 @@ func (v *VfsClass) ParentClass() *gobject.ObjectClass {
 // VolumeIface wraps GVolumeIface
 // 
 // see also https://docs.gtk.org/gio/struct.VolumeIface.html
-//
 type VolumeIface struct {
 	*volumeIface
 }
