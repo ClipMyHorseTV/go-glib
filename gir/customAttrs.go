@@ -51,27 +51,71 @@ func (v Version) String() string {
 	return fmt.Sprintf("%d.%d.%d", v.Major, v.Minor, v.Patch)
 }
 
-// LessEqual implements the less than or equal relation
-func (v Version) LessEqual(other Version) bool {
+// Equals implements equality comparison
+func (v Version) Equals(other Version) bool {
+	return v.Major == other.Major &&
+		v.Minor == other.Minor &&
+		v.Patch == other.Patch
+}
+
+// Less implements the less than relation
+func (v Version) Less(other Version) bool {
 	if v.Major < other.Major {
 		return true
 	}
+
 	if v.Major > other.Major {
 		return false
 	}
+
 	if v.Minor < other.Minor {
 		return true
 	}
+
 	if v.Minor > other.Minor {
 		return false
 	}
 
-	return v.Patch <= other.Patch
+	if v.Patch < other.Patch {
+		return true
+	}
+
+	return false
 }
 
 // Greater implements the greater than relation
 func (v Version) Greater(other Version) bool {
-	return !v.LessEqual(other)
+	if v.Major > other.Major {
+		return true
+	}
+
+	if v.Major < other.Major {
+		return false
+	}
+
+	if v.Minor > other.Minor {
+		return true
+	}
+
+	if v.Minor < other.Minor {
+		return false
+	}
+
+	if v.Patch > other.Patch {
+		return true
+	}
+
+	return false
+}
+
+// LessEqual implements the less than or equal relation
+func (v Version) LessEqual(other Version) bool {
+	return v.Less(other) || v.Equals(other)
+}
+
+// GreaterEqual implements the greater than or equal relation
+func (v Version) GreaterEqual(other Version) bool {
+	return v.Greater(other) || v.Equals(other)
 }
 
 // UnmarshalText implements encoding.TextUnmarshaler.

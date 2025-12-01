@@ -129,7 +129,7 @@ func (e *env) ingoreDeprecated(name string, attrs gir.InfoAttrs) bool {
 
 func (e *env) ignoreTooNew(name string, attrs gir.InfoAttrs) bool {
 	var zeroVersion gir.Version
-	if attrs.Version != zeroVersion && e.maxVersion != zeroVersion && attrs.Version.Greater(e.maxVersion) {
+	if attrs.Version != zeroVersion && e.maxVersion != zeroVersion && e.maxVersion.Less(attrs.Version) {
 		e.logger.Info("skipping too new", "name", name, "introduced-since", attrs.Version, "max-version", e.maxVersion)
 		return true
 	}
