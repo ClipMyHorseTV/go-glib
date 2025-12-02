@@ -107,7 +107,7 @@ func (g *RecordGenerator) Generate(w *file.Package) {
 	}
 
 	if g.CgoRefFunction != "" {
-		fmt.Fprintf(w.Go(), "// %s increases the refcount on the underlying resource. This is used by the bindings internally.\n", g.GoUnsafeRefFunction)
+		fmt.Fprintf(w.Go(), "// %s increases the refcount on the underlying resource.\n", g.GoUnsafeRefFunction)
 		fmt.Fprintf(w.Go(), "// \n")
 		fmt.Fprintf(w.Go(), "// When this is called without an associated call to [%s.%s], then [%s] will leak memory.\n", g.GoType(0), g.GoUnsafeUnrefFunction, g.GoType(0))
 		fmt.Fprintf(w.Go(), "func %s(%s *%s) {\n", g.GoUnsafeRefFunction, g.ReceiverName, g.GoType(0))
@@ -117,11 +117,14 @@ func (g *RecordGenerator) Generate(w *file.Package) {
 		fmt.Fprintf(w.Go(), "}\n\n")
 	}
 
-	fmt.Fprintf(w.Go(), "// %s unrefs/frees the underlying resource. This is used by the bindings internally.\n", g.GoUnsafeUnrefFunction)
+	fmt.Fprintf(w.Go(), "// %s unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.\n", g.GoUnsafeUnrefFunction)
 	fmt.Fprintf(w.Go(), "// \n")
 	fmt.Fprintf(w.Go(), "// After this is called, no other method on [%s] is expected to work anymore.\n", g.GoType(0))
 	fmt.Fprintf(w.Go(), "func %s(%s *%s) {\n", g.GoUnsafeUnrefFunction, g.ReceiverName, g.GoType(0))
+	w.Go().Indent()
 	g.unrefCall(w.Go(), g.ReceiverName)
+	fmt.Fprintf(w.Go(), "runtime.SetFinalizer(%s.%s, nil)\n", g.ReceiverName, g.PrivateGoType)
+	w.Go().Unindent()
 	fmt.Fprintf(w.Go(), "}\n\n")
 
 	fmt.Fprintf(w.Go(), "// %s returns the underlying C pointer. This is used by the bindings internally.\n", g.GoUnsafeToGlibNoneFunction())
@@ -172,12 +175,14 @@ func (g *RecordGenerator) Generate(w *file.Package) {
 // mkFinalizer prints the finalizer code for the record generator. The finalized variable must be called "wrapped".
 func (g *RecordGenerator) mkFinalizer(w *file.Package) {
 	fmt.Fprintf(w.Go(), "runtime.SetFinalizer(\n")
-	fmt.Fprintf(w.Go(), "\twrapped.%s,\n", g.PrivateGoType)
-	fmt.Fprintf(w.Go(), "\tfunc (intern *%s) {\n", g.PrivateGoType)
+	w.Go().Indent()
+	fmt.Fprintf(w.Go(), "wrapped.%s,\n", g.PrivateGoType)
+	fmt.Fprintf(w.Go(), "func (intern *%s) {\n", g.PrivateGoType)
 	w.Go().Indent()
 	g.unrefCall(w.Go(), "intern")
 	w.Go().Unindent()
-	fmt.Fprintf(w.Go(), "\t},\n")
+	fmt.Fprintf(w.Go(), "},\n")
+	w.Go().Unindent()
 	fmt.Fprintf(w.Go(), ")\n")
 }
 
@@ -223,9 +228,9 @@ func (g *RecordGenerator) refCall(w file.CodeWriter, variable string) {
 func (g *RecordGenerator) unrefCall(w file.CodeWriter, variable string) {
 	if g.CgoUnrefNeedsUnsafeCast {
 		// unsafe already imported above
-		fmt.Fprintf(w, "\t%s(unsafe.Pointer(%s.native))\n", g.CgoUnrefFunction, variable)
+		fmt.Fprintf(w, "%s(unsafe.Pointer(%s.native))\n", g.CgoUnrefFunction, variable)
 	} else {
-		fmt.Fprintf(w, "\t%s(%s.native)\n", g.CgoUnrefFunction, variable)
+		fmt.Fprintf(w, "%s(%s.native)\n", g.CgoUnrefFunction, variable)
 	}
 }
 

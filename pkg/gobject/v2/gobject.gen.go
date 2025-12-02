@@ -2815,11 +2815,12 @@ func UnsafeCClosureFromGlibFull(p unsafe.Pointer) *CClosure {
 	return wrapped
 }
 
-// UnsafeCClosureFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeCClosureFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [CClosure] is expected to work anymore.
 func UnsafeCClosureFree(c *CClosure) {
 	C.free(unsafe.Pointer(c.native))
+	runtime.SetFinalizer(c.cClosure, nil)
 }
 
 // UnsafeCClosureToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -2896,11 +2897,12 @@ func UnsafeClosureNotifyDataFromGlibFull(p unsafe.Pointer) *ClosureNotifyData {
 	return wrapped
 }
 
-// UnsafeClosureNotifyDataFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeClosureNotifyDataFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [ClosureNotifyData] is expected to work anymore.
 func UnsafeClosureNotifyDataFree(c *ClosureNotifyData) {
 	C.free(unsafe.Pointer(c.native))
+	runtime.SetFinalizer(c.closureNotifyData, nil)
 }
 
 // UnsafeClosureNotifyDataToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -2977,11 +2979,12 @@ func UnsafeEnumClassFromGlibFull(p unsafe.Pointer) *EnumClass {
 	return wrapped
 }
 
-// UnsafeEnumClassFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeEnumClassFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [EnumClass] is expected to work anymore.
 func UnsafeEnumClassFree(e *EnumClass) {
 	C.free(unsafe.Pointer(e.native))
+	runtime.SetFinalizer(e.enumClass, nil)
 }
 
 // UnsafeEnumClassToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3058,11 +3061,12 @@ func UnsafeEnumValueFromGlibFull(p unsafe.Pointer) *EnumValue {
 	return wrapped
 }
 
-// UnsafeEnumValueFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeEnumValueFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [EnumValue] is expected to work anymore.
 func UnsafeEnumValueFree(e *EnumValue) {
 	C.free(unsafe.Pointer(e.native))
+	runtime.SetFinalizer(e.enumValue, nil)
 }
 
 // UnsafeEnumValueToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3139,11 +3143,12 @@ func UnsafeFlagsClassFromGlibFull(p unsafe.Pointer) *FlagsClass {
 	return wrapped
 }
 
-// UnsafeFlagsClassFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeFlagsClassFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [FlagsClass] is expected to work anymore.
 func UnsafeFlagsClassFree(f *FlagsClass) {
 	C.free(unsafe.Pointer(f.native))
+	runtime.SetFinalizer(f.flagsClass, nil)
 }
 
 // UnsafeFlagsClassToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3220,11 +3225,12 @@ func UnsafeFlagsValueFromGlibFull(p unsafe.Pointer) *FlagsValue {
 	return wrapped
 }
 
-// UnsafeFlagsValueFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeFlagsValueFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [FlagsValue] is expected to work anymore.
 func UnsafeFlagsValueFree(f *FlagsValue) {
 	C.free(unsafe.Pointer(f.native))
+	runtime.SetFinalizer(f.flagsValue, nil)
 }
 
 // UnsafeFlagsValueToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3277,11 +3283,12 @@ func UnsafeInitiallyUnownedClassFromGlibBorrow(p unsafe.Pointer) *InitiallyUnown
 	return &InitiallyUnownedClass{&initiallyUnownedClass{(*C.GInitiallyUnownedClass)(p)}}
 }
 
-// UnsafeInitiallyUnownedClassFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeInitiallyUnownedClassFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [InitiallyUnownedClass] is expected to work anymore.
 func UnsafeInitiallyUnownedClassFree(i *InitiallyUnownedClass) {
 	C.free(unsafe.Pointer(i.native))
+	runtime.SetFinalizer(i.initiallyUnownedClass, nil)
 }
 
 // UnsafeInitiallyUnownedClassToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3355,11 +3362,12 @@ func UnsafeInterfaceInfoFromGlibFull(p unsafe.Pointer) *InterfaceInfo {
 	return wrapped
 }
 
-// UnsafeInterfaceInfoFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeInterfaceInfoFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [InterfaceInfo] is expected to work anymore.
 func UnsafeInterfaceInfoFree(i *InterfaceInfo) {
 	C.free(unsafe.Pointer(i.native))
+	runtime.SetFinalizer(i.interfaceInfo, nil)
 }
 
 // UnsafeInterfaceInfoToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3436,11 +3444,12 @@ func UnsafeObjectConstructParamFromGlibFull(p unsafe.Pointer) *ObjectConstructPa
 	return wrapped
 }
 
-// UnsafeObjectConstructParamFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeObjectConstructParamFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [ObjectConstructParam] is expected to work anymore.
 func UnsafeObjectConstructParamFree(o *ObjectConstructParam) {
 	C.free(unsafe.Pointer(o.native))
+	runtime.SetFinalizer(o.objectConstructParam, nil)
 }
 
 // UnsafeObjectConstructParamToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3517,11 +3526,12 @@ func UnsafeSignalInvocationHintFromGlibFull(p unsafe.Pointer) *SignalInvocationH
 	return wrapped
 }
 
-// UnsafeSignalInvocationHintFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeSignalInvocationHintFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [SignalInvocationHint] is expected to work anymore.
 func UnsafeSignalInvocationHintFree(s *SignalInvocationHint) {
 	C.free(unsafe.Pointer(s.native))
+	runtime.SetFinalizer(s.signalInvocationHint, nil)
 }
 
 // UnsafeSignalInvocationHintToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3598,11 +3608,12 @@ func UnsafeTypeFundamentalInfoFromGlibFull(p unsafe.Pointer) *TypeFundamentalInf
 	return wrapped
 }
 
-// UnsafeTypeFundamentalInfoFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeTypeFundamentalInfoFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [TypeFundamentalInfo] is expected to work anymore.
 func UnsafeTypeFundamentalInfoFree(t *TypeFundamentalInfo) {
 	C.free(unsafe.Pointer(t.native))
+	runtime.SetFinalizer(t.typeFundamentalInfo, nil)
 }
 
 // UnsafeTypeFundamentalInfoToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3679,11 +3690,12 @@ func UnsafeTypeInfoFromGlibFull(p unsafe.Pointer) *TypeInfo {
 	return wrapped
 }
 
-// UnsafeTypeInfoFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeTypeInfoFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [TypeInfo] is expected to work anymore.
 func UnsafeTypeInfoFree(t *TypeInfo) {
 	C.free(unsafe.Pointer(t.native))
+	runtime.SetFinalizer(t.typeInfo, nil)
 }
 
 // UnsafeTypeInfoToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3760,11 +3772,12 @@ func UnsafeTypeInstanceFromGlibFull(p unsafe.Pointer) *TypeInstance {
 	return wrapped
 }
 
-// UnsafeTypeInstanceFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeTypeInstanceFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [TypeInstance] is expected to work anymore.
 func UnsafeTypeInstanceFree(t *TypeInstance) {
 	C.free(unsafe.Pointer(t.native))
+	runtime.SetFinalizer(t.typeInstance, nil)
 }
 
 // UnsafeTypeInstanceToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3841,11 +3854,12 @@ func UnsafeTypeValueTableFromGlibFull(p unsafe.Pointer) *TypeValueTable {
 	return wrapped
 }
 
-// UnsafeTypeValueTableFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeTypeValueTableFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [TypeValueTable] is expected to work anymore.
 func UnsafeTypeValueTableFree(t *TypeValueTable) {
 	C.free(unsafe.Pointer(t.native))
+	runtime.SetFinalizer(t.typeValueTable, nil)
 }
 
 // UnsafeTypeValueTableToGlibNone returns the underlying C pointer. This is used by the bindings internally.
@@ -3922,11 +3936,12 @@ func UnsafeWeakRefFromGlibFull(p unsafe.Pointer) *WeakRef {
 	return wrapped
 }
 
-// UnsafeWeakRefFree unrefs/frees the underlying resource. This is used by the bindings internally.
+// UnsafeWeakRefFree unrefs/frees the underlying resource. This can be used to remove the instance before the GC decides to do so.
 // 
 // After this is called, no other method on [WeakRef] is expected to work anymore.
 func UnsafeWeakRefFree(w *WeakRef) {
 	C.free(unsafe.Pointer(w.native))
+	runtime.SetFinalizer(w.weakRef, nil)
 }
 
 // UnsafeWeakRefToGlibNone returns the underlying C pointer. This is used by the bindings internally.
