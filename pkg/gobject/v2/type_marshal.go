@@ -287,7 +287,6 @@ func marshalLong(p unsafe.Pointer) (interface{}, error) {
 }
 
 func marshalEnum(p unsafe.Pointer) (interface{}, error) {
-	println("WARN: gvalue enum marshalled via default marshalEnum. Consider implementing your own marshaller or import the generated package containing that registers the marshaller.")
 	c := C.g_value_get_enum((*C.GValue)(unsafe.Pointer(p)))
 	return int(c), nil
 }
@@ -308,7 +307,6 @@ func marshalUlong(p unsafe.Pointer) (interface{}, error) {
 }
 
 func marshalFlags(p unsafe.Pointer) (interface{}, error) {
-	println("WARN: gvalue flags marshalled via default marshalFlags. Consider implementing your own marshaller or import the generated package containing that registers the marshaller.")
 	c := C.g_value_get_flags((*C.GValue)(unsafe.Pointer(p)))
 	return uint(c), nil
 }
