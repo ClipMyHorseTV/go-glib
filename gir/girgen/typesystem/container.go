@@ -109,11 +109,6 @@ func (e *env) resolveContainerInnerTypes(c *Container, inner []*gir.Type) Type {
 	}
 }
 
-func isContainer(t Type) bool {
-	_, ok := t.(*Container)
-	return ok
-}
-
 func isContainerInstance(t Type) bool {
 	_, ok := t.(*ContainerInstance)
 	return ok

@@ -7,7 +7,6 @@ import (
 	"strings"
 
 	"github.com/go-gst/go-glib/gir"
-	"github.com/go-gst/go-glib/gir/girgen/strcases"
 )
 
 type ParamCompareFunc func(a, b *Param) int
@@ -330,20 +329,4 @@ func (e *env) identifierToGo(identifier string) string {
 
 	slog.Warn("identifier does not have a prefix, using as is", "namespace", e.namespace.v, "identifier", identifier)
 	return identifier
-}
-
-// symbolToGo converts the C symbol (aka function) to a Go identifier. the symbol prefix of the namespace is stripped
-// and the function is converted from snake_case to CamelCase.
-func (e *env) symbolToGo(symbol string) string {
-	for _, p := range e.symbolPrefixes {
-		trimmed, ok := strings.CutPrefix(symbol, p)
-
-		trimmed, _ = strings.CutPrefix(trimmed, "_")
-
-		if ok {
-			return strcases.SnakeToGo(true, trimmed)
-		}
-	}
-
-	panic("given symbol does not have a prefix?")
 }

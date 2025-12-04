@@ -54,11 +54,6 @@ func isLower(s string) bool {
 	return strings.IndexFunc(s, unicode.IsUpper) == -1
 }
 
-// isUpper returns true if the string is all upper-cased.
-func isUpper(s string) bool {
-	return strings.IndexFunc(s, unicode.IsLower) == -1
-}
-
 // firstToUpper returns the first letter in upper-case.
 func firstToUpper(s string) string {
 	if len(s) == 0 {
